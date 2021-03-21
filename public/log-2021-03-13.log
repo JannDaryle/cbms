@@ -1,0 +1,12 @@
+CRITICAL - 2021-03-13 08:20:23 --> Unknown database 'cbms'
+#0 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\Database\BaseConnection.php(377): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2206): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#3 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\Model.php(722): CodeIgniter\Database\BaseBuilder->insert()
+#4 C:\xampp\htdocs\cbms\app\Controllers\Personnel.php(137): CodeIgniter\Model->insert(Array)
+#5 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Personnel->save()
+#6 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personnel))
+#7 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\cbms\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#10 {main}

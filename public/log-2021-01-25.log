@@ -1,0 +1,277 @@
+CRITICAL - 2021-01-25 03:46:49 --> Undefined property: App\Controllers\Dashboard::$input
+#0 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 46, Array)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->petitionList()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-01-25 03:48:37 --> Undefined property: App\Controllers\Dashboard::$input
+#0 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 46, Array)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->petitionList()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-01-25 03:48:38 --> Undefined property: App\Controllers\Dashboard::$input
+#0 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 46, Array)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->petitionList()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-01-25 03:50:07 --> Too few arguments to function App\Models\Personnel_m::loadPetitionList(), 0 passed in C:\xampp\htdocs\caf\app\Controllers\Dashboard.php on line 46 and exactly 1 expected
+#0 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(46): App\Models\Personnel_m->loadPetitionList()
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->petitionList()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-01-25 03:50:34 --> Undefined property: App\Controllers\Dashboard::$input
+#0 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 44, Array)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->petitionList()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-01-25 03:50:35 --> Undefined property: App\Controllers\Dashboard::$input
+#0 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 44, Array)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->petitionList()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-01-25 03:53:33 --> Too few arguments to function App\Models\Personnel_m::loadPetitionList(), 0 passed in C:\xampp\htdocs\caf\app\Controllers\Dashboard.php on line 46 and exactly 1 expected
+#0 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(46): App\Models\Personnel_m->loadPetitionList()
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->petitionList()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-01-25 21:45:02 --> __clone method called on non-object
+#0 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(49): monken\TablesIgniter->setTable(NULL)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->fetch_all()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-01-25 21:46:03 --> __clone method called on non-object
+#0 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(49): monken\TablesIgniter->setTable(NULL)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->fetch_all()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-01-25 21:46:50 --> __clone method called on non-object
+#0 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(49): monken\TablesIgniter->setTable(NULL)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->fetch_all()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-01-25 21:54:11 --> __clone method called on non-object
+#0 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(49): monken\TablesIgniter->setTable(NULL)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->fetch_all()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-01-25 21:54:26 --> __clone method called on non-object
+#0 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(49): monken\TablesIgniter->setTable(NULL)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->fetch_all()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-01-25 21:57:32 --> __clone method called on non-object
+#0 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(49): monken\TablesIgniter->setTable(NULL)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->fetch_all()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-01-25 21:57:45 --> __clone method called on non-object
+#0 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(49): monken\TablesIgniter->setTable(NULL)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->fetch_all()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-01-25 21:58:01 --> __clone method called on non-object
+#0 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(49): monken\TablesIgniter->setTable(NULL)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->fetch_all()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-01-25 21:58:16 --> __clone method called on non-object
+#0 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(49): monken\TablesIgniter->setTable(NULL)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->fetch_all()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-01-25 21:58:29 --> __clone method called on non-object
+#0 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(49): monken\TablesIgniter->setTable(NULL)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->fetch_all()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-01-25 21:58:41 --> __clone method called on non-object
+#0 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(49): monken\TablesIgniter->setTable(NULL)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->fetch_all()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-01-25 22:01:49 --> __clone method called on non-object
+#0 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(49): monken\TablesIgniter->setTable(NULL)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->fetch_all()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-01-25 22:02:39 --> __clone method called on non-object
+#0 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(49): monken\TablesIgniter->setTable(NULL)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->fetch_all()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-01-25 22:03:06 --> __clone method called on non-object
+#0 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(49): monken\TablesIgniter->setTable(NULL)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->fetch_all()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-01-25 22:03:28 --> __clone method called on non-object
+#0 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(49): monken\TablesIgniter->setTable(NULL)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->fetch_all()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-01-25 22:04:53 --> __clone method called on non-object
+#0 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(49): monken\TablesIgniter->setTable(NULL)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->fetch_all()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-01-25 22:04:54 --> __clone method called on non-object
+#0 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(49): monken\TablesIgniter->setTable(NULL)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->fetch_all()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-01-25 22:10:20 --> Argument 1 passed to CodeIgniter\Database\BaseBuilder::orderBy() must be of the type string, array given, called in C:\xampp\htdocs\caf\vendor\monken\tablesigniter\src\TablesIgniter.php on line 173
+#0 C:\xampp\htdocs\caf\vendor\monken\tablesigniter\src\TablesIgniter.php(173): CodeIgniter\Database\BaseBuilder->orderBy(Array, 'ASC')
+#1 C:\xampp\htdocs\caf\vendor\monken\tablesigniter\src\TablesIgniter.php(112): monken\TablesIgniter->extraConfig(Object(CodeIgniter\Database\MySQLi\Builder))
+#2 C:\xampp\htdocs\caf\vendor\monken\tablesigniter\src\TablesIgniter.php(184): monken\TablesIgniter->getQuery()
+#3 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(56): monken\TablesIgniter->getDatatable()
+#4 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->fetch_all()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-01-25 22:10:44 --> Argument 1 passed to CodeIgniter\Database\BaseBuilder::orderBy() must be of the type string, array given, called in C:\xampp\htdocs\caf\vendor\monken\tablesigniter\src\TablesIgniter.php on line 173
+#0 C:\xampp\htdocs\caf\vendor\monken\tablesigniter\src\TablesIgniter.php(173): CodeIgniter\Database\BaseBuilder->orderBy(Array, 'ASC')
+#1 C:\xampp\htdocs\caf\vendor\monken\tablesigniter\src\TablesIgniter.php(112): monken\TablesIgniter->extraConfig(Object(CodeIgniter\Database\MySQLi\Builder))
+#2 C:\xampp\htdocs\caf\vendor\monken\tablesigniter\src\TablesIgniter.php(184): monken\TablesIgniter->getQuery()
+#3 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(56): monken\TablesIgniter->getDatatable()
+#4 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->fetch_all()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-01-25 22:10:47 --> Argument 1 passed to CodeIgniter\Database\BaseBuilder::orderBy() must be of the type string, array given, called in C:\xampp\htdocs\caf\vendor\monken\tablesigniter\src\TablesIgniter.php on line 173
+#0 C:\xampp\htdocs\caf\vendor\monken\tablesigniter\src\TablesIgniter.php(173): CodeIgniter\Database\BaseBuilder->orderBy(Array, 'ASC')
+#1 C:\xampp\htdocs\caf\vendor\monken\tablesigniter\src\TablesIgniter.php(112): monken\TablesIgniter->extraConfig(Object(CodeIgniter\Database\MySQLi\Builder))
+#2 C:\xampp\htdocs\caf\vendor\monken\tablesigniter\src\TablesIgniter.php(184): monken\TablesIgniter->getQuery()
+#3 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(56): monken\TablesIgniter->getDatatable()
+#4 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->fetch_all()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-01-25 22:11:12 --> Argument 1 passed to CodeIgniter\Database\BaseBuilder::orderBy() must be of the type string, array given, called in C:\xampp\htdocs\caf\vendor\monken\tablesigniter\src\TablesIgniter.php on line 173
+#0 C:\xampp\htdocs\caf\vendor\monken\tablesigniter\src\TablesIgniter.php(173): CodeIgniter\Database\BaseBuilder->orderBy(Array, 'ASC')
+#1 C:\xampp\htdocs\caf\vendor\monken\tablesigniter\src\TablesIgniter.php(112): monken\TablesIgniter->extraConfig(Object(CodeIgniter\Database\MySQLi\Builder))
+#2 C:\xampp\htdocs\caf\vendor\monken\tablesigniter\src\TablesIgniter.php(184): monken\TablesIgniter->getQuery()
+#3 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(56): monken\TablesIgniter->getDatatable()
+#4 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->fetch_all()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-01-25 22:12:16 --> Argument 1 passed to CodeIgniter\Database\BaseBuilder::orderBy() must be of the type string, array given, called in C:\xampp\htdocs\caf\vendor\monken\tablesigniter\src\TablesIgniter.php on line 173
+#0 C:\xampp\htdocs\caf\vendor\monken\tablesigniter\src\TablesIgniter.php(173): CodeIgniter\Database\BaseBuilder->orderBy(Array, 'ASC')
+#1 C:\xampp\htdocs\caf\vendor\monken\tablesigniter\src\TablesIgniter.php(112): monken\TablesIgniter->extraConfig(Object(CodeIgniter\Database\MySQLi\Builder))
+#2 C:\xampp\htdocs\caf\vendor\monken\tablesigniter\src\TablesIgniter.php(184): monken\TablesIgniter->getQuery()
+#3 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(56): monken\TablesIgniter->getDatatable()
+#4 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->fetch_all()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-01-25 22:12:35 --> Argument 1 passed to CodeIgniter\Database\BaseBuilder::orderBy() must be of the type string, array given, called in C:\xampp\htdocs\caf\vendor\monken\tablesigniter\src\TablesIgniter.php on line 173
+#0 C:\xampp\htdocs\caf\vendor\monken\tablesigniter\src\TablesIgniter.php(173): CodeIgniter\Database\BaseBuilder->orderBy(Array, 'ASC')
+#1 C:\xampp\htdocs\caf\vendor\monken\tablesigniter\src\TablesIgniter.php(112): monken\TablesIgniter->extraConfig(Object(CodeIgniter\Database\MySQLi\Builder))
+#2 C:\xampp\htdocs\caf\vendor\monken\tablesigniter\src\TablesIgniter.php(184): monken\TablesIgniter->getQuery()
+#3 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(56): monken\TablesIgniter->getDatatable()
+#4 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->fetch_all()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-01-25 22:12:52 --> Argument 1 passed to CodeIgniter\Database\BaseBuilder::orderBy() must be of the type string, array given, called in C:\xampp\htdocs\caf\vendor\monken\tablesigniter\src\TablesIgniter.php on line 173
+#0 C:\xampp\htdocs\caf\vendor\monken\tablesigniter\src\TablesIgniter.php(173): CodeIgniter\Database\BaseBuilder->orderBy(Array, 'ASC')
+#1 C:\xampp\htdocs\caf\vendor\monken\tablesigniter\src\TablesIgniter.php(112): monken\TablesIgniter->extraConfig(Object(CodeIgniter\Database\MySQLi\Builder))
+#2 C:\xampp\htdocs\caf\vendor\monken\tablesigniter\src\TablesIgniter.php(184): monken\TablesIgniter->getQuery()
+#3 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(55): monken\TablesIgniter->getDatatable()
+#4 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->fetch_all()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-01-25 22:13:40 --> Argument 1 passed to monken\TablesIgniter::setSearch() must be of the type array, string given, called in C:\xampp\htdocs\caf\app\Controllers\Dashboard.php on line 52
+#0 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(52): monken\TablesIgniter->setSearch('firstname', 'lastname')
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->fetch_all()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}

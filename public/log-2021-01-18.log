@@ -1,0 +1,141 @@
+CRITICAL - 2021-01-18 21:06:38 --> Undefined index: draw
+#0 C:\xampp\htdocs\caf\vendor\monken\tablesigniter\src\TablesIgniter.php(190): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 190, Array)
+#1 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(54): monken\TablesIgniter->getDatatable()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->fetch_all()
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#4 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-01-18 21:07:11 --> Undefined index: draw
+#0 C:\xampp\htdocs\caf\vendor\monken\tablesigniter\src\TablesIgniter.php(190): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 190, Array)
+#1 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(54): monken\TablesIgniter->getDatatable()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->fetch_all()
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#4 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-01-18 21:07:31 --> Undefined index: draw
+#0 C:\xampp\htdocs\caf\vendor\monken\tablesigniter\src\TablesIgniter.php(190): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 190, Array)
+#1 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(54): monken\TablesIgniter->getDatatable()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->fetch_all()
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#4 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-01-18 21:07:45 --> Undefined index: draw
+#0 C:\xampp\htdocs\caf\vendor\monken\tablesigniter\src\TablesIgniter.php(190): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 190, Array)
+#1 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(54): monken\TablesIgniter->getDatatable()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->fetch_all()
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#4 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-01-18 21:07:46 --> Undefined index: draw
+#0 C:\xampp\htdocs\caf\vendor\monken\tablesigniter\src\TablesIgniter.php(190): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 190, Array)
+#1 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(54): monken\TablesIgniter->getDatatable()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->fetch_all()
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#4 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-01-18 21:07:47 --> Undefined index: draw
+#0 C:\xampp\htdocs\caf\vendor\monken\tablesigniter\src\TablesIgniter.php(190): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 190, Array)
+#1 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(54): monken\TablesIgniter->getDatatable()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->fetch_all()
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#4 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-01-18 21:10:53 --> Undefined variable: email
+#0 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(47): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 47, Array)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->fetch_all()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-01-18 21:12:30 --> syntax error, unexpected 'echo' (T_ECHO), expecting ';'
+#0 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Router\Router.php(192): CodeIgniter\Router\Router->autoRoute('dashboard/fetch...')
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(785): CodeIgniter\Router\Router->handle('dashboard/fetch...')
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(358): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-01-18 21:12:31 --> syntax error, unexpected 'echo' (T_ECHO), expecting ';'
+#0 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Router\Router.php(192): CodeIgniter\Router\Router->autoRoute('dashboard/fetch...')
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(785): CodeIgniter\Router\Router->handle('dashboard/fetch...')
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(358): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-01-18 21:12:36 --> Array to string conversion
+#0 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 48, Array)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->fetch_all()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-01-18 21:12:37 --> Array to string conversion
+#0 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 48, Array)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->fetch_all()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-01-18 21:12:38 --> Array to string conversion
+#0 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 48, Array)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->fetch_all()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-01-18 23:32:21 --> Too few arguments to function App\Controllers\Dashboard::loadPetitionList(), 0 passed in C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php on line 910 and exactly 1 expected
+#0 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->loadPetitionList()
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-01-18 23:34:40 --> Undefined property: App\Controllers\Dashboard::$output
+#0 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 55, Array)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->petitionList()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-01-18 23:35:05 --> Undefined property: App\Controllers\Dashboard::$crudModel
+#0 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 56, Array)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->petitionList()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-01-18 23:35:11 --> Undefined property: App\Controllers\Dashboard::$crudModel
+#0 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 56, Array)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->petitionList()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-01-18 23:36:03 --> Undefined property: App\Controllers\Dashboard::$load
+#0 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 55, Array)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->petitionList()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}

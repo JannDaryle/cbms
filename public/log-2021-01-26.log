@@ -1,0 +1,294 @@
+CRITICAL - 2021-01-26 02:50:22 --> Undefined property: App\Controllers\Personnel::$output
+#0 C:\xampp\htdocs\caf\app\Controllers\Personnel.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 65, Array)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Personnel->login()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personnel))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-01-26 02:50:49 --> Undefined property: App\Controllers\Personnel::$output
+#0 C:\xampp\htdocs\caf\app\Controllers\Personnel.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 65, Array)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Personnel->login()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personnel))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-01-26 02:53:09 --> Undefined property: App\Controllers\Personnel::$output
+#0 C:\xampp\htdocs\caf\app\Controllers\Personnel.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 65, Array)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Personnel->login()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personnel))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-01-26 03:22:28 --> Undefined property: App\Controllers\Personnel::$output
+#0 C:\xampp\htdocs\caf\app\Controllers\Personnel.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 65, Array)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Personnel->login()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personnel))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-01-26 03:22:37 --> Undefined property: App\Controllers\Personnel::$output
+#0 C:\xampp\htdocs\caf\app\Controllers\Personnel.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 65, Array)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Personnel->login()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personnel))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-01-26 03:22:40 --> Undefined property: App\Controllers\Personnel::$output
+#0 C:\xampp\htdocs\caf\app\Controllers\Personnel.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 65, Array)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Personnel->login()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personnel))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-01-26 03:22:45 --> Undefined property: App\Controllers\Personnel::$output
+#0 C:\xampp\htdocs\caf\app\Controllers\Personnel.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 65, Array)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Personnel->login()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personnel))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-01-26 03:24:26 --> Undefined property: App\Controllers\Personnel::$output
+#0 C:\xampp\htdocs\caf\app\Controllers\Personnel.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 65, Array)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Personnel->login()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personnel))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-01-26 03:24:58 --> Undefined property: App\Controllers\Personnel::$output
+#0 C:\xampp\htdocs\caf\app\Controllers\Personnel.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 65, Array)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Personnel->login()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personnel))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-01-26 03:25:04 --> Undefined property: App\Controllers\Personnel::$output
+#0 C:\xampp\htdocs\caf\app\Controllers\Personnel.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 65, Array)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Personnel->login()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personnel))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-01-26 03:28:30 --> Undefined property: App\Controllers\Personnel::$output
+#0 C:\xampp\htdocs\caf\app\Controllers\Personnel.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 65, Array)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Personnel->login()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personnel))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-01-26 03:28:42 --> Undefined property: App\Controllers\Personnel::$output
+#0 C:\xampp\htdocs\caf\app\Controllers\Personnel.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 65, Array)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Personnel->login()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personnel))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-01-26 03:28:51 --> Undefined property: App\Controllers\Personnel::$output
+#0 C:\xampp\htdocs\caf\app\Controllers\Personnel.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 65, Array)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Personnel->login()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personnel))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-01-26 03:44:05 --> Undefined property: App\Controllers\Personnel::$output
+#0 C:\xampp\htdocs\caf\app\Controllers\Personnel.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 65, Array)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Personnel->login()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personnel))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-01-26 03:45:47 --> Undefined property: App\Controllers\Personnel::$output
+#0 C:\xampp\htdocs\caf\app\Controllers\Personnel.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 65, Array)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Personnel->login()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personnel))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-01-26 03:50:15 --> Undefined property: App\Controllers\Personnel::$output
+#0 C:\xampp\htdocs\caf\app\Controllers\Personnel.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 65, Array)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Personnel->login()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personnel))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-01-26 03:50:22 --> Undefined property: App\Controllers\Personnel::$output
+#0 C:\xampp\htdocs\caf\app\Controllers\Personnel.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 65, Array)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Personnel->login()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personnel))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-01-26 03:51:45 --> Undefined property: App\Controllers\Personnel::$output
+#0 C:\xampp\htdocs\caf\app\Controllers\Personnel.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 65, Array)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Personnel->login()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personnel))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-01-26 03:57:57 --> Undefined property: App\Controllers\Personnel::$output
+#0 C:\xampp\htdocs\caf\app\Controllers\Personnel.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 65, Array)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Personnel->login()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personnel))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-01-26 04:13:27 --> Undefined property: App\Controllers\Personnel::$output
+#0 C:\xampp\htdocs\caf\app\Controllers\Personnel.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 65, Array)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Personnel->login()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personnel))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-01-26 04:14:15 --> Undefined property: App\Controllers\Personnel::$output
+#0 C:\xampp\htdocs\caf\app\Controllers\Personnel.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 65, Array)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Personnel->login()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personnel))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-01-26 04:15:22 --> Undefined property: App\Controllers\Personnel::$output
+#0 C:\xampp\htdocs\caf\app\Controllers\Personnel.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 65, Array)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Personnel->login()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personnel))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-01-26 04:15:29 --> Undefined property: App\Controllers\Personnel::$output
+#0 C:\xampp\htdocs\caf\app\Controllers\Personnel.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 65, Array)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Personnel->login()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personnel))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-01-26 04:19:44 --> Undefined property: App\Controllers\Personnel::$output
+#0 C:\xampp\htdocs\caf\app\Controllers\Personnel.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 65, Array)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Personnel->login()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personnel))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-01-26 04:20:01 --> Undefined property: App\Controllers\Personnel::$output
+#0 C:\xampp\htdocs\caf\app\Controllers\Personnel.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 65, Array)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Personnel->login()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personnel))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-01-26 04:29:23 --> Undefined property: App\Controllers\Personnel::$output
+#0 C:\xampp\htdocs\caf\app\Controllers\Personnel.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 65, Array)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Personnel->login()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personnel))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-01-26 04:32:26 --> Undefined property: App\Controllers\Personnel::$output
+#0 C:\xampp\htdocs\caf\app\Controllers\Personnel.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 65, Array)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Personnel->login()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personnel))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-01-26 04:43:10 --> Undefined property: App\Controllers\Personnel::$output
+#0 C:\xampp\htdocs\caf\app\Controllers\Personnel.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 65, Array)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Personnel->login()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personnel))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-01-26 04:45:16 --> Undefined property: App\Controllers\Personnel::$output
+#0 C:\xampp\htdocs\caf\app\Controllers\Personnel.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 65, Array)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Personnel->login()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personnel))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-01-26 21:32:57 --> Undefined index: 
+#0 C:\xampp\htdocs\caf\vendor\monken\tablesigniter\src\TablesIgniter.php(133): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 133, Array)
+#1 C:\xampp\htdocs\caf\vendor\monken\tablesigniter\src\TablesIgniter.php(187): monken\TablesIgniter->getOutputData(Array)
+#2 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(55): monken\TablesIgniter->getDatatable()
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->fetch_all()
+#4 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-01-26 21:33:07 --> Undefined index: 
+#0 C:\xampp\htdocs\caf\vendor\monken\tablesigniter\src\TablesIgniter.php(133): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 133, Array)
+#1 C:\xampp\htdocs\caf\vendor\monken\tablesigniter\src\TablesIgniter.php(187): monken\TablesIgniter->getOutputData(Array)
+#2 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(55): monken\TablesIgniter->getDatatable()
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->fetch_all()
+#4 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-01-26 21:33:13 --> Undefined index: 
+#0 C:\xampp\htdocs\caf\vendor\monken\tablesigniter\src\TablesIgniter.php(133): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 133, Array)
+#1 C:\xampp\htdocs\caf\vendor\monken\tablesigniter\src\TablesIgniter.php(187): monken\TablesIgniter->getOutputData(Array)
+#2 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(55): monken\TablesIgniter->getDatatable()
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->fetch_all()
+#4 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2021-01-26 21:39:07 --> syntax error, unexpected '" id="' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+#0 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Router\Router.php(192): CodeIgniter\Router\Router->autoRoute('dashboard')
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(785): CodeIgniter\Router\Router->handle('dashboard')
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(358): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-01-26 21:39:48 --> syntax error, unexpected '" id="' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+#0 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Router\Router.php(192): CodeIgniter\Router\Router->autoRoute('dashboard')
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(785): CodeIgniter\Router\Router->handle('dashboard')
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(358): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-01-26 21:40:02 --> syntax error, unexpected '" id="' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+#0 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Router\Router.php(192): CodeIgniter\Router\Router->autoRoute('dashboard')
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(785): CodeIgniter\Router\Router->handle('dashboard')
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(358): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-01-26 21:40:04 --> syntax error, unexpected '" id="' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+#0 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Router\Router.php(192): CodeIgniter\Router\Router->autoRoute('dashboard')
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(785): CodeIgniter\Router\Router->handle('dashboard')
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(358): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}

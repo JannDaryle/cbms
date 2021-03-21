@@ -1,0 +1,181 @@
+CRITICAL - 2021-03-10 01:34:53 --> Function name must be a string
+#0 C:\xampp\htdocs\cbms\vendor\monken\tablesigniter\src\TablesIgniter.php(187): monken\TablesIgniter->getOutputData(Array)
+#1 C:\xampp\htdocs\cbms\app\Controllers\Dashboard.php(54): monken\TablesIgniter->getDatatable()
+#2 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->get_table_1()
+#3 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#4 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\cbms\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-03-10 01:34:59 --> Function name must be a string
+#0 C:\xampp\htdocs\cbms\vendor\monken\tablesigniter\src\TablesIgniter.php(187): monken\TablesIgniter->getOutputData(Array)
+#1 C:\xampp\htdocs\cbms\app\Controllers\Dashboard.php(54): monken\TablesIgniter->getDatatable()
+#2 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->get_table_1()
+#3 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#4 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\cbms\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-03-10 01:35:38 --> Function name must be a string
+#0 C:\xampp\htdocs\cbms\vendor\monken\tablesigniter\src\TablesIgniter.php(187): monken\TablesIgniter->getOutputData(Array)
+#1 C:\xampp\htdocs\cbms\app\Controllers\Dashboard.php(54): monken\TablesIgniter->getDatatable()
+#2 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->get_table_1()
+#3 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#4 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\cbms\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-03-10 01:36:33 --> Function name must be a string
+#0 C:\xampp\htdocs\cbms\vendor\monken\tablesigniter\src\TablesIgniter.php(187): monken\TablesIgniter->getOutputData(Array)
+#1 C:\xampp\htdocs\cbms\app\Controllers\Dashboard.php(54): monken\TablesIgniter->getDatatable()
+#2 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->get_table_1()
+#3 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#4 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\cbms\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-03-10 01:36:36 --> Function name must be a string
+#0 C:\xampp\htdocs\cbms\vendor\monken\tablesigniter\src\TablesIgniter.php(187): monken\TablesIgniter->getOutputData(Array)
+#1 C:\xampp\htdocs\cbms\app\Controllers\Dashboard.php(54): monken\TablesIgniter->getDatatable()
+#2 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->get_table_1()
+#3 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#4 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\cbms\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-03-10 02:31:13 --> Undefined index: firstname
+#0 C:\xampp\htdocs\cbms\app\Controllers\Personnel.php(89): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 89, Array)
+#1 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Personnel->delete_data_bpq_tables()
+#2 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personnel))
+#3 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\cbms\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-03-10 03:22:12 --> Array to string conversion
+#0 C:\xampp\htdocs\cbms\app\Controllers\Personnel.php(92): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 92, Array)
+#1 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Personnel->delete_data_bpq_tables()
+#2 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personnel))
+#3 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\cbms\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-03-10 03:30:08 --> Undefined index: submit_table_1
+#0 C:\xampp\htdocs\cbms\app\Controllers\Personnel.php(91): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 91, Array)
+#1 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Personnel->delete_data_bpq_tables()
+#2 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personnel))
+#3 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\cbms\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-03-10 03:30:40 --> Unknown column 'ahahaha' in 'where clause'
+#0 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(330): mysqli->query('UPDATE `bpq_tab...')
+#1 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `bpq_tab...')
+#2 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `bpq_tab...')
+#3 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2410): CodeIgniter\Database\BaseConnection->query('UPDATE `bpq_tab...', Array, false)
+#4 C:\xampp\htdocs\cbms\app\Controllers\Personnel.php(92): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Personnel->delete_data_bpq_tables()
+#6 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personnel))
+#7 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\cbms\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-03-10 03:31:24 --> Unknown column 'ahahaha' in 'where clause'
+#0 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(330): mysqli->query('UPDATE `bpq_tab...')
+#1 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `bpq_tab...')
+#2 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `bpq_tab...')
+#3 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2410): CodeIgniter\Database\BaseConnection->query('UPDATE `bpq_tab...', Array, false)
+#4 C:\xampp\htdocs\cbms\app\Controllers\Personnel.php(92): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Personnel->delete_data_bpq_tables()
+#6 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personnel))
+#7 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\cbms\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-03-10 03:57:29 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::where_in()
+#0 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Personnel->delete_data_bpq_tables()
+#1 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personnel))
+#2 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\cbms\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-03-10 04:00:12 --> Argument 1 passed to CodeIgniter\Database\BaseBuilder::whereIn() must be of the type string or null, array given, called in C:\xampp\htdocs\cbms\app\Controllers\Personnel.php on line 92
+#0 C:\xampp\htdocs\cbms\app\Controllers\Personnel.php(92): CodeIgniter\Database\BaseBuilder->whereIn(Array)
+#1 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Personnel->delete_data_bpq_tables()
+#2 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personnel))
+#3 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\cbms\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-03-10 04:30:43 --> Function name must be a string
+#0 C:\xampp\htdocs\cbms\vendor\monken\tablesigniter\src\TablesIgniter.php(187): monken\TablesIgniter->getOutputData(Array)
+#1 C:\xampp\htdocs\cbms\app\Controllers\Dashboard.php(69): monken\TablesIgniter->getDatatable()
+#2 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->get_table_2()
+#3 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#4 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\cbms\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-03-10 04:32:38 --> Function name must be a string
+#0 C:\xampp\htdocs\cbms\vendor\monken\tablesigniter\src\TablesIgniter.php(187): monken\TablesIgniter->getOutputData(Array)
+#1 C:\xampp\htdocs\cbms\app\Controllers\Dashboard.php(69): monken\TablesIgniter->getDatatable()
+#2 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->get_table_2()
+#3 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#4 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\cbms\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-03-10 04:34:50 --> Function name must be a string
+#0 C:\xampp\htdocs\cbms\vendor\monken\tablesigniter\src\TablesIgniter.php(187): monken\TablesIgniter->getOutputData(Array)
+#1 C:\xampp\htdocs\cbms\app\Controllers\Dashboard.php(70): monken\TablesIgniter->getDatatable()
+#2 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->get_table_2()
+#3 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#4 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\cbms\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-03-10 04:36:05 --> Function name must be a string
+#0 C:\xampp\htdocs\cbms\vendor\monken\tablesigniter\src\TablesIgniter.php(187): monken\TablesIgniter->getOutputData(Array)
+#1 C:\xampp\htdocs\cbms\app\Controllers\Dashboard.php(70): monken\TablesIgniter->getDatatable()
+#2 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->get_table_2()
+#3 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#4 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\cbms\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-03-10 04:36:27 --> Function name must be a string
+#0 C:\xampp\htdocs\cbms\vendor\monken\tablesigniter\src\TablesIgniter.php(187): monken\TablesIgniter->getOutputData(Array)
+#1 C:\xampp\htdocs\cbms\app\Controllers\Dashboard.php(70): monken\TablesIgniter->getDatatable()
+#2 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->get_table_2()
+#3 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#4 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\cbms\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-03-10 04:37:31 --> Function name must be a string
+#0 C:\xampp\htdocs\cbms\vendor\monken\tablesigniter\src\TablesIgniter.php(187): monken\TablesIgniter->getOutputData(Array)
+#1 C:\xampp\htdocs\cbms\app\Controllers\Dashboard.php(70): monken\TablesIgniter->getDatatable()
+#2 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->get_table_2()
+#3 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#4 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\cbms\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-03-10 04:48:18 --> Undefined offset: 1
+#0 C:\xampp\htdocs\cbms\vendor\monken\tablesigniter\src\TablesIgniter.php(154): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 154, Array)
+#1 C:\xampp\htdocs\cbms\vendor\monken\tablesigniter\src\TablesIgniter.php(112): monken\TablesIgniter->extraConfig(Object(CodeIgniter\Database\MySQLi\Builder))
+#2 C:\xampp\htdocs\cbms\vendor\monken\tablesigniter\src\TablesIgniter.php(184): monken\TablesIgniter->getQuery()
+#3 C:\xampp\htdocs\cbms\app\Controllers\Dashboard.php(70): monken\TablesIgniter->getDatatable()
+#4 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->get_table_2()
+#5 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\cbms\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-03-10 04:57:32 --> Undefined property: App\Controllers\Personnel::$output
+#0 C:\xampp\htdocs\cbms\app\Controllers\Personnel.php(179): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 179, Array)
+#1 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Personnel->login()
+#2 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personnel))
+#3 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\cbms\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}

@@ -1,0 +1,211 @@
+CRITICAL - 2021-02-04 00:17:42 --> Undefined offset: 0
+#0 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(191): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 191, Array)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->sendMail()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-02-04 00:17:43 --> Undefined offset: 0
+#0 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(314): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 314, Array)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->sendMail_follow_up()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-02-04 00:28:22 --> Undefined offset: 0
+#0 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(191): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 191, Array)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->sendMail()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-02-04 00:28:24 --> Undefined offset: 0
+#0 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(314): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 314, Array)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->sendMail_follow_up()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-02-04 00:29:18 --> Undefined offset: 0
+#0 C:\xampp\htdocs\caf\app\Models\Personnel_m.php(157): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 157, Array)
+#1 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(140): App\Models\Personnel_m->delete_users('[]', Array)
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->delete_users()
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#4 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-02-04 00:35:22 --> Undefined offset: 0
+#0 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(191): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 191, Array)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->sendMail()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-02-04 01:42:14 --> Array to string conversion
+#0 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(178): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 178, Array)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->get_email_template_messages('1')
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-02-04 01:56:11 --> Trying to get property 'email_subject' of non-object
+#0 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(235): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 235, Array)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->sendMail()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-02-04 01:56:20 --> Undefined offset: 0
+#0 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(201): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 201, Array)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->sendMail()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-02-04 01:56:31 --> Trying to get property 'email_subject' of non-object
+#0 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(235): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 235, Array)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->sendMail()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-02-04 01:56:37 --> Undefined offset: 0
+#0 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(201): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 201, Array)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->sendMail()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-02-04 01:57:11 --> Trying to get property 'email_subject' of non-object
+#0 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(235): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 235, Array)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->sendMail()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-02-04 01:57:33 --> Trying to get property 'email_subject' of non-object
+#0 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(235): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 235, Array)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->sendMail()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-02-04 01:59:13 --> Invalid argument supplied for foreach()
+#0 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(210): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argumen...', 'C:\\xampp\\htdocs...', 210, Array)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->sendMail()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-02-04 03:57:46 --> Undefined offset: 0
+#0 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(215): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 215, Array)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->sendMail()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-02-04 03:57:48 --> Undefined offset: 0
+#0 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(351): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 351, Array)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->sendMail_follow_up()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-02-04 03:58:30 --> Undefined offset: 0
+#0 C:\xampp\htdocs\caf\app\Models\Personnel_m.php(175): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 175, Array)
+#1 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(154): App\Models\Personnel_m->delete_users('[]', Array)
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->delete_users()
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#4 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-02-04 05:39:53 --> Undefined offset: 0
+#0 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(215): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 215, Array)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->sendMail()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-02-04 05:39:55 --> Undefined offset: 0
+#0 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(351): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 351, Array)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->sendMail_follow_up()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-02-04 21:05:35 --> Array to string conversion
+#0 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(469): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', 'C:\\xampp\\htdocs...', 469, Array)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->update_email_template()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-02-04 21:18:34 --> Undefined offset: 0
+#0 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(215): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 215, Array)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->sendMail()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-02-04 23:24:18 --> Undefined index: send_invite_subject
+#0 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(472): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 472, Array)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->update_email_template()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-02-04 23:25:29 --> Undefined index: send_invite_subject
+#0 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(472): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 472, Array)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->update_email_template()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-02-04 23:35:38 --> Undefined offset: 0
+#0 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(215): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 215, Array)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->sendMail()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-02-04 23:35:39 --> Undefined offset: 0
+#0 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(351): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 351, Array)
+#1 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->sendMail_follow_up()
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-02-04 23:35:42 --> Undefined offset: 0
+#0 C:\xampp\htdocs\caf\app\Models\Personnel_m.php(175): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offse...', 'C:\\xampp\\htdocs...', 175, Array)
+#1 C:\xampp\htdocs\caf\app\Controllers\Dashboard.php(154): App\Models\Personnel_m->delete_users('[]', Array)
+#2 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Dashboard->delete_users()
+#3 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#4 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\caf\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\caf\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#7 {main}
