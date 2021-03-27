@@ -1176,7 +1176,7 @@ PTA. Is there a seaport located in the barangay?
 </div>
 </div>
 
-
+<hr>
 <br>
 <br>
 <h5 class="text-left" style="color: "><b>B. SERVICE INSTITUTIONS AND INFRASTRUCTURE - X. TRANSPORT FACILITY - AIRPORT</b></h5><br> 
@@ -1290,7 +1290,7 @@ G1. Is the Open Dump Site present in the barangay?
   <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>G3. What is the name of the Open Dump Site # 1?</b></label>
   <div class="col-sm-8">
   <input type="text" class="form-control" id="garbage_waste_diposal_dump_name" name="garbage_waste_diposal_dump_name" placeholder="" >
-       </div>
+</div>
 </div>
 
 <div class="form-group row">
@@ -1391,6 +1391,7 @@ G1. Is the Open Dump Site present in the barangay?
       </div>           
 
 
+<hr>
 <br>
 <h5 class="text-left" style="color: "><b>B. SERVICE INSTITUTIONS AND INFRASTRUCTURE - GARBAGE AND WASTE DISPOSAL - SANITARY AND LAND FILL</b></h5><br> 
 
@@ -1519,6 +1520,8 @@ G1. Is the Sanitary Land Fill present in the barangay?
       </div>     
       </div>   
 
+
+<hr>
 <br>
 <h5 class="text-left" style="color: "><b>B. SERVICE INSTITUTIONS AND INFRASTRUCTURE - GARBAGE AND WASTE DISPOSAL - COMPOST PITS</b></h5><br> 
 
@@ -1648,6 +1651,7 @@ G1. Is the Compost Pits present in the barangay?
       </div>   
 
 
+<hr>
 <br>
 <h5 class="text-left" style="color: "><b>B. SERVICE INSTITUTIONS AND INFRASTRUCTURE - GARBAGE AND WASTE DISPOSAL - MATERIAL RECOVERY FACILITY (MRF)</b></h5><br> 
 
@@ -1774,6 +1778,8 @@ G1. Is the Material Recovery Facility (MRF) present in the barangay?
       </div>     
       </div>   
 
+
+<hr>
 <br>
 <h5 class="text-left" style="color: "><b>B. SERVICE INSTITUTIONS and INFRASTRUCTURE - GARBAGE AND WASTE DISPOSAL - TREATMENT, STORAGE, AND DISPOSAL (TSD) facility</b></h5><br>  
 
@@ -1903,7 +1909,7 @@ G1. Is the Treatment, storage, and disposal (TSD) facility present in the barang
       </div>   
 
 
-
+<hr>
 <br>
 <h5 class="text-left" style="color: "><b>B. SERVICE INSTITUTIONS AND INFRASTRUCTURE - GARBAGE AND WASTE DISPOSAL - WASTE-TO-ENERGY FACILITY</b></h5><br>  
 
@@ -2031,6 +2037,3217 @@ G1. Is the Waste-to-energy facility present in the barangay?
       <textarea class="form-control" rows="3" cols="1" id="notes_garbage_waste_diposal_energy_1"></textarea>
       </div>     
       </div>   
+
+
+<hr>
+<br>
+<h5 class="text-left" style="color: "><b>B. SERVICE INSTITUTIONS AND INFRASTRUCTURE - GARBAGE AND WASTE DISPOSAL - SEWAGE TREATMENT PLANT</b></h5><br>  
+
+
+<div class="text-left"><h5>
+G1. Is the Sewage treatment plant facility present in the barangay?
+</h5></div> 
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_sewage"  data-val="Yes" value="Yes">Yes<br>
+                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_sewage"  data-val="No" value="No">No
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div>  
+
+
+<div class="garbage_waste_diposal_sewage_repeat" hidden=""> 
+
+<br>
+<div class="text-left"><h5>GARBAGE AND WASTE DISPOSAL - Sewage treatment plant</h5>
+
+<br>
+<div class="form-group row">
+  <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>G3. What is the name of the Sewage treatment plant # 1?</b></label>
+  <div class="col-sm-8">
+  <input type="text" class="form-control" id="garbage_waste_diposal_sewage_name" name="garbage_waste_diposal_sewage_name" placeholder="" >
+       </div>
+</div>
+
+<div class="form-group row">
+    <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>G4. Building name of</b></label>
+    <div class="col-sm-8">
+      <input type="text" class="form-control" id="garbage_waste_diposal_sewage_building" name="garbage_waste_diposal_sewage_building" placeholder="" >
+    </div>
+</div>
+
+<div class="form-group row">
+    <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>G4.1 Complete address of</b></label>
+    <div class="col-sm-8">
+      <input type="text" class="form-control" id="garbage_waste_diposal_sewage_address" name="garbage_waste_diposal_sewage_address" placeholder="" >
+    </div>
+</div>
+
+<div class="form-group row">
+    <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>G5. Who operates the ?</b></label>
+</div>            
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_sewage_operates_yes">PRIVATE<br>
+                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_sewage_operates_yes">NATIONAL GOVERNMENT<br> 
+                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_sewage_operates_yes">PROVINCIAL GOVERNMENT<br> 
+                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_sewage_operates_yes">CITY/MUNICIPAL GOVERNMENT<br> 
+                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_sewage_operates_yes">BARANGAY<br> 
+                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_sewage_operates_yes">GOCC<br>
+                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_sewage_operates_yes">NONE<br> 
+                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_sewage_operates_yes">DON'T KNOW<br>
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div> 
+
+
+      <br>
+      <div class="form-group row">
+      <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>Notes for SECTION: GARBAGE AND WASTE DISPOSAL - Sewage treatment plant</b></label> 
+      <textarea class="form-control" rows="3" cols="1" id="notes_garbage_waste_diposal_sewage_1"></textarea>
+      </div> 
+
+</div>
+</div>    
+
+<br>
+<div class="garbage_waste_diposal_sewage_repeat_no" hidden=""> 
+
+<div class="form-group row">
+<label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>G2. What is the distance of the barangay hall to the nearest facility(in kms)?</b></label>
+</div>  
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_sewage_distance_if_3">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)<br>
+                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_sewage_distance_if_4">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)<br> 
+                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_sewage_distance_if_3">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY<br> 
+                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_sewage_distance_if_4">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY<br> 
+                        <input class="form-check-input" type="radio" name="">DON'T KNOW<br> 
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div>   
+
+<br>
+<div class="form-group row">
+<label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>G6. Who operates the facility?</b></label>
+</div>  
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_sewage_distance_operates_no">PRIVATE<br>
+                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_sewage_distance_operates_no">NATIONAL GOVERNMENT<br> 
+                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_sewage_distance_operates_no">PROVINCIAL GOVERNMENT<br> 
+                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_sewage_distance_operates_no">CITY/MUNICIPAL GOVERNMENT<br> 
+                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_sewage_distance_operates_no">BARANGAY<br> 
+                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_sewage_distance_operates_no">GOCC<br>
+                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_sewage_distance_operates_no">NONE<br> 
+                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_sewage_distance_operates_no">DON'T KNOW<br>
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div>        
+
+
+      <br>
+      <div class="form-group row">
+      <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>Notes for SECTION: GARBAGE AND WASTE DISPOSAL - Sewage treatment plant</b></label> 
+      <textarea class="form-control" rows="3" cols="1" id="notes_garbage_waste_diposal_sewage_1"></textarea>
+      </div>     
+      </div>   
+
+<hr>
+<br>
+<h5 class="text-left" style="color: "><b>B. SERVICE INSTITUTIONS AND INFRASTRUCTURE - WASTE COLLECTION EQUIPMENT</b></h5><br> 
+
+<div class="text-left"><h5>
+WD1. Are the following waste collection equipment available in the barangay?
+</h5></div>  
+
+<br>
+<div class="text-left"><h6><b>TYPE OF WASTE COLLECTION EQUIPMENT</b></h6>
+</div>
+
+<br>
+<div class="text-left"><h5>
+A. Collection Trucks?
+</h5></div>  
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                        <input class="form-check-input" type="radio" name="collection_trucks"  data-val="Yes" value="Yes">Yes<br>
+                        <input class="form-check-input" type="radio" name="collection_trucks"  data-val="No" value="No">No
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div>  
+
+<div class="collection_trucks_count_repeat" hidden=""> 
+
+<br>
+<div class="form-group row">
+  <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>WD2. How many units are owned and are being used by the barangay?</b></label>
+  <div class="row-sm-8">
+  <input type="number" class="form-control" id="collection_trucks_count" name="collection_trucks_count" placeholder="">
+  </div> 
+</div>
+</div>          
+
+<br>
+<div class="text-left"><h5>
+B. Waste Collection Bins?
+</h5></div>  
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                        <input class="form-check-input" type="radio" name="collection_bins"  data-val="Yes" value="Yes">Yes<br>
+                        <input class="form-check-input" type="radio" name="collection_bins"  data-val="No" value="No">No
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div>  
+
+<div class="collection_bins_count_repeat" hidden=""> 
+
+<br>
+<div class="form-group row">
+  <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>WD2. How many units are owned and are being used by the barangay?</b></label>
+  <div class="row-sm-8">
+  <input type="number" class="form-control" id="collection_bins_count" name="collection_bins_count" placeholder="">
+  </div> 
+</div>
+</div>     
+
+
+<br>
+<div class="text-left"><h5>
+C. Incinerator?
+</h5></div>  
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                        <input class="form-check-input" type="radio" name="collection_incinerator"  data-val="Yes" value="Yes">Yes<br>
+                        <input class="form-check-input" type="radio" name="collection_incinerator"  data-val="No" value="No">No
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div>  
+
+<div class="collection_incinerator_count_repeat" hidden=""> 
+
+<br>
+<div class="form-group row">
+  <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>WD2. How many units are owned and are being used by the barangay?</b></label>
+  <div class="row-sm-8">
+  <input type="number" class="form-control" id="collection_incinerator_count" name="collection_incinerator_count" placeholder="">
+  </div> 
+</div>
+</div>  
+
+
+<br>
+<div class="text-left"><h5>
+D. Others, Specify
+</h5></div>  
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                        <input class="form-check-input" type="radio" name="collection_others"  data-val="Yes" value="Yes">Yes<br>
+                        <input class="form-check-input" type="radio" name="collection_others"  data-val="No" value="No">No
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div>  
+
+<div class="collection_others_specify_repeat" hidden=""> 
+
+<br>
+ 
+<div class="form-group row">
+  <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>Please Specify:</b></label>
+  <div class="col-sm-8">
+  <input type="text" class="form-control" id="collection_others_specify" name="collection_others_specify" placeholder="" >
+</div>
+</div>
+
+<br>
+<div class="form-group row">
+  <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>WD2. How many units are owned and are being used by the barangay?</b></label>
+  <div class="col-sm-4">
+  <input type="number" class="form-control" id="garbage_waste_diposal_dump_name" name="garbage_waste_diposal_dump_name" placeholder="" >
+</div>
+</div>
+
+</div>  
+
+<br>
+<h5 class="text-left" style="color: ">WD3. Who collects the garbage from households?</h5><br>  
+
+<div class="text-left"><h6>
+<b>WD3. Who collects the garbage from households? <br>
+A. Biodegradable/compostable</b>
+</h6></div>  
+
+<div class="container"> 
+                    <div class="col-sm-10">
+                          <div class="row">
+                            <label>
+                                
+                                     <input class="form-check-input respo_radio" type="checkbox" name="collector_biodegradable"  data-val="No" value="No">
+                                  &nbsp&nbsp A. MUNICIPAL COLLECTOR
+                               
+                            </label>
+                        </div>
+
+                              <div class="row">
+                            <label>
+                                
+                                     <input class="form-check-input respo_radio" type="checkbox" name="collector_biodegradable"  data-val="No" value="no">
+                                  &nbsp&nbsp  B.  BARANGAY CHAIRMAN
+                               
+                            </label>
+                        </div>
+                      </div>
+              </div>  
+
+               <div class="container">
+               <div class="col-sm-10">
+                        <div class="row">
+                            <label >
+                                
+                                    <input class="form-check-input respo_radio" type="checkbox" name="collector_biodegradable"  data-val="No" value="No">
+                                   &nbsp&nbsp  C. PRIVATE COLLECTOR (ESTABLISHMENT)
+                                 
+                            </label>
+                        </div>
+
+                            <div class="row">
+                            <label>
+                                    <input class="form-check-input respo_radio" type="checkbox" name="collector_biodegradable"  data-val="No" value="No">
+                                  &nbsp&nbsp D. "BOTE DYARYO", WASTE PICKERS OR GARBAGE SCAVENGERS
+                            </label>
+
+                         </div> 
+                         <div class="row">
+                            <label>
+                                
+                                    <input class="form-check-input respo_radio" type="checkbox" name="collector_biodegradable"  data-val="Yes" value="Yes">
+                                   &nbsp&nbsp E. OTHERS (Specify)
+                                 
+                            </label>
+                        </div>
+
+                      </div>
+                      </div> 
+
+<div class="collector_biodegradable_specify_repeat" hidden=""> 
+
+<br>
+<div class="form-group row">
+  <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>Please Specify:</b></label>
+  <div class="col-sm-8">
+  <input type="text" class="form-control" id="collector_biodegradable_specify" name="collector_biodegradable_specify" placeholder="" >
+
+</div>
+</div>
+</div>
+
+<br>
+<div class="text-left"><h6>
+<b>WD3. Who collects the garbage from households? <br>
+ B. Recyclables</b>
+</h6></div>  
+
+<div class="container"> 
+                    <div class="col-sm-10">
+                          <div class="row">
+                            <label>
+                                
+                                     <input class="form-check-input respo_radio" type="checkbox" name="collector_recyclables"  data-val="No" value="No">
+                                  &nbsp&nbsp A. MUNICIPAL COLLECTOR
+                               
+                            </label>
+                        </div>
+
+                              <div class="row">
+                            <label>
+                                
+                                     <input class="form-check-input respo_radio" type="checkbox" name="collector_recyclables"  data-val="No" value="No">
+                                  &nbsp&nbsp  B.  BARANGAY CHAIRMAN
+                               
+                            </label>
+                        </div>
+                      </div>
+              </div>  
+
+               <div class="container">
+               <div class="col-sm-10">
+                        <div class="row">
+                            <label >
+                                
+                                    <input class="form-check-input respo_radio" type="checkbox" name="collector_recyclables"  data-val="No" value="No">
+                                   &nbsp&nbsp  C. PRIVATE COLLECTOR (ESTABLISHMENT)
+                                 
+                            </label>
+                        </div>
+
+                            <div class="row">
+                            <label>
+                                    <input class="form-check-input respo_radio" type="checkbox" name="collector_recyclables"  data-val="No" value="No">
+                                  &nbsp&nbsp D. "BOTE DYARYO", WASTE PICKERS OR GARBAGE SCAVENGERS
+                            </label>
+
+                         </div> 
+                         <div class="row">
+                            <label>
+                                
+                                    <input class="form-check-input respo_radio" type="checkbox" name="collector_recyclables"  data-val="Yes" value="Yes">
+                                   &nbsp&nbsp E. OTHERS (Specify)
+                                 
+                            </label>
+                        </div>
+
+                      </div>
+                      </div> 
+
+<div class="collector_recyclables_specify_repeat" hidden=""> 
+
+<br>
+<div class="form-group row">
+  <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>Please Specify:</b></label>
+  <div class="col-sm-8">
+  <input type="text" class="form-control" id="collector_recyclables_specify" name="collector_recyclables_specify" placeholder="" >
+
+</div>
+</div>
+</div>
+
+
+
+<br>
+<div class="text-left"><h6>
+<b>WD3. Who collects the garbage from households? <br> 
+C. Residuals (nonhazardous industrial waste)</b>
+</h6></div>  
+
+<div class="container"> 
+                    <div class="col-sm-10">
+                          <div class="row">
+                            <label>
+                                
+                                     <input class="form-check-input respo_radio" type="checkbox" name="collector_residuals"  data-val="No" value="No">
+                                  &nbsp&nbsp A. MUNICIPAL COLLECTOR
+                               
+                            </label>
+                        </div>
+
+                              <div class="row">
+                            <label>
+                                
+                                     <input class="form-check-input respo_radio" type="checkbox" name="collector_residuals"  data-val="No" value="No">
+                                  &nbsp&nbsp  B.  BARANGAY CHAIRMAN
+                               
+                            </label>
+                        </div>
+                      </div>
+              </div>  
+
+               <div class="container">
+               <div class="col-sm-10">
+                        <div class="row">
+                            <label >
+                                
+                                    <input class="form-check-input respo_radio" type="checkbox" name="collector_residuals"  data-val="No" value="No">
+                                   &nbsp&nbsp  C. PRIVATE COLLECTOR (ESTABLISHMENT)
+                                 
+                            </label>
+                        </div>
+
+                            <div class="row">
+                            <label>
+                                    <input class="form-check-input respo_radio" type="checkbox" name="collector_residuals"  data-val="No" value="No">
+                                  &nbsp&nbsp D. "BOTE DYARYO", WASTE PICKERS OR GARBAGE SCAVENGERS
+                            </label>
+
+                         </div> 
+                         <div class="row">
+                            <label>
+                                
+                                    <input class="form-check-input respo_radio" type="checkbox" name="collector_residuals"  data-val="Yes" value="Yes">
+                                   &nbsp&nbsp E. OTHERS (Specify)
+                                 
+                            </label>
+                        </div>
+
+                      </div>
+                      </div> 
+
+<div class="collector_residuals_specify_repeat" hidden=""> 
+
+<br>
+<div class="form-group row">
+  <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>Please Specify:</b></label>
+  <div class="col-sm-8">
+  <input type="text" class="form-control" id="collector_residuals_specify" name="collector_residuals_specify" placeholder="" >
+
+</div>
+</div>
+</div> 
+
+
+
+<br>
+<div class="text-left"><h6>
+<b>WD4. How often are garbage collected from households?</b>
+</h6></div>  
+
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                       <input class="form-check-input" type="radio" name="collector_how_often_question" data-val="No" value="No">DAILY<br> 
+                       <input class="form-check-input" type="radio" name="collector_how_often_question" data-val="No" value="No">THRICE A WEEK<br> 
+                       <input class="form-check-input" type="radio" name="collector_how_often_question" data-val="No" value="No">TWICE A WEEK<br> 
+                       <input class="form-check-input" type="radio" name="collector_how_often_question" data-val="No" value="No">ONCE A WEEK<br> 
+                       <input class="form-check-input" type="radio" name="collector_how_often_question" data-val="Yes" value="Yes">OTHERS, SPECIFY<br>
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div> 
+
+
+<div class="collector_how_often_question_specify_repeat" hidden=""> 
+
+<br>
+<div class="form-group row">
+  <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>Please Specify:</b></label>
+  <div class="col-sm-8">
+ <input type="text" class="form-control" id="collector_how_often_question_specify" name="collector_how_often_question_specify" placeholder="" > 
+</div>
+</div>
+</div>
+
+
+<br>
+<div class="text-left"><h6>
+<b>WD5. Does the barangay still collect garbage from households even if these are not properly segregated?</b>
+</h6></div>  
+
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                        <input class="form-check-input" type="radio" name="collector_properly_segregated"  data-val="Yes" value="Yes">Yes<br>
+                        <input class="form-check-input" type="radio" name="collector_properly_segregated"  data-val="No" value="No">No
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div>  
+
+
+<br>
+<div class="text-left"><h6>
+<b>WD6. Does the barangay pay the municipal/city/provincial LGU for waste management services?</b>
+</h6></div>  
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                        <input class="form-check-input" type="radio" name="collector_payment"  data-val="Yes" value="Yes">Yes<br>
+                        <input class="form-check-input" type="radio" name="collector_payment"  data-val="No" value="No">No Payment/Fee
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div>  
+
+<div class="collector_amount_repeat" hidden=""> 
+
+<br>
+<div class="form-group row">
+  <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>WD7. How much does the barangay pay for waste management services for the whole year (in Php)?</b></label>
+  <div class="col-sm-4">
+ <input type="number" class="form-control" id="collector_amount" name="collector_amount" placeholder="" > 
+</div>
+</div>
+</div>
+
+
+<br>
+<div class="text-left"><h6>
+<b>WD8. Is the current garbage collection system able to serve the whole barangay?</b>
+</h6></div> 
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                        <input class="form-check-input" type="radio" name="collector_able_to_serve"  data-val="Yes" value="Yes">Yes<br>
+                        <input class="form-check-input" type="radio" name="collector_able_to_serve"  data-val="No" value="No">No
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div>  
+
+<div class="collector_specific_areas_repeat_no" hidden=""> 
+
+<br>
+<div class="form-group row">
+  <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>WD9. What specific areas (zone/purok/sitio) are not reached by the garbage collectors # 1?</b></label>
+  <div class="col-sm-5">
+ <input type="text" class="form-control" id="collector_specific_areas_repeat" name="collector_specific_areas_repeat" placeholder="" > 
+</div>
+</div>
+</div>
+
+
+<hr>
+<br>
+<i style="color: green" class="">Now, I would like to talk about the different mode of transportation in the barangay.</i><br><br>
+
+<br>
+<h5 class="text-left" style="color: "><b>B. SERVICE INSTITUTIONS AND INFRASTRUCTURE - XII. MODE OF TRANSPORTATION</b></h5><br>
+
+
+<div class="text-left"><h5>
+TF1. Is the following mode of transportation available or in operation in the barangay?
+</h5></div>  
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                        <input class="form-check-input" type="radio" name="publictransport1"  data-val="Yes" value="Yes">Yes<br>
+                        <input class="form-check-input" type="radio" name="publictransport1"  data-val="No" value="No">No
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div>  
+
+
+
+<div class="publictransport1_repeat" hidden=""> 
+
+<br>
+<div class="text-left"><h6>
+<b>A. Bus?</b>
+</h6></div>  
+
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                        <input class="form-check-input" type="radio" name="buspb"  data-val="Yes" value="Yes">Yes<br>
+                        <input class="form-check-input" type="radio" name="buspb"  data-val="No" value="No">No
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div>  
+       
+
+<br>
+<div class="text-left"><h6>
+<b>B. Regular Taxi?</b>
+</h6></div>  
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                        <input class="form-check-input" type="radio" name="taxipb"  data-val="Yes" value="Yes">Yes<br>
+                        <input class="form-check-input" type="radio" name="taxipb"  data-val="No" value="No">No
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div>  
+       
+
+
+
+
+<br>
+<div class="text-left"><h6>
+<b>C. TNVS Car (Grab, MiCab, etc)</b>
+</h6></div>  
+
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                        <input class="form-check-input" type="radio" name="grabpb"  data-val="Yes" value="Yes">Yes<br>
+                        <input class="form-check-input" type="radio" name="grabpb"  data-val="No" value="No">No
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div>  
+        
+
+<br>
+<div class="text-left"><h6>
+<b>D. TNVS Motorcycle (Joyride, Angkas, etc)</b>
+</h6></div>  
+
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                        <input class="form-check-input" type="radio" name="joypb"  data-val="Yes" value="Yes">Yes<br>
+                        <input class="form-check-input" type="radio" name="joypb"  data-val="No" value="No">No
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div>  
+        
+
+<br>
+<div class="text-left"><h6>
+<b>E. Van/FX</b>
+</h6></div>  
+
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                        <input class="form-check-input" type="radio" name="vanpb"  data-val="Yes" value="Yes">Yes<br>
+                        <input class="form-check-input" type="radio" name="vanpb"  data-val="No" value="No">No
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div>  
+        
+
+
+<br>
+<div class="text-left"><h6>
+<b>F. Jeepney</b>
+</h6></div>  
+
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                        <input class="form-check-input" type="radio" name="jeeppb"  data-val="Yes" value="Yes">Yes<br>
+                        <input class="form-check-input" type="radio" name="jeeppb"  data-val="No" value="No">No
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div>  
+       
+
+
+<br>
+<div class="text-left"><h6>
+<b>G. Tricycle</b>
+</h6></div>  
+
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                        <input class="form-check-input" type="radio" name="tricpb"  data-val="Yes" value="Yes">Yes<br>
+                        <input class="form-check-input" type="radio" name="tricpb"  data-val="No" value="No">No
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div>  
+       
+
+<br>
+<div class="text-left"><h6>
+<b>H. Pedicab</b>
+</h6></div>  
+
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                        <input class="form-check-input" type="radio" name="pedpb"  data-val="Yes" value="Yes">Yes<br>
+                        <input class="form-check-input" type="radio" name="pedpb"  data-val="No" value="No">No
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div>  
+        
+
+<br>
+<div class="text-left"><h6>
+<b>I. Boat/motorized banca</b>
+</h6></div>  
+
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                        <input class="form-check-input" type="radio" name="boatpb"  data-val="Yes" value="Yes">Yes<br>
+                        <input class="form-check-input" type="radio" name="boatpb"  data-val="No" value="No">No
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div>  
+       
+
+
+<br>
+<div class="text-left"><h6>
+<b>J. Train</b>
+</h6></div>  
+
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                        <input class="form-check-input" type="radio" name="trainpb"  data-val="Yes" value="Yes">Yes<br>
+                        <input class="form-check-input" type="radio" name="trainpb"  data-val="No" value="No">No
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div>  
+        
+
+<br>
+<div class="text-left"><h6>
+<b>K. Motorcycle (habal-habal, skylab)</b>
+</h6></div>  
+
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                        <input class="form-check-input" type="radio" name="motorpb"  data-val="Yes" value="Yes">Yes<br>
+                        <input class="form-check-input" type="radio" name="motorpb"  data-val="No" value="No">No
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div>  
+       
+<br>
+<div class="text-left"><h5>
+Other transport facilities:
+</h5></div> 
+
+<div class="form-group row">
+  <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>L. Other, please specify # 1?</b></label>
+  <div class="col-sm-8">
+  <input type="text" class="form-control" id="other_trans_position" name="other_trans_position" placeholder="" >
+</div>
+</div>
+
+
+<div class="form-group row">
+<label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>Notes for SECTION: Service institutions and infrastructure - Transport Facilities</b></label> 
+<textarea class="form-control" rows="3" cols="1" id="notes_public_vehicle_1"></textarea>
+</div>
+</div>
+
+
+<br>
+<div class="publictransport1_repeat_no" hidden=""> 
+
+<div class="form-group row">
+<label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>G2. What is the distance of the barangay hall to the nearest facility(in kms)?</b></label>
+</div>  
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                        <input class="form-check-input" type="radio" name="distancepb_distance_if_3">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)<br>
+                        <input class="form-check-input" type="radio" name="distancepb_distance_if_4">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)<br> 
+                        <input class="form-check-input" type="radio" name="distancepb_distance_if_3">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY<br> 
+                        <input class="form-check-input" type="radio" name="distancepb_distance_if_4">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY<br> 
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div>   
+
+<br>
+<div class="form-group row">
+<label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>Notes for SECTION: Service institutions and infrastructure - Transport Facilities</b></label> 
+<textarea class="form-control" rows="3" cols="1" id="notes_public_vehicle_1"></textarea>
+</div>
+</div>
+
+
+<hr>
+
+<br>
+<i style="color: green" class="">Now, I would like to talk about the different Information and Communications Technology in the barangay.</i><br><br>
+
+<br>
+<h5 class="text-left" style="color: "><b>INFORMATION AND COMMUNICATIONS TECHNOLOGY</b></h5><br>
+
+<div class="text-left"><h5>
+IT1. Is there an available cellphone network signal in the barangay?
+</h5></div>  
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                        <input class="form-check-input" type="radio" name="network_available_question"  data-val="Yes" value="Yes">Yes<br>
+                        <input class="form-check-input" type="radio" name="network_available_question"  data-val="No" value="No">No
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div>  
+
+<br>
+<div class="network_available_repeat" hidden=""> 
+
+<div class="text-left"><h6>
+<b>IT1.1 What is the available cellphone network signal in the barangay?</b>
+</h6></div>  
+
+<div class="container"> 
+                    <div class="col-sm-10">
+                          <div class="row">
+                            <label>
+                                
+                                    <input class="form-check-input respo_radio" type="checkbox" name="network_available"  data-val="Yes" value="Yes">
+                                  &nbsp&nbsp 2G (E or G)
+                               
+                            </label>
+                        </div>
+
+                              <div class="row">
+                            <label>
+                                
+                                     <input class="form-check-input respo_radio" type="checkbox" name="network_available"  data-val="Yes" value="Yes">
+                                  &nbsp&nbsp 3G (H or 3G+ or H+)
+                               
+                            </label>
+                        </div>
+                      </div>
+              </div>  
+
+               <div class="container">
+               <div class="col-sm-10">
+                        <div class="row">
+                            <label >
+                                
+                                    <input class="form-check-input respo_radio" type="checkbox" name="network_available"  data-val="Yes" value="Yes">
+                                   &nbsp&nbsp  4G (LTE or 4G+ or LTE-A)
+                                 
+                            </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+<br>                  
+<div class="text-left"><h5>
+IT2. Is there an existing telecommunication/cellular tower/s in the barangay?
+</h5></div>
+
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                        <input class="form-check-input" type="radio" name="existing_telcom"  data-val="Yes" value="Yes">Yes<br>
+                        <input class="form-check-input" type="radio" name="existing_telcom"  data-val="No" value="No">No
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div>  
+
+
+<br>
+<div class="existing_telcom_repeat" hidden=""> 
+
+<br>
+<div class="form-group row">
+  <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>IT3. How many are the existing telecommunication/cellular tower/s in the barangay?</b></label>
+  <div class="row-sm-8">
+  <input type="number" class="form-control" id="how_many_telcom" name="how_many_telcom" placeholder="">
+  </div> 
+</div>
+</div>          
+
+
+<br>                  
+<div class="text-left"><h5>
+IT4. Is free WiFi available in the barangay?
+</h5></div>
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                        <input class="form-check-input" type="radio" name="wifi_availability"  data-val="Yes" value="Yes">Yes<br>
+                        <input class="form-check-input" type="radio" name="wifi_availability"  data-val="No" value="No">No
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div>  
+
+
+<br>
+<div class="wifi_availability_repeat" hidden=""> 
+
+<div class="text-left"><h6>
+<b>IT5. Who provides the free Wi-Fi in the barangay?</b>
+</h6></div>  
+
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                        <input class="form-check-input" type="radio" name="who_provides_wifi"  data-val="Yes" value="Yes">PRIVATELY-OWNED<br>
+                        <input class="form-check-input" type="radio" name="who_provides_wifi"  data-val="No" value="No">GOVERNMENTLY-OWNED
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div> 
+        </div>
+
+
+<br>                  
+<div class="text-left"><h5>
+IT6. Which of the following ICT equipment in the barangay can be used by the public for free?
+</h5></div>
+
+<div class="container"> 
+                    <div class="col-sm-10">
+                          <div class="row">
+                            <label>
+                                
+                                     <input class="form-check-input respo_radio" type="checkbox" name="ict_equipment_free"  data-val="Yes" value="Yes">
+                                  &nbsp&nbsp TELEPHONES/CELLPHONES
+                               
+                            </label>
+                        </div>
+
+                              <div class="row">
+                            <label>
+                                
+                                     <input class="form-check-input respo_radio" type="checkbox" name="ict_equipment_free"  data-val="Yes" value="Yes">
+                                  &nbsp&nbsp  COMPUTERS (DESKTOP,LAPTOP,TABLET)
+                               
+                            </label>
+                        </div>
+                      </div>
+              </div>  
+
+               <div class="container">
+               <div class="col-sm-10">
+                        <div class="row">
+                            <label >
+                                
+                                    <input class="form-check-input respo_radio" type="checkbox" name="ict_equipment_free"  data-val="Yes" value="Yes">
+                                   &nbsp&nbsp  FAX MACHINES
+                                 
+                            </label>
+                        </div>
+
+                            <div class="row">
+                            <label>
+                                    <input class="form-check-input respo_radio" type="checkbox" name="ict_equipment_free"  data-val="Yes" value="Yes">
+                                  &nbsp&nbsp PRINTERS
+                            </label>
+
+                         </div> 
+                          <div class="row">
+                            <label>
+                                    <input class="form-check-input respo_radio" type="checkbox" name="ict_equipment_free"  data-val="Yes" value="Yes">
+                                  &nbsp&nbsp AUDIO-VISUAL EQUIPMENT (PROJECTOR, MICROPHONE, SPEAKER)
+                            </label>
+
+                         </div> 
+                         <div class="row">
+                            <label>
+                                
+                                    <input class="form-check-input respo_radio" type="checkbox" name="ict_equipment_free_specify"  data-val="Yes" value="Yes">
+                                   &nbsp&nbsp OTHERS, SPECIFY
+                                 
+                            </label>
+                        </div> 
+                          <div class="row">
+                            <label>
+                                    <input class="form-check-input respo_radio" type="checkbox" name="ict_equipment_free"  data-val="Yes" value="Yes">
+                                  &nbsp&nbsp NONE
+                            </label>
+
+                         </div> 
+
+                      </div>
+                      </div> 
+
+
+<div class="ict_equipment_free_specify_repeat" hidden=""> 
+
+<br>
+<div class="form-group row">
+  <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>Please Specify:</b></label>
+  <div class="col-sm-8">
+  <input type="text" class="form-control" id="ict_equipment_free_specify" name="ict_equipment_free_specify" placeholder="" >
+</div>
+</div>
+</div>
+
+<br>
+<br>                  
+<div class="text-left"><h5>
+IT7. Are there Fiber Optic Cables installed in the barangay hall?
+</h5></div>
+
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                        <input class="form-check-input" type="radio" name="fiber_optic_barangay"  data-val="Yes" value="Yes">Yes<br>
+                        <input class="form-check-input" type="radio" name="fiber_optic_barangay"  data-val="No" value="No">No
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div> 
+<br>       
+<br>                  
+<div class="text-left"><h5>
+IT8. Does this barangay use computers (desktop, laptop, tablet, etc.) in providing government services such as barangay clearance, community tax certificate, etc.?
+</h5></div>
+         
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                        <input class="form-check-input" type="radio" name="use_ict_in_services"  data-val="Yes" value="Yes">Yes<br>
+                        <input class="form-check-input" type="radio" name="use_ict_in_services"  data-val="No" value="No">No
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div> 
+
+<br>
+<br>                  
+<div class="text-left"><h5>
+IT9. How do residents of the barangay usually fill out their forms for their transactions in the barangay?
+</h5></div>
+         
+
+<div class="container"> 
+                    <div class="col-sm-10">
+                          <div class="row">
+                            <label>
+                                
+                                     <input class="form-check-input respo_radio" type="checkbox" name="fillout_forms_system"  data-val="Yes" value="Yes">
+                                  &nbsp&nbsp MANUAL ACCOMPLISHMENT OF FORMS
+                               
+                            </label>
+                        </div>
+
+                              <div class="row">
+                            <label>
+                                
+                                     <input class="form-check-input respo_radio" type="checkbox" name="fillout_forms_system"  data-val="Yes" value="Yes">
+                                  &nbsp&nbsp  DIRECT ENCODING TO A COMPUTER BY BARANGAY PERSONNEL
+                               
+                            </label>
+                        </div>
+                      </div>
+              </div>  
+
+               <div class="container">
+               <div class="col-sm-10">
+                        <div class="row">
+                            <label >
+                                
+                                    <input class="form-check-input respo_radio" type="checkbox" name="fillout_forms_system"  data-val="Yes" value="Yes">
+                                   &nbsp&nbsp DIRECT ENCODING TO A COMPUTER BY RESIDENT
+                                 
+                            </label>
+                        </div>
+
+                      </div>
+                    </div>
+<br>  
+<br>                  
+<div class="text-left"><h5>
+IT10. Does this barangay maintain a computerized database?
+</h5></div>
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                        <input class="form-check-input" type="radio" name="barangay_database"  data-val="Yes" value="Yes">Yes<br>
+                        <input class="form-check-input" type="radio" name="barangay_database"  data-val="No" value="No">No
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div>  
+
+<br>
+<br>                  
+<div class="text-left"><h5>
+IT11. Does this barangay have a hired IT Personnel?
+</h5></div>
+
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                        <input class="form-check-input" type="radio" name="barangay_it_personnel"  data-val="Yes" value="Yes">Yes<br>
+                        <input class="form-check-input" type="radio" name="barangay_it_personnel"  data-val="No" value="No">No
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div>  
+
+<div class="barangay_it_personnel_repeat" hidden=""> 
+
+<br>                  
+<div class="text-left"><h6>
+<b>IT12. How many IT personnel are working in the barangay performing IT functions?
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="barangay_it_personnel_count" name="barangay_it_personnel_count" placeholder="" >
+</div>
+</div>
+</div>
+
+
+<br>
+<br>                  
+<div class="text-left"><h5>
+IT13. Does this barangay have an official website (gov.ph)? (to disseminate news, provide barangay services, etc.)
+</h5></div>
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                        <input class="form-check-input" type="radio" name="barangay_official_website"  data-val="Yes" value="Yes">Yes<br>
+                        <input class="form-check-input" type="radio" name="barangay_official_website"  data-val="No" value="No">No
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div>  
+
+<div class="barangay_official_website_repeat" hidden=""> 
+
+<br>                  
+<div class="text-left"><h6>
+<b>IT14. What is the official website URL of the barangay?
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="barangay_official_website_url" name="barangay_official_website_url" placeholder="" >
+</div>
+</div>
+</div>
+
+
+<br>
+<br>                  
+<div class="text-left"><h5>
+IT15. Does this barangay have a social media account operated by the LGU?
+</h5></div>
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                        <input class="form-check-input" type="radio" name="barangay_social_media"  data-val="Yes" value="Yes">Yes<br>
+                        <input class="form-check-input" type="radio" name="barangay_social_media"  data-val="No" value="No">No
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div>  
+
+<div class="barangay_social_media_repeat" hidden=""> 
+
+<br>                  
+<div class="text-left"><h6>
+<b>IT16. What is the social media account page URL of the barangay?
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="barangay_social_media_url" name="barangay_social_media_url" placeholder="" >
+</div>
+</div>
+</div>
+
+
+<br>
+<br>                  
+<div class="text-left"><h5>
+IT17. Do you have specific local strategy on new technologies such as use of social media to disseminate information, online selling and buying of goods, use of online facilities to request services from the barangay, etc?
+</h5></div>
+
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                        <input class="form-check-input" type="radio" name="barangay_disseminate_information"  data-val="Yes" value="Yes">Yes<br>
+                        <input class="form-check-input" type="radio" name="barangay_disseminate_information"  data-val="No" value="No">No
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div> 
+
+<div class="barangay_disseminate_information_repeat" hidden=""> 
+
+<br>                  
+<div class="text-left"><h6>
+<b>IT18. Please provide the URL to the document containing the local strategy on new technologies or please attach a photo
+</b></h6></div>   
+
+  <div class="form-group row">
+  <div class="col-sm-5">
+  <input type="text" class="form-control" id="barangay_disseminate_information_url" name="barangay_disseminate_information_url" placeholder="" >
+
+<br>
+<div class="text-left"><h6><b>
+IT18.1 Please provide the photo containing the e-government strategy.</b>
+</h6></div> 
+ 
+
+ <h6>IT18.1 Please attach a photo (if any)</h6>
+ <input type="file" class="btn btn-outline-secondary" name="file" id="barangay_disseminate_information_image"><button type="button" id="barangay_disseminate_information_image" class="btn btn-danger">Upload</button>
+
+
+<br>
+<div class="text-left">
+<br>
+<h6><b>IT18.2 Please provide the file containing the e-government strategy.
+</b></h6></div>
+
+
+<h6>IT18.2 Please attach a file (printed or electronic copy).</h6>
+<input type="file" class="btn btn-outline-secondary" name="file" id="barangay_disseminate_information_file"><button type="button" id="barangay_disseminate_information_file" class="btn btn-danger">Upload</button>
+
+
+</div>
+</div>
+</div>
+
+
+
+<br>
+<br>                  
+<div class="text-left"><h5>
+IT19. Is there an e-Government Strategy or equivalent being implemented by your local/municipal government?
+</h5></div>
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                        <input class="form-check-input" type="radio" name="barangay_egovern"  data-val="Yes" value="Yes">Yes<br>
+                        <input class="form-check-input" type="radio" name="barangay_egovern"  data-val="No" value="No">No
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div> 
+
+
+<div class="barangay_egovern_repeat" hidden=""> 
+
+<br>                  
+<div class="text-left"><h6>
+<b>IT20. Please provide the URL to the document containing the e-government strategy.
+OR Please attach a photo or a file (printed or electronic copy).
+</b></h6></div>   
+
+  <div class="form-group row">
+  <div class="col-sm-5">
+  <input type="text" class="form-control" id="barangay_egovern_url" name="barangay_egovern_url" placeholder="" >
+
+<br>
+<div class="text-left"><h6><b>
+IT20.1 Please provide the photo containing the e-government strategy.</b>
+</h6></div> 
+
+ <h6>IT20.1 Please attach a photo (if any)</h6>
+ <input type="file" class="btn btn-outline-secondary" name="file" id="egovern_image_repeat"><button type="button" id="barangay_disseminate_information_image" class="btn btn-danger">Upload</button>
+
+
+<br>
+<div class="text-left">
+<br>
+<h6><b>IT20.2 Please provide the file containing the e-government strategy.
+</b></h6></div>
+
+<h6>IT20.2 Please attach a file (printed or electronic copy).)</h6>
+<input type="file" class="btn btn-outline-secondary" name="file" id="barangay_egovern_url_image"><button type="button" id="barangay_disseminate_information_file" class="btn btn-danger">Upload</button>
+
+</div>
+</div>
+</div>
+
+<br>
+<br>                  
+<div class="text-left"><h5>IT21. Does this barangay use ICT equipment/ facilities for security purposes? (e.g CCTV, etc.)</h5>
+</div>
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                        <input class="form-check-input" type="radio" name="barangay_cctv_ict"  data-val="Yes" value="Yes">Yes<br>
+                        <input class="form-check-input" type="radio" name="barangay_cctv_ict"  data-val="No" value="No">No
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div>                          
+   
+
+
+
+<hr>
+
+<br>
+<i style="color: green" class="">Now, I would like to talk about the significant events in the barangay.</i><br><br>
+
+
+<hr>
+<br>
+<h5 class="text-left" style="color: "><b>SIGNIFICANT EVENTS IN THE BARANGAY FOR PAST 3 YEARS - CLIMATE-RELATED AND GEOLOGIC EVENTS (01 April 2018 to 31 March 2020)</b></h5><br>   
+
+<div class="text-left"><h6>
+<b>S1. From 01 April 2018 to 31 March 2020, how many times did the event occur and negatively affected the barangay? Put number/s in the line provided.
+</b></h6></div>  
+
+<br>                  
+<div class="text-left"><h5>
+A. Climate-related and geologic events
+</h5></div>
+
+
+<br>
+<div class="row">
+<div class="row-sm-3">
+  <div class="col text-left">
+    <b>typhoon</b>
+<input type="number" class="form-control" id="significant_events_typhoon" name="significant_events_typhoon" placeholder="" >
+   </div>
+ </div>
+
+  <div class="col text-left"> 
+    <div class="row-sm-3">
+  <b>flooding</b>
+  <input type="number" class="form-control" id="significant_events_flooding" name="significant_events_flooding" placeholder="" >
+   </div>       
+  </div>
+
+<div class="col text-left"> 
+  <div class="row-sm-3">
+  <b>flash flood</b>
+  <input type="number" class="form-control" id="significant_events_flash_flood" name="significant_events_flash_flood" placeholder="" >
+   </div>      
+  </div> 
+
+  <div class="col text-left"> 
+    <div class="row-sm-3">
+  <b>drought</b>
+  <input type="number" class="form-control" id="significant_events_drought" name="significant_events_drought" placeholder="" >
+   </div>      
+  </div>
+</div>
+
+
+<!-- endrow -->
+<br>
+<div class="row">
+<div class="row-sm-3">
+  <div class="col text-left">
+    <b>earthquake</b>
+    <input type="number" class="form-control" id="significant_events_earthquake" name="significant_events_earthquake" placeholder="" >
+   </div>
+ </div>
+
+  <div class="col text-left"> 
+    <div class="row-sm-3">
+  <b> volcanic eruption</b>
+  <input type="number" class="form-control" id="significant_events_volcanic_eruption" name="significant_events_volcanic_eruption" placeholder="" >
+   </div>       
+  </div>
+
+<div class="col text-left"> 
+  <div class="row-sm-3">
+  <b>landslide</b>
+  <input type="number" class="form-control" id="significant_events_landslide" name="significant_events_landslide" placeholder="" >
+   </div>      
+  </div> 
+
+  <div class="col text-left"> 
+    <div class="row-sm-3">
+  <b>tsunami</b>
+  <input type="number" class="form-control" id="significant_events_tsunami" name="significant_events_tsunami" placeholder="" >
+   </div>      
+  </div>
+</div>
+
+<br>
+<div class="row">
+  <div class="row-sm-3">
+  <div class="col text-left">
+    <b>forest fire</b>
+    <input type="number" class="form-control" id="significant_events_forest_fire" name="significant_events_forest_fire" placeholder="" >
+   </div>
+ </div>
+</div>
+
+<br>
+<hr>
+<br>
+<br>
+<h5 class="text-left" style="color: "><b>SIGNIFICANT EVENTS IN THE BARANGAY FOR PAST 3 YEARS - ECONOMIC EVENTS (01 April 2018 to 31 March 2020)</b></h5><br>   
+
+              
+<div class="text-left"><h5>
+B. Economic events
+</h5></div>
+
+<br>                  
+<div class="text-left"><h6>
+<b>closure of many small firms
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="significant_events_closure" name="significant_events_closure" placeholder="" >
+</div>
+</div>
+
+<br>                  
+<div class="text-left"><h6>
+<b>mass lay-off
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="significant_events_mass" name="significant_events_mass" placeholder="" >
+</div>
+</div>
+
+<br>                  
+<div class="text-left"><h6>
+<b>opening of large firm/s
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="significant_events_largefirm" name="significant_events_largefirm" placeholder="" >
+</div>
+</div>
+
+
+<br>                  
+<div class="text-left"><h6>
+<b>opening of many small firm/s
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="significant_events_smallfirm" name="significant_events_smallfirm" placeholder="" >
+</div>
+</div>
+
+
+<br>                  
+<div class="text-left"><h6>
+<b>opening of shopping malls
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="significant_events_shoppingmalls" name="significant_events_shoppingmalls" placeholder="" >
+</div>
+</div>
+
+
+<br>                  
+<div class="text-left"><h6>
+<b>opening of fastfood restaurant/s
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="significant_events_fastfood" name="significant_events_fastfood" placeholder="" >
+</div>
+</div>
+
+
+<br>                  
+<div class="text-left"><h6>
+<b>closure of large firms
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="significant_events_closure_large_firms" name="significant_events_closure_large_firms" placeholder="" >
+</div>
+</div>
+<br>
+
+
+<hr>
+<br>
+<h5 class="text-left" style="color: "><b>SIGNIFICANT EVENTS IN THE BARANGAY FOR PAST 3 YEARS - PEACE AND ORDER EVENTS (01 April 2018 to 31 March 2020)</b></h5><br>   
+
+<div class="text-left"><h5>
+C. Peace and order events
+</h5></div>
+
+<br>                  
+<div class="text-left"><h6>
+<b>fire
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="significant_events_fire" name="significant_events_fire" placeholder="" >
+</div>
+</div>
+
+
+<br>                  
+<div class="text-left"><h6>
+<b>armed conflict
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="significant_events_armed_conflict" name="significant_events_armed_conflict" placeholder="" >
+</div>
+</div> 
+<br>
+
+<hr>
+<br>
+<h5 class="text-left" style="color: "><b>SIGNIFICANT EVENTS IN THE BARANGAY FOR PAST 3 YEARS - CLIMATE-RELATED AND GEOLOGIC EVENTS (01 April 2020 to 31 March 2021)</b></h5><br>   
+
+
+<div class="text-left"><h5>
+D. Health and agriculture-related events
+</h5></div>
+
+<br>                  
+<div class="text-left"><h6>
+<b>epidemic
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="significant_events_fire" name="significant_events_fire" placeholder="" >
+</div>
+</div>
+
+
+<br>                  
+<div class="text-left"><h6>
+<b>pest infestation
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="significant_events_armed_conflict" name="significant_events_armed_conflict" placeholder="" >
+</div>
+</div> 
+
+<br>                  
+<div class="text-left"><h6>
+<b>livestock/poultry diseases
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="significant_events_fire" name="significant_events_fire" placeholder="" >
+</div>
+</div>
+
+
+<br>                  
+<div class="text-left"><h6>
+<b>fish kill
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="significant_events_armed_conflict" name="significant_events_armed_conflict" placeholder="" >
+</div>
+</div> 
+
+
+<br>                  
+<div class="text-left"><h5>
+Other health and agriculture-related events
+</h5></div>
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                        <input class="form-check-input" type="radio" name="significant_events_others"  data-val="Yes" value="Yes">Yes<br>
+                        <input class="form-check-input" type="radio" name="significant_events_others"  data-val="No" value="No">No
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div>   
+
+
+<div class="significant_events_others_repeat" hidden=""> 
+
+<br>                  
+<div class="text-left"><h6>
+<b>Please Specify other health and agriculture-related events # 1?
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="significant_events_others_specify" name="significant_events_others_specify" placeholder="" >
+</div>
+</div>
+
+<br>                  
+<div class="text-left"><h6>
+<b>Significant event count of
+</b></h6></div> 
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="significant_events_others_count" name="significant_events_others_count" placeholder="" >
+</div>
+</div>
+</div>
+
+<br>                  
+<div class="text-left"><h5>
+S2. Based on report to barangay, what are the main reasons for the closure of firms during the period (01 April 2018 to 31 March 2020)?
+</h5></div>
+
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="reason_of_closure" name="reason_of_closure" placeholder="" >
+</div>
+</div>
+<br>
+
+
+<hr>
+<br>
+<h5 class="text-left" style="color: "><b>SIGNIFICANT EVENTS IN THE BARANGAY FOR PAST 3 YEARS - CLIMATE-RELATED AND GEOLOGIC EVENTS (01 April 2020 to 31 March 2021)</b></h5><br>   
+
+<div class="text-left"><h6>
+<b>S3. From 01 April 2020 to 31 March 2021, how many times did the event occur or affected the barangay?
+</b></h6></div>  
+
+<br>                  
+<div class="text-left"><h5>
+Climate-related and geologic events
+</h5></div>
+
+
+<br>
+<div class="row">
+<div class="row-sm-3">
+  <div class="col text-left">
+    <b>typhoon</b>
+<input type="number" class="form-control" id="significant_events_typhoon2" name="significant_events_typhoon2" placeholder="" >
+   </div>
+ </div>
+
+  <div class="col text-left"> 
+    <div class="row-sm-3">
+  <b>flooding</b>
+  <input type="number" class="form-control" id="significant_events_flooding2" name="significant_events_flooding2" placeholder="" >
+   </div>       
+  </div>
+
+<div class="col text-left"> 
+  <div class="row-sm-3">
+  <b>flash flood</b>
+  <input type="number" class="form-control" id="significant_events_flash_flood2" name="significant_events_flash_flood2" placeholder="" >
+   </div>      
+  </div> 
+
+  <div class="col text-left"> 
+    <div class="row-sm-3">
+  <b>drought</b>
+  <input type="number" class="form-control" id="significant_events_drought2" name="significant_events_drought2" placeholder="" >
+   </div>      
+  </div>
+</div>
+
+
+<!-- endrow -->
+<br>
+<div class="row">
+<div class="row-sm-3">
+  <div class="col text-left">
+    <b>earthquake</b>
+    <input type="number" class="form-control" id="significant_events_earthquake2" name="significant_events_earthquake2" placeholder="" >
+   </div>
+ </div>
+
+  <div class="col text-left"> 
+    <div class="row-sm-3">
+  <b> volcanic eruption</b>
+  <input type="number" class="form-control" id="significant_events_volcanic_eruption2" name="significant_events_volcanic_eruption2" placeholder="" >
+   </div>       
+  </div>
+
+<div class="col text-left"> 
+  <div class="row-sm-3">
+  <b>landslide</b>
+  <input type="number" class="form-control" id="significant_events_landslide2" name="significant_events_landslide2" placeholder="" >
+   </div>      
+  </div> 
+
+  <div class="col text-left"> 
+    <div class="row-sm-3">
+  <b>tsunami</b>
+  <input type="number" class="form-control" id="significant_events_tsunami2" name="significant_events_tsunami2" placeholder="" >
+   </div>      
+  </div>
+</div>
+
+<br>
+<div class="row">
+  <div class="row-sm-3">
+  <div class="col text-left">
+    <b>forest fire</b>
+    <input type="number" class="form-control" id="significant_events_forest_fire2" name="significant_events_forest_fire2" placeholder="" >
+   </div>
+ </div>
+</div>
+<br>
+
+<hr>
+<br>
+<h5 class="text-left" style="color: "><b>SIGNIFICANT EVENTS IN THE BARANGAY FOR PAST 3 YEARS - ECONOMIC EVENTS (01 April 2020 to 31 March 2021)</b></h5><br>   
+
+          
+<div class="text-left"><h5>
+Economic events
+</h5></div>
+
+<br>                  
+<div class="text-left"><h6>
+<b>closure of many small firms
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="significant_events_closure2" name="significant_events_closure2" placeholder="" >
+</div>
+</div>
+
+<br>                  
+<div class="text-left"><h6>
+<b>mass lay-off
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="significant_events_mass2" name="significant_events_mass2" placeholder="" >
+</div>
+</div>
+
+<br>                  
+<div class="text-left"><h6>
+<b>opening of large firm/s
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="significant_events_largefirm2" name="significant_events_largefirm2" placeholder="" >
+</div>
+</div>
+
+
+<br>                  
+<div class="text-left"><h6>
+<b>opening of many small firm/s
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="significant_events_smallfirm2" name="significant_events_smallfirm2" placeholder="" >
+</div>
+</div>
+
+
+<br>                  
+<div class="text-left"><h6>
+<b>opening of shopping malls
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="significant_events_shoppingmalls2" name="significant_events_shoppingmalls2" placeholder="" >
+</div>
+</div>
+
+
+<br>                  
+<div class="text-left"><h6>
+<b>opening of fastfood restaurant/s
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="significant_events_fastfood2" name="significant_events_fastfood2" placeholder="" >
+</div>
+</div>
+
+
+<br>                  
+<div class="text-left"><h6>
+<b>closure of large firms
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="significant_events_closure_large_firms2" name="significant_events_closure_large_firms2" placeholder="" >
+</div>
+</div>
+<br>
+
+
+<hr>
+<br>
+<h5 class="text-left" style="color: "><b>SIGNIFICANT EVENTS IN THE BARANGAY FOR PAST 3 YEARS - PEACE AND ORDER EVENTS (01 April 2020 to 31 March 2021)</b></h5><br>   
+
+<div class="text-left"><h5>
+Peace and order events
+</h5></div>
+
+<br>                  
+<div class="text-left"><h6>
+<b>fire
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="significant_events_fire2" name="significant_events_fire2" placeholder="" >
+</div>
+</div>
+
+
+<br>                  
+<div class="text-left"><h6>
+<b>armed conflict
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="significant_events_armed_conflict2" name="significant_events_armed_conflict2" placeholder="" >
+</div>
+</div> 
+<br>
+
+<div class="text-left"><h5>
+Health and agriculture-related events
+</h5></div>
+
+<br>                  
+<div class="text-left"><h6>
+<b>epidemic
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="significant_events_epidemic2" name="significant_events_epidemic2" placeholder="" >
+</div>
+</div>
+
+
+<br>                  
+<div class="text-left"><h6>
+<b>pest infestation
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="significant_events_pest2" name="significant_events_pest2" placeholder="" >
+</div>
+</div> 
+
+<br>                  
+<div class="text-left"><h6>
+<b>livestock/poultry diseases
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="significant_events_livestock2" name="significant_events_livestock2" placeholder="" >
+</div>
+</div>
+
+
+<br>                  
+<div class="text-left"><h6>
+<b>fish kill
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="significant_events_fish2" name="significant_events_fish2" placeholder="" >
+</div>
+</div> 
+
+
+<br>                  
+<div class="text-left"><h5>
+Is there other health and agriculture-related events?
+</h5></div>
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                        <input class="form-check-input" type="radio" name="significant_events_others2"  data-val="Yes" value="Yes">Yes<br>
+                        <input class="form-check-input" type="radio" name="significant_events_others2"  data-val="No" value="No">No
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div>   
+
+
+<div class="significant_events_others2_repeat" hidden=""> 
+
+<br>                  
+<div class="text-left"><h6>
+<b>Other health and agriculture-related events: # 1?
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="significant_events_others_specify2" name="significant_events_others_specify2" placeholder="" >
+</div>
+</div>
+
+<br>                  
+<div class="text-left"><h6>
+<b>Significant event count of
+</b></h6></div> 
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="significant_events_others_count2" name="significant_events_others_count2" placeholder="" >
+</div>
+</div>
+</div>
+
+
+<br>                  
+<div class="text-left"><h5>
+S4. Based on report to barangay, what are the main reasons for the closure of small firms during the period (01 April 2020 to 31 March 2021)?
+</h5></div>
+
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="reason_of_closure2" name="reason_of_closure2" placeholder="" >
+</div>
+</div>
+
+<br>                  
+<div class="text-left"><h5>
+S5. Based on report to barangay, what are the main reasons for the closure of large firms during the period (01 April 2020 to 31 March 2021)?
+</h5></div>
+
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="reason_of_closure2b" name="reason_of_closure2b" placeholder="" >
+</div>
+</div>
+<br>
+
+
+<hr>
+
+<br>
+<i style="color: green" class="">Now, I would like to talk about the disaster preparedness of the barangay..</i><br><br> 
+
+<br>
+<h5 class="text-left" style="color: "><b>DISASTER PREPAREDNESS</b></h5><br>   
+
+<br>                  
+<div class="text-left"><h5>
+DP1. Does the barangay have a written disaster risk reduction and management plan?
+</h5></div>
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                        <input class="form-check-input" type="radio" name="disaster_preparedness_plan"  data-val="Yes" value="Yes">Yes<br>
+                        <input class="form-check-input" type="radio" name="disaster_preparedness_plan"  data-val="No" value="No">No
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div>                          
+   
+
+<br>
+<br>                  
+<div class="text-left"><h5>
+DP2. Does the barangay have disaster management committee?
+</h5></div>
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                        <input class="form-check-input" type="radio" name="disaster_preparedness_committee"  data-val="Yes" value="Yes">Yes<br>
+                        <input class="form-check-input" type="radio" name="disaster_preparedness_committee"  data-val="No" value="No">No
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div>                          
+   
+
+<br>
+<br>                  
+<div class="text-left"><h5>
+DP3. Does the barangay have a disaster/emergency response team?
+</h5></div>
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                        <input class="form-check-input" type="radio" name="disaster_preparedness_response"  data-val="Yes" value="Yes">Yes<br>
+                        <input class="form-check-input" type="radio" name="disaster_preparedness_response"  data-val="No" value="No">No
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div>                          
+   
+
+<br>
+<br>                  
+<div class="text-left"><h5>
+DP4. Do you have organization's plan of succession during an emergency?
+</h5></div>
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                        <input class="form-check-input" type="radio" name="disaster_preparedness_succession"  data-val="Yes" value="Yes">Yes<br>
+                        <input class="form-check-input" type="radio" name="disaster_preparedness_succession"  data-val="No" value="No">No
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div>                          
+   
+
+<br>
+<br>                  
+<div class="text-left"><h5>
+DP5. Does the barangay have a disaster/emergency hotline?
+</h5></div>
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                        <input class="form-check-input" type="radio" name="disaster_preparedness_hotline"  data-val="Yes" value="Yes">Yes<br>
+                        <input class="form-check-input" type="radio" name="disaster_preparedness_hotline"  data-val="No" value="No">No
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div>                          
+   
+
+<div class="disaster_preparedness_hotline_contact_repeat" hidden=""> 
+
+<br>
+<div class="text-left"><h5>
+<b>Barangay's disaster/emergency hotline</b>
+</h5></div>
+
+<br>                  
+<div class="text-left"><h6>
+<b>DP6. What is the barangay's disaster/emergency hotline # 1?
+</b></h6>
+</div>
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="disaster_preparedness_hotline_contact" name="disaster_preparedness_hotline_contact" placeholder="" >
+</div>
+</div>
+</div>
+
+
+<br>
+<br>                  
+<div class="text-left"><h5>
+DP7. Do you have disaster preparedness guide for people with disabilities?
+</h5></div>
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                        <input class="form-check-input" type="radio" name="disaster_preparedness_guide"  data-val="Yes" value="Yes">Yes<br>
+                        <input class="form-check-input" type="radio" name="disaster_preparedness_guide"  data-val="No" value="No">No
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div>   
+
+
+<br>
+<br>                  
+<div class="text-left"><h5>DP8. Are you aware of government digital platforms for Disaster Risk Reduction and Climate Change Adaptation (DRR-CCA) that may be used in the formulation of your barangay's DRR-CCA plans?</h5>
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                        <input class="form-check-input" type="radio" name="disaster_preparedness_awareness"  data-val="Yes" value="Yes">Yes<br>
+                        <input class="form-check-input" type="radio" name="disaster_preparedness_awareness"  data-val="No" value="No">No
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div>  
+</div>
+<br>
+
+<hr>
+
+<br>
+<h5 class="text-left" style="color: "><b>B. SERVICE INSTITUTIONS AND INFRASTRUCTURE - DISASTER PREPAREDNESS - TYPE OF DISASTER</b></h5><br>   
+
+
+
+<div class="row">
+
+  <div class="col text-left"><label><b>DP9. Does the barangay have a localized early warning system for:</b></label></div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  <div class="col text-left"> 
+          <b>&nbsp&nbsp Yes</b>
+    
+  </div>
+
+
+<div class="col text-left"> 
+  
+          <b>No</b>
+          
+  </div>
+
+  <div class="col"></div>
+
+</div> 
+
+
+
+<br>
+<div class="row">
+
+  <div class="col text-left"><label><b>&nbsp&nbsp A. TYPHOON</b></label></div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  <div class="col text-left"> 
+               &nbsp&nbsp<input class="form-check-input" type="radio" name="disaster_early_warning_typhoon"  data-val="Yes" value="Yes"><br>
+  </div>
+
+<div class="col text-left"> 
+           <input class="form-check-input" type="radio" name="disaster_early_warning_typhoon"  data-val="No" value="No"><br>
+          
+  </div>
+  
+ 
+  <div class="col"></div>
+
+
+</div>
+
+
+
+<div class="row">
+
+  <div class="col text-left"><label><b>&nbsp&nbsp B. FLOODING</b></label></div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  <div class="col text-left"> 
+               &nbsp&nbsp<input class="form-check-input" type="radio" name="disaster_early_warning_flooding"  data-val="Yes" value="Yes"><br>
+  </div>
+
+<div class="col text-left"> 
+           <input class="form-check-input" type="radio" name="disaster_early_warning_flooding"  data-val="No" value="No"><br>
+        
+  </div>
+  
+ 
+  <div class="col"></div>
+
+
+</div>
+
+
+<div class="row">
+
+  <div class="col text-left"><label><b>&nbsp&nbsp C. DROUGHT</b></label></div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  <div class="col text-left"> 
+               &nbsp&nbsp<input class="form-check-input" type="radio" name="disaster_early_warning_drought"  data-val="Yes" value="Yes">&nbsp&nbsp<br>
+  </div>
+
+<div class="col text-left"> 
+           <input class="form-check-input" type="radio" name="disaster_early_warning_drought"  data-val="No" value="No"><br>
+          
+  </div>
+  
+ 
+  <div class="col"></div>
+
+
+</div>
+
+
+<div class="row">
+
+  <div class="col text-left"><label><b>&nbsp&nbsp D. EARTHQUAKE</b></label></div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  <div class="col text-left"> 
+               &nbsp&nbsp<input class="form-check-input" type="radio" name="disaster_early_warning_earthquake"  data-val="Yes" value="Yes"><br>
+  </div>
+
+<div class="col text-left"> 
+           <input class="form-check-input" type="radio" name="disaster_early_warning_earthquake"  data-val="No" value="No"><br>
+          
+  </div>
+  
+ 
+  <div class="col"></div>
+
+
+</div>
+
+
+<div class="row">
+
+  <div class="col text-left"><label><b>&nbsp&nbsp E. VOLCANIC &nbsp&nbsp&nbspERUPTION</b></label></div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  <div class="col text-left"> 
+               &nbsp&nbsp<input class="form-check-input" type="radio" name="disaster_early_warning_volcanic"  data-val="Yes" value="Yes"><br>
+  </div>
+
+<div class="col text-left"> 
+           <input class="form-check-input" type="radio" name="disaster_early_warning_volcanic"  data-val="No" value="No"><br>
+         
+  </div>
+  
+ 
+  <div class="col"></div>
+
+
+</div>
+
+
+
+
+<div class="row">
+
+  <div class="col text-left"><label><b>&nbsp&nbsp F. LANDSLIDE</b></label></div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  <div class="col text-left"> 
+               &nbsp&nbsp<input class="form-check-input" type="radio" name="disaster_early_warning_landslide"  data-val="Yes" value="Yes"><br>
+  </div>
+
+<div class="col text-left"> 
+           <input class="form-check-input" type="radio" name="disaster_early_warning_landslide"  data-val="No" value="No"><br>
+          
+  </div>
+  
+ 
+  <div class="col"></div>
+
+
+</div>
+
+
+<div class="row">
+
+  <div class="col text-left"><label><b>&nbsp&nbsp G. TSUNAMI</b></label></div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  <div class="col text-left"> 
+               &nbsp&nbsp<input class="form-check-input" type="radio" name="disaster_early_warning_tsunami"  data-val="Yes" value="Yes"><br>
+  </div>
+
+<div class="col text-left"> 
+           <input class="form-check-input" type="radio" name="disaster_early_warning_tsunami"  data-val="No" value="No"><br>
+          
+  </div>
+  
+ 
+  <div class="col"></div>
+
+
+</div>
+
+
+
+<div class="row">
+
+  <div class="col text-left"><label><b>&nbsp&nbsp H. STORM SURGE</b></label></div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  <div class="col text-left"> 
+               &nbsp&nbsp<input class="form-check-input" type="radio" name="disaster_early_warning_storm"  data-val="Yes" value="Yes"><br>
+  </div>
+
+<div class="col text-left"> 
+           <input class="form-check-input" type="radio" name="disaster_early_warning_storm"  data-val="No" value="No"><br>
+          
+  </div>
+  
+ 
+  <div class="col"></div>
+
+
+</div>
+
+
+
+<div class="row">
+
+  <div class="col text-left"><label><b>&nbsp&nbsp I. FOREST FIRE</b></label></div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  <div class="col text-left"> 
+               &nbsp&nbsp<input class="form-check-input" type="radio" name="disaster_early_warning_forest"  data-val="Yes" value="Yes"><br>
+  </div>
+
+<div class="col text-left"> 
+           <input class="form-check-input" type="radio" name="disaster_early_warning_forest"  data-val="No" value="No"><br>
+        
+  </div>
+  
+ 
+  <div class="col"></div>
+
+
+</div>
+
+
+
+<div class="row">
+
+  <div class="col text-left"><label><b>&nbsp&nbspJ. FIRE</b></label></div>
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  <div class="col text-left"> 
+               &nbsp&nbsp<input class="form-check-input" type="radio" name="disaster_early_warning_fire"  data-val="Yes" value="Yes"><br>
+  </div>
+
+<div class="col text-left"> 
+           <input class="form-check-input" type="radio" name="disaster_early_warning_fire"  data-val="No" value="No"><br>
+          
+  </div>
+  
+ 
+  <div class="col"></div>
+
+
+</div>
+
+
+
+<div class="row">
+
+  <div class="col text-left"><label><b>&nbsp K. EPIDEMIC/ &nbsp&nbspPANDEMIC</b></label></div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  <div class="col text-left"> 
+               &nbsp&nbsp<input class="form-check-input" type="radio" name="disaster_early_warning_epidemic"  data-val="Yes" value="Yes"><br>
+  </div>
+
+<div class="col text-left"> 
+           <input class="form-check-input" type="radio" name="disaster_early_warning_epidemic"  data-val="No" value="No"><br>
+          
+  </div>
+  
+ 
+  <div class="col"></div>
+
+
+</div>
+
+
+
+<div class="row">
+  <div class="container">
+    
+  </div>
+  <div class="col text-left"><label><b>&nbsp&nbspL. ARMED CONFLICT</b></label></div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  <div class="col text-left"> 
+               &nbsp&nbsp<input class="form-check-input" type="radio" name="disaster_early_warning_armed"  data-val="Yes" value="Yes"><br>
+  </div>
+
+<div class="col text-left"> 
+           <input class="form-check-input" type="radio" name="disaster_early_warning_armed"  data-val="No" value="No"><br>
+            </div>
+
+  <div class="col"></div>
+
+
+</div>
+
+<br>
+<br>                  
+<div class="text-left"><h5>
+Other disaster that have a localized early warning system:
+</h5></div>
+<br>           
+
+
+<div class="text-left"><h6>
+<b>M. OTHER DISASTERS
+</b></h6></div> 
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                        <input class="form-check-input" type="radio" name="disaster_early_warning_other_loc"  data-val="Yes" value="Yes">Yes<br>
+                        <input class="form-check-input" type="radio" name="disaster_early_warning_other_loc"  data-val="No" value="No">No
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div>                          
+   
+<div class="disaster_early_warning_repeat" hidden=""> 
+
+<br>                  
+<div class="text-left"><h6>
+<b>Please specify other disaster # 1?
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="disaster_early_warning_other_specify_loc" name="disaster_early_warning_other_specify_loc" placeholder="" >
+</div>
+</div>
+</div>
+
+<br>
+<hr>
+<br>
+
+
+<div class="row">
+
+  <div class="col text-left"><label><b>DP10. Does the barangay have a disaster contingency plan for:</b></label></div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  <div class="col text-left"> 
+          <b>&nbsp&nbsp Yes</b>
+    
+  </div>
+
+
+<div class="col text-left"> 
+  
+          <b>No</b>
+          
+  </div>
+
+  <div class="col"></div>
+
+</div> 
+
+
+
+<br>
+<div class="row">
+
+  <div class="col text-left"><label><b>&nbsp&nbsp A. TYPHOON</b></label></div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  <div class="col text-left"> 
+               &nbsp&nbsp<input class="form-check-input" type="radio" name="disaster_early_warning_typhoon_plan"  data-val="Yes" value="Yes"><br>
+  </div>
+
+<div class="col text-left"> 
+           <input class="form-check-input" type="radio" name="disaster_early_warning_typhoon_plan"  data-val="No" value="No"><br>
+          
+  </div>
+  
+ 
+  <div class="col"></div>
+
+
+</div>
+
+
+
+<div class="row">
+
+  <div class="col text-left"><label><b>&nbsp&nbsp B. FLOODING</b></label></div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  <div class="col text-left"> 
+               &nbsp&nbsp<input class="form-check-input" type="radio" name="disaster_early_warning_flooding_plan"  data-val="Yes" value="Yes"><br>
+  </div>
+
+<div class="col text-left"> 
+           <input class="form-check-input" type="radio" name="disaster_early_warning_flooding_plan"  data-val="No" value="No"><br>
+        
+  </div>
+  
+ 
+  <div class="col"></div>
+
+
+</div>
+
+
+<div class="row">
+
+  <div class="col text-left"><label><b>&nbsp&nbsp C. DROUGHT</b></label></div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  <div class="col text-left"> 
+               &nbsp&nbsp<input class="form-check-input" type="radio" name="disaster_early_warning_drought_plan"  data-val="Yes" value="Yes">&nbsp&nbsp<br>
+  </div>
+
+<div class="col text-left"> 
+           <input class="form-check-input" type="radio" name="disaster_early_warning_drought_plan"  data-val="No" value="No"><br>
+          
+  </div>
+  
+ 
+  <div class="col"></div>
+
+
+</div>
+
+
+<div class="row">
+
+  <div class="col text-left"><label><b>&nbsp&nbsp D. EARTHQUAKE</b></label></div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  <div class="col text-left"> 
+               &nbsp&nbsp<input class="form-check-input" type="radio" name="disaster_early_warning_earthquake_plan"  data-val="Yes" value="Yes"><br>
+  </div>
+
+<div class="col text-left"> 
+           <input class="form-check-input" type="radio" name="disaster_early_warning_earthquake_plan"  data-val="No" value="No"><br>
+          
+  </div>
+  
+ 
+  <div class="col"></div>
+
+
+</div>
+
+
+<div class="row">
+
+  <div class="col text-left"><label><b>&nbsp&nbsp E. VOLCANIC &nbsp&nbsp&nbspERUPTION</b></label></div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  <div class="col text-left"> 
+               &nbsp&nbsp<input class="form-check-input" type="radio" name="disaster_early_warning_volcanic_plan"  data-val="Yes" value="Yes"><br>
+  </div>
+
+<div class="col text-left"> 
+           <input class="form-check-input" type="radio" name="disaster_early_warning_volcanic_plan"  data-val="No" value="No"><br>
+         
+  </div>
+  
+ 
+  <div class="col"></div>
+
+
+</div>
+
+
+
+
+<div class="row">
+
+  <div class="col text-left"><label><b>&nbsp&nbsp F. LANDSLIDE</b></label></div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  <div class="col text-left"> 
+               &nbsp&nbsp<input class="form-check-input" type="radio" name="disaster_early_warning_landslide_plan"  data-val="Yes" value="Yes"><br>
+  </div>
+
+<div class="col text-left"> 
+           <input class="form-check-input" type="radio" name="disaster_early_warning_landslide_plan"  data-val="No" value="No"><br>
+          
+  </div>
+  
+ 
+  <div class="col"></div>
+
+
+</div>
+
+
+<div class="row">
+
+  <div class="col text-left"><label><b>&nbsp&nbsp G. TSUNAMI</b></label></div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  <div class="col text-left"> 
+               &nbsp&nbsp<input class="form-check-input" type="radio" name="disaster_early_warning_tsunami_plan"  data-val="Yes" value="Yes"><br>
+  </div>
+
+<div class="col text-left"> 
+           <input class="form-check-input" type="radio" name="disaster_early_warning_tsunami_plan"  data-val="No" value="No"><br>
+          
+  </div>
+  
+ 
+  <div class="col"></div>
+
+
+</div>
+
+
+
+<div class="row">
+
+  <div class="col text-left"><label><b>&nbsp&nbsp H. STORM SURGE</b></label></div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  <div class="col text-left"> 
+               &nbsp&nbsp<input class="form-check-input" type="radio" name="disaster_early_warning_storm_plan"  data-val="Yes" value="Yes"><br>
+  </div>
+
+<div class="col text-left"> 
+           <input class="form-check-input" type="radio" name="disaster_early_warning_storm_plan"  data-val="No" value="No"><br>
+          
+  </div>
+  
+ 
+  <div class="col"></div>
+
+
+</div>
+
+
+
+<div class="row">
+
+  <div class="col text-left"><label><b>&nbsp&nbsp I. FOREST FIRE</b></label></div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  <div class="col text-left"> 
+               &nbsp&nbsp<input class="form-check-input" type="radio" name="disaster_early_warning_forest_plan"  data-val="Yes" value="Yes"><br>
+  </div>
+
+<div class="col text-left"> 
+           <input class="form-check-input" type="radio" name="disaster_early_warning_forest_plan"  data-val="No" value="No"><br>
+        
+  </div>
+  
+ 
+  <div class="col"></div>
+
+
+</div>
+
+
+
+<div class="row">
+
+  <div class="col text-left"><label><b>&nbsp&nbspJ. FIRE</b></label></div>
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  <div class="col text-left"> 
+               &nbsp&nbsp<input class="form-check-input" type="radio" name="disaster_early_warning_fire_plan"  data-val="Yes" value="Yes"><br>
+  </div>
+
+<div class="col text-left"> 
+           <input class="form-check-input" type="radio" name="disaster_early_warning_fire_plan"  data-val="No" value="No"><br>
+          
+  </div>
+  
+ 
+  <div class="col"></div>
+
+
+</div>
+
+
+
+<div class="row">
+
+  <div class="col text-left"><label><b>&nbsp K. EPIDEMIC/ &nbsp&nbspPANDEMIC</b></label></div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  <div class="col text-left"> 
+               &nbsp&nbsp<input class="form-check-input" type="radio" name="disaster_early_warning_epidemic_plan"  data-val="Yes" value="Yes"><br>
+  </div>
+
+<div class="col text-left"> 
+           <input class="form-check-input" type="radio" name="disaster_early_warning_epidemic_plan"  data-val="No" value="No"><br>
+          
+  </div>
+  
+ 
+  <div class="col"></div>
+
+
+</div>
+
+
+
+<div class="row">
+  <div class="container">
+    
+  </div>
+  <div class="col text-left"><label><b>&nbsp&nbspL. ARMED CONFLICT</b></label></div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  <div class="col text-left"> 
+               &nbsp&nbsp<input class="form-check-input" type="radio" name="disaster_early_warning_armed_plan"  data-val="Yes" value="Yes"><br>
+  </div>
+
+<div class="col text-left"> 
+           <input class="form-check-input" type="radio" name="disaster_early_warning_armed_plan"  data-val="No" value="No"><br>
+            </div>
+
+  <div class="col"></div>
+
+
+</div>
+
+<br>
+<br>                  
+<div class="text-left"><h5>
+Other disaster that have a disaster contingency plan:
+</h5></div>
+<br>           
+
+       
+<div class="text-left"><h6>
+<b>M. OTHER DISASTERS
+</b></h6></div> 
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                        <input class="form-check-input" type="radio" name="disaster_early_warning_other_plan"  data-val="Yes" value="Yes">Yes<br>
+                        <input class="form-check-input" type="radio" name="disaster_early_warning_other_plan"  data-val="No" value="No">No
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div>                          
+   
+<div class="disaster_early_warning_plan_repeat" hidden=""> 
+
+<br>                  
+<div class="text-left"><h6>
+<b>Please specify other disaster # 1?
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="disaster_early_warning_other_specify_plan" name="disaster_early_warning_other_specify_plan" placeholder="" >
+</div>
+</div>
+</div>
+
+<hr>
+
+<br><br>
+<h5 class="text-left" style="color: "><b>B. SERVICE INSTITUTIONS AND INFRASTRUCTURE - E. DISASTER RISK REDUCTION AND MANAGEMENT</b></h5><br>   
+
+                  
+<div class="text-left"><h5>
+DP11. Does the barangay have evacuation map?
+</h5></div>
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                        <input class="form-check-input" type="radio" name="disaster_evacuation"  data-val="Yes" value="Yes">Yes<br>
+                        <input class="form-check-input" type="radio" name="disaster_evacuation"  data-val="No" value="No">No
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div>                          
+   
+
+<div class="disaster_evacuation_repeat" hidden=""> 
+<br>                  
+<div class="text-left"><h6>
+<b>DP12. For what hazards is the evacuation map used?
+</b></h6></div>  
+
+
+
+<div class="container"> 
+                    <div class="col-sm-10">
+                          <div class="row">
+                            <label>
+                                
+                                     <input class="form-check-input respo_radio" type="checkbox" name="disaster_evacuation_map_use"  data-val="Yes" value="Yes">
+                                  &nbsp&nbsp FLOOD
+                               
+                            </label>
+                        </div>
+
+
+
+                              <div class="row">
+                            <label>
+                                
+                                     <input class="form-check-input respo_radio" type="checkbox" name="disaster_evacuation_map_use"  data-val="Yes" value="Yes">
+                                  &nbsp&nbsp  LANDSLIDE
+                               
+                            </label>
+                        </div> 
+
+
+
+                         <div class="row">
+                            <label>
+                                
+                                     <input class="form-check-input respo_radio" type="checkbox" name="disaster_evacuation_map_use"  data-val="Yes" value="Yes">
+                                  &nbsp&nbsp STORM SURGE
+                               
+                            </label>
+                        </div>
+
+
+
+                         <div class="row">
+                            <label>
+                                
+                                     <input class="form-check-input respo_radio" type="checkbox" name="disaster_evacuation_map_use"  data-val="Yes" value="Yes">
+                                  &nbsp&nbsp EARTHQUAKE
+                               
+                            </label>
+                        </div>
+
+
+
+                         <div class="row">
+                            <label>
+                                
+                                     <input class="form-check-input respo_radio" type="checkbox" name="disaster_evacuation_map_use"  data-val="Yes" value="Yes">
+                                  &nbsp&nbsp TSUNAMI
+                               
+                            </label>
+                        </div>
+
+
+
+                         <div class="row">
+                            <label>
+                                
+                                     <input class="form-check-input respo_radio" type="checkbox" name="disaster_evacuation_map_use"  data-val="Yes" value="Yes">
+                                  &nbsp&nbsp VOLCANIC ERUPTION
+                               
+                            </label>
+                        </div>
+
+
+
+                         <div class="row">
+                            <label>
+                                
+                                     <input class="form-check-input respo_radio" type="checkbox" name="disaster_evacuation_map_use_specify"  data-val="Yes" value="Yes">
+                                  &nbsp&nbsp OTHERS, SPECIFY
+                               
+                            </label>
+                        </div>
+                      </div>
+              </div>  
+
+
+<div class="disaster_evacuation_map_use_specify_repeat" hidden=""> 
+
+<br>                  
+<div class="text-left"><h6>
+<b>Please Specify
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="disaster_evacuation_map_use_specify" name="disaster_evacuation_map_use_specify" placeholder="" >
+</div>
+</div>
+</div>
+
+</div>
+
+
+
+<br>
+<br>                  
+<div class="text-left"><h5>
+DP13. Does the barangay have a hazard map?
+</h5></div>
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                        <input class="form-check-input" type="radio" name="disaster_evacuation1"  data-val="Yes" value="Yes">Yes<br>
+                        <input class="form-check-input" type="radio" name="disaster_evacuation1"  data-val="No" value="No">No
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div>                          
+   
+
+<div class="disaster_evacuation1_repeat" hidden=""> 
+<br>                  
+<div class="text-left"><h6>
+<b>DP14. For what hazards is the hazard map used?
+</b></h6></div>  
+
+
+
+<div class="container"> 
+                    <div class="col-sm-10">
+                          <div class="row">
+                            <label>
+                                
+                                     <input class="form-check-input respo_radio" type="checkbox" name="disaster_evacuation_map_use1"  data-val="Yes" value="Yes">
+                                  &nbsp&nbsp FLOOD
+                               
+                            </label>
+                        </div>
+
+
+
+                              <div class="row">
+                            <label>
+                                
+                                     <input class="form-check-input respo_radio" type="checkbox" name="disaster_evacuation_map_use1"  data-val="Yes" value="Yes">
+                                  &nbsp&nbsp  LANDSLIDE
+                               
+                            </label>
+                        </div> 
+
+
+
+                         <div class="row">
+                            <label>
+                                
+                                     <input class="form-check-input respo_radio" type="checkbox" name="disaster_evacuation_map_use1"  data-val="Yes" value="Yes">
+                                  &nbsp&nbsp STORM SURGE
+                               
+                            </label>
+                        </div>
+
+
+
+                         <div class="row">
+                            <label>
+                                
+                                     <input class="form-check-input respo_radio" type="checkbox" name="disaster_evacuation_map_use1"  data-val="Yes" value="Yes">
+                                  &nbsp&nbsp EARTHQUAKE
+                               
+                            </label>
+                        </div>
+
+
+
+                         <div class="row">
+                            <label>
+                                
+                                     <input class="form-check-input respo_radio" type="checkbox" name="disaster_evacuation_map_use1"  data-val="Yes" value="Yes">
+                                  &nbsp&nbsp TSUNAMI
+                               
+                            </label>
+                        </div>
+
+
+
+                         <div class="row">
+                            <label>
+                                
+                                     <input class="form-check-input respo_radio" type="checkbox" name="disaster_evacuation_map_use1"  data-val="Yes" value="Yes">
+                                  &nbsp&nbsp VOLCANIC ERUPTION
+                               
+                            </label>
+                        </div>
+
+
+
+                         <div class="row">
+                            <label>
+                                
+                                     <input class="form-check-input respo_radio" type="checkbox" name="disaster_evacuation_map_use_specify1"  data-val="Yes" value="Yes">
+                                  &nbsp&nbsp OTHERS, SPECIFY
+                               
+                            </label>
+                        </div>
+                      </div>
+              </div>  
+
+</div>
+<div class="disaster_evacuation_map_use_specify1_repeat" hidden=""> 
+
+<br>                  
+<div class="text-left"><h6>
+<b>Please Specify
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="disaster_evacuation_map_use_specify1" name="disaster_evacuation_map_use_specify1" placeholder="" >
+</div>
+</div>
+</div>
+
+
+<br>
+<br>                  
+<div class="text-left"><h5>
+DP15. In the past 12 months, did the barangay LGU conduct Disaster preparedness seminars (maybe funded by LGU or Non-Government Agency (NGA)?
+</h5></div>
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                        <input class="form-check-input" type="radio" name="lgu_conduct_seminars"  data-val="Yes" value="Yes">Yes<br>
+                        <input class="form-check-input" type="radio" name="lgu_conduct_seminars"  data-val="No" value="No">No
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div>          
+
+
+<br>
+<br>                  
+<div class="text-left"><h5>
+DP16. In the past 12 months, were there disaster kits provided (maybe funded by LGU or NGA) to the barangay LGU?
+</h5></div>
+
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                        <input class="form-check-input" type="radio" name="lgu_disaster_kits"  data-val="Yes" value="Yes">Yes<br>
+                        <input class="form-check-input" type="radio" name="lgu_disaster_kits"  data-val="No" value="No">No
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div>    
+
+
+<br>
+<br>
+<div class="text-left"><h5>
+<b>Local Evacuation Centers
+</b></h5></div>  
+
+
+<br>                
+<div class="text-left"><h5>
+DP17. Does the barangay have an evacuation facility?
+</h5></div>
+
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                        <input class="form-check-input" type="radio" name="disaster_evacuation_facility"  data-val="Yes" value="Yes">Yes<br>
+                        <input class="form-check-input" type="radio" name="disaster_evacuation_facility"  data-val="No" value="No">No
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div>   
+
+
+<div class="disaster_evacuation_facility_repeat" hidden=""> 
+
+<br>                  
+<div class="text-left"><h6>
+<b>DP18. Enumerate the location of evacuation centers in the barangay # 1?
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="barangay_official_website_url" name="barangay_official_website_url" placeholder="" >
+</div>
+</div>
+
+
+<br>                  
+<div class="text-left"><h6>
+<b>DP19. How would you categorize this evacuation center?
+</b></h6></div>   
+
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                  <input class="form-check-input" type="radio" name="disaster_categorize_evacuation_center" data-val="No" value="No">SCHOOL BUILDING<br>  
+                  <input class="form-check-input" type="radio" name="disaster_categorize_evacuation_center" data-val="No" value="No">SCHOOL BUILDING<br>
+                    <input class="form-check-input" type="radio"  name="disaster_categorize_evacuation_center" data-val="Yes" value="Yes">OTHERS, SPECIFY<br>
+                 
+                    
+                  
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div> 
+
+<div class="disaster_categorize_evacuation_center_other_repeat" hidden=""> 
+
+<br>                  
+<div class="text-left"><h6>
+<b>Please Specify
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="disaster_categorize_evacuation_center_other" name="disaster_categorize_evacuation_center_other" placeholder="" >
+</div>
+</div>
+</div>
+
+
+
+
+<br>                  
+<div class="text-left"><h6>
+<b>DP20. What is the capacity number of the evacuation center?
+</b></h6></div>  
+
+
+<div class="form-group row">
+<div class="col-sm-3">
+  <input type="number" class="form-control" id="barangay_it_personnel_count" name="barangay_it_personnel_count" placeholder="" >
+</div>
+</div>
+
+<br>                  
+<div class="text-left"><h6>
+<b>DP21. In which types of disasters is this evacuation center has been used?
+</b></h6></div>  
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
 
 
 
