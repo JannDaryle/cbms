@@ -1397,6 +1397,655 @@ else if (s == "Yes")
 }); 
 
 
+$('input[name="garbage_waste_diposal_sewage"]').click(function(){
+
+var s =  $(this).data("val");
+
+if(s == "Yes")
+{
+  $(".garbage_waste_diposal_sewage_repeat").attr("hidden",false);
+   jQuery('.submit_table_3').DataTable().ajax.reload();
+}
+else if (s == "No")
+{
+  $(".garbage_waste_diposal_sewage_repeat").attr("hidden",true);
+}
+
+ 
+});
+
+
+$('input[name="garbage_waste_diposal_sewage"]').click(function(){
+
+var s =  $(this).data("val");
+
+if(s == "No")
+{
+  $(".garbage_waste_diposal_sewage_repeat_no").attr("hidden",false);
+   jQuery('.submit_table_3').DataTable().ajax.reload();
+}
+else if (s == "Yes")
+{
+  $(".garbage_waste_diposal_sewage_repeat_no").attr("hidden",true);
+}
+
+ 
+}); 
+
+
+$('input[name="collection_trucks"]').click(function(){
+
+var s =  $(this).data("val");
+
+if(s == "Yes")
+{
+  $(".collection_trucks_count_repeat").attr("hidden",false);
+   jQuery('.submit_table_3').DataTable().ajax.reload();
+}
+else if (s == "No")
+{
+  $(".collection_trucks_count_repeat").attr("hidden",true);
+}
+
+ 
+});
+
+
+$('input[name="collection_bins"]').click(function(){
+
+var s =  $(this).data("val");
+
+if(s == "Yes")
+{
+  $(".collection_bins_count_repeat").attr("hidden",false);
+   jQuery('.submit_table_3').DataTable().ajax.reload();
+}
+else if (s == "No")
+{
+  $(".collection_bins_count_repeat").attr("hidden",true);
+}
+
+ 
+}); 
+
+
+$('input[name="collection_incinerator"]').click(function(){
+
+var s =  $(this).data("val");
+
+if(s == "Yes")
+{
+  $(".collection_incinerator_count_repeat").attr("hidden",false);
+   jQuery('.submit_table_3').DataTable().ajax.reload();
+}
+else if (s == "No")
+{
+  $(".collection_incinerator_count_repeat").attr("hidden",true);
+}
+
+ 
+}); 
+
+$('input[name="collection_others"]').click(function(){
+
+var s =  $(this).data("val");
+
+if(s == "Yes")
+{
+  $(".collection_others_specify_repeat").attr("hidden",false);
+   jQuery('.submit_table_3').DataTable().ajax.reload();
+}
+else if (s == "No")
+{
+  $(".collection_others_specify_repeat").attr("hidden",true);
+}
+
+ 
+}); 
+
+
+$('input[name="collector_biodegradable"]').click(function(){
+
+var s =  $(this).data("val");
+
+if(s == "Yes")
+{
+  $(".collector_biodegradable_specify_repeat").attr("hidden",false);
+   jQuery('.submit_table_3').DataTable().ajax.reload();
+}
+else if (s == "No")
+{
+  $(".collector_biodegradable_specify_repeat").attr("hidden",true);
+}
+
+ 
+}); 
+
+
+$('input[name="collector_recyclables"]').click(function(){
+
+var s =  $(this).data("val");
+
+if(s == "Yes")
+{
+  $(".collector_recyclables_specify_repeat").attr("hidden",false);
+   jQuery('.submit_table_3').DataTable().ajax.reload();
+}
+else if (s == "No")
+{
+  $(".collector_recyclables_specify_repeat").attr("hidden",true);
+}
+
+ 
+}); 
+
+
+$('input[name="collector_residuals"]').click(function(){
+
+var s =  $(this).data("val");
+
+if(s == "Yes")
+{
+  $(".collector_residuals_specify_repeat").attr("hidden",false);
+   jQuery('.submit_table_3').DataTable().ajax.reload();
+}
+else if (s == "No")
+{
+  $(".collector_residuals_specify_repeat").attr("hidden",true);
+}
+
+ 
+}); 
+
+$('input[name="collector_how_often_question"]').click(function(){
+
+var s =  $(this).data("val");
+
+if(s == "Yes")
+{
+  $(".collector_how_often_question_specify_repeat").attr("hidden",false);
+   jQuery('.submit_table_3').DataTable().ajax.reload();
+}
+else if (s == "No")
+{
+  $(".collector_how_often_question_specify_repeat").attr("hidden",true);
+}
+
+ 
+});
+
+
+$('input[name="collector_payment"]').click(function(){
+
+var s =  $(this).data("val");
+
+if(s == "Yes")
+{
+  $(".collector_amount_repeat").attr("hidden",false);
+   jQuery('.submit_table_3').DataTable().ajax.reload();
+}
+else if (s == "No")
+{
+  $(".collector_amount_repeat").attr("hidden",true);
+}
+
+ 
+});
+
+
+$('input[name="collector_able_to_serve"]').click(function(){
+
+var s =  $(this).data("val");
+
+if(s == "No")
+{
+  $(".collector_specific_areas_repeat_no").attr("hidden",false);
+   jQuery('.submit_table_3').DataTable().ajax.reload();
+}
+else if (s == "Yes")
+{
+  $(".collector_specific_areas_repeat_no").attr("hidden",true);
+}
+
+ 
+}); 
+
+
+$('input[name="publictransport1"]').click(function(){
+
+var s =  $(this).data("val");
+
+if(s == "Yes")
+{
+  $(".publictransport1_repeat").attr("hidden",false);
+   jQuery('.submit_table_3').DataTable().ajax.reload();
+}
+else if (s == "No")
+{
+  $(".publictransport1_repeat").attr("hidden",true);
+}
+
+ 
+});
+
+
+$('input[name="publictransport1"]').click(function(){
+
+var s =  $(this).data("val");
+
+if(s == "No")
+{
+  $(".publictransport1_repeat_no").attr("hidden",false);
+   jQuery('.submit_table_3').DataTable().ajax.reload();
+}
+else if (s == "Yes")
+{
+  $(".publictransport1_repeat_no").attr("hidden",true);
+}
+
+ 
+}); 
+
+
+$('input[name="network_available_question"]').click(function(){
+
+var s =  $(this).data("val");
+
+if(s == "Yes")
+{
+  $(".network_available_repeat").attr("hidden",false);
+   jQuery('.submit_table_3').DataTable().ajax.reload();
+}
+else if (s == "No")
+{
+  $(".network_available_repeat").attr("hidden",true);
+}
+
+ 
+});
+
+
+$('input[name="existing_telcom"]').click(function(){
+
+var s =  $(this).data("val");
+
+if(s == "Yes")
+{
+  $(".existing_telcom_repeat").attr("hidden",false);
+   jQuery('.submit_table_3').DataTable().ajax.reload();
+}
+else if (s == "No")
+{
+  $(".existing_telcom_repeat").attr("hidden",true);
+}
+
+ 
+});
+
+
+
+$('input[name="wifi_availability"]').click(function(){
+
+var s =  $(this).data("val");
+
+if(s == "Yes")
+{
+  $(".wifi_availability_repeat").attr("hidden",false);
+   jQuery('.submit_table_3').DataTable().ajax.reload();
+}
+else if (s == "No")
+{
+  $(".wifi_availability_repeat").attr("hidden",true);
+}
+
+ 
+}); 
+
+
+$('input[name="ict_equipment_free_specify"]').click(function(){
+
+var s =  $(this).data("val");
+
+if(s == "Yes")
+{
+  $(".ict_equipment_free_specify_repeat").attr("hidden",false);
+   jQuery('.submit_table_3').DataTable().ajax.reload();
+}
+else if (s == "No")
+{
+  $(".ict_equipment_free_specify_repeat").attr("hidden",true);
+}
+
+ 
+});
+
+
+$('input[name="barangay_it_personnel"]').click(function(){
+
+var s =  $(this).data("val");
+
+if(s == "Yes")
+{
+  $(".barangay_it_personnel_repeat").attr("hidden",false);
+   jQuery('.submit_table_3').DataTable().ajax.reload();
+}
+else if (s == "No")
+{
+  $(".barangay_it_personnel_repeat").attr("hidden",true);
+}
+
+ 
+});
+
+
+$('input[name="barangay_official_website"]').click(function(){
+
+var s =  $(this).data("val");
+
+if(s == "Yes")
+{
+  $(".barangay_official_website_repeat").attr("hidden",false);
+   jQuery('.submit_table_3').DataTable().ajax.reload();
+}
+else if (s == "No")
+{
+  $(".barangay_official_website_repeat").attr("hidden",true);
+}
+
+ 
+});
+
+
+$('input[name="barangay_social_media"]').click(function(){
+
+var s =  $(this).data("val");
+
+if(s == "Yes")
+{
+  $(".barangay_social_media_repeat").attr("hidden",false);
+   jQuery('.submit_table_3').DataTable().ajax.reload();
+}
+else if (s == "No")
+{
+  $(".barangay_social_media_repeat").attr("hidden",true);
+}
+
+ 
+});
+
+
+$('input[name="barangay_disseminate_information"]').click(function(){
+
+var s =  $(this).data("val");
+
+if(s == "Yes")
+{
+  $(".barangay_disseminate_information_repeat").attr("hidden",false);
+   jQuery('.submit_table_3').DataTable().ajax.reload();
+}
+else if (s == "No")
+{
+  $(".barangay_disseminate_information_repeat").attr("hidden",true);
+}
+
+ 
+}); 
+
+
+$('input[name="barangay_egovern"]').click(function(){
+
+var s =  $(this).data("val");
+
+if(s == "Yes")
+{
+  $(".barangay_egovern_repeat").attr("hidden",false);
+   jQuery('.submit_table_3').DataTable().ajax.reload();
+}
+else if (s == "No")
+{
+  $(".barangay_egovern_repeat").attr("hidden",true);
+}
+
+ 
+});
+
+
+$('input[name="significant_events_others"]').click(function(){
+
+var s =  $(this).data("val");
+
+if(s == "Yes")
+{
+  $(".significant_events_others_repeat").attr("hidden",false);
+   jQuery('.submit_table_3').DataTable().ajax.reload();
+}
+else if (s == "No")
+{
+  $(".significant_events_others_repeat").attr("hidden",true);
+}
+
+ 
+});
+
+
+$('input[name="significant_events_others2"]').click(function(){
+
+var s =  $(this).data("val");
+
+if(s == "Yes")
+{
+  $(".significant_events_others2_repeat").attr("hidden",false);
+   jQuery('.submit_table_3').DataTable().ajax.reload();
+}
+else if (s == "No")
+{
+  $(".significant_events_others2_repeat").attr("hidden",true);
+}
+
+ 
+});
+
+
+$('input[name="disaster_preparedness_hotline"]').click(function(){
+
+var s =  $(this).data("val");
+
+if(s == "Yes")
+{
+  $(".disaster_preparedness_hotline_contact_repeat").attr("hidden",false);
+   jQuery('.submit_table_3').DataTable().ajax.reload();
+}
+else if (s == "No")
+{
+  $(".disaster_preparedness_hotline_contact_repeat").attr("hidden",true);
+}
+
+ 
+});
+
+
+
+$('input[name="disaster_early_warning_other_loc"]').click(function(){
+
+var s =  $(this).data("val");
+
+if(s == "Yes")
+{
+  $(".disaster_early_warning_repeat").attr("hidden",false);
+   jQuery('.submit_table_3').DataTable().ajax.reload();
+}
+else if (s == "No")
+{
+  $(".disaster_early_warning_repeat").attr("hidden",true);
+}
+
+ 
+});
+
+
+$('input[name="disaster_early_warning_other_plan"]').click(function(){
+
+var s =  $(this).data("val");
+
+if(s == "Yes")
+{
+  $(".disaster_early_warning_plan_repeat").attr("hidden",false);
+   jQuery('.submit_table_3').DataTable().ajax.reload();
+}
+else if (s == "No")
+{
+  $(".disaster_early_warning_plan_repeat").attr("hidden",true);
+}
+
+ 
+});
+
+
+$('input[name="disaster_evacuation"]').click(function(){
+
+var s =  $(this).data("val");
+
+if(s == "Yes")
+{
+  $(".disaster_evacuation_repeat").attr("hidden",false);
+   jQuery('.submit_table_3').DataTable().ajax.reload();
+}
+else if (s == "No")
+{
+  $(".disaster_evacuation_repeat").attr("hidden",true);
+}
+
+ 
+});
+
+
+$('input[name="disaster_evacuation_map_use_specify"]').click(function(){
+
+var s =  $(this).data("val");
+
+if(s == "Yes")
+{
+  $(".disaster_evacuation_map_use_specify_repeat").attr("hidden",false);
+   jQuery('.submit_table_3').DataTable().ajax.reload();
+}
+else if (s == "No")
+{
+  $(".disaster_evacuation_map_use_specify_repeat").attr("hidden",true);
+}
+
+ 
+});
+
+
+$('input[name="disaster_evacuation1"]').click(function(){
+
+var s =  $(this).data("val");
+
+if(s == "Yes")
+{
+  $(".disaster_evacuation1_repeat").attr("hidden",false);
+   jQuery('.submit_table_3').DataTable().ajax.reload();
+}
+else if (s == "No")
+{
+  $(".disaster_evacuation1_repeat").attr("hidden",true);
+}
+
+ 
+}); 
+
+
+$('input[name="disaster_evacuation_map_use_specify1"]').click(function(){
+
+var s =  $(this).data("val");
+
+if(s == "Yes")
+{
+  $(".disaster_evacuation_map_use_specify1_repeat").attr("hidden",false);
+   jQuery('.submit_table_3').DataTable().ajax.reload();
+}
+else if (s == "No")
+{
+  $(".disaster_evacuation_map_use_specify1_repeat").attr("hidden",true);
+}
+
+ 
+});
+
+
+
+$('input[name="disaster_evacuation_facility"]').click(function(){
+
+var s =  $(this).data("val");
+
+if(s == "Yes")
+{
+  $(".disaster_evacuation_facility_repeat").attr("hidden",false);
+   jQuery('.submit_table_3').DataTable().ajax.reload();
+}
+else if (s == "No")
+{
+  $(".disaster_evacuation_facility_repeat").attr("hidden",true);
+}
+
+ 
+}); 
+
+
+
+$('input[name="disaster_categorize_evacuation_center"]').click(function(){
+
+var s =  $(this).data("val");
+
+if(s == "Yes")
+{
+  $(".disaster_categorize_evacuation_center_other_repeat").attr("hidden",false);
+   jQuery('.submit_table_3').DataTable().ajax.reload();
+}
+else if (s == "No")
+{
+  $(".disaster_categorize_evacuation_center_other_repeat").attr("hidden",true); 
+}
+
+
+
+ 
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
