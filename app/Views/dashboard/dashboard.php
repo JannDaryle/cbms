@@ -1030,30 +1030,44 @@ T1. Are there any of the tourism sites and destination present in the barangay?
 <br>
 <div class="text-left"><h5>IX. TOURISM SITES AND DESTINATION</h5>
 <br>
-<div class="form-group row">
-    <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>T2. What is the name of tourism sites and destination # 1?</b></label>
-    <div class="col-sm-8">
-      <input type="text" class="form-control" id="tourism_sites_name" name="tourism_sites_name" placeholder="" >
-       </div>
-</div>
+
+                  
+<div class="text-left"><h6>
+<b>T2. What is the name of tourism sites and destination # 1?
+</b></h6></div>   
 
 <div class="form-group row">
-    <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>T3. Building name of</b></label>
-    <div class="col-sm-8">
-      <input type="text" class="form-control" id="tourism_sites_building" name="tourism_sites_building" placeholder="" >
-    </div>
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="tourism_sites_name" name="tourism_sites_name" placeholder="" >
 </div>
+</div>
+<br>
+
+<div class="text-left"><h6>
+<b>T3. Building name of
+</b></h6></div>   
 
 <div class="form-group row">
-    <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>T3.1 Complete address of</b></label>
-    <div class="col-sm-8">
-      <input type="text" class="form-control" id="tourism_sites_address" name="tourism_sites_address" placeholder="" >
-    </div>
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="tourism_sites_building" name="tourism_sites_building" placeholder="" >
 </div>
+</div>
+<br>
+
+<div class="text-left"><h6>
+<b>T3.1 Complete address of
+</b></h6></div>   
 
 <div class="form-group row">
-    <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>T4. Who operates the ?</b></label>
-</div> 
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="tourism_sites_address" name="tourism_sites_address" placeholder="" >
+</div>
+</div>
+<br>
+
+<div class="text-left"><h6>
+<b>T4. Who operates the ?
+</b></h6></div>   
 
 <div class="container">
               <div class="row">
@@ -1073,13 +1087,23 @@ T1. Are there any of the tourism sites and destination present in the barangay?
           </div>   
 
       <br>
+         
+       
+       <div class="text-left"><h6>
+       <b>Notes for SECTION: TOURISM SITES AND DESTINATION
+        </b></h6></div>   
+
       <div class="form-group row">
-      <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>Notes for SECTION: TOURISM SITES AND DESTINATION</b></label> 
-      <textarea class="form-control" rows="4" cols="1" id="notes_tourism_sites_1"></textarea>
+      <div class="col-sm-6">
+      <input type="text" class="form-control" id="notes_tourism_sites_1" name="notes_tourism_sites_1" placeholder="" >
       </div>
+      </div>
+      
 
+       <div class="text-left"><h6>
+       <b>T8. Does your barangay engage in tourism activities?
+       </b></h6></div>   
 
-      <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>T8. Does your barangay engage in tourism activities?</b></label>
       <div class="container">
               <div class="row">
                     <div class="col text-left">
@@ -1123,31 +1147,45 @@ PTA. Is there a seaport located in the barangay?
 <br>
 <div class="text-left"><h5>X. TRANSPORT FACILITY - Seaport</h5>
 
+<br>                  
+<div class="text-left"><h6>
+<b>PT1. What is the name of the Seaport facility # 1?
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="transport_facility_seaport_name" name="transport_facility_seaport_name" placeholder="" >
+</div>
+</div>
+
+
+<br>                  
+<div class="text-left"><h6>
+<b>PT2. Building name of
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="transport_facility_seaport_building" name="transport_facility_seaport_building" placeholder="" >
+</div>
+</div>
+
+
+<br>                  
+<div class="text-left"><h6>
+<b>PT2.1 Complete address of
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="transport_facility_seaport_address" name="transport_facility_seaport_address" placeholder="" >
+</div>
+</div>
 <br>
-<div class="form-group row">
-    <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>PT1. What is the name of the Seaport facility # 1?</b></label>
-    <div class="col-sm-8">
-      <input type="text" class="form-control" id="transport_facility_seaport_name" name="transport_facility_seaport_name" placeholder="" >
-       </div>
-</div>
 
-<div class="form-group row">
-    <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>PT2. Building name of</b></label>
-    <div class="col-sm-8">
-      <input type="text" class="form-control" id="transport_facility_seaport_building" name="transport_facility_seaport_building" placeholder="" >
-    </div>
-</div>
-
-<div class="form-group row">
-    <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>PT2.1 Complete address of</b></label>
-    <div class="col-sm-8">
-      <input type="text" class="form-control" id="transport_facility_seaport_address" name="transport_facility_seaport_address" placeholder="" >
-    </div>
-</div>
-
-<div class="form-group row">
-    <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>PT3. Who operates the ?</b></label>
-</div>  
+<div class="text-left"><h6>
+<b>PT3. Who operates the ?
+</b></h6></div>  
 
 <div class="container">
               <div class="row">
@@ -1165,16 +1203,25 @@ PTA. Is there a seaport located in the barangay?
                     </div>                                                                                                           
               </div>
           </div>
+            
+            <br>        
 
 
-      <br>
-      <div class="form-group row">
-      <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>Notes for SECTION: X. TRANSPORT FACILITY - Seaport</b></label> 
-      <textarea class="form-control" rows="3" cols="0" id="transport_facility_seaport_1"></textarea>
-      </div> 
+<div class="text-left"><h6>
+<b>Notes for SECTION: X. TRANSPORT FACILITY - Seaport
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="transport_facility_seaport_1" name="transport_facility_seaport_1" placeholder="" >
+</div>
+</div>
+
 
 </div>
 </div>
+<br>
+
 
 <hr>
 <br>
@@ -1202,31 +1249,45 @@ PTB. Is there an airport located in the barangay?
 <br>
 <div class="text-left"><h5>X. TRANSPORT FACILITY - Airport</h5>
 
-<br>
-<div class="form-group row">
-    <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>PT1. What is the name of the Airport facility # 1?</b></label>
-    <div class="col-sm-8">
-      <input type="text" class="form-control" id="transport_facility_airport_name" name="transport_facility_airport_name" placeholder="" >
-       </div>
-</div>
+<br>                  
+<div class="text-left"><h6>
+<b>PT1. What is the name of the Airport facility # 1?
+</b></h6></div>   
 
 <div class="form-group row">
-    <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>PT2. Building name of</b></label>
-    <div class="col-sm-8">
-      <input type="text" class="form-control" id="transport_facility_airport_building" name="transport_facility_airport_building" placeholder="" >
-    </div>
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="transport_facility_airport_name" name="transport_facility_airport_name" placeholder="" >
+</div>
 </div>
 
-<div class="form-group row">
-    <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>PT2.1 Complete address of</b></label>
-    <div class="col-sm-8">
-      <input type="text" class="form-control" id="transport_facility_airport_address" name="transport_facility_airport_address" placeholder="" >
-    </div>
-</div>
+<br>                  
+<div class="text-left"><h6>
+<b>PT2. Building name of
+</b></h6></div>   
 
 <div class="form-group row">
-    <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>PT3. Who operates the ?</b></label>
-</div>            
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="transport_facility_airport_building" name="transport_facility_airport_building" placeholder="" >
+</div>
+</div>
+
+
+
+<br>                  
+<div class="text-left"><h6>
+<b>PT2.1 Complete address of
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="transport_facility_airport_address" name="transport_facility_airport_address" placeholder="" >
+</div>
+</div>
+
+<br>                  
+<div class="text-left"><h6>
+<b>PT3. Who operates the ?
+</b></h6></div>
 
 <div class="container">
               <div class="row">
@@ -1245,15 +1306,21 @@ PTB. Is there an airport located in the barangay?
               </div>
           </div> 
 
-      <br>
-      <div class="form-group row">
-      <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>Notes for SECTION: X. TRANSPORT FACILITY - Seaport</b></label> 
-      <textarea class="form-control" rows="3" cols="1" id="transport_facility_airport_1"></textarea>
-      </div> 
+      
+<br>                  
+<div class="text-left"><h6>
+<b>Notes for SECTION: X. TRANSPORT FACILITY - Airport
+</b></h6></div>   
 
-
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="transport_facility_airport_1" name="transport_facility_airport_1" placeholder="" >
+</div>
+</div>
 </div>
 </div> 
+<br>
+
 
 <hr>
 <br>
@@ -1285,31 +1352,46 @@ G1. Is the Open Dump Site present in the barangay?
 <br>
 <div class="text-left"><h5>GARBAGE AND WASTE DISPOSAL - Open Dump Site</h5>
 
-<br>
+<br>                  
+<div class="text-left"><h6>
+<b>G3. What is the name of the Open Dump Site # 1?
+</b></h6></div>   
+
 <div class="form-group row">
-  <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>G3. What is the name of the Open Dump Site # 1?</b></label>
-  <div class="col-sm-8">
+  <div class="col-sm-6">
   <input type="text" class="form-control" id="garbage_waste_diposal_dump_name" name="garbage_waste_diposal_dump_name" placeholder="" >
 </div>
 </div>
 
-<div class="form-group row">
-    <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>G4. Building name of</b></label>
-    <div class="col-sm-8">
-      <input type="text" class="form-control" id="garbage_waste_diposal_dump_building" name="garbage_waste_diposal_dump_building" placeholder="" >
-    </div>
-</div>
+
+<br>                  
+<div class="text-left"><h6>
+<b>G4. Building name of
+</b></h6></div>   
 
 <div class="form-group row">
-    <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>G4.1 Complete address of</b></label>
-    <div class="col-sm-8">
-      <input type="text" class="form-control" id="garbage_waste_diposal_dump_address" name="garbage_waste_diposal_dump_address" placeholder="" >
-    </div>
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="garbage_waste_diposal_dump_building" name="garbage_waste_diposal_dump_building" placeholder="" >
+</div>
 </div>
 
+<br>                  
+<div class="text-left"><h6>
+<b>G4.1 Complete address of
+</b></h6></div>   
+
 <div class="form-group row">
-    <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>G5. Who operates the ?</b></label>
-</div>            
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="garbage_waste_diposal_dump_address" name="garbage_waste_diposal_dump_address" placeholder="" >
+</div>
+</div>
+
+
+<br>                  
+<div class="text-left"><h6>
+<b>G5. Who operates the ?
+</b></h6></div>  
+           
 
 <div class="container">
               <div class="row">
@@ -1329,23 +1411,32 @@ G1. Is the Open Dump Site present in the barangay?
           </div> 
 
 
-      <br>
-      <div class="form-group row">
-      <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>Notes for SECTION: GARBAGE AND WASTE DISPOSAL - Open Dump Site</b></label> 
-      <textarea class="form-control" rows="3" cols="1" id="notes_garbage_waste_diposal_dump_1"></textarea>
-      </div> 
+    
 
-     
+<br>                  
+<div class="text-left"><h6>
+<b>Notes for SECTION: GARBAGE AND WASTE DISPOSAL - Open Dump Site
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="notes_garbage_waste_diposal_dump_1" name="notes_garbage_waste_diposal_dump_1" placeholder="" >
+</div>
+</div>
 
 </div>
 </div>    
 
+
+
 <br>
 <div class="garbage_waste_diposal_dump_repeat_no" hidden=""> 
 
-<div class="form-group row">
-<label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>G2. What is the distance of the barangay hall to the nearest facility(in kms)?</b></label>
-</div>  
+<br>                  
+<div class="text-left"><h6>
+<b>G2. What is the distance of the barangay hall to the nearest facility(in kms)?
+</b></h6></div>   
+
 
 <div class="container">
               <div class="row">
@@ -1360,10 +1451,13 @@ G1. Is the Open Dump Site present in the barangay?
               </div>
           </div>   
 
-<br>
-<div class="form-group row">
-<label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>G6. Who operates the facility?</b></label>
-</div>  
+
+<br>                  
+<div class="text-left"><h6>
+<b>G6. Who operates the facility?
+</b></h6></div>   
+
+
 
 <div class="container">
               <div class="row">
@@ -1383,12 +1477,21 @@ G1. Is the Open Dump Site present in the barangay?
           </div>        
 
 
-      <br>
-      <div class="form-group row">
-      <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>Notes for SECTION: GARBAGE AND WASTE DISPOSAL - Open Dump Site</b></label> 
-      <textarea class="form-control" rows="3" cols="1" id="notes_garbage_waste_diposal_dump_1"></textarea>
-      </div>     
-      </div>           
+      
+<br>                  
+<div class="text-left"><h6>
+<b>Notes for SECTION: GARBAGE AND WASTE DISPOSAL - Open Dump Site
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="notes_garbage_waste_diposal_dump_1" name="notes_garbage_waste_diposal_dump_1" placeholder="" >
+</div>
+</div>     
+</div>      
+
+
+
 
 
 <hr>
@@ -1415,31 +1518,44 @@ G1. Is the Sanitary Land Fill present in the barangay?
 <br>
 <div class="text-left"><h5>GARBAGE AND WASTE DISPOSAL - Sanitary Land Fill</h5>
 
-<br>
+<br>                  
+<div class="text-left"><h6>
+<b>G3. What is the name of the Sanitary Land Fill # 1?
+</b></h6></div>  
+
 <div class="form-group row">
-  <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>G3. What is the name of the Sanitary Land Fill # 1?</b></label>
-  <div class="col-sm-8">
+  <div class="col-sm-6">
   <input type="text" class="form-control" id="garbage_waste_diposal_sanitary_name" name="garbage_waste_diposal_sanitary_name" placeholder="" >
-       </div>
+</div>
 </div>
 
-<div class="form-group row">
-    <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>G4. Building name of</b></label>
-    <div class="col-sm-8">
-      <input type="text" class="form-control" id="garbage_waste_diposal_sanitary_building" name="garbage_waste_diposal_sanitary_building" placeholder="" >
-    </div>
-</div>
+
+<br>                  
+<div class="text-left"><h6>
+<b>G4. Building name of
+</b></h6></div>  
 
 <div class="form-group row">
-    <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>G4.1 Complete address of</b></label>
-    <div class="col-sm-8">
-      <input type="text" class="form-control" id="garbage_waste_diposal_sanitary_address" name="garbage_waste_diposal_sanitary_address" placeholder="" >
-    </div>
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="garbage_waste_diposal_sanitary_building" name="garbage_waste_diposal_sanitary_building" placeholder="" >
+</div>
 </div>
 
+<br>                  
+<div class="text-left"><h6>
+<b>G4.1 Complete address of
+</b></h6></div>  
+
 <div class="form-group row">
-    <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>G5. Who operates the ?</b></label>
-</div>            
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="garbage_waste_diposal_sanitary_address" name="garbage_waste_diposal_sanitary_address" placeholder="" >
+</div>
+</div>
+
+<br>                  
+<div class="text-left"><h6>
+<b>G5. Who operates the ?
+</b></h6></div>  
 
 <div class="container">
               <div class="row">
@@ -1459,12 +1575,16 @@ G1. Is the Sanitary Land Fill present in the barangay?
           </div> 
 
 
-      <br>
-      <div class="form-group row">
-      <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>Notes for SECTION: GARBAGE AND WASTE DISPOSAL - Sanitary Land Fill</b></label> 
-      <textarea class="form-control" rows="3" cols="1" id="notes_garbage_waste_diposal_sanitary_1"></textarea>
-      </div> 
+<br>                  
+<div class="text-left"><h6>
+<b>Notes for SECTION: GARBAGE AND WASTE DISPOSAL - Sanitary Land Fill
+</b></h6></div>   
 
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="notes_garbage_waste_diposal_sanitary_1" name="notes_garbage_waste_diposal_sanitary_1" placeholder="" >
+</div>
+</div>
      
 
 </div>
@@ -1473,9 +1593,11 @@ G1. Is the Sanitary Land Fill present in the barangay?
 <br>
 <div class="garbage_waste_diposal_sanitary_repeat_no" hidden=""> 
 
-<div class="form-group row">
-<label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>G2. What is the distance of the barangay hall to the nearest facility(in kms)?</b></label>
-</div>  
+<br>                  
+<div class="text-left"><h6>
+<b>G2. What is the distance of the barangay hall to the nearest facility(in kms)?
+</b></h6></div>  
+
 
 <div class="container">
               <div class="row">
@@ -1489,11 +1611,13 @@ G1. Is the Sanitary Land Fill present in the barangay?
                     </div>                                                                                                           
               </div>
           </div>   
+  
 
-<br>
-<div class="form-group row">
-<label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>G6. Who operates the facility?</b></label>
-</div>  
+<br>                  
+<div class="text-left"><h6>
+<b>G6. Who operates the facility?
+</b></h6></div>
+
 
 <div class="container">
               <div class="row">
@@ -1513,12 +1637,19 @@ G1. Is the Sanitary Land Fill present in the barangay?
           </div>        
 
 
-      <br>
-      <div class="form-group row">
-      <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>Notes for SECTION: GARBAGE AND WASTE DISPOSAL - Sanitary Land Fill</b></label> 
-      <textarea class="form-control" rows="3" cols="1" id="notes_garbage_waste_diposal_sanitary_1"></textarea>
-      </div>     
-      </div>   
+<br>                  
+<div class="text-left"><h6>
+<b>Notes for SECTION: GARBAGE AND WASTE DISPOSAL - Sanitary Land Fill
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="notes_garbage_waste_diposal_sanitary_1" name="notes_garbage_waste_diposal_sanitary_1" placeholder="" >
+</div>
+</div>
+
+</div>   
+<br>
 
 
 <hr>
@@ -1545,32 +1676,47 @@ G1. Is the Compost Pits present in the barangay?
 <br>
 <div class="text-left"><h5>GARBAGE AND WASTE DISPOSAL - Compost Pits</h5>
 
-<br>
+
+<br>                  
+<div class="text-left"><h6>
+<b>G3. What is the name of the Compost Pits # 1?
+</b></h6></div>  
+
 <div class="form-group row">
-  <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>G3. What is the name of the Compost Pits # 1?</b></label>
-  <div class="col-sm-8">
+  <div class="col-sm-6">
   <input type="text" class="form-control" id="garbage_waste_diposal_compost_name" name="garbage_waste_diposal_compost_name" placeholder="" >
-       </div>
+</div>
 </div>
 
+
+<br>                  
+<div class="text-left"><h6>
+<b>G4. Building name of
+</b></h6></div>  
+
 <div class="form-group row">
-    <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>G4. Building name of</b></label>
-    <div class="col-sm-8">
-      <input type="text" class="form-control" id="garbage_waste_diposal_compost_building" name="garbage_waste_diposal_compost_building" placeholder="" >
-    </div>
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="garbage_waste_diposal_compost_building" name="garbage_waste_diposal_compost_building" placeholder="" >
+</div>
 </div>
 
+
+<br>                  
+<div class="text-left"><h6>
+<b>G4.1 Complete address of
+</b></h6></div>  
+
 <div class="form-group row">
-    <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>G4.1 Complete address of</b></label>
-    <div class="col-sm-8">
-      <input type="text" class="form-control" id="garbage_waste_diposal_compost_address" name="garbage_waste_diposal_compost_address" placeholder="" >
-    </div>
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="garbage_waste_diposal_compost_address" name="garbage_waste_diposal_compost_address" placeholder="" >
+</div>
 </div>
 
-<div class="form-group row">
-    <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>G5. Who operates the ?</b></label>
-</div>            
-
+<br>                  
+<div class="text-left"><h6>
+<b>G5. Who operates the ?
+</b></h6></div>
+           
 <div class="container">
               <div class="row">
                     <div class="col text-left">
@@ -1588,24 +1734,28 @@ G1. Is the Compost Pits present in the barangay?
               </div>
           </div> 
 
+<br>                  
+<div class="text-left"><h6>
+<b>Notes for SECTION: GARBAGE AND WASTE DISPOSAL - Compost Pits
+</b></h6></div>   
 
-      <br>
-      <div class="form-group row">
-      <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>Notes for SECTION: GARBAGE AND WASTE DISPOSAL - Compost Pits</b></label> 
-      <textarea class="form-control" rows="3" cols="1" id="notes_garbage_waste_diposal_compost_1"></textarea>
-      </div> 
-
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="notes_garbage_waste_diposal_compost_1" name="notes_garbage_waste_diposal_compost_1" placeholder="" >
 </div>
-</div>    
+</div>
+</div>
+</div>   
 
 
 
 <br>
 <div class="garbage_waste_diposal_compost_repeat_no" hidden=""> 
 
-<div class="form-group row">
-<label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>G2. What is the distance of the barangay hall to the nearest facility(in kms)?</b></label>
-</div>  
+<br>                  
+<div class="text-left"><h6>
+<b>G2. What is the distance of the barangay hall to the nearest facility(in kms)?
+</b></h6></div>   
 
 <div class="container">
               <div class="row">
@@ -1619,11 +1769,12 @@ G1. Is the Compost Pits present in the barangay?
                     </div>                                                                                                           
               </div>
           </div>   
+  
 
-<br>
-<div class="form-group row">
-<label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>G6. Who operates the facility?</b></label>
-</div>  
+<br>                  
+<div class="text-left"><h6>
+<b>G6. Who operates the facility?
+</b></h6></div>   
 
 <div class="container">
               <div class="row">
@@ -1642,14 +1793,18 @@ G1. Is the Compost Pits present in the barangay?
               </div>
           </div>        
 
+<br>                  
+<div class="text-left"><h6>
+<b>Notes for SECTION: GARBAGE AND WASTE DISPOSAL - Compost Pits
+</b></h6></div>   
 
-      <br>
-      <div class="form-group row">
-      <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>Notes for SECTION: GARBAGE AND WASTE DISPOSAL - Compost Pits</b></label> 
-      <textarea class="form-control" rows="3" cols="1" id="notes_garbage_waste_diposal_compost_1"></textarea>
-      </div>     
-      </div>   
-
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="notes_garbage_waste_diposal_compost_1" name="notes_garbage_waste_diposal_compost_1" placeholder="" >
+</div>
+</div>
+</div>   
+<br>
 
 <hr>
 <br>
@@ -1675,31 +1830,44 @@ G1. Is the Material Recovery Facility (MRF) present in the barangay?
 <br>
 <div class="text-left"><h5>GARBAGE AND WASTE DISPOSAL - Material Recovery Facility (MRF)</h5>
 
-<br>
+<br>                  
+<div class="text-left"><h6>
+<b>G3. What is the name of the Material Recovery Facility (MRF) # 1?
+</b></h6></div>   
+
 <div class="form-group row">
-  <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>G3. What is the name of the Material Recovery Facility (MRF) # 1?</b></label>
-  <div class="col-sm-8">
+  <div class="col-sm-6">
   <input type="text" class="form-control" id="garbage_waste_diposal_material_name" name="garbage_waste_diposal_material_name" placeholder="" >
-       </div>
+</div>
 </div>
 
-<div class="form-group row">
-    <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>G4. Building name of</b></label>
-    <div class="col-sm-8">
-      <input type="text" class="form-control" id="garbage_waste_diposal_material_building" name="garbage_waste_diposal_material_building" placeholder="" >
-    </div>
-</div>
+<br>                  
+<div class="text-left"><h6>
+<b>G4. Building name of
+</b></h6></div>   
 
 <div class="form-group row">
-    <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>G4.1 Complete address of</b></label>
-    <div class="col-sm-8">
-      <input type="text" class="form-control" id="garbage_waste_diposal_material_address" name="garbage_waste_diposal_material_address" placeholder="" >
-    </div>
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="garbage_waste_diposal_material_building" name="garbage_waste_diposal_material_building" placeholder="" >
+</div>
 </div>
 
+<br>                  
+<div class="text-left"><h6>
+<b>G4.1 Complete address of
+</b></h6></div>   
+
 <div class="form-group row">
-    <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>G5. Who operates the ?</b></label>
-</div>            
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="garbage_waste_diposal_material_address" name="garbage_waste_diposal_material_address" placeholder="" >
+</div>
+</div>
+
+<br>                  
+<div class="text-left"><h6>
+<b>G5. Who operates the ?
+</b></h6></div> 
+            
 
 <div class="container">
               <div class="row">
@@ -1719,21 +1887,27 @@ G1. Is the Material Recovery Facility (MRF) present in the barangay?
           </div> 
 
 
-      <br>
-      <div class="form-group row">
-      <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>Notes for SECTION: GARBAGE AND WASTE DISPOSAL - Material Recovery Facility (MRF)</b></label> 
-      <textarea class="form-control" rows="3" cols="1" id="notes_garbage_waste_diposal_material_1"></textarea>
-      </div> 
+<br>                  
+<div class="text-left"><h6>
+<b>Notes for SECTION: GARBAGE AND WASTE DISPOSAL - Material Recovery Facility (MRF)
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="notes_garbage_waste_diposal_material_1" name="notes_garbage_waste_diposal_material_1" placeholder="" >
+</div>
+</div>
 
 </div>
 </div>    
 
 <br>
 <div class="garbage_waste_diposal_material_repeat_no" hidden=""> 
-
-<div class="form-group row">
-<label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>G2. What is the distance of the barangay hall to the nearest facility(in kms)?</b></label>
-</div>  
+  
+<br>                  
+<div class="text-left"><h6>
+<b>G2. What is the distance of the barangay hall to the nearest facility(in kms)?
+</b></h6></div>  
 
 <div class="container">
               <div class="row">
@@ -1748,10 +1922,10 @@ G1. Is the Material Recovery Facility (MRF) present in the barangay?
               </div>
           </div>   
 
-<br>
-<div class="form-group row">
-<label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>G6. Who operates the facility?</b></label>
-</div>  
+<br>                  
+<div class="text-left"><h6>
+<b>G6. Who operates the facility?
+</b></h6></div>  
 
 <div class="container">
               <div class="row">
@@ -1771,13 +1945,19 @@ G1. Is the Material Recovery Facility (MRF) present in the barangay?
           </div>        
 
 
-      <br>
-      <div class="form-group row">
-      <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>Notes for SECTION: GARBAGE AND WASTE DISPOSAL - Material Recovery Facility (MRF)</b></label> 
-      <textarea class="form-control" rows="3" cols="1" id="notes_garbage_waste_diposal_material_1"></textarea>
-      </div>     
-      </div>   
+      
+<br>                  
+<div class="text-left"><h6>
+<b>Notes for SECTION: GARBAGE AND WASTE DISPOSAL - Material Recovery Facility (MRF)
+</b></h6></div>   
 
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="notes_garbage_waste_diposal_material_1" name="notes_garbage_waste_diposal_material_1" placeholder="" >
+</div>
+</div>
+</div>   
+<br>
 
 <hr>
 <br>
@@ -1805,31 +1985,44 @@ G1. Is the Treatment, storage, and disposal (TSD) facility present in the barang
 <br>
 <div class="text-left"><h5>GARBAGE AND WASTE DISPOSAL - Treatment, storage, and disposal (TSD) facility</h5>
 
-<br>
+<br>                  
+<div class="text-left"><h6>
+<b>G3. What is the name of the Treatment, storage, and disposal (TSD) 
+</b></h6></div>   
+
 <div class="form-group row">
-  <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>G3. What is the name of the Treatment, storage, and disposal (TSD) facility # 1?</b></label>
-  <div class="col-sm-8">
+  <div class="col-sm-6">
   <input type="text" class="form-control" id="garbage_waste_diposal_treatment_name" name="garbage_waste_diposal_treatment_name" placeholder="" >
-       </div>
+</div>
 </div>
 
-<div class="form-group row">
-    <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>G4. Building name of</b></label>
-    <div class="col-sm-8">
-      <input type="text" class="form-control" id="garbage_waste_diposal_treatment_building" name="garbage_waste_diposal_treatment_building" placeholder="" >
-    </div>
-</div>
+<br>                  
+<div class="text-left"><h6>
+<b>G4. Building name of
+</b></h6></div>   
 
 <div class="form-group row">
-    <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>G4.1 Complete address of</b></label>
-    <div class="col-sm-8">
-      <input type="text" class="form-control" id="garbage_waste_diposal_treatment_address" name="garbage_waste_diposal_treatment_address" placeholder="" >
-    </div>
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="garbage_waste_diposal_treatment_building" name="garbage_waste_diposal_treatment_building" placeholder="" >
+</div>
 </div>
 
+<br>                  
+<div class="text-left"><h6>
+<b>G4.1 Complete address of
+</b></h6></div>   
+
 <div class="form-group row">
-    <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>G5. Who operates the ?</b></label>
-</div>            
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="garbage_waste_diposal_treatment_address" name="garbage_waste_diposal_treatment_address" placeholder="" >
+</div>
+</div>
+            
+
+<br>                  
+<div class="text-left"><h6>
+<b>G5. Who operates the ?
+</b></h6></div>   
 
 <div class="container">
               <div class="row">
@@ -1849,11 +2042,16 @@ G1. Is the Treatment, storage, and disposal (TSD) facility present in the barang
           </div> 
 
 
-      <br>
-      <div class="form-group row">
-      <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>Notes for SECTION: GARBAGE AND WASTE DISPOSAL - Treatment, storage and disposal (TSD) facility</b></label> 
-      <textarea class="form-control" rows="3" cols="1" id="notes_garbage_waste_diposal_treatment_1"></textarea>
-      </div> 
+<br>                  
+<div class="text-left"><h6>
+<b>Notes for SECTION: GARBAGE AND WASTE DISPOSAL - Treatment, storage and disposal (TSD) facility
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="notes_garbage_waste_diposal_treatment_1" name="notes_garbage_waste_diposal_treatment_1" placeholder="" >
+</div>
+</div>
 
 </div>
 </div>    
@@ -1861,9 +2059,10 @@ G1. Is the Treatment, storage, and disposal (TSD) facility present in the barang
 <br>
 <div class="garbage_waste_diposal_treatment_repeat_no" hidden=""> 
 
-<div class="form-group row">
-<label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>G2. What is the distance of the barangay hall to the nearest facility(in kms)?</b></label>
-</div>  
+<br>                  
+<div class="text-left"><h6>
+<b>G2. What is the distance of the barangay hall to the nearest facility(in kms)?
+</b></h6></div> 
 
 <div class="container">
               <div class="row">
@@ -1878,10 +2077,11 @@ G1. Is the Treatment, storage, and disposal (TSD) facility present in the barang
               </div>
           </div>   
 
-<br>
-<div class="form-group row">
-<label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>G6. Who operates the facility?</b></label>
-</div>  
+
+<br>                  
+<div class="text-left"><h6>
+<b>G6. Who operates the facility?
+</b></h6></div> 
 
 <div class="container">
               <div class="row">
@@ -1900,14 +2100,18 @@ G1. Is the Treatment, storage, and disposal (TSD) facility present in the barang
               </div>
           </div>        
 
+<br>                  
+<div class="text-left"><h6>
+<b>Notes for SECTION: GARBAGE AND WASTE DISPOSAL - Treatment, storage and disposal (TSD) facility
+</b></h6></div>   
 
-      <br>
-      <div class="form-group row">
-      <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>Notes for SECTION: GARBAGE AND WASTE DISPOSAL - Treatment, storage and disposal (TSD) facility</b></label> 
-      <textarea class="form-control" rows="3" cols="1" id="notes_garbage_waste_diposal_treatment_1"></textarea>
-      </div>     
-      </div>   
-
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="notes_garbage_waste_diposal_treatment_1" name="notes_garbage_waste_diposal_treatment_1" placeholder="" >
+</div>
+</div>
+</div>   
+<br>
 
 <hr>
 <br>
@@ -1935,32 +2139,45 @@ G1. Is the Waste-to-energy facility present in the barangay?
 <br>
 <div class="text-left"><h5>GARBAGE AND WASTE DISPOSAL - Waste-to-energy facility</h5>
 
-<br>
+<br>                  
+<div class="text-left"><h6>
+<b>G3. What is the name of the Waste-to-energy facility # 1?
+</b></h6></div>   
+
 <div class="form-group row">
-  <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>G3. What is the name of the Waste-to-energy facility # 1?</b></label>
-  <div class="col-sm-8">
+  <div class="col-sm-6">
   <input type="text" class="form-control" id="garbage_waste_diposal_energy_name" name="garbage_waste_diposal_energy_name" placeholder="" >
-       </div>
+</div>
 </div>
 
+<br>                  
+<div class="text-left"><h6>
+<b>G4. Building name of
+</b></h6></div>   
+
 <div class="form-group row">
-    <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>G4. Building name of</b></label>
-    <div class="col-sm-8">
-      <input type="text" class="form-control" id="garbage_waste_diposal_energy_building" name="garbage_waste_diposal_energy_building" placeholder="" >
-    </div>
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="garbage_waste_diposal_energy_building" name="garbage_waste_diposal_energy_building" placeholder="" >
+</div>
 </div>
 
+
+<br>                  
+<div class="text-left"><h6>
+<b>G4.1 Complete address of
+</b></h6></div>   
+
 <div class="form-group row">
-    <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>G4.1 Complete address of</b></label>
-    <div class="col-sm-8">
-      <input type="text" class="form-control" id="garbage_waste_diposal_energy_address" name="garbage_waste_diposal_energy_address" placeholder="" >
-    </div>
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="garbage_waste_diposal_energy_address" name="garbage_waste_diposal_energy_address" placeholder="" >
+</div>
 </div>
 
-<div class="form-group row">
-    <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>G5. Who operates the ?</b></label>
-</div>            
-
+<br>                  
+<div class="text-left"><h6>
+<b>G5. Who operates the ?
+</b></h6></div>  
+            
 <div class="container">
               <div class="row">
                     <div class="col text-left">
@@ -1978,22 +2195,27 @@ G1. Is the Waste-to-energy facility present in the barangay?
               </div>
           </div> 
 
+<br>                  
+<div class="text-left"><h6>
+<b>Notes for SECTION: GARBAGE AND WASTE DISPOSAL - Waste to Energy facility
+</b></h6></div>   
 
-      <br>
-      <div class="form-group row">
-      <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>Notes for SECTION: GARBAGE AND WASTE DISPOSAL - Waste to Energy facility</b></label> 
-      <textarea class="form-control" rows="3" cols="1" id="notes_garbage_waste_diposal_energy_1"></textarea>
-      </div> 
-
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="notes_garbage_waste_diposal_energy_1" name="notes_garbage_waste_diposal_energy_1" placeholder="" >
 </div>
-</div>    
+</div>
+</div>
+</div>   
+
 
 <br>
 <div class="garbage_waste_diposal_energy_repeat_no" hidden=""> 
 
-<div class="form-group row">
-<label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>G2. What is the distance of the barangay hall to the nearest facility(in kms)?</b></label>
-</div>  
+<br>                  
+<div class="text-left"><h6>
+<b>G2. What is the distance of the barangay hall to the nearest facility(in kms)?
+</b></h6></div>
 
 <div class="container">
               <div class="row">
@@ -2008,10 +2230,11 @@ G1. Is the Waste-to-energy facility present in the barangay?
               </div>
           </div>   
 
-<br>
-<div class="form-group row">
-<label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>G6. Who operates the facility?</b></label>
-</div>  
+
+<br>                  
+<div class="text-left"><h6>
+<b>G6. Who operates the facility?
+</b></h6></div>
 
 <div class="container">
               <div class="row">
@@ -2031,13 +2254,18 @@ G1. Is the Waste-to-energy facility present in the barangay?
           </div>        
 
 
-      <br>
-      <div class="form-group row">
-      <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>Notes for SECTION: GARBAGE AND WASTE DISPOSAL - Waste to Energy facility</b></label> 
-      <textarea class="form-control" rows="3" cols="1" id="notes_garbage_waste_diposal_energy_1"></textarea>
-      </div>     
-      </div>   
+      <br>                  
+<div class="text-left"><h6>
+<b>Notes for SECTION: GARBAGE AND WASTE DISPOSAL - Waste to Energy facility
+</b></h6></div>   
 
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="notes_garbage_waste_diposal_energy_1" name="notes_garbage_waste_diposal_energy_1" placeholder="" >
+</div>
+</div>
+</div>
+<br>
 
 <hr>
 <br>
@@ -2990,9 +3218,12 @@ IT2. Is there an existing telecommunication/cellular tower/s in the barangay?
 <div class="existing_telcom_repeat" hidden=""> 
 
 <br>
-<div class="form-group row">
-  <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>IT3. How many are the existing telecommunication/cellular tower/s in the barangay?</b></label>
-  <div class="row-sm-8">
+<div class="text-left"><h6>
+<b>IT3. How many are the existing telecommunication/cellular tower/s in the barangay?
+</b></h6></div>   
+
+  <div class="form-group row">
+  <div class="col-sm-3">
   <input type="number" class="form-control" id="how_many_telcom" name="how_many_telcom" placeholder="">
   </div> 
 </div>
