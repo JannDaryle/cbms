@@ -7052,24 +7052,840 @@ A3. How many Other service activities establishments are in the barangay as of 0
 </div>
 
 
+<br>
+<br>                
+<div class="text-left"><h5>
+A3. How many Activities of private households as employers and undifferentiated goods and services and producing activities of households for own use establishments are in the barangay as of 01 April 2021?
+</h5></div>
 
+<br>
+<div class="text-left"><h6>
+<b>Activities of private households as employers and undifferentiated goods and services and producing activities of households for own use</b></h6></div>  
 
+<br>
+<div class="text-left"><h6>
+<b>Number of establishments</b></h6></div>
+<i style="font-size: 11px; color: gray"> "Please input "0" if none"</i>  
 
-
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="goods_number_establishments" name="goods_number_establishments" placeholder="" >
+</div>
 </div>
 
 
+<br>
+<br>                
+<div class="text-left"><h5>
+A3. How many Activities of extraterritorial organizations and bodies establishments are in the barangay as of 01 April 2021?
+</h5></div>
+
+<br>
+<div class="text-left"><h6>
+<b>Activities of extraterritorial organizations and bodies</b></h6></div>  
+
+<br>
+<div class="text-left"><h6>
+<b>Number of establishments</b></h6></div>
+<i style="font-size: 11px; color: gray"> "Please input "0" if none"</i>  
+
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="extraterritorial_number_establishments" name="extraterritorial_number_establishments" placeholder="" >
+</div>
+</div>
+
+
+<br>
+<br>                
+<div class="text-left"><h5>
+A3. ESTABLISHMENTS OF THE BARANGAY
+</h5></div>
+
+
+<br>
+<div class="text-left"><h6>
+<b>Reference Period
+</b></h6></div>  
+
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="extraterritorial_reference_establishments" name="extraterritorial_reference_establishments" placeholder="" >
+</div>
+</div>
+
+
+<br>
+<div class="text-left"><h6>
+<b>Title of source document
+</b></h6></div>  
+
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="extraterritorial_title_establishments" name="extraterritorial_title_establishments" placeholder="" >
+</div>
+</div>
+
+
+<br>
+<div class="text-left"><h6>
+<b>Data source/agency/unit/office in the barangay
+</b></h6></div>  
+
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="extraterritorial_data_establishments" name="extraterritorial_data_establishments" placeholder="" >
+</div>
+</div>
+
+
+<br>
+<div class="text-left"><h6>
+<b>Notes for A3. ESTABLISHMENTS OF THE BARANGAY
+</b></h6></div>  
+
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="textfield" class="form-control" id="notes_establishments_extraterritorial_1" name="notes_establishments_extraterritorial_1" placeholder="" >
+</div>
+</div>
+</div>
+<br>
+
+<hr>
+
+<br>
+
+<br>
+<h5 class="text-left" style="color: "><b>B. VOLUNTEERISM IN THE BARANGAY</b></h5><br>   
+
+<br>                  
+<div class="text-left"><h5>
+B1. How many volunteers have extended services to the barangay in the past three months?
+</h5></div> 
+
+<br>                  
+<div class="text-left"><h5>
+<b>Sector / Thematic Area</b>
+</h5></div>
+
+<br>                  
+<div class="text-left"><h6>
+<b>A - Agriculture
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="cc1" name="cc1" placeholder="" >
+</div>
+</div>
+
+
+<div class="text-left"><h6>
+<b>B - Environment
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="cc2" name="cc2" placeholder="" >
+</div>
+</div>
+
+
+<div class="text-left"><h6>
+<b>C - Health
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="cc3" name="cc3" placeholder="" >
+</div>
+</div>
+
+
+<br>                  
+<div class="text-left"><h6>
+<b>D - Peace and Security
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="cc4" name="cc4" placeholder="" >
+</div>
+</div>
+
+
+<div class="text-left"><h6>
+<b>E - Industry
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="cc5" name="cc5" placeholder="" >
+</div>
+</div>
+
+
+<div class="text-left"><h6>
+<b>F - Services
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="cc6" name="cc6" placeholder="" >
+</div>
+</div>
+
+
+<br>                  
+<div class="text-left"><h6>
+<b>G - Education
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="cc7" name="cc7" placeholder="" >
+</div>
+</div>
+
+
+<div class="text-left"><h6>
+<b>H - Governance
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="cc8" name="cc8" placeholder="" >
+</div>
+</div>
+
+
+<div class="text-left"><h6>
+<b>I - Job creation/income generation
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="cc11" name="cc11" placeholder="" >
+</div>
+</div>
+
+
+<div class="text-left"><h6>
+<b>J - Social Services
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="cc12" name="cc12" placeholder="" >
+</div>
+</div>
+
+
+<div class="text-left"><h6>
+<b>K - Is there other volunteers that have extended to the barangay in the past three months?
+</b></h6></div> 
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                        <input class="form-check-input" type="radio" name="cc13"  data-val="Yes" value="Yes">Yes<br>
+                        <input class="form-check-input" type="radio" name="cc13"  data-val="No" value="No">No
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div>  
+
+<div class="cc13_repeat" hidden=""> 
+<br>                  
+<div class="text-left"><h5>
+Other volunteers that have extended to the barangay
+</h5></div> 
+<br>
+
+<div class="text-left"><h6>
+<b>Please specify Other volunteers that have extended to the barangay # 1
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="cc13_specify" name="cc13_specify" placeholder="" >
+</div>
+</div>
+
+
+<div class="text-left"><h6>
+<b>Count:
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="cc13_specify_count" name="cc13_specify_count" placeholder="" >
+</div>
+</div>
+</div>
+
+
+<br>
+<br>                  
+<div class="text-left"><h5>
+B2. What are the volunteer service organizations which extended help to the barangay in the past 12 months?
+</h5></div>
+
+<br>                  
+<div class="text-left"><h5>
+<b>Volunteer Service</b>
+</h5></div>
+
+
+<br>                  
+<div class="text-left"><h5>
+Name of Volunteer Service Organization
+</h5></div>
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="name_of_organization_volunteerism" name="name_of_organization_volunteerism" placeholder="" >
+</div>
+</div>
+
+<br>
+                
+<div class="text-left"><h5>
+B3. Sector / Area:
+</h5></div>
+
+
+<div class="container"> 
+                    <div class="col-sm-10">
+                          <div class="row">
+                            <label>
+                                
+                                     <input class="form-check-input respo_radio" type="checkbox" name="name_of_sector_volunteerism"  data-val="Yes" value="Yes">
+                                  &nbsp&nbsp A. Agriculture
+                               
+                            </label>
+                        </div>
+
+                              <div class="row">
+                            <label>
+                                
+                                     <input class="form-check-input respo_radio" type="checkbox" name="name_of_sector_volunteerism"  data-val="Yes" value="Yes">
+                                  &nbsp&nbsp  B. Environment
+                               
+                            </label>
+                        </div>
+
+
+                              <div class="row">
+                            <label>
+                                
+                                     <input class="form-check-input respo_radio" type="checkbox" name="name_of_sector_volunteerism"  data-val="Yes" value="Yes">
+                                  &nbsp&nbsp  C. Health
+                               
+                            </label>
+                        </div>
 
 
 
+                              <div class="row">
+                            <label>
+                                
+                                     <input class="form-check-input respo_radio" type="checkbox" name="name_of_sector_volunteerism"  data-val="Yes" value="Yes">
+                                  &nbsp&nbsp  D. Peace and Security
+                               
+                            </label>
+                        </div>
 
 
+                              <div class="row">
+                            <label>
+                                
+                                     <input class="form-check-input respo_radio" type="checkbox" name="name_of_sector_volunteerism"  data-val="Yes" value="Yes">
+                                  &nbsp&nbsp  E. Industry
+                               
+                            </label>
+                        </div>
 
 
+                              <div class="row">
+                            <label>
+                                
+                                     <input class="form-check-input respo_radio" type="checkbox" name="name_of_sector_volunteerism"  data-val="Yes" value="Yes">
+                                  &nbsp&nbsp  F. Services
+                               
+                            </label>
+                        </div>
 
 
+                              <div class="row">
+                            <label>
+                                
+                                     <input class="form-check-input respo_radio" type="checkbox" name="name_of_sector_volunteerism"  data-val="Yes" value="Yes">
+                                  &nbsp&nbsp  G. Education
+                               
+                            </label>
+                        </div>
 
 
+                              <div class="row">
+                            <label>
+                                
+                                     <input class="form-check-input respo_radio" type="checkbox" name="name_of_sector_volunteerism"  data-val="Yes" value="Yes">
+                                  &nbsp&nbsp  H. Governance
+                               
+                            </label>
+                        </div>
+
+
+                              <div class="row">
+                            <label>
+                                
+                                     <input class="form-check-input respo_radio" type="checkbox" name="name_of_sector_volunteerism"  data-val="Yes" value="Yes">
+                                  &nbsp&nbsp  I. Job creation / income generation
+                               
+                            </label>
+                        </div>
+
+
+                              <div class="row">
+                            <label>
+                                
+                                     <input class="form-check-input respo_radio" type="checkbox" name="name_of_sector_volunteerism"  data-val="Yes" value="Yes">
+                                  &nbsp&nbsp  J. Social Services
+                               
+                            </label>
+                        </div>
+
+
+                              <div class="row">
+                            <label>
+                                
+                                     <input class="form-check-input respo_radio" type="checkbox" name="name_of_sector_volunteerism"  data-val="Yes" value="Yes">
+                                  &nbsp&nbsp  K. Others, Specify
+                               
+                            </label>
+                        </div>
+                      </div>
+              </div>  
+
+
+<br>
+
+<hr>
+
+<br>
+<h5 class="text-left" style="color: "><b>C. ROAD NETWORK</b></h5><br>   
+
+<br>
+<div class="text-left"><h5>
+<b>TYPE OF ROAD</b>
+</h5></div>
+
+<br>                  
+<div class="text-left"><h5>
+C1. Are any of the following roads/streets present in the barangay?
+</h5></div>
+<br>
+
+<div class="text-left"><h6>
+<b>C1. Is this present in the barangay? <span style="color: blue"> - A. Paved Concrete</span>
+</b></h6></div>  
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                        <input class="form-check-input" type="radio" name="paved_concrete"  data-val="Yes" value="Yes">Yes<br>
+                        <input class="form-check-input" type="radio" name="paved_concrete"  data-val="No" value="No">No
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div>
+
+
+<div class="paved_concrete_repeat" hidden=""> 
+
+<br>                  
+<div class="text-left"><h6>
+<b>C2. What is the name of the Paved Concrete # 1?
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="paved_concrete_name" name="paved_concrete_name" placeholder="" >
+</div>
+</div>
+
+<br>                  
+<div class="text-left"><h6>
+<b>C3. What is the length of the ? (in kms.)
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="paved_concrete_length" name="paved_concrete_length" placeholder="" >
+</div>
+</div>
+
+
+<br>                  
+<div class="text-left"><h6>
+<b>C4. Who is maintaining the ?
+</b></h6></div>
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                       <input class="form-check-input" type="radio" name="paved_concrete_maintaining" data-val="No" value="No">1 - Private<br> 
+                       <input class="form-check-input" type="radio" name="paved_concrete_maintaining" data-val="No" value="No">2 - National Government<br> 
+                       <input class="form-check-input" type="radio" name="paved_concrete_maintaining" data-val="No" value="No">3 - Provincial Government<br> 
+                       <input class="form-check-input" type="radio" name="paved_concrete_maintaining" data-val="No" value="No">4 - Municipal/City Government<br> 
+                       <input class="form-check-input" type="radio" name="paved_concrete_maintaining" data-val="No" value="No">5 - Barangay<br> 
+                       <input class="form-check-input" type="radio" name="paved_concrete_maintaining" data-val="Yes" value="Yes">6 - Others, specify<br> 
+                       <input class="form-check-input" type="radio" name="paved_concrete_maintaining" data-val="No" value="No">7 - None<br> 
+                       <input class="form-check-input" type="radio" name="paved_concrete_maintaining" data-val="No" value="No">8 - Don't Know<br>
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div> 
+
+<div class="RN5_concrete_others_repeat" hidden=""> 
+
+<br>                  
+<div class="text-left"><h6>
+<b>C4. Others, please specify:
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="RN5_concrete_others" name="RN5_concrete_others" placeholder="" >
+</div>
+</div>
+</div>
+
+<br>                  
+<div class="text-left"><h6>
+<b>C5. What is the present condition of the road? (See Codes Below)
+</b></h6></div>
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                       <input class="form-check-input" type="radio" name="paved_concrete_condition" data-val="No" value="No">1 - Good<br> 
+                       <input class="form-check-input" type="radio" name="paved_concrete_condition" data-val="No" value="No">2 - Fair<br> 
+                       <input class="form-check-input" type="radio" name="paved_concrete_condition" data-val="No" value="No">3 - Poor<br> 
+                       <input class="form-check-input" type="radio" name="paved_concrete_condition" data-val="No" value="No">4 - Bad<br> 
+                       <input class="form-check-input" type="radio" name="paved_concrete_condition" data-val="No" value="No">5 - No assessment<br> 
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div> 
+</div>
+
+<br>
+<br>
+
+<div class="text-left"><h6>
+<b>C1. Is this present in the barangay? <span style="color: blue"> - B. Paved Asphalt</span>
+</b></h6></div>  
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                        <input class="form-check-input" type="radio" name="paved_asphalt"  data-val="Yes" value="Yes">Yes<br>
+                        <input class="form-check-input" type="radio" name="paved_asphalt"  data-val="No" value="No">No
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div>
+
+
+<div class="paved_asphalt_repeat" hidden=""> 
+
+<br>                  
+<div class="text-left"><h6>
+<b>C2. What is the name of the Paved Asphalt # 1?
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="paved_asphalt_name" name="paved_asphalt_name" placeholder="" >
+</div>
+</div>
+
+<br>                  
+<div class="text-left"><h6>
+<b>C3. What is the length of the ? (in kms.)
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="paved_asphalt_length" name="paved_asphalt_length" placeholder="" >
+</div>
+</div>
+
+
+<br>                  
+<div class="text-left"><h6>
+<b>C4. Who is maintaining the ?
+</b></h6></div>
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                       <input class="form-check-input" type="radio" name="paved_asphalt_maintaining" data-val="No" value="No">1 - Private<br> 
+                       <input class="form-check-input" type="radio" name="paved_asphalt_maintaining" data-val="No" value="No">2 - National Government<br> 
+                       <input class="form-check-input" type="radio" name="paved_asphalt_maintaining" data-val="No" value="No">3 - Provincial Government<br> 
+                       <input class="form-check-input" type="radio" name="paved_asphalt_maintaining" data-val="No" value="No">4 - Municipal/City Government<br> 
+                       <input class="form-check-input" type="radio" name="paved_asphalt_maintaining" data-val="No" value="No">5 - Barangay<br> 
+                       <input class="form-check-input" type="radio" name="paved_asphalt_maintaining" data-val="Yes" value="Yes">6 - Others, specify<br> 
+                       <input class="form-check-input" type="radio" name="paved_asphalt_maintaining" data-val="No" value="No">7 - None<br> 
+                       <input class="form-check-input" type="radio" name="paved_asphalt_maintaining" data-val="No" value="No">8 - Don't Know<br>
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div> 
+
+<div class="RN5_asphalt_others_repeat" hidden=""> 
+
+<br>                  
+<div class="text-left"><h6>
+<b>C4. Others, please specify:
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="RN5_asphalt_others" name="RN5_asphalt_others" placeholder="" >
+</div>
+</div>
+</div>
+
+<br>                  
+<div class="text-left"><h6>
+<b>C5. What is the present condition of the road? (See Codes Below)
+</b></h6></div>
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                       <input class="form-check-input" type="radio" name="paved_asphalt_condition" data-val="No" value="No">1 - Good<br> 
+                       <input class="form-check-input" type="radio" name="paved_asphalt_condition" data-val="No" value="No">2 - Fair<br> 
+                       <input class="form-check-input" type="radio" name="paved_asphalt_condition" data-val="No" value="No">3 - Poor<br> 
+                       <input class="form-check-input" type="radio" name="paved_asphalt_condition" data-val="No" value="No">4 - Bad<br> 
+                       <input class="form-check-input" type="radio" name="paved_asphalt_condition" data-val="No" value="No">5 - No assessment<br> 
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div> 
+</div>
+
+
+<br>
+<br>
+
+<div class="text-left"><h6>
+<b>C1. Is this present in the barangay? <span style="color: blue"> - C. Unpaved Gravel</span>
+</b></h6></div>  
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                        <input class="form-check-input" type="radio" name="unpaved_gravel"  data-val="Yes" value="Yes">Yes<br>
+                        <input class="form-check-input" type="radio" name="unpaved_gravel"  data-val="No" value="No">No
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div>
+
+
+<div class="unpaved_gravel_repeat" hidden=""> 
+
+<br>                  
+<div class="text-left"><h6>
+<b>C2. What is the name of the Unpaved Gravel # 1?
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="unpaved_gravel_name" name="unpaved_gravel_name" placeholder="" >
+</div>
+</div>
+
+<br>                  
+<div class="text-left"><h6>
+<b>C3. What is the length of the ? (in kms.)
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="unpaved_gravel_length" name="unpaved_gravel_length" placeholder="" >
+</div>
+</div>
+
+
+<br>                  
+<div class="text-left"><h6>
+<b>C4. Who is maintaining the ?
+</b></h6></div>
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                       <input class="form-check-input" type="radio" name="unpaved_gravel_maintaining" data-val="No" value="No">1 - Private<br> 
+                       <input class="form-check-input" type="radio" name="unpaved_gravel_maintaining" data-val="No" value="No">2 - National Government<br> 
+                       <input class="form-check-input" type="radio" name="unpaved_gravel_maintaining" data-val="No" value="No">3 - Provincial Government<br> 
+                       <input class="form-check-input" type="radio" name="unpaved_gravel_maintaining" data-val="No" value="No">4 - Municipal/City Government<br> 
+                       <input class="form-check-input" type="radio" name="unpaved_gravel_maintaining" data-val="No" value="No">5 - Barangay<br> 
+                       <input class="form-check-input" type="radio" name="unpaved_gravel_maintaining" data-val="Yes" value="Yes">6 - Others, specify<br> 
+                       <input class="form-check-input" type="radio" name="unpaved_gravel_maintaining" data-val="No" value="No">7 - None<br> 
+                       <input class="form-check-input" type="radio" name="unpaved_gravel_maintaining" data-val="No" value="No">8 - Don't Know<br>
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div> 
+
+<div class="RN5_gravel_others_repeat" hidden=""> 
+
+<br>                  
+<div class="text-left"><h6>
+<b>C4. Others, please specify:
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="RN5_gravel_others" name="RN5_gravel_others" placeholder="" >
+</div>
+</div>
+</div>
+
+<br>                  
+<div class="text-left"><h6>
+<b>C5. What is the present condition of the road? (See Codes Below)
+</b></h6></div>
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                       <input class="form-check-input" type="radio" name="unpaved_gravel_condition" data-val="No" value="No">1 - Good<br> 
+                       <input class="form-check-input" type="radio" name="unpaved_gravel_condition" data-val="No" value="No">2 - Fair<br> 
+                       <input class="form-check-input" type="radio" name="unpaved_gravel_condition" data-val="No" value="No">3 - Poor<br> 
+                       <input class="form-check-input" type="radio" name="unpaved_gravel_condition" data-val="No" value="No">4 - Bad<br> 
+                       <input class="form-check-input" type="radio" name="unpaved_gravel_condition" data-val="No" value="No">5 - No assessment<br> 
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div> 
+</div>
+
+<br>
+<br>
+
+
+<div class="text-left"><h6>
+<b>C1. Is this present in the barangay? <span style="color: blue"> - D. Unpaved Earth</span>
+</b></h6></div>  
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                        <input class="form-check-input" type="radio" name="unpaved_earth"  data-val="Yes" value="Yes">Yes<br>
+                        <input class="form-check-input" type="radio" name="unpaved_earth"  data-val="No" value="No">No
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div>
+
+
+<div class="unpaved_earth_repeat" hidden=""> 
+
+<br>                  
+<div class="text-left"><h6>
+<b>C2. What is the name of the Unpaved Earth # 1?
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="unpaved_earth_name" name="unpaved_earth_name" placeholder="" >
+</div>
+</div>
+
+<br>                  
+<div class="text-left"><h6>
+<b>C3. What is the length of the ? (in kms.)
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="unpaved_earth_length" name="unpaved_earth_length" placeholder="" >
+</div>
+</div>
+
+
+<br>                  
+<div class="text-left"><h6>
+<b>C4. Who is maintaining the ?
+</b></h6></div>
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                       <input class="form-check-input" type="radio" name="unpaved_earth_maintaining" data-val="No" value="No">1 - Private<br> 
+                       <input class="form-check-input" type="radio" name="unpaved_earth_maintaining" data-val="No" value="No">2 - National Government<br> 
+                       <input class="form-check-input" type="radio" name="unpaved_earth_maintaining" data-val="No" value="No">3 - Provincial Government<br> 
+                       <input class="form-check-input" type="radio" name="unpaved_earth_maintaining" data-val="No" value="No">4 - Municipal/City Government<br> 
+                       <input class="form-check-input" type="radio" name="unpaved_earth_maintaining" data-val="No" value="No">5 - Barangay<br> 
+                       <input class="form-check-input" type="radio" name="unpaved_earth_maintaining" data-val="Yes" value="Yes">6 - Others, specify<br> 
+                       <input class="form-check-input" type="radio" name="unpaved_earth_maintaining" data-val="No" value="No">7 - None<br> 
+                       <input class="form-check-input" type="radio" name="unpaved_earth_maintaining" data-val="No" value="No">8 - Don't Know<br>
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div> 
+
+<div class="RN5_earth_others_repeat" hidden=""> 
+
+<br>                  
+<div class="text-left"><h6>
+<b>C4. Others, please specify:
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="RN5_earth_others" name="RN5_earth_others" placeholder="" >
+</div>
+</div>
+</div>
+
+<br>                  
+<div class="text-left"><h6>
+<b>C5. What is the present condition of the road? (See Codes Below)
+</b></h6></div>
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                       <input class="form-check-input" type="radio" name="unpaved_earth_condition" data-val="No" value="No">1 - Good<br> 
+                       <input class="form-check-input" type="radio" name="unpaved_earth_condition" data-val="No" value="No">2 - Fair<br> 
+                       <input class="form-check-input" type="radio" name="unpaved_earth_condition" data-val="No" value="No">3 - Poor<br> 
+                       <input class="form-check-input" type="radio" name="unpaved_earth_condition" data-val="No" value="No">4 - Bad<br> 
+                       <input class="form-check-input" type="radio" name="unpaved_earth_condition" data-val="No" value="No">5 - No assessment<br> 
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div> 
+</div>
 
 
 
