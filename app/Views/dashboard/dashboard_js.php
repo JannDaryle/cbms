@@ -2028,7 +2028,6 @@ else if (s == "No")
 });
 
 
-
 $('input[name="general_info_others"]').click(function(){
 
 var s =  $(this).data("val");
@@ -2046,13 +2045,158 @@ else if (s == "No")
 });
 
 
+$('input[name="cc13"]').click(function(){
+
+var s =  $(this).data("val");
+
+if(s == "Yes")
+{
+  $(".cc13_repeat").attr("hidden",false);
+   jQuery('.submit_table_3').DataTable().ajax.reload();
+}
+else if (s == "No")
+{
+  $(".cc13_repeat").attr("hidden",true); 
+}
+
+});
+
+
+$('input[name="paved_concrete"]').click(function(){
+
+var s =  $(this).data("val");
+
+if(s == "Yes")
+{
+  $(".paved_concrete_repeat").attr("hidden",false);
+   jQuery('.submit_table_3').DataTable().ajax.reload();
+}
+else if (s == "No")
+{
+  $(".paved_concrete_repeat").attr("hidden",true); 
+}
+
+});
+
+
+$('input[name="paved_concrete_maintaining"]').click(function(){
+
+var s =  $(this).data("val");
+
+if(s == "Yes")
+{
+  $(".RN5_concrete_others_repeat").attr("hidden",false);
+   jQuery('.submit_table_3').DataTable().ajax.reload();
+}
+else if (s == "No")
+{
+  $(".RN5_concrete_others_repeat").attr("hidden",true); 
+}
+
+});
+
+
+$('input[name="paved_asphalt"]').click(function(){
+
+var s =  $(this).data("val");
+
+if(s == "Yes")
+{
+  $(".paved_asphalt_repeat").attr("hidden",false);
+   jQuery('.submit_table_3').DataTable().ajax.reload();
+}
+else if (s == "No")
+{
+  $(".paved_asphalt_repeat").attr("hidden",true); 
+}
+
+});
 
 
 
+$('input[name="paved_asphalt_maintaining"]').click(function(){
+
+var s =  $(this).data("val");
+
+if(s == "Yes")
+{
+  $(".RN5_asphalt_others_repeat").attr("hidden",false);
+   jQuery('.submit_table_3').DataTable().ajax.reload();
+}
+else if (s == "No")
+{
+  $(".RN5_asphalt_others_repeat").attr("hidden",true); 
+}
+
+});
 
 
+$('input[name="unpaved_gravel"]').click(function(){
+
+var s =  $(this).data("val");
+
+if(s == "Yes")
+{
+  $(".unpaved_gravel_repeat").attr("hidden",false);
+   jQuery('.submit_table_3').DataTable().ajax.reload();
+}
+else if (s == "No")
+{
+  $(".unpaved_gravel_repeat").attr("hidden",true); 
+}
+
+});
 
 
+$('input[name="unpaved_gravel_maintaining"]').click(function(){
+
+var s =  $(this).data("val");
+
+if(s == "Yes")
+{
+  $(".RN5_gravel_others_repeat").attr("hidden",false);
+   jQuery('.submit_table_3').DataTable().ajax.reload();
+}
+else if (s == "No")
+{
+  $(".RN5_gravel_others_repeat").attr("hidden",true); 
+}
+
+});
+
+
+$('input[name="unpaved_earth"]').click(function(){
+
+var s =  $(this).data("val");
+
+if(s == "Yes")
+{
+  $(".unpaved_earth_repeat").attr("hidden",false);
+   jQuery('.submit_table_3').DataTable().ajax.reload();
+}
+else if (s == "No")
+{
+  $(".unpaved_earth_repeat").attr("hidden",true); 
+}
+
+});
+
+
+$('input[name="unpaved_earth_maintaining"]').click(function(){
+
+var s =  $(this).data("val");
+
+if(s == "Yes")
+{
+  $(".RN5_earth_others_repeat").attr("hidden",false);
+   jQuery('.submit_table_3').DataTable().ajax.reload();
+}
+else if (s == "No")
+{
+  $(".RN5_earth_others_repeat").attr("hidden",true); 
+}
+
+});
 
 
 
