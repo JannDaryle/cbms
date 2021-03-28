@@ -2008,9 +2008,43 @@ else if (s == "No")
 }
 
 
-
- 
 });
+
+
+$('input[name="disaster_used_evacuation_center"]').click(function(){
+
+var s =  $(this).data("val");
+
+if(s == "Yes")
+{
+  $(".disaster_used_evacuation_center_repeat").attr("hidden",false);
+   jQuery('.submit_table_3').DataTable().ajax.reload();
+}
+else if (s == "No")
+{
+  $(".disaster_used_evacuation_center_repeat").attr("hidden",true); 
+}
+
+});
+
+
+
+$('input[name="general_info_others"]').click(function(){
+
+var s =  $(this).data("val");
+
+if(s == "Yes")
+{
+  $(".general_info_others_repeat").attr("hidden",false);
+   jQuery('.submit_table_3').DataTable().ajax.reload();
+}
+else if (s == "No")
+{
+  $(".general_info_others_repeat").attr("hidden",true); 
+}
+
+});
+
 
 
 
