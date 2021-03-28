@@ -5175,7 +5175,7 @@ DP17. Does the barangay have an evacuation facility?
 
 <div class="form-group row">
   <div class="col-sm-6">
-  <input type="text" class="form-control" id="barangay_official_website_url" name="barangay_official_website_url" placeholder="" >
+  <input type="text" class="form-control" id="disaster_location_evacuation_center" name="disaster_location_evacuation_center" placeholder="" >
 </div>
 </div>
 
@@ -5191,7 +5191,7 @@ DP17. Does the barangay have an evacuation facility?
                     <div class="col text-left">
                       <div class="container">
                   <input class="form-check-input" type="radio" name="disaster_categorize_evacuation_center" data-val="No" value="No">SCHOOL BUILDING<br>  
-                  <input class="form-check-input" type="radio" name="disaster_categorize_evacuation_center" data-val="No" value="No">SCHOOL BUILDING<br>
+                  <input class="form-check-input" type="radio" name="disaster_categorize_evacuation_center" data-val="No" value="No">DEDICATED EVACUATION CENTER<br>
                     <input class="form-check-input" type="radio"  name="disaster_categorize_evacuation_center" data-val="Yes" value="Yes">OTHERS, SPECIFY<br>
                  
                     
@@ -5205,7 +5205,7 @@ DP17. Does the barangay have an evacuation facility?
 
 <br>                  
 <div class="text-left"><h6>
-<b>Please Specify
+<b>Please Specify:
 </b></h6></div>   
 
 <div class="form-group row">
@@ -5226,7 +5226,7 @@ DP17. Does the barangay have an evacuation facility?
 
 <div class="form-group row">
 <div class="col-sm-3">
-  <input type="number" class="form-control" id="barangay_it_personnel_count" name="barangay_it_personnel_count" placeholder="" >
+  <input type="number" class="form-control" id="disaster_capacity_evacuation_center" name="disaster_capacity_evacuation_center" placeholder="" >
 </div>
 </div>
 
@@ -5236,10 +5236,1827 @@ DP17. Does the barangay have an evacuation facility?
 </b></h6></div>  
 
 
+<div class="container"> 
+                    <div class="col-sm-10">
+                          <div class="row">
+                            <label>
+                                
+                                     <input class="form-check-input respo_radio" type="checkbox" name="disaster_used_evacuation_center"  data-val="No" value="No">
+                                  &nbsp&nbsp A. TYPHOON
+                               
+                            </label>
+                        </div>
+
+                              <div class="row">
+                            <label>
+                                
+                                     <input class="form-check-input respo_radio" type="checkbox" name="disaster_used_evacuation_center"  data-val="No" value="No">
+                                  &nbsp&nbsp  B. FLOODING
+                               
+                            </label>
+                        </div>
+
+                        <div class="row">
+                            <label>
+                                
+                                     <input class="form-check-input respo_radio" type="checkbox" name="disaster_used_evacuation_center"  data-val="No" value="No">
+                                  &nbsp&nbsp  C. DROUGHT
+                               
+                            </label>
+                        </div>
+
+
+                         <div class="row">
+                            <label>
+                                
+                                     <input class="form-check-input respo_radio" type="checkbox" name="disaster_used_evacuation_center"  data-val="No" value="No">
+                                  &nbsp&nbsp  D. EARTHQUAKE
+                               
+                            </label>
+                        </div> 
+
+
+                         <div class="row">
+                            <label>
+                                
+                                     <input class="form-check-input respo_radio" type="checkbox" name="disaster_used_evacuation_center"  data-val="No" value="No">
+                                  &nbsp&nbsp  E. VOLCANIC ERUPTION
+                               
+                            </label>
+                        </div>
+                    
+                     <div class="row">
+                            <label>
+                                
+                                     <input class="form-check-input respo_radio" type="checkbox" name="disaster_used_evacuation_center"  data-val="No" value="No">
+                                  &nbsp&nbsp  F. LANDSLIDE
+                               
+                            </label>
+                        </div>
+                    
+                     <div class="row">
+                            <label>
+                                
+                                     <input class="form-check-input respo_radio" type="checkbox" name="disaster_used_evacuation_center"  data-val="No" value="No">
+                                  &nbsp&nbsp  G. TSUNAMI
+                               
+                            </label>
+                        </div>
+                    
+                        <div class="row">
+                            <label>
+                                
+                                     <input class="form-check-input respo_radio" type="checkbox" name="disaster_used_evacuation_center"  data-val="No" value="No">
+                                  &nbsp&nbsp  H. FOREST FIRE
+                               
+                            </label>
+                        </div> 
+
+
+                         <div class="row">
+                            <label>
+                                
+                                     <input class="form-check-input respo_radio" type="checkbox" name="disaster_used_evacuation_center"  data-val="No" value="No">
+                                  &nbsp&nbsp  I. FIRE
+                               
+                            </label>
+                        </div>
+                    
+                         <div class="row">
+                            <label>
+                                
+                                     <input class="form-check-input respo_radio" type="checkbox" name="disaster_used_evacuation_center"  data-val="No" value="No">
+                                  &nbsp&nbsp  J. EPIDEMIC/PANDEMIC
+                               
+                            </label>
+                        </div>
+                    
+
+                        <div class="row">
+                            <label>
+                                
+                                     <input class="form-check-input respo_radio" type="checkbox" name="disaster_used_evacuation_center"  data-val="No" value="No">
+                                  &nbsp&nbsp  K. ARMED CONFLICT
+                               
+                            </label>
+                        </div>
+                    
+
+                     <div class="row">
+                            <label>
+                                
+                                     <input class="form-check-input respo_radio" type="checkbox" name="disaster_used_evacuation_center"  data-val="Yes" value="Yes">
+                                  &nbsp&nbsp  L. OTHERS, SPECIFY
+                               
+                            </label>
+                        </div>
+                    
+
+                     <div class="row">
+                            <label>
+                                
+                                     <input class="form-check-input respo_radio" type="checkbox" name="disaster_used_evacuation_center"  data-val="No" value="No">
+                                  &nbsp&nbsp  M. NOT YET USED
+                               
+                            </label>
+                        </div>
+                    
+                      </div>
+              </div>   
+
+ <div class="disaster_used_evacuation_center_repeat" hidden=""> 
+
+<br>                  
+<div class="text-left"><h6>
+<b>Please Specify
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="disaster_used_evacuation_center_other" name="disaster_used_evacuation_center_other" placeholder="" >
+</div>
+</div>
+</div>   
+
+<br>                  
+<div class="text-left"><h6>
+<b>DP22. Does the facility have access to safe drinking water?
+</b></h6></div>   
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                        <input class="form-check-input" type="radio" name="disaster_has_safe_water"  data-val="Yes" value="Yes">Yes<br>
+                        <input class="form-check-input" type="radio" name="disaster_has_safe_water"  data-val="No" value="No">No
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div>  
+
+
+<br>                  
+<div class="text-left"><h6>
+<b>DP23. Does the facility have access to sanitary toilets?
+</b></h6></div>   
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                        <input class="form-check-input" type="radio" name="disaster_has_sanitary_toilets"  data-val="Yes" value="Yes">Yes<br>
+                        <input class="form-check-input" type="radio" name="disaster_has_sanitary_toilets"  data-val="No" value="No">No
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div>  
+
+
+<br>                  
+<div class="text-left"><h6>
+<b>DP24. Does the facility have an operational hand-washing area?
+</b></h6></div>   
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                        <input class="form-check-input" type="radio" name="disaster_has_handwashing_area"  data-val="Yes" value="Yes">Yes<br>
+                        <input class="form-check-input" type="radio" name="disaster_has_handwashing_area"  data-val="No" value="No">No
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div>  
+
+
+<br>                  
+<div class="text-left"><h6>
+<b>DP25. Does the facility have a disinfection area?
+</b></h6></div>   
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                        <input class="form-check-input" type="radio" name="disaster_has_disinfection_area"  data-val="Yes" value="Yes">Yes<br>
+                        <input class="form-check-input" type="radio" name="disaster_has_disinfection_area"  data-val="No" value="No">No
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div>  
+
+<br>                  
+<div class="text-left"><h6>
+<b>DP26. Does the facility have medical kits?
+</b></h6></div>   
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                        <input class="form-check-input" type="radio" name="disaster_has_medicalkits"  data-val="Yes" value="Yes">Yes<br>
+                        <input class="form-check-input" type="radio" name="disaster_has_medicalkits"  data-val="No" value="No">No
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div>  
 
 </div>
 
 
+<br>             
+<div class="text-left"><h6>
+<b>Time and Date Ended:
+</b></h6></div>
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="date" class="form-control" id="barangay_official_website_url" name="barangay_official_website_url" placeholder="" > 
+  <input type="Time" class="form-control" id="barangay_official_website_url" name="barangay_official_website_url" placeholder="" >
+</div>
+</div>
+<br>
+
+<hr>
+
+<br>
+<h5 class="text-left" style="color: "><b>PART II. BARANGAY LGU AND RECORDS-BASED DATA
+A. GENERAL INFORMATION ABOUT THE BARANGAY LOCAL GOVERNMENT UNIT</b></h5><br>   
+
+
+<br>                  
+<div class="text-left"><h5>
+<b>Ages of Barangay Officials</b>
+</h5></div>
+
+
+<br>                  
+
+<h6 class="text-left" style="color: blue"><b>A. CAPTAIN</b></h6>
+<div class="text-left"><h5>
+A1. How many are males aged for Captain as of April 01, 2020? Please input a number.
+</h5></div>
+
+
+<br>                  
+<div class="text-left"><h6>
+<b>15 to 30 years old
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_male_1a" name="gi_male_1a" placeholder="" >
+</div>
+</div>
+
+
+<div class="text-left"><h6>
+<b>31 to 59 years old
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_male_1b" name="gi_male_1b" placeholder="" >
+</div>
+</div>
+
+
+<div class="text-left"><h6>
+<b>60 and above
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_male_1c" name="gi_male_1c" placeholder="" >
+</div>
+</div>
+
+
+<br>
+<div class="text-left"><h5>
+A2. How many are females aged for Captain as of April 01, 2020? Please input a number.
+</h5></div>
+
+
+<br>                  
+<div class="text-left"><h6>
+<b>15 to 30 years old
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_female_1a" name="gi_female_1a" placeholder="" >
+</div>
+</div>
+
+
+<div class="text-left"><h6>
+<b>31 to 59 years old
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_female_1b" name="gi_female_1b" placeholder="" >
+</div>
+</div>
+
+
+<div class="text-left"><h6>
+<b>60 and above
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_female_1c" name="gi_female_1c" placeholder="" >
+</div>
+</div>
+<br>
+<hr>
+
+<br>
+<h6 class="text-left" style="color: blue"><b>B. KAGAWAD</b></h6>
+<div class="text-left"><h5>
+A1. How many are males aged for Kagawad as of April 01, 2020? Please input a number.
+</h5></div>
+
+
+<br>                  
+<div class="text-left"><h6>
+<b>15 to 30 years old
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_female_1a" name="gi_male_2a" placeholder="" >
+</div>
+</div>
+
+
+<div class="text-left"><h6>
+<b>31 to 59 years old
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_female_1b" name="gi_male_2b" placeholder="" >
+</div>
+</div>
+
+
+<div class="text-left"><h6>
+<b>60 and above
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_female_1c" name="gi_male_2c" placeholder="" >
+</div>
+</div>
+
+
+<br>
+<div class="text-left"><h5>
+A2. How many are females aged for Kagawad as of April 01, 2020? Please input a number.
+</h5></div> 
+
+
+<br>                  
+<div class="text-left"><h6>
+<b>15 to 30 years old
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_female_1a" name="gi_female_2a" placeholder="" >
+</div>
+</div>
+
+
+<div class="text-left"><h6>
+<b>31 to 59 years old
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_female_1b" name="gi_female_2b" placeholder="" >
+</div>
+</div>
+
+
+<div class="text-left"><h6>
+<b>60 and above
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_female_1c" name="gi_female_2c" placeholder="" >
+</div>
+</div>
+<br>
+
+<hr>
+
+<br>
+<h6 class="text-left" style="color: blue"><b>C. SECRETARY</b></h6>
+<div class="text-left"><h5>
+A1. How many are males aged for Secretary as of April 01, 2020? Please input a number.
+</h5></div>
+
+
+<br>                  
+<div class="text-left"><h6>
+<b>15 to 30 years old
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_male_3a" name="gi_male_3a" placeholder="" >
+</div>
+</div>
+
+
+<div class="text-left"><h6>
+<b>31 to 59 years old
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_male_3b" name="gi_male_3b" placeholder="" >
+</div>
+</div>
+
+
+<div class="text-left"><h6>
+<b>60 and above
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_male_3c" name="gi_male_3c" placeholder="" >
+</div>
+</div>
+
+
+<br>
+<div class="text-left"><h5>
+A2. How many are females aged for Secretary as of April 01, 2020? Please input a number.
+</h5></div> 
+
+
+<br>                  
+<div class="text-left"><h6>
+<b>15 to 30 years old
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_female_3a" name="gi_female_3a" placeholder="" >
+</div>
+</div>
+
+
+<div class="text-left"><h6>
+<b>31 to 59 years old
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_female_3b" name="gi_female_3b" placeholder="" >
+</div>
+</div>
+
+
+<div class="text-left"><h6>
+<b>60 and above
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_female_3c" name="gi_female_3c" placeholder="" >
+</div>
+</div>
+<br>
+
+<hr>
+
+<br>
+<h6 class="text-left" style="color: blue"><b>D. TREASURER</b></h6>
+<div class="text-left"><h5>
+A1. How many are males aged for Treasurer as of April 01, 2020? Please input a number.
+</h5></div>
+
+<br>                  
+<div class="text-left"><h6>
+<b>15 to 30 years old
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_male_4a" name="gi_male_4a" placeholder="" >
+</div>
+</div>
+
+
+<div class="text-left"><h6>
+<b>31 to 59 years old
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_male_4b" name="gi_male_4b" placeholder="" >
+</div>
+</div>
+
+
+<div class="text-left"><h6>
+<b>60 and above
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_male_4c" name="gi_male_4c" placeholder="" >
+</div>
+</div>
+
+
+<br>
+<div class="text-left"><h5>
+A2. How many are females aged for Treasurer as of April 01, 2020? Please input a number.
+</h5></div> 
+
+
+<br>                  
+<div class="text-left"><h6>
+<b>15 to 30 years old
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_female_4a" name="gi_female_4a" placeholder="" >
+</div>
+</div>
+
+
+<div class="text-left"><h6>
+<b>31 to 59 years old
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_female_4b" name="gi_female_4b" placeholder="" >
+</div>
+</div>
+
+
+<div class="text-left"><h6>
+<b>60 and above
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_female_4c" name="gi_female_4c" placeholder="" >
+</div>
+</div>
+<br>
+
+<hr>
+
+<br>
+<h6 class="text-left" style="color: blue"><b>E. TANOD</b></h6>
+<div class="text-left"><h5>
+A1. How many are males aged for Tanod as of April 01, 2020? Please input a number.
+</h5></div>
+
+<br>                  
+<div class="text-left"><h6>
+<b>15 to 30 years old
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_male_5a" name="gi_male_5a" placeholder="" >
+</div>
+</div>
+
+
+<div class="text-left"><h6>
+<b>31 to 59 years old
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_male_5b" name="gi_male_5b" placeholder="" >
+</div>
+</div>
+
+
+<div class="text-left"><h6>
+<b>60 and above
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_male_5c" name="gi_male_5c" placeholder="" >
+</div>
+</div>
+
+
+<br>
+<div class="text-left"><h5>
+A2. How many are females aged for Tanod as of April 01, 2020? Please input a number.
+</h5></div> 
+
+
+<br>                  
+<div class="text-left"><h6>
+<b>15 to 30 years old
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_female_5a" name="gi_female_5a" placeholder="" >
+</div>
+</div>
+
+
+<div class="text-left"><h6>
+<b>31 to 59 years old
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_female_5b" name="gi_female_5b" placeholder="" >
+</div>
+</div>
+
+
+<div class="text-left"><h6>
+<b>60 and above
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_female_5c" name="gi_female_5c" placeholder="" >
+</div>
+</div>
+<br>
+
+<hr>
+
+<br>
+<h6 class="text-left" style="color: blue"><b>F. HEALTH WORKER (DOCTOR / NURSE)</b></h6>
+<div class="text-left"><h5>
+A1. How many are males aged for Health Worker (Doctor / Nurse) as of April 01, 2020? Please input a number.
+</h5></div>
+
+
+<br>                  
+<div class="text-left"><h6>
+<b>15 to 30 years old
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_male_6a" name="gi_male_6a" placeholder="" >
+</div>
+</div>
+
+
+<div class="text-left"><h6>
+<b>31 to 59 years old
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_male_6b" name="gi_male_6b" placeholder="" >
+</div>
+</div>
+
+
+<div class="text-left"><h6>
+<b>60 and above
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_male_6c" name="gi_male_6c" placeholder="" >
+</div>
+</div>
+
+
+<br>
+<div class="text-left"><h5>
+A2. How many are females aged for Health Worker (Doctor / Nurse) as of April 01, 2020? Please input a number.
+</h5></div> 
+
+
+<br>                  
+<div class="text-left"><h6>
+<b>15 to 30 years old
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_female_6a" name="gi_female_6a" placeholder="" >
+</div>
+</div>
+
+
+<div class="text-left"><h6>
+<b>31 to 59 years old
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_female_6b" name="gi_female_6b" placeholder="" >
+</div>
+</div>
+
+
+<div class="text-left"><h6>
+<b>60 and above
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_female_6c" name="gi_female_6c" placeholder="" >
+</div>
+</div>
+<br>
+
+<hr>
+
+
+<br>
+<h6 class="text-left" style="color: blue"><b>G. NUTRITION SCHOLAR</b></h6>
+<div class="text-left"><h5>
+A1. How many are males aged for Nutrition Scholar as of April 01, 2020? Please input a number.
+</h5></div>
+
+
+<br>                  
+<div class="text-left"><h6>
+<b>15 to 30 years old
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_male_7a" name="gi_male_7a" placeholder="" >
+</div>
+</div>
+
+
+<div class="text-left"><h6>
+<b>31 to 59 years old
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_male_7b" name="gi_male_7b" placeholder="" >
+</div>
+</div>
+
+
+<div class="text-left"><h6>
+<b>60 and above
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_male_7c" name="gi_male_7c" placeholder="" >
+</div>
+</div>
+
+
+<br>
+<div class="text-left"><h5>
+A2. How many are females aged for Nutrition Scholar as of April 01, 2020? Please input a number.
+</h5></div> 
+
+
+<br>                  
+<div class="text-left"><h6>
+<b>15 to 30 years old
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_female_7a" name="gi_female_7a" placeholder="" >
+</div>
+</div>
+
+
+<div class="text-left"><h6>
+<b>31 to 59 years old
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_female_7b" name="gi_female_7b" placeholder="" >
+</div>
+</div>
+
+
+<div class="text-left"><h6>
+<b>60 and above
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_female_7c" name="gi_female_7c" placeholder="" >
+</div>
+</div>
+<br>
+
+<hr>
+
+<br>
+<h6 class="text-left" style="color: blue"><b>H. PUROK LEADER</b></h6>
+<div class="text-left"><h5>
+A1. How many are males aged for Purok Leader as of April 01, 2020? Please input a number.
+</h5></div>
+
+
+<br>                  
+<div class="text-left"><h6>
+<b>15 to 30 years old
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_male_8a" name="gi_male_8a" placeholder="" >
+</div>
+</div>
+
+
+<div class="text-left"><h6>
+<b>31 to 59 years old
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_male_8b" name="gi_male_8b" placeholder="" >
+</div>
+</div>
+
+
+<div class="text-left"><h6>
+<b>60 and above
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_male_8c" name="gi_male_8c" placeholder="" >
+</div>
+</div>
+
+
+<br>
+<div class="text-left"><h5>
+A2. How many are females aged for Purok Leader as of April 01, 2020? Please input a number.
+</h5></div> 
+
+
+<br>                  
+<div class="text-left"><h6>
+<b>15 to 30 years old
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_female_8a" name="gi_female_8a" placeholder="" >
+</div>
+</div>
+
+
+<div class="text-left"><h6>
+<b>31 to 59 years old
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_female_8b" name="gi_female_8b" placeholder="" >
+</div>
+</div>
+
+
+<div class="text-left"><h6>
+<b>60 and above
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_female_8c" name="gi_female_8c" placeholder="" >
+</div>
+</div>
+<br>
+
+<hr>
+
+<br>
+<h6 class="text-left" style="color: blue"><b>I. ENR OFFICER</b></h6>
+<div class="text-left"><h5>
+A1. How many are males aged for ENR Officer as of April 01, 2020? Please input a number.
+</h5></div>
+
+
+<br>                  
+<div class="text-left"><h6>
+<b>15 to 30 years old
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_male_9a" name="gi_male_9a" placeholder="" >
+</div>
+</div>
+
+
+<div class="text-left"><h6>
+<b>31 to 59 years old
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_male_9b" name="gi_male_9b" placeholder="" >
+</div>
+</div>
+
+
+<div class="text-left"><h6>
+<b>60 and above
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_male_9c" name="gi_male_9c" placeholder="" >
+</div>
+</div>
+
+
+<br>
+<div class="text-left"><h5>
+A2. How many are females aged for ENR Officer as of April 01, 2020? Please input a number.
+</h5></div> 
+
+
+<br>                  
+<div class="text-left"><h6>
+<b>15 to 30 years old
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_female_9a" name="gi_female_9a" placeholder="" >
+</div>
+</div>
+
+
+<div class="text-left"><h6>
+<b>31 to 59 years old
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_female_9b" name="gi_female_9b" placeholder="" >
+</div>
+</div>
+
+
+<div class="text-left"><h6>
+<b>60 and above
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_female_9c" name="gi_female_9c" placeholder="" >
+</div>
+</div>
+<br>
+
+<hr>
+
+<br>
+<h6 class="text-left" style="color: blue"><b>J. LIBRARIAN</b></h6>
+<div class="text-left"><h5>
+A1. How many are males aged for Librarian as of April 01, 2020? Please input a number.
+</h5></div>
+
+
+<br>                  
+<div class="text-left"><h6>
+<b>15 to 30 years old
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_male_10a" name="gi_male_10a" placeholder="" >
+</div>
+</div>
+
+
+<div class="text-left"><h6>
+<b>31 to 59 years old
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_male_10b" name="gi_male_10b" placeholder="" >
+</div>
+</div>
+
+
+<div class="text-left"><h6>
+<b>60 and above
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_male_10c" name="gi_male_10c" placeholder="" >
+</div>
+</div>
+
+
+<br>
+<div class="text-left"><h5>
+A2. How many are females aged for Librarian as of April 01, 2020? Please input a number.
+</h5></div> 
+
+
+<br>                  
+<div class="text-left"><h6>
+<b>15 to 30 years old
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_female_10a" name="gi_female_10a" placeholder="" >
+</div>
+</div>
+
+
+<div class="text-left"><h6>
+<b>31 to 59 years old
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_female_10b" name="gi_female_10b" placeholder="" >
+</div>
+</div>
+
+
+<div class="text-left"><h6>
+<b>60 and above
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_female_10c" name="gi_female_10c" placeholder="" >
+</div>
+</div>
+<br>
+
+<hr>
+
+<br>
+<h6 class="text-left" style="color: blue"><b>K. DAY CARE WORKER</b></h6>
+<div class="text-left"><h5>
+A1. How many are males aged for Day Care Worker as of April 01, 2020? Please input a number.
+</h5></div>
+
+
+<br>                  
+<div class="text-left"><h6>
+<b>15 to 30 years old
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_male_11a" name="gi_male_11a" placeholder="" >
+</div>
+</div>
+
+
+<div class="text-left"><h6>
+<b>31 to 59 years old
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_male_11b" name="gi_male_11b" placeholder="" >
+</div>
+</div>
+
+
+<div class="text-left"><h6>
+<b>60 and above
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_male_11c" name="gi_male_11c" placeholder="" >
+</div>
+</div>
+
+
+<br>
+<div class="text-left"><h5>
+A2. How many are females aged for Day Care Worker as of April 01, 2020? Please input a number.
+</h5></div> 
+
+
+<br>                  
+<div class="text-left"><h6>
+<b>15 to 30 years old
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_female_12a" name="gi_female_12a" placeholder="" >
+</div>
+</div>
+
+
+<div class="text-left"><h6>
+<b>31 to 59 years old
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_female_12b" name="gi_female_12b" placeholder="" >
+</div>
+</div>
+
+
+<div class="text-left"><h6>
+<b>60 and above
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_female_12c" name="gi_female_12c" placeholder="" >
+</div>
+</div>
+<br>
+
+<hr>
+
+<br>
+<h6 class="text-left" style="color: blue"><b>L. UTILITY WORKER</b></h6>
+<div class="text-left"><h5>
+A1. How many are males aged for Utility Worker as of April 01, 2020? Please input a number.
+</h5></div>
+
+<br>                  
+<div class="text-left"><h6>
+<b>15 to 30 years old
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_male_13a" name="gi_male_13a" placeholder="" >
+</div>
+</div>
+
+
+<div class="text-left"><h6>
+<b>31 to 59 years old
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_male_13b" name="gi_male_13b" placeholder="" >
+</div>
+</div>
+
+
+<div class="text-left"><h6>
+<b>60 and above
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_male_13c" name="gi_male_13c" placeholder="" >
+</div>
+</div>
+
+
+<br>
+<div class="text-left"><h5>
+A2. How many are females aged for Utility Worker as of April 01, 2020? Please input a number.
+</h5></div> 
+
+
+<br>                  
+<div class="text-left"><h6>
+<b>15 to 30 years old
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_female_13a" name="gi_female_13a" placeholder="" >
+</div>
+</div>
+
+
+<div class="text-left"><h6>
+<b>31 to 59 years old
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_female_13b" name="gi_female_13b" placeholder="" >
+</div>
+</div>
+
+
+<div class="text-left"><h6>
+<b>60 and above
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_female_13c" name="gi_female_13c" placeholder="" >
+</div>
+</div>
+<br>
+
+<hr>
+
+<br>
+<h6 class="text-left" style="color: blue"><b>M. OTHERS (e.g. MIDWIFE) as of April 01, 2020? PLEASE SPECIFY:</b></h6>
+<div class="text-left"><h6>
+<b>Add Entry?
+</b></h6></div>
+
+<div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                        <input class="form-check-input" type="radio" name="general_info_others"  data-val="Yes" value="Yes">Yes<br>
+                        <input class="form-check-input" type="radio" name="general_info_others"  data-val="No" value="No">No
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div>                          
+   
+<div class="general_info_others_repeat" hidden=""> 
+
+<br>
+<div class="text-left"><h5>
+Other Barangay Worker:
+</h5></div>
+
+              
+<div class="text-left"><h6>
+<b>Please specify other barangay worker:
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="general_info_name" name="general_info_name" placeholder="" >
+</div>
+</div>
+<br>
+
+
+<div class="text-left"><h5>
+A1. How many are males aged for as of April 01, 2020? Please input a number.
+</h5></div>
+
+<br>                  
+<div class="text-left"><h6>
+<b>15 to 30 years old
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_male_14a" name="gi_male_14a" placeholder="" >
+</div>
+</div>
+
+
+<div class="text-left"><h6>
+<b>31 to 59 years old
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_male_14b" name="gi_male_14b" placeholder="" >
+</div>
+</div>
+
+
+<div class="text-left"><h6>
+<b>60 and above
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_male_14c" name="gi_male_14c" placeholder="" >
+</div>
+</div>
+
+<br>
+<div class="text-left"><h5>
+A2. How many are females aged for as of April 01, 2020? Please input a number.
+</h5></div>
+
+<br>                  
+<div class="text-left"><h6>
+<b>15 to 30 years old
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_female_14a" name="gi_female_14a" placeholder="" >
+</div>
+</div>
+
+
+<div class="text-left"><h6>
+<b>31 to 59 years old
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_female_14b" name="gi_female_14b" placeholder="" >
+</div>
+</div>
+
+
+<div class="text-left"><h6>
+<b>60 and above
+</b></h6></div>   
+
+<div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="gi_female_14c" name="gi_female_14c" placeholder="" >
+</div>
+</div>
+
+</div>
+
+<br>
+
+<hr>
+
+<br>
+<h5 class="text-left" style="color: "><b>A. GENERAL INFORMATION ABOUT THE BARANGAY LOCAL GOVERNMENT UNIT OTHER DETAILS:</b></h5><br>  
+
+<br>                  
+<div class="text-left"><h5>
+Reference Period:</h5>
+<i style="font-size: 11px; color: gray"> mm/yy - mm/yy</i>
+</h5></div>
+
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="others_lgu_reference_period" name="others_lgu_reference_period" placeholder="" >
+</div>
+</div>
+
+<br>                  
+<div class="text-left"><h5>Title of Source Document:</h5>
+
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="others_lgu_source_document" name="others_lgu_source_document" placeholder="" >
+</div>
+</div>
+
+<br>                  
+<div class="text-left"><h5>Data source agency/unit:</h5></div>
+
+<br>
+
+<hr>
+
+<br>                  
+<div class="text-left"><h5><b>A3. ESTABLISHMENTS OF THE BARANGAY</b></h5></div> 
+
+<br>
+<br>                
+<div class="text-left"><h5>
+A3. How many Agriculture, forestry, and fishing establishments are in the barangay as of 01 April 2021?
+</h5></div>
+
+<br>
+<div class="text-left"><h6>
+<b>Agriculture, forestry, and fishing</b></h6></div>  
+
+<br>
+<div class="text-left"><h6>
+<b>Number of establishments</b></h6></div>
+<i style="font-size: 11px; color: gray"> "Please input "0" if none"</i>  
+
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="agriculture_number_establishments" name="agriculture_number_establishments" placeholder="" >
+</div>
+</div>
+
+<br>
+<br>                
+<div class="text-left"><h5>
+A3. How many Mining and quarrying establishments are in the barangay as of 01 April 2021?
+</h5></div>
+
+<br>
+<div class="text-left"><h6>
+<b>Mining and quarrying</b></h6></div>  
+
+<br>
+<div class="text-left"><h6>
+<b>Number of establishments</b></h6></div>
+<i style="font-size: 11px; color: gray"> "Please input "0" if none"</i>  
+
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="mining_number_establishments" name="mining_number_establishments" placeholder="" >
+</div>
+</div>
+
+
+<br>
+<br>                
+<div class="text-left"><h5>
+A3. How many Manufacturing establishments are in the barangay as of 01 April 2021?
+</h5></div>
+
+<br>
+<div class="text-left"><h6>
+<b>Manufacturing</b></h6></div>  
+
+<br>
+<div class="text-left"><h6>
+<b>Number of establishments</b></h6></div>
+<i style="font-size: 11px; color: gray"> "Please input "0" if none"</i>  
+
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="manufacturing_number_establishments" name="manufacturing_number_establishments" placeholder="" >
+</div>
+</div>
+
+
+<br>
+<br>                
+<div class="text-left"><h5>
+A3. How many Electricity, gas, steam, and air conditioning supply establishments are in the barangay as of 01 April 2021?
+</h5></div>
+
+<br>
+<div class="text-left"><h6>
+<b>Electricity, gas, steam, and air conditioning supply</b></h6></div>  
+
+<br>
+<div class="text-left"><h6>
+<b>Number of establishments</b></h6></div>
+<i style="font-size: 11px; color: gray"> "Please input "0" if none"</i>  
+
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="electricity_number_establishments" name="electricity_number_establishments" placeholder="" >
+</div>
+</div>
+
+
+<br>
+<br>                
+<div class="text-left"><h5>
+A3. How many Water supply, sewerage, waste management and remediation activities establishments are in the barangay as of 01 April 2021?
+</h5></div>
+
+<br>
+<div class="text-left"><h6>
+<b>Water supply, sewerage, waste management and remediation activities</b></h6></div>  
+
+<br>
+<div class="text-left"><h6>
+<b>Number of establishments</b></h6></div>
+<i style="font-size: 11px; color: gray"> "Please input "0" if none"</i>  
+
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="water_number_establishments" name="water_number_establishments" placeholder="" >
+</div>
+</div>
+
+
+<br>
+<br>                
+<div class="text-left"><h5>
+A3. How many Construction establishments are in the barangay as of 01 April 2021?
+</h5></div>
+
+<br>
+<div class="text-left"><h6>
+<b>Construction</b></h6></div>  
+
+<br>
+<div class="text-left"><h6>
+<b>Number of establishments</b></h6></div>
+<i style="font-size: 11px; color: gray"> "Please input "0" if none"</i>  
+
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="construction_number_establishments" name="construction_number_establishments" placeholder="" >
+</div>
+</div>
+
+
+<br>
+<br>                
+<div class="text-left"><h5>
+A3. How many Wholesale and retail trade; repair of motor vehicles and motorcycles establishments are in the barangay as of 01 April 2021?
+</h5></div>
+
+<br>
+<div class="text-left"><h6>
+<b>Wholesale and retail trade; repair of motor vehicles and motorcycles</b></h6></div>  
+
+<br>
+<div class="text-left"><h6>
+<b>Number of establishments</b></h6></div>
+<i style="font-size: 11px; color: gray"> "Please input "0" if none"</i>  
+
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="wholesale_number_establishments" name="wholesale_number_establishments" placeholder="" >
+</div>
+</div>
+
+
+<br>
+<br>                
+<div class="text-left"><h5>
+A3. How many Transportation and storage establishments are in the barangay as of 01 April 2021?
+</h5></div>
+
+<br>
+<div class="text-left"><h6>
+<b>Transportation and storage</b></h6></div>  
+
+<br>
+<div class="text-left"><h6>
+<b>Number of establishments</b></h6></div>
+<i style="font-size: 11px; color: gray"> "Please input "0" if none"</i>  
+
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="transportation_number_establishments" name="transportation_number_establishments" placeholder="" >
+</div>
+</div>
+
+
+<br>
+<br>                
+<div class="text-left"><h5>
+A3. How many Accommodation and food service activities establishments are in the barangay as of 01 April 2021?
+</h5></div>
+
+<br>
+<div class="text-left"><h6>
+<b>Accommodation and food service activities</b></h6></div>  
+
+<br>
+<div class="text-left"><h6>
+<b>Number of establishments</b></h6></div>
+<i style="font-size: 11px; color: gray"> "Please input "0" if none"</i>  
+
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="accommodation_number_establishments" name="accommodation_number_establishments" placeholder="" >
+</div>
+</div>
+
+
+<br>
+<br>                
+<div class="text-left"><h5>
+A3. How many Information and communication establishments are in the barangay as of 01 April 2021?
+</h5></div>
+
+<br>
+<div class="text-left"><h6>
+<b>Information and communication</b></h6></div>  
+
+<br>
+<div class="text-left"><h6>
+<b>Number of establishments</b></h6></div>
+<i style="font-size: 11px; color: gray"> "Please input "0" if none"</i>  
+
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="information_number_establishments" name="information_number_establishments" placeholder="" >
+</div>
+</div>
+
+
+<br>
+<br>                
+<div class="text-left"><h5>
+A3. How many Financial and insurance activities establishments are in the barangay as of 01 April 2021?
+</h5></div>
+
+<br>
+<div class="text-left"><h6>
+<b>Financial and insurance activities</b></h6></div>  
+
+<br>
+<div class="text-left"><h6>
+<b>Number of establishments</b></h6></div>
+<i style="font-size: 11px; color: gray"> "Please input "0" if none"</i>  
+
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="financial_number_establishments" name="financial_number_establishments" placeholder="" >
+</div>
+</div>
+
+
+<br>
+<br>                
+<div class="text-left"><h5>
+A3. How many Real estate activities establishments are in the barangay as of 01 April 2021?
+</h5></div>
+
+<br>
+<div class="text-left"><h6>
+<b>Real estate activities</b></h6></div>  
+
+<br>
+<div class="text-left"><h6>
+<b>Number of establishments</b></h6></div>
+<i style="font-size: 11px; color: gray"> "Please input "0" if none"</i>  
+
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="realestate_number_establishments" name="realestate_number_establishments" placeholder="" >
+</div>
+</div>
+
+
+<br>
+<br>                
+<div class="text-left"><h5>
+A3. How many Professional, scientific, and technical services establishments are in the barangay as of 01 April 2021?
+</h5></div>
+
+<br>
+<div class="text-left"><h6>
+<b>Professional, scientific, and technical services</b></h6></div>  
+
+<br>
+<div class="text-left"><h6>
+<b>Number of establishments</b></h6></div>
+<i style="font-size: 11px; color: gray"> "Please input "0" if none"</i>  
+
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="professional_number_establishments" name="professional_number_establishments" placeholder="" >
+</div>
+</div>
+
+
+<br>
+<br>                
+<div class="text-left"><h5>
+A3. How many Administrative and support service activities establishments are in the barangay as of 01 April 2021?
+</h5></div>
+
+<br>
+<div class="text-left"><h6>
+<b>Administrative and support service activities</b></h6></div>  
+
+<br>
+<div class="text-left"><h6>
+<b>Number of establishments</b></h6></div>
+<i style="font-size: 11px; color: gray"> "Please input "0" if none"</i>  
+
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="administrative_number_establishments" name="administrative_number_establishments" placeholder="" >
+</div>
+</div>
+
+
+<br>
+<br>                
+<div class="text-left"><h5>
+A3. How many Public administration and defense; compulsory social security establishments are in the barangay as of 01 April 2021?
+</h5></div>
+
+<br>
+<div class="text-left"><h6>
+<b>Public administration and defense; compulsory social security</b></h6></div>  
+
+<br>
+<div class="text-left"><h6>
+<b>Number of establishments</b></h6></div>
+<i style="font-size: 11px; color: gray"> "Please input "0" if none"</i>  
+
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="public_number_establishments" name="public_number_establishments" placeholder="" >
+</div>
+</div>
+
+
+<br>
+<br>                
+<div class="text-left"><h5>
+A3. How many Education establishments are in the barangay as of 01 April 2021?
+</h5></div>
+
+<br>
+<div class="text-left"><h6>
+<b>Education</b></h6></div>  
+
+<br>
+<div class="text-left"><h6>
+<b>Number of establishments</b></h6></div>
+<i style="font-size: 11px; color: gray"> "Please input "0" if none"</i>  
+
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="education_number_establishments" name="education_number_establishments" placeholder="" >
+</div>
+</div>
+
+
+<br>
+<br>                
+<div class="text-left"><h5>
+A3. How many Human health and social work activities establishments are in the barangay as of 01 April 2021?
+</h5></div>
+
+<br>
+<div class="text-left"><h6>
+<b>Human health and social work activities</b></h6></div>  
+
+<br>
+<div class="text-left"><h6>
+<b>Number of establishments</b></h6></div>
+<i style="font-size: 11px; color: gray"> "Please input "0" if none"</i>  
+
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="human_number_establishments" name="human_number_establishments" placeholder="" >
+</div>
+</div>
+
+
+<br>
+<br>                
+<div class="text-left"><h5>
+A3. How many Arts, entertainment, and recreation establishments are in the barangay as of 01 April 2021?
+</h5></div>
+
+<br>
+<div class="text-left"><h6>
+<b>Arts, entertainment, and recreation</b></h6></div>  
+
+<br>
+<div class="text-left"><h6>
+<b>Number of establishments</b></h6></div>
+<i style="font-size: 11px; color: gray"> "Please input "0" if none"</i>  
+
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="arts_number_establishments" name="arts_number_establishments" placeholder="" >
+</div>
+</div>
+
+
+<br>
+<br>                
+<div class="text-left"><h5>
+A3. How many Other service activities establishments are in the barangay as of 01 April 2021?
+</h5></div>
+
+<br>
+<div class="text-left"><h6>
+<b>Other service activities</b></h6></div>  
+
+<br>
+<div class="text-left"><h6>
+<b>Number of establishments</b></h6></div>
+<i style="font-size: 11px; color: gray"> "Please input "0" if none"</i>  
+
+<div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="other_number_establishments" name="other_number_establishments" placeholder="" >
+</div>
+</div>
+
+
+
+
+
+
+</div>
 
 
 
