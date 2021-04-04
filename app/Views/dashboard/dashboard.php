@@ -2140,9 +2140,11 @@ G1. Is the Waste-to-energy facility present in the barangay?
 <div class="text-left"><h5>GARBAGE AND WASTE DISPOSAL - Waste-to-energy facility</h5>
 
 <br>                  
-<div class="text-left"><h6>
+<label for="inputPassword" class="text-left"><h6>
 <b>G3. What is the name of the Waste-to-energy facility # 1?
-</b></h6></div>   
+</b></h6>
+</label>
+
 
 <div class="form-group row">
   <div class="col-sm-6">
@@ -2151,9 +2153,10 @@ G1. Is the Waste-to-energy facility present in the barangay?
 </div>
 
 <br>                  
-<div class="text-left"><h6>
+<label for="inputPassword" class="text-left"><h6>
 <b>G4. Building name of
-</b></h6></div>   
+</b></h6>
+</label>
 
 <div class="form-group row">
   <div class="col-sm-6">
@@ -3682,86 +3685,76 @@ IT20.1 Please provide the photo containing the e-government strategy.</b>
 <div class="text-left"><h6>
 <b>S1. From 01 April 2018 to 31 March 2020, how many times did the event occur and negatively affected the barangay? Put number/s in the line provided.
 </b></h6></div>  
-
-<br>                  
-<div class="text-left"><h5>
-A. Climate-related and geologic events
-</h5></div>
-
-
 <br>
+
 <div class="row">
-<div class="row-sm-3">
-  <div class="col text-left">
-    <b>typhoon</b>
-<input type="number" class="form-control" id="significant_events_typhoon" name="significant_events_typhoon" placeholder="" >
-   </div>
- </div>
+  <div class="float-sm-left">
+     <div class="container-fluid" align="left" style="width:100%">
+    
+     <table id="table2" class="cell-border compact text-left table-hover" style="width:100%">
+        <thead>
+            <tr>
+                <th>Climate-related and <br>geologic events</th>
+                <th style="width:40%"><br><i style="font-size: 12px !important; color: red">"Please input "0" if none"</i></th>
+               
+            </tr>
+        </thead>
 
-  <div class="col text-left"> 
-    <div class="row-sm-3">
-  <b>flooding</b>
-  <input type="number" class="form-control" id="significant_events_flooding" name="significant_events_flooding" placeholder="" >
-   </div>       
+              <tr>
+                <td>typhoon</td>
+                <td> <input type="number" class="form-control" name="significant_events_typhoon" placeholder="" ></td>
+              </tr>
+
+              <tr>
+                <td>flooding</td>
+                <td> <input type="number" class="form-control" name="significant_events_flooding" placeholder="" ></td>
+              </tr>
+
+              <tr>
+                <td>flash flood</td>
+                <td> <input type="number" class="form-control" name="significant_events_flash_flood" placeholder="" ></td>
+              </tr>
+
+              <tr>
+                <td>drought</td>
+                <td> <input type="number" class="form-control" name="significant_events_drought" placeholder="" ></td>
+              </tr>
+
+              <tr>
+                <td>earthquake</td>
+                <td> <input type="number" class="form-control" name="significant_events_earthquake" placeholder="" ></td>
+              </tr>
+
+              <tr>
+                <td>volcanic eruption</td>
+                <td> <input type="number" class="form-control" name="significant_events_volcanic_eruption" placeholder="" ></td>
+              </tr>
+
+              <tr>
+                <td>landslide</td>
+                <td> <input type="number" class="form-control" name="significant_events_landslide" placeholder="" ></td>
+              </tr>
+
+              <tr>
+                <td>tsunami</td>
+                <td> <input type="number" class="form-control" name="significant_events_tsunami" placeholder="" ></td>
+              </tr>
+
+               <tr>
+                <td>forest fire</td>
+                <td> <input type="number" class="form-control" name="significant_events_forest_fire" placeholder="" ></td>
+              </tr>
+
+              
+
+
+
+     </table>
+               
   </div>
-
-<div class="col text-left"> 
-  <div class="row-sm-3">
-  <b>flash flood</b>
-  <input type="number" class="form-control" id="significant_events_flash_flood" name="significant_events_flash_flood" placeholder="" >
-   </div>      
-  </div> 
-
-  <div class="col text-left"> 
-    <div class="row-sm-3">
-  <b>drought</b>
-  <input type="number" class="form-control" id="significant_events_drought" name="significant_events_drought" placeholder="" >
-   </div>      
-  </div>
+    </div>
 </div>
 
-
-<!-- endrow -->
-<br>
-<div class="row">
-<div class="row-sm-3">
-  <div class="col text-left">
-    <b>earthquake</b>
-    <input type="number" class="form-control" id="significant_events_earthquake" name="significant_events_earthquake" placeholder="" >
-   </div>
- </div>
-
-  <div class="col text-left"> 
-    <div class="row-sm-3">
-  <b> volcanic eruption</b>
-  <input type="number" class="form-control" id="significant_events_volcanic_eruption" name="significant_events_volcanic_eruption" placeholder="" >
-   </div>       
-  </div>
-
-<div class="col text-left"> 
-  <div class="row-sm-3">
-  <b>landslide</b>
-  <input type="number" class="form-control" id="significant_events_landslide" name="significant_events_landslide" placeholder="" >
-   </div>      
-  </div> 
-
-  <div class="col text-left"> 
-    <div class="row-sm-3">
-  <b>tsunami</b>
-  <input type="number" class="form-control" id="significant_events_tsunami" name="significant_events_tsunami" placeholder="" >
-   </div>      
-  </div>
-</div>
-
-<br>
-<div class="row">
-  <div class="row-sm-3">
-  <div class="col text-left">
-    <b>forest fire</b>
-    <input type="number" class="form-control" id="significant_events_forest_fire" name="significant_events_forest_fire" placeholder="" >
-   </div>
- </div>
-</div>
 
 <br>
 <hr>
@@ -3769,8 +3762,76 @@ A. Climate-related and geologic events
 <br>
 <h5 class="text-left" style="color: "><b>SIGNIFICANT EVENTS IN THE BARANGAY FOR PAST 3 YEARS - ECONOMIC EVENTS (01 April 2018 to 31 March 2020)</b></h5><br>   
 
+
+<div class="row">
+  <div class="float-sm-left">
+     <div class="container-fluid" align="left" style="width:100%">
+    
+     <table id="table2" class="cell-border compact text-left table-hover" style="width:100%">
+        <thead>
+            <tr>
+                <th>B. Economic Events</th>
+                <th style="width:40%"><br><i style="font-size: 12px !important; color: red">"Please input "0" if none"</i></th>
+               
+            </tr>
+        </thead>
+
+              <tr>
+                <td>closure of many small firms</td>
+                <td> <input type="number" class="form-control land_classification" name="significant_events_closure" placeholder="" ></td>
+              </tr>
+
+              <tr>
+                <td>mass lay-off</td>
+                <td> <input type="number" class="form-control land_classification" name="significant_events_mass" placeholder="" ></td>
+              </tr>
+
+              <tr>
+                <td>opening of large firm/s</td>
+                <td> <input type="number" class="form-control land_classification" name="significant_events_largefirm" placeholder="" ></td>
+              </tr>
+
+              <tr>
+                <td>opening of many small firm/s</td>
+                <td> <input type="number" class="form-control land_classification" name="significant_events_smallfirm" placeholder="" ></td>
+              </tr>
+
+              <tr>
+                <td>opening of shopping malls</td>
+                <td> <input type="number" class="form-control land_classification" name="significant_events_shoppingmalls" placeholder="" ></td>
+              </tr>
+
+              <tr>
+                <td>opening of fastfood restaurant/s</td>
+                <td> <input type="number" class="form-control land_classification" name="significant_events_fastfood" placeholder="" ></td>
+              </tr>
+
+              <tr>
+                <td>closure of large firms</td>
+                <td> <input type="number" class="form-control land_classification" name="significant_events_closure_large_firms" placeholder="" ></td>
+              </tr>
+
+              </tr>
+
+     </table>
               
-<div class="text-left"><h5>
+  </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+              
+<!-- <div class="text-left"><h5>
 B. Economic events
 </h5></div>
 
@@ -3854,7 +3915,7 @@ B. Economic events
   <input type="number" class="form-control" id="significant_events_closure_large_firms" name="significant_events_closure_large_firms" placeholder="" >
 </div>
 </div>
-<br>
+<br> -->
 
 
 <hr>
@@ -3891,7 +3952,7 @@ C. Peace and order events
 
 <hr>
 <br>
-<h5 class="text-left" style="color: "><b>SIGNIFICANT EVENTS IN THE BARANGAY FOR PAST 3 YEARS - CLIMATE-RELATED AND GEOLOGIC EVENTS (01 April 2020 to 31 March 2021)</b></h5><br>   
+<h5 class="text-left" style="color: "><b>SIGNIFICANT EVENTS IN THE BARANGAY FOR PAST 3 YEARS - HEALTH AND AGRICULTURE-RELATED EVENTS (01 April 2018 to 31 March 2020)</b></h5><br>   
 
 
 <div class="text-left"><h5>
@@ -4004,91 +4065,78 @@ S2. Based on report to barangay, what are the main reasons for the closure of fi
 <br>
 <h5 class="text-left" style="color: "><b>SIGNIFICANT EVENTS IN THE BARANGAY FOR PAST 3 YEARS - CLIMATE-RELATED AND GEOLOGIC EVENTS (01 April 2020 to 31 March 2021)</b></h5><br>   
 
-<div class="text-left"><h6>
-<b>S3. From 01 April 2020 to 31 March 2021, how many times did the event occur or affected the barangay?
-</b></h6></div>  
-
-<br>                  
-<div class="text-left"><h5>
-Climate-related and geologic events
-</h5></div>
 
 
-<br>
 <div class="row">
-<div class="row-sm-3">
-  <div class="col text-left">
-    <b>typhoon</b>
-<input type="number" class="form-control" id="significant_events_typhoon2" name="significant_events_typhoon2" placeholder="" >
-   </div>
- </div>
+  <div class="float-sm-left">
+     <div class="container-fluid" align="left" style="width:100%">
+    
+     <table id="table2" class="cell-border compact text-left table-hover" style="width:100%">
+        <thead>
+            <tr>
+                <th>Climate-related and <br>geologic events</th>
+                <th style="width:40%">Occurence <br><i style="font-size: 12px !important; color: red">"Please input "0" if none"</i></th>
+               
+            </tr>
+        </thead>
 
-  <div class="col text-left"> 
-    <div class="row-sm-3">
-  <b>flooding</b>
-  <input type="number" class="form-control" id="significant_events_flooding2" name="significant_events_flooding2" placeholder="" >
-   </div>       
+              <tr>
+                <td>typhoon</td>
+                <td> <input type="number" class="form-control" name="significant_events_typhoon2" placeholder="" ></td>
+              </tr>
+
+              <tr>
+                <td>flooding</td>
+                <td> <input type="number" class="form-control" name="significant_events_flooding2" placeholder="" ></td>
+              </tr>
+
+              <tr>
+                <td>flash flood</td>
+                <td> <input type="number" class="form-control" name="significant_events_flash_flood2" placeholder="" ></td>
+              </tr>
+
+              <tr>
+                <td>drought</td>
+                <td> <input type="number" class="form-control" name="significant_events_drought2" placeholder="" ></td>
+              </tr>
+
+              <tr>
+                <td>earthquake</td>
+                <td> <input type="number" class="form-control" name="significant_events_earthquake2" placeholder="" ></td>
+              </tr>
+
+              <tr>
+                <td>volcanic eruption</td>
+                <td> <input type="number" class="form-control" name="significant_events_volcanic_eruption2" placeholder="" ></td>
+              </tr>
+
+              <tr>
+                <td>landslide</td>
+                <td> <input type="number" class="form-control" name="significant_events_landslide2" placeholder="" ></td>
+              </tr>
+
+              <tr>
+                <td>tsunami</td>
+                <td> <input type="number" class="form-control" name="significant_events_tsunami2" placeholder="" ></td>
+              </tr>
+
+               <tr>
+                <td>forest fire</td>
+                <td> <input type="number" class="form-control" name="significant_events_forest_fire2" placeholder="" ></td>
+              </tr>
+
+
+
+     </table>
+    
   </div>
-
-<div class="col text-left"> 
-  <div class="row-sm-3">
-  <b>flash flood</b>
-  <input type="number" class="form-control" id="significant_events_flash_flood2" name="significant_events_flash_flood2" placeholder="" >
-   </div>      
-  </div> 
-
-  <div class="col text-left"> 
-    <div class="row-sm-3">
-  <b>drought</b>
-  <input type="number" class="form-control" id="significant_events_drought2" name="significant_events_drought2" placeholder="" >
-   </div>      
-  </div>
+    </div>
 </div>
 
 
-<!-- endrow -->
-<br>
-<div class="row">
-<div class="row-sm-3">
-  <div class="col text-left">
-    <b>earthquake</b>
-    <input type="number" class="form-control" id="significant_events_earthquake2" name="significant_events_earthquake2" placeholder="" >
-   </div>
- </div>
-
-  <div class="col text-left"> 
-    <div class="row-sm-3">
-  <b> volcanic eruption</b>
-  <input type="number" class="form-control" id="significant_events_volcanic_eruption2" name="significant_events_volcanic_eruption2" placeholder="" >
-   </div>       
-  </div>
-
-<div class="col text-left"> 
-  <div class="row-sm-3">
-  <b>landslide</b>
-  <input type="number" class="form-control" id="significant_events_landslide2" name="significant_events_landslide2" placeholder="" >
-   </div>      
-  </div> 
-
-  <div class="col text-left"> 
-    <div class="row-sm-3">
-  <b>tsunami</b>
-  <input type="number" class="form-control" id="significant_events_tsunami2" name="significant_events_tsunami2" placeholder="" >
-   </div>      
-  </div>
-</div>
-
-<br>
-<div class="row">
-  <div class="row-sm-3">
-  <div class="col text-left">
-    <b>forest fire</b>
-    <input type="number" class="form-control" id="significant_events_forest_fire2" name="significant_events_forest_fire2" placeholder="" >
-   </div>
- </div>
-</div>
 <br>
 
+<br>
 <hr>
 <br>
 <h5 class="text-left" style="color: "><b>SIGNIFICANT EVENTS IN THE BARANGAY FOR PAST 3 YEARS - ECONOMIC EVENTS (01 April 2020 to 31 March 2021)</b></h5><br>   
@@ -4487,267 +4535,121 @@ DP7. Do you have disaster preparedness guide for people with disabilities?
 <hr>
 
 <br>
+<br>
 <h5 class="text-left" style="color: "><b>B. SERVICE INSTITUTIONS AND INFRASTRUCTURE - DISASTER PREPAREDNESS - TYPE OF DISASTER</b></h5><br>   
 
 
-
 <div class="row">
-
-  <div class="col text-left"><label><b>DP9. Does the barangay have a localized early warning system for:</b></label></div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-  <div class="col text-left"> 
-          <b>&nbsp&nbsp Yes</b>
+  <div class="float-sm-left">
+     <div class="container-fluid" align="left" style="width:100%">
     
-  </div>
 
-
-<div class="col text-left"> 
-  
-          <b>No</b>
-          
-  </div>
-
-  <div class="col"></div>
-
-</div> 
-
-
-
-<br>
-<div class="row">
-
-  <div class="col text-left"><label><b>&nbsp&nbsp A. TYPHOON</b></label></div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-  <div class="col text-left"> 
-               &nbsp&nbsp<input class="form-check-input" type="radio" name="disaster_early_warning_typhoon"  data-val="Yes" value="Yes"><br>
-  </div>
-
-<div class="col text-left"> 
-           <input class="form-check-input" type="radio" name="disaster_early_warning_typhoon"  data-val="No" value="No"><br>
-          
-  </div>
-  
- 
-  <div class="col"></div>
-
-
-</div>
-
-
-
-<div class="row">
-
-  <div class="col text-left"><label><b>&nbsp&nbsp B. FLOODING</b></label></div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-  <div class="col text-left"> 
-               &nbsp&nbsp<input class="form-check-input" type="radio" name="disaster_early_warning_flooding"  data-val="Yes" value="Yes"><br>
-  </div>
-
-<div class="col text-left"> 
-           <input class="form-check-input" type="radio" name="disaster_early_warning_flooding"  data-val="No" value="No"><br>
-        
-  </div>
-  
- 
-  <div class="col"></div>
-
-
-</div>
-
-
-<div class="row">
-
-  <div class="col text-left"><label><b>&nbsp&nbsp C. DROUGHT</b></label></div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-  <div class="col text-left"> 
-               &nbsp&nbsp<input class="form-check-input" type="radio" name="disaster_early_warning_drought"  data-val="Yes" value="Yes">&nbsp&nbsp<br>
-  </div>
-
-<div class="col text-left"> 
-           <input class="form-check-input" type="radio" name="disaster_early_warning_drought"  data-val="No" value="No"><br>
-          
-  </div>
-  
- 
-  <div class="col"></div>
-
-
-</div>
-
-
-<div class="row">
-
-  <div class="col text-left"><label><b>&nbsp&nbsp D. EARTHQUAKE</b></label></div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-  <div class="col text-left"> 
-               &nbsp&nbsp<input class="form-check-input" type="radio" name="disaster_early_warning_earthquake"  data-val="Yes" value="Yes"><br>
-  </div>
-
-<div class="col text-left"> 
-           <input class="form-check-input" type="radio" name="disaster_early_warning_earthquake"  data-val="No" value="No"><br>
-          
-  </div>
-  
- 
-  <div class="col"></div>
-
-
-</div>
-
-
-<div class="row">
-
-  <div class="col text-left"><label><b>&nbsp&nbsp E. VOLCANIC &nbsp&nbsp&nbspERUPTION</b></label></div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-  <div class="col text-left"> 
-               &nbsp&nbsp<input class="form-check-input" type="radio" name="disaster_early_warning_volcanic"  data-val="Yes" value="Yes"><br>
-  </div>
-
-<div class="col text-left"> 
-           <input class="form-check-input" type="radio" name="disaster_early_warning_volcanic"  data-val="No" value="No"><br>
-         
-  </div>
-  
- 
-  <div class="col"></div>
-
-
-</div>
-
-
-
-
-<div class="row">
-
-  <div class="col text-left"><label><b>&nbsp&nbsp F. LANDSLIDE</b></label></div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-  <div class="col text-left"> 
-               &nbsp&nbsp<input class="form-check-input" type="radio" name="disaster_early_warning_landslide"  data-val="Yes" value="Yes"><br>
-  </div>
-
-<div class="col text-left"> 
-           <input class="form-check-input" type="radio" name="disaster_early_warning_landslide"  data-val="No" value="No"><br>
-          
-  </div>
-  
- 
-  <div class="col"></div>
-
-
-</div>
-
-
-<div class="row">
-
-  <div class="col text-left"><label><b>&nbsp&nbsp G. TSUNAMI</b></label></div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-  <div class="col text-left"> 
-               &nbsp&nbsp<input class="form-check-input" type="radio" name="disaster_early_warning_tsunami"  data-val="Yes" value="Yes"><br>
-  </div>
-
-<div class="col text-left"> 
-           <input class="form-check-input" type="radio" name="disaster_early_warning_tsunami"  data-val="No" value="No"><br>
-          
-  </div>
-  
- 
-  <div class="col"></div>
-
-
-</div>
-
-
-
-<div class="row">
-
-  <div class="col text-left"><label><b>&nbsp&nbsp H. STORM SURGE</b></label></div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-  <div class="col text-left"> 
-               &nbsp&nbsp<input class="form-check-input" type="radio" name="disaster_early_warning_storm"  data-val="Yes" value="Yes"><br>
-  </div>
-
-<div class="col text-left"> 
-           <input class="form-check-input" type="radio" name="disaster_early_warning_storm"  data-val="No" value="No"><br>
-          
-  </div>
-  
- 
-  <div class="col"></div>
-
-
-</div>
-
-
-
-<div class="row">
-
-  <div class="col text-left"><label><b>&nbsp&nbsp I. FOREST FIRE</b></label></div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-  <div class="col text-left"> 
-               &nbsp&nbsp<input class="form-check-input" type="radio" name="disaster_early_warning_forest"  data-val="Yes" value="Yes"><br>
-  </div>
-
-<div class="col text-left"> 
-           <input class="form-check-input" type="radio" name="disaster_early_warning_forest"  data-val="No" value="No"><br>
-        
-  </div>
-  
- 
-  <div class="col"></div>
-
-
-</div>
-
-
-
-<div class="row">
-
-  <div class="col text-left"><label><b>&nbsp&nbspJ. FIRE</b></label></div>
-  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-  <div class="col text-left"> 
-               &nbsp&nbsp<input class="form-check-input" type="radio" name="disaster_early_warning_fire"  data-val="Yes" value="Yes"><br>
-  </div>
-
-<div class="col text-left"> 
-           <input class="form-check-input" type="radio" name="disaster_early_warning_fire"  data-val="No" value="No"><br>
-          
-  </div>
-  
- 
-  <div class="col"></div>
-
-
-</div>
-
-
-
-<div class="row">
-
-  <div class="col text-left"><label><b>&nbsp K. EPIDEMIC/ &nbsp&nbspPANDEMIC</b></label></div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-  <div class="col text-left"> 
-               &nbsp&nbsp<input class="form-check-input" type="radio" name="disaster_early_warning_epidemic"  data-val="Yes" value="Yes"><br>
-  </div>
-
-<div class="col text-left"> 
-           <input class="form-check-input" type="radio" name="disaster_early_warning_epidemic"  data-val="No" value="No"><br>
-          
-  </div>
-  
- 
-  <div class="col"></div>
-
-
-</div>
-
-
-
-<div class="row">
-  <div class="container">
+<table  id="table2" class="cell-border compact text-left table-hover" align="left" style="width:100%">
+<tr>
+  <thead>
     
-  </div>
-  <div class="col text-left"><label><b>&nbsp&nbspL. ARMED CONFLICT</b></label></div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-  <div class="col text-left"> 
-               &nbsp&nbsp<input class="form-check-input" type="radio" name="disaster_early_warning_armed"  data-val="Yes" value="Yes"><br>
-  </div>
+     <th>DP9. Does the barangay have a localized <br>early warning system for: &nbsp&nbsp&nbsp&nbsp&nbsp</th>
 
-<div class="col text-left"> 
-           <input class="form-check-input" type="radio" name="disaster_early_warning_armed"  data-val="No" value="No"><br>
-            </div>
+    <th>Yes</th>
+    <th>No</th>
+  </thead>
+    
+   
+</tr>
+<tr>
+    <td>A. TYPHOON</td>
+    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_typhoon"  data-val="Yes" value="Yes" data-col="1"></label></td>
+   <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_typhoon"  data-val="No" value="No" data-col="2"></label></td> 
+</tr>
 
-  <div class="col"></div>
 
+<tr>
+  <td>B. FLOODING</td>
+    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_flooding"  data-val="Yes" value="Yes" data-col="1"></label></td>
+  <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_flooding"  data-val="No" value="No" data-col="2"></label></td>
+</tr>
+
+
+<tr>
+    <td>C. DROUGHT</td>
+    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_drought"  data-val="Yes" value="Yes" data-col="1"></label></td>
+  <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_drought"  data-val="No" value="No" data-col="2"></label></td>
+</tr>
+
+
+<tr>
+  <td>D. EARTHQUAKE</td>
+    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_earthquake"  data-val="Yes" value="Yes" data-col="1"></label></td>
+  <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_earthquake"  data-val="No" value="No" data-col="2"></label></td>
+</tr>
+
+
+<tr>
+  <td>E. VOLCANIC ERUPTION</td>
+    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_volcanic"  data-val="Yes" value="Yes" data-col="1"></label></td>
+  <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_volcanic"  data-val="No" value="No" data-col="2"></label></td>
+</tr>
+
+
+
+<tr>
+  <td>F. LANDSLIDE</td>
+    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_landslide"  data-val="Yes" value="Yes" data-col="1"></label></td>
+  <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_landslide"  data-val="No" value="Yes" data-col="2"></label></td>
+</tr>
+
+
+<tr>
+  <td>G. TSUNAMI</td>
+    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_tsunami"  data-val="Yes" value="Yes" data-col="1"></label></td>
+  <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_tsunami"  data-val="No" value="No" data-col="2"></label></td>
+</tr>
+
+
+<tr>
+  <td>H. STORM SURGE</td>
+    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_storm"  data-val="Yes" value="Yes" data-col="1"></label></td>
+  <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_storm"  data-val="No" value="No" data-col="2"></label></td>
+</tr>
+
+<tr>
+  <td>I. FOREST FIRE</td>
+    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_forest"  data-val="Yes" value="Yes" data-col="1"></label></td>
+  <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_forest"  data-val="No" value="No" data-col="2"></label></td>
+</tr>
+
+
+
+<tr>
+  <td>J. FIRE</td>
+    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_fire"  data-val="Yes" value="Yes" data-col="1"></label></td>
+  <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_fire"  data-val="No" value="No" data-col="2"></label></td>
+</tr>
+
+
+
+<tr>
+  <td>K. EPIDEMIC / PANDEMIC</td>
+    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_epidemic"  data-val="Yes" value="Yes" data-col="1"></label></td>
+  <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_epidemic"  data-val="No" value="No" data-col="2"></label></td>
+</tr>
+
+
+<tr>
+  <td>L. ARMED CONFLICT</td>
+    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_armed"  data-val="Yes" value="Yes" data-col="1"></label></td>
+  <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_armed"  data-val="No" value="No" data-col="2"></label></td>
+</tr>
+
+
+</table>
+</div>
 
 </div>
+
+    </div>
+
+ 
 
 <br>
 <br>                  
@@ -4791,263 +4693,128 @@ Other disaster that have a localized early warning system:
 <br>
 
 
-<div class="row">
 
-  <div class="col text-left"><label><b>DP10. Does the barangay have a disaster contingency plan for:</b></label></div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-  <div class="col text-left"> 
-          <b>&nbsp&nbsp Yes</b>
+<div class="row">
+  <div class="float-sm-left">
+     <div class="container-fluid" align="left" style="width:100%">
     
-  </div>
 
-
-<div class="col text-left"> 
-  
-          <b>No</b>
-          
-  </div>
-
-  <div class="col"></div>
-
-</div> 
-
-
-
-<br>
-<div class="row">
-
-  <div class="col text-left"><label><b>&nbsp&nbsp A. TYPHOON</b></label></div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-  <div class="col text-left"> 
-               &nbsp&nbsp<input class="form-check-input" type="radio" name="disaster_early_warning_typhoon_plan"  data-val="Yes" value="Yes"><br>
-  </div>
-
-<div class="col text-left"> 
-           <input class="form-check-input" type="radio" name="disaster_early_warning_typhoon_plan"  data-val="No" value="No"><br>
-          
-  </div>
-  
- 
-  <div class="col"></div>
-
-
-</div>
-
-
-
-<div class="row">
-
-  <div class="col text-left"><label><b>&nbsp&nbsp B. FLOODING</b></label></div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-  <div class="col text-left"> 
-               &nbsp&nbsp<input class="form-check-input" type="radio" name="disaster_early_warning_flooding_plan"  data-val="Yes" value="Yes"><br>
-  </div>
-
-<div class="col text-left"> 
-           <input class="form-check-input" type="radio" name="disaster_early_warning_flooding_plan"  data-val="No" value="No"><br>
-        
-  </div>
-  
- 
-  <div class="col"></div>
-
-
-</div>
-
-
-<div class="row">
-
-  <div class="col text-left"><label><b>&nbsp&nbsp C. DROUGHT</b></label></div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-  <div class="col text-left"> 
-               &nbsp&nbsp<input class="form-check-input" type="radio" name="disaster_early_warning_drought_plan"  data-val="Yes" value="Yes">&nbsp&nbsp<br>
-  </div>
-
-<div class="col text-left"> 
-           <input class="form-check-input" type="radio" name="disaster_early_warning_drought_plan"  data-val="No" value="No"><br>
-          
-  </div>
-  
- 
-  <div class="col"></div>
-
-
-</div>
-
-
-<div class="row">
-
-  <div class="col text-left"><label><b>&nbsp&nbsp D. EARTHQUAKE</b></label></div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-  <div class="col text-left"> 
-               &nbsp&nbsp<input class="form-check-input" type="radio" name="disaster_early_warning_earthquake_plan"  data-val="Yes" value="Yes"><br>
-  </div>
-
-<div class="col text-left"> 
-           <input class="form-check-input" type="radio" name="disaster_early_warning_earthquake_plan"  data-val="No" value="No"><br>
-          
-  </div>
-  
- 
-  <div class="col"></div>
-
-
-</div>
-
-
-<div class="row">
-
-  <div class="col text-left"><label><b>&nbsp&nbsp E. VOLCANIC &nbsp&nbsp&nbspERUPTION</b></label></div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-  <div class="col text-left"> 
-               &nbsp&nbsp<input class="form-check-input" type="radio" name="disaster_early_warning_volcanic_plan"  data-val="Yes" value="Yes"><br>
-  </div>
-
-<div class="col text-left"> 
-           <input class="form-check-input" type="radio" name="disaster_early_warning_volcanic_plan"  data-val="No" value="No"><br>
-         
-  </div>
-  
- 
-  <div class="col"></div>
-
-
-</div>
-
-
-
-
-<div class="row">
-
-  <div class="col text-left"><label><b>&nbsp&nbsp F. LANDSLIDE</b></label></div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-  <div class="col text-left"> 
-               &nbsp&nbsp<input class="form-check-input" type="radio" name="disaster_early_warning_landslide_plan"  data-val="Yes" value="Yes"><br>
-  </div>
-
-<div class="col text-left"> 
-           <input class="form-check-input" type="radio" name="disaster_early_warning_landslide_plan"  data-val="No" value="No"><br>
-          
-  </div>
-  
- 
-  <div class="col"></div>
-
-
-</div>
-
-
-<div class="row">
-
-  <div class="col text-left"><label><b>&nbsp&nbsp G. TSUNAMI</b></label></div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-  <div class="col text-left"> 
-               &nbsp&nbsp<input class="form-check-input" type="radio" name="disaster_early_warning_tsunami_plan"  data-val="Yes" value="Yes"><br>
-  </div>
-
-<div class="col text-left"> 
-           <input class="form-check-input" type="radio" name="disaster_early_warning_tsunami_plan"  data-val="No" value="No"><br>
-          
-  </div>
-  
- 
-  <div class="col"></div>
-
-
-</div>
-
-
-
-<div class="row">
-
-  <div class="col text-left"><label><b>&nbsp&nbsp H. STORM SURGE</b></label></div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-  <div class="col text-left"> 
-               &nbsp&nbsp<input class="form-check-input" type="radio" name="disaster_early_warning_storm_plan"  data-val="Yes" value="Yes"><br>
-  </div>
-
-<div class="col text-left"> 
-           <input class="form-check-input" type="radio" name="disaster_early_warning_storm_plan"  data-val="No" value="No"><br>
-          
-  </div>
-  
- 
-  <div class="col"></div>
-
-
-</div>
-
-
-
-<div class="row">
-
-  <div class="col text-left"><label><b>&nbsp&nbsp I. FOREST FIRE</b></label></div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-  <div class="col text-left"> 
-               &nbsp&nbsp<input class="form-check-input" type="radio" name="disaster_early_warning_forest_plan"  data-val="Yes" value="Yes"><br>
-  </div>
-
-<div class="col text-left"> 
-           <input class="form-check-input" type="radio" name="disaster_early_warning_forest_plan"  data-val="No" value="No"><br>
-        
-  </div>
-  
- 
-  <div class="col"></div>
-
-
-</div>
-
-
-
-<div class="row">
-
-  <div class="col text-left"><label><b>&nbsp&nbspJ. FIRE</b></label></div>
-  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-  <div class="col text-left"> 
-               &nbsp&nbsp<input class="form-check-input" type="radio" name="disaster_early_warning_fire_plan"  data-val="Yes" value="Yes"><br>
-  </div>
-
-<div class="col text-left"> 
-           <input class="form-check-input" type="radio" name="disaster_early_warning_fire_plan"  data-val="No" value="No"><br>
-          
-  </div>
-  
- 
-  <div class="col"></div>
-
-
-</div>
-
-
-
-<div class="row">
-
-  <div class="col text-left"><label><b>&nbsp K. EPIDEMIC/ &nbsp&nbspPANDEMIC</b></label></div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-  <div class="col text-left"> 
-               &nbsp&nbsp<input class="form-check-input" type="radio" name="disaster_early_warning_epidemic_plan"  data-val="Yes" value="Yes"><br>
-  </div>
-
-<div class="col text-left"> 
-           <input class="form-check-input" type="radio" name="disaster_early_warning_epidemic_plan"  data-val="No" value="No"><br>
-          
-  </div>
-  
- 
-  <div class="col"></div>
-
-
-</div>
-
-
-
-<div class="row">
-  <div class="container">
+<table  id="table2" class="cell-border compact text-left table-hover" align="left" style="width:100%">
+<tr>
+  <thead>
     
+     <th>DP9. Does the barangay have a localized <br>early warning system for: &nbsp&nbsp&nbsp&nbsp&nbsp</th>
+
+    <th>Yes</th>
+    <th>No</th>
+  </thead>
+    
+   
+</tr>
+<tr>
+    <td>A. TYPHOON</td>
+    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_typhoon"  data-val="Yes" value="Yes" data-col="1"></label></td>
+   <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_typhoon"  data-val="No" value="No" data-col="2"></label></td> 
+</tr>
+
+
+<tr>
+  <td>B. FLOODING</td>
+    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_flooding"  data-val="Yes" value="Yes" data-col="1"></label></td>
+  <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_flooding"  data-val="No" value="No" data-col="2"></label></td>
+</tr>
+
+
+<tr>
+    <td>C. DROUGHT</td>
+    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_drought"  data-val="Yes" value="Yes" data-col="1"></label></td>
+  <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_drought"  data-val="No" value="No" data-col="2"></label></td>
+</tr>
+
+
+<tr>
+  <td>D. EARTHQUAKE</td>
+    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_earthquake"  data-val="Yes" value="Yes" data-col="1"></label></td>
+  <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_earthquake"  data-val="No" value="No" data-col="2"></label></td>
+</tr>
+
+
+<tr>
+  <td>E. VOLCANIC ERUPTION</td>
+    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_volcanic"  data-val="Yes" value="Yes" data-col="1"></label></td>
+  <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_volcanic"  data-val="No" value="No" data-col="2"></label></td>
+</tr>
+
+
+
+<tr>
+  <td>F. LANDSLIDE</td>
+    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_landslide"  data-val="Yes" value="Yes" data-col="1"></label></td>
+  <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_landslide"  data-val="No" value="Yes" data-col="2"></label></td>
+</tr>
+
+
+<tr>
+  <td>G. TSUNAMI</td>
+    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_tsunami"  data-val="Yes" value="Yes" data-col="1"></label></td>
+  <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_tsunami"  data-val="No" value="No" data-col="2"></label></td>
+</tr>
+
+
+<tr>
+  <td>H. STORM SURGE</td>
+    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_storm"  data-val="Yes" value="Yes" data-col="1"></label></td>
+  <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_storm"  data-val="No" value="No" data-col="2"></label></td>
+</tr>
+
+<tr>
+  <td>I. FOREST FIRE</td>
+    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_forest"  data-val="Yes" value="Yes" data-col="1"></label></td>
+  <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_forest"  data-val="No" value="No" data-col="2"></label></td>
+</tr>
+
+
+
+<tr>
+  <td>J. FIRE</td>
+    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_fire"  data-val="Yes" value="Yes" data-col="1"></label></td>
+  <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_fire"  data-val="No" value="No" data-col="2"></label></td>
+</tr>
+
+
+
+<tr>
+  <td>K. EPIDEMIC / PANDEMIC</td>
+    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_epidemic"  data-val="Yes" value="Yes" data-col="1"></label></td>
+  <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_epidemic"  data-val="No" value="No" data-col="2"></label></td>
+</tr>
+
+
+<tr>
+  <td>L. ARMED CONFLICT</td>
+    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_armed"  data-val="Yes" value="Yes" data-col="1"></label></td>
+  <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_armed"  data-val="No" value="No" data-col="2"></label></td>
+</tr>
+
+
+</table>
+             
   </div>
-  <div class="col text-left"><label><b>&nbsp&nbspL. ARMED CONFLICT</b></label></div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-  <div class="col text-left"> 
-               &nbsp&nbsp<input class="form-check-input" type="radio" name="disaster_early_warning_armed_plan"  data-val="Yes" value="Yes"><br>
-  </div>
-
-<div class="col text-left"> 
-           <input class="form-check-input" type="radio" name="disaster_early_warning_armed_plan"  data-val="No" value="No"><br>
-            </div>
-
-  <div class="col"></div>
-
-
+    </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <br>
 <br>                  
@@ -5710,8 +5477,10 @@ DP17. Does the barangay have an evacuation facility?
 <hr>
 
 <br>
-<h5 class="text-left" style="color: "><b>PART II. BARANGAY LGU AND RECORDS-BASED DATA
-A. GENERAL INFORMATION ABOUT THE BARANGAY LOCAL GOVERNMENT UNIT</b></h5><br>   
+
+<h4 class="text-left" style="color: white; background-color: #2277bd">PART II. BARANGAY LGU AND RECORDS-BASED DATA
+A. GENERAL INFORMATION ABOUT THE BARANGAY LOCAL GOVERNMENT UNIT</h4><br>
+
 
 
 <br>                  
