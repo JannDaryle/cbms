@@ -34,7 +34,7 @@
 
 (() => {
 
-	'use strict';
+  'use strict';
 
 
 
@@ -1702,7 +1702,7 @@ else if (s == "No")
 }); 
 
 
-$('input[name="ict_equipment_free_specify"]').click(function(){
+$('input[name="ict_equipment_free"]').click(function(){
 
 var s =  $(this).data("val");
 
@@ -2569,9 +2569,61 @@ $('.land_classification').on('keyup', function()
 });
 
 
+$('.significant_events').on('keyup', function()
+{
+      (function( $ ){
+   $.fn.sum=function () {
+    var sum=0;
+        $(this).each(function(index, element){
+            if($(element).val()!="")
+            sum += parseFloat($(element).val());
+        });
+    return sum;
+    }; 
+})( jQuery );
+  
+  $('#total_climate_events').text(jQuery('.significant_events').sum());
+  
+});
 
 
-	
+$('.economic_group').on('keyup', function()
+{
+      (function( $ ){
+   $.fn.sum=function () {
+    var sum=0;
+        $(this).each(function(index, element){
+            if($(element).val()!="")
+            sum += parseFloat($(element).val());
+        });
+    return sum;
+    }; 
+})( jQuery );
+  
+  $('#total_economic_events').text(jQuery('.economic_group').sum());
+  
+});
+
+
+$('.significant_events2').on('keyup', function()
+{
+      (function( $ ){
+   $.fn.sum=function () {
+    var sum=0;
+        $(this).each(function(index, element){
+            if($(element).val()!="")
+            sum += parseFloat($(element).val());
+        });
+    return sum;
+    }; 
+})( jQuery );
+  
+  $('#total_climate_events2').text(jQuery('.significant_events2').sum());
+  
+});
+
+
+  
 })();
 
 </script>
