@@ -275,13 +275,16 @@ National Statistician and Civil Registrar General<br><br>
     </div>
 </div>
 
+
 <div class="form-group row">
     <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>Province</b></label>
     <div class="col-sm-8">
       <input type="text" class="form-control" id="prv_name" name="prv_name" placeholder="" hidden="">
       <select id="prv" name="prv" class="form-control"></select>
     </div>
+
 </div>
+
 
 <div class="form-group row">
     <label for="inputPassword" class="col-sm-3 col-form-label text-left" ><b>Municipality</b></label>
@@ -1095,9 +1098,11 @@ T1. Are there any of the tourism sites and destination present in the barangay?
 
       <div class="form-group row">
       <div class="col-sm-6">
-      <input type="text" class="form-control" id="notes_tourism_sites_1" name="notes_tourism_sites_1" placeholder="" >
+      <textarea type="text" class="form-control" id="notes_tourism_sites_1" name="notes_tourism_sites_1" placeholder="" ></textarea>
       </div>
       </div>
+
+
       
 
        <div class="text-left"><h6>
@@ -1213,7 +1218,8 @@ PTA. Is there a seaport located in the barangay?
 
 <div class="form-group row">
   <div class="col-sm-6">
-  <input type="text" class="form-control" id="transport_facility_seaport_1" name="transport_facility_seaport_1" placeholder="" >
+  
+  <textarea type="text" class="form-control" id="transport_facility_seaport_1" name="transport_facility_seaport_1" placeholder="" ></textarea>
 </div>
 </div>
 
@@ -1314,7 +1320,7 @@ PTB. Is there an airport located in the barangay?
 
 <div class="form-group row">
   <div class="col-sm-6">
-  <input type="text" class="form-control" id="transport_facility_airport_1" name="transport_facility_airport_1" placeholder="" >
+  <textarea type="text" class="form-control" id="transport_facility_airport_1" name="transport_facility_airport_1" placeholder="" ></textarea>
 </div>
 </div>
 </div>
@@ -1420,7 +1426,7 @@ G1. Is the Open Dump Site present in the barangay?
 
 <div class="form-group row">
   <div class="col-sm-6">
-  <input type="text" class="form-control" id="notes_garbage_waste_diposal_dump_1" name="notes_garbage_waste_diposal_dump_1" placeholder="" >
+  <textarea type="text" class="form-control" id="notes_garbage_waste_diposal_dump_1" name="notes_garbage_waste_diposal_dump_1" placeholder="" ></textarea>  
 </div>
 </div>
 
@@ -1485,7 +1491,7 @@ G1. Is the Open Dump Site present in the barangay?
 
 <div class="form-group row">
   <div class="col-sm-6">
-  <input type="text" class="form-control" id="notes_garbage_waste_diposal_dump_1" name="notes_garbage_waste_diposal_dump_1" placeholder="" >
+   <textarea type="text" class="form-control" id="notes_garbage_waste_diposal_dump_1" name="notes_garbage_waste_diposal_dump_1" placeholder="" ></textarea>  
 </div>
 </div>     
 </div>      
@@ -1582,7 +1588,7 @@ G1. Is the Sanitary Land Fill present in the barangay?
 
 <div class="form-group row">
   <div class="col-sm-6">
-  <input type="text" class="form-control" id="notes_garbage_waste_diposal_sanitary_1" name="notes_garbage_waste_diposal_sanitary_1" placeholder="" >
+  <textarea type="text" class="form-control" id="notes_garbage_waste_diposal_sanitary_1" name="notes_garbage_waste_diposal_sanitary_1" placeholder="" ></textarea>  
 </div>
 </div>
      
@@ -1644,7 +1650,7 @@ G1. Is the Sanitary Land Fill present in the barangay?
 
 <div class="form-group row">
   <div class="col-sm-6">
-  <input type="text" class="form-control" id="notes_garbage_waste_diposal_sanitary_1" name="notes_garbage_waste_diposal_sanitary_1" placeholder="" >
+  <textarea type="text" class="form-control" id="notes_garbage_waste_diposal_sanitary_1" name="notes_garbage_waste_diposal_sanitary_1" placeholder="" ></textarea>  
 </div>
 </div>
 
@@ -1741,7 +1747,7 @@ G1. Is the Compost Pits present in the barangay?
 
 <div class="form-group row">
   <div class="col-sm-6">
-  <input type="text" class="form-control" id="notes_garbage_waste_diposal_compost_1" name="notes_garbage_waste_diposal_compost_1" placeholder="" >
+  <textarea type="text" class="form-control" id="notes_garbage_waste_diposal_compost_1" name="notes_garbage_waste_diposal_compost_1" placeholder="" ></textarea>
 </div>
 </div>
 </div>
@@ -1800,7 +1806,7 @@ G1. Is the Compost Pits present in the barangay?
 
 <div class="form-group row">
   <div class="col-sm-6">
-  <input type="text" class="form-control" id="notes_garbage_waste_diposal_compost_1" name="notes_garbage_waste_diposal_compost_1" placeholder="" >
+    <textarea type="text" class="form-control" id="notes_garbage_waste_diposal_compost_1" name="notes_garbage_waste_diposal_compost_1" placeholder="" ></textarea>
 </div>
 </div>
 </div>   
@@ -1894,7 +1900,7 @@ G1. Is the Material Recovery Facility (MRF) present in the barangay?
 
 <div class="form-group row">
   <div class="col-sm-6">
-  <input type="text" class="form-control" id="notes_garbage_waste_diposal_material_1" name="notes_garbage_waste_diposal_material_1" placeholder="" >
+  <textarea type="text" class="form-control" id="notes_garbage_waste_diposal_material_1" name="notes_garbage_waste_diposal_material_1" placeholder="" ></textarea>
 </div>
 </div>
 
@@ -1953,7 +1959,7 @@ G1. Is the Material Recovery Facility (MRF) present in the barangay?
 
 <div class="form-group row">
   <div class="col-sm-6">
-  <input type="text" class="form-control" id="notes_garbage_waste_diposal_material_1" name="notes_garbage_waste_diposal_material_1" placeholder="" >
+  <textarea type="text" class="form-control" id="notes_garbage_waste_diposal_material_1" name="notes_garbage_waste_diposal_material_1" placeholder="" ></textarea>
 </div>
 </div>
 </div>   
@@ -2049,7 +2055,7 @@ G1. Is the Treatment, storage, and disposal (TSD) facility present in the barang
 
 <div class="form-group row">
   <div class="col-sm-6">
-  <input type="text" class="form-control" id="notes_garbage_waste_diposal_treatment_1" name="notes_garbage_waste_diposal_treatment_1" placeholder="" >
+    <textarea type="text" class="form-control" id="notes_garbage_waste_diposal_treatment_1" name="notes_garbage_waste_diposal_treatment_1" placeholder="" ></textarea>
 </div>
 </div>
 
@@ -2107,7 +2113,7 @@ G1. Is the Treatment, storage, and disposal (TSD) facility present in the barang
 
 <div class="form-group row">
   <div class="col-sm-6">
-  <input type="text" class="form-control" id="notes_garbage_waste_diposal_treatment_1" name="notes_garbage_waste_diposal_treatment_1" placeholder="" >
+   <textarea type="text" class="form-control" id="notes_garbage_waste_diposal_treatment_1" name="notes_garbage_waste_diposal_treatment_1" placeholder="" ></textarea>
 </div>
 </div>
 </div>   
@@ -2205,7 +2211,7 @@ G1. Is the Waste-to-energy facility present in the barangay?
 
 <div class="form-group row">
   <div class="col-sm-6">
-  <input type="text" class="form-control" id="notes_garbage_waste_diposal_energy_1" name="notes_garbage_waste_diposal_energy_1" placeholder="" >
+   <textarea type="text" class="form-control" id="notes_garbage_waste_diposal_energy_1" name="notes_garbage_waste_diposal_energy_1" placeholder="" ></textarea>
 </div>
 </div>
 </div>
@@ -2264,7 +2270,7 @@ G1. Is the Waste-to-energy facility present in the barangay?
 
 <div class="form-group row">
   <div class="col-sm-6">
-  <input type="text" class="form-control" id="notes_garbage_waste_diposal_energy_1" name="notes_garbage_waste_diposal_energy_1" placeholder="" >
+     <textarea type="text" class="form-control" id="notes_garbage_waste_diposal_energy_1" name="notes_garbage_waste_diposal_energy_1" placeholder="" ></textarea>
 </div>
 </div>
 </div>
@@ -2296,31 +2302,49 @@ G1. Is the Sewage treatment plant facility present in the barangay?
 <br>
 <div class="text-left"><h5>GARBAGE AND WASTE DISPOSAL - Sewage treatment plant</h5>
 
-<br>
+
+<br>                  
+<div class="text-left"><h6>
+<b>G3. What is the name of the Sewage treatment plant # 1?
+</b></h6></div>  
+
 <div class="form-group row">
-  <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>G3. What is the name of the Sewage treatment plant # 1?</b></label>
-  <div class="col-sm-8">
+  <div class="col-sm-6">
   <input type="text" class="form-control" id="garbage_waste_diposal_sewage_name" name="garbage_waste_diposal_sewage_name" placeholder="" >
-       </div>
+</div>
 </div>
 
-<div class="form-group row">
-    <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>G4. Building name of</b></label>
-    <div class="col-sm-8">
-      <input type="text" class="form-control" id="garbage_waste_diposal_sewage_building" name="garbage_waste_diposal_sewage_building" placeholder="" >
-    </div>
-</div>
+
+
+<br>                  
+<div class="text-left"><h6>
+<b>G4. Building name of
+</b></h6></div>  
 
 <div class="form-group row">
-    <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>G4.1 Complete address of</b></label>
-    <div class="col-sm-8">
-      <input type="text" class="form-control" id="garbage_waste_diposal_sewage_address" name="garbage_waste_diposal_sewage_address" placeholder="" >
-    </div>
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="garbage_waste_diposal_sewage_building" name="garbage_waste_diposal_sewage_building" placeholder="" >
+</div>
 </div>
 
+
+
+<br>                  
+<div class="text-left"><h6>
+<b>G4.1 Complete address of
+</b></h6></div>  
+
 <div class="form-group row">
-    <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>G5. Who operates the ?</b></label>
-</div>            
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="garbage_waste_diposal_sewage_address" name="garbage_waste_diposal_sewage_address" placeholder="" >
+</div>
+</div>
+
+
+<br>                  
+<div class="text-left"><h6>
+<b>G5. Who operates the ?
+</b></h6></div>
 
 <div class="container">
               <div class="row">
@@ -2340,21 +2364,26 @@ G1. Is the Sewage treatment plant facility present in the barangay?
           </div> 
 
 
-      <br>
-      <div class="form-group row">
-      <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>Notes for SECTION: GARBAGE AND WASTE DISPOSAL - Sewage treatment plant</b></label> 
-      <textarea class="form-control" rows="3" cols="1" id="notes_garbage_waste_diposal_sewage_1"></textarea>
-      </div> 
+<br>                  
+<div class="text-left"><h6>
+<b>Notes for SECTION: GARBAGE AND WASTE DISPOSAL - Sewage treatment plant
+</b></h6></div>   
 
+<div class="form-group row">
+  <div class="col-sm-6">
+   <textarea type="text" class="form-control" id="notes_garbage_waste_diposal_sewage_1" name="notes_garbage_waste_diposal_sewage_1" placeholder="" ></textarea>
+  </div>
 </div>
 </div>    
+</div>
 
 <br>
 <div class="garbage_waste_diposal_sewage_repeat_no" hidden=""> 
 
-<div class="form-group row">
-<label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>G2. What is the distance of the barangay hall to the nearest facility(in kms)?</b></label>
-</div>  
+<br>                  
+<div class="text-left"><h6>
+<b>G2. What is the distance of the barangay hall to the nearest facility(in kms)?
+</b></h6></div> 
 
 <div class="container">
               <div class="row">
@@ -2370,10 +2399,10 @@ G1. Is the Sewage treatment plant facility present in the barangay?
               </div>
           </div>   
 
-<br>
-<div class="form-group row">
-<label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>G6. Who operates the facility?</b></label>
-</div>  
+<br>                  
+<div class="text-left"><h6>
+<b>G6. Who operates the facility?
+</b></h6></div> 
 
 <div class="container">
               <div class="row">
@@ -2392,13 +2421,20 @@ G1. Is the Sewage treatment plant facility present in the barangay?
               </div>
           </div>        
 
+   <br>                  
+<div class="text-left"><h6>
+<b>Notes for SECTION: GARBAGE AND WASTE DISPOSAL - Sewage treatment plant
+</b></h6></div>   
 
-      <br>
-      <div class="form-group row">
-      <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>Notes for SECTION: GARBAGE AND WASTE DISPOSAL - Sewage treatment plant</b></label> 
-      <textarea class="form-control" rows="3" cols="1" id="notes_garbage_waste_diposal_sewage_1"></textarea>
-      </div>     
-      </div>   
+<div class="form-group row">
+  <div class="col-sm-6">
+   <textarea type="text" class="form-control" id="notes_garbage_waste_diposal_sewage_1" name="notes_garbage_waste_diposal_sewage_1" placeholder="" ></textarea>
+  </div>
+</div>
+</div>
+
+
+       
 
 <hr>
 <br>
@@ -2429,15 +2465,22 @@ A. Collection Trucks?
           </div>  
 
 <div class="collection_trucks_count_repeat" hidden=""> 
+     
 
 <br>
-<div class="form-group row">
-  <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>WD2. How many units are owned and are being used by the barangay?</b></label>
-  <div class="row-sm-8">
+<div class="text-left"><h6>
+<b>WD2. How many units are owned and are being used by the barangay?
+</b></h6></div>   
+
+  <div class="form-group row">
+  <div class="col-sm-3">
   <input type="number" class="form-control" id="collection_trucks_count" name="collection_trucks_count" placeholder="">
   </div> 
 </div>
-</div>          
+</div>
+
+
+
 
 <br>
 <div class="text-left"><h5>
@@ -2456,15 +2499,21 @@ B. Waste Collection Bins?
           </div>  
 
 <div class="collection_bins_count_repeat" hidden=""> 
+    
 
 <br>
-<div class="form-group row">
-  <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>WD2. How many units are owned and are being used by the barangay?</b></label>
-  <div class="row-sm-8">
+<div class="text-left"><h6>
+<b>WD2. How many units are owned and are being used by the barangay?
+</b></h6></div>   
+
+  <div class="form-group row">
+  <div class="col-sm-3">
   <input type="number" class="form-control" id="collection_bins_count" name="collection_bins_count" placeholder="">
   </div> 
 </div>
-</div>     
+</div>
+
+
 
 
 <br>
@@ -2485,14 +2534,18 @@ C. Incinerator?
 
 <div class="collection_incinerator_count_repeat" hidden=""> 
 
+
 <br>
-<div class="form-group row">
-  <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>WD2. How many units are owned and are being used by the barangay?</b></label>
-  <div class="row-sm-8">
+<div class="text-left"><h6>
+<b>WD2. How many units are owned and are being used by the barangay?
+</b></h6></div>   
+
+  <div class="form-group row">
+  <div class="col-sm-3">
   <input type="number" class="form-control" id="collection_incinerator_count" name="collection_incinerator_count" placeholder="">
   </div> 
 </div>
-</div>  
+</div>
 
 
 <br>
@@ -2514,23 +2567,29 @@ D. Others, Specify
 <div class="collection_others_specify_repeat" hidden=""> 
 
 <br>
- 
-<div class="form-group row">
-  <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>Please Specify:</b></label>
-  <div class="col-sm-8">
-  <input type="text" class="form-control" id="collection_others_specify" name="collection_others_specify" placeholder="" >
-</div>
+<div class="text-left"><h6>
+<b>Please Specify:
+</b></h6></div>   
+
+  <div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="collection_others_specify" name="collection_others_specify" placeholder="">
+  </div> 
 </div>
 
 <br>
-<div class="form-group row">
-  <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>WD2. How many units are owned and are being used by the barangay?</b></label>
-  <div class="col-sm-4">
-  <input type="number" class="form-control" id="garbage_waste_diposal_dump_name" name="garbage_waste_diposal_dump_name" placeholder="" >
+<div class="text-left"><h6>
+<b>WD2. How many units are owned and are being used by the barangay?
+</b></h6></div>   
+
+  <div class="form-group row">
+  <div class="col-sm-3">
+  <input type="number" class="form-control" id="garbage_waste_diposal_dump_name" name="garbage_waste_diposal_dump_name" placeholder="">
+  </div> 
 </div>
 </div>
 
-</div>  
+  
 
 <br>
 <h5 class="text-left" style="color: ">WD3. Who collects the garbage from households?</h5><br>  
@@ -2595,12 +2654,14 @@ A. Biodegradable/compostable</b>
 <div class="collector_biodegradable_specify_repeat" hidden=""> 
 
 <br>
-<div class="form-group row">
-  <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>Please Specify:</b></label>
-  <div class="col-sm-8">
-  <input type="text" class="form-control" id="collector_biodegradable_specify" name="collector_biodegradable_specify" placeholder="" >
+<div class="text-left"><h6>
+<b>Please Specify:
+</b></h6></div>   
 
-</div>
+  <div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="collector_biodegradable_specify" name="collector_biodegradable_specify" placeholder="">
+  </div> 
 </div>
 </div>
 
@@ -2664,15 +2725,19 @@ A. Biodegradable/compostable</b>
 
 <div class="collector_recyclables_specify_repeat" hidden=""> 
 
-<br>
-<div class="form-group row">
-  <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>Please Specify:</b></label>
-  <div class="col-sm-8">
-  <input type="text" class="form-control" id="collector_recyclables_specify" name="collector_recyclables_specify" placeholder="" >
 
+<br>
+<div class="text-left"><h6>
+<b>Please Specify:
+</b></h6></div>   
+
+  <div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="collector_recyclables_specify" name="collector_recyclables_specify" placeholder="">
+  </div> 
 </div>
 </div>
-</div>
+
 
 
 
@@ -2737,14 +2802,17 @@ C. Residuals (nonhazardous industrial waste)</b>
 <div class="collector_residuals_specify_repeat" hidden=""> 
 
 <br>
-<div class="form-group row">
-  <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>Please Specify:</b></label>
-  <div class="col-sm-8">
-  <input type="text" class="form-control" id="collector_residuals_specify" name="collector_residuals_specify" placeholder="" >
+<div class="text-left"><h6>
+<b>Please Specify:
+</b></h6></div>   
 
+  <div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="collector_residuals_specify" name="collector_residuals_specify" placeholder="">
+  </div> 
 </div>
 </div>
-</div> 
+
 
 
 
@@ -2771,12 +2839,16 @@ C. Residuals (nonhazardous industrial waste)</b>
 
 <div class="collector_how_often_question_specify_repeat" hidden=""> 
 
+
 <br>
-<div class="form-group row">
-  <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>Please Specify:</b></label>
-  <div class="col-sm-8">
- <input type="text" class="form-control" id="collector_how_often_question_specify" name="collector_how_often_question_specify" placeholder="" > 
-</div>
+<div class="text-left"><h6>
+<b>Please Specify:
+</b></h6></div>   
+
+  <div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="collector_how_often_question_specify" name="collector_how_often_question_specify" placeholder="">
+  </div> 
 </div>
 </div>
 
@@ -2818,13 +2890,17 @@ C. Residuals (nonhazardous industrial waste)</b>
 <div class="collector_amount_repeat" hidden=""> 
 
 <br>
-<div class="form-group row">
-  <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>WD7. How much does the barangay pay for waste management services for the whole year (in Php)?</b></label>
+<div class="text-left"><h6>
+<b>WD7. How much does the barangay pay for waste management services for the whole year (in Php)?
+</b></h6></div>   
+
+  <div class="form-group row">
   <div class="col-sm-4">
- <input type="number" class="form-control" id="collector_amount" name="collector_amount" placeholder="" > 
+  <input type="number" class="form-control" id="collector_amount" name="collector_amount" placeholder="">
+  </div> 
 </div>
 </div>
-</div>
+
 
 
 <br>
@@ -2845,14 +2921,21 @@ C. Residuals (nonhazardous industrial waste)</b>
 
 <div class="collector_specific_areas_repeat_no" hidden=""> 
 
+
+
 <br>
-<div class="form-group row">
-  <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>WD9. What specific areas (zone/purok/sitio) are not reached by the garbage collectors # 1?</b></label>
+<div class="text-left"><h6>
+<b>WD9. What specific areas (zone/purok/sitio) are not reached by the garbage collectors # 1?
+</b></h6></div>   
+
+  <div class="form-group row">
   <div class="col-sm-5">
- <input type="text" class="form-control" id="collector_specific_areas_repeat" name="collector_specific_areas_repeat" placeholder="" > 
+  <input type="text" class="form-control" id="collector_amount" name="collector_amount" placeholder="">
+  </div> 
 </div>
 </div>
-</div>
+
+
 
 
 <hr>
@@ -3089,27 +3172,38 @@ TF1. Is the following mode of transportation available or in operation in the ba
 Other transport facilities:
 </h5></div> 
 
+<br>
+<div class="text-left"><h6>
+<b>Please Specify:
+</b></h6></div>   
+
+  <div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="other_trans_position" name="other_trans_position" placeholder="">
+  </div> 
+</div>
+
+<br>                  
+<div class="text-left"><h6>
+<b>Notes for SECTION: Service institutions and infrastructure - Transport Facilities
+</b></h6></div>   
+
 <div class="form-group row">
-  <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>L. Other, please specify # 1?</b></label>
-  <div class="col-sm-8">
-  <input type="text" class="form-control" id="other_trans_position" name="other_trans_position" placeholder="" >
+  <div class="col-sm-6">
+   <textarea type="text" class="form-control" id="notes_public_vehicle_1" name="notes_public_vehicle_1" placeholder="" ></textarea>
+  </div>
 </div>
 </div>
 
-
-<div class="form-group row">
-<label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>Notes for SECTION: Service institutions and infrastructure - Transport Facilities</b></label> 
-<textarea class="form-control" rows="3" cols="1" id="notes_public_vehicle_1"></textarea>
-</div>
-</div>
 
 
 <br>
 <div class="publictransport1_repeat_no" hidden=""> 
 
-<div class="form-group row">
-<label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>G2. What is the distance of the barangay hall to the nearest facility(in kms)?</b></label>
-</div>  
+<br>                  
+<div class="text-left"><h6>
+<b>G2. What is the distance of the barangay hall to the nearest facility(in kms)?
+</b></h6></div> 
 
 <div class="container">
               <div class="row">
@@ -3124,10 +3218,15 @@ Other transport facilities:
               </div>
           </div>   
 
-<br>
+<br>                  
+<div class="text-left"><h6>
+<b>Notes for SECTION: Service institutions and infrastructure - Transport Facilities
+</b></h6></div>   
+
 <div class="form-group row">
-<label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>Notes for SECTION: Service institutions and infrastructure - Transport Facilities</b></label> 
-<textarea class="form-control" rows="3" cols="1" id="notes_public_vehicle_1"></textarea>
+  <div class="col-sm-6">
+   <textarea type="text" class="form-control" id="notes_public_vehicle_1" name="notes_public_vehicle_1" placeholder="" ></textarea>
+  </div>
 </div>
 </div>
 
@@ -3303,7 +3402,7 @@ IT6. Which of the following ICT equipment in the barangay can be used by the pub
                         <div class="row">
                             <label >
                                 
-                                    <input class="form-check-input respo_radio" type="checkbox" name="ict_equipment_free"  data-val="Yes" value="Yes">
+                                    <input class="form-check-input respo_radio" type="checkbox" name="ict_equipment_free"  data-val="No" value="No">
                                    &nbsp&nbsp  FAX MACHINES
                                  
                             </label>
@@ -3311,14 +3410,14 @@ IT6. Which of the following ICT equipment in the barangay can be used by the pub
 
                             <div class="row">
                             <label>
-                                    <input class="form-check-input respo_radio" type="checkbox" name="ict_equipment_free"  data-val="Yes" value="Yes">
+                                    <input class="form-check-input respo_radio" type="checkbox" name="ict_equipment_free"  data-val="No" value="No">
                                   &nbsp&nbsp PRINTERS
                             </label>
 
                          </div> 
                           <div class="row">
                             <label>
-                                    <input class="form-check-input respo_radio" type="checkbox" name="ict_equipment_free"  data-val="Yes" value="Yes">
+                                    <input class="form-check-input respo_radio" type="checkbox" name="ict_equipment_free"  data-val="No" value="No">
                                   &nbsp&nbsp AUDIO-VISUAL EQUIPMENT (PROJECTOR, MICROPHONE, SPEAKER)
                             </label>
 
@@ -3326,14 +3425,14 @@ IT6. Which of the following ICT equipment in the barangay can be used by the pub
                          <div class="row">
                             <label>
                                 
-                                    <input class="form-check-input respo_radio" type="checkbox" name="ict_equipment_free_specify"  data-val="Yes" value="Yes">
+                                    <input class="form-check-input respo_radio" type="checkbox" name="ict_equipment_free"  data-val="Yes" value="Yes">
                                    &nbsp&nbsp OTHERS, SPECIFY
                                  
                             </label>
                         </div> 
                           <div class="row">
                             <label>
-                                    <input class="form-check-input respo_radio" type="checkbox" name="ict_equipment_free"  data-val="Yes" value="Yes">
+                                    <input class="form-check-input respo_radio" type="checkbox" name="ict_equipment_free"  data-val="No" value="No">
                                   &nbsp&nbsp NONE
                             </label>
 
@@ -3346,13 +3445,18 @@ IT6. Which of the following ICT equipment in the barangay can be used by the pub
 <div class="ict_equipment_free_specify_repeat" hidden=""> 
 
 <br>
-<div class="form-group row">
-  <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>Please Specify:</b></label>
-  <div class="col-sm-8">
-  <input type="text" class="form-control" id="ict_equipment_free_specify" name="ict_equipment_free_specify" placeholder="" >
+<div class="text-left"><h6>
+<b>Please Specify:
+</b></h6></div>   
+
+  <div class="form-group row">
+  <div class="col-sm-6">
+  <input type="text" class="form-control" id="ict_equipment_free_specify" name="ict_equipment_free_specify" placeholder="">
+  </div> 
 </div>
 </div>
-</div>
+
+
 
 <br>
 <br>                  
@@ -3691,7 +3795,7 @@ IT20.1 Please provide the photo containing the e-government strategy.</b>
   <div class="float-sm-left">
      <div class="container-fluid" align="left" style="width:100%">
     
-     <table id="table2" class="cell-border compact text-left table-hover" style="width:100%">
+     <table id="" class="cell-border compact text-left table-hover" style="width:100%">
         <thead>
             <tr>
                 <th>Climate-related and <br>geologic events</th>
@@ -3702,55 +3806,56 @@ IT20.1 Please provide the photo containing the e-government strategy.</b>
 
               <tr>
                 <td>typhoon</td>
-                <td> <input type="number" class="form-control" name="significant_events_typhoon" placeholder="" ></td>
+                <td> <input type="number" class="form-control significant_events" name="significant_events_typhoon" placeholder="" ></td>
               </tr>
 
               <tr>
                 <td>flooding</td>
-                <td> <input type="number" class="form-control" name="significant_events_flooding" placeholder="" ></td>
+                <td> <input type="number" class="form-control significant_events" name="significant_events_flooding" placeholder="" ></td>
               </tr>
 
               <tr>
                 <td>flash flood</td>
-                <td> <input type="number" class="form-control" name="significant_events_flash_flood" placeholder="" ></td>
+                <td> <input type="number" class="form-control significant_events" name="significant_events_flash_flood" placeholder="" ></td>
               </tr>
 
               <tr>
                 <td>drought</td>
-                <td> <input type="number" class="form-control" name="significant_events_drought" placeholder="" ></td>
+                <td> <input type="number" class="form-control significant_events" name="significant_events_drought" placeholder="" ></td>
               </tr>
 
               <tr>
                 <td>earthquake</td>
-                <td> <input type="number" class="form-control" name="significant_events_earthquake" placeholder="" ></td>
+                <td> <input type="number" class="form-control significant_events" name="significant_events_earthquake" placeholder="" ></td>
               </tr>
 
               <tr>
                 <td>volcanic eruption</td>
-                <td> <input type="number" class="form-control" name="significant_events_volcanic_eruption" placeholder="" ></td>
+                <td> <input type="number" class="form-control significant_events" name="significant_events_volcanic_eruption" placeholder="" ></td>
               </tr>
 
               <tr>
                 <td>landslide</td>
-                <td> <input type="number" class="form-control" name="significant_events_landslide" placeholder="" ></td>
+                <td> <input type="number" class="form-control significant_events" name="significant_events_landslide" placeholder="" ></td>
               </tr>
 
               <tr>
                 <td>tsunami</td>
-                <td> <input type="number" class="form-control" name="significant_events_tsunami" placeholder="" ></td>
+                <td> <input type="number" class="form-control significant_events" name="significant_events_tsunami" placeholder="" ></td>
               </tr>
 
                <tr>
                 <td>forest fire</td>
-                <td> <input type="number" class="form-control" name="significant_events_forest_fire" placeholder="" ></td>
+                <td> <input type="number" class="form-control significant_events" name="significant_events_forest_fire" placeholder="" ></td>
               </tr>
 
               
 
-
+      
 
      </table>
-               
+     <br> 
+        <label for="" class="text-left"><b>TOTAL CLIMATE AND GEOLOGICAL EVENTS:  <span id="total_climate_events"></span></b></label>
   </div>
     </div>
 </div>
@@ -3767,7 +3872,7 @@ IT20.1 Please provide the photo containing the e-government strategy.</b>
   <div class="float-sm-left">
      <div class="container-fluid" align="left" style="width:100%">
     
-     <table id="table2" class="cell-border compact text-left table-hover" style="width:100%">
+     <table id="" class="cell-border compact text-left table-hover" style="width:100%">
         <thead>
             <tr>
                 <th>B. Economic Events</th>
@@ -3778,43 +3883,44 @@ IT20.1 Please provide the photo containing the e-government strategy.</b>
 
               <tr>
                 <td>closure of many small firms</td>
-                <td> <input type="number" class="form-control land_classification" name="significant_events_closure" placeholder="" ></td>
+                <td> <input type="number" class="form-control economic_group" name="significant_events_closure" placeholder="" ></td>
               </tr>
 
               <tr>
                 <td>mass lay-off</td>
-                <td> <input type="number" class="form-control land_classification" name="significant_events_mass" placeholder="" ></td>
+                <td> <input type="number" class="form-control economic_group" name="significant_events_mass" placeholder="" ></td>
               </tr>
 
               <tr>
                 <td>opening of large firm/s</td>
-                <td> <input type="number" class="form-control land_classification" name="significant_events_largefirm" placeholder="" ></td>
+                <td> <input type="number" class="form-control economic_group" name="significant_events_largefirm" placeholder="" ></td>
               </tr>
 
               <tr>
                 <td>opening of many small firm/s</td>
-                <td> <input type="number" class="form-control land_classification" name="significant_events_smallfirm" placeholder="" ></td>
+                <td> <input type="number" class="form-control economic_group" name="significant_events_smallfirm" placeholder="" ></td>
               </tr>
 
               <tr>
                 <td>opening of shopping malls</td>
-                <td> <input type="number" class="form-control land_classification" name="significant_events_shoppingmalls" placeholder="" ></td>
+                <td> <input type="number" class="form-control economic_group" name="significant_events_shoppingmalls" placeholder="" ></td>
               </tr>
 
               <tr>
                 <td>opening of fastfood restaurant/s</td>
-                <td> <input type="number" class="form-control land_classification" name="significant_events_fastfood" placeholder="" ></td>
+                <td> <input type="number" class="form-control economic_group" name="significant_events_fastfood" placeholder="" ></td>
               </tr>
 
               <tr>
                 <td>closure of large firms</td>
-                <td> <input type="number" class="form-control land_classification" name="significant_events_closure_large_firms" placeholder="" ></td>
+                <td> <input type="number" class="form-control economic_group" name="significant_events_closure_large_firms" placeholder="" ></td>
               </tr>
 
               </tr>
 
      </table>
-              
+              <br>  
+              <label for="" class="text-left"><b>TOTAL ECONOMIC EVENTS:  <span id="total_economic_events"></span></b></label>
   </div>
     </div>
 </div>
@@ -4071,7 +4177,8 @@ S2. Based on report to barangay, what are the main reasons for the closure of fi
   <div class="float-sm-left">
      <div class="container-fluid" align="left" style="width:100%">
     
-     <table id="table2" class="cell-border compact text-left table-hover" style="width:100%">
+     <table id="tab
+     le2" class="cell-border compact text-left table-hover" style="width:100%">
         <thead>
             <tr>
                 <th>Climate-related and <br>geologic events</th>
@@ -4082,53 +4189,54 @@ S2. Based on report to barangay, what are the main reasons for the closure of fi
 
               <tr>
                 <td>typhoon</td>
-                <td> <input type="number" class="form-control" name="significant_events_typhoon2" placeholder="" ></td>
+                <td> <input type="number" class="form-control significant_events2" name="significant_events_typhoon2" placeholder="" ></td>
               </tr>
 
               <tr>
                 <td>flooding</td>
-                <td> <input type="number" class="form-control" name="significant_events_flooding2" placeholder="" ></td>
+                <td> <input type="number" class="form-control significant_events2" name="significant_events_flooding2" placeholder="" ></td>
               </tr>
 
               <tr>
                 <td>flash flood</td>
-                <td> <input type="number" class="form-control" name="significant_events_flash_flood2" placeholder="" ></td>
+                <td> <input type="number" class="form-control significant_events2" name="significant_events_flash_flood2" placeholder="" ></td>
               </tr>
 
               <tr>
                 <td>drought</td>
-                <td> <input type="number" class="form-control" name="significant_events_drought2" placeholder="" ></td>
+                <td> <input type="number" class="form-control significant_events2" name="significant_events_drought2" placeholder="" ></td>
               </tr>
 
               <tr>
                 <td>earthquake</td>
-                <td> <input type="number" class="form-control" name="significant_events_earthquake2" placeholder="" ></td>
+                <td> <input type="number" class="form-control significant_events2" name="significant_events_earthquake2" placeholder="" ></td>
               </tr>
 
               <tr>
                 <td>volcanic eruption</td>
-                <td> <input type="number" class="form-control" name="significant_events_volcanic_eruption2" placeholder="" ></td>
+                <td> <input type="number" class="form-control significant_events2" name="significant_events_volcanic_eruption2" placeholder="" ></td>
               </tr>
 
               <tr>
                 <td>landslide</td>
-                <td> <input type="number" class="form-control" name="significant_events_landslide2" placeholder="" ></td>
+                <td> <input type="number" class="form-control significant_events2" name="significant_events_landslide2" placeholder="" ></td>
               </tr>
 
               <tr>
                 <td>tsunami</td>
-                <td> <input type="number" class="form-control" name="significant_events_tsunami2" placeholder="" ></td>
+                <td> <input type="number" class="form-control significant_events2" name="significant_events_tsunami2" placeholder="" ></td>
               </tr>
 
                <tr>
                 <td>forest fire</td>
-                <td> <input type="number" class="form-control" name="significant_events_forest_fire2" placeholder="" ></td>
+                <td> <input type="number" class="form-control significant_events2" name="significant_events_forest_fire2" placeholder="" ></td>
               </tr>
 
 
 
      </table>
-    
+      <br> 
+      <label for="" class="text-left"><b>TOTAL GEOLOGICAL CLIMATE EVENTS:  <span id="total_climate_events2"></span></b></label>
   </div>
     </div>
 </div>
@@ -4544,14 +4652,14 @@ DP7. Do you have disaster preparedness guide for people with disabilities?
      <div class="container-fluid" align="left" style="width:100%">
     
 
-<table  id="table2" class="cell-border compact text-left table-hover" align="left" style="width:100%">
+<table  id="" class="table table-sm table-hover" align="left" style="width:100%">
 <tr>
   <thead>
     
      <th>DP9. Does the barangay have a localized <br>early warning system for: &nbsp&nbsp&nbsp&nbsp&nbsp</th>
 
-    <th>Yes</th>
-    <th>No</th>
+    <th>&nbsp&nbsp&nbspYes</th>
+    <th>&nbsp&nbsp&nbspNo</th>
   </thead>
     
    
@@ -4699,86 +4807,86 @@ Other disaster that have a localized early warning system:
      <div class="container-fluid" align="left" style="width:100%">
     
 
-<table  id="table2" class="cell-border compact text-left table-hover" align="left" style="width:100%">
+<table  id="" class="table table-sm table-hover" align="left" style="width:100%">
 <tr>
   <thead>
     
-     <th>DP9. Does the barangay have a localized <br>early warning system for: &nbsp&nbsp&nbsp&nbsp&nbsp</th>
+     <th>DP10. Does the barangay have  <br>a disaster contingency plan for: &nbsp&nbsp&nbsp&nbsp&nbsp</th>
 
-    <th>Yes</th>
-    <th>No</th>
+    <th>&nbsp&nbsp&nbspYes</th>
+    <th>&nbsp&nbsp&nbspNo</th>
   </thead>
     
    
 </tr>
 <tr>
     <td>A. TYPHOON</td>
-    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_typhoon"  data-val="Yes" value="Yes" data-col="1"></label></td>
-   <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_typhoon"  data-val="No" value="No" data-col="2"></label></td> 
+    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_typhoon_plan"  data-val="Yes" value="Yes" data-col="1"></label></td>
+   <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_typhoon_plan"  data-val="No" value="No" data-col="2"></label></td> 
 </tr>
 
 
 <tr>
   <td>B. FLOODING</td>
-    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_flooding"  data-val="Yes" value="Yes" data-col="1"></label></td>
-  <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_flooding"  data-val="No" value="No" data-col="2"></label></td>
+    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_flooding_plan"  data-val="Yes" value="Yes" data-col="1"></label></td>
+  <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_flooding_plan"  data-val="No" value="No" data-col="2"></label></td>
 </tr>
 
 
 <tr>
     <td>C. DROUGHT</td>
-    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_drought"  data-val="Yes" value="Yes" data-col="1"></label></td>
-  <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_drought"  data-val="No" value="No" data-col="2"></label></td>
+    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_drought_plan"  data-val="Yes" value="Yes" data-col="1"></label></td>
+  <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_drought_plan"  data-val="No" value="No" data-col="2"></label></td>
 </tr>
 
 
 <tr>
   <td>D. EARTHQUAKE</td>
-    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_earthquake"  data-val="Yes" value="Yes" data-col="1"></label></td>
-  <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_earthquake"  data-val="No" value="No" data-col="2"></label></td>
+    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_earthquake_plan"  data-val="Yes" value="Yes" data-col="1"></label></td>
+  <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_earthquake_plan"  data-val="No" value="No" data-col="2"></label></td>
 </tr>
 
 
 <tr>
   <td>E. VOLCANIC ERUPTION</td>
-    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_volcanic"  data-val="Yes" value="Yes" data-col="1"></label></td>
-  <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_volcanic"  data-val="No" value="No" data-col="2"></label></td>
+    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_volcanic_plan"  data-val="Yes" value="Yes" data-col="1"></label></td>
+  <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_volcanic_plan"  data-val="No" value="No" data-col="2"></label></td>
 </tr>
 
 
 
 <tr>
   <td>F. LANDSLIDE</td>
-    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_landslide"  data-val="Yes" value="Yes" data-col="1"></label></td>
-  <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_landslide"  data-val="No" value="Yes" data-col="2"></label></td>
+    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_landslide_plan"  data-val="Yes" value="Yes" data-col="1"></label></td>
+  <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_landslide_plan"  data-val="No" value="Yes" data-col="2"></label></td>
 </tr>
 
 
 <tr>
   <td>G. TSUNAMI</td>
-    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_tsunami"  data-val="Yes" value="Yes" data-col="1"></label></td>
-  <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_tsunami"  data-val="No" value="No" data-col="2"></label></td>
+    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_tsunami_plan"  data-val="Yes" value="Yes" data-col="1"></label></td>
+  <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_tsunami_plan"  data-val="No" value="No" data-col="2"></label></td>
 </tr>
 
 
 <tr>
   <td>H. STORM SURGE</td>
-    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_storm"  data-val="Yes" value="Yes" data-col="1"></label></td>
-  <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_storm"  data-val="No" value="No" data-col="2"></label></td>
+    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_storm_plan"  data-val="Yes" value="Yes" data-col="1"></label></td>
+  <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_storm_plan"  data-val="No" value="No" data-col="2"></label></td>
 </tr>
 
 <tr>
   <td>I. FOREST FIRE</td>
-    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_forest"  data-val="Yes" value="Yes" data-col="1"></label></td>
-  <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_forest"  data-val="No" value="No" data-col="2"></label></td>
+    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_forest_plan"  data-val="Yes" value="Yes" data-col="1"></label></td>
+  <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_forest_plan"  data-val="No" value="No" data-col="2"></label></td>
 </tr>
 
 
 
 <tr>
   <td>J. FIRE</td>
-    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_fire"  data-val="Yes" value="Yes" data-col="1"></label></td>
-  <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_fire"  data-val="No" value="No" data-col="2"></label></td>
+    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_fire_plan"  data-val="Yes" value="Yes" data-col="1"></label></td>
+  <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_fire_plan"  data-val="No" value="No" data-col="2"></label></td>
 </tr>
 
 
@@ -4792,16 +4900,19 @@ Other disaster that have a localized early warning system:
 
 <tr>
   <td>L. ARMED CONFLICT</td>
-    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_armed"  data-val="Yes" value="Yes" data-col="1"></label></td>
-  <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_armed"  data-val="No" value="No" data-col="2"></label></td>
+    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_epidemic_plan"  data-val="Yes" value="Yes" data-col="1"></label></td>
+  <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_epidemic_plan"  data-val="No" value="No" data-col="2"></label></td>
 </tr>
 
 
 </table>
-             
-  </div>
-    </div>
 </div>
+
+</div>
+
+    </div>
+
+
 
 
 
