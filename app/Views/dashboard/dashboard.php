@@ -1092,15 +1092,7 @@ T1. Are there any of the tourism sites and destination present in the barangay?
       <br>
          
        
-       <div class="text-left"><h6>
-       <b>Notes for SECTION: TOURISM SITES AND DESTINATION
-        </b></h6></div>   
-
-      <div class="form-group row">
-      <div class="col-sm-6">
-      <textarea type="text" class="form-control" id="notes_tourism_sites_1" name="notes_tourism_sites_1" placeholder="" ></textarea>
-      </div>
-      </div>
+       
 
 
       
@@ -1212,16 +1204,7 @@ PTA. Is there a seaport located in the barangay?
             <br>        
 
 
-<div class="text-left"><h6>
-<b>Notes for SECTION: X. TRANSPORT FACILITY - Seaport
-</b></h6></div>   
 
-<div class="form-group row">
-  <div class="col-sm-6">
-  
-  <textarea type="text" class="form-control" id="transport_facility_seaport_1" name="transport_facility_seaport_1" placeholder="" ></textarea>
-</div>
-</div>
 
 
 </div>
@@ -1313,16 +1296,7 @@ PTB. Is there an airport located in the barangay?
           </div> 
 
       
-<br>                  
-<div class="text-left"><h6>
-<b>Notes for SECTION: X. TRANSPORT FACILITY - Airport
-</b></h6></div>   
 
-<div class="form-group row">
-  <div class="col-sm-6">
-  <textarea type="text" class="form-control" id="transport_facility_airport_1" name="transport_facility_airport_1" placeholder="" ></textarea>
-</div>
-</div>
 </div>
 </div> 
 <br>
@@ -1419,16 +1393,7 @@ G1. Is the Open Dump Site present in the barangay?
 
     
 
-<br>                  
-<div class="text-left"><h6>
-<b>Notes for SECTION: GARBAGE AND WASTE DISPOSAL - Open Dump Site
-</b></h6></div>   
 
-<div class="form-group row">
-  <div class="col-sm-6">
-  <textarea type="text" class="form-control" id="notes_garbage_waste_diposal_dump_1" name="notes_garbage_waste_diposal_dump_1" placeholder="" ></textarea>  
-</div>
-</div>
 
 </div>
 </div>    
@@ -1484,16 +1449,7 @@ G1. Is the Open Dump Site present in the barangay?
 
 
       
-<br>                  
-<div class="text-left"><h6>
-<b>Notes for SECTION: GARBAGE AND WASTE DISPOSAL - Open Dump Site
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-6">
-   <textarea type="text" class="form-control" id="notes_garbage_waste_diposal_dump_1" name="notes_garbage_waste_diposal_dump_1" placeholder="" ></textarea>  
-</div>
-</div>     
+    
 </div>      
 
 
@@ -1581,16 +1537,7 @@ G1. Is the Sanitary Land Fill present in the barangay?
           </div> 
 
 
-<br>                  
-<div class="text-left"><h6>
-<b>Notes for SECTION: GARBAGE AND WASTE DISPOSAL - Sanitary Land Fill
-</b></h6></div>   
 
-<div class="form-group row">
-  <div class="col-sm-6">
-  <textarea type="text" class="form-control" id="notes_garbage_waste_diposal_sanitary_1" name="notes_garbage_waste_diposal_sanitary_1" placeholder="" ></textarea>  
-</div>
-</div>
      
 
 </div>
@@ -1642,17 +1589,6 @@ G1. Is the Sanitary Land Fill present in the barangay?
               </div>
           </div>        
 
-
-<br>                  
-<div class="text-left"><h6>
-<b>Notes for SECTION: GARBAGE AND WASTE DISPOSAL - Sanitary Land Fill
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <textarea type="text" class="form-control" id="notes_garbage_waste_diposal_sanitary_1" name="notes_garbage_waste_diposal_sanitary_1" placeholder="" ></textarea>  
-</div>
-</div>
 
 </div>   
 <br>
@@ -1740,16 +1676,7 @@ G1. Is the Compost Pits present in the barangay?
               </div>
           </div> 
 
-<br>                  
-<div class="text-left"><h6>
-<b>Notes for SECTION: GARBAGE AND WASTE DISPOSAL - Compost Pits
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <textarea type="text" class="form-control" id="notes_garbage_waste_diposal_compost_1" name="notes_garbage_waste_diposal_compost_1" placeholder="" ></textarea>
-</div>
-</div>
+<br>
 </div>
 </div>   
 
@@ -1800,15 +1727,7 @@ G1. Is the Compost Pits present in the barangay?
           </div>        
 
 <br>                  
-<div class="text-left"><h6>
-<b>Notes for SECTION: GARBAGE AND WASTE DISPOSAL - Compost Pits
-</b></h6></div>   
 
-<div class="form-group row">
-  <div class="col-sm-6">
-    <textarea type="text" class="form-control" id="notes_garbage_waste_diposal_compost_1" name="notes_garbage_waste_diposal_compost_1" placeholder="" ></textarea>
-</div>
-</div>
 </div>   
 <br>
 
@@ -1894,15 +1813,7 @@ G1. Is the Material Recovery Facility (MRF) present in the barangay?
 
 
 <br>                  
-<div class="text-left"><h6>
-<b>Notes for SECTION: GARBAGE AND WASTE DISPOSAL - Material Recovery Facility (MRF)
-</b></h6></div>   
 
-<div class="form-group row">
-  <div class="col-sm-6">
-  <textarea type="text" class="form-control" id="notes_garbage_waste_diposal_material_1" name="notes_garbage_waste_diposal_material_1" placeholder="" ></textarea>
-</div>
-</div>
 
 </div>
 </div>    
@@ -1953,15 +1864,7 @@ G1. Is the Material Recovery Facility (MRF) present in the barangay?
 
       
 <br>                  
-<div class="text-left"><h6>
-<b>Notes for SECTION: GARBAGE AND WASTE DISPOSAL - Material Recovery Facility (MRF)
-</b></h6></div>   
 
-<div class="form-group row">
-  <div class="col-sm-6">
-  <textarea type="text" class="form-control" id="notes_garbage_waste_diposal_material_1" name="notes_garbage_waste_diposal_material_1" placeholder="" ></textarea>
-</div>
-</div>
 </div>   
 <br>
 
@@ -2049,15 +1952,7 @@ G1. Is the Treatment, storage, and disposal (TSD) facility present in the barang
 
 
 <br>                  
-<div class="text-left"><h6>
-<b>Notes for SECTION: GARBAGE AND WASTE DISPOSAL - Treatment, storage and disposal (TSD) facility
-</b></h6></div>   
 
-<div class="form-group row">
-  <div class="col-sm-6">
-    <textarea type="text" class="form-control" id="notes_garbage_waste_diposal_treatment_1" name="notes_garbage_waste_diposal_treatment_1" placeholder="" ></textarea>
-</div>
-</div>
 
 </div>
 </div>    
@@ -2107,15 +2002,7 @@ G1. Is the Treatment, storage, and disposal (TSD) facility present in the barang
           </div>        
 
 <br>                  
-<div class="text-left"><h6>
-<b>Notes for SECTION: GARBAGE AND WASTE DISPOSAL - Treatment, storage and disposal (TSD) facility
-</b></h6></div>   
 
-<div class="form-group row">
-  <div class="col-sm-6">
-   <textarea type="text" class="form-control" id="notes_garbage_waste_diposal_treatment_1" name="notes_garbage_waste_diposal_treatment_1" placeholder="" ></textarea>
-</div>
-</div>
 </div>   
 <br>
 
@@ -2205,15 +2092,7 @@ G1. Is the Waste-to-energy facility present in the barangay?
           </div> 
 
 <br>                  
-<div class="text-left"><h6>
-<b>Notes for SECTION: GARBAGE AND WASTE DISPOSAL - Waste to Energy facility
-</b></h6></div>   
 
-<div class="form-group row">
-  <div class="col-sm-6">
-   <textarea type="text" class="form-control" id="notes_garbage_waste_diposal_energy_1" name="notes_garbage_waste_diposal_energy_1" placeholder="" ></textarea>
-</div>
-</div>
 </div>
 </div>   
 
@@ -2263,16 +2142,8 @@ G1. Is the Waste-to-energy facility present in the barangay?
           </div>        
 
 
-      <br>                  
-<div class="text-left"><h6>
-<b>Notes for SECTION: GARBAGE AND WASTE DISPOSAL - Waste to Energy facility
-</b></h6></div>   
+<br>                  
 
-<div class="form-group row">
-  <div class="col-sm-6">
-     <textarea type="text" class="form-control" id="notes_garbage_waste_diposal_energy_1" name="notes_garbage_waste_diposal_energy_1" placeholder="" ></textarea>
-</div>
-</div>
 </div>
 <br>
 
@@ -2365,15 +2236,7 @@ G1. Is the Sewage treatment plant facility present in the barangay?
 
 
 <br>                  
-<div class="text-left"><h6>
-<b>Notes for SECTION: GARBAGE AND WASTE DISPOSAL - Sewage treatment plant
-</b></h6></div>   
 
-<div class="form-group row">
-  <div class="col-sm-6">
-   <textarea type="text" class="form-control" id="notes_garbage_waste_diposal_sewage_1" name="notes_garbage_waste_diposal_sewage_1" placeholder="" ></textarea>
-  </div>
-</div>
 </div>    
 </div>
 
@@ -2422,16 +2285,8 @@ G1. Is the Sewage treatment plant facility present in the barangay?
           </div>        
 
    <br>                  
-<div class="text-left"><h6>
-<b>Notes for SECTION: GARBAGE AND WASTE DISPOSAL - Sewage treatment plant
-</b></h6></div>   
+</div>
 
-<div class="form-group row">
-  <div class="col-sm-6">
-   <textarea type="text" class="form-control" id="notes_garbage_waste_diposal_sewage_1" name="notes_garbage_waste_diposal_sewage_1" placeholder="" ></textarea>
-  </div>
-</div>
-</div>
 
 
        
@@ -3184,15 +3039,7 @@ Other transport facilities:
 </div>
 
 <br>                  
-<div class="text-left"><h6>
-<b>Notes for SECTION: Service institutions and infrastructure - Transport Facilities
-</b></h6></div>   
 
-<div class="form-group row">
-  <div class="col-sm-6">
-   <textarea type="text" class="form-control" id="notes_public_vehicle_1" name="notes_public_vehicle_1" placeholder="" ></textarea>
-  </div>
-</div>
 </div>
 
 
@@ -3219,15 +3066,7 @@ Other transport facilities:
           </div>   
 
 <br>                  
-<div class="text-left"><h6>
-<b>Notes for SECTION: Service institutions and infrastructure - Transport Facilities
-</b></h6></div>   
 
-<div class="form-group row">
-  <div class="col-sm-6">
-   <textarea type="text" class="form-control" id="notes_public_vehicle_1" name="notes_public_vehicle_1" placeholder="" ></textarea>
-  </div>
-</div>
 </div>
 
 
@@ -7251,15 +7090,7 @@ A3. ESTABLISHMENTS OF THE BARANGAY
 
 
 <br>
-<div class="text-left"><h6>
-<b>Notes for A3. ESTABLISHMENTS OF THE BARANGAY
-</b></h6></div>  
 
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="textfield" class="form-control" id="notes_establishments_extraterritorial_1" name="notes_establishments_extraterritorial_1" placeholder="" >
-</div>
-</div>
 </div>
 <br>
 
