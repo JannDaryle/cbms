@@ -34,7 +34,7 @@
 
 (() => {
 
-  'use strict';
+	'use strict';
 
 
 
@@ -43,7 +43,7 @@
 $(document).ready( function () 
 {
 
-// welcome_message();
+welcome_message();
 load_this();
 get_form_1();
 
@@ -73,8 +73,9 @@ get_form_1();
   });
 
 
- jQuery('#table1, #table2').DataTable({
+ jQuery('#table1, #table2, #table3, #table4, #table5').DataTable({
 
+       "responsive": true, 
        "bPaginate": false,
        "bFilter": false,
        "bInfo": false,
@@ -82,8 +83,6 @@ get_form_1();
        "ordering": false
 
  });
-
-
 
 
  jQuery('.submit_table_2').DataTable({
@@ -127,8 +126,73 @@ get_form_1();
   });
 
 
+ jQuery('.submit_table_barangay_fac_health').DataTable({
 
-}); //END OF ONLOAD
+    "order":[],
+    "serverSide":true,
+    "searching": false, 
+    "scrollX": false,
+    "bPaginate": false,
+    "ajax":
+    {
+      url:"<?php echo base_url("/dashboard/get_barangay_health_facilities"); ?>",
+      type:"POST",
+    },
+    "columnDefs": [
+               
+                   { "orderable": false, "targets": [0,1,2,3,4], "visible": true, "searchable": false}
+            
+
+                  ]
+  });
+
+
+ jQuery('.submit_table_barangay_fac_education').DataTable({
+
+    "order":[],
+    "serverSide":true,
+    "searching": false, 
+    "scrollX": false,
+    "bPaginate": false,
+    "ajax":
+    {
+      url:"<?php echo base_url("/dashboard/get_barangay_education_facilities"); ?>",
+      type:"POST",
+    },
+    "columnDefs": [
+               
+                   { "orderable": false, "targets": [0,1,2,3,4], "visible": true, "searchable": false}
+            
+
+                  ]
+  });
+
+
+  jQuery('.submit_table_barangay_fac_service').DataTable({
+
+    "order":[],
+    "serverSide":true,
+    "searching": false, 
+    "scrollX": false,
+    "bPaginate": false,
+    "ajax":
+    {
+      url:"<?php echo base_url("/dashboard/get_barangay_service_facilities"); ?>",
+      type:"POST",
+    },
+    "columnDefs": [
+               
+                   { "orderable": false, "targets": [0,1,2,3,4], "visible": true, "searchable": false}
+            
+
+                  ]
+  });
+
+
+ 
+
+
+}); //END OF ONLOAD 
 
 
 
@@ -378,7 +442,18 @@ let data = [ ];
                             console.log(element.name);
                             console.log(data[0][element.name]);
 
+                          if(element.type == "select-one")
+                          {
+                            if(element.name != "reg" && element.name != "prv" && element.name != "mun" && element.name != "bgy")
+                            {
+                              $('[name="'+element.name+'"]').val(data[0][element.name]).change();
+                            }
+                            
+                            // alert(element.name);
+                          }
 
+
+                          
 
                             // ----------------------OVER ALL UPDATE-----------------
                           if(element.type != "radio")
@@ -947,7 +1022,7 @@ var save_form =  $('#'+get_table_form);
 
                                                   
                                                  jQuery('.'+get_table_form).DataTable().ajax.reload();
-                                                 Swal.fire('Personnel was Added Successfully', '', 'success')
+                                                 Swal.fire('Success.', '', 'success')
 
                                                  .then(()=>{
                                                                                                                                                                               
@@ -1133,1098 +1208,156 @@ else if (s == "No")
 }
 
  
-}); 
-
-$('input[name="tourism_sites"]').click(function(){
-
-var s =  $(this).data("val");
-
-if(s == "Yes")
-{
-  $(".t_sites").attr("hidden",false);
-  jQuery('.submit_table_3').DataTable().ajax.reload();
-}
-else if (s == "No")
-{
-  $(".t_sites").attr("hidden",true);
-}
-
- 
 });
 
 
-$('input[name="transport_facility_seaport"]').click(function(){
+$('input[name="EA_BSN_FSN"]').click(function(e){
 
-var s =  $(this).data("val");
+        
+        var selected =  $(this).data("val");
 
-if(s == "Yes")
-{
-  $(".transport_facility_seaport_repeat").attr("hidden",false);
-  jQuery('.submit_table_3').DataTable().ajax.reload();
-}
-else if (s == "No")
-{
-  $(".transport_facility_seaport_repeat").attr("hidden",true);
-}
-
- 
-}); 
-
-
-$('input[name="transport_facility_airport"]').click(function(){
-
-var s =  $(this).data("val");
-
-if(s == "Yes")
-{
-  $(".transport_facility_airport_repeat").attr("hidden",false);
-  jQuery('.submit_table_3').DataTable().ajax.reload();
-}
-else if (s == "No")
-{
-  $(".transport_facility_airport_repeat").attr("hidden",true);
-}
-
- 
-});
-
-$('input[name="garbage_waste_diposal_dump"]').click(function(){
-
-var s =  $(this).data("val");
-
-if(s == "Yes")
-{
-  $(".garbage_waste_diposal_dump_repeat").attr("hidden",false);
-  jQuery('.submit_table_3').DataTable().ajax.reload();
-}
-else if (s == "No")
-{
-  $(".garbage_waste_diposal_dump_repeat").attr("hidden",true);
-}
-
- 
-}); 
-
-$('input[name="garbage_waste_diposal_dump"]').click(function(){
-
-var s =  $(this).data("val");
-
-if(s == "No")
-{
-  $(".garbage_waste_diposal_dump_repeat_no").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
-}
-else if (s == "Yes")
-{
-  $(".garbage_waste_diposal_dump_repeat_no").attr("hidden",true);
-}
-
- 
-}); 
-
-$('input[name="garbage_waste_diposal_sanitary"]').click(function(){
-
-var s =  $(this).data("val");
-
-if(s == "Yes")
-{
-  $(".garbage_waste_diposal_sanitary_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
-}
-else if (s == "No")
-{
-  $(".garbage_waste_diposal_sanitary_repeat").attr("hidden",true);
-}
-
- 
-});
-
-$('input[name="garbage_waste_diposal_sanitary"]').click(function(){
-
-var s =  $(this).data("val");
-
-if(s == "No")
-{
-  $(".garbage_waste_diposal_sanitary_repeat_no").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
-}
-else if (s == "Yes")
-{
-  $(".garbage_waste_diposal_sanitary_repeat_no").attr("hidden",true);
-}
-
- 
-}); 
-
-$('input[name="garbage_waste_diposal_compost"]').click(function(){
-
-var s =  $(this).data("val");
-
-if(s == "Yes")
-{
-  $(".garbage_waste_diposal_compost_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
-}
-else if (s == "No")
-{
-  $(".garbage_waste_diposal_compost_repeat").attr("hidden",true);
-}
-
- 
-});
-
-$('input[name="garbage_waste_diposal_compost"]').click(function(){
-
-var s =  $(this).data("val");
-
-if(s == "No")
-{
-  $(".garbage_waste_diposal_compost_repeat_no").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
-}
-else if (s == "Yes")
-{
-  $(".garbage_waste_diposal_compost_repeat_no").attr("hidden",true);
-}
-
- 
-}); 
-
-$('input[name="garbage_waste_diposal_material"]').click(function(){
-
-var s =  $(this).data("val");
-
-if(s == "Yes")
-{
-  $(".garbage_waste_diposal_material_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
-}
-else if (s == "No")
-{
-  $(".garbage_waste_diposal_material_repeat").attr("hidden",true);
-}
-
- 
-});
-
-$('input[name="garbage_waste_diposal_material"]').click(function(){
-
-var s =  $(this).data("val");
-
-if(s == "No")
-{
-  $(".garbage_waste_diposal_material_repeat_no").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
-}
-else if (s == "Yes")
-{
-  $(".garbage_waste_diposal_material_repeat_no").attr("hidden",true);
-}
-
- 
-}); 
-
-
-$('input[name="garbage_waste_diposal_treatment"]').click(function(){
-
-var s =  $(this).data("val");
-
-if(s == "Yes")
-{
-  $(".garbage_waste_diposal_treatment_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
-}
-else if (s == "No")
-{
-  $(".garbage_waste_diposal_treatment_repeat").attr("hidden",true);
-}
-
- 
-});
-
-
-$('input[name="garbage_waste_diposal_treatment"]').click(function(){
-
-var s =  $(this).data("val");
-
-if(s == "No")
-{
-  $(".garbage_waste_diposal_treatment_repeat_no").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
-}
-else if (s == "Yes")
-{
-  $(".garbage_waste_diposal_treatment_repeat_no").attr("hidden",true);
-}
-
- 
-}); 
-
-
-$('input[name="garbage_waste_diposal_energy"]').click(function(){
-
-var s =  $(this).data("val");
-
-if(s == "Yes")
-{
-  $(".garbage_waste_diposal_energy_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
-}
-else if (s == "No")
-{
-  $(".garbage_waste_diposal_energy_repeat").attr("hidden",true);
-}
-
- 
-});
-
-
-$('input[name="garbage_waste_diposal_energy"]').click(function(){
-
-var s =  $(this).data("val");
-
-if(s == "No")
-{
-  $(".garbage_waste_diposal_energy_repeat_no").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
-}
-else if (s == "Yes")
-{
-  $(".garbage_waste_diposal_energy_repeat_no").attr("hidden",true);
-}
-
- 
-}); 
-
-
-$('input[name="garbage_waste_diposal_sewage"]').click(function(){
-
-var s =  $(this).data("val");
-
-if(s == "Yes")
-{
-  $(".garbage_waste_diposal_sewage_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
-}
-else if (s == "No")
-{
-  $(".garbage_waste_diposal_sewage_repeat").attr("hidden",true);
-}
-
- 
-});
-
-
-$('input[name="garbage_waste_diposal_sewage"]').click(function(){
-
-var s =  $(this).data("val");
-
-if(s == "No")
-{
-  $(".garbage_waste_diposal_sewage_repeat_no").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
-}
-else if (s == "Yes")
-{
-  $(".garbage_waste_diposal_sewage_repeat_no").attr("hidden",true);
-}
-
- 
-}); 
-
-
-$('input[name="collection_trucks"]').click(function(){
-
-var s =  $(this).data("val");
-
-if(s == "Yes")
-{
-  $(".collection_trucks_count_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
-}
-else if (s == "No")
-{
-  $(".collection_trucks_count_repeat").attr("hidden",true);
-}
-
- 
-});
-
-
-$('input[name="collection_bins"]').click(function(){
-
-var s =  $(this).data("val");
-
-if(s == "Yes")
-{
-  $(".collection_bins_count_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
-}
-else if (s == "No")
-{
-  $(".collection_bins_count_repeat").attr("hidden",true);
-}
-
- 
-}); 
-
-
-$('input[name="collection_incinerator"]').click(function(){
-
-var s =  $(this).data("val");
-
-if(s == "Yes")
-{
-  $(".collection_incinerator_count_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
-}
-else if (s == "No")
-{
-  $(".collection_incinerator_count_repeat").attr("hidden",true);
-}
-
- 
-}); 
-
-$('input[name="collection_others"]').click(function(){
-
-var s =  $(this).data("val");
-
-if(s == "Yes")
-{
-  $(".collection_others_specify_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
-}
-else if (s == "No")
-{
-  $(".collection_others_specify_repeat").attr("hidden",true);
-}
-
- 
-}); 
-
-
-$('input[name="collector_biodegradable"]').click(function(){
-
-var s =  $(this).data("val");
-
-if(s == "Yes")
-{
-  $(".collector_biodegradable_specify_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
-}
-else if (s == "No")
-{
-  $(".collector_biodegradable_specify_repeat").attr("hidden",true);
-}
-
- 
-}); 
-
-
-$('input[name="collector_recyclables"]').click(function(){
-
-var s =  $(this).data("val");
-
-if(s == "Yes")
-{
-  $(".collector_recyclables_specify_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
-}
-else if (s == "No")
-{
-  $(".collector_recyclables_specify_repeat").attr("hidden",true);
-}
-
- 
-}); 
-
-
-$('input[name="collector_residuals"]').click(function(){
-
-var s =  $(this).data("val");
-
-if(s == "Yes")
-{
-  $(".collector_residuals_specify_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
-}
-else if (s == "No")
-{
-  $(".collector_residuals_specify_repeat").attr("hidden",true);
-}
-
- 
-}); 
-
-$('input[name="collector_how_often_question"]').click(function(){
-
-var s =  $(this).data("val");
-
-if(s == "Yes")
-{
-  $(".collector_how_often_question_specify_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
-}
-else if (s == "No")
-{
-  $(".collector_how_often_question_specify_repeat").attr("hidden",true);
-}
-
- 
-});
-
-
-$('input[name="collector_payment"]').click(function(){
-
-var s =  $(this).data("val");
-
-if(s == "Yes")
-{
-  $(".collector_amount_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
-}
-else if (s == "No")
-{
-  $(".collector_amount_repeat").attr("hidden",true);
-}
-
- 
-});
-
-
-$('input[name="collector_able_to_serve"]').click(function(){
-
-var s =  $(this).data("val");
-
-if(s == "No")
-{
-  $(".collector_specific_areas_repeat_no").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
-}
-else if (s == "Yes")
-{
-  $(".collector_specific_areas_repeat_no").attr("hidden",true);
-}
-
- 
-}); 
-
-
-$('input[name="publictransport1"]').click(function(){
-
-var s =  $(this).data("val");
-
-if(s == "Yes")
-{
-  $(".publictransport1_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
-}
-else if (s == "No")
-{
-  $(".publictransport1_repeat").attr("hidden",true);
-}
-
- 
-});
-
-
-$('input[name="publictransport1"]').click(function(){
-
-var s =  $(this).data("val");
-
-if(s == "No")
-{
-  $(".publictransport1_repeat_no").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
-}
-else if (s == "Yes")
-{
-  $(".publictransport1_repeat_no").attr("hidden",true);
-}
-
- 
-}); 
-
-
-$('input[name="network_available_question"]').click(function(){
-
-var s =  $(this).data("val");
-
-if(s == "Yes")
-{
-  $(".network_available_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
-}
-else if (s == "No")
-{
-  $(".network_available_repeat").attr("hidden",true);
-}
-
- 
-});
-
-
-$('input[name="existing_telcom"]').click(function(){
-
-var s =  $(this).data("val");
-
-if(s == "Yes")
-{
-  $(".existing_telcom_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
-}
-else if (s == "No")
-{
-  $(".existing_telcom_repeat").attr("hidden",true);
-}
+        if(selected == "Yes")
+        {
+          $('.encode_bsn').attr("hidden",false);
+          jQuery('#table3').DataTable().draw();
+        }
+        else if(selected == "No")
+        {
+          $('.encode_bsn').attr("hidden",true);
+          jQuery('#table3').DataTable().draw();
+        }
 
- 
-});
 
+        // alert(selected);
+       
+    } );
 
 
-$('input[name="wifi_availability"]').click(function(){
+$('#menu-toggle').click(function(e){
+         
+var delay = ( function() {
+    var timer = 0;
+    return function(callback, ms) {
+        clearTimeout (timer);
+        timer = setTimeout(callback, ms);
+    };
+})();
 
-var s =  $(this).data("val");
+delay(function(){
 
-if(s == "Yes")
-{
-  $(".wifi_availability_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
-}
-else if (s == "No")
-{
-  $(".wifi_availability_repeat").attr("hidden",true);
-}
-
- 
-}); 
-
-
-$('input[name="ict_equipment_free"]').click(function(){
-
-var s =  $(this).data("val");
-
-if(s == "Yes")
-{
-  $(".ict_equipment_free_specify_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
-}
-else if (s == "No")
-{
-  $(".ict_equipment_free_specify_repeat").attr("hidden",true);
-}
-
- 
-});
-
-
-$('input[name="barangay_it_personnel"]').click(function(){
-
-var s =  $(this).data("val");
-
-if(s == "Yes")
-{
-  $(".barangay_it_personnel_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
-}
-else if (s == "No")
-{
-  $(".barangay_it_personnel_repeat").attr("hidden",true);
-}
-
- 
-});
-
-
-$('input[name="barangay_official_website"]').click(function(){
-
-var s =  $(this).data("val");
-
-if(s == "Yes")
-{
-  $(".barangay_official_website_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
-}
-else if (s == "No")
-{
-  $(".barangay_official_website_repeat").attr("hidden",true);
-}
-
- 
-});
-
-
-$('input[name="barangay_social_media"]').click(function(){
-
-var s =  $(this).data("val");
-
-if(s == "Yes")
-{
-  $(".barangay_social_media_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
-}
-else if (s == "No")
-{
-  $(".barangay_social_media_repeat").attr("hidden",true);
-}
-
- 
-});
-
-
-$('input[name="barangay_disseminate_information"]').click(function(){
-
-var s =  $(this).data("val");
-
-if(s == "Yes")
-{
-  $(".barangay_disseminate_information_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
-}
-else if (s == "No")
-{
-  $(".barangay_disseminate_information_repeat").attr("hidden",true);
-}
-
- 
-}); 
-
-
-$('input[name="barangay_egovern"]').click(function(){
-
-var s =  $(this).data("val");
-
-if(s == "Yes")
-{
-  $(".barangay_egovern_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
-}
-else if (s == "No")
-{
-  $(".barangay_egovern_repeat").attr("hidden",true);
-}
-
- 
-});
-
-
-$('input[name="significant_events_others"]').click(function(){
-
-var s =  $(this).data("val");
-
-if(s == "Yes")
-{
-  $(".significant_events_others_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
-}
-else if (s == "No")
-{
-  $(".significant_events_others_repeat").attr("hidden",true);
-}
-
- 
-});
-
-
-$('input[name="significant_events_others2"]').click(function(){
-
-var s =  $(this).data("val");
-
-if(s == "Yes")
-{
-  $(".significant_events_others2_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
-}
-else if (s == "No")
-{
-  $(".significant_events_others2_repeat").attr("hidden",true);
-}
-
- 
-});
-
-
-$('input[name="disaster_preparedness_hotline"]').click(function(){
-
-var s =  $(this).data("val");
-
-if(s == "Yes")
-{
-  $(".disaster_preparedness_hotline_contact_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
-}
-else if (s == "No")
-{
-  $(".disaster_preparedness_hotline_contact_repeat").attr("hidden",true);
-}
-
- 
-});
-
-
-
-$('input[name="disaster_early_warning_other_loc"]').click(function(){
-
-var s =  $(this).data("val");
-
-if(s == "Yes")
-{
-  $(".disaster_early_warning_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
-}
-else if (s == "No")
-{
-  $(".disaster_early_warning_repeat").attr("hidden",true);
-}
-
- 
-});
-
-
-$('input[name="disaster_early_warning_other_plan"]').click(function(){
-
-var s =  $(this).data("val");
-
-if(s == "Yes")
-{
-  $(".disaster_early_warning_plan_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
-}
-else if (s == "No")
-{
-  $(".disaster_early_warning_plan_repeat").attr("hidden",true);
-}
-
- 
-});
-
-
-$('input[name="disaster_evacuation"]').click(function(){
-
-var s =  $(this).data("val");
-
-if(s == "Yes")
-{
-  $(".disaster_evacuation_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
-}
-else if (s == "No")
-{
-  $(".disaster_evacuation_repeat").attr("hidden",true);
-}
-
- 
-});
-
-
-$('input[name="disaster_evacuation_map_use_specify"]').click(function(){
-
-var s =  $(this).data("val");
-
-if(s == "Yes")
-{
-  $(".disaster_evacuation_map_use_specify_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
-}
-else if (s == "No")
-{
-  $(".disaster_evacuation_map_use_specify_repeat").attr("hidden",true);
-}
-
- 
-});
-
-
-$('input[name="disaster_evacuation1"]').click(function(){
-
-var s =  $(this).data("val");
-
-if(s == "Yes")
-{
-  $(".disaster_evacuation1_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
-}
-else if (s == "No")
-{
-  $(".disaster_evacuation1_repeat").attr("hidden",true);
-}
-
- 
-}); 
-
-
-$('input[name="disaster_evacuation_map_use_specify1"]').click(function(){
-
-var s =  $(this).data("val");
-
-if(s == "Yes")
-{
-  $(".disaster_evacuation_map_use_specify1_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
-}
-else if (s == "No")
-{
-  $(".disaster_evacuation_map_use_specify1_repeat").attr("hidden",true);
-}
-
- 
-});
-
-
-
-$('input[name="disaster_evacuation_facility"]').click(function(){
-
-var s =  $(this).data("val");
-
-if(s == "Yes")
-{
-  $(".disaster_evacuation_facility_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
-}
-else if (s == "No")
-{
-  $(".disaster_evacuation_facility_repeat").attr("hidden",true);
-}
-
- 
-}); 
-
-
-
-$('input[name="disaster_categorize_evacuation_center"]').click(function(){
-
-var s =  $(this).data("val");
-
-if(s == "Yes")
-{
-  $(".disaster_categorize_evacuation_center_other_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
-}
-else if (s == "No")
-{
-  $(".disaster_categorize_evacuation_center_other_repeat").attr("hidden",true); 
-}
-
-
-});
-
-
-$('input[name="disaster_used_evacuation_center"]').click(function(){
-
-var s =  $(this).data("val");
-
-if(s == "Yes")
-{
-  $(".disaster_used_evacuation_center_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
-}
-else if (s == "No")
-{
-  $(".disaster_used_evacuation_center_repeat").attr("hidden",true); 
-}
-
-});
-
-
-$('input[name="general_info_others"]').click(function(){
-
-var s =  $(this).data("val");
-
-if(s == "Yes")
-{
-  $(".general_info_others_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
-}
-else if (s == "No")
-{
-  $(".general_info_others_repeat").attr("hidden",true); 
-}
-
-});
-
-
-$('input[name="cc13"]').click(function(){
-
-var s =  $(this).data("val");
-
-if(s == "Yes")
-{
-  $(".cc13_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
-}
-else if (s == "No")
-{
-  $(".cc13_repeat").attr("hidden",true); 
-}
-
-});
-
-
-$('input[name="paved_concrete"]').click(function(){
-
-var s =  $(this).data("val");
+    jQuery('.norm_table').DataTable().draw();
+    jQuery('.dyna_table').DataTable().ajax.reload();
 
-if(s == "Yes")
-{
-  $(".paved_concrete_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
-}
-else if (s == "No")
-{
-  $(".paved_concrete_repeat").attr("hidden",true); 
-}
-
-});
-
-
-$('input[name="paved_concrete_maintaining"]').click(function(){
-
-var s =  $(this).data("val");
-
-if(s == "Yes")
-{
-  $(".RN5_concrete_others_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
-}
-else if (s == "No")
-{
-  $(".RN5_concrete_others_repeat").attr("hidden",true); 
-}
-
-});
-
-
-$('input[name="paved_asphalt"]').click(function(){
-
-var s =  $(this).data("val");
-
-if(s == "Yes")
-{
-  $(".paved_asphalt_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
-}
-else if (s == "No")
-{
-  $(".paved_asphalt_repeat").attr("hidden",true); 
-}
-
-});
-
-
-
-$('input[name="paved_asphalt_maintaining"]').click(function(){
-
-var s =  $(this).data("val");
-
-if(s == "Yes")
-{
-  $(".RN5_asphalt_others_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
-}
-else if (s == "No")
-{
-  $(".RN5_asphalt_others_repeat").attr("hidden",true); 
-}
 
-});
+}, 2000 ); // end delay
+       
+         
+} );
 
-
-$('input[name="unpaved_gravel"]').click(function(){
-
-var s =  $(this).data("val");
-
-if(s == "Yes")
-{
-  $(".unpaved_gravel_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
-}
-else if (s == "No")
-{
-  $(".unpaved_gravel_repeat").attr("hidden",true); 
-}
-
-});
-
-
-$('input[name="unpaved_gravel_maintaining"]').click(function(){
-
-var s =  $(this).data("val");
-
-if(s == "Yes")
+function reload_tables()
 {
-  $(".RN5_gravel_others_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
-}
-else if (s == "No")
-{
-  $(".RN5_gravel_others_repeat").attr("hidden",true); 
-}
-
-});
 
+  var delay = ( function() {
+    var timer = 0;
+    return function(callback, ms) {
+        clearTimeout (timer);
+        timer = setTimeout(callback, ms);
+    };
+})();
 
-$('input[name="unpaved_earth"]').click(function(){
+delay(function(){
 
-var s =  $(this).data("val");
+    jQuery('.norm_table').DataTable().draw();
+    jQuery('.dyna_table').DataTable().ajax.reload();
 
-if(s == "Yes")
-{
-  $(".unpaved_earth_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
-}
-else if (s == "No")
-{
-  $(".unpaved_earth_repeat").attr("hidden",true); 
-}
 
-});
+}, 2000 ); // end delay
 
-
-$('input[name="unpaved_earth_maintaining"]').click(function(){
-
-var s =  $(this).data("val");
-
-if(s == "Yes")
-{
-  $(".RN5_earth_others_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
 }
-else if (s == "No")
-{
-  $(".RN5_earth_others_repeat").attr("hidden",true); 
-}
-
-});
-
-
-
-
-
 
 
+$('.hf2').change(function(e){
 
+        var selected =  $(this).data("skip");
 
+        
+        if($(this)[0].selectedIndex == 3)
+        {
+          $('.hf2_in_'+selected).attr("hidden",false);
+          $('.hf2_out_'+selected).attr("hidden",true);
+        }
+        else if($(this)[0].selectedIndex == 4)
+        {
+          $('.hf2_in_'+selected).attr("hidden",true);
+          $('.hf2_out_'+selected).attr("hidden",false);
+        }
+        else
+        {
+          $('.hf2_in_'+selected).attr("hidden",true);
+          $('.hf2_out_'+selected).attr("hidden",true);
+        }
 
+     
+        // alert($(this)[0].selectedIndex);          
+       
+    } );
 
 
+$('.HF').click(function(e){
 
+        
+        var selected =  $(this).data("val");
+        var skip =  $(this).data("skip");
 
 
 
+        if(selected == "Yes")
+        {
+         
+          $('.skip_no_'+skip).attr("hidden",true);
+          $('.skip_yes_'+skip).attr("hidden",false);
+          // reload_tables();
+          
+        }
+        else if(selected == "No")
+        {
+          $('.skip_no_'+skip).attr("hidden",false);
+          $('.skip_yes_'+skip).attr("hidden",true);
+         
+        }
 
 
+        // alert(selected);
+       
+    } );
 
 
+$('.pass_data_facility').click(function(e){
+       
+       var selected =  $(this).data("facility");
 
+       $('#health_facilities').val(selected);
 
+       
+    } );
 
+$('.pass_data_facility_educ').click(function(e){
+       
+       var selected =  $(this).data("facility");
 
+       $('#education_facilities').val(selected);
 
+       
+    } );
 
+$('.pass_data_facility_service').click(function(e){
+       
+       var selected =  $(this).data("facility");
 
+       $('#service_facilities').val(selected);
 
+       
+    } );
 
 
 
@@ -2569,61 +1702,9 @@ $('.land_classification').on('keyup', function()
 });
 
 
-$('.significant_events').on('keyup', function()
-{
-      (function( $ ){
-   $.fn.sum=function () {
-    var sum=0;
-        $(this).each(function(index, element){
-            if($(element).val()!="")
-            sum += parseFloat($(element).val());
-        });
-    return sum;
-    }; 
-})( jQuery );
-  
-  $('#total_climate_events').text(jQuery('.significant_events').sum());
-  
-});
 
 
-$('.economic_group').on('keyup', function()
-{
-      (function( $ ){
-   $.fn.sum=function () {
-    var sum=0;
-        $(this).each(function(index, element){
-            if($(element).val()!="")
-            sum += parseFloat($(element).val());
-        });
-    return sum;
-    }; 
-})( jQuery );
-  
-  $('#total_economic_events').text(jQuery('.economic_group').sum());
-  
-});
-
-
-$('.significant_events2').on('keyup', function()
-{
-      (function( $ ){
-   $.fn.sum=function () {
-    var sum=0;
-        $(this).each(function(index, element){
-            if($(element).val()!="")
-            sum += parseFloat($(element).val());
-        });
-    return sum;
-    }; 
-})( jQuery );
-  
-  $('#total_climate_events2').text(jQuery('.significant_events2').sum());
-  
-});
-
-
-  
+	
 })();
 
 </script>
