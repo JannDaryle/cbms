@@ -48,10 +48,22 @@
     }
 
     textarea  
-{  
-   text-decoration-line: underline;
-   
-}
+    {  
+       text-decoration-line: underline;
+       
+    }
+
+    th 
+    {
+      border-top: 1px solid #dddddd;
+      border-bottom: 1px solid #dddddd;
+      border-right: 1px solid #dddddd;
+    }
+    th:first-child
+    {
+      border-left: 1px solid #dddddd;
+    }
+
 
 
 </style>
@@ -275,16 +287,13 @@ National Statistician and Civil Registrar General<br><br>
     </div>
 </div>
 
-
 <div class="form-group row">
     <label for="inputPassword" class="col-sm-3 col-form-label text-left"><b>Province</b></label>
     <div class="col-sm-8">
       <input type="text" class="form-control" id="prv_name" name="prv_name" placeholder="" hidden="">
       <select id="prv" name="prv" class="form-control"></select>
     </div>
-
 </div>
-
 
 <div class="form-group row">
     <label for="inputPassword" class="col-sm-3 col-form-label text-left" ><b>Municipality</b></label>
@@ -309,7 +318,7 @@ National Statistician and Civil Registrar General<br><br>
     <label for="inputPassword" class="col-sm-6 col-form-label text-left"><b>Geopoints of the Barangay Hall (Latitude and Longtitude)</b></label>
     <div class="col-sm-12">
       <br>
-      <a class="btn btn-outline-info" id="get_geo_hall"role="button">Get Geopoint here.</a>
+      <a class="btn btn-outline-warning" id="get_geo_hall"role="button">Get Geopoint here.</a>
       <span ></span> <span></span>
 
       <div class="row">
@@ -327,7 +336,7 @@ National Statistician and Civil Registrar General<br><br>
 </div>
 
 <hr>
-<h5 class="text-left" style="color: blue">NAME OF BARANGAY CHAIRPERSON</h5>
+<h5 class="text-left" style="color: blue">NAME OF PUNONG BARANGAY</h5>
 <br>
   <div class="row">
     <div class="col">
@@ -402,7 +411,7 @@ National Statistician and Civil Registrar General<br><br>
 <div class="container-fluid">
 <i class="uniform_font">Please list the personnel in the barangay.</i>
  <div style="padding-bottom: 40px; padding-top: 30px" class="">
-    <table  class="table table-hover cell-border compact submit_table_1" style="width:100%" >  
+    <table  class="dyna_table table table-hover cell-border compact submit_table_1" style="width:100%" >  
           <thead class="">
             <tr> 
              
@@ -419,7 +428,7 @@ National Statistician and Civil Registrar General<br><br>
 </div>
 
 <div class="center col">
- <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#add_barangay_personnel">Add Personnel</button>
+ <button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target="#add_barangay_personnel">Add Barangay Personnel</button>
 </div>
 
 </div> <!-- end of barangay_personnel_div -->
@@ -560,7 +569,7 @@ Does this barangay have…
 
   <div class="container-fluid">
     
-     <table id="table1" class="cell-border compact" style="width:100%">
+     <table id="table1" class="norm_table cell-border compact" style="width:100%">
         <thead>
             <tr>
                 <th>Plains?</th>
@@ -675,7 +684,7 @@ Does this barangay have…
 <i class="uniform_font">Please list the puroks in the barangay.</i>
   
  <div style="padding-bottom: 40px; padding-top: 30px" class="">
-    <table  class="table table-hover cell-border compact  submit_table_2" style="width:100%" >  
+    <table  class="dyna_table table table-hover cell-border compact  submit_table_2" style="width:100%" >  
           <thead class="">
             <tr> 
              
@@ -689,7 +698,7 @@ Does this barangay have…
 </div>
 
 <div class="center col">
- <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#add_barangay_list">Add Barangay</button>
+ <button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target="#add_barangay_list">Add Purok</button>
 </div>
 <hr>
 </div>
@@ -729,7 +738,7 @@ Does this barangay have…
 <i class="uniform_font">Please list the sitios in the barangay.</i>
   
  <div style="padding-bottom: 40px; padding-top: 30px" class="">
-    <table  class="table table-hover cell-border compact  submit_table_3" style="width:100%" >  
+    <table  class="dyna_table table table-hover cell-border compact  submit_table_3" style="width:100%" >  
           <thead class="">
             <tr> 
              
@@ -743,7 +752,7 @@ Does this barangay have…
 </div>
 
 <div class="center col">
- <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#add_barangay_sitios">Add Sitios</button>
+ <button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target="#add_barangay_sitios">Add Sitios</button>
 </div>
 <hr>
 </div>
@@ -763,11 +772,11 @@ Does this barangay have…
     <div class="col">
      <div class="container-fluid" style="width:100%">
     
-     <table id="table2" class="cell-border compact text-left table-hover" style="width:100%">
+     <table id="table2" class="norm_table cell-border compact text-left table-hover" style="width:100%">
         <thead>
             <tr>
-                <th>Land Classification/Use</th>
-                <th style="width:40%">Land area (in sq. m.)<br><i style="font-size: 12px !important; color: red">"Please input "0" if none"</i></th>
+                <th style="width:40%">Land Classification/Use</th>
+                <th style="width:60%">Land area (in sq. m.)<br><i style="font-size: 12px !important; color: red">"Please input "0" if none"</i></th>
                
             </tr>
         </thead>
@@ -818,7 +827,7 @@ Does this barangay have…
                    <label for="" style="font-size: 11px; color: red"><i>Press Enter to add more data.</i></label>
                 </td>
 
-                <td> <br> 
+                <td> <br><br> 
                   <textarea type="number" class="form-control land_classification" name="A6_othersa" placeholder="" ></textarea>
                   <label for="" style="font-size: 11px; color:white"><i>-</i></label>
                 </td>
@@ -982,6857 +991,3694 @@ ENCODE EA/BSN/FSN?
               </div>
           </div>
 
-<br><br><br>
-<h5 class="text-left" style="color: "><b>B. SERVICE INSTITUTIONS AND INFRASTRUCTURE - HEALTH FACILITIES</b></h5><br>
+<br>
+
 
 
 <div class="container-fluid">
     
-     <table id="table1" class="cell-border compact" style="width:100%">
+     <table id="table3" class="norm_table cell-border compact table-hover" style="width:100%">
         <thead>
             <tr class="text-center">
-                <th>I. HEALTH FACILITY</th>
-                <th>HF1. Does this barangay have at least one ___?</th>
-                <th>HF2. What is the distance ofthe brgy hall to the nearest facility?</th>
-                <th>HF3. What is the name of the (Health Facility)?</th>
-                <th>HF4. What is the address of the (Health Facility)?</th>
-                <th>HF5. What institution operates the facility?</th>
-                <th>HF6. EA</th>
-                <th>HF7. BSN</th>
-                <th>HF8. FSN</th>
+                <th wi>B. SERVICE INSTITUTIONS AND INFRASTRUCTURE - HEALTH FACILITIES</th>
+             
             </tr>
         </thead>
 
-           
+            <tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
 
-     </table>
+                    <div class="col-sm">
+                       <h6>HF1. Does this barangay have atleast one <u>Barangay Health Center?</u></h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                    <input class="form-check-input HF" type="radio" name="HF1_pbhc"  data-val="Yes" data-skip="pbhc" value="Yes">Yes<br>
+                                    <input class="form-check-input HF" type="radio" name="HF1_pbhc"  data-val="No"  data-skip="pbhc" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
 
-  </div>
 
- <!-- Tourism Sites and Destination -->
-<hr>
-<br>
-<i style="color: green" class="">Now, I would like to talk about the different tourism sites and destination in the barangay.</i><br><br>
-<div class="text-left"><h5>
-T1. Are there any of the tourism sites and destination present in the barangay?
-</h5></div>
 
-          <div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="tourism_sites"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="tourism_sites"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>  
+                    <div class="col-sm skip_no_pbhc" hidden="">
+                       <h6 style="padding-bottom: 5px;">HF2. What is the distance of the Barangay Hall to the nearest facility?</h6> <br>
+                              <select  name="bhc_distance" class="form-control hf2" data-skip="phbc" style="margin-bottom: 15px;">
+                                <option value="">Select</option>
+                                <option value="WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="DON'T KNOW">DON'T KNOW</option>                                                  
+                              </select>
 
-<div class="t_sites" hidden=""> 
+                              <h6 class="hf2_in_phbc" hidden="">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</h6>
+                                 <input type="text" class="form-control hf2_in_phbc"  name="bhc_distance_in2km" placeholder="Please Specify" hidden="">
 
-<br>
-<div class="text-left"><h5>IX. TOURISM SITES AND DESTINATION</h5>
-<br>
+                                 
+                              <h6 class="hf2_out_phbc" hidden="">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</h6> 
+                                 <input type="text" class="form-control hf2_out_phbc"  name="bhc_distance_more2km" placeholder="Please Specify" hidden="">    
+                    </div>
+
+
+                    <div class="skip_yes_pbhc container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_facility" data-facility="Barangay Health Center" data-toggle="modal" data-target="#add_barangay_health_facilities">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_fac_health" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
 
                   
-<div class="text-left"><h6>
-<b>T2. What is the name of tourism sites and destination # 1?
-</b></h6></div>   
 
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="tourism_sites_name" name="tourism_sites_name" placeholder="" >
-</div>
-</div>
-<br>
-
-<div class="text-left"><h6>
-<b>T3. Building name of
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="tourism_sites_building" name="tourism_sites_building" placeholder="" >
-</div>
-</div>
-<br>
-
-<div class="text-left"><h6>
-<b>T3.1 Complete address of
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="tourism_sites_address" name="tourism_sites_address" placeholder="" >
-</div>
-</div>
-<br>
-
-<div class="text-left"><h6>
-<b>T4. Who operates the ?
-</b></h6></div>   
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="tourism_sites_operates_yes">PRIVATE<br>
-                        <input class="form-check-input" type="radio" name="tourism_sites_operates_yes">NATIONAL GOVERNMENT<br> 
-                        <input class="form-check-input" type="radio" name="tourism_sites_operates_yes">PROVINCIAL GOVERNMENT<br> 
-                        <input class="form-check-input" type="radio" name="tourism_sites_operates_yes">CITY/MUNICIPAL GOVERNMENT<br> 
-                        <input class="form-check-input" type="radio" name="tourism_sites_operates_yes">BARANGAY<br> 
-                        <input class="form-check-input" type="radio" name="tourism_sites_operates_yes">GOCC<br>
-                        <input class="form-check-input" type="radio" name="tourism_sites_operates_yes">NONE<br> 
-                        <input class="form-check-input" type="radio" name="tourism_sites_operates_yes">DON'T KNOW<br>
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>   
-
-      <br>
-         
-       
-       
-
-
-      
-
-       <div class="text-left"><h6>
-       <b>T8. Does your barangay engage in tourism activities?
-       </b></h6></div>   
-
-      <div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="tourism_barangay_engage"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="tourism_barangay_engage"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>
-</div>
-</div>
-<br> 
-<hr>
-<br>
-
-
-
-<i style="color: green" class="">Now, I would like to talk about if the barangay have airport and seaport.</i><br><br>  
-<br>
-<h5 class="text-left" style="color: "><b>B. SERVICE INSTITUTIONS AND INFRASTRUCTURE - X. TRANSPORT FACILITY - SEAPORT</b></h5><br> 
-
-
-<div class="text-left"><h5>
-PTA. Is there a seaport located in the barangay?
-</h5></div>
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="transport_facility_seaport"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="transport_facility_seaport"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>   
-
-<div class="transport_facility_seaport_repeat" hidden=""> 
-
-<br>
-<div class="text-left"><h5>X. TRANSPORT FACILITY - Seaport</h5>
-
-<br>                  
-<div class="text-left"><h6>
-<b>PT1. What is the name of the Seaport facility # 1?
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="transport_facility_seaport_name" name="transport_facility_seaport_name" placeholder="" >
-</div>
-</div>
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>PT2. Building name of
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="transport_facility_seaport_building" name="transport_facility_seaport_building" placeholder="" >
-</div>
-</div>
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>PT2.1 Complete address of
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="transport_facility_seaport_address" name="transport_facility_seaport_address" placeholder="" >
-</div>
-</div>
-<br>
-
-<div class="text-left"><h6>
-<b>PT3. Who operates the ?
-</b></h6></div>  
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="transport_facility_seaport_operates_yes">PRIVATE<br>
-                        <input class="form-check-input" type="radio" name="transport_facility_seaport_operates_yes">NATIONAL GOVERNMENT<br> 
-                        <input class="form-check-input" type="radio" name="transport_facility_seaport_operates_yes">PROVINCIAL GOVERNMENT<br> 
-                        <input class="form-check-input" type="radio" name="transport_facility_seaport_operates_yes">CITY/MUNICIPAL GOVERNMENT<br> 
-                        <input class="form-check-input" type="radio" name="transport_facility_seaport_operates_yes">BARANGAY<br> 
-                        <input class="form-check-input" type="radio" name="transport_facility_seaport_operates_yes">GOCC<br>
-                        <input class="form-check-input" type="radio" name="transport_facility_seaport_operates_yes">NONE<br> 
-                        <input class="form-check-input" type="radio" name="transport_facility_seaport_operates_yes">DON'T KNOW<br>
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>
-            
-            <br>        
-
-
-
-
-
-</div>
-</div>
-<br>
-
-
-<hr>
-<br>
-<br>
-<h5 class="text-left" style="color: "><b>B. SERVICE INSTITUTIONS AND INFRASTRUCTURE - X. TRANSPORT FACILITY - AIRPORT</b></h5><br> 
-
-
-<div class="text-left"><h5>
-PTB. Is there an airport located in the barangay?
-</h5></div>
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="transport_facility_airport"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="transport_facility_airport"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div> 
-
-<div class="transport_facility_airport_repeat" hidden=""> 
-
-<br>
-<div class="text-left"><h5>X. TRANSPORT FACILITY - Airport</h5>
-
-<br>                  
-<div class="text-left"><h6>
-<b>PT1. What is the name of the Airport facility # 1?
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="transport_facility_airport_name" name="transport_facility_airport_name" placeholder="" >
-</div>
-</div>
-
-<br>                  
-<div class="text-left"><h6>
-<b>PT2. Building name of
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="transport_facility_airport_building" name="transport_facility_airport_building" placeholder="" >
-</div>
-</div>
-
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>PT2.1 Complete address of
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="transport_facility_airport_address" name="transport_facility_airport_address" placeholder="" >
-</div>
-</div>
-
-<br>                  
-<div class="text-left"><h6>
-<b>PT3. Who operates the ?
-</b></h6></div>
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="transport_facility_airport_operates_yes">PRIVATE<br>
-                        <input class="form-check-input" type="radio" name="transport_facility_airport_operates_yes">NATIONAL GOVERNMENT<br> 
-                        <input class="form-check-input" type="radio" name="transport_facility_airport_operates_yes">PROVINCIAL GOVERNMENT<br> 
-                        <input class="form-check-input" type="radio" name="transport_facility_airport_operates_yes">CITY/MUNICIPAL GOVERNMENT<br> 
-                        <input class="form-check-input" type="radio" name="transport_facility_airport_operates_yes">BARANGAY<br> 
-                        <input class="form-check-input" type="radio" name="transport_facility_airport_operates_yes">GOCC<br>
-                        <input class="form-check-input" type="radio" name="transport_facility_airport_operates_yes">NONE<br> 
-                        <input class="form-check-input" type="radio" name="transport_facility_airport_operates_yes">DON'T KNOW<br>
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div> 
-
-      
-
-</div>
-</div> 
-<br>
-
-
-<hr>
-<br>
-<i style="color: green" class="">Now, I would like to talk about the different garbage and waste disposal facilities and practices in the barangay.</i><br><br>
-
-
-<br>
-<h5 class="text-left" style="color: "><b>B. SERVICE INSTITUTIONS AND INFRASTRUCTURE - GARBAGE AND WASTE DISPOSAL - OPEN DUMP SITE</b></h5><br>
-
-<div class="text-left"><h5>
-G1. Is the Open Dump Site present in the barangay?
-</h5></div>
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_dump"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_dump"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div> 
-
-
-
-<div class="garbage_waste_diposal_dump_repeat" hidden=""> 
-
-<br>
-<div class="text-left"><h5>GARBAGE AND WASTE DISPOSAL - Open Dump Site</h5>
-
-<br>                  
-<div class="text-left"><h6>
-<b>G3. What is the name of the Open Dump Site # 1?
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="garbage_waste_diposal_dump_name" name="garbage_waste_diposal_dump_name" placeholder="" >
-</div>
-</div>
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>G4. Building name of
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="garbage_waste_diposal_dump_building" name="garbage_waste_diposal_dump_building" placeholder="" >
-</div>
-</div>
-
-<br>                  
-<div class="text-left"><h6>
-<b>G4.1 Complete address of
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="garbage_waste_diposal_dump_address" name="garbage_waste_diposal_dump_address" placeholder="" >
-</div>
-</div>
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>G5. Who operates the ?
-</b></h6></div>  
-           
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_dump_operates_yes">PRIVATE<br>
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_dump_operates_yes">NATIONAL GOVERNMENT<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_dump_operates_yes">PROVINCIAL GOVERNMENT<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_dump_operates_yes">CITY/MUNICIPAL GOVERNMENT<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_dump_operates_yes">BARANGAY<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_dump_operates_yes">GOCC<br>
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_dump_operates_yes">NONE<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_dump_operates_yes">DON'T KNOW<br>
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div> 
-
-
-    
-
-
-
-</div>
-</div>    
-
-
-
-<br>
-<div class="garbage_waste_diposal_dump_repeat_no" hidden=""> 
-
-<br>                  
-<div class="text-left"><h6>
-<b>G2. What is the distance of the barangay hall to the nearest facility(in kms)?
-</b></h6></div>   
-
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_dump_distance_if_3">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)<br>
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_dump_distance_if_4">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_dump_distance_if_3">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_dump_distance_if_4">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY<br> 
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>   
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>G6. Who operates the facility?
-</b></h6></div>   
-
-
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_dump_distance_operates_no">PRIVATE<br>
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_dump_distance_operates_no">NATIONAL GOVERNMENT<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_dump_distance_operates_no">PROVINCIAL GOVERNMENT<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_dump_distance_operates_no">CITY/MUNICIPAL GOVERNMENT<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_dump_distance_operates_no">BARANGAY<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_dump_distance_operates_no">GOCC<br>
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_dump_distance_operates_no">NONE<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_dump_distance_operates_no">DON'T KNOW<br>
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>        
-
-
-      
-    
-</div>      
-
-
-
-
-
-<hr>
-<br>
-<h5 class="text-left" style="color: "><b>B. SERVICE INSTITUTIONS AND INFRASTRUCTURE - GARBAGE AND WASTE DISPOSAL - SANITARY AND LAND FILL</b></h5><br> 
-
-<div class="text-left"><h5>
-G1. Is the Sanitary Land Fill present in the barangay?
-</h5></div> 
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_sanitary"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_sanitary"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div> 
-
-<div class="garbage_waste_diposal_sanitary_repeat" hidden=""> 
-
-<br>
-<div class="text-left"><h5>GARBAGE AND WASTE DISPOSAL - Sanitary Land Fill</h5>
-
-<br>                  
-<div class="text-left"><h6>
-<b>G3. What is the name of the Sanitary Land Fill # 1?
-</b></h6></div>  
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="garbage_waste_diposal_sanitary_name" name="garbage_waste_diposal_sanitary_name" placeholder="" >
-</div>
-</div>
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>G4. Building name of
-</b></h6></div>  
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="garbage_waste_diposal_sanitary_building" name="garbage_waste_diposal_sanitary_building" placeholder="" >
-</div>
-</div>
-
-<br>                  
-<div class="text-left"><h6>
-<b>G4.1 Complete address of
-</b></h6></div>  
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="garbage_waste_diposal_sanitary_address" name="garbage_waste_diposal_sanitary_address" placeholder="" >
-</div>
-</div>
-
-<br>                  
-<div class="text-left"><h6>
-<b>G5. Who operates the ?
-</b></h6></div>  
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_sanitary_operates_yes">PRIVATE<br>
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_sanitary_operates_yes">NATIONAL GOVERNMENT<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_sanitary_operates_yes">PROVINCIAL GOVERNMENT<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_sanitary_operates_yes">CITY/MUNICIPAL GOVERNMENT<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_sanitary_operates_yes">BARANGAY<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_sanitary_operates_yes">GOCC<br>
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_sanitary_operates_yes">NONE<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_sanitary_operates_yes">DON'T KNOW<br>
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div> 
-
-
-
-     
-
-</div>
-</div>    
-
-<br>
-<div class="garbage_waste_diposal_sanitary_repeat_no" hidden=""> 
-
-<br>                  
-<div class="text-left"><h6>
-<b>G2. What is the distance of the barangay hall to the nearest facility(in kms)?
-</b></h6></div>  
-
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_sanitary_distance_if_3">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)<br>
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_sanitary_distance_if_4">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_sanitary_distance_if_3">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_sanitary_distance_if_4">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY<br> 
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>   
-  
-
-<br>                  
-<div class="text-left"><h6>
-<b>G6. Who operates the facility?
-</b></h6></div>
-
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_sanitary_distance_operates_no">PRIVATE<br>
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_sanitary_distance_operates_no">NATIONAL GOVERNMENT<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_sanitary_distance_operates_no">PROVINCIAL GOVERNMENT<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_sanitary_distance_operates_no">CITY/MUNICIPAL GOVERNMENT<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_sanitary_distance_operates_no">BARANGAY<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_sanitary_distance_operates_no">GOCC<br>
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_sanitary_distance_operates_no">NONE<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_sanitary_distance_operates_no">DON'T KNOW<br>
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>        
-
-
-</div>   
-<br>
-
-
-<hr>
-<br>
-<h5 class="text-left" style="color: "><b>B. SERVICE INSTITUTIONS AND INFRASTRUCTURE - GARBAGE AND WASTE DISPOSAL - COMPOST PITS</b></h5><br> 
-
-<div class="text-left"><h5>
-G1. Is the Compost Pits present in the barangay?
-</h5></div> 
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_compost"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_compost"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>  
-
-<div class="garbage_waste_diposal_compost_repeat" hidden=""> 
-
-<br>
-<div class="text-left"><h5>GARBAGE AND WASTE DISPOSAL - Compost Pits</h5>
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>G3. What is the name of the Compost Pits # 1?
-</b></h6></div>  
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="garbage_waste_diposal_compost_name" name="garbage_waste_diposal_compost_name" placeholder="" >
-</div>
-</div>
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>G4. Building name of
-</b></h6></div>  
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="garbage_waste_diposal_compost_building" name="garbage_waste_diposal_compost_building" placeholder="" >
-</div>
-</div>
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>G4.1 Complete address of
-</b></h6></div>  
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="garbage_waste_diposal_compost_address" name="garbage_waste_diposal_compost_address" placeholder="" >
-</div>
-</div>
-
-<br>                  
-<div class="text-left"><h6>
-<b>G5. Who operates the ?
-</b></h6></div>
-           
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_compost_operates_yes">PRIVATE<br>
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_compost_operates_yes">NATIONAL GOVERNMENT<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_compost_operates_yes">PROVINCIAL GOVERNMENT<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_compost_operates_yes">CITY/MUNICIPAL GOVERNMENT<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_compost_operates_yes">BARANGAY<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_compost_operates_yes">GOCC<br>
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_compost_operates_yes">NONE<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_compost_operates_yes">DON'T KNOW<br>
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div> 
-
-<br>
-</div>
-</div>   
-
-
-
-<br>
-<div class="garbage_waste_diposal_compost_repeat_no" hidden=""> 
-
-<br>                  
-<div class="text-left"><h6>
-<b>G2. What is the distance of the barangay hall to the nearest facility(in kms)?
-</b></h6></div>   
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_compost_distance_if_3">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)<br>
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_compost_distance_if_4">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_compost_distance_if_3">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_compost_distance_if_4">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY<br> 
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>   
-  
-
-<br>                  
-<div class="text-left"><h6>
-<b>G6. Who operates the facility?
-</b></h6></div>   
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_compost_distance_operates_no">PRIVATE<br>
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_compost_distance_operates_no">NATIONAL GOVERNMENT<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_compost_distance_operates_no">PROVINCIAL GOVERNMENT<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_compost_distance_operates_no">CITY/MUNICIPAL GOVERNMENT<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_compost_distance_operates_no">BARANGAY<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_compost_distance_operates_no">GOCC<br>
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_compost_distance_operates_no">NONE<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_compost_distance_operates_no">DON'T KNOW<br>
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>        
-
-<br>                  
-
-</div>   
-<br>
-
-<hr>
-<br>
-<h5 class="text-left" style="color: "><b>B. SERVICE INSTITUTIONS AND INFRASTRUCTURE - GARBAGE AND WASTE DISPOSAL - MATERIAL RECOVERY FACILITY (MRF)</b></h5><br> 
-
-<div class="text-left"><h5>
-G1. Is the Material Recovery Facility (MRF) present in the barangay?
-</h5></div> 
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_material"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_material"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>  
-
-<div class="garbage_waste_diposal_material_repeat" hidden=""> 
-
-<br>
-<div class="text-left"><h5>GARBAGE AND WASTE DISPOSAL - Material Recovery Facility (MRF)</h5>
-
-<br>                  
-<div class="text-left"><h6>
-<b>G3. What is the name of the Material Recovery Facility (MRF) # 1?
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="garbage_waste_diposal_material_name" name="garbage_waste_diposal_material_name" placeholder="" >
-</div>
-</div>
-
-<br>                  
-<div class="text-left"><h6>
-<b>G4. Building name of
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="garbage_waste_diposal_material_building" name="garbage_waste_diposal_material_building" placeholder="" >
-</div>
-</div>
-
-<br>                  
-<div class="text-left"><h6>
-<b>G4.1 Complete address of
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="garbage_waste_diposal_material_address" name="garbage_waste_diposal_material_address" placeholder="" >
-</div>
-</div>
-
-<br>                  
-<div class="text-left"><h6>
-<b>G5. Who operates the ?
-</b></h6></div> 
-            
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_material_operates_yes">PRIVATE<br>
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_material_operates_yes">NATIONAL GOVERNMENT<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_material_operates_yes">PROVINCIAL GOVERNMENT<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_material_operates_yes">CITY/MUNICIPAL GOVERNMENT<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_material_operates_yes">BARANGAY<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_material_operates_yes">GOCC<br>
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_material_operates_yes">NONE<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_material_operates_yes">DON'T KNOW<br>
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div> 
-
-
-<br>                  
-
-
-</div>
-</div>    
-
-<br>
-<div class="garbage_waste_diposal_material_repeat_no" hidden=""> 
-  
-<br>                  
-<div class="text-left"><h6>
-<b>G2. What is the distance of the barangay hall to the nearest facility(in kms)?
-</b></h6></div>  
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_material_distance_if_3">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)<br>
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_material_distance_if_4">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_material_distance_if_3">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_material_distance_if_4">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY<br> 
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>   
-
-<br>                  
-<div class="text-left"><h6>
-<b>G6. Who operates the facility?
-</b></h6></div>  
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_material_distance_operates_no">PRIVATE<br>
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_material_distance_operates_no">NATIONAL GOVERNMENT<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_material_distance_operates_no">PROVINCIAL GOVERNMENT<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_material_distance_operates_no">CITY/MUNICIPAL GOVERNMENT<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_material_distance_operates_no">BARANGAY<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_material_distance_operates_no">GOCC<br>
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_material_distance_operates_no">NONE<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_material_distance_operates_no">DON'T KNOW<br>
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>        
-
-
-      
-<br>                  
-
-</div>   
-<br>
-
-<hr>
-<br>
-<h5 class="text-left" style="color: "><b>B. SERVICE INSTITUTIONS and INFRASTRUCTURE - GARBAGE AND WASTE DISPOSAL - TREATMENT, STORAGE, AND DISPOSAL (TSD) facility</b></h5><br>  
-
-
-<div class="text-left"><h5>
-G1. Is the Treatment, storage, and disposal (TSD) facility present in the barangay?
-</h5></div> 
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_treatment"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_treatment"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>  
-
-
-<div class="garbage_waste_diposal_treatment_repeat" hidden=""> 
-
-<br>
-<div class="text-left"><h5>GARBAGE AND WASTE DISPOSAL - Treatment, storage, and disposal (TSD) facility</h5>
-
-<br>                  
-<div class="text-left"><h6>
-<b>G3. What is the name of the Treatment, storage, and disposal (TSD) 
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="garbage_waste_diposal_treatment_name" name="garbage_waste_diposal_treatment_name" placeholder="" >
-</div>
-</div>
-
-<br>                  
-<div class="text-left"><h6>
-<b>G4. Building name of
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="garbage_waste_diposal_treatment_building" name="garbage_waste_diposal_treatment_building" placeholder="" >
-</div>
-</div>
-
-<br>                  
-<div class="text-left"><h6>
-<b>G4.1 Complete address of
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="garbage_waste_diposal_treatment_address" name="garbage_waste_diposal_treatment_address" placeholder="" >
-</div>
-</div>
-            
-
-<br>                  
-<div class="text-left"><h6>
-<b>G5. Who operates the ?
-</b></h6></div>   
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_treatment_operates_yes">PRIVATE<br>
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_treatment_operates_yes">NATIONAL GOVERNMENT<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_treatment_operates_yes">PROVINCIAL GOVERNMENT<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_treatment_operates_yes">CITY/MUNICIPAL GOVERNMENT<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_treatment_operates_yes">BARANGAY<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_treatment_operates_yes">GOCC<br>
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_treatment_operates_yes">NONE<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_treatment_operates_yes">DON'T KNOW<br>
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div> 
-
-
-<br>                  
-
-
-</div>
-</div>    
-
-<br>
-<div class="garbage_waste_diposal_treatment_repeat_no" hidden=""> 
-
-<br>                  
-<div class="text-left"><h6>
-<b>G2. What is the distance of the barangay hall to the nearest facility(in kms)?
-</b></h6></div> 
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_treatment_distance_if_3">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)<br>
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_treatment_distance_if_4">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_treatment_distance_if_3">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_treatment_distance_if_4">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY<br> 
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>   
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>G6. Who operates the facility?
-</b></h6></div> 
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_treatment_distance_operates_no">PRIVATE<br>
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_treatment_distance_operates_no">NATIONAL GOVERNMENT<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_treatment_distance_operates_no">PROVINCIAL GOVERNMENT<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_treatment_distance_operates_no">CITY/MUNICIPAL GOVERNMENT<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_treatment_distance_operates_no">BARANGAY<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_treatment_distance_operates_no">GOCC<br>
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_treatment_distance_operates_no">NONE<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_treatment_distance_operates_no">DON'T KNOW<br>
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>        
-
-<br>                  
-
-</div>   
-<br>
-
-<hr>
-<br>
-<h5 class="text-left" style="color: "><b>B. SERVICE INSTITUTIONS AND INFRASTRUCTURE - GARBAGE AND WASTE DISPOSAL - WASTE-TO-ENERGY FACILITY</b></h5><br>  
-
-
-<div class="text-left"><h5>
-G1. Is the Waste-to-energy facility present in the barangay?
-</h5></div> 
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_energy"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_energy"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>  
-
-
-<div class="garbage_waste_diposal_energy_repeat" hidden=""> 
-
-<br>
-<div class="text-left"><h5>GARBAGE AND WASTE DISPOSAL - Waste-to-energy facility</h5>
-
-<br>                  
-<label for="inputPassword" class="text-left"><h6>
-<b>G3. What is the name of the Waste-to-energy facility # 1?
-</b></h6>
-</label>
-
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="garbage_waste_diposal_energy_name" name="garbage_waste_diposal_energy_name" placeholder="" >
-</div>
-</div>
-
-<br>                  
-<label for="inputPassword" class="text-left"><h6>
-<b>G4. Building name of
-</b></h6>
-</label>
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="garbage_waste_diposal_energy_building" name="garbage_waste_diposal_energy_building" placeholder="" >
-</div>
-</div>
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>G4.1 Complete address of
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="garbage_waste_diposal_energy_address" name="garbage_waste_diposal_energy_address" placeholder="" >
-</div>
-</div>
-
-<br>                  
-<div class="text-left"><h6>
-<b>G5. Who operates the ?
-</b></h6></div>  
-            
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_energy_operates_yes">PRIVATE<br>
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_energy_operates_yes">NATIONAL GOVERNMENT<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_energy_operates_yes">PROVINCIAL GOVERNMENT<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_energy_operates_yes">CITY/MUNICIPAL GOVERNMENT<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_energy_operates_yes">BARANGAY<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_energy_operates_yes">GOCC<br>
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_energy_operates_yes">NONE<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_energy_operates_yes">DON'T KNOW<br>
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div> 
-
-<br>                  
-
-</div>
-</div>   
-
-
-<br>
-<div class="garbage_waste_diposal_energy_repeat_no" hidden=""> 
-
-<br>                  
-<div class="text-left"><h6>
-<b>G2. What is the distance of the barangay hall to the nearest facility(in kms)?
-</b></h6></div>
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_energy_distance_if_3">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)<br>
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_energy_distance_if_4">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_energy_distance_if_3">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_energy_distance_if_4">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY<br> 
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>   
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>G6. Who operates the facility?
-</b></h6></div>
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_energy_distance_operates_no">PRIVATE<br>
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_energy_distance_operates_no">NATIONAL GOVERNMENT<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_energy_distance_operates_no">PROVINCIAL GOVERNMENT<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_energy_distance_operates_no">CITY/MUNICIPAL GOVERNMENT<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_energy_distance_operates_no">BARANGAY<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_energy_distance_operates_no">GOCC<br>
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_energy_distance_operates_no">NONE<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_energy_distance_operates_no">DON'T KNOW<br>
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>        
-
-
-<br>                  
-
-</div>
-<br>
-
-<hr>
-<br>
-<h5 class="text-left" style="color: "><b>B. SERVICE INSTITUTIONS AND INFRASTRUCTURE - GARBAGE AND WASTE DISPOSAL - SEWAGE TREATMENT PLANT</b></h5><br>  
-
-
-<div class="text-left"><h5>
-G1. Is the Sewage treatment plant facility present in the barangay?
-</h5></div> 
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_sewage"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_sewage"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>  
-
-
-<div class="garbage_waste_diposal_sewage_repeat" hidden=""> 
-
-<br>
-<div class="text-left"><h5>GARBAGE AND WASTE DISPOSAL - Sewage treatment plant</h5>
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>G3. What is the name of the Sewage treatment plant # 1?
-</b></h6></div>  
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="garbage_waste_diposal_sewage_name" name="garbage_waste_diposal_sewage_name" placeholder="" >
-</div>
-</div>
-
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>G4. Building name of
-</b></h6></div>  
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="garbage_waste_diposal_sewage_building" name="garbage_waste_diposal_sewage_building" placeholder="" >
-</div>
-</div>
-
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>G4.1 Complete address of
-</b></h6></div>  
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="garbage_waste_diposal_sewage_address" name="garbage_waste_diposal_sewage_address" placeholder="" >
-</div>
-</div>
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>G5. Who operates the ?
-</b></h6></div>
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_sewage_operates_yes">PRIVATE<br>
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_sewage_operates_yes">NATIONAL GOVERNMENT<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_sewage_operates_yes">PROVINCIAL GOVERNMENT<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_sewage_operates_yes">CITY/MUNICIPAL GOVERNMENT<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_sewage_operates_yes">BARANGAY<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_sewage_operates_yes">GOCC<br>
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_sewage_operates_yes">NONE<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_sewage_operates_yes">DON'T KNOW<br>
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div> 
-
-
-<br>                  
-
-</div>    
-</div>
-
-<br>
-<div class="garbage_waste_diposal_sewage_repeat_no" hidden=""> 
-
-<br>                  
-<div class="text-left"><h6>
-<b>G2. What is the distance of the barangay hall to the nearest facility(in kms)?
-</b></h6></div> 
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_sewage_distance_if_3">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)<br>
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_sewage_distance_if_4">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_sewage_distance_if_3">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_sewage_distance_if_4">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY<br> 
-                        <input class="form-check-input" type="radio" name="">DON'T KNOW<br> 
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>   
-
-<br>                  
-<div class="text-left"><h6>
-<b>G6. Who operates the facility?
-</b></h6></div> 
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_sewage_distance_operates_no">PRIVATE<br>
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_sewage_distance_operates_no">NATIONAL GOVERNMENT<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_sewage_distance_operates_no">PROVINCIAL GOVERNMENT<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_sewage_distance_operates_no">CITY/MUNICIPAL GOVERNMENT<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_sewage_distance_operates_no">BARANGAY<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_sewage_distance_operates_no">GOCC<br>
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_sewage_distance_operates_no">NONE<br> 
-                        <input class="form-check-input" type="radio" name="garbage_waste_diposal_sewage_distance_operates_no">DON'T KNOW<br>
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>        
-
-   <br>                  
-</div>
-
-
-
-       
-
-<hr>
-<br>
-<h5 class="text-left" style="color: "><b>B. SERVICE INSTITUTIONS AND INFRASTRUCTURE - WASTE COLLECTION EQUIPMENT</b></h5><br> 
-
-<div class="text-left"><h5>
-WD1. Are the following waste collection equipment available in the barangay?
-</h5></div>  
-
-<br>
-<div class="text-left"><h6><b>TYPE OF WASTE COLLECTION EQUIPMENT</b></h6>
-</div>
-
-<br>
-<div class="text-left"><h5>
-A. Collection Trucks?
-</h5></div>  
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="collection_trucks"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="collection_trucks"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>  
-
-<div class="collection_trucks_count_repeat" hidden=""> 
-     
-
-<br>
-<div class="text-left"><h6>
-<b>WD2. How many units are owned and are being used by the barangay?
-</b></h6></div>   
-
-  <div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="collection_trucks_count" name="collection_trucks_count" placeholder="">
-  </div> 
-</div>
-</div>
-
-
-
-
-<br>
-<div class="text-left"><h5>
-B. Waste Collection Bins?
-</h5></div>  
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="collection_bins"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="collection_bins"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>  
-
-<div class="collection_bins_count_repeat" hidden=""> 
-    
-
-<br>
-<div class="text-left"><h6>
-<b>WD2. How many units are owned and are being used by the barangay?
-</b></h6></div>   
-
-  <div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="collection_bins_count" name="collection_bins_count" placeholder="">
-  </div> 
-</div>
-</div>
-
-
-
-
-<br>
-<div class="text-left"><h5>
-C. Incinerator?
-</h5></div>  
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="collection_incinerator"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="collection_incinerator"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>  
-
-<div class="collection_incinerator_count_repeat" hidden=""> 
-
-
-<br>
-<div class="text-left"><h6>
-<b>WD2. How many units are owned and are being used by the barangay?
-</b></h6></div>   
-
-  <div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="collection_incinerator_count" name="collection_incinerator_count" placeholder="">
-  </div> 
-</div>
-</div>
-
-
-<br>
-<div class="text-left"><h5>
-D. Others, Specify
-</h5></div>  
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="collection_others"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="collection_others"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>  
-
-<div class="collection_others_specify_repeat" hidden=""> 
-
-<br>
-<div class="text-left"><h6>
-<b>Please Specify:
-</b></h6></div>   
-
-  <div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="collection_others_specify" name="collection_others_specify" placeholder="">
-  </div> 
-</div>
-
-<br>
-<div class="text-left"><h6>
-<b>WD2. How many units are owned and are being used by the barangay?
-</b></h6></div>   
-
-  <div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="garbage_waste_diposal_dump_name" name="garbage_waste_diposal_dump_name" placeholder="">
-  </div> 
-</div>
-</div>
-
-  
-
-<br>
-<h5 class="text-left" style="color: ">WD3. Who collects the garbage from households?</h5><br>  
-
-<div class="text-left"><h6>
-<b>WD3. Who collects the garbage from households? <br>
-A. Biodegradable/compostable</b>
-</h6></div>  
-
-<div class="container"> 
-                    <div class="col-sm-10">
-                          <div class="row">
-                            <label>
-                                
-                                     <input class="form-check-input respo_radio" type="checkbox" name="collector_biodegradable"  data-val="No" value="No">
-                                  &nbsp&nbsp A. MUNICIPAL COLLECTOR
-                               
-                            </label>
-                        </div>
-
-                              <div class="row">
-                            <label>
-                                
-                                     <input class="form-check-input respo_radio" type="checkbox" name="collector_biodegradable"  data-val="No" value="no">
-                                  &nbsp&nbsp  B.  BARANGAY CHAIRMAN
-                               
-                            </label>
-                        </div>
-                      </div>
-              </div>  
-
-               <div class="container">
-               <div class="col-sm-10">
-                        <div class="row">
-                            <label >
-                                
-                                    <input class="form-check-input respo_radio" type="checkbox" name="collector_biodegradable"  data-val="No" value="No">
-                                   &nbsp&nbsp  C. PRIVATE COLLECTOR (ESTABLISHMENT)
-                                 
-                            </label>
-                        </div>
-
-                            <div class="row">
-                            <label>
-                                    <input class="form-check-input respo_radio" type="checkbox" name="collector_biodegradable"  data-val="No" value="No">
-                                  &nbsp&nbsp D. "BOTE DYARYO", WASTE PICKERS OR GARBAGE SCAVENGERS
-                            </label>
-
-                         </div> 
-                         <div class="row">
-                            <label>
-                                
-                                    <input class="form-check-input respo_radio" type="checkbox" name="collector_biodegradable"  data-val="Yes" value="Yes">
-                                   &nbsp&nbsp E. OTHERS (Specify)
-                                 
-                            </label>
-                        </div>
-
-                      </div>
-                      </div> 
-
-<div class="collector_biodegradable_specify_repeat" hidden=""> 
-
-<br>
-<div class="text-left"><h6>
-<b>Please Specify:
-</b></h6></div>   
-
-  <div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="collector_biodegradable_specify" name="collector_biodegradable_specify" placeholder="">
-  </div> 
-</div>
-</div>
-
-<br>
-<div class="text-left"><h6>
-<b>WD3. Who collects the garbage from households? <br>
- B. Recyclables</b>
-</h6></div>  
-
-<div class="container"> 
-                    <div class="col-sm-10">
-                          <div class="row">
-                            <label>
-                                
-                                     <input class="form-check-input respo_radio" type="checkbox" name="collector_recyclables"  data-val="No" value="No">
-                                  &nbsp&nbsp A. MUNICIPAL COLLECTOR
-                               
-                            </label>
-                        </div>
-
-                              <div class="row">
-                            <label>
-                                
-                                     <input class="form-check-input respo_radio" type="checkbox" name="collector_recyclables"  data-val="No" value="No">
-                                  &nbsp&nbsp  B.  BARANGAY CHAIRMAN
-                               
-                            </label>
-                        </div>
-                      </div>
-              </div>  
-
-               <div class="container">
-               <div class="col-sm-10">
-                        <div class="row">
-                            <label >
-                                
-                                    <input class="form-check-input respo_radio" type="checkbox" name="collector_recyclables"  data-val="No" value="No">
-                                   &nbsp&nbsp  C. PRIVATE COLLECTOR (ESTABLISHMENT)
-                                 
-                            </label>
-                        </div>
-
-                            <div class="row">
-                            <label>
-                                    <input class="form-check-input respo_radio" type="checkbox" name="collector_recyclables"  data-val="No" value="No">
-                                  &nbsp&nbsp D. "BOTE DYARYO", WASTE PICKERS OR GARBAGE SCAVENGERS
-                            </label>
-
-                         </div> 
-                         <div class="row">
-                            <label>
-                                
-                                    <input class="form-check-input respo_radio" type="checkbox" name="collector_recyclables"  data-val="Yes" value="Yes">
-                                   &nbsp&nbsp E. OTHERS (Specify)
-                                 
-                            </label>
-                        </div>
-
-                      </div>
-                      </div> 
-
-<div class="collector_recyclables_specify_repeat" hidden=""> 
-
-
-<br>
-<div class="text-left"><h6>
-<b>Please Specify:
-</b></h6></div>   
-
-  <div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="collector_recyclables_specify" name="collector_recyclables_specify" placeholder="">
-  </div> 
-</div>
-</div>
-
-
-
-
-<br>
-<div class="text-left"><h6>
-<b>WD3. Who collects the garbage from households? <br> 
-C. Residuals (nonhazardous industrial waste)</b>
-</h6></div>  
-
-<div class="container"> 
-                    <div class="col-sm-10">
-                          <div class="row">
-                            <label>
-                                
-                                     <input class="form-check-input respo_radio" type="checkbox" name="collector_residuals"  data-val="No" value="No">
-                                  &nbsp&nbsp A. MUNICIPAL COLLECTOR
-                               
-                            </label>
-                        </div>
-
-                              <div class="row">
-                            <label>
-                                
-                                     <input class="form-check-input respo_radio" type="checkbox" name="collector_residuals"  data-val="No" value="No">
-                                  &nbsp&nbsp  B.  BARANGAY CHAIRMAN
-                               
-                            </label>
-                        </div>
-                      </div>
-              </div>  
-
-               <div class="container">
-               <div class="col-sm-10">
-                        <div class="row">
-                            <label >
-                                
-                                    <input class="form-check-input respo_radio" type="checkbox" name="collector_residuals"  data-val="No" value="No">
-                                   &nbsp&nbsp  C. PRIVATE COLLECTOR (ESTABLISHMENT)
-                                 
-                            </label>
-                        </div>
-
-                            <div class="row">
-                            <label>
-                                    <input class="form-check-input respo_radio" type="checkbox" name="collector_residuals"  data-val="No" value="No">
-                                  &nbsp&nbsp D. "BOTE DYARYO", WASTE PICKERS OR GARBAGE SCAVENGERS
-                            </label>
-
-                         </div> 
-                         <div class="row">
-                            <label>
-                                
-                                    <input class="form-check-input respo_radio" type="checkbox" name="collector_residuals"  data-val="Yes" value="Yes">
-                                   &nbsp&nbsp E. OTHERS (Specify)
-                                 
-                            </label>
-                        </div>
-
-                      </div>
-                      </div> 
-
-<div class="collector_residuals_specify_repeat" hidden=""> 
-
-<br>
-<div class="text-left"><h6>
-<b>Please Specify:
-</b></h6></div>   
-
-  <div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="collector_residuals_specify" name="collector_residuals_specify" placeholder="">
-  </div> 
-</div>
-</div>
-
-
-
-
-<br>
-<div class="text-left"><h6>
-<b>WD4. How often are garbage collected from households?</b>
-</h6></div>  
-
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                       <input class="form-check-input" type="radio" name="collector_how_often_question" data-val="No" value="No">DAILY<br> 
-                       <input class="form-check-input" type="radio" name="collector_how_often_question" data-val="No" value="No">THRICE A WEEK<br> 
-                       <input class="form-check-input" type="radio" name="collector_how_often_question" data-val="No" value="No">TWICE A WEEK<br> 
-                       <input class="form-check-input" type="radio" name="collector_how_often_question" data-val="No" value="No">ONCE A WEEK<br> 
-                       <input class="form-check-input" type="radio" name="collector_how_often_question" data-val="Yes" value="Yes">OTHERS, SPECIFY<br>
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div> 
-
-
-<div class="collector_how_often_question_specify_repeat" hidden=""> 
-
-
-<br>
-<div class="text-left"><h6>
-<b>Please Specify:
-</b></h6></div>   
-
-  <div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="collector_how_often_question_specify" name="collector_how_often_question_specify" placeholder="">
-  </div> 
-</div>
-</div>
-
-
-<br>
-<div class="text-left"><h6>
-<b>WD5. Does the barangay still collect garbage from households even if these are not properly segregated?</b>
-</h6></div>  
-
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="collector_properly_segregated"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="collector_properly_segregated"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>  
-
-
-<br>
-<div class="text-left"><h6>
-<b>WD6. Does the barangay pay the municipal/city/provincial LGU for waste management services?</b>
-</h6></div>  
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="collector_payment"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="collector_payment"  data-val="No" value="No">No Payment/Fee
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>  
-
-<div class="collector_amount_repeat" hidden=""> 
-
-<br>
-<div class="text-left"><h6>
-<b>WD7. How much does the barangay pay for waste management services for the whole year (in Php)?
-</b></h6></div>   
-
-  <div class="form-group row">
-  <div class="col-sm-4">
-  <input type="number" class="form-control" id="collector_amount" name="collector_amount" placeholder="">
-  </div> 
-</div>
-</div>
-
-
-
-<br>
-<div class="text-left"><h6>
-<b>WD8. Is the current garbage collection system able to serve the whole barangay?</b>
-</h6></div> 
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="collector_able_to_serve"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="collector_able_to_serve"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>  
-
-<div class="collector_specific_areas_repeat_no" hidden=""> 
-
-
-
-<br>
-<div class="text-left"><h6>
-<b>WD9. What specific areas (zone/purok/sitio) are not reached by the garbage collectors # 1?
-</b></h6></div>   
-
-  <div class="form-group row">
-  <div class="col-sm-5">
-  <input type="text" class="form-control" id="collector_amount" name="collector_amount" placeholder="">
-  </div> 
-</div>
-</div>
-
-
-
-
-<hr>
-<br>
-<i style="color: green" class="">Now, I would like to talk about the different mode of transportation in the barangay.</i><br><br>
-
-<br>
-<h5 class="text-left" style="color: "><b>B. SERVICE INSTITUTIONS AND INFRASTRUCTURE - XII. MODE OF TRANSPORTATION</b></h5><br>
-
-
-<div class="text-left"><h5>
-TF1. Is the following mode of transportation available or in operation in the barangay?
-</h5></div>  
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="publictransport1"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="publictransport1"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>  
-
-
-
-<div class="publictransport1_repeat" hidden=""> 
-
-<br>
-<div class="text-left"><h6>
-<b>A. Bus?</b>
-</h6></div>  
-
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="buspb"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="buspb"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>  
-       
-
-<br>
-<div class="text-left"><h6>
-<b>B. Regular Taxi?</b>
-</h6></div>  
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="taxipb"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="taxipb"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>  
-       
-
-
-
-
-<br>
-<div class="text-left"><h6>
-<b>C. TNVS Car (Grab, MiCab, etc)</b>
-</h6></div>  
-
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="grabpb"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="grabpb"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>  
-        
-
-<br>
-<div class="text-left"><h6>
-<b>D. TNVS Motorcycle (Joyride, Angkas, etc)</b>
-</h6></div>  
-
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="joypb"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="joypb"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>  
-        
-
-<br>
-<div class="text-left"><h6>
-<b>E. Van/FX</b>
-</h6></div>  
-
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="vanpb"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="vanpb"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>  
-        
-
-
-<br>
-<div class="text-left"><h6>
-<b>F. Jeepney</b>
-</h6></div>  
-
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="jeeppb"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="jeeppb"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>  
-       
-
-
-<br>
-<div class="text-left"><h6>
-<b>G. Tricycle</b>
-</h6></div>  
-
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="tricpb"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="tricpb"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>  
-       
-
-<br>
-<div class="text-left"><h6>
-<b>H. Pedicab</b>
-</h6></div>  
-
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="pedpb"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="pedpb"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>  
-        
-
-<br>
-<div class="text-left"><h6>
-<b>I. Boat/motorized banca</b>
-</h6></div>  
-
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="boatpb"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="boatpb"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>  
-       
-
-
-<br>
-<div class="text-left"><h6>
-<b>J. Train</b>
-</h6></div>  
-
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="trainpb"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="trainpb"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>  
-        
-
-<br>
-<div class="text-left"><h6>
-<b>K. Motorcycle (habal-habal, skylab)</b>
-</h6></div>  
-
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="motorpb"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="motorpb"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>  
-       
-<br>
-<div class="text-left"><h5>
-Other transport facilities:
-</h5></div> 
-
-<br>
-<div class="text-left"><h6>
-<b>Please Specify:
-</b></h6></div>   
-
-  <div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="other_trans_position" name="other_trans_position" placeholder="">
-  </div> 
-</div>
-
-<br>                  
-
-</div>
-
-
-
-<br>
-<div class="publictransport1_repeat_no" hidden=""> 
-
-<br>                  
-<div class="text-left"><h6>
-<b>G2. What is the distance of the barangay hall to the nearest facility(in kms)?
-</b></h6></div> 
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="distancepb_distance_if_3">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)<br>
-                        <input class="form-check-input" type="radio" name="distancepb_distance_if_4">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)<br> 
-                        <input class="form-check-input" type="radio" name="distancepb_distance_if_3">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY<br> 
-                        <input class="form-check-input" type="radio" name="distancepb_distance_if_4">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY<br> 
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>   
-
-<br>                  
-
-</div>
-
-
-<hr>
-
-<br>
-<i style="color: green" class="">Now, I would like to talk about the different Information and Communications Technology in the barangay.</i><br><br>
-
-<br>
-<h5 class="text-left" style="color: "><b>INFORMATION AND COMMUNICATIONS TECHNOLOGY</b></h5><br>
-
-<div class="text-left"><h5>
-IT1. Is there an available cellphone network signal in the barangay?
-</h5></div>  
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="network_available_question"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="network_available_question"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>  
-
-<br>
-<div class="network_available_repeat" hidden=""> 
-
-<div class="text-left"><h6>
-<b>IT1.1 What is the available cellphone network signal in the barangay?</b>
-</h6></div>  
-
-<div class="container"> 
-                    <div class="col-sm-10">
-                          <div class="row">
-                            <label>
-                                
-                                    <input class="form-check-input respo_radio" type="checkbox" name="network_available"  data-val="Yes" value="Yes">
-                                  &nbsp&nbsp 2G (E or G)
-                               
-                            </label>
-                        </div>
-
-                              <div class="row">
-                            <label>
-                                
-                                     <input class="form-check-input respo_radio" type="checkbox" name="network_available"  data-val="Yes" value="Yes">
-                                  &nbsp&nbsp 3G (H or 3G+ or H+)
-                               
-                            </label>
-                        </div>
-                      </div>
-              </div>  
-
-               <div class="container">
-               <div class="col-sm-10">
-                        <div class="row">
-                            <label >
-                                
-                                    <input class="form-check-input respo_radio" type="checkbox" name="network_available"  data-val="Yes" value="Yes">
-                                   &nbsp&nbsp  4G (LTE or 4G+ or LTE-A)
-                                 
-                            </label>
-                        </div>
-                      </div>
+                    <div class="col-sm skip_no_pbhc" hidden>
+                      <h6 >HF5. What institution operates the facility?</h6><br><br>
+                      <select  name="no_bhc_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+                      <br>
                     </div>
-                  </div>
-
-
-<br>                  
-<div class="text-left"><h5>
-IT2. Is there an existing telecommunication/cellular tower/s in the barangay?
-</h5></div>
-
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="existing_telcom"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="existing_telcom"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>  
-
-
-<br>
-<div class="existing_telcom_repeat" hidden=""> 
-
-<br>
-<div class="text-left"><h6>
-<b>IT3. How many are the existing telecommunication/cellular tower/s in the barangay?
-</b></h6></div>   
-
-  <div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="how_many_telcom" name="how_many_telcom" placeholder="">
-  </div> 
-</div>
-</div>          
-
-
-<br>                  
-<div class="text-left"><h5>
-IT4. Is free WiFi available in the barangay?
-</h5></div>
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="wifi_availability"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="wifi_availability"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>  
-
-
-<br>
-<div class="wifi_availability_repeat" hidden=""> 
-
-<div class="text-left"><h6>
-<b>IT5. Who provides the free Wi-Fi in the barangay?</b>
-</h6></div>  
-
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="who_provides_wifi"  data-val="Yes" value="Yes">PRIVATELY-OWNED<br>
-                        <input class="form-check-input" type="radio" name="who_provides_wifi"  data-val="No" value="No">GOVERNMENTLY-OWNED
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div> 
-        </div>
-
-
-<br>                  
-<div class="text-left"><h5>
-IT6. Which of the following ICT equipment in the barangay can be used by the public for free?
-</h5></div>
-
-<div class="container"> 
-                    <div class="col-sm-10">
-                          <div class="row">
-                            <label>
-                                
-                                     <input class="form-check-input respo_radio" type="checkbox" name="ict_equipment_free"  data-val="Yes" value="Yes">
-                                  &nbsp&nbsp TELEPHONES/CELLPHONES
-                               
-                            </label>
-                        </div>
-
-                              <div class="row">
-                            <label>
-                                
-                                     <input class="form-check-input respo_radio" type="checkbox" name="ict_equipment_free"  data-val="Yes" value="Yes">
-                                  &nbsp&nbsp  COMPUTERS (DESKTOP,LAPTOP,TABLET)
-                               
-                            </label>
-                        </div>
-                      </div>
-              </div>  
-
-               <div class="container">
-               <div class="col-sm-10">
-                        <div class="row">
-                            <label >
-                                
-                                    <input class="form-check-input respo_radio" type="checkbox" name="ict_equipment_free"  data-val="No" value="No">
-                                   &nbsp&nbsp  FAX MACHINES
-                                 
-                            </label>
-                        </div>
-
-                            <div class="row">
-                            <label>
-                                    <input class="form-check-input respo_radio" type="checkbox" name="ict_equipment_free"  data-val="No" value="No">
-                                  &nbsp&nbsp PRINTERS
-                            </label>
-
-                         </div> 
-                          <div class="row">
-                            <label>
-                                    <input class="form-check-input respo_radio" type="checkbox" name="ict_equipment_free"  data-val="No" value="No">
-                                  &nbsp&nbsp AUDIO-VISUAL EQUIPMENT (PROJECTOR, MICROPHONE, SPEAKER)
-                            </label>
-
-                         </div> 
-                         <div class="row">
-                            <label>
-                                
-                                    <input class="form-check-input respo_radio" type="checkbox" name="ict_equipment_free"  data-val="Yes" value="Yes">
-                                   &nbsp&nbsp OTHERS, SPECIFY
-                                 
-                            </label>
-                        </div> 
-                          <div class="row">
-                            <label>
-                                    <input class="form-check-input respo_radio" type="checkbox" name="ict_equipment_free"  data-val="No" value="No">
-                                  &nbsp&nbsp NONE
-                            </label>
-
-                         </div> 
-
-                      </div>
-                      </div> 
-
-
-<div class="ict_equipment_free_specify_repeat" hidden=""> 
-
-<br>
-<div class="text-left"><h6>
-<b>Please Specify:
-</b></h6></div>   
-
-  <div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="ict_equipment_free_specify" name="ict_equipment_free_specify" placeholder="">
-  </div> 
-</div>
-</div>
-
-
-
-<br>
-<br>                  
-<div class="text-left"><h5>
-IT7. Are there Fiber Optic Cables installed in the barangay hall?
-</h5></div>
-
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="fiber_optic_barangay"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="fiber_optic_barangay"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div> 
-<br>       
-<br>                  
-<div class="text-left"><h5>
-IT8. Does this barangay use computers (desktop, laptop, tablet, etc.) in providing government services such as barangay clearance, community tax certificate, etc.?
-</h5></div>
-         
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="use_ict_in_services"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="use_ict_in_services"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div> 
-
-<br>
-<br>                  
-<div class="text-left"><h5>
-IT9. How do residents of the barangay usually fill out their forms for their transactions in the barangay?
-</h5></div>
-         
-
-<div class="container"> 
-                    <div class="col-sm-10">
-                          <div class="row">
-                            <label>
-                                
-                                     <input class="form-check-input respo_radio" type="checkbox" name="fillout_forms_system"  data-val="Yes" value="Yes">
-                                  &nbsp&nbsp MANUAL ACCOMPLISHMENT OF FORMS
-                               
-                            </label>
-                        </div>
-
-                              <div class="row">
-                            <label>
-                                
-                                     <input class="form-check-input respo_radio" type="checkbox" name="fillout_forms_system"  data-val="Yes" value="Yes">
-                                  &nbsp&nbsp  DIRECT ENCODING TO A COMPUTER BY BARANGAY PERSONNEL
-                               
-                            </label>
-                        </div>
-                      </div>
-              </div>  
-
-               <div class="container">
-               <div class="col-sm-10">
-                        <div class="row">
-                            <label >
-                                
-                                    <input class="form-check-input respo_radio" type="checkbox" name="fillout_forms_system"  data-val="Yes" value="Yes">
-                                   &nbsp&nbsp DIRECT ENCODING TO A COMPUTER BY RESIDENT
-                                 
-                            </label>
-                        </div>
-
-                      </div>
-                    </div>
-<br>  
-<br>                  
-<div class="text-left"><h5>
-IT10. Does this barangay maintain a computerized database?
-</h5></div>
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="barangay_database"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="barangay_database"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>  
-
-<br>
-<br>                  
-<div class="text-left"><h5>
-IT11. Does this barangay have a hired IT Personnel?
-</h5></div>
-
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="barangay_it_personnel"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="barangay_it_personnel"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>  
-
-<div class="barangay_it_personnel_repeat" hidden=""> 
-
-<br>                  
-<div class="text-left"><h6>
-<b>IT12. How many IT personnel are working in the barangay performing IT functions?
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="barangay_it_personnel_count" name="barangay_it_personnel_count" placeholder="" >
-</div>
-</div>
-</div>
-
-
-<br>
-<br>                  
-<div class="text-left"><h5>
-IT13. Does this barangay have an official website (gov.ph)? (to disseminate news, provide barangay services, etc.)
-</h5></div>
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="barangay_official_website"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="barangay_official_website"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>  
-
-<div class="barangay_official_website_repeat" hidden=""> 
-
-<br>                  
-<div class="text-left"><h6>
-<b>IT14. What is the official website URL of the barangay?
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="barangay_official_website_url" name="barangay_official_website_url" placeholder="" >
-</div>
-</div>
-</div>
-
-
-<br>
-<br>                  
-<div class="text-left"><h5>
-IT15. Does this barangay have a social media account operated by the LGU?
-</h5></div>
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="barangay_social_media"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="barangay_social_media"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>  
-
-<div class="barangay_social_media_repeat" hidden=""> 
-
-<br>                  
-<div class="text-left"><h6>
-<b>IT16. What is the social media account page URL of the barangay?
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="barangay_social_media_url" name="barangay_social_media_url" placeholder="" >
-</div>
-</div>
-</div>
-
-
-<br>
-<br>                  
-<div class="text-left"><h5>
-IT17. Do you have specific local strategy on new technologies such as use of social media to disseminate information, online selling and buying of goods, use of online facilities to request services from the barangay, etc?
-</h5></div>
-
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="barangay_disseminate_information"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="barangay_disseminate_information"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div> 
-
-<div class="barangay_disseminate_information_repeat" hidden=""> 
-
-<br>                  
-<div class="text-left"><h6>
-<b>IT18. Please provide the URL to the document containing the local strategy on new technologies or please attach a photo
-</b></h6></div>   
-
-  <div class="form-group row">
-  <div class="col-sm-5">
-  <input type="text" class="form-control" id="barangay_disseminate_information_url" name="barangay_disseminate_information_url" placeholder="" >
-
-<br>
-<div class="text-left"><h6><b>
-IT18.1 Please provide the photo containing the e-government strategy.</b>
-</h6></div> 
- 
-
- <h6>IT18.1 Please attach a photo (if any)</h6>
- <input type="file" class="btn btn-outline-secondary" name="file" id="barangay_disseminate_information_image"><button type="button" id="barangay_disseminate_information_image" class="btn btn-danger">Upload</button>
-
-
-<br>
-<div class="text-left">
-<br>
-<h6><b>IT18.2 Please provide the file containing the e-government strategy.
-</b></h6></div>
-
-
-<h6>IT18.2 Please attach a file (printed or electronic copy).</h6>
-<input type="file" class="btn btn-outline-secondary" name="file" id="barangay_disseminate_information_file"><button type="button" id="barangay_disseminate_information_file" class="btn btn-danger">Upload</button>
-
-
-</div>
-</div>
-</div>
-
-
-
-<br>
-<br>                  
-<div class="text-left"><h5>
-IT19. Is there an e-Government Strategy or equivalent being implemented by your local/municipal government?
-</h5></div>
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="barangay_egovern"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="barangay_egovern"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div> 
-
-
-<div class="barangay_egovern_repeat" hidden=""> 
-
-<br>                  
-<div class="text-left"><h6>
-<b>IT20. Please provide the URL to the document containing the e-government strategy.
-OR Please attach a photo or a file (printed or electronic copy).
-</b></h6></div>   
-
-  <div class="form-group row">
-  <div class="col-sm-5">
-  <input type="text" class="form-control" id="barangay_egovern_url" name="barangay_egovern_url" placeholder="" >
-
-<br>
-<div class="text-left"><h6><b>
-IT20.1 Please provide the photo containing the e-government strategy.</b>
-</h6></div> 
-
- <h6>IT20.1 Please attach a photo (if any)</h6>
- <input type="file" class="btn btn-outline-secondary" name="file" id="egovern_image_repeat"><button type="button" id="barangay_disseminate_information_image" class="btn btn-danger">Upload</button>
-
-
-<br>
-<div class="text-left">
-<br>
-<h6><b>IT20.2 Please provide the file containing the e-government strategy.
-</b></h6></div>
-
-<h6>IT20.2 Please attach a file (printed or electronic copy).)</h6>
-<input type="file" class="btn btn-outline-secondary" name="file" id="barangay_egovern_url_image"><button type="button" id="barangay_disseminate_information_file" class="btn btn-danger">Upload</button>
-
-</div>
-</div>
-</div>
-
-<br>
-<br>                  
-<div class="text-left"><h5>IT21. Does this barangay use ICT equipment/ facilities for security purposes? (e.g CCTV, etc.)</h5>
-</div>
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="barangay_cctv_ict"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="barangay_cctv_ict"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>                          
-   
-
-
-
-<hr>
-
-<br>
-<i style="color: green" class="">Now, I would like to talk about the significant events in the barangay.</i><br><br>
-
-
-<hr>
-<br>
-<h5 class="text-left" style="color: "><b>SIGNIFICANT EVENTS IN THE BARANGAY FOR PAST 3 YEARS - CLIMATE-RELATED AND GEOLOGIC EVENTS (01 April 2018 to 31 March 2020)</b></h5><br>   
-
-<div class="text-left"><h6>
-<b>S1. From 01 April 2018 to 31 March 2020, how many times did the event occur and negatively affected the barangay? Put number/s in the line provided.
-</b></h6></div>  
-<br>
-
-<div class="row">
-  <div class="float-sm-left">
-     <div class="container-fluid" align="left" style="width:100%">
-    
-     <table id="" class="cell-border compact text-left table-hover" style="width:100%">
-        <thead>
-            <tr>
-                <th>Climate-related and <br>geologic events</th>
-                <th style="width:40%"><br><i style="font-size: 12px !important; color: red">"Please input "0" if none"</i></th>
-               
-            </tr>
-        </thead>
-
-              <tr>
-                <td>typhoon</td>
-                <td> <input type="number" class="form-control significant_events" name="significant_events_typhoon" placeholder="" ></td>
-              </tr>
-
-              <tr>
-                <td>flooding</td>
-                <td> <input type="number" class="form-control significant_events" name="significant_events_flooding" placeholder="" ></td>
-              </tr>
-
-              <tr>
-                <td>flash flood</td>
-                <td> <input type="number" class="form-control significant_events" name="significant_events_flash_flood" placeholder="" ></td>
-              </tr>
-
-              <tr>
-                <td>drought</td>
-                <td> <input type="number" class="form-control significant_events" name="significant_events_drought" placeholder="" ></td>
-              </tr>
-
-              <tr>
-                <td>earthquake</td>
-                <td> <input type="number" class="form-control significant_events" name="significant_events_earthquake" placeholder="" ></td>
-              </tr>
-
-              <tr>
-                <td>volcanic eruption</td>
-                <td> <input type="number" class="form-control significant_events" name="significant_events_volcanic_eruption" placeholder="" ></td>
-              </tr>
-
-              <tr>
-                <td>landslide</td>
-                <td> <input type="number" class="form-control significant_events" name="significant_events_landslide" placeholder="" ></td>
-              </tr>
-
-              <tr>
-                <td>tsunami</td>
-                <td> <input type="number" class="form-control significant_events" name="significant_events_tsunami" placeholder="" ></td>
-              </tr>
-
-               <tr>
-                <td>forest fire</td>
-                <td> <input type="number" class="form-control significant_events" name="significant_events_forest_fire" placeholder="" ></td>
-              </tr>
-
-              
-
-      
-
-     </table>
-     <br> 
-        <label for="" class="text-left"><b>TOTAL CLIMATE AND GEOLOGICAL EVENTS:  <span id="total_climate_events"></span></b></label>
-  </div>
-    </div>
-</div>
-
-
-<br>
-<hr>
-<br>
-<br>
-<h5 class="text-left" style="color: "><b>SIGNIFICANT EVENTS IN THE BARANGAY FOR PAST 3 YEARS - ECONOMIC EVENTS (01 April 2018 to 31 March 2020)</b></h5><br>   
-
-
-<div class="row">
-  <div class="float-sm-left">
-     <div class="container-fluid" align="left" style="width:100%">
-    
-     <table id="" class="cell-border compact text-left table-hover" style="width:100%">
-        <thead>
-            <tr>
-                <th>B. Economic Events</th>
-                <th style="width:40%"><br><i style="font-size: 12px !important; color: red">"Please input "0" if none"</i></th>
-               
-            </tr>
-        </thead>
-
-              <tr>
-                <td>closure of many small firms</td>
-                <td> <input type="number" class="form-control economic_group" name="significant_events_closure" placeholder="" ></td>
-              </tr>
-
-              <tr>
-                <td>mass lay-off</td>
-                <td> <input type="number" class="form-control economic_group" name="significant_events_mass" placeholder="" ></td>
-              </tr>
-
-              <tr>
-                <td>opening of large firm/s</td>
-                <td> <input type="number" class="form-control economic_group" name="significant_events_largefirm" placeholder="" ></td>
-              </tr>
-
-              <tr>
-                <td>opening of many small firm/s</td>
-                <td> <input type="number" class="form-control economic_group" name="significant_events_smallfirm" placeholder="" ></td>
-              </tr>
-
-              <tr>
-                <td>opening of shopping malls</td>
-                <td> <input type="number" class="form-control economic_group" name="significant_events_shoppingmalls" placeholder="" ></td>
-              </tr>
-
-              <tr>
-                <td>opening of fastfood restaurant/s</td>
-                <td> <input type="number" class="form-control economic_group" name="significant_events_fastfood" placeholder="" ></td>
-              </tr>
-
-              <tr>
-                <td>closure of large firms</td>
-                <td> <input type="number" class="form-control economic_group" name="significant_events_closure_large_firms" placeholder="" ></td>
-              </tr>
-
-              </tr>
-
-     </table>
-              <br>  
-              <label for="" class="text-left"><b>TOTAL ECONOMIC EVENTS:  <span id="total_economic_events"></span></b></label>
-  </div>
-    </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-              
-<!-- <div class="text-left"><h5>
-B. Economic events
-</h5></div>
-
-<br>                  
-<div class="text-left"><h6>
-<b>closure of many small firms
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="significant_events_closure" name="significant_events_closure" placeholder="" >
-</div>
-</div>
-
-<br>                  
-<div class="text-left"><h6>
-<b>mass lay-off
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="significant_events_mass" name="significant_events_mass" placeholder="" >
-</div>
-</div>
-
-<br>                  
-<div class="text-left"><h6>
-<b>opening of large firm/s
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="significant_events_largefirm" name="significant_events_largefirm" placeholder="" >
-</div>
-</div>
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>opening of many small firm/s
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="significant_events_smallfirm" name="significant_events_smallfirm" placeholder="" >
-</div>
-</div>
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>opening of shopping malls
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="significant_events_shoppingmalls" name="significant_events_shoppingmalls" placeholder="" >
-</div>
-</div>
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>opening of fastfood restaurant/s
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="significant_events_fastfood" name="significant_events_fastfood" placeholder="" >
-</div>
-</div>
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>closure of large firms
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="significant_events_closure_large_firms" name="significant_events_closure_large_firms" placeholder="" >
-</div>
-</div>
-<br> -->
-
-
-<hr>
-<br>
-<h5 class="text-left" style="color: "><b>SIGNIFICANT EVENTS IN THE BARANGAY FOR PAST 3 YEARS - PEACE AND ORDER EVENTS (01 April 2018 to 31 March 2020)</b></h5><br>   
-
-<div class="text-left"><h5>
-C. Peace and order events
-</h5></div>
-
-<br>                  
-<div class="text-left"><h6>
-<b>fire
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="significant_events_fire" name="significant_events_fire" placeholder="" >
-</div>
-</div>
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>armed conflict
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="significant_events_armed_conflict" name="significant_events_armed_conflict" placeholder="" >
-</div>
-</div> 
-<br>
-
-<hr>
-<br>
-<h5 class="text-left" style="color: "><b>SIGNIFICANT EVENTS IN THE BARANGAY FOR PAST 3 YEARS - HEALTH AND AGRICULTURE-RELATED EVENTS (01 April 2018 to 31 March 2020)</b></h5><br>   
-
-
-<div class="text-left"><h5>
-D. Health and agriculture-related events
-</h5></div>
-
-<br>                  
-<div class="text-left"><h6>
-<b>epidemic
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="significant_events_fire" name="significant_events_fire" placeholder="" >
-</div>
-</div>
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>pest infestation
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="significant_events_armed_conflict" name="significant_events_armed_conflict" placeholder="" >
-</div>
-</div> 
-
-<br>                  
-<div class="text-left"><h6>
-<b>livestock/poultry diseases
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="significant_events_fire" name="significant_events_fire" placeholder="" >
-</div>
-</div>
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>fish kill
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="significant_events_armed_conflict" name="significant_events_armed_conflict" placeholder="" >
-</div>
-</div> 
-
-
-<br>                  
-<div class="text-left"><h5>
-Other health and agriculture-related events
-</h5></div>
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="significant_events_others"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="significant_events_others"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>   
-
-
-<div class="significant_events_others_repeat" hidden=""> 
-
-<br>                  
-<div class="text-left"><h6>
-<b>Please Specify other health and agriculture-related events # 1?
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="significant_events_others_specify" name="significant_events_others_specify" placeholder="" >
-</div>
-</div>
-
-<br>                  
-<div class="text-left"><h6>
-<b>Significant event count of
-</b></h6></div> 
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="significant_events_others_count" name="significant_events_others_count" placeholder="" >
-</div>
-</div>
-</div>
-
-<br>                  
-<div class="text-left"><h5>
-S2. Based on report to barangay, what are the main reasons for the closure of firms during the period (01 April 2018 to 31 March 2020)?
-</h5></div>
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="reason_of_closure" name="reason_of_closure" placeholder="" >
-</div>
-</div>
-<br>
-
-
-<hr>
-<br>
-<h5 class="text-left" style="color: "><b>SIGNIFICANT EVENTS IN THE BARANGAY FOR PAST 3 YEARS - CLIMATE-RELATED AND GEOLOGIC EVENTS (01 April 2020 to 31 March 2021)</b></h5><br>   
-
-
-
-<div class="row">
-  <div class="float-sm-left">
-     <div class="container-fluid" align="left" style="width:100%">
-    
-     <table id="tab
-     le2" class="cell-border compact text-left table-hover" style="width:100%">
-        <thead>
-            <tr>
-                <th>Climate-related and <br>geologic events</th>
-                <th style="width:40%">Occurence <br><i style="font-size: 12px !important; color: red">"Please input "0" if none"</i></th>
-               
-            </tr>
-        </thead>
-
-              <tr>
-                <td>typhoon</td>
-                <td> <input type="number" class="form-control significant_events2" name="significant_events_typhoon2" placeholder="" ></td>
-              </tr>
-
-              <tr>
-                <td>flooding</td>
-                <td> <input type="number" class="form-control significant_events2" name="significant_events_flooding2" placeholder="" ></td>
-              </tr>
-
-              <tr>
-                <td>flash flood</td>
-                <td> <input type="number" class="form-control significant_events2" name="significant_events_flash_flood2" placeholder="" ></td>
-              </tr>
-
-              <tr>
-                <td>drought</td>
-                <td> <input type="number" class="form-control significant_events2" name="significant_events_drought2" placeholder="" ></td>
-              </tr>
-
-              <tr>
-                <td>earthquake</td>
-                <td> <input type="number" class="form-control significant_events2" name="significant_events_earthquake2" placeholder="" ></td>
-              </tr>
-
-              <tr>
-                <td>volcanic eruption</td>
-                <td> <input type="number" class="form-control significant_events2" name="significant_events_volcanic_eruption2" placeholder="" ></td>
-              </tr>
-
-              <tr>
-                <td>landslide</td>
-                <td> <input type="number" class="form-control significant_events2" name="significant_events_landslide2" placeholder="" ></td>
-              </tr>
-
-              <tr>
-                <td>tsunami</td>
-                <td> <input type="number" class="form-control significant_events2" name="significant_events_tsunami2" placeholder="" ></td>
-              </tr>
-
-               <tr>
-                <td>forest fire</td>
-                <td> <input type="number" class="form-control significant_events2" name="significant_events_forest_fire2" placeholder="" ></td>
-              </tr>
-
-
-
-     </table>
-      <br> 
-      <label for="" class="text-left"><b>TOTAL GEOLOGICAL CLIMATE EVENTS:  <span id="total_climate_events2"></span></b></label>
-  </div>
-    </div>
-</div>
-
-
-<br>
-
-<br>
-<hr>
-<br>
-<h5 class="text-left" style="color: "><b>SIGNIFICANT EVENTS IN THE BARANGAY FOR PAST 3 YEARS - ECONOMIC EVENTS (01 April 2020 to 31 March 2021)</b></h5><br>   
 
           
-<div class="text-left"><h5>
-Economic events
-</h5></div>
-
-<br>                  
-<div class="text-left"><h6>
-<b>closure of many small firms
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="significant_events_closure2" name="significant_events_closure2" placeholder="" >
-</div>
-</div>
-
-<br>                  
-<div class="text-left"><h6>
-<b>mass lay-off
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="significant_events_mass2" name="significant_events_mass2" placeholder="" >
-</div>
-</div>
-
-<br>                  
-<div class="text-left"><h6>
-<b>opening of large firm/s
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="significant_events_largefirm2" name="significant_events_largefirm2" placeholder="" >
-</div>
-</div>
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>opening of many small firm/s
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="significant_events_smallfirm2" name="significant_events_smallfirm2" placeholder="" >
-</div>
-</div>
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>opening of shopping malls
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="significant_events_shoppingmalls2" name="significant_events_shoppingmalls2" placeholder="" >
-</div>
-</div>
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>opening of fastfood restaurant/s
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="significant_events_fastfood2" name="significant_events_fastfood2" placeholder="" >
-</div>
-</div>
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>closure of large firms
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="significant_events_closure_large_firms2" name="significant_events_closure_large_firms2" placeholder="" >
-</div>
-</div>
-<br>
-
-
-<hr>
-<br>
-<h5 class="text-left" style="color: "><b>SIGNIFICANT EVENTS IN THE BARANGAY FOR PAST 3 YEARS - PEACE AND ORDER EVENTS (01 April 2020 to 31 March 2021)</b></h5><br>   
-
-<div class="text-left"><h5>
-Peace and order events
-</h5></div>
-
-<br>                  
-<div class="text-left"><h6>
-<b>fire
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="significant_events_fire2" name="significant_events_fire2" placeholder="" >
-</div>
-</div>
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>armed conflict
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="significant_events_armed_conflict2" name="significant_events_armed_conflict2" placeholder="" >
-</div>
-</div> 
-<br>
-
-<div class="text-left"><h5>
-Health and agriculture-related events
-</h5></div>
-
-<br>                  
-<div class="text-left"><h6>
-<b>epidemic
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="significant_events_epidemic2" name="significant_events_epidemic2" placeholder="" >
-</div>
-</div>
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>pest infestation
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="significant_events_pest2" name="significant_events_pest2" placeholder="" >
-</div>
-</div> 
-
-<br>                  
-<div class="text-left"><h6>
-<b>livestock/poultry diseases
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="significant_events_livestock2" name="significant_events_livestock2" placeholder="" >
-</div>
-</div>
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>fish kill
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="significant_events_fish2" name="significant_events_fish2" placeholder="" >
-</div>
-</div> 
-
-
-<br>                  
-<div class="text-left"><h5>
-Is there other health and agriculture-related events?
-</h5></div>
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="significant_events_others2"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="significant_events_others2"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>   
-
-
-<div class="significant_events_others2_repeat" hidden=""> 
-
-<br>                  
-<div class="text-left"><h6>
-<b>Other health and agriculture-related events: # 1?
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="significant_events_others_specify2" name="significant_events_others_specify2" placeholder="" >
-</div>
-</div>
-
-<br>                  
-<div class="text-left"><h6>
-<b>Significant event count of
-</b></h6></div> 
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="significant_events_others_count2" name="significant_events_others_count2" placeholder="" >
-</div>
-</div>
-</div>
-
-
-<br>                  
-<div class="text-left"><h5>
-S4. Based on report to barangay, what are the main reasons for the closure of small firms during the period (01 April 2020 to 31 March 2021)?
-</h5></div>
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="reason_of_closure2" name="reason_of_closure2" placeholder="" >
-</div>
-</div>
-
-<br>                  
-<div class="text-left"><h5>
-S5. Based on report to barangay, what are the main reasons for the closure of large firms during the period (01 April 2020 to 31 March 2021)?
-</h5></div>
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="reason_of_closure2b" name="reason_of_closure2b" placeholder="" >
-</div>
-</div>
-<br>
-
-
-<hr>
-
-<br>
-<i style="color: green" class="">Now, I would like to talk about the disaster preparedness of the barangay..</i><br><br> 
-
-<br>
-<h5 class="text-left" style="color: "><b>DISASTER PREPAREDNESS</b></h5><br>   
-
-<br>                  
-<div class="text-left"><h5>
-DP1. Does the barangay have a written disaster risk reduction and management plan?
-</h5></div>
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="disaster_preparedness_plan"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="disaster_preparedness_plan"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>                          
-   
-
-<br>
-<br>                  
-<div class="text-left"><h5>
-DP2. Does the barangay have disaster management committee?
-</h5></div>
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="disaster_preparedness_committee"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="disaster_preparedness_committee"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>                          
-   
-
-<br>
-<br>                  
-<div class="text-left"><h5>
-DP3. Does the barangay have a disaster/emergency response team?
-</h5></div>
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="disaster_preparedness_response"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="disaster_preparedness_response"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>                          
-   
-
-<br>
-<br>                  
-<div class="text-left"><h5>
-DP4. Do you have organization's plan of succession during an emergency?
-</h5></div>
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="disaster_preparedness_succession"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="disaster_preparedness_succession"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>                          
-   
-
-<br>
-<br>                  
-<div class="text-left"><h5>
-DP5. Does the barangay have a disaster/emergency hotline?
-</h5></div>
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="disaster_preparedness_hotline"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="disaster_preparedness_hotline"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>                          
-   
-
-<div class="disaster_preparedness_hotline_contact_repeat" hidden=""> 
-
-<br>
-<div class="text-left"><h5>
-<b>Barangay's disaster/emergency hotline</b>
-</h5></div>
-
-<br>                  
-<div class="text-left"><h6>
-<b>DP6. What is the barangay's disaster/emergency hotline # 1?
-</b></h6>
-</div>
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="disaster_preparedness_hotline_contact" name="disaster_preparedness_hotline_contact" placeholder="" >
-</div>
-</div>
-</div>
-
-
-<br>
-<br>                  
-<div class="text-left"><h5>
-DP7. Do you have disaster preparedness guide for people with disabilities?
-</h5></div>
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="disaster_preparedness_guide"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="disaster_preparedness_guide"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>   
-
-
-<br>
-<br>                  
-<div class="text-left"><h5>DP8. Are you aware of government digital platforms for Disaster Risk Reduction and Climate Change Adaptation (DRR-CCA) that may be used in the formulation of your barangay's DRR-CCA plans?</h5>
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="disaster_preparedness_awareness"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="disaster_preparedness_awareness"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>  
-</div>
-<br>
-
-<hr>
-
-<br>
-<br>
-<h5 class="text-left" style="color: "><b>B. SERVICE INSTITUTIONS AND INFRASTRUCTURE - DISASTER PREPAREDNESS - TYPE OF DISASTER</b></h5><br>   
-
-
-<div class="row">
-  <div class="float-sm-left">
-     <div class="container-fluid" align="left" style="width:100%">
-    
-
-<table  id="" class="table table-sm table-hover" align="left" style="width:100%">
-<tr>
-  <thead>
-    
-     <th>DP9. Does the barangay have a localized <br>early warning system for: &nbsp&nbsp&nbsp&nbsp&nbsp</th>
-
-    <th>&nbsp&nbsp&nbspYes</th>
-    <th>&nbsp&nbsp&nbspNo</th>
-  </thead>
-    
-   
-</tr>
-<tr>
-    <td>A. TYPHOON</td>
-    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_typhoon"  data-val="Yes" value="Yes" data-col="1"></label></td>
-   <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_typhoon"  data-val="No" value="No" data-col="2"></label></td> 
-</tr>
 
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+
+   <!-- ------------------- 1-->        
+         
+            <tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>HF1. Does this barangay have atleast one <u>Hospital?</u></h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="HF1_hospital"  data-val="Yes" data-skip="hospital" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="HF1_hospital"  data-val="No"  data-skip="hospital" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                     <!-- this -->
+                    <div class="col-sm skip_no_hospital" hidden="">
+                       <!-- this -->
+                       <h6 style="padding-bottom: 5px;">HF2. What is the distance of the Barangay Hall to the nearest facility?</h6> <br>
+                               <!-- this name -->
+                              <select  name="hospital_distance" class="form-control hf2" data-skip="hospital" style="margin-bottom: 15px;">
+                                <option value="">Select</option>
+                                <option value="WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="DON'T KNOW">DON'T KNOW</option>                                                  
+                              </select>
+                               <!-- this +name-->
+                              <h6 class="hf2_in_hospital" hidden="">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</h6>
+                                 <input type="text" class="form-control hf2_in_hospital"  name="hospital_distance_in2km" placeholder="Please Specify" hidden="">
+
+                              <!-- this +name-->  
+                              <h6 class="hf2_out_hospital" hidden="">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</h6> 
+                                 <input type="text" class="form-control hf2_out_hospital"  name="hospital_distance_more2km" placeholder="Please Specify" hidden="">    
+                    </div>
+
+                     <!-- this -->
+                    <div class="skip_yes_hospital container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_facility" data-facility="Hospital" data-toggle="modal" data-target="#add_barangay_health_facilities">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_fac_health" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                     <!-- this -->
+                    <div class="col-sm skip_no_hospital" hidden>
+                      <h6>HF5. What institution operates the facility?</h6><br><br>
+                       <!-- this name -->
+                      <select  name="no_hospital_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+                      <br>
+                    </div>          
+
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+
+           <!-- -------2------ -->
+
+
+           <tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>HF1. Does this barangay have atleast one <u>Maternity and Child Clinic?</u></h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="HF1_maternity"  data-val="Yes" data-skip="maternity" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="HF1_maternity"  data-val="No"  data-skip="maternity" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                     <!-- this -->
+                    <div class="col-sm skip_no_maternity" hidden="">
+                       <!-- this -->
+                       <h6 style="padding-bottom: 5px;">HF2. What is the distance of the Barangay Hall to the nearest facility?</h6> <br>
+                               <!-- this name -->
+                              <select  name="maternity_distance" class="form-control hf2" data-skip="maternity" style="margin-bottom: 15px;">
+                                <option value="">Select</option>
+                                <option value="WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="DON'T KNOW">DON'T KNOW</option>                                                  
+                              </select>
+                               <!-- this +name-->
+                              <h6 class="hf2_in_maternity" hidden="">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</h6>
+                                 <input type="text" class="form-control hf2_in_maternity"  name="maternity_distance_in2km" placeholder="Please Specify" hidden="">
+
+                              <!-- this +name-->  
+                              <h6 class="hf2_out_maternity" hidden="">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</h6> 
+                                 <input type="text" class="form-control hf2_out_maternity"  name="maternity_distance_more2km" placeholder="Please Specify" hidden="">    
+                    </div>
+
+                     <!-- this -->
+                    <div class="skip_yes_maternity container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_facility" data-facility="Maternity and Child Clinic" data-toggle="modal" data-target="#add_barangay_health_facilities">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_fac_health" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                     <!-- this -->
+                    <div class="col-sm skip_no_maternity" hidden>
+                      <h6>HF5. What institution operates the facility?</h6><br><br>
+                       <!-- this name -->
+                      <select  name="no_maternity_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+                      <br>
+                    </div>          
+
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+
+
+<!-- --------3--------- -->
+ <tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>HF1. Does this barangay have atleast one <u>Private Medical Clinic?</u></h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="HF1_pclinic"  data-val="Yes" data-skip="pclinic" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="HF1_pclinic"  data-val="No"  data-skip="pclinic" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                     <!-- this -->
+                    <div class="col-sm skip_no_pclinic" hidden="">
+                       <!-- this -->
+                       <h6 style="padding-bottom: 5px;">HF2. What is the distance of the Barangay Hall to the nearest facility?</h6> <br>
+                               <!-- this name -->
+                              <select  name="pclinic_distance" class="form-control hf2" data-skip="pclinic" style="margin-bottom: 15px;">
+                                <option value="">Select</option>
+                                <option value="WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="DON'T KNOW">DON'T KNOW</option>                                                  
+                              </select>
+                               <!-- this +name-->
+                              <h6 class="hf2_in_pclinic" hidden="">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</h6>
+                                 <input type="text" class="form-control hf2_in_pclinic"  name="pclinic_distance_in2km" placeholder="Please Specify" hidden="">
+
+                              <!-- this +name-->  
+                              <h6 class="hf2_out_pclinic" hidden="">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</h6> 
+                                 <input type="text" class="form-control hf2_out_pclinic"  name="pclinic_distance_more2km" placeholder="Please Specify" hidden="">    
+                    </div>
+
+                     <!-- this -->
+                    <div class="skip_yes_pclinic container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_facility" data-facility="Private Medical Clinic" data-toggle="modal" data-target="#add_barangay_health_facilities">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_fac_health" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                     <!-- this -->
+                    <div class="col-sm skip_no_pclinic" hidden>
+                      <h6>HF5. What institution operates the facility?</h6><br><br>
+                       <!-- this name -->
+                      <select  name="no_pclinic_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+                      <br>
+                    </div>          
+
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+
+
+<!-- --------4--------- -->
 
 <tr>
-  <td>B. FLOODING</td>
-    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_flooding"  data-val="Yes" value="Yes" data-col="1"></label></td>
-  <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_flooding"  data-val="No" value="No" data-col="2"></label></td>
-</tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
 
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>HF1. Does this barangay have atleast one <u>Botika ng Barangay?</u></h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="HF1_botikab"  data-val="Yes" data-skip="botikab" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="HF1_botikab"  data-val="No"  data-skip="botikab" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                     <!-- this -->
+                    <div class="col-sm skip_no_botikab" hidden="">
+                       <!-- this -->
+                       <h6 style="padding-bottom: 5px;">HF2. What is the distance of the Barangay Hall to the nearest facility?</h6> <br>
+                               <!-- this name -->
+                              <select  name="botikab_distance" class="form-control hf2" data-skip="botikab" style="margin-bottom: 15px;">
+                                <option value="">Select</option>
+                                <option value="WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="DON'T KNOW">DON'T KNOW</option>                                                  
+                              </select>
+                               <!-- this +name-->
+                              <h6 class="hf2_in_botikab" hidden="">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</h6>
+                                 <input type="text" class="form-control hf2_in_botikab"  name="botikab_distance_in2km" placeholder="Please Specify" hidden="">
+
+                              <!-- this +name-->  
+                              <h6 class="hf2_out_botikab" hidden="">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</h6> 
+                                 <input type="text" class="form-control hf2_out_botikab"  name="botikab_distance_more2km" placeholder="Please Specify" hidden="">    
+                    </div>
+
+                     <!-- this -->
+                    <div class="skip_yes_botikab container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_facility" data-facility="Botika ng Barangay" data-toggle="modal" data-target="#add_barangay_health_facilities">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_fac_health" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                     <!-- this -->
+                    <div class="col-sm skip_no_botikab" hidden>
+                      <h6>HF5. What institution operates the facility?</h6><br><br>
+                       <!-- this name -->
+                      <select  name="no_botikab_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+                      <br>
+                    </div>          
+
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+
+
+<!-- --------5--------- -->
 
 <tr>
-    <td>C. DROUGHT</td>
-    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_drought"  data-val="Yes" value="Yes" data-col="1"></label></td>
-  <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_drought"  data-val="No" value="No" data-col="2"></label></td>
-</tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
 
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>HF1. Does this barangay have atleast one <u>Botika ng Bayan?</u></h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="HF1_baybotika"  data-val="Yes" data-skip="baybotika" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="HF1_baybotika"  data-val="No"  data-skip="baybotika" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                     <!-- this -->
+                    <div class="col-sm skip_no_baybotika" hidden="">
+                       <!-- this -->
+                       <h6 style="padding-bottom: 5px;">HF2. What is the distance of the Barangay Hall to the nearest facility?</h6> <br>
+                               <!-- this name -->
+                              <select  name="baybotika_distance" class="form-control hf2" data-skip="baybotika" style="margin-bottom: 15px;">
+                                <option value="">Select</option>
+                                <option value="WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="DON'T KNOW">DON'T KNOW</option>                                                  
+                              </select>
+                               <!-- this +name-->
+                              <h6 class="hf2_in_baybotika" hidden="">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</h6>
+                                 <input type="text" class="form-control hf2_in_baybotika"  name="baybotika_distance_in2km" placeholder="Please Specify" hidden="">
+
+                              <!-- this +name-->  
+                              <h6 class="hf2_out_baybotika" hidden="">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</h6> 
+                                 <input type="text" class="form-control hf2_out_baybotika"  name="baybotika_distance_more2km" placeholder="Please Specify" hidden="">    
+                    </div>
+
+                     <!-- this -->
+                    <div class="skip_yes_baybotika container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_facility" data-facility="Botika ng Bayan" data-toggle="modal" data-target="#add_barangay_health_facilities">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_fac_health" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                     <!-- this -->
+                    <div class="col-sm skip_no_baybotika" hidden>
+                      <h6>HF5. What institution operates the facility?</h6><br><br>
+                       <!-- this name -->
+                      <select  name="no_baybotika_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+                      <br>
+                    </div>          
+
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+
+
+<!-- --------6--------- -->
 
 <tr>
-  <td>D. EARTHQUAKE</td>
-    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_earthquake"  data-val="Yes" value="Yes" data-col="1"></label></td>
-  <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_earthquake"  data-val="No" value="No" data-col="2"></label></td>
-</tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
 
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>HF1. Does this barangay have atleast one <u>Dental clinic?</u></h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="HF1_dental"  data-val="Yes" data-skip="dental" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="HF1_dental"  data-val="No"  data-skip="dental" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                     <!-- this -->
+                    <div class="col-sm skip_no_dental" hidden="">
+                       <!-- this -->
+                       <h6 style="padding-bottom: 5px;">HF2. What is the distance of the Barangay Hall to the nearest facility?</h6> <br>
+                               <!-- this name -->
+                              <select  name="dental_distance" class="form-control hf2" data-skip="dental" style="margin-bottom: 15px;">
+                                <option value="">Select</option>
+                                <option value="WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="DON'T KNOW">DON'T KNOW</option>                                                  
+                              </select>
+                               <!-- this +name-->
+                              <h6 class="hf2_in_dental" hidden="">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</h6>
+                                 <input type="text" class="form-control hf2_in_dental"  name="dental_distance_in2km" placeholder="Please Specify" hidden="">
+
+                              <!-- this +name-->  
+                              <h6 class="hf2_out_dental" hidden="">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</h6> 
+                                 <input type="text" class="form-control hf2_out_dental"  name="dental_distance_more2km" placeholder="Please Specify" hidden="">    
+                    </div>
+
+                     <!-- this -->
+                    <div class="skip_yes_dental container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_facility" data-facility="Dental Clinic" data-toggle="modal" data-target="#add_barangay_health_facilities">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_fac_health" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                     <!-- this -->
+                    <div class="col-sm skip_no_dental" hidden>
+                      <h6>HF5. What institution operates the facility?</h6><br><br>
+                       <!-- this name -->
+                      <select  name="no_dental_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+                      <br>
+                    </div>          
+
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+
+
+<!-- --------7--------- -->
 
 <tr>
-  <td>E. VOLCANIC ERUPTION</td>
-    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_volcanic"  data-val="Yes" value="Yes" data-col="1"></label></td>
-  <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_volcanic"  data-val="No" value="No" data-col="2"></label></td>
-</tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>HF1. Does this barangay have atleast one <u>COVID-19 Quarantine / Isolation Facility?</u></h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="HF1_covid19iso"  data-val="Yes" data-skip="covid19iso" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="HF1_covid19iso"  data-val="No"  data-skip="covid19iso" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
 
 
+                     <!-- this -->
+                    <div class="col-sm skip_no_covid19iso" hidden="">
+                       <!-- this -->
+                       <h6 style="padding-bottom: 5px;">HF2. What is the distance of the Barangay Hall to the nearest facility?</h6> <br>
+                               <!-- this name -->
+                              <select  name="covid19iso_distance" class="form-control hf2" data-skip="covid19iso" style="margin-bottom: 15px;">
+                                <option value="">Select</option>
+                                <option value="WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="DON'T KNOW">DON'T KNOW</option>                                                  
+                              </select>
+                               <!-- this +name-->
+                              <h6 class="hf2_in_covid19iso" hidden="">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</h6>
+                                 <input type="text" class="form-control hf2_in_covid19iso"  name="covid19iso_distance_in2km" placeholder="Please Specify" hidden="">
 
+                              <!-- this +name-->  
+                              <h6 class="hf2_out_covid19iso" hidden="">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</h6> 
+                                 <input type="text" class="form-control hf2_out_covid19iso"  name="covid19iso_distance_more2km" placeholder="Please Specify" hidden="">    
+                    </div>
+
+                     <!-- this -->
+                    <div class="skip_yes_covid19iso container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_facility" data-facility="COVID-19 Quarantine / Isolation Facility" data-toggle="modal" data-target="#add_barangay_health_facilities">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_fac_health" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                     <!-- this -->
+                    <div class="col-sm skip_no_covid19iso" hidden>
+                      <h6>HF5. What institution operates the facility?</h6><br><br>
+                       <!-- this name -->
+                      <select  name="no_covid19iso_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+                      <br>
+                    </div>          
+
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+
+
+<!-- --------8--------- -->
 <tr>
-  <td>F. LANDSLIDE</td>
-    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_landslide"  data-val="Yes" value="Yes" data-col="1"></label></td>
-  <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_landslide"  data-val="No" value="Yes" data-col="2"></label></td>
-</tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>HF1. Does this barangay have atleast one <u>COVID-19 Testing Center?</u></h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="HF1_covid19testingc"  data-val="Yes" data-skip="covid19testingc" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="HF1_covid19testingc"  data-val="No"  data-skip="covid19testingc" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
 
 
+                     <!-- this -->
+                    <div class="col-sm skip_no_covid19testingc" hidden="">
+                       <!-- this -->
+                       <h6 style="padding-bottom: 5px;">HF2. What is the distance of the Barangay Hall to the nearest facility?</h6> <br>
+                               <!-- this name -->
+                              <select  name="covid19testingc_distance" class="form-control hf2" data-skip="covid19testingc" style="margin-bottom: 15px;">
+                                <option value="">Select</option>
+                                <option value="WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="DON'T KNOW">DON'T KNOW</option>                                                  
+                              </select>
+                               <!-- this +name-->
+                              <h6 class="hf2_in_covid19testingc" hidden="">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</h6>
+                                 <input type="text" class="form-control hf2_in_covid19testingc"  name="covid19testingc_distance_in2km" placeholder="Please Specify" hidden="">
+
+                              <!-- this +name-->  
+                              <h6 class="hf2_out_covid19testingc" hidden="">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</h6> 
+                                 <input type="text" class="form-control hf2_out_covid19testingc"  name="covid19testingc_distance_more2km" placeholder="Please Specify" hidden="">    
+                    </div>
+
+                     <!-- this -->
+                    <div class="skip_yes_covid19testingc container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_facility" data-facility="COVID-19 Testing Center" data-toggle="modal" data-target="#add_barangay_health_facilities">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_fac_health" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                     <!-- this -->
+                    <div class="col-sm skip_no_covid19testingc" hidden>
+                      <h6>HF5. What institution operates the facility?</h6><br><br>
+                       <!-- this name -->
+                      <select  name="no_covid19testingc_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+                      <br>
+                    </div>          
+
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+
+
+<!-- --------9--------- -->
 <tr>
-  <td>G. TSUNAMI</td>
-    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_tsunami"  data-val="Yes" value="Yes" data-col="1"></label></td>
-  <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_tsunami"  data-val="No" value="No" data-col="2"></label></td>
-</tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>HF1. Does this barangay have atleast one <u>Habilitation facility?</u></h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="HF1_habilitation"  data-val="Yes" data-skip="habilitation" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="HF1_habilitation"  data-val="No"  data-skip="habilitation" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
 
 
+                     <!-- this -->
+                    <div class="col-sm skip_no_habilitation" hidden="">
+                       <!-- this -->
+                       <h6 style="padding-bottom: 5px;">HF2. What is the distance of the Barangay Hall to the nearest facility?</h6> <br>
+                               <!-- this name -->
+                              <select  name="habilitation_distance" class="form-control hf2" data-skip="habilitation" style="margin-bottom: 15px;">
+                                <option value="">Select</option>
+                                <option value="WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="DON'T KNOW">DON'T KNOW</option>                                                  
+                              </select>
+                               <!-- this +name-->
+                              <h6 class="hf2_in_habilitation" hidden="">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</h6>
+                                 <input type="text" class="form-control hf2_in_habilitation"  name="habilitation_distance_in2km" placeholder="Please Specify" hidden="">
+
+                              <!-- this +name-->  
+                              <h6 class="hf2_out_habilitation" hidden="">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</h6> 
+                                 <input type="text" class="form-control hf2_out_habilitation"  name="habilitation_distance_more2km" placeholder="Please Specify" hidden="">    
+                    </div>
+
+                     <!-- this -->
+                    <div class="skip_yes_habilitation container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_facility" data-facility="Habilitation facility" data-toggle="modal" data-target="#add_barangay_health_facilities">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_fac_health" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                     <!-- this -->
+                    <div class="col-sm skip_no_habilitation" hidden>
+                      <h6>HF5. What institution operates the facility?</h6><br><br>
+                       <!-- this name -->
+                      <select  name="no_habilitation_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+                      <br>
+                    </div>          
+
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+
+
+<!-- --------10--------- -->
+  <tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>HF1. Does this barangay have atleast one <u>Rehabilitation Center?</u></h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="HF1_rehabilitation"  data-val="Yes" data-skip="rehabilitation" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="HF1_rehabilitation"  data-val="No"  data-skip="rehabilitation" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                     <!-- this -->
+                    <div class="col-sm skip_no_rehabilitation" hidden="">
+                       <!-- this -->
+                       <h6 style="padding-bottom: 5px;">HF2. What is the distance of the Barangay Hall to the nearest facility?</h6> <br>
+                               <!-- this name -->
+                              <select  name="rehabilitation_distance" class="form-control hf2" data-skip="rehabilitation" style="margin-bottom: 15px;">
+                                <option value="">Select</option>
+                                <option value="WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="DON'T KNOW">DON'T KNOW</option>                                                  
+                              </select>
+                               <!-- this +name-->
+                              <h6 class="hf2_in_rehabilitation" hidden="">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</h6>
+                                 <input type="text" class="form-control hf2_in_rehabilitation"  name="rehabilitation_distance_in2km" placeholder="Please Specify" hidden="">
+
+                              <!-- this +name-->  
+                              <h6 class="hf2_out_rehabilitation" hidden="">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</h6> 
+                                 <input type="text" class="form-control hf2_out_rehabilitation"  name="rehabilitation_distance_more2km" placeholder="Please Specify" hidden="">    
+                    </div>
+
+                     <!-- this -->
+                    <div class="skip_yes_rehabilitation container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_facility" data-facility="Rehabilitation Center" data-toggle="modal" data-target="#add_barangay_health_facilities">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_fac_health" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                     <!-- this -->
+                    <div class="col-sm skip_no_rehabilitation" hidden>
+                      <h6>HF5. What institution operates the facility?</h6><br><br>
+                       <!-- this name -->
+                      <select  name="no_rehabilitation_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+                      <br>
+                    </div>          
+
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+
+
+<!-- --------11--------- -->
 <tr>
-  <td>H. STORM SURGE</td>
-    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_storm"  data-val="Yes" value="Yes" data-col="1"></label></td>
-  <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_storm"  data-val="No" value="No" data-col="2"></label></td>
-</tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
 
-<tr>
-  <td>I. FOREST FIRE</td>
-    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_forest"  data-val="Yes" value="Yes" data-col="1"></label></td>
-  <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_forest"  data-val="No" value="No" data-col="2"></label></td>
-</tr>
-
-
-
-<tr>
-  <td>J. FIRE</td>
-    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_fire"  data-val="Yes" value="Yes" data-col="1"></label></td>
-  <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_fire"  data-val="No" value="No" data-col="2"></label></td>
-</tr>
-
-
-
-<tr>
-  <td>K. EPIDEMIC / PANDEMIC</td>
-    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_epidemic"  data-val="Yes" value="Yes" data-col="1"></label></td>
-  <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_epidemic"  data-val="No" value="No" data-col="2"></label></td>
-</tr>
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>HF1. Does this barangay have <u>other health facility?</u> Please specify</h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="HF1_other"  data-val="Yes" data-skip="other" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="HF1_other"  data-val="No"  data-skip="other" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
 
 
-<tr>
-  <td>L. ARMED CONFLICT</td>
-    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_armed"  data-val="Yes" value="Yes" data-col="1"></label></td>
-  <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_armed"  data-val="No" value="No" data-col="2"></label></td>
-</tr>
+                   
+
+                     <!-- this -->
+                    <div class="skip_yes_other container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_facility" data-facility="Other Facilities" data-toggle="modal" data-target="#add_barangay_health_facilities">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_fac_health" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                  
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
 
 
-</table>
-</div>
+<!-- --------12--------- -->
 
-</div>
-
+      </table>
     </div>
+
 
  
-
-<br>
-<br>                  
-<div class="text-left"><h5>
-Other disaster that have a localized early warning system:
-</h5></div>
-<br>           
-
-
-<div class="text-left"><h6>
-<b>M. OTHER DISASTERS
-</b></h6></div> 
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="disaster_early_warning_other_loc"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="disaster_early_warning_other_loc"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>                          
-   
-<div class="disaster_early_warning_repeat" hidden=""> 
-
-<br>                  
-<div class="text-left"><h6>
-<b>Please specify other disaster # 1?
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="disaster_early_warning_other_specify_loc" name="disaster_early_warning_other_specify_loc" placeholder="" >
-</div>
-</div>
-</div>
-
-<br>
 <hr>
+
 <br>
+<i style="color: green" class="">Now, I would like to talk about the education facilities in the barangay.</i><br><br>
 
 
 
-<div class="row">
-  <div class="float-sm-left">
-     <div class="container-fluid" align="left" style="width:100%">
+
+<div class="container-fluid">
     
-
-<table  id="" class="table table-sm table-hover" align="left" style="width:100%">
-<tr>
-  <thead>
-    
-     <th>DP10. Does the barangay have  <br>a disaster contingency plan for: &nbsp&nbsp&nbsp&nbsp&nbsp</th>
-
-    <th>&nbsp&nbsp&nbspYes</th>
-    <th>&nbsp&nbsp&nbspNo</th>
-  </thead>
-    
-   
-</tr>
-<tr>
-    <td>A. TYPHOON</td>
-    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_typhoon_plan"  data-val="Yes" value="Yes" data-col="1"></label></td>
-   <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_typhoon_plan"  data-val="No" value="No" data-col="2"></label></td> 
-</tr>
-
-
-<tr>
-  <td>B. FLOODING</td>
-    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_flooding_plan"  data-val="Yes" value="Yes" data-col="1"></label></td>
-  <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_flooding_plan"  data-val="No" value="No" data-col="2"></label></td>
-</tr>
-
-
-<tr>
-    <td>C. DROUGHT</td>
-    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_drought_plan"  data-val="Yes" value="Yes" data-col="1"></label></td>
-  <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_drought_plan"  data-val="No" value="No" data-col="2"></label></td>
-</tr>
-
-
-<tr>
-  <td>D. EARTHQUAKE</td>
-    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_earthquake_plan"  data-val="Yes" value="Yes" data-col="1"></label></td>
-  <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_earthquake_plan"  data-val="No" value="No" data-col="2"></label></td>
-</tr>
-
-
-<tr>
-  <td>E. VOLCANIC ERUPTION</td>
-    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_volcanic_plan"  data-val="Yes" value="Yes" data-col="1"></label></td>
-  <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_volcanic_plan"  data-val="No" value="No" data-col="2"></label></td>
-</tr>
-
-
-
-<tr>
-  <td>F. LANDSLIDE</td>
-    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_landslide_plan"  data-val="Yes" value="Yes" data-col="1"></label></td>
-  <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_landslide_plan"  data-val="No" value="Yes" data-col="2"></label></td>
-</tr>
-
-
-<tr>
-  <td>G. TSUNAMI</td>
-    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_tsunami_plan"  data-val="Yes" value="Yes" data-col="1"></label></td>
-  <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_tsunami_plan"  data-val="No" value="No" data-col="2"></label></td>
-</tr>
-
-
-<tr>
-  <td>H. STORM SURGE</td>
-    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_storm_plan"  data-val="Yes" value="Yes" data-col="1"></label></td>
-  <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_storm_plan"  data-val="No" value="No" data-col="2"></label></td>
-</tr>
-
-<tr>
-  <td>I. FOREST FIRE</td>
-    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_forest_plan"  data-val="Yes" value="Yes" data-col="1"></label></td>
-  <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_forest_plan"  data-val="No" value="No" data-col="2"></label></td>
-</tr>
-
-
-
-<tr>
-  <td>J. FIRE</td>
-    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_fire_plan"  data-val="Yes" value="Yes" data-col="1"></label></td>
-  <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_fire_plan"  data-val="No" value="No" data-col="2"></label></td>
-</tr>
-
-
-
-<tr>
-  <td>K. EPIDEMIC / PANDEMIC</td>
-    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_epidemic"  data-val="Yes" value="Yes" data-col="1"></label></td>
-  <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_epidemic"  data-val="No" value="No" data-col="2"></label></td>
-</tr>
-
-
-<tr>
-  <td>L. ARMED CONFLICT</td>
-    <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_epidemic_plan"  data-val="Yes" value="Yes" data-col="1"></label></td>
-  <td><label>&nbsp&nbsp&nbsp&nbsp<input type="radio" name="disaster_early_warning_epidemic_plan"  data-val="No" value="No" data-col="2"></label></td>
-</tr>
-
-
-</table>
-</div>
-
-</div>
-
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<br>
-<br>                  
-<div class="text-left"><h5>
-Other disaster that have a disaster contingency plan:
-</h5></div>
-<br>           
-
-       
-<div class="text-left"><h6>
-<b>M. OTHER DISASTERS
-</b></h6></div> 
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="disaster_early_warning_other_plan"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="disaster_early_warning_other_plan"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>                          
-   
-<div class="disaster_early_warning_plan_repeat" hidden=""> 
-
-<br>                  
-<div class="text-left"><h6>
-<b>Please specify other disaster # 1?
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="disaster_early_warning_other_specify_plan" name="disaster_early_warning_other_specify_plan" placeholder="" >
-</div>
-</div>
-</div>
-
-<hr>
-
-<br><br>
-<h5 class="text-left" style="color: "><b>B. SERVICE INSTITUTIONS AND INFRASTRUCTURE - E. DISASTER RISK REDUCTION AND MANAGEMENT</b></h5><br>   
-
-                  
-<div class="text-left"><h5>
-DP11. Does the barangay have evacuation map?
-</h5></div>
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="disaster_evacuation"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="disaster_evacuation"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>                          
-   
-
-<div class="disaster_evacuation_repeat" hidden=""> 
-<br>                  
-<div class="text-left"><h6>
-<b>DP12. For what hazards is the evacuation map used?
-</b></h6></div>  
-
-
-
-<div class="container"> 
-                    <div class="col-sm-10">
-                          <div class="row">
-                            <label>
-                                
-                                     <input class="form-check-input respo_radio" type="checkbox" name="disaster_evacuation_map_use"  data-val="Yes" value="Yes">
-                                  &nbsp&nbsp FLOOD
-                               
-                            </label>
-                        </div>
-
-
-
-                              <div class="row">
-                            <label>
-                                
-                                     <input class="form-check-input respo_radio" type="checkbox" name="disaster_evacuation_map_use"  data-val="Yes" value="Yes">
-                                  &nbsp&nbsp  LANDSLIDE
-                               
-                            </label>
-                        </div> 
-
-
-
-                         <div class="row">
-                            <label>
-                                
-                                     <input class="form-check-input respo_radio" type="checkbox" name="disaster_evacuation_map_use"  data-val="Yes" value="Yes">
-                                  &nbsp&nbsp STORM SURGE
-                               
-                            </label>
-                        </div>
-
-
-
-                         <div class="row">
-                            <label>
-                                
-                                     <input class="form-check-input respo_radio" type="checkbox" name="disaster_evacuation_map_use"  data-val="Yes" value="Yes">
-                                  &nbsp&nbsp EARTHQUAKE
-                               
-                            </label>
-                        </div>
-
-
-
-                         <div class="row">
-                            <label>
-                                
-                                     <input class="form-check-input respo_radio" type="checkbox" name="disaster_evacuation_map_use"  data-val="Yes" value="Yes">
-                                  &nbsp&nbsp TSUNAMI
-                               
-                            </label>
-                        </div>
-
-
-
-                         <div class="row">
-                            <label>
-                                
-                                     <input class="form-check-input respo_radio" type="checkbox" name="disaster_evacuation_map_use"  data-val="Yes" value="Yes">
-                                  &nbsp&nbsp VOLCANIC ERUPTION
-                               
-                            </label>
-                        </div>
-
-
-
-                         <div class="row">
-                            <label>
-                                
-                                     <input class="form-check-input respo_radio" type="checkbox" name="disaster_evacuation_map_use_specify"  data-val="Yes" value="Yes">
-                                  &nbsp&nbsp OTHERS, SPECIFY
-                               
-                            </label>
-                        </div>
-                      </div>
-              </div>  
-
-
-<div class="disaster_evacuation_map_use_specify_repeat" hidden=""> 
-
-<br>                  
-<div class="text-left"><h6>
-<b>Please Specify
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="disaster_evacuation_map_use_specify" name="disaster_evacuation_map_use_specify" placeholder="" >
-</div>
-</div>
-</div>
-
-</div>
-
-
-
-<br>
-<br>                  
-<div class="text-left"><h5>
-DP13. Does the barangay have a hazard map?
-</h5></div>
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="disaster_evacuation1"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="disaster_evacuation1"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>                          
-   
-
-<div class="disaster_evacuation1_repeat" hidden=""> 
-<br>                  
-<div class="text-left"><h6>
-<b>DP14. For what hazards is the hazard map used?
-</b></h6></div>  
-
-
-
-<div class="container"> 
-                    <div class="col-sm-10">
-                          <div class="row">
-                            <label>
-                                
-                                     <input class="form-check-input respo_radio" type="checkbox" name="disaster_evacuation_map_use1"  data-val="Yes" value="Yes">
-                                  &nbsp&nbsp FLOOD
-                               
-                            </label>
-                        </div>
-
-
-
-                              <div class="row">
-                            <label>
-                                
-                                     <input class="form-check-input respo_radio" type="checkbox" name="disaster_evacuation_map_use1"  data-val="Yes" value="Yes">
-                                  &nbsp&nbsp  LANDSLIDE
-                               
-                            </label>
-                        </div> 
-
-
-
-                         <div class="row">
-                            <label>
-                                
-                                     <input class="form-check-input respo_radio" type="checkbox" name="disaster_evacuation_map_use1"  data-val="Yes" value="Yes">
-                                  &nbsp&nbsp STORM SURGE
-                               
-                            </label>
-                        </div>
-
-
-
-                         <div class="row">
-                            <label>
-                                
-                                     <input class="form-check-input respo_radio" type="checkbox" name="disaster_evacuation_map_use1"  data-val="Yes" value="Yes">
-                                  &nbsp&nbsp EARTHQUAKE
-                               
-                            </label>
-                        </div>
-
-
-
-                         <div class="row">
-                            <label>
-                                
-                                     <input class="form-check-input respo_radio" type="checkbox" name="disaster_evacuation_map_use1"  data-val="Yes" value="Yes">
-                                  &nbsp&nbsp TSUNAMI
-                               
-                            </label>
-                        </div>
-
-
-
-                         <div class="row">
-                            <label>
-                                
-                                     <input class="form-check-input respo_radio" type="checkbox" name="disaster_evacuation_map_use1"  data-val="Yes" value="Yes">
-                                  &nbsp&nbsp VOLCANIC ERUPTION
-                               
-                            </label>
-                        </div>
-
-
-
-                         <div class="row">
-                            <label>
-                                
-                                     <input class="form-check-input respo_radio" type="checkbox" name="disaster_evacuation_map_use_specify1"  data-val="Yes" value="Yes">
-                                  &nbsp&nbsp OTHERS, SPECIFY
-                               
-                            </label>
-                        </div>
-                      </div>
-              </div>  
-
-</div>
-<div class="disaster_evacuation_map_use_specify1_repeat" hidden=""> 
-
-<br>                  
-<div class="text-left"><h6>
-<b>Please Specify
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="disaster_evacuation_map_use_specify1" name="disaster_evacuation_map_use_specify1" placeholder="" >
-</div>
-</div>
-</div>
-
-
-<br>
-<br>                  
-<div class="text-left"><h5>
-DP15. In the past 12 months, did the barangay LGU conduct Disaster preparedness seminars (maybe funded by LGU or Non-Government Agency (NGA)?
-</h5></div>
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="lgu_conduct_seminars"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="lgu_conduct_seminars"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>          
-
-
-<br>
-<br>                  
-<div class="text-left"><h5>
-DP16. In the past 12 months, were there disaster kits provided (maybe funded by LGU or NGA) to the barangay LGU?
-</h5></div>
-
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="lgu_disaster_kits"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="lgu_disaster_kits"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>    
-
-
-<br>
-<br>
-<div class="text-left"><h5>
-<b>Local Evacuation Centers
-</b></h5></div>  
-
-
-<br>                
-<div class="text-left"><h5>
-DP17. Does the barangay have an evacuation facility?
-</h5></div>
-
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="disaster_evacuation_facility"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="disaster_evacuation_facility"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>   
-
-
-<div class="disaster_evacuation_facility_repeat" hidden=""> 
-
-<br>                  
-<div class="text-left"><h6>
-<b>DP18. Enumerate the location of evacuation centers in the barangay # 1?
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="disaster_location_evacuation_center" name="disaster_location_evacuation_center" placeholder="" >
-</div>
-</div>
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>DP19. How would you categorize this evacuation center?
-</b></h6></div>   
-
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                  <input class="form-check-input" type="radio" name="disaster_categorize_evacuation_center" data-val="No" value="No">SCHOOL BUILDING<br>  
-                  <input class="form-check-input" type="radio" name="disaster_categorize_evacuation_center" data-val="No" value="No">DEDICATED EVACUATION CENTER<br>
-                    <input class="form-check-input" type="radio"  name="disaster_categorize_evacuation_center" data-val="Yes" value="Yes">OTHERS, SPECIFY<br>
-                 
-                    
-                  
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div> 
-
-<div class="disaster_categorize_evacuation_center_other_repeat" hidden=""> 
-
-<br>                  
-<div class="text-left"><h6>
-<b>Please Specify:
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="disaster_categorize_evacuation_center_other" name="disaster_categorize_evacuation_center_other" placeholder="" >
-</div>
-</div>
-</div>
-
-
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>DP20. What is the capacity number of the evacuation center?
-</b></h6></div>  
-
-
-<div class="form-group row">
-<div class="col-sm-3">
-  <input type="number" class="form-control" id="disaster_capacity_evacuation_center" name="disaster_capacity_evacuation_center" placeholder="" >
-</div>
-</div>
-
-<br>                  
-<div class="text-left"><h6>
-<b>DP21. In which types of disasters is this evacuation center has been used?
-</b></h6></div>  
-
-
-<div class="container"> 
-                    <div class="col-sm-10">
-                          <div class="row">
-                            <label>
-                                
-                                     <input class="form-check-input respo_radio" type="checkbox" name="disaster_used_evacuation_center"  data-val="No" value="No">
-                                  &nbsp&nbsp A. TYPHOON
-                               
-                            </label>
-                        </div>
-
-                              <div class="row">
-                            <label>
-                                
-                                     <input class="form-check-input respo_radio" type="checkbox" name="disaster_used_evacuation_center"  data-val="No" value="No">
-                                  &nbsp&nbsp  B. FLOODING
-                               
-                            </label>
-                        </div>
-
-                        <div class="row">
-                            <label>
-                                
-                                     <input class="form-check-input respo_radio" type="checkbox" name="disaster_used_evacuation_center"  data-val="No" value="No">
-                                  &nbsp&nbsp  C. DROUGHT
-                               
-                            </label>
-                        </div>
-
-
-                         <div class="row">
-                            <label>
-                                
-                                     <input class="form-check-input respo_radio" type="checkbox" name="disaster_used_evacuation_center"  data-val="No" value="No">
-                                  &nbsp&nbsp  D. EARTHQUAKE
-                               
-                            </label>
-                        </div> 
-
-
-                         <div class="row">
-                            <label>
-                                
-                                     <input class="form-check-input respo_radio" type="checkbox" name="disaster_used_evacuation_center"  data-val="No" value="No">
-                                  &nbsp&nbsp  E. VOLCANIC ERUPTION
-                               
-                            </label>
-                        </div>
-                    
-                     <div class="row">
-                            <label>
-                                
-                                     <input class="form-check-input respo_radio" type="checkbox" name="disaster_used_evacuation_center"  data-val="No" value="No">
-                                  &nbsp&nbsp  F. LANDSLIDE
-                               
-                            </label>
-                        </div>
-                    
-                     <div class="row">
-                            <label>
-                                
-                                     <input class="form-check-input respo_radio" type="checkbox" name="disaster_used_evacuation_center"  data-val="No" value="No">
-                                  &nbsp&nbsp  G. TSUNAMI
-                               
-                            </label>
-                        </div>
-                    
-                        <div class="row">
-                            <label>
-                                
-                                     <input class="form-check-input respo_radio" type="checkbox" name="disaster_used_evacuation_center"  data-val="No" value="No">
-                                  &nbsp&nbsp  H. FOREST FIRE
-                               
-                            </label>
-                        </div> 
-
-
-                         <div class="row">
-                            <label>
-                                
-                                     <input class="form-check-input respo_radio" type="checkbox" name="disaster_used_evacuation_center"  data-val="No" value="No">
-                                  &nbsp&nbsp  I. FIRE
-                               
-                            </label>
-                        </div>
-                    
-                         <div class="row">
-                            <label>
-                                
-                                     <input class="form-check-input respo_radio" type="checkbox" name="disaster_used_evacuation_center"  data-val="No" value="No">
-                                  &nbsp&nbsp  J. EPIDEMIC/PANDEMIC
-                               
-                            </label>
-                        </div>
-                    
-
-                        <div class="row">
-                            <label>
-                                
-                                     <input class="form-check-input respo_radio" type="checkbox" name="disaster_used_evacuation_center"  data-val="No" value="No">
-                                  &nbsp&nbsp  K. ARMED CONFLICT
-                               
-                            </label>
-                        </div>
-                    
-
-                     <div class="row">
-                            <label>
-                                
-                                     <input class="form-check-input respo_radio" type="checkbox" name="disaster_used_evacuation_center"  data-val="Yes" value="Yes">
-                                  &nbsp&nbsp  L. OTHERS, SPECIFY
-                               
-                            </label>
-                        </div>
-                    
-
-                     <div class="row">
-                            <label>
-                                
-                                     <input class="form-check-input respo_radio" type="checkbox" name="disaster_used_evacuation_center"  data-val="No" value="No">
-                                  &nbsp&nbsp  M. NOT YET USED
-                               
-                            </label>
-                        </div>
-                    
-                      </div>
-              </div>   
-
- <div class="disaster_used_evacuation_center_repeat" hidden=""> 
-
-<br>                  
-<div class="text-left"><h6>
-<b>Please Specify
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="disaster_used_evacuation_center_other" name="disaster_used_evacuation_center_other" placeholder="" >
-</div>
-</div>
-</div>   
-
-<br>                  
-<div class="text-left"><h6>
-<b>DP22. Does the facility have access to safe drinking water?
-</b></h6></div>   
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="disaster_has_safe_water"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="disaster_has_safe_water"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>  
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>DP23. Does the facility have access to sanitary toilets?
-</b></h6></div>   
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="disaster_has_sanitary_toilets"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="disaster_has_sanitary_toilets"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>  
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>DP24. Does the facility have an operational hand-washing area?
-</b></h6></div>   
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="disaster_has_handwashing_area"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="disaster_has_handwashing_area"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>  
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>DP25. Does the facility have a disinfection area?
-</b></h6></div>   
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="disaster_has_disinfection_area"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="disaster_has_disinfection_area"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>  
-
-<br>                  
-<div class="text-left"><h6>
-<b>DP26. Does the facility have medical kits?
-</b></h6></div>   
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="disaster_has_medicalkits"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="disaster_has_medicalkits"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>  
-
-</div>
-
-
-<br>             
-<div class="text-left"><h6>
-<b>Time and Date Ended:
-</b></h6></div>
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="date" class="form-control" id="barangay_official_website_url" name="barangay_official_website_url" placeholder="" > 
-  <input type="Time" class="form-control" id="barangay_official_website_url" name="barangay_official_website_url" placeholder="" >
-</div>
-</div>
-<br>
-
-<hr>
-
-<br>
-
-<h4 class="text-left" style="color: white; background-color: #2277bd">PART II. BARANGAY LGU AND RECORDS-BASED DATA
-A. GENERAL INFORMATION ABOUT THE BARANGAY LOCAL GOVERNMENT UNIT</h4><br>
-
-
-
-<br>                  
-<div class="text-left"><h5>
-<b>Ages of Barangay Officials</b>
-</h5></div>
-
-
-<br>                  
-
-<h6 class="text-left" style="color: blue"><b>A. CAPTAIN</b></h6>
-<div class="text-left"><h5>
-A1. How many are males aged for Captain as of April 01, 2020? Please input a number.
-</h5></div>
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>15 to 30 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_1a" name="gi_male_1a" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>31 to 59 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_1b" name="gi_male_1b" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>60 and above
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_1c" name="gi_male_1c" placeholder="" >
-</div>
-</div>
-
-
-<br>
-<div class="text-left"><h5>
-A2. How many are females aged for Captain as of April 01, 2020? Please input a number.
-</h5></div>
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>15 to 30 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_1a" name="gi_female_1a" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>31 to 59 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_1b" name="gi_female_1b" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>60 and above
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_1c" name="gi_female_1c" placeholder="" >
-</div>
-</div>
-<br>
-<hr>
-
-<br>
-<h6 class="text-left" style="color: blue"><b>B. KAGAWAD</b></h6>
-<div class="text-left"><h5>
-A1. How many are males aged for Kagawad as of April 01, 2020? Please input a number.
-</h5></div>
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>15 to 30 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_1a" name="gi_male_2a" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>31 to 59 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_1b" name="gi_male_2b" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>60 and above
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_1c" name="gi_male_2c" placeholder="" >
-</div>
-</div>
-
-
-<br>
-<div class="text-left"><h5>
-A2. How many are females aged for Kagawad as of April 01, 2020? Please input a number.
-</h5></div> 
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>15 to 30 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_1a" name="gi_female_2a" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>31 to 59 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_1b" name="gi_female_2b" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>60 and above
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_1c" name="gi_female_2c" placeholder="" >
-</div>
-</div>
-<br>
-
-<hr>
-
-<br>
-<h6 class="text-left" style="color: blue"><b>C. SECRETARY</b></h6>
-<div class="text-left"><h5>
-A1. How many are males aged for Secretary as of April 01, 2020? Please input a number.
-</h5></div>
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>15 to 30 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_3a" name="gi_male_3a" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>31 to 59 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_3b" name="gi_male_3b" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>60 and above
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_3c" name="gi_male_3c" placeholder="" >
-</div>
-</div>
-
-
-<br>
-<div class="text-left"><h5>
-A2. How many are females aged for Secretary as of April 01, 2020? Please input a number.
-</h5></div> 
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>15 to 30 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_3a" name="gi_female_3a" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>31 to 59 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_3b" name="gi_female_3b" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>60 and above
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_3c" name="gi_female_3c" placeholder="" >
-</div>
-</div>
-<br>
-
-<hr>
-
-<br>
-<h6 class="text-left" style="color: blue"><b>D. TREASURER</b></h6>
-<div class="text-left"><h5>
-A1. How many are males aged for Treasurer as of April 01, 2020? Please input a number.
-</h5></div>
-
-<br>                  
-<div class="text-left"><h6>
-<b>15 to 30 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_4a" name="gi_male_4a" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>31 to 59 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_4b" name="gi_male_4b" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>60 and above
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_4c" name="gi_male_4c" placeholder="" >
-</div>
-</div>
-
-
-<br>
-<div class="text-left"><h5>
-A2. How many are females aged for Treasurer as of April 01, 2020? Please input a number.
-</h5></div> 
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>15 to 30 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_4a" name="gi_female_4a" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>31 to 59 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_4b" name="gi_female_4b" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>60 and above
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_4c" name="gi_female_4c" placeholder="" >
-</div>
-</div>
-<br>
-
-<hr>
-
-<br>
-<h6 class="text-left" style="color: blue"><b>E. TANOD</b></h6>
-<div class="text-left"><h5>
-A1. How many are males aged for Tanod as of April 01, 2020? Please input a number.
-</h5></div>
-
-<br>                  
-<div class="text-left"><h6>
-<b>15 to 30 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_5a" name="gi_male_5a" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>31 to 59 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_5b" name="gi_male_5b" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>60 and above
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_5c" name="gi_male_5c" placeholder="" >
-</div>
-</div>
-
-
-<br>
-<div class="text-left"><h5>
-A2. How many are females aged for Tanod as of April 01, 2020? Please input a number.
-</h5></div> 
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>15 to 30 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_5a" name="gi_female_5a" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>31 to 59 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_5b" name="gi_female_5b" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>60 and above
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_5c" name="gi_female_5c" placeholder="" >
-</div>
-</div>
-<br>
-
-<hr>
-
-<br>
-<h6 class="text-left" style="color: blue"><b>F. HEALTH WORKER (DOCTOR / NURSE)</b></h6>
-<div class="text-left"><h5>
-A1. How many are males aged for Health Worker (Doctor / Nurse) as of April 01, 2020? Please input a number.
-</h5></div>
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>15 to 30 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_6a" name="gi_male_6a" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>31 to 59 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_6b" name="gi_male_6b" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>60 and above
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_6c" name="gi_male_6c" placeholder="" >
-</div>
-</div>
-
-
-<br>
-<div class="text-left"><h5>
-A2. How many are females aged for Health Worker (Doctor / Nurse) as of April 01, 2020? Please input a number.
-</h5></div> 
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>15 to 30 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_6a" name="gi_female_6a" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>31 to 59 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_6b" name="gi_female_6b" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>60 and above
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_6c" name="gi_female_6c" placeholder="" >
-</div>
-</div>
-<br>
-
-<hr>
-
-
-<br>
-<h6 class="text-left" style="color: blue"><b>G. NUTRITION SCHOLAR</b></h6>
-<div class="text-left"><h5>
-A1. How many are males aged for Nutrition Scholar as of April 01, 2020? Please input a number.
-</h5></div>
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>15 to 30 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_7a" name="gi_male_7a" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>31 to 59 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_7b" name="gi_male_7b" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>60 and above
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_7c" name="gi_male_7c" placeholder="" >
-</div>
-</div>
-
-
-<br>
-<div class="text-left"><h5>
-A2. How many are females aged for Nutrition Scholar as of April 01, 2020? Please input a number.
-</h5></div> 
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>15 to 30 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_7a" name="gi_female_7a" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>31 to 59 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_7b" name="gi_female_7b" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>60 and above
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_7c" name="gi_female_7c" placeholder="" >
-</div>
-</div>
-<br>
-
-<hr>
-
-<br>
-<h6 class="text-left" style="color: blue"><b>H. PUROK LEADER</b></h6>
-<div class="text-left"><h5>
-A1. How many are males aged for Purok Leader as of April 01, 2020? Please input a number.
-</h5></div>
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>15 to 30 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_8a" name="gi_male_8a" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>31 to 59 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_8b" name="gi_male_8b" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>60 and above
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_8c" name="gi_male_8c" placeholder="" >
-</div>
-</div>
-
-
-<br>
-<div class="text-left"><h5>
-A2. How many are females aged for Purok Leader as of April 01, 2020? Please input a number.
-</h5></div> 
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>15 to 30 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_8a" name="gi_female_8a" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>31 to 59 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_8b" name="gi_female_8b" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>60 and above
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_8c" name="gi_female_8c" placeholder="" >
-</div>
-</div>
-<br>
-
-<hr>
-
-<br>
-<h6 class="text-left" style="color: blue"><b>I. ENR OFFICER</b></h6>
-<div class="text-left"><h5>
-A1. How many are males aged for ENR Officer as of April 01, 2020? Please input a number.
-</h5></div>
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>15 to 30 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_9a" name="gi_male_9a" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>31 to 59 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_9b" name="gi_male_9b" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>60 and above
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_9c" name="gi_male_9c" placeholder="" >
-</div>
-</div>
-
-
-<br>
-<div class="text-left"><h5>
-A2. How many are females aged for ENR Officer as of April 01, 2020? Please input a number.
-</h5></div> 
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>15 to 30 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_9a" name="gi_female_9a" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>31 to 59 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_9b" name="gi_female_9b" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>60 and above
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_9c" name="gi_female_9c" placeholder="" >
-</div>
-</div>
-<br>
-
-<hr>
-
-<br>
-<h6 class="text-left" style="color: blue"><b>J. LIBRARIAN</b></h6>
-<div class="text-left"><h5>
-A1. How many are males aged for Librarian as of April 01, 2020? Please input a number.
-</h5></div>
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>15 to 30 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_10a" name="gi_male_10a" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>31 to 59 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_10b" name="gi_male_10b" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>60 and above
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_10c" name="gi_male_10c" placeholder="" >
-</div>
-</div>
-
-
-<br>
-<div class="text-left"><h5>
-A2. How many are females aged for Librarian as of April 01, 2020? Please input a number.
-</h5></div> 
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>15 to 30 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_10a" name="gi_female_10a" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>31 to 59 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_10b" name="gi_female_10b" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>60 and above
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_10c" name="gi_female_10c" placeholder="" >
-</div>
-</div>
-<br>
-
-<hr>
-
-<br>
-<h6 class="text-left" style="color: blue"><b>K. DAY CARE WORKER</b></h6>
-<div class="text-left"><h5>
-A1. How many are males aged for Day Care Worker as of April 01, 2020? Please input a number.
-</h5></div>
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>15 to 30 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_11a" name="gi_male_11a" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>31 to 59 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_11b" name="gi_male_11b" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>60 and above
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_11c" name="gi_male_11c" placeholder="" >
-</div>
-</div>
-
-
-<br>
-<div class="text-left"><h5>
-A2. How many are females aged for Day Care Worker as of April 01, 2020? Please input a number.
-</h5></div> 
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>15 to 30 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_12a" name="gi_female_12a" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>31 to 59 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_12b" name="gi_female_12b" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>60 and above
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_12c" name="gi_female_12c" placeholder="" >
-</div>
-</div>
-<br>
-
-<hr>
-
-<br>
-<h6 class="text-left" style="color: blue"><b>L. UTILITY WORKER</b></h6>
-<div class="text-left"><h5>
-A1. How many are males aged for Utility Worker as of April 01, 2020? Please input a number.
-</h5></div>
-
-<br>                  
-<div class="text-left"><h6>
-<b>15 to 30 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_13a" name="gi_male_13a" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>31 to 59 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_13b" name="gi_male_13b" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>60 and above
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_13c" name="gi_male_13c" placeholder="" >
-</div>
-</div>
-
-
-<br>
-<div class="text-left"><h5>
-A2. How many are females aged for Utility Worker as of April 01, 2020? Please input a number.
-</h5></div> 
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>15 to 30 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_13a" name="gi_female_13a" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>31 to 59 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_13b" name="gi_female_13b" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>60 and above
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_13c" name="gi_female_13c" placeholder="" >
-</div>
-</div>
-<br>
-
-<hr>
-
-<br>
-<h6 class="text-left" style="color: blue"><b>M. OTHERS (e.g. MIDWIFE) as of April 01, 2020? PLEASE SPECIFY:</b></h6>
-<div class="text-left"><h6>
-<b>Add Entry?
-</b></h6></div>
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="general_info_others"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="general_info_others"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>                          
-   
-<div class="general_info_others_repeat" hidden=""> 
-
-<br>
-<div class="text-left"><h5>
-Other Barangay Worker:
-</h5></div>
-
+     <table id="table4" class="norm_table cell-border compact table-hover" style="width:100%">
+        <thead>
+            <tr class="text-center">
+                <th wi>B. SERVICE INSTITUTIONS AND INFRASTRUCTURE - EDUCATION FACILITIES</th>
+             
+            </tr>
+        </thead>
+
+          <tr>
+              <td class="text-left">
               
-<div class="text-left"><h6>
-<b>Please specify other barangay worker:
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="general_info_name" name="general_info_name" placeholder="" >
-</div>
-</div>
-<br>
-
-
-<div class="text-left"><h5>
-A1. How many are males aged for as of April 01, 2020? Please input a number.
-</h5></div>
-
-<br>                  
-<div class="text-left"><h6>
-<b>15 to 30 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_14a" name="gi_male_14a" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>31 to 59 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_14b" name="gi_male_14b" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>60 and above
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_14c" name="gi_male_14c" placeholder="" >
-</div>
-</div>
-
-<br>
-<div class="text-left"><h5>
-A2. How many are females aged for as of April 01, 2020? Please input a number.
-</h5></div>
-
-<br>                  
-<div class="text-left"><h6>
-<b>15 to 30 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_14a" name="gi_female_14a" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>31 to 59 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_14b" name="gi_female_14b" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>60 and above
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_14c" name="gi_female_14c" placeholder="" >
-</div>
-</div>
-
-</div>
-
-<br>
-
-<hr>
-
-<br>
-<h5 class="text-left" style="color: "><b>A. GENERAL INFORMATION ABOUT THE BARANGAY LOCAL GOVERNMENT UNIT OTHER DETAILS:</b></h5><br>  
-
-<br>                  
-<div class="text-left"><h5>
-Reference Period:</h5>
-<i style="font-size: 11px; color: gray"> mm/yy - mm/yy</i>
-</h5></div>
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="others_lgu_reference_period" name="others_lgu_reference_period" placeholder="" >
-</div>
-</div>
-
-<br>                  
-<div class="text-left"><h5>Title of Source Document:</h5>
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="others_lgu_source_document" name="others_lgu_source_document" placeholder="" >
-</div>
-</div>
-
-<br>                  
-<div class="text-left"><h5>Data source agency/unit:</h5></div>
-
-<br>
-
-<hr>
-
-<br>                  
-<div class="text-left"><h5><b>A3. ESTABLISHMENTS OF THE BARANGAY</b></h5></div> 
-
-<br>
-<br>                
-<div class="text-left"><h5>
-A3. How many Agriculture, forestry, and fishing establishments are in the barangay as of 01 April 2021?
-</h5></div>
-
-<br>
-<div class="text-left"><h6>
-<b>Agriculture, forestry, and fishing</b></h6></div>  
-
-<br>
-<div class="text-left"><h6>
-<b>Number of establishments</b></h6></div>
-<i style="font-size: 11px; color: gray"> "Please input "0" if none"</i>  
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="agriculture_number_establishments" name="agriculture_number_establishments" placeholder="" >
-</div>
-</div>
-
-<br>
-<br>                
-<div class="text-left"><h5>
-A3. How many Mining and quarrying establishments are in the barangay as of 01 April 2021?
-</h5></div>
-
-<br>
-<div class="text-left"><h6>
-<b>Mining and quarrying</b></h6></div>  
-
-<br>
-<div class="text-left"><h6>
-<b>Number of establishments</b></h6></div>
-<i style="font-size: 11px; color: gray"> "Please input "0" if none"</i>  
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="mining_number_establishments" name="mining_number_establishments" placeholder="" >
-</div>
-</div>
-
-
-<br>
-<br>                
-<div class="text-left"><h5>
-A3. How many Manufacturing establishments are in the barangay as of 01 April 2021?
-</h5></div>
-
-<br>
-<div class="text-left"><h6>
-<b>Manufacturing</b></h6></div>  
-
-<br>
-<div class="text-left"><h6>
-<b>Number of establishments</b></h6></div>
-<i style="font-size: 11px; color: gray"> "Please input "0" if none"</i>  
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="manufacturing_number_establishments" name="manufacturing_number_establishments" placeholder="" >
-</div>
-</div>
-
-
-<br>
-<br>                
-<div class="text-left"><h5>
-A3. How many Electricity, gas, steam, and air conditioning supply establishments are in the barangay as of 01 April 2021?
-</h5></div>
-
-<br>
-<div class="text-left"><h6>
-<b>Electricity, gas, steam, and air conditioning supply</b></h6></div>  
-
-<br>
-<div class="text-left"><h6>
-<b>Number of establishments</b></h6></div>
-<i style="font-size: 11px; color: gray"> "Please input "0" if none"</i>  
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="electricity_number_establishments" name="electricity_number_establishments" placeholder="" >
-</div>
-</div>
-
-
-<br>
-<br>                
-<div class="text-left"><h5>
-A3. How many Water supply, sewerage, waste management and remediation activities establishments are in the barangay as of 01 April 2021?
-</h5></div>
-
-<br>
-<div class="text-left"><h6>
-<b>Water supply, sewerage, waste management and remediation activities</b></h6></div>  
-
-<br>
-<div class="text-left"><h6>
-<b>Number of establishments</b></h6></div>
-<i style="font-size: 11px; color: gray"> "Please input "0" if none"</i>  
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="water_number_establishments" name="water_number_establishments" placeholder="" >
-</div>
-</div>
-
-
-<br>
-<br>                
-<div class="text-left"><h5>
-A3. How many Construction establishments are in the barangay as of 01 April 2021?
-</h5></div>
-
-<br>
-<div class="text-left"><h6>
-<b>Construction</b></h6></div>  
-
-<br>
-<div class="text-left"><h6>
-<b>Number of establishments</b></h6></div>
-<i style="font-size: 11px; color: gray"> "Please input "0" if none"</i>  
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="construction_number_establishments" name="construction_number_establishments" placeholder="" >
-</div>
-</div>
-
-
-<br>
-<br>                
-<div class="text-left"><h5>
-A3. How many Wholesale and retail trade; repair of motor vehicles and motorcycles establishments are in the barangay as of 01 April 2021?
-</h5></div>
-
-<br>
-<div class="text-left"><h6>
-<b>Wholesale and retail trade; repair of motor vehicles and motorcycles</b></h6></div>  
-
-<br>
-<div class="text-left"><h6>
-<b>Number of establishments</b></h6></div>
-<i style="font-size: 11px; color: gray"> "Please input "0" if none"</i>  
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="wholesale_number_establishments" name="wholesale_number_establishments" placeholder="" >
-</div>
-</div>
-
-
-<br>
-<br>                
-<div class="text-left"><h5>
-A3. How many Transportation and storage establishments are in the barangay as of 01 April 2021?
-</h5></div>
-
-<br>
-<div class="text-left"><h6>
-<b>Transportation and storage</b></h6></div>  
-
-<br>
-<div class="text-left"><h6>
-<b>Number of establishments</b></h6></div>
-<i style="font-size: 11px; color: gray"> "Please input "0" if none"</i>  
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="transportation_number_establishments" name="transportation_number_establishments" placeholder="" >
-</div>
-</div>
-
-
-<br>
-<br>                
-<div class="text-left"><h5>
-A3. How many Accommodation and food service activities establishments are in the barangay as of 01 April 2021?
-</h5></div>
-
-<br>
-<div class="text-left"><h6>
-<b>Accommodation and food service activities</b></h6></div>  
-
-<br>
-<div class="text-left"><h6>
-<b>Number of establishments</b></h6></div>
-<i style="font-size: 11px; color: gray"> "Please input "0" if none"</i>  
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="accommodation_number_establishments" name="accommodation_number_establishments" placeholder="" >
-</div>
-</div>
-
-
-<br>
-<br>                
-<div class="text-left"><h5>
-A3. How many Information and communication establishments are in the barangay as of 01 April 2021?
-</h5></div>
-
-<br>
-<div class="text-left"><h6>
-<b>Information and communication</b></h6></div>  
-
-<br>
-<div class="text-left"><h6>
-<b>Number of establishments</b></h6></div>
-<i style="font-size: 11px; color: gray"> "Please input "0" if none"</i>  
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="information_number_establishments" name="information_number_establishments" placeholder="" >
-</div>
-</div>
-
-
-<br>
-<br>                
-<div class="text-left"><h5>
-A3. How many Financial and insurance activities establishments are in the barangay as of 01 April 2021?
-</h5></div>
-
-<br>
-<div class="text-left"><h6>
-<b>Financial and insurance activities</b></h6></div>  
-
-<br>
-<div class="text-left"><h6>
-<b>Number of establishments</b></h6></div>
-<i style="font-size: 11px; color: gray"> "Please input "0" if none"</i>  
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="financial_number_establishments" name="financial_number_establishments" placeholder="" >
-</div>
-</div>
-
-
-<br>
-<br>                
-<div class="text-left"><h5>
-A3. How many Real estate activities establishments are in the barangay as of 01 April 2021?
-</h5></div>
-
-<br>
-<div class="text-left"><h6>
-<b>Real estate activities</b></h6></div>  
-
-<br>
-<div class="text-left"><h6>
-<b>Number of establishments</b></h6></div>
-<i style="font-size: 11px; color: gray"> "Please input "0" if none"</i>  
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="realestate_number_establishments" name="realestate_number_establishments" placeholder="" >
-</div>
-</div>
-
-
-<br>
-<br>                
-<div class="text-left"><h5>
-A3. How many Professional, scientific, and technical services establishments are in the barangay as of 01 April 2021?
-</h5></div>
-
-<br>
-<div class="text-left"><h6>
-<b>Professional, scientific, and technical services</b></h6></div>  
-
-<br>
-<div class="text-left"><h6>
-<b>Number of establishments</b></h6></div>
-<i style="font-size: 11px; color: gray"> "Please input "0" if none"</i>  
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="professional_number_establishments" name="professional_number_establishments" placeholder="" >
-</div>
-</div>
-
-
-<br>
-<br>                
-<div class="text-left"><h5>
-A3. How many Administrative and support service activities establishments are in the barangay as of 01 April 2021?
-</h5></div>
-
-<br>
-<div class="text-left"><h6>
-<b>Administrative and support service activities</b></h6></div>  
-
-<br>
-<div class="text-left"><h6>
-<b>Number of establishments</b></h6></div>
-<i style="font-size: 11px; color: gray"> "Please input "0" if none"</i>  
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="administrative_number_establishments" name="administrative_number_establishments" placeholder="" >
-</div>
-</div>
-
-
-<br>
-<br>                
-<div class="text-left"><h5>
-A3. How many Public administration and defense; compulsory social security establishments are in the barangay as of 01 April 2021?
-</h5></div>
-
-<br>
-<div class="text-left"><h6>
-<b>Public administration and defense; compulsory social security</b></h6></div>  
-
-<br>
-<div class="text-left"><h6>
-<b>Number of establishments</b></h6></div>
-<i style="font-size: 11px; color: gray"> "Please input "0" if none"</i>  
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="public_number_establishments" name="public_number_establishments" placeholder="" >
-</div>
-</div>
-
-
-<br>
-<br>                
-<div class="text-left"><h5>
-A3. How many Education establishments are in the barangay as of 01 April 2021?
-</h5></div>
-
-<br>
-<div class="text-left"><h6>
-<b>Education</b></h6></div>  
-
-<br>
-<div class="text-left"><h6>
-<b>Number of establishments</b></h6></div>
-<i style="font-size: 11px; color: gray"> "Please input "0" if none"</i>  
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="education_number_establishments" name="education_number_establishments" placeholder="" >
-</div>
-</div>
-
-
-<br>
-<br>                
-<div class="text-left"><h5>
-A3. How many Human health and social work activities establishments are in the barangay as of 01 April 2021?
-</h5></div>
-
-<br>
-<div class="text-left"><h6>
-<b>Human health and social work activities</b></h6></div>  
-
-<br>
-<div class="text-left"><h6>
-<b>Number of establishments</b></h6></div>
-<i style="font-size: 11px; color: gray"> "Please input "0" if none"</i>  
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="human_number_establishments" name="human_number_establishments" placeholder="" >
-</div>
-</div>
-
-
-<br>
-<br>                
-<div class="text-left"><h5>
-A3. How many Arts, entertainment, and recreation establishments are in the barangay as of 01 April 2021?
-</h5></div>
-
-<br>
-<div class="text-left"><h6>
-<b>Arts, entertainment, and recreation</b></h6></div>  
-
-<br>
-<div class="text-left"><h6>
-<b>Number of establishments</b></h6></div>
-<i style="font-size: 11px; color: gray"> "Please input "0" if none"</i>  
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="arts_number_establishments" name="arts_number_establishments" placeholder="" >
-</div>
-</div>
-
-
-<br>
-<br>                
-<div class="text-left"><h5>
-A3. How many Other service activities establishments are in the barangay as of 01 April 2021?
-</h5></div>
-
-<br>
-<div class="text-left"><h6>
-<b>Other service activities</b></h6></div>  
-
-<br>
-<div class="text-left"><h6>
-<b>Number of establishments</b></h6></div>
-<i style="font-size: 11px; color: gray"> "Please input "0" if none"</i>  
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="other_number_establishments" name="other_number_establishments" placeholder="" >
-</div>
-</div>
-
-
-<br>
-<br>                
-<div class="text-left"><h5>
-A3. How many Activities of private households as employers and undifferentiated goods and services and producing activities of households for own use establishments are in the barangay as of 01 April 2021?
-</h5></div>
-
-<br>
-<div class="text-left"><h6>
-<b>Activities of private households as employers and undifferentiated goods and services and producing activities of households for own use</b></h6></div>  
-
-<br>
-<div class="text-left"><h6>
-<b>Number of establishments</b></h6></div>
-<i style="font-size: 11px; color: gray"> "Please input "0" if none"</i>  
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="goods_number_establishments" name="goods_number_establishments" placeholder="" >
-</div>
-</div>
-
-
-<br>
-<br>                
-<div class="text-left"><h5>
-A3. How many Activities of extraterritorial organizations and bodies establishments are in the barangay as of 01 April 2021?
-</h5></div>
-
-<br>
-<div class="text-left"><h6>
-<b>Activities of extraterritorial organizations and bodies</b></h6></div>  
-
-<br>
-<div class="text-left"><h6>
-<b>Number of establishments</b></h6></div>
-<i style="font-size: 11px; color: gray"> "Please input "0" if none"</i>  
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="extraterritorial_number_establishments" name="extraterritorial_number_establishments" placeholder="" >
-</div>
-</div>
-
-
-<br>
-<br>                
-<div class="text-left"><h5>
-A3. ESTABLISHMENTS OF THE BARANGAY
-</h5></div>
-
-
-<br>
-<div class="text-left"><h6>
-<b>Reference Period
-</b></h6></div>  
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="extraterritorial_reference_establishments" name="extraterritorial_reference_establishments" placeholder="" >
-</div>
-</div>
-
-
-<br>
-<div class="text-left"><h6>
-<b>Title of source document
-</b></h6></div>  
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="extraterritorial_title_establishments" name="extraterritorial_title_establishments" placeholder="" >
-</div>
-</div>
-
-
-<br>
-<div class="text-left"><h6>
-<b>Data source/agency/unit/office in the barangay
-</b></h6></div>  
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="extraterritorial_data_establishments" name="extraterritorial_data_establishments" placeholder="" >
-</div>
-</div>
-
-
-<br>
-
-</div>
-<br>
-
-<hr>
-
-<br>
-
-<br>
-<h5 class="text-left" style="color: "><b>B. VOLUNTEERISM IN THE BARANGAY</b></h5><br>   
-
-<br>                  
-<div class="text-left"><h5>
-B1. How many volunteers have extended services to the barangay in the past three months?
-</h5></div> 
-
-<br>                  
-<div class="text-left"><h5>
-<b>Sector / Thematic Area</b>
-</h5></div>
-
-<br>                  
-<div class="text-left"><h6>
-<b>A - Agriculture
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="cc1" name="cc1" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>B - Environment
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="cc2" name="cc2" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>C - Health
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="cc3" name="cc3" placeholder="" >
-</div>
-</div>
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>D - Peace and Security
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="cc4" name="cc4" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>E - Industry
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="cc5" name="cc5" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>F - Services
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="cc6" name="cc6" placeholder="" >
-</div>
-</div>
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>G - Education
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="cc7" name="cc7" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>H - Governance
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="cc8" name="cc8" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>I - Job creation/income generation
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="cc11" name="cc11" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>J - Social Services
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="cc12" name="cc12" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>K - Is there other volunteers that have extended to the barangay in the past three months?
-</b></h6></div> 
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="cc13"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="cc13"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>  
-
-<div class="cc13_repeat" hidden=""> 
-<br>                  
-<div class="text-left"><h5>
-Other volunteers that have extended to the barangay
-</h5></div> 
-<br>
-
-<div class="text-left"><h6>
-<b>Please specify Other volunteers that have extended to the barangay # 1
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="cc13_specify" name="cc13_specify" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>Count:
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="cc13_specify_count" name="cc13_specify_count" placeholder="" >
-</div>
-</div>
-</div>
-
-
-<br>
-<br>                  
-<div class="text-left"><h5>
-B2. What are the volunteer service organizations which extended help to the barangay in the past 12 months?
-</h5></div>
-
-<br>                  
-<div class="text-left"><h5>
-<b>Volunteer Service</b>
-</h5></div>
-
-
-<br>                  
-<div class="text-left"><h5>
-Name of Volunteer Service Organization
-</h5></div>
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="name_of_organization_volunteerism" name="name_of_organization_volunteerism" placeholder="" >
-</div>
-</div>
-
-<br>
                 
-<div class="text-left"><h5>
-B3. Sector / Area:
-</h5></div>
+                <div class="">
+                  <div class="row">
 
-
-<div class="container"> 
-                    <div class="col-sm-10">
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>EF1. Does this barangay have atleast one <u>Day care center?</u></h6> 
+                       <div class="container">
                           <div class="row">
-                            <label>
-                                
-                                     <input class="form-check-input respo_radio" type="checkbox" name="name_of_sector_volunteerism"  data-val="Yes" value="Yes">
-                                  &nbsp&nbsp A. Agriculture
-                               
-                            </label>
-                        </div>
-
-                              <div class="row">
-                            <label>
-                                
-                                     <input class="form-check-input respo_radio" type="checkbox" name="name_of_sector_volunteerism"  data-val="Yes" value="Yes">
-                                  &nbsp&nbsp  B. Environment
-                               
-                            </label>
-                        </div>
-
-
-                              <div class="row">
-                            <label>
-                                
-                                     <input class="form-check-input respo_radio" type="checkbox" name="name_of_sector_volunteerism"  data-val="Yes" value="Yes">
-                                  &nbsp&nbsp  C. Health
-                               
-                            </label>
-                        </div>
-
-
-
-                              <div class="row">
-                            <label>
-                                
-                                     <input class="form-check-input respo_radio" type="checkbox" name="name_of_sector_volunteerism"  data-val="Yes" value="Yes">
-                                  &nbsp&nbsp  D. Peace and Security
-                               
-                            </label>
-                        </div>
-
-
-                              <div class="row">
-                            <label>
-                                
-                                     <input class="form-check-input respo_radio" type="checkbox" name="name_of_sector_volunteerism"  data-val="Yes" value="Yes">
-                                  &nbsp&nbsp  E. Industry
-                               
-                            </label>
-                        </div>
-
-
-                              <div class="row">
-                            <label>
-                                
-                                     <input class="form-check-input respo_radio" type="checkbox" name="name_of_sector_volunteerism"  data-val="Yes" value="Yes">
-                                  &nbsp&nbsp  F. Services
-                               
-                            </label>
-                        </div>
-
-
-                              <div class="row">
-                            <label>
-                                
-                                     <input class="form-check-input respo_radio" type="checkbox" name="name_of_sector_volunteerism"  data-val="Yes" value="Yes">
-                                  &nbsp&nbsp  G. Education
-                               
-                            </label>
-                        </div>
-
-
-                              <div class="row">
-                            <label>
-                                
-                                     <input class="form-check-input respo_radio" type="checkbox" name="name_of_sector_volunteerism"  data-val="Yes" value="Yes">
-                                  &nbsp&nbsp  H. Governance
-                               
-                            </label>
-                        </div>
-
-
-                              <div class="row">
-                            <label>
-                                
-                                     <input class="form-check-input respo_radio" type="checkbox" name="name_of_sector_volunteerism"  data-val="Yes" value="Yes">
-                                  &nbsp&nbsp  I. Job creation / income generation
-                               
-                            </label>
-                        </div>
-
-
-                              <div class="row">
-                            <label>
-                                
-                                     <input class="form-check-input respo_radio" type="checkbox" name="name_of_sector_volunteerism"  data-val="Yes" value="Yes">
-                                  &nbsp&nbsp  J. Social Services
-                               
-                            </label>
-                        </div>
-
-
-                              <div class="row">
-                            <label>
-                                
-                                     <input class="form-check-input respo_radio" type="checkbox" name="name_of_sector_volunteerism"  data-val="Yes" value="Yes">
-                                  &nbsp&nbsp  K. Others, Specify
-                               
-                            </label>
-                        </div>
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="EF1_daycc"  data-val="Yes" data-skip="daycc" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="EF1_daycc"  data-val="No"  data-skip="daycc" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
                       </div>
-              </div>  
+                      <br>
+                    </div>
 
 
-<br>
+                     <!-- this -->
+                    <div class="col-sm skip_no_daycc" hidden="">
+                       <!-- this -->
+                       <h6 style="padding-bottom: 5px;">EF2. What is the distance of the Barangay Hall to the nearest facility?</h6> <br>
+                               <!-- this name -->
+                              <select  name="daycc_distance" class="form-control hf2" data-skip="daycc" style="margin-bottom: 15px;">
+                                <option value="">Select</option>
+                                <option value="WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="DON'T KNOW">DON'T KNOW</option>                                                  
+                              </select>
+                               <!-- this +name-->
+                              <h6 class="hf2_in_daycc" hidden="">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6>
+                                 <input type="text" class="form-control hf2_in_daycc"  name="daycc_distance_in2km" placeholder="Please Specify" hidden="">
+
+                              <!-- this +name-->  
+                              <h6 class="hf2_out_daycc" hidden="">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6> 
+                                 <input type="text" class="form-control hf2_out_daycc"  name="daycc_distance_more2km" placeholder="Please Specify" hidden="">    
+                    </div>
+
+                     <!-- this -->
+                    <div class="skip_yes_daycc container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_facility_educ" data-facility="Day Care Center" data-toggle="modal" data-target="#add_barangay_education_facilities">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_fac_education" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                     <!-- this -->
+                    <div class="col-sm skip_no_daycc" hidden>
+                      <h6>EF5. What institution operates the facility?</h6><br><br>
+                       <!-- this name -->
+                      <select  name="no_daycc_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+                      <br>
+                    </div>          
+
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+           <!-- -------1 E Facility--- -->
+
+           <tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>EF1. Does this barangay have atleast one <u>College/University?</u></h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="EF1_college"  data-val="Yes" data-skip="college" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="EF1_college"  data-val="No"  data-skip="college" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                     <!-- this -->
+                    <div class="col-sm skip_no_college" hidden="">
+                       
+                       <h6 style="padding-bottom: 5px;">EF2. What is the distance of the Barangay Hall to the nearest facility?</h6> <br>
+                               <!-- this name -->
+                              <select  name="college_distance" class="form-control hf2" data-skip="college" style="margin-bottom: 15px;">
+                                <option value="">Select</option>
+                                <option value="WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="DON'T KNOW">DON'T KNOW</option>                                                  
+                              </select>
+                               <!-- this +name-->
+                              <h6 class="hf2_in_college" hidden="">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6>
+                                 <input type="text" class="form-control hf2_in_college"  name="college_distance_in2km" placeholder="Please Specify" hidden="">
+
+                              <!-- this +name-->  
+                              <h6 class="hf2_out_college" hidden="">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6> 
+                                 <input type="text" class="form-control hf2_out_college"  name="college_distance_more2km" placeholder="Please Specify" hidden="">    
+                    </div>
+
+                     <!-- this -->
+                    <div class="skip_yes_college container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_facility_educ" data-facility="College/University" data-toggle="modal" data-target="#add_barangay_education_facilities">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_fac_education" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                     <!-- this -->
+                    <div class="col-sm skip_no_college" hidden>
+                      <h6>EF5. What institution operates the facility?</h6><br><br>
+                       <!-- this name -->
+                      <select  name="no_college_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+                      <br>
+                    </div>          
+
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+           <!-- -------2 E Facility--- -->
+
+           <tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>EF1. Does this barangay have atleast one <u>Senior High School?</u></h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="EF1_seniorhigh"  data-val="Yes" data-skip="seniorhigh" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="EF1_seniorhigh"  data-val="No"  data-skip="seniorhigh" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                     <!-- this -->
+                    <div class="col-sm skip_no_seniorhigh" hidden="">
+                       
+                       <h6 style="padding-bottom: 5px;">EF2. What is the distance of the Barangay Hall to the nearest facility?</h6> <br>
+                               <!-- this name -->
+                              <select  name="seniorhigh_distance" class="form-control hf2" data-skip="seniorhigh" style="margin-bottom: 15px;">
+                                <option value="">Select</option>
+                                <option value="WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="DON'T KNOW">DON'T KNOW</option>                                                  
+                              </select>
+                               <!-- this +name-->
+                              <h6 class="hf2_in_seniorhigh" hidden="">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6>
+                                 <input type="text" class="form-control hf2_in_seniorhigh"  name="seniorhigh_distance_in2km" placeholder="Please Specify" hidden="">
+
+                              <!-- this +name-->  
+                              <h6 class="hf2_out_seniorhigh" hidden="">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6> 
+                                 <input type="text" class="form-control hf2_out_seniorhigh"  name="seniorhigh_distance_more2km" placeholder="Please Specify" hidden="">    
+                    </div>
+
+                     <!-- this -->
+                    <div class="skip_yes_seniorhigh container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_facility_educ" data-facility="Senior High School" data-toggle="modal" data-target="#add_barangay_education_facilities">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_fac_education" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                     <!-- this -->
+                    <div class="col-sm skip_no_seniorhigh" hidden>
+                      <h6>EF5. What institution operates the facility?</h6><br><br>
+                       <!-- this name -->
+                      <select  name="no_seniorhigh_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+                      <br>
+                    </div>          
+
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+           <!-- -------3 E Facility--- -->
+
+             <tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>EF1. Does this barangay have atleast one <u>Junior High School?</u></h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="EF1_juniorhigh"  data-val="Yes" data-skip="juniorhigh" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="EF1_juniorhigh"  data-val="No"  data-skip="juniorhigh" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                     <!-- this -->
+                    <div class="col-sm skip_no_juniorhigh" hidden="">
+                       
+                       <h6 style="padding-bottom: 5px;">EF2. What is the distance of the Barangay Hall to the nearest facility?</h6> <br>
+                               <!-- this name -->
+                              <select  name="juniorhigh_distance" class="form-control hf2" data-skip="juniorhigh" style="margin-bottom: 15px;">
+                                <option value="">Select</option>
+                                <option value="WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="DON'T KNOW">DON'T KNOW</option>                                                  
+                              </select>
+                               <!-- this +name-->
+                              <h6 class="hf2_in_juniorhigh" hidden="">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6>
+                                 <input type="text" class="form-control hf2_in_juniorhigh"  name="juniorhigh_distance_in2km" placeholder="Please Specify" hidden="">
+
+                              <!-- this +name-->  
+                              <h6 class="hf2_out_juniorhigh" hidden="">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6> 
+                                 <input type="text" class="form-control hf2_out_juniorhigh"  name="juniorhigh_distance_more2km" placeholder="Please Specify" hidden="">    
+                    </div>
+
+                     <!-- this -->
+                    <div class="skip_yes_juniorhigh container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_facility_educ" data-facility="Junior High School" data-toggle="modal" data-target="#add_barangay_education_facilities">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_fac_education" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                     <!-- this -->
+                    <div class="col-sm skip_no_juniorhigh" hidden>
+                      <h6>EF5. What institution operates the facility?</h6><br><br>
+                       <!-- this name -->
+                      <select  name="no_juniorhigh_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+                      <br>
+                    </div>          
+
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+           <!-- -------4 E Facility--- -->
+
+            <tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>EF1. Does this barangay have atleast one <u>Elementary School?</u></h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="EF1_elem"  data-val="Yes" data-skip="elem" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="EF1_elem"  data-val="No"  data-skip="elem" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                     <!-- this -->
+                    <div class="col-sm skip_no_elem" hidden="">
+                       
+                       <h6 style="padding-bottom: 5px;">EF2. What is the distance of the Barangay Hall to the nearest facility?</h6> <br>
+                               <!-- this name -->
+                              <select  name="elem_distance" class="form-control hf2" data-skip="elem" style="margin-bottom: 15px;">
+                                <option value="">Select</option>
+                                <option value="WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="DON'T KNOW">DON'T KNOW</option>                                                  
+                              </select>
+                               <!-- this +name-->
+                              <h6 class="hf2_in_elem" hidden="">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6>
+                                 <input type="text" class="form-control hf2_in_elem"  name="elem_distance_in2km" placeholder="Please Specify" hidden="">
+
+                              <!-- this +name-->  
+                              <h6 class="hf2_out_elem" hidden="">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6> 
+                                 <input type="text" class="form-control hf2_out_elem"  name="elem_distance_more2km" placeholder="Please Specify" hidden="">    
+                    </div>
+
+                     <!-- this -->
+                    <div class="skip_yes_elem container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_facility_educ" data-facility="Elementary School" data-toggle="modal" data-target="#add_barangay_education_facilities">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_fac_education" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                     <!-- this -->
+                    <div class="col-sm skip_no_elem" hidden>
+                      <h6>EF5. What institution operates the facility?</h6><br><br>
+                       <!-- this name -->
+                      <select  name="no_elem_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+                      <br>
+                    </div>          
+
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+           <!-- -------5 E Facility--- -->
+           <tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>EF1. Does this barangay have atleast one <u>Preschool?</u></h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="EF1_preschool"  data-val="Yes" data-skip="preschool" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="EF1_preschool"  data-val="No"  data-skip="preschool" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                     <!-- this -->
+                    <div class="col-sm skip_no_preschool" hidden="">
+                       
+                       <h6 style="padding-bottom: 5px;">EF2. What is the distance of the Barangay Hall to the nearest facility?</h6> <br>
+                               <!-- this name -->
+                              <select  name="preschool_distance" class="form-control hf2" data-skip="preschool" style="margin-bottom: 15px;">
+                                <option value="">Select</option>
+                                <option value="WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="DON'T KNOW">DON'T KNOW</option>                                                  
+                              </select>
+                               <!-- this +name-->
+                              <h6 class="hf2_in_preschool" hidden="">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6>
+                                 <input type="text" class="form-control hf2_in_preschool"  name="preschool_distance_in2km" placeholder="Please Specify" hidden="">
+
+                              <!-- this +name-->  
+                              <h6 class="hf2_out_preschool" hidden="">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6> 
+                                 <input type="text" class="form-control hf2_out_preschool"  name="preschool_distance_more2km" placeholder="Please Specify" hidden="">    
+                    </div>
+
+                     <!-- this -->
+                    <div class="skip_yes_preschool container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_facility_educ" data-facility="Preschool" data-toggle="modal" data-target="#add_barangay_education_facilities">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_fac_education" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                     <!-- this -->
+                    <div class="col-sm skip_no_preschool" hidden>
+                      <h6>EF5. What institution operates the facility?</h6><br><br>
+                       <!-- this name -->
+                      <select  name="no_preschool_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+                      <br>
+                    </div>          
+
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+           <!-- -------6 E Facility--- -->
+           <tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>EF1. Does this barangay have atleast one <u>SPED school/center?</u></h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="EF1_sped"  data-val="Yes" data-skip="sped" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="EF1_sped"  data-val="No"  data-skip="sped" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                     <!-- this -->
+                    <div class="col-sm skip_no_sped" hidden="">
+                       
+                       <h6 style="padding-bottom: 5px;">EF2. What is the distance of the Barangay Hall to the nearest facility?</h6> <br>
+                               <!-- this name -->
+                              <select  name="sped_distance" class="form-control hf2" data-skip="sped" style="margin-bottom: 15px;">
+                                <option value="">Select</option>
+                                <option value="WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="DON'T KNOW">DON'T KNOW</option>                                                  
+                              </select>
+                               <!-- this +name-->
+                              <h6 class="hf2_in_sped" hidden="">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6>
+                                 <input type="text" class="form-control hf2_in_sped"  name="sped_distance_in2km" placeholder="Please Specify" hidden="">
+
+                              <!-- this +name-->  
+                              <h6 class="hf2_out_sped" hidden="">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6> 
+                                 <input type="text" class="form-control hf2_out_sped"  name="sped_distance_more2km" placeholder="Please Specify" hidden="">    
+                    </div>
+
+                     <!-- this -->
+                    <div class="skip_yes_sped container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_facility_educ" data-facility="SPED School/Center" data-toggle="modal" data-target="#add_barangay_education_facilities">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_fac_education" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                     <!-- this -->
+                    <div class="col-sm skip_no_sped" hidden>
+                      <h6>EF5. What institution operates the facility?</h6><br><br>
+                       <!-- this name -->
+                      <select  name="no_sped_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+                      <br>
+                    </div>          
+
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+           <!-- -------7 E Facility--- -->
+           <tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>EF1. Does this barangay have atleast one <u>TVET Institution/Training Institute?</u></h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="EF1_tvet"  data-val="Yes" data-skip="tvet" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="EF1_tvet"  data-val="No"  data-skip="tvet" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                     <!-- this -->
+                    <div class="col-sm skip_no_tvet" hidden="">
+                       
+                       <h6 style="padding-bottom: 5px;">EF2. What is the distance of the Barangay Hall to the nearest facility?</h6> <br>
+                               <!-- this name -->
+                              <select  name="tvet_distance" class="form-control hf2" data-skip="tvet" style="margin-bottom: 15px;">
+                                <option value="">Select</option>
+                                <option value="WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="DON'T KNOW">DON'T KNOW</option>                                                  
+                              </select>
+                               <!-- this +name-->
+                              <h6 class="hf2_in_tvet" hidden="">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6>
+                                 <input type="text" class="form-control hf2_in_tvet"  name="tvet_distance_in2km" placeholder="Please Specify" hidden="">
+
+                              <!-- this +name-->  
+                              <h6 class="hf2_out_tvet" hidden="">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6> 
+                                 <input type="text" class="form-control hf2_out_tvet"  name="tvet_distance_more2km" placeholder="Please Specify" hidden="">    
+                    </div>
+
+                     <!-- this -->
+                    <div class="skip_yes_tvet container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_facility_educ" data-facility="TVET Institution/Training Institute" data-toggle="modal" data-target="#add_barangay_education_facilities">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_fac_education" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                     <!-- this -->
+                    <div class="col-sm skip_no_tvet" hidden>
+                      <h6>EF5. What institution operates the facility?</h6><br><br>
+                       <!-- this name -->
+                      <select  name="no_tvet_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+                      <br>
+                    </div>          
+
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+           <!-- -------8 E Facility--- -->
+           <tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>EF1. Does this barangay have atleast one <u>Other Education Facility?</u> Please Specify</h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="EF1_other_ef"  data-val="Yes" data-skip="other_ef" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="EF1_other_ef"  data-val="No"  data-skip="other_ef" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                  
+
+                     <!-- this -->
+                    <div class="skip_yes_other_ef container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_facility_educ" data-facility="Other Education Facility" data-toggle="modal" data-target="#add_barangay_education_facilities">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_fac_education" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                                          
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+           <!-- -------9 E Facility--- -->
+
+
+      </table>
+</div> <!-- ---END OF Education Facilities Div Container Fluid-- -->
 
 <hr>
 
 <br>
-<h5 class="text-left" style="color: "><b>C. ROAD NETWORK</b></h5><br>   
-
-<br>
-<div class="text-left"><h5>
-<b>TYPE OF ROAD</b>
-</h5></div>
-
-<br>                  
-<div class="text-left"><h5>
-C1. Are any of the following roads/streets present in the barangay?
-</h5></div>
-<br>
-
-<div class="text-left"><h6>
-<b>C1. Is this present in the barangay? <span style="color: blue"> - A. Paved Concrete</span>
-</b></h6></div>  
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="paved_concrete"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="paved_concrete"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>
-
-
-<div class="paved_concrete_repeat" hidden=""> 
-
-<br>                  
-<div class="text-left"><h6>
-<b>C2. What is the name of the Paved Concrete # 1?
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="paved_concrete_name" name="paved_concrete_name" placeholder="" >
-</div>
-</div>
-
-<br>                  
-<div class="text-left"><h6>
-<b>C3. What is the length of the ? (in kms.)
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="paved_concrete_length" name="paved_concrete_length" placeholder="" >
-</div>
-</div>
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>C4. Who is maintaining the ?
-</b></h6></div>
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                       <input class="form-check-input" type="radio" name="paved_concrete_maintaining" data-val="No" value="No">1 - Private<br> 
-                       <input class="form-check-input" type="radio" name="paved_concrete_maintaining" data-val="No" value="No">2 - National Government<br> 
-                       <input class="form-check-input" type="radio" name="paved_concrete_maintaining" data-val="No" value="No">3 - Provincial Government<br> 
-                       <input class="form-check-input" type="radio" name="paved_concrete_maintaining" data-val="No" value="No">4 - Municipal/City Government<br> 
-                       <input class="form-check-input" type="radio" name="paved_concrete_maintaining" data-val="No" value="No">5 - Barangay<br> 
-                       <input class="form-check-input" type="radio" name="paved_concrete_maintaining" data-val="Yes" value="Yes">6 - Others, specify<br> 
-                       <input class="form-check-input" type="radio" name="paved_concrete_maintaining" data-val="No" value="No">7 - None<br> 
-                       <input class="form-check-input" type="radio" name="paved_concrete_maintaining" data-val="No" value="No">8 - Don't Know<br>
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div> 
-
-<div class="RN5_concrete_others_repeat" hidden=""> 
-
-<br>                  
-<div class="text-left"><h6>
-<b>C4. Others, please specify:
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="RN5_concrete_others" name="RN5_concrete_others" placeholder="" >
-</div>
-</div>
-</div>
-
-<br>                  
-<div class="text-left"><h6>
-<b>C5. What is the present condition of the road? (See Codes Below)
-</b></h6></div>
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                       <input class="form-check-input" type="radio" name="paved_concrete_condition" data-val="No" value="No">1 - Good<br> 
-                       <input class="form-check-input" type="radio" name="paved_concrete_condition" data-val="No" value="No">2 - Fair<br> 
-                       <input class="form-check-input" type="radio" name="paved_concrete_condition" data-val="No" value="No">3 - Poor<br> 
-                       <input class="form-check-input" type="radio" name="paved_concrete_condition" data-val="No" value="No">4 - Bad<br> 
-                       <input class="form-check-input" type="radio" name="paved_concrete_condition" data-val="No" value="No">5 - No assessment<br> 
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div> 
-</div>
-
-<br>
-<br>
-
-<div class="text-left"><h6>
-<b>C1. Is this present in the barangay? <span style="color: blue"> - B. Paved Asphalt</span>
-</b></h6></div>  
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="paved_asphalt"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="paved_asphalt"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>
-
-
-<div class="paved_asphalt_repeat" hidden=""> 
-
-<br>                  
-<div class="text-left"><h6>
-<b>C2. What is the name of the Paved Asphalt # 1?
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="paved_asphalt_name" name="paved_asphalt_name" placeholder="" >
-</div>
-</div>
-
-<br>                  
-<div class="text-left"><h6>
-<b>C3. What is the length of the ? (in kms.)
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="paved_asphalt_length" name="paved_asphalt_length" placeholder="" >
-</div>
-</div>
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>C4. Who is maintaining the ?
-</b></h6></div>
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                       <input class="form-check-input" type="radio" name="paved_asphalt_maintaining" data-val="No" value="No">1 - Private<br> 
-                       <input class="form-check-input" type="radio" name="paved_asphalt_maintaining" data-val="No" value="No">2 - National Government<br> 
-                       <input class="form-check-input" type="radio" name="paved_asphalt_maintaining" data-val="No" value="No">3 - Provincial Government<br> 
-                       <input class="form-check-input" type="radio" name="paved_asphalt_maintaining" data-val="No" value="No">4 - Municipal/City Government<br> 
-                       <input class="form-check-input" type="radio" name="paved_asphalt_maintaining" data-val="No" value="No">5 - Barangay<br> 
-                       <input class="form-check-input" type="radio" name="paved_asphalt_maintaining" data-val="Yes" value="Yes">6 - Others, specify<br> 
-                       <input class="form-check-input" type="radio" name="paved_asphalt_maintaining" data-val="No" value="No">7 - None<br> 
-                       <input class="form-check-input" type="radio" name="paved_asphalt_maintaining" data-val="No" value="No">8 - Don't Know<br>
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div> 
-
-<div class="RN5_asphalt_others_repeat" hidden=""> 
-
-<br>                  
-<div class="text-left"><h6>
-<b>C4. Others, please specify:
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="RN5_asphalt_others" name="RN5_asphalt_others" placeholder="" >
-</div>
-</div>
-</div>
-
-<br>                  
-<div class="text-left"><h6>
-<b>C5. What is the present condition of the road? (See Codes Below)
-</b></h6></div>
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                       <input class="form-check-input" type="radio" name="paved_asphalt_condition" data-val="No" value="No">1 - Good<br> 
-                       <input class="form-check-input" type="radio" name="paved_asphalt_condition" data-val="No" value="No">2 - Fair<br> 
-                       <input class="form-check-input" type="radio" name="paved_asphalt_condition" data-val="No" value="No">3 - Poor<br> 
-                       <input class="form-check-input" type="radio" name="paved_asphalt_condition" data-val="No" value="No">4 - Bad<br> 
-                       <input class="form-check-input" type="radio" name="paved_asphalt_condition" data-val="No" value="No">5 - No assessment<br> 
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div> 
-</div>
-
-
-<br>
-<br>
-
-<div class="text-left"><h6>
-<b>C1. Is this present in the barangay? <span style="color: blue"> - C. Unpaved Gravel</span>
-</b></h6></div>  
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="unpaved_gravel"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="unpaved_gravel"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>
-
-
-<div class="unpaved_gravel_repeat" hidden=""> 
-
-<br>                  
-<div class="text-left"><h6>
-<b>C2. What is the name of the Unpaved Gravel # 1?
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="unpaved_gravel_name" name="unpaved_gravel_name" placeholder="" >
-</div>
-</div>
-
-<br>                  
-<div class="text-left"><h6>
-<b>C3. What is the length of the ? (in kms.)
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="unpaved_gravel_length" name="unpaved_gravel_length" placeholder="" >
-</div>
-</div>
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>C4. Who is maintaining the ?
-</b></h6></div>
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                       <input class="form-check-input" type="radio" name="unpaved_gravel_maintaining" data-val="No" value="No">1 - Private<br> 
-                       <input class="form-check-input" type="radio" name="unpaved_gravel_maintaining" data-val="No" value="No">2 - National Government<br> 
-                       <input class="form-check-input" type="radio" name="unpaved_gravel_maintaining" data-val="No" value="No">3 - Provincial Government<br> 
-                       <input class="form-check-input" type="radio" name="unpaved_gravel_maintaining" data-val="No" value="No">4 - Municipal/City Government<br> 
-                       <input class="form-check-input" type="radio" name="unpaved_gravel_maintaining" data-val="No" value="No">5 - Barangay<br> 
-                       <input class="form-check-input" type="radio" name="unpaved_gravel_maintaining" data-val="Yes" value="Yes">6 - Others, specify<br> 
-                       <input class="form-check-input" type="radio" name="unpaved_gravel_maintaining" data-val="No" value="No">7 - None<br> 
-                       <input class="form-check-input" type="radio" name="unpaved_gravel_maintaining" data-val="No" value="No">8 - Don't Know<br>
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div> 
-
-<div class="RN5_gravel_others_repeat" hidden=""> 
-
-<br>                  
-<div class="text-left"><h6>
-<b>C4. Others, please specify:
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="RN5_gravel_others" name="RN5_gravel_others" placeholder="" >
-</div>
-</div>
-</div>
-
-<br>                  
-<div class="text-left"><h6>
-<b>C5. What is the present condition of the road? (See Codes Below)
-</b></h6></div>
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                       <input class="form-check-input" type="radio" name="unpaved_gravel_condition" data-val="No" value="No">1 - Good<br> 
-                       <input class="form-check-input" type="radio" name="unpaved_gravel_condition" data-val="No" value="No">2 - Fair<br> 
-                       <input class="form-check-input" type="radio" name="unpaved_gravel_condition" data-val="No" value="No">3 - Poor<br> 
-                       <input class="form-check-input" type="radio" name="unpaved_gravel_condition" data-val="No" value="No">4 - Bad<br> 
-                       <input class="form-check-input" type="radio" name="unpaved_gravel_condition" data-val="No" value="No">5 - No assessment<br> 
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div> 
-</div>
-
-<br>
-<br>
-
-
-<div class="text-left"><h6>
-<b>C1. Is this present in the barangay? <span style="color: blue"> - D. Unpaved Earth</span>
-</b></h6></div>  
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="unpaved_earth"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="unpaved_earth"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>
-
-
-<div class="unpaved_earth_repeat" hidden=""> 
-
-<br>                  
-<div class="text-left"><h6>
-<b>C2. What is the name of the Unpaved Earth # 1?
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="unpaved_earth_name" name="unpaved_earth_name" placeholder="" >
-</div>
-</div>
-
-<br>                  
-<div class="text-left"><h6>
-<b>C3. What is the length of the ? (in kms.)
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="unpaved_earth_length" name="unpaved_earth_length" placeholder="" >
-</div>
-</div>
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>C4. Who is maintaining the ?
-</b></h6></div>
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                       <input class="form-check-input" type="radio" name="unpaved_earth_maintaining" data-val="No" value="No">1 - Private<br> 
-                       <input class="form-check-input" type="radio" name="unpaved_earth_maintaining" data-val="No" value="No">2 - National Government<br> 
-                       <input class="form-check-input" type="radio" name="unpaved_earth_maintaining" data-val="No" value="No">3 - Provincial Government<br> 
-                       <input class="form-check-input" type="radio" name="unpaved_earth_maintaining" data-val="No" value="No">4 - Municipal/City Government<br> 
-                       <input class="form-check-input" type="radio" name="unpaved_earth_maintaining" data-val="No" value="No">5 - Barangay<br> 
-                       <input class="form-check-input" type="radio" name="unpaved_earth_maintaining" data-val="Yes" value="Yes">6 - Others, specify<br> 
-                       <input class="form-check-input" type="radio" name="unpaved_earth_maintaining" data-val="No" value="No">7 - None<br> 
-                       <input class="form-check-input" type="radio" name="unpaved_earth_maintaining" data-val="No" value="No">8 - Don't Know<br>
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div> 
-
-<div class="RN5_earth_others_repeat" hidden=""> 
-
-<br>                  
-<div class="text-left"><h6>
-<b>C4. Others, please specify:
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="RN5_earth_others" name="RN5_earth_others" placeholder="" >
-</div>
-</div>
-</div>
-
-<br>                  
-<div class="text-left"><h6>
-<b>C5. What is the present condition of the road? (See Codes Below)
-</b></h6></div>
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                       <input class="form-check-input" type="radio" name="unpaved_earth_condition" data-val="No" value="No">1 - Good<br> 
-                       <input class="form-check-input" type="radio" name="unpaved_earth_condition" data-val="No" value="No">2 - Fair<br> 
-                       <input class="form-check-input" type="radio" name="unpaved_earth_condition" data-val="No" value="No">3 - Poor<br> 
-                       <input class="form-check-input" type="radio" name="unpaved_earth_condition" data-val="No" value="No">4 - Bad<br> 
-                       <input class="form-check-input" type="radio" name="unpaved_earth_condition" data-val="No" value="No">5 - No assessment<br> 
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div> 
-</div>
-
-
-
-
-</form> <!-- SECTION 1 End Form -->
+<i style="color: green" class="">Now, I would like to talk about the service facilities in the barangay.</i><br><br>
+
+<div class="container-fluid">
+    
+     <table id="table5" class="norm_table cell-border compact table-hover" style="width:100%">
+        <thead>
+            <tr class="text-center">
+                <th wi>B. SERVICE INSTITUTIONS AND INFRASTRUCTURE - SERVICE FACILITIES</th>
+             
+            </tr>
+        </thead>
+
+
+        <tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>SF1. Does this barangay have atleast one <u>Multi-purpose Hall?</u></h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="SF1_multi"  data-val="Yes" data-skip="multi" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="SF1_multi"  data-val="No"  data-skip="multi" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                     <!-- this -->
+                    <div class="col-sm skip_no_multi" hidden="">
+                       
+                       <h6 style="padding-bottom: 5px;">SF2. What is the distance of the Barangay Hall to the nearest facility?</h6> <br>
+                               <!-- this name -->
+                              <select  name="multi_distance" class="form-control hf2" data-skip="multi" style="margin-bottom: 15px;">
+                                <option value="">Select</option>
+                                <option value="WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="DON'T KNOW">DON'T KNOW</option>                                                  
+                              </select>
+                               <!-- this +name-->
+                              <h6 class="hf2_in_multi" hidden="">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6>
+                                 <input type="text" class="form-control hf2_in_multi"  name="multi_distance_in2km" placeholder="Please Specify" hidden="">
+
+                              <!-- this +name-->  
+                              <h6 class="hf2_out_multi" hidden="">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6> 
+                                 <input type="text" class="form-control hf2_out_multi"  name="multi_distance_more2km" placeholder="Please Specify" hidden="">    
+                    </div>
+
+                     <!-- this -->
+                    <div class="skip_yes_multi container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_facility_service" data-facility="Multi-Purpose Hall" data-toggle="modal" data-target="#add_barangay_service_facilities">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_fac_service" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                     <!-- this -->
+                    <div class="col-sm skip_no_multi" hidden>
+                      <h6>EF5. What institution operates the facility?</h6><br><br>
+                       <!-- this name -->
+                      <select  name="no_multi_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+                      <br>
+                    </div>          
+
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+           <!-- -------1 Service Facility--- -->
+           <tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>SF1. Does this barangay have atleast one <u>Police Station?</u></h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="SF1_police"  data-val="Yes" data-skip="police" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="SF1_police"  data-val="No"  data-skip="police" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                     <!-- this -->
+                    <div class="col-sm skip_no_police" hidden="">
+                       
+                       <h6 style="padding-bottom: 5px;">SF2. What is the distance of the Barangay Hall to the nearest facility?</h6> <br>
+                               <!-- this name -->
+                              <select  name="police_distance" class="form-control hf2" data-skip="police" style="margin-bottom: 15px;">
+                                <option value="">Select</option>
+                                <option value="WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="DON'T KNOW">DON'T KNOW</option>                                                  
+                              </select>
+                               <!-- this +name-->
+                              <h6 class="hf2_in_police" hidden="">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6>
+                                 <input type="text" class="form-control hf2_in_police"  name="police_distance_in2km" placeholder="Please Specify" hidden="">
+
+                              <!-- this +name-->  
+                              <h6 class="hf2_out_police" hidden="">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6> 
+                                 <input type="text" class="form-control hf2_out_police"  name="police_distance_more2km" placeholder="Please Specify" hidden="">    
+                    </div>
+
+                     <!-- this -->
+                    <div class="skip_yes_police container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_facility_service" data-facility="Police Station" data-toggle="modal" data-target="#add_barangay_service_facilities">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_fac_service" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                     <!-- this -->
+                    <div class="col-sm skip_no_police" hidden>
+                      <h6>EF5. What institution operates the facility?</h6><br><br>
+                       <!-- this name -->
+                      <select  name="no_police_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+                      <br>
+                    </div>          
+
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+           <!-- -------2 Service Facility--- -->
+           <tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>SF1. Does this barangay have atleast one <u>Women's crisis center?</u></h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="SF1_wcc"  data-val="Yes" data-skip="wcc" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="SF1_wcc"  data-val="No"  data-skip="wcc" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                     <!-- this -->
+                    <div class="col-sm skip_no_wcc" hidden="">
+                       
+                       <h6 style="padding-bottom: 5px;">SF2. What is the distance of the Barangay Hall to the nearest facility?</h6> <br>
+                               <!-- this name -->
+                              <select  name="wcc_distance" class="form-control hf2" data-skip="wcc" style="margin-bottom: 15px;">
+                                <option value="">Select</option>
+                                <option value="WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="DON'T KNOW">DON'T KNOW</option>                                                  
+                              </select>
+                               <!-- this +name-->
+                              <h6 class="hf2_in_wcc" hidden="">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6>
+                                 <input type="text" class="form-control hf2_in_wcc"  name="wcc_distance_in2km" placeholder="Please Specify" hidden="">
+
+                              <!-- this +name-->  
+                              <h6 class="hf2_out_wcc" hidden="">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6> 
+                                 <input type="text" class="form-control hf2_out_wcc"  name="wcc_distance_more2km" placeholder="Please Specify" hidden="">    
+                    </div>
+
+                     <!-- this -->
+                    <div class="skip_yes_wcc container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_facility_service" data-facility="Women's crisis center" data-toggle="modal" data-target="#add_barangay_service_facilities">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_fac_service" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                     <!-- this -->
+                    <div class="col-sm skip_no_wcc" hidden>
+                      <h6>EF5. What institution operates the facility?</h6><br><br>
+                       <!-- this name -->
+                      <select  name="no_wcc_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+                      <br>
+                    </div>          
+
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+           <!-- -------3 Service Facility--- -->
+           <tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>SF1. Does this barangay have atleast one <u>Bank?</u></h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="SF1_bank"  data-val="Yes" data-skip="bank" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="SF1_bank"  data-val="No"  data-skip="bank" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                     <!-- this -->
+                    <div class="col-sm skip_no_bank" hidden="">
+                       
+                       <h6 style="padding-bottom: 5px;">SF2. What is the distance of the Barangay Hall to the nearest facility?</h6> <br>
+                               <!-- this name -->
+                              <select  name="bank_distance" class="form-control hf2" data-skip="bank" style="margin-bottom: 15px;">
+                                <option value="">Select</option>
+                                <option value="WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="DON'T KNOW">DON'T KNOW</option>                                                  
+                              </select>
+                               <!-- this +name-->
+                              <h6 class="hf2_in_bank" hidden="">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6>
+                                 <input type="text" class="form-control hf2_in_bank"  name="bank_distance_in2km" placeholder="Please Specify" hidden="">
+
+                              <!-- this +name-->  
+                              <h6 class="hf2_out_bank" hidden="">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6> 
+                                 <input type="text" class="form-control hf2_out_bank"  name="bank_distance_more2km" placeholder="Please Specify" hidden="">    
+                    </div>
+
+                     <!-- this -->
+                    <div class="skip_yes_bank container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_facility_service" data-facility="Bank" data-toggle="modal" data-target="#add_barangay_service_facilities">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_fac_service" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                     <!-- this -->
+                    <div class="col-sm skip_no_bank" hidden>
+                      <h6>EF5. What institution operates the facility?</h6><br><br>
+                       <!-- this name -->
+                      <select  name="no_bank_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+                      <br>
+                    </div>          
+
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+           <!-- -------4 Service Facility--- -->
+            <tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>SF1. Does this barangay have atleast one <u>Fire Station?</u></h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="SF1_fire_station"  data-val="Yes" data-skip="fire_station" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="SF1_fire_station"  data-val="No"  data-skip="fire_station" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                     <!-- this -->
+                    <div class="col-sm skip_no_fire_station" hidden="">
+                       
+                       <h6 style="padding-bottom: 5px;">SF2. What is the distance of the Barangay Hall to the nearest facility?</h6> <br>
+                               <!-- this name -->
+                              <select  name="fire_station_distance" class="form-control hf2" data-skip="fire_station" style="margin-bottom: 15px;">
+                                <option value="">Select</option>
+                                <option value="WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="DON'T KNOW">DON'T KNOW</option>                                                  
+                              </select>
+                               <!-- this +name-->
+                              <h6 class="hf2_in_fire_station" hidden="">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6>
+                                 <input type="text" class="form-control hf2_in_fire_station"  name="fire_station_distance_in2km" placeholder="Please Specify" hidden="">
+
+                              <!-- this +name-->  
+                              <h6 class="hf2_out_fire_station" hidden="">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6> 
+                                 <input type="text" class="form-control hf2_out_fire_station"  name="fire_station_distance_more2km" placeholder="Please Specify" hidden="">    
+                    </div>
+
+                     <!-- this -->
+                    <div class="skip_yes_fire_station container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_facility_service" data-facility="Fire Station" data-toggle="modal" data-target="#add_barangay_service_facilities">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_fac_service" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                     <!-- this -->
+                    <div class="col-sm skip_no_fire_station" hidden>
+                      <h6>EF5. What institution operates the facility?</h6><br><br>
+                       <!-- this name -->
+                      <select  name="no_fire_station_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+                      <br>
+                    </div>          
+
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+           <!-- -------5 Service Facility--- -->
+           <tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>SF1. Does this barangay have atleast one <u>Public plaza/garden/park/sports facility (gymnasium, court, etc)?</u></h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="SF1_plazas"  data-val="Yes" data-skip="plazas" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="SF1_plazas"  data-val="No"  data-skip="plazas" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                     <!-- this -->
+                    <div class="col-sm skip_no_plazas" hidden="">
+                       
+                       <h6 style="padding-bottom: 5px;">SF2. What is the distance of the Barangay Hall to the nearest facility?</h6> <br>
+                               <!-- this name -->
+                              <select  name="plazas_distance" class="form-control hf2" data-skip="plazas" style="margin-bottom: 15px;">
+                                <option value="">Select</option>
+                                <option value="WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="DON'T KNOW">DON'T KNOW</option>                                                  
+                              </select>
+                               <!-- this +name-->
+                              <h6 class="hf2_in_plazas" hidden="">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6>
+                                 <input type="text" class="form-control hf2_in_plazas"  name="plazas_distance_in2km" placeholder="Please Specify" hidden="">
+
+                              <!-- this +name-->  
+                              <h6 class="hf2_out_plazas" hidden="">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6> 
+                                 <input type="text" class="form-control hf2_out_plazas"  name="plazas_distance_more2km" placeholder="Please Specify" hidden="">    
+                    </div>
+
+                     <!-- this -->
+                    <div class="skip_yes_plazas container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_facility_service" data-facility="Parks,Gymnasium, etc." data-toggle="modal" data-target="#add_barangay_service_facilities">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_fac_service" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                     <!-- this -->
+                    <div class="col-sm skip_no_plazas" hidden>
+                      <h6>EF5. What institution operates the facility?</h6><br><br>
+                       <!-- this name -->
+                      <select  name="no_plazas_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+                      <br>
+                    </div>          
+
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+           <!-- -------6 Service Facility--- -->
+           <tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>SF1. Does this barangay have atleast one <u>Go Negosyo Center?</u></h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="SF1_negosyo"  data-val="Yes" data-skip="negosyo" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="SF1_negosyo"  data-val="No"  data-skip="negosyo" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                     <!-- this -->
+                    <div class="col-sm skip_no_negosyo" hidden="">
+                       
+                       <h6 style="padding-bottom: 5px;">SF2. What is the distance of the Barangay Hall to the nearest facility?</h6> <br>
+                               <!-- this name -->
+                              <select  name="negosyo_distance" class="form-control hf2" data-skip="negosyo" style="margin-bottom: 15px;">
+                                <option value="">Select</option>
+                                <option value="WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="DON'T KNOW">DON'T KNOW</option>                                                  
+                              </select>
+                               <!-- this +name-->
+                              <h6 class="hf2_in_negosyo" hidden="">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6>
+                                 <input type="text" class="form-control hf2_in_negosyo"  name="negosyo_distance_in2km" placeholder="Please Specify" hidden="">
+
+                              <!-- this +name-->  
+                              <h6 class="hf2_out_negosyo" hidden="">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6> 
+                                 <input type="text" class="form-control hf2_out_negosyo"  name="negosyo_distance_more2km" placeholder="Please Specify" hidden="">    
+                    </div>
+
+                     <!-- this -->
+                    <div class="skip_yes_negosyo container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_facility_service" data-facility="Go Negosyo Center" data-toggle="modal" data-target="#add_barangay_service_facilities">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_fac_service" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                     <!-- this -->
+                    <div class="col-sm skip_no_negosyo" hidden>
+                      <h6>EF5. What institution operates the facility?</h6><br><br>
+                       <!-- this name -->
+                      <select  name="no_negosyo_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+                      <br>
+                    </div>          
+
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+           <!-- -------7 Service Facility--- -->
+           <tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>SF1. Does this barangay have atleast one <u>Persons with Disabilities Affairs Office?</u></h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="SF1_pwd"  data-val="Yes" data-skip="pwd" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="SF1_pwd"  data-val="No"  data-skip="pwd" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                     <!-- this -->
+                    <div class="col-sm skip_no_pwd" hidden="">
+                       
+                       <h6 style="padding-bottom: 5px;">SF2. What is the distance of the Barangay Hall to the nearest facility?</h6> <br>
+                               <!-- this name -->
+                              <select  name="pwd_distance" class="form-control hf2" data-skip="pwd" style="margin-bottom: 15px;">
+                                <option value="">Select</option>
+                                <option value="WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="DON'T KNOW">DON'T KNOW</option>                                                  
+                              </select>
+                               <!-- this +name-->
+                              <h6 class="hf2_in_pwd" hidden="">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6>
+                                 <input type="text" class="form-control hf2_in_pwd"  name="pwd_distance_in2km" placeholder="Please Specify" hidden="">
+
+                              <!-- this +name-->  
+                              <h6 class="hf2_out_pwd" hidden="">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6> 
+                                 <input type="text" class="form-control hf2_out_pwd"  name="pwd_distance_more2km" placeholder="Please Specify" hidden="">    
+                    </div>
+
+                     <!-- this -->
+                    <div class="skip_yes_pwd container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_facility_service" data-facility="PWD Affairs Office" data-toggle="modal" data-target="#add_barangay_service_facilities">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_fac_service" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                     <!-- this -->
+                    <div class="col-sm skip_no_pwd" hidden>
+                      <h6>EF5. What institution operates the facility?</h6><br><br>
+                       <!-- this name -->
+                      <select  name="no_pwd_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+                      <br>
+                    </div>          
+
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+           <!-- -------8 Service Facility--- -->
+           <tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>SF1. Does this barangay have atleast one <u>Office of Senior Citizens Affairs?</u></h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="SF1_osc_affairs"  data-val="Yes" data-skip="osc_affairs" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="SF1_osc_affairs"  data-val="No"  data-skip="osc_affairs" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                     <!-- this -->
+                    <div class="col-sm skip_no_osc_affairs" hidden="">
+                       
+                       <h6 style="padding-bottom: 5px;">SF2. What is the distance of the Barangay Hall to the nearest facility?</h6> <br>
+                               <!-- this name -->
+                              <select  name="osc_affairs_distance" class="form-control hf2" data-skip="osc_affairs" style="margin-bottom: 15px;">
+                                <option value="">Select</option>
+                                <option value="WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="DON'T KNOW">DON'T KNOW</option>                                                  
+                              </select>
+                               <!-- this +name-->
+                              <h6 class="hf2_in_osc_affairs" hidden="">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6>
+                                 <input type="text" class="form-control hf2_in_osc_affairs"  name="osc_affairs_distance_in2km" placeholder="Please Specify" hidden="">
+
+                              <!-- this +name-->  
+                              <h6 class="hf2_out_osc_affairs" hidden="">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6> 
+                                 <input type="text" class="form-control hf2_out_osc_affairs"  name="osc_affairs_distance_more2km" placeholder="Please Specify" hidden="">    
+                    </div>
+
+                     <!-- this -->
+                    <div class="skip_yes_osc_affairs container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_facility_service" data-facility="Office of Senior Citizen" data-toggle="modal" data-target="#add_barangay_service_facilities">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_fac_service" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                     <!-- this -->
+                    <div class="col-sm skip_no_osc_affairs" hidden>
+                      <h6>EF5. What institution operates the facility?</h6><br><br>
+                       <!-- this name -->
+                      <select  name="no_osc_affairs_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+                      <br>
+                    </div>          
+
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+           <!-- -------9 Service Facility--- -->
+           <tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>SF1. Does this barangay have atleast one <u>Local Council for the Protection of Children Office?</u></h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="SF1_lcpc_office"  data-val="Yes" data-skip="lcpc_office" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="SF1_lcpc_office"  data-val="No"  data-skip="lcpc_office" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                     <!-- this -->
+                    <div class="col-sm skip_no_lcpc_office" hidden="">
+                       
+                       <h6 style="padding-bottom: 5px;">SF2. What is the distance of the Barangay Hall to the nearest facility?</h6> <br>
+                               <!-- this name -->
+                              <select  name="lcpc_office_distance" class="form-control hf2" data-skip="lcpc_office" style="margin-bottom: 15px;">
+                                <option value="">Select</option>
+                                <option value="WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="DON'T KNOW">DON'T KNOW</option>                                                  
+                              </select>
+                               <!-- this +name-->
+                              <h6 class="hf2_in_lcpc_office" hidden="">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6>
+                                 <input type="text" class="form-control hf2_in_lcpc_office"  name="lcpc_office_distance_in2km" placeholder="Please Specify" hidden="">
+
+                              <!-- this +name-->  
+                              <h6 class="hf2_out_lcpc_office" hidden="">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6> 
+                                 <input type="text" class="form-control hf2_out_lcpc_office"  name="lcpc_office_distance_more2km" placeholder="Please Specify" hidden="">    
+                    </div>
+
+                     <!-- this -->
+                    <div class="skip_yes_lcpc_office container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_facility_service" data-facility="Local Council for the Protection of Children" data-toggle="modal" data-target="#add_barangay_service_facilities">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_fac_service" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                     <!-- this -->
+                    <div class="col-sm skip_no_lcpc_office" hidden>
+                      <h6>EF5. What institution operates the facility?</h6><br><br>
+                       <!-- this name -->
+                      <select  name="no_lcpc_office_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+                      <br>
+                    </div>          
+
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+           <!-- -------10 Service Facility--- -->
+           <tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>SF1. Does this barangay have atleast one <u>Cemetery?</u></h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="SF1_cemetery"  data-val="Yes" data-skip="cemetery" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="SF1_cemetery"  data-val="No"  data-skip="cemetery" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                     <!-- this -->
+                    <div class="col-sm skip_no_cemetery" hidden="">
+                       
+                       <h6 style="padding-bottom: 5px;">SF2. What is the distance of the Barangay Hall to the nearest facility?</h6> <br>
+                               <!-- this name -->
+                              <select  name="cemetery_distance" class="form-control hf2" data-skip="cemetery" style="margin-bottom: 15px;">
+                                <option value="">Select</option>
+                                <option value="WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="DON'T KNOW">DON'T KNOW</option>                                                  
+                              </select>
+                               <!-- this +name-->
+                              <h6 class="hf2_in_cemetery" hidden="">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6>
+                                 <input type="text" class="form-control hf2_in_cemetery"  name="cemetery_distance_in2km" placeholder="Please Specify" hidden="">
+
+                              <!-- this +name-->  
+                              <h6 class="hf2_out_cemetery" hidden="">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6> 
+                                 <input type="text" class="form-control hf2_out_cemetery"  name="cemetery_distance_more2km" placeholder="Please Specify" hidden="">    
+                    </div>
+
+                     <!-- this -->
+                    <div class="skip_yes_cemetery container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_facility_service" data-facility="Cemetery" data-toggle="modal" data-target="#add_barangay_service_facilities">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_fac_service" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                     <!-- this -->
+                    <div class="col-sm skip_no_cemetery" hidden>
+                      <h6>EF5. What institution operates the facility?</h6><br><br>
+                       <!-- this name -->
+                      <select  name="no_cemetery_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+                      <br>
+                    </div>          
+
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+           <!-- -------11 Service Facility--- -->
+            <tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>SF1. Does this barangay have atleast one <u>Library?</u></h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="SF1_library"  data-val="Yes" data-skip="library" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="SF1_library"  data-val="No"  data-skip="library" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                     <!-- this -->
+                    <div class="col-sm skip_no_library" hidden="">
+                       
+                       <h6 style="padding-bottom: 5px;">SF2. What is the distance of the Barangay Hall to the nearest facility?</h6> <br>
+                               <!-- this name -->
+                              <select  name="library_distance" class="form-control hf2" data-skip="library" style="margin-bottom: 15px;">
+                                <option value="">Select</option>
+                                <option value="WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="DON'T KNOW">DON'T KNOW</option>                                                  
+                              </select>
+                               <!-- this +name-->
+                              <h6 class="hf2_in_library" hidden="">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6>
+                                 <input type="text" class="form-control hf2_in_library"  name="library_distance_in2km" placeholder="Please Specify" hidden="">
+
+                              <!-- this +name-->  
+                              <h6 class="hf2_out_library" hidden="">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6> 
+                                 <input type="text" class="form-control hf2_out_library"  name="library_distance_more2km" placeholder="Please Specify" hidden="">    
+                    </div>
+
+                     <!-- this -->
+                    <div class="skip_yes_library container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_facility_service" data-facility="Library" data-toggle="modal" data-target="#add_barangay_service_facilities">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_fac_service" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                     <!-- this -->
+                    <div class="col-sm skip_no_library" hidden>
+                      <h6>EF5. What institution operates the facility?</h6><br><br>
+                       <!-- this name -->
+                      <select  name="no_library_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+                      <br>
+                    </div>          
+
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+           <!-- -------12 Service Facility--- -->
+           <tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>SF1. Does this barangay have atleast one <u>Post office or postal service?</u></h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="SF1_postal"  data-val="Yes" data-skip="postal" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="SF1_postal"  data-val="No"  data-skip="postal" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                     <!-- this -->
+                    <div class="col-sm skip_no_postal" hidden="">
+                       
+                       <h6 style="padding-bottom: 5px;">SF2. What is the distance of the Barangay Hall to the nearest facility?</h6> <br>
+                               <!-- this name -->
+                              <select  name="postal_distance" class="form-control hf2" data-skip="postal" style="margin-bottom: 15px;">
+                                <option value="">Select</option>
+                                <option value="WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="DON'T KNOW">DON'T KNOW</option>                                                  
+                              </select>
+                               <!-- this +name-->
+                              <h6 class="hf2_in_postal" hidden="">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6>
+                                 <input type="text" class="form-control hf2_in_postal"  name="postal_distance_in2km" placeholder="Please Specify" hidden="">
+
+                              <!-- this +name-->  
+                              <h6 class="hf2_out_postal" hidden="">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6> 
+                                 <input type="text" class="form-control hf2_out_postal"  name="postal_distance_more2km" placeholder="Please Specify" hidden="">    
+                    </div>
+
+                     <!-- this -->
+                    <div class="skip_yes_postal container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_facility_service" data-facility="Postal Service" data-toggle="modal" data-target="#add_barangay_service_facilities">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_fac_service" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                     <!-- this -->
+                    <div class="col-sm skip_no_postal" hidden>
+                      <h6>EF5. What institution operates the facility?</h6><br><br>
+                       <!-- this name -->
+                      <select  name="no_postal_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+                      <br>
+                    </div>          
+
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+           <!-- -------13 Service Facility--- -->
+           <tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>SF1. Does this barangay have <u>other service facility?</u> Please specify</h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="SF1_sf1_other"  data-val="Yes" data-skip="sf1_other" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="SF1_sf1_other"  data-val="No"  data-skip="sf1_other" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                
+                     <!-- this -->
+                    <div class="skip_yes_sf1_other container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_facility_service" data-facility="Other Service Facility" data-toggle="modal" data-target="#add_barangay_service_facilities">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_fac_service" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+                             
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+           <!-- -------14 Service Facility--- -->
+
+
+      </table>
+  </div> <!-- ---END OF Service Facilities Div Container Fluid-- -->
+
+<br><br><hr>
+<h4 style="color: blue;">---------- END OF SECTION 1 ----------</h4>
+
+
+</form> <!-- Section 1 End Form -->
 
 
 
@@ -8218,6 +5064,227 @@ C1. Are any of the following roads/streets present in the barangay?
 <!-- END OF BARANGAY LIST -->
 
 
+<!-- ADD BARANGAY HEALTH FACILITIES -->
+
+<div class="modal fade" id="add_barangay_health_facilities" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Add Barangay Health Facilities</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+<form method="post" id="submit_table_barangay_fac_health">
+ 
+  <div class="form-group">
+    <label for="">HF3. What is the Name of the Facility?</label>
+    <input type="text" class="form-control" name="barangay_health_facility_name" aria-describedby="" placeholder="">
+   
+  </div>
+
+   <div class="form-group">
+    <label for="">HF4. What is the Address of the Facility?</label>
+    <input type="text" class="form-control" name="barangay_health_facility_address" aria-describedby="" placeholder="">
+   
+  </div>
+
+  <div class="form-group" >
+                      <label>HF5. What institution operates the facility?</label>
+                      <select  name="barangay_health_facility_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+
+  </div>
+
+
+                     <div class="form-group encode_bsn" hidden=""><h6>HF6. EA</h6>
+                     <input type="text" class="form-control"  name="barangay_health_facility_EA" placeholder="" >
+                    </div>
+                     <div class="form-group encode_bsn"  hidden=""><h6>HF7. BSN</h6>
+                      <input type="text" class="form-control"  name="barangay_health_facility_BSN" placeholder="" >
+                    </div>
+                     <div class="form-group encode_bsn"  hidden=""><h6>HF8. FSN</h6>
+                      <input type="text" class="form-control"  name="barangay_health_facility_FSN" placeholder="" >
+                    </div>
+
+  <div class="form-group" hidden=""> 
+    <input type="text" class="form-control" id="health_facilities" name="barangay_health_facility_type" aria-describedby="" placeholder="">   
+  </div>
+
+
+
+</form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary save_tables" data-val="submit_table_barangay_fac_health">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ----- END OF ADD HEALTH FACILITIES---- -->
+
+<!-- ADD BARANGAY EDUCATIONAL FACILITIES -->
+
+<div class="modal fade" id="add_barangay_education_facilities" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Add Barangay Education Facilities</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+<form method="post" id="submit_table_barangay_fac_education">
+ 
+  <div class="form-group">
+    <label for="">EF3. What is the Name of the Facility?</label>
+    <input type="text" class="form-control" name="barangay_education_facility_name" aria-describedby="" placeholder="">
+   
+  </div>
+
+   <div class="form-group">
+    <label for="">EF4. What is the Address of the Facility?</label>
+    <input type="text" class="form-control" name="barangay_education_facility_address" aria-describedby="" placeholder="">
+   
+  </div>
+
+  <div class="form-group" >
+                      <label>EF5. What institution operates the facility?</label>
+                      <select  name="barangay_education_facility_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+
+  </div>
+
+
+                     <div class="form-group encode_bsn" hidden=""><h6>EF6. EA</h6>
+                     <input type="text" class="form-control"   name="barangay_education_facility_EA" placeholder="" >
+                    </div>
+                     <div class="form-group encode_bsn"  hidden=""><h6>EF7. BSN</h6>
+                      <input type="text" class="form-control"  name="barangay_education_facility_BSN" placeholder="" >
+                    </div>
+                     <div class="form-group encode_bsn"  hidden=""><h6>EF8. FSN</h6>
+                      <input type="text" class="form-control"  name="barangay_education_facility_FSN" placeholder="" >
+                    </div>
+
+  <div class="form-group" hidden=""> 
+    <input type="text" class="form-control" id="education_facilities" name="barangay_education_facility_type" aria-describedby="" placeholder="">   
+  </div>
+
+
+
+</form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary save_tables" data-val="submit_table_barangay_fac_education">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- --- END OF ADD EDUCATIONAL FACILITIES--- -->
+
+
+
+
+<!-- ADD BARANGAY SERVICE FACILITIES -->
+
+<div class="modal fade" id="add_barangay_service_facilities" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Add Barangay Service Facilities</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+<form method="post" id="submit_table_barangay_fac_service">
+ 
+  <div class="form-group">
+    <label for="">SF3. What is the Name of the Facility?</label>
+    <input type="text" class="form-control" name="barangay_service_facility_name" aria-describedby="" placeholder="">
+   
+  </div>
+
+   <div class="form-group">
+    <label for="">SF4. What is the Address of the Facility?</label>
+    <input type="text" class="form-control" name="barangay_service_facility_address" aria-describedby="" placeholder="">
+   
+  </div>
+
+  <div class="form-group" >
+                      <label>SF5. What institution operates the facility?</label>
+                      <select  name="barangay_service_facility_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+
+  </div>
+
+
+                     <div class="form-group encode_bsn" hidden=""><h6>SF6. EA</h6>
+                     <input type="text" class="form-control"   name="barangay_service_facility_EA" placeholder="" >
+                    </div>
+                     <div class="form-group encode_bsn"  hidden=""><h6>SF7. BSN</h6>
+                      <input type="text" class="form-control"  name="barangay_service_facility_BSN" placeholder="" >
+                    </div>
+                     <div class="form-group encode_bsn"  hidden=""><h6>SF8. FSN</h6>
+                      <input type="text" class="form-control"  name="barangay_service_facility_FSN" placeholder="" >
+                    </div>
+
+  <div class="form-group" hidden=""> 
+    <input type="text" class="form-control" id="service_facilities" name="barangay_service_facility_type" aria-describedby="" placeholder="">   
+  </div>
+
+
+
+</form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary save_tables" data-val="submit_table_barangay_fac_service">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- --- END OF ADD SERVICE FACILITIES--- -->
 
 </body>
 </html>
