@@ -1,0 +1,12 @@
+CRITICAL - 2021-03-16 02:55:46 --> Unknown column 'DataTables_Table_1_length' in 'field list'
+#0 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(330): mysqli->query('UPDATE `bpq_dat...')
+#1 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `bpq_dat...')
+#2 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `bpq_dat...')
+#3 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2410): CodeIgniter\Database\BaseConnection->query('UPDATE `bpq_dat...', Array, false)
+#4 C:\xampp\htdocs\cbms\app\Controllers\Personnel.php(50): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\CodeIgniter.php(910): App\Controllers\Personnel->save_questionnaire()
+#6 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personnel))
+#7 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\cbms\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\cbms\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#10 {main}
