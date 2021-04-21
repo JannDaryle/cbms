@@ -55,7 +55,7 @@ class Personnel extends BaseController
  		
   }
 
-
+   // THIS
   public function save_data_bpq_tables()
   {
 
@@ -73,7 +73,8 @@ class Personnel extends BaseController
     if(isset($_POST['barangay_list_name']) )
     {
     	$_POST['barangay_list_name_deleted'] = "No";
-    	$_POST['table_name'] = "submit_table_2";
+    	$_POST['table_name'] = "
+    	";
     }
 
     if(isset($_POST['barangay_sitios_name']) )
@@ -104,7 +105,20 @@ class Personnel extends BaseController
     {
     	$_POST['disposal_facility_deleted'] = "No";
     	$_POST['table_name'] = "submit_table_barangay_fac_garbage_waste";
+    } 
+
+     if(isset($_POST['tourism_facility_name']) )
+    {
+    	$_POST['tourism_facility_deleted'] = "No";
+    	$_POST['table_name'] = "submit_table_barangay_fac_tourism_sites";
     }
+
+     if(isset($_POST['transport_facility_name']) )
+    {
+    	$_POST['transport_facility_deleted'] = "No";
+    	$_POST['table_name'] = "submit_table_barangay_fac_transport";
+    }
+
 
       
    
@@ -115,7 +129,8 @@ class Personnel extends BaseController
 	
 	    		
   }
-
+    
+    // THIS
   public function delete_data_bpq_tables()
   {
 
@@ -154,9 +169,19 @@ class Personnel extends BaseController
 	 	$_POST['barangay_service_facility_deleted'] = "Yes";
 	 }
 
-	  if(isset($_POST['disposal_facility_name']))
+	 if(isset($_POST['disposal_facility_name']))
 	 {
 	 	$_POST['disposal_facility_deleted'] = "Yes";
+	 }
+
+	 if(isset($_POST['tourism_facility_name']))
+	 {
+	 	$_POST['tourism_facility_deleted'] = "Yes";
+	 }
+
+	  if(isset($_POST['transport_facility_name']))
+	 {
+	 	$_POST['transport_facility_deleted'] = "Yes";
 	 }
 
 	 return $builder->update($_POST);
