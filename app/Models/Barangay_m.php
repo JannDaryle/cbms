@@ -117,6 +117,35 @@ class Barangay_m extends Model
     }  
 
 
+      public function barangay_tourism_sites_facilities()
+    {
+
+      $session = session();
+      $id = $session->get('uuid');
+
+        $builder = $this->db->table('bpq_tables')->where('uuid', $id)->where('tourism_facility_deleted', 'No')->where('table_name', 'submit_table_barangay_fac_tourism_sites');
+
+        return $builder;
+
+    }  
+
+
+        // THIS
+        public function barangay_transport_sites_facilities()
+    {
+
+      $session = session();
+      $id = $session->get('uuid');
+
+        $builder = $this->db->table('bpq_tables')->where('uuid', $id)->where('transport_facility_deleted', 'No')->where('table_name', 'submit_table_barangay_fac_transport');
+
+        return $builder;
+
+    }  
+
+
+
+
 
 
      public function button_delete_1()
@@ -209,7 +238,36 @@ class Barangay_m extends Model
                 return $action_button;
 
                                                         
+    } 
+
+
+    public function button_delete_tourism()
+    {
+
+                $action_button = function($row){
+                    return '
+                        <button type="button" name="delete_button" class="btn btn-danger btn-sm delete_button" data-tourism_facility_name="'.$row['tourism_facility_name'].'" data-table_name="'.$row['table_name'].'" ><i class="fas fa-trash-alt"></i></button>';
+                };
+
+                return $action_button;
+
+                                                        
     }
+
+    // THIS
+    public function button_delete_transport()
+    {
+
+                $action_button = function($row){
+                    return '
+                        <button type="button" name="delete_button" class="btn btn-danger btn-sm delete_button" data-transport_facility_name="'.$row['transport_facility_name'].'" data-table_name="'.$row['table_name'].'" ><i class="fas fa-trash-alt"></i></button>';
+                };
+
+                return $action_button;
+
+                                                        
+    }
+    
     
 
 }
