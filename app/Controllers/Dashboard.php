@@ -145,8 +145,40 @@ function get_barangay_garbage_waste_facilities()
 							->setOutput(["disposal_facility_type","disposal_facility_name","disposal_facility_address", "disposal_facility_operator",$crudModel->button_delete_waste()]);
 
 	return $data_table->getDataTable();
+} 
+
+
+function get_barangay_tourism_sites_facilities()
+{
+	$crudModel = new Barangay_m();
+
+	$data_table = new TablesIgniter();
+
+	$data_table->setTable($crudModel->barangay_tourism_sites_facilities())
+							->setDefaultOrder("uuid", "DESC")
+							->setSearch([""])
+							->setOrder([""])
+							->setOutput(["tourism_facility_type","tourism_facility_name","tourism_facility_address", "tourism_facility_operator",$crudModel->button_delete_tourism()]);
+
+	return $data_table->getDataTable();
 }
 
+
+// THIS
+function get_barangay_transport_sites_facilities()
+{
+	$crudModel = new Barangay_m();
+
+	$data_table = new TablesIgniter();
+
+	$data_table->setTable($crudModel->barangay_transport_sites_facilities())
+							->setDefaultOrder("uuid", "DESC")
+							->setSearch([""])
+							->setOrder([""])
+							->setOutput(["transport_facility_type","transport_facility_name","transport_facility_address", "transport_facility_operator",$crudModel->button_delete_transport()]);
+
+	return $data_table->getDataTable();
+}
 
 
 
