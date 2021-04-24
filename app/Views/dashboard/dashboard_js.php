@@ -34,7 +34,7 @@
 
 (() => {
 
-  'use strict';
+	'use strict';
 
 
 
@@ -43,7 +43,7 @@
 $(document).ready( function () 
 {
 
-welcome_message();
+// welcome_message();
 load_this();
 get_form_1();
 
@@ -57,7 +57,7 @@ get_form_1();
     "order":[],
     "serverSide":true,
     "searching": false, 
-    "scrollX": true,
+    // "scrollX": true,
     "bPaginate": false,
     "ajax":
     {
@@ -73,24 +73,45 @@ get_form_1();
   });
 
 
- jQuery('#table1, #table2, #table3, #table4, #table5, #table6, #table7, #table8, #table9, #table10, #table11, #table12, #table13, #table14, #table15, #table16, #table17, table18').DataTable({
+ jQuery('#table1, #table2, #table3, #table4, #table5, #sect2_table1, #sect2_table2, #sect2_table3, #sect2_table4, #sect2_table5, #table6, #table7, #table8, #table9, #table10, #table11, #table12, #table13, #table14, #table15, #table16, #table17, #table18').DataTable({
 
        "responsive": true, 
        "bPaginate": false,
        "bFilter": false,
        "bInfo": false,
-       "scrollX": true,
+       // "scrollX": true,
        "ordering": false
+       
 
  });
 
+jQuery('.user_notes').DataTable({
+
+    "order":[],
+    "serverSide":true,
+    "searching": false, 
+    // "scrollX": true,
+    "bPaginate": false,
+    "ajax":
+    {
+      url:"<?php echo base_url("/dashboard/get_notes"); ?>",
+      type:"POST",
+    },
+    "columnDefs": [
+               
+        { "orderable": false, "targets": [1], "visible": true, "searchable": false},
+        { "orderable": false, "targets": [0], "visible": true, "searchable": false, "className": 'readBreakLines'}
+            
+
+                  ]
+  });
 
  jQuery('.submit_table_2').DataTable({
 
     "order":[],
     "serverSide":true,
     "searching": false, 
-    "scrollX": true,
+    // "scrollX": true,
     "bPaginate": false,
     "ajax":
     {
@@ -105,12 +126,14 @@ get_form_1();
                   ]
   });
 
+ 
+
  jQuery('.submit_table_3').DataTable({
 
     "order":[],
     "serverSide":true,
     "searching": false, 
-    "scrollX": true,
+    // "scrollX": true,
     "bPaginate": false,
     "ajax":
     {
@@ -131,7 +154,7 @@ get_form_1();
     "order":[],
     "serverSide":true,
     "searching": false, 
-    "scrollX": false,
+    // "scrollX": false,
     "bPaginate": false,
     "ajax":
     {
@@ -147,17 +170,12 @@ get_form_1();
   });
 
 
-
-
-
-
-
  jQuery('.submit_table_barangay_fac_education').DataTable({
 
     "order":[],
     "serverSide":true,
     "searching": false, 
-    "scrollX": false,
+    // "scrollX": false,
     "bPaginate": false,
     "ajax":
     {
@@ -178,7 +196,7 @@ get_form_1();
     "order":[],
     "serverSide":true,
     "searching": false, 
-    "scrollX": false,
+    // "scrollX": false,
     "bPaginate": false,
     "ajax":
     {
@@ -195,12 +213,153 @@ get_form_1();
 
 
 
-  jQuery('.submit_table_barangay_fac_garbage_waste').DataTable({
+  jQuery('.submit_table_barangay_fac_agricultural').DataTable({
 
     "order":[],
     "serverSide":true,
     "searching": false, 
-    "scrollX": false,
+    // "scrollX": false,
+    "bPaginate": false,
+    "ajax":
+    {
+      url:"<?php echo base_url("/dashboard/get_barangay_agricultural_facilities"); ?>",
+      type:"POST",
+    },
+    "columnDefs": [
+               
+                   { "orderable": false, "targets": [0,1,2,3,4], "visible": true, "searchable": false}
+            
+
+                  ]
+  });
+
+  jQuery('.submit_table_barangay_input_dealer').DataTable({
+
+    "order":[],
+    "serverSide":true,
+    "searching": false, 
+    // "scrollX": false,
+    "bPaginate": false,
+    "ajax":
+    {
+      url:"<?php echo base_url("/dashboard/get_barangay_input_dealers"); ?>",
+      type:"POST",
+    },
+    "columnDefs": [
+               
+                   { "orderable": false, "targets": [0,1,2,3,4], "visible": true, "searchable": false}
+            
+
+                  ]
+  });
+
+  jQuery('.submit_table_barangay_water_facility').DataTable({
+
+    "order":[],
+    "serverSide":true,
+    "searching": false, 
+    // "scrollX": false,
+    "bPaginate": false,
+    "ajax":
+    {
+      url:"<?php echo base_url("/dashboard/get_barangay_water_facilities"); ?>",
+      type:"POST",
+    },
+    "columnDefs": [
+               
+                   { "orderable": false, "targets": [0,1,2,3,4], "visible": true, "searchable": false}
+            
+
+                  ]
+  });
+
+jQuery('.submit_table_barangay_electric_facility').DataTable({
+
+    "order":[],
+    "serverSide":true,
+    "searching": false, 
+    // "scrollX": false,
+    "bPaginate": false,
+    "ajax":
+    {
+      url:"<?php echo base_url("/dashboard/get_barangay_electric_facilities"); ?>",
+      type:"POST",
+    },
+    "columnDefs": [
+               
+                   { "orderable": false, "targets": [0,1,2,3,4], "visible": true, "searchable": false}
+            
+
+                  ]
+  });
+
+jQuery('.submit_table_barangay_credit_facility').DataTable({
+
+    "order":[],
+    "serverSide":true,
+    "searching": false, 
+    // "scrollX": false,
+    "bPaginate": false,
+    "ajax":
+    {
+      url:"<?php echo base_url("/dashboard/get_barangay_credit_facilities"); ?>",
+      type:"POST",
+    },
+    "columnDefs": [
+               
+                   { "orderable": false, "targets": [0,1,2,3,4], "visible": true, "searchable": false}
+            
+
+                  ]
+  });
+
+jQuery('.submit_table_barangay_noninfra_facility').DataTable({
+
+    "order":[],
+    "serverSide":true,
+    "searching": false, 
+    // "scrollX": false,
+    "bPaginate": false,
+    "ajax":
+    {
+      url:"<?php echo base_url("/dashboard/get_barangay_noninfra_facilities"); ?>",
+      type:"POST",
+    },
+    "columnDefs": [
+               
+                   { "orderable": false, "targets": [0,1,2,3,4,5], "visible": true, "searchable": false}
+            
+
+                  ]
+  });
+
+
+jQuery('.submit_table_barangay_infra_facility').DataTable({
+
+    "order":[],
+    "serverSide":true,
+    "searching": false, 
+    // "scrollX": false,
+    "bPaginate": false,
+    "ajax":
+    {
+      url:"<?php echo base_url("/dashboard/get_barangay_infra_facilities"); ?>",
+      type:"POST",
+    },
+    "columnDefs": [
+               
+                   { "orderable": false, "targets": [0,1,2,3,4,5,6,7], "visible": true, "searchable": false}
+            
+
+                  ]
+  });
+
+jQuery('.submit_table_barangay_fac_garbage_waste').DataTable({
+
+    "order":[],
+    "serverSide":true,
+    "searching": false, 
+    //"scrollX": false,
     "bPaginate": false,
     "ajax":
     {
@@ -223,7 +382,7 @@ get_form_1();
     "order":[],
     "serverSide":true,
     "searching": false, 
-    "scrollX": false,
+    //"scrollX": false,
     "bPaginate": false,
     "ajax":
     {
@@ -239,13 +398,12 @@ get_form_1();
   });
 
 
-    // THIS
     jQuery('.submit_table_barangay_fac_transport').DataTable({
 
     "order":[],
     "serverSide":true,
     "searching": false, 
-    "scrollX": false,
+    //"scrollX": false,
     "bPaginate": false,
     "ajax":
     {
@@ -259,7 +417,6 @@ get_form_1();
 
                   ]
   });
-
 
 
  
@@ -276,35 +433,62 @@ jQuery.noConflict();
 $(document).on('shown.bs.tab', 'a[data-toggle="tab"]', function (e) 
 {
 
-   var q1 = e.target; // newly activated tab
+   var q1 = e.target.href; // newly activated tab
    var q2 = e.relatedTarget.href; // previous active tab
 
+
+
+
    const prev_tab = q2.substring(q2.indexOf('#') + 1); 
+   const current_tab = q1.substring(q2.indexOf('#') + 1);
+
+   // alert(current_tab);
+
+   if(current_tab == "v-pills-profile")
+   {
+      get_form_2();   
+   }
+
+   if(current_tab == "v-pills-messages")
+   {
+      get_form_3();   
+   }
+
+   if(current_tab == "v-pills-settings")
+   {
+      get_form_4();   
+   }
+
+
+
 
    if(prev_tab == "v-pills-home")
    {
 
       var pass_form = 1; 
-      trigger_save(pass_form);
-     
+      // trigger_save(pass_form);
+      data_preloading(pass_form);
    }
    else if(prev_tab == "v-pills-profile")
    {
 
       var pass_form = 2; 
-      trigger_save(pass_form);   
+      // trigger_save(pass_form);
+      data_preloading(pass_form);  
    }
    else if(prev_tab == "v-pills-messages")
    {
 
       var pass_form = 3;  
-      trigger_save(pass_form);  
+      // trigger_save(pass_form);  
+      data_preloading(pass_form);  
    }
    else if(prev_tab == "v-pills-settings")
    {
 
       var pass_form = 4; 
-      trigger_save(pass_form);   
+      // trigger_save(pass_form);
+      data_preloading(pass_form);   
    }
 
    
@@ -532,6 +716,21 @@ let data = [ ];
                           if(element.type != "radio")
                           {
                             $('[name="'+element.name+'"]').val(data[0][element.name]);
+
+                            if(element.name == "A6_resi" 
+                            || element.name == "A6_comm"
+                            || element.name == "A6_agri"
+                            || element.name == "A6_indus"
+                            || element.name == "A6_mine"
+                            || element.name == "A6_timb"
+                            || element.name == "A6_sclass"
+                            || element.name == "A6_vacant"
+                            || element.name == "A6_othersa" 
+                              )
+                            {
+                              $('[name="'+element.name+'"]').val(data[0][element.name]).trigger("change");
+                            }
+
                           }
 
 
@@ -558,9 +757,377 @@ let data = [ ];
 
 }
 
+// ---------------------------------LOAD SECTION 2 ----------------------
+
+function get_form_2()
+{
+
+var elements = document.getElementById("submit_de_part2").elements;
+
+
+let data = [ ];
+  
+
+  jQuery.ajax({
+                url: "<?php echo base_url("/dashboard/load_form_2"); ?>", 
+                method: "POST",
+               
+                dataType: "JSON",
+                success:function(result){
+
+                data = result;
+                // console.log(data[0].bgy);
+                
+              // -----------------PASSING DATA TO FORMS - AUTO FILL----------------
+                
+
+                for (var i = 0, element; element = elements[i++];) 
+                  {
+                    // if (element.type === "text" && element.value === "")
+
+                      
+                        
+                       
+
+                        if(element.name == "geo_hall_lat")
+                        {
+                           if(data[0][element.name] != "")
+                           {
+                              $("#geo_hall_lat").attr("hidden",false);
+                              $("#geo_hall_long").attr("hidden",false);
+                           } 
+                        }
 
 
 
+                        if(element.name != "DataTables_Table_0_length")
+                        { 
+
+
+                           
+                          // ------------------UPDATE CHECK BOXES--------------
+
+                            if(element.type == "checkbox")
+                            {
+                              if(data[0][element.name] == "YES")
+                              {
+                               
+                                $("[name='"+element.name+"']").click();
+                              }
+                            }
+
+
+                             // ------------------UPDATE RADIOS--------------
+
+                            if(element.type == "radio")
+                            {
+
+                                if(data[0][element.name] == "Yes")
+                                {                               
+                                  $('input[name="' +element.name+ '"][value="' + data[0][element.name] + '"]').click();
+                                }
+
+                                 if(data[0][element.name] == "No")
+                                {                               
+                                  $('input[name="' +element.name+ '"][value="' + data[0][element.name] + '"]').click();
+                                }
+
+                            }
+
+
+
+                            console.log(element.name);
+                            console.log(data[0][element.name]);
+
+                          if(element.type == "select-one")
+                          {
+                            if(element.name != "reg" && element.name != "prv" && element.name != "mun" && element.name != "bgy")
+                            {
+                              $('[name="'+element.name+'"]').val(data[0][element.name]).change();
+                            }
+                            
+                            // alert(element.name);
+                          }
+
+
+                          
+
+                            // ----------------------OVER ALL UPDATE-----------------
+                          if(element.type != "radio")
+                          {
+                            $('[name="'+element.name+'"]').val(data[0][element.name]);
+                          }
+
+
+                           
+                        }
+                       
+                        
+                      
+                  }
+
+
+                  // ------------END OF AUTOFILL-----------
+                                      
+                  },
+                error: function(result){
+                // console.log(result);
+                // Swal.fire('Error','Error, Check  Entry Again.','error');
+                  }
+
+              })
+
+
+}
+
+// ---------------------------------LOAD SECTION 3 ----------------------
+
+function get_form_3()
+{
+
+var elements = document.getElementById("submit_de_part3").elements;
+
+
+let data = [ ];
+  
+
+  jQuery.ajax({
+                url: "<?php echo base_url("/dashboard/load_form_3"); ?>", 
+                method: "POST",
+               
+                dataType: "JSON",
+                success:function(result){
+
+                data = result;
+                // console.log(data[0].bgy);
+                
+              // -----------------PASSING DATA TO FORMS - AUTO FILL----------------
+                
+
+                for (var i = 0, element; element = elements[i++];) 
+                  {
+                    // if (element.type === "text" && element.value === "")
+
+                      
+                        
+                       
+
+                        if(element.name == "geo_hall_lat")
+                        {
+                           if(data[0][element.name] != "")
+                           {
+                              $("#geo_hall_lat").attr("hidden",false);
+                              $("#geo_hall_long").attr("hidden",false);
+                           } 
+                        }
+
+
+
+                        if(element.name != "DataTables_Table_0_length")
+                        { 
+
+
+                           
+                          // ------------------UPDATE CHECK BOXES--------------
+
+                            if(element.type == "checkbox")
+                            {
+                              if(data[0][element.name] == "YES")
+                              {
+                               
+                                $("[name='"+element.name+"']").click();
+                              }
+                            }
+
+
+                             // ------------------UPDATE RADIOS--------------
+
+                            if(element.type == "radio")
+                            {
+
+                                if(data[0][element.name] == "Yes")
+                                {                               
+                                  $('input[name="' +element.name+ '"][value="' + data[0][element.name] + '"]').click();
+                                }
+
+                                 if(data[0][element.name] == "No")
+                                {                               
+                                  $('input[name="' +element.name+ '"][value="' + data[0][element.name] + '"]').click();
+                                }
+
+                            }
+
+
+
+                            console.log(element.name);
+                            console.log(data[0][element.name]);
+
+                          if(element.type == "select-one")
+                          {
+                            if(element.name != "reg" && element.name != "prv" && element.name != "mun" && element.name != "bgy")
+                            {
+                              $('[name="'+element.name+'"]').val(data[0][element.name]).change();
+                            }
+                            
+                            // alert(element.name);
+                          }
+
+
+                          
+
+                            // ----------------------OVER ALL UPDATE-----------------
+                          if(element.type != "radio")
+                          {
+                            $('[name="'+element.name+'"]').val(data[0][element.name]);
+                          }
+
+
+                           
+                        }
+                       
+                        
+                      
+                  }
+
+
+                  // ------------END OF AUTOFILL-----------
+                                      
+                  },
+                error: function(result){
+                // console.log(result);
+                // Swal.fire('Error','Error, Check  Entry Again.','error');
+                  }
+
+              })
+
+
+}
+
+// ------------------------------------LOAD SECTION 4--------------------------------
+
+function get_form_4()
+{
+
+var elements = document.getElementById("submit_de_part4").elements;
+
+
+let data = [ ];
+  
+
+  jQuery.ajax({
+                url: "<?php echo base_url("/dashboard/load_form_4"); ?>", 
+                method: "POST",
+               
+                dataType: "JSON",
+                success:function(result){
+
+                data = result;
+                // console.log(data[0].bgy);
+                
+              // -----------------PASSING DATA TO FORMS - AUTO FILL----------------
+                
+
+                for (var i = 0, element; element = elements[i++];) 
+                  {
+                    // if (element.type === "text" && element.value === "")
+
+                      
+                        
+                       
+
+                        if(element.name == "geo_hall_lat")
+                        {
+                           if(data[0][element.name] != "")
+                           {
+                              $("#geo_hall_lat").attr("hidden",false);
+                              $("#geo_hall_long").attr("hidden",false);
+                           } 
+                        }
+
+
+
+                        if(element.name != "DataTables_Table_0_length")
+                        { 
+
+
+                           
+                          // ------------------UPDATE CHECK BOXES--------------
+
+                            if(element.type == "checkbox")
+                            {
+                              if(data[0][element.name] == "YES")
+                              {
+                               
+                                $("[name='"+element.name+"']").click();
+                              }
+                            }
+
+
+                             // ------------------UPDATE RADIOS--------------
+
+                            if(element.type == "radio")
+                            {
+
+                                if(data[0][element.name] == "Yes")
+                                {                               
+                                  $('input[name="' +element.name+ '"][value="' + data[0][element.name] + '"]').click();
+                                }
+
+                                 if(data[0][element.name] == "No")
+                                {                               
+                                  $('input[name="' +element.name+ '"][value="' + data[0][element.name] + '"]').click();
+                                }
+
+                            }
+
+
+
+                            console.log(element.name);
+                            console.log(data[0][element.name]);
+
+                          if(element.type == "select-one")
+                          {
+                            if(element.name != "reg" && element.name != "prv" && element.name != "mun" && element.name != "bgy")
+                            {
+                              $('[name="'+element.name+'"]').val(data[0][element.name]).change();
+                            }
+                            
+                            // alert(element.name);
+                          }
+
+
+                          
+
+                            // ----------------------OVER ALL UPDATE-----------------
+                          if(element.type != "radio")
+                          {
+                            $('[name="'+element.name+'"]').val(data[0][element.name]);
+                            $('[name="'+element.name+'"]').trigger("change");
+
+
+                          }
+
+
+                           
+                        }
+                       
+                        
+                      
+                  }
+
+
+                  // ------------END OF AUTOFILL-----------
+                                      
+                  },
+                error: function(result){
+                // console.log(result);
+                // Swal.fire('Error','Error, Check  Entry Again.','error');
+                  }
+
+              })
+
+
+}
 
 //LOAD REGION LIST
 
@@ -1155,26 +1722,30 @@ $("#menu-toggle").click(function(e)
 $("#get_geo_hall").on("click",function(e)
 {
 
-getLocation();
+showPosition();
+// getLocation();
 
 $("#geo_hall_lat").attr("hidden",false);
 $("#geo_hall_long").attr("hidden",false);
 
-function getLocation() {
-  var x = document.getElementById("geo_hall_lat");
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(showPosition);
-  } else { 
-    x.innerHTML = "Geolocation is not supported by this browser.";
-  }
-}
+// function getLocation() {
+//   var x = document.getElementById("geo_hall_lat");
+//   if (navigator.geolocation) {
+//     navigator.geolocation.getCurrentPosition(showPosition);
+//   } else { 
+//     x.innerHTML = "Geolocation is not supported by this browser.";
+//   }
+// }
 
 
 function showPosition(position) 
 {
 
-  $("#geo_hall_lat").val(position.coords.latitude);
-  $("#geo_hall_long").val(position.coords.longitude);
+  // $("#geo_hall_lat").val(position.coords.latitude);
+  // $("#geo_hall_long").val(position.coords.longitude);
+
+  $("#geo_hall_lat").val("14.609053699999997");
+  $("#geo_hall_long").val("121.02225650000001");
  
 }
 
@@ -1249,6 +1820,43 @@ $('.respo_radio').click(function(){
 
 
 
+$('.respo_radio_sect3').click(function(){
+
+
+    if ($(this).is(":checked") == false)
+    {
+        console.log($(this).attr("name"));
+
+        // var thisCheckbox =  $(this).attr("name");
+
+        //                           jQuery.ajax({
+        //                                         type: 'post',
+        //                                         url:"<?php echo base_url("/personnel/update_checkbox_sect3"); ?>",
+        //                                         data: {thisCheckbox},
+        //                                         success: function () {
+
+                                                  
+        //                                          // jQuery('.barangay_personnel_table').DataTable().ajax.reload();
+        //                                          // Swal.fire('Personnel was Added Successfully', '', 'success')
+
+                                               
+                                                 
+        //                                         }
+        //                                       });
+
+        // console.log("hehehehehe");
+
+    }
+
+   
+     
+
+});
+
+
+
+
+
 $('input[name="a_2_puroks"]').click(function(){
 
 var s =  $(this).data("val");
@@ -1306,26 +1914,26 @@ $('input[name="EA_BSN_FSN"]').click(function(e){
     } );
 
 
-$('#menu-toggle').click(function(e){
+// $('#menu-toggle').click(function(e){
          
-var delay = ( function() {
-    var timer = 0;
-    return function(callback, ms) {
-        clearTimeout (timer);
-        timer = setTimeout(callback, ms);
-    };
-})();
+// var delay = ( function() {
+//     var timer = 0;
+//     return function(callback, ms) {
+//         clearTimeout (timer);
+//         timer = setTimeout(callback, ms);
+//     };
+// })();
 
-delay(function(){
+// delay(function(){
 
-    jQuery('.norm_table').DataTable().draw();
-    jQuery('.dyna_table').DataTable().ajax.reload();
+//     jQuery('.norm_table').DataTable().draw();
+//     jQuery('.dyna_table').DataTable().ajax.reload();
 
 
-}, 2000 ); // end delay
+// }, 2000 ); // end delay
        
          
-} );
+// } );
 
 function reload_tables()
 {
@@ -1433,6 +2041,125 @@ $('.pass_data_facility_service').click(function(e){
     } );
 
 
+$('.pass_data_facility_agrilcultural').click(function(e){
+       
+       var selected =  $(this).data("facility");
+
+       $('#agricultural_facilities').val(selected);
+
+       
+    } );
+
+
+$('.pass_data_facility_input_dealer').click(function(e){
+       
+       var selected =  $(this).data("facility");
+
+       $('#input_dealer').val(selected);
+
+       
+    } );
+
+$('.pass_data_facility_water_facility').click(function(e){
+       
+       var selected =  $(this).data("facility");
+
+       $('#water_facility').val(selected);
+
+       
+    } );
+
+
+$('.pass_data_electric_facility').click(function(e){
+       
+       var selected =  $(this).data("facility");
+
+       $('#electric_facility').val(selected);
+
+       
+    } );
+
+$('.pass_data_credit_facility').click(function(e){
+       
+       var selected =  $(this).data("facility");
+
+       $('#credit_facility').val(selected);
+
+       
+    } );
+
+
+
+
+$('input[name="E_yes_no"]').click(function(){
+
+var s =  $(this).data("val");
+
+if(s == "Yes")
+{
+  $("#sect2_table4").attr("hidden",false);
+}
+else if (s == "No")
+{
+  $("#sect2_table4").attr("hidden",true);
+}
+
+ 
+});
+
+$('input[name="C1_yes_no"]').click(function(){
+
+var s =  $(this).data("val");
+
+if(s == "Yes")
+{
+  $("#sect2_table5").attr("hidden",false);
+}
+else if (s == "No")
+{
+  $("#sect2_table5").attr("hidden",true);
+}
+
+ 
+});
+
+
+$('.note_refresh').click(function(){
+
+ jQuery('.user_notes').DataTable().ajax.reload();
+
+});
+
+
+
+$('.i5select').change(function(e){
+
+            
+        if($(this)[0].selectedIndex == 3)
+        {
+          $('.i5select_num6').attr("hidden",false);
+          $('.i5select_num7').attr("hidden",true);
+          
+        }
+        else if($(this)[0].selectedIndex == 1 || $(this)[0].selectedIndex == 2 || $(this)[0].selectedIndex == 4)
+        {
+          $('.i5select_num6').attr("hidden",true);
+          $('.i5select_num7').attr("hidden",false);
+        }
+        else
+        {
+          $('.i5select_num6').attr("hidden",true);
+          $('.i5select_num7').attr("hidden",true);
+        }
+
+     
+        // alert($(this)[0].selectedIndex);          
+       
+    } );
+
+
+// START OF SECTION 3 SKIPPING
+
 $('.pass_data_facility_garbage_waste').click(function(e){
        
        var selected =  $(this).data("facility");
@@ -1462,6 +2189,7 @@ $('.pass_data_facility_transport').click(function(e){
 
 
 
+
 $('input[name="collection_trucks"]').click(function(){
 
 var s =  $(this).data("val");
@@ -1469,7 +2197,7 @@ var s =  $(this).data("val");
 if(s == "Yes")
 {
   $(".collection_trucks_count_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
+  
 }
 else if (s == "No")
 {
@@ -1487,7 +2215,7 @@ var s =  $(this).data("val");
 if(s == "Yes")
 {
   $(".collection_bins_count_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
+   
 }
 else if (s == "No")
 {
@@ -1505,7 +2233,7 @@ var s =  $(this).data("val");
 if(s == "Yes")
 {
   $(".collection_incinerator_count_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
+   
 }
 else if (s == "No")
 {
@@ -1522,7 +2250,7 @@ var s =  $(this).data("val");
 if(s == "Yes")
 {
   $(".collection_others_specify_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
+   
 }
 else if (s == "No")
 {
@@ -1540,7 +2268,7 @@ var s =  $(this).data("val");
 if(s == "Yes")
 {
   $(".collector_biodegradable_specify_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
+   
 }
 else if (s == "No")
 {
@@ -1558,7 +2286,7 @@ var s =  $(this).data("val");
 if(s == "Yes")
 {
   $(".collector_recyclables_specify_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
+   
 }
 else if (s == "No")
 {
@@ -1575,7 +2303,7 @@ var s =  $(this).data("val");
 if(s == "Yes")
 {
   $(".collector_residuals_specify_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
+   
 }
 else if (s == "No")
 {
@@ -1592,7 +2320,7 @@ var s =  $(this).data("val");
 if(s == "Yes")
 {
   $(".collector_how_often_question_specify_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
+   
 }
 else if (s == "No")
 {
@@ -1610,7 +2338,7 @@ var s =  $(this).data("val");
 if(s == "Yes")
 {
   $(".collector_amount_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
+   
 }
 else if (s == "No")
 {
@@ -1628,7 +2356,7 @@ var s =  $(this).data("val");
 if(s == "No")
 {
   $(".collector_specific_areas_repeat_no").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
+   
 }
 else if (s == "Yes")
 {
@@ -1646,7 +2374,7 @@ var s =  $(this).data("val");
 if(s == "Yes")
 {
   $(".publictransport1_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
+   
 }
 else if (s == "No")
 {
@@ -1664,7 +2392,7 @@ var s =  $(this).data("val");
 if(s == "No")
 {
   $(".publictransport1_repeat_no").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
+   
 }
 else if (s == "Yes")
 {
@@ -1682,7 +2410,7 @@ var s =  $(this).data("val");
 if(s == "Yes")
 {
   $(".network_available_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
+   
 }
 else if (s == "No")
 {
@@ -1700,7 +2428,7 @@ var s =  $(this).data("val");
 if(s == "Yes")
 {
   $(".existing_telcom_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
+   
 }
 else if (s == "No")
 {
@@ -1719,7 +2447,7 @@ var s =  $(this).data("val");
 if(s == "Yes")
 {
   $(".wifi_availability_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
+   
 }
 else if (s == "No")
 {
@@ -1737,7 +2465,7 @@ var s =  $(this).data("val");
 if(s == "Yes")
 {
   $(".ict_equipment_free_specify_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
+   
 }
 else if (s == "No")
 {
@@ -1755,7 +2483,7 @@ var s =  $(this).data("val");
 if(s == "Yes")
 {
   $(".barangay_it_personnel_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
+   
 }
 else if (s == "No")
 {
@@ -1773,7 +2501,7 @@ var s =  $(this).data("val");
 if(s == "Yes")
 {
   $(".barangay_official_website_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
+   
 }
 else if (s == "No")
 {
@@ -1791,7 +2519,7 @@ var s =  $(this).data("val");
 if(s == "Yes")
 {
   $(".barangay_social_media_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
+   
 }
 else if (s == "No")
 {
@@ -1809,7 +2537,7 @@ var s =  $(this).data("val");
 if(s == "Yes")
 {
   $(".barangay_disseminate_information_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
+   
 }
 else if (s == "No")
 {
@@ -1827,7 +2555,7 @@ var s =  $(this).data("val");
 if(s == "Yes")
 {
   $(".barangay_egovern_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
+   
 }
 else if (s == "No")
 {
@@ -1845,7 +2573,7 @@ var s =  $(this).data("val");
 if(s == "Yes")
 {
   $(".significant_events_others_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
+   
 }
 else if (s == "No")
 {
@@ -1863,7 +2591,7 @@ var s =  $(this).data("val");
 if(s == "Yes")
 {
   $(".significant_events_others2_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
+   
 }
 else if (s == "No")
 {
@@ -1881,7 +2609,7 @@ var s =  $(this).data("val");
 if(s == "Yes")
 {
   $(".disaster_preparedness_hotline_contact_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
+   
 }
 else if (s == "No")
 {
@@ -1900,7 +2628,7 @@ var s =  $(this).data("val");
 if(s == "Yes")
 {
   $(".disaster_early_warning_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
+   
 }
 else if (s == "No")
 {
@@ -1918,7 +2646,7 @@ var s =  $(this).data("val");
 if(s == "Yes")
 {
   $(".disaster_early_warning_plan_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
+   
 }
 else if (s == "No")
 {
@@ -1936,7 +2664,7 @@ var s =  $(this).data("val");
 if(s == "Yes")
 {
   $(".disaster_evacuation_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
+   
 }
 else if (s == "No")
 {
@@ -1954,7 +2682,7 @@ var s =  $(this).data("val");
 if(s == "Yes")
 {
   $(".disaster_evacuation_map_use_specify_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
+   
 }
 else if (s == "No")
 {
@@ -1972,7 +2700,7 @@ var s =  $(this).data("val");
 if(s == "Yes")
 {
   $(".disaster_evacuation1_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
+   
 }
 else if (s == "No")
 {
@@ -1990,7 +2718,7 @@ var s =  $(this).data("val");
 if(s == "Yes")
 {
   $(".disaster_evacuation_map_use_specify1_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
+   
 }
 else if (s == "No")
 {
@@ -2009,7 +2737,7 @@ var s =  $(this).data("val");
 if(s == "Yes")
 {
   $(".disaster_evacuation_facility_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
+   
 }
 else if (s == "No")
 {
@@ -2028,7 +2756,7 @@ var s =  $(this).data("val");
 if(s == "Yes")
 {
   $(".disaster_categorize_evacuation_center_other_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
+   
 }
 else if (s == "No")
 {
@@ -2046,7 +2774,7 @@ var s =  $(this).data("val");
 if(s == "Yes")
 {
   $(".disaster_used_evacuation_center_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
+   
 }
 else if (s == "No")
 {
@@ -2063,7 +2791,7 @@ var s =  $(this).data("val");
 if(s == "Yes")
 {
   $(".general_info_others_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
+   
 }
 else if (s == "No")
 {
@@ -2080,7 +2808,7 @@ var s =  $(this).data("val");
 if(s == "Yes")
 {
   $(".cc13_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
+   
 }
 else if (s == "No")
 {
@@ -2097,7 +2825,7 @@ var s =  $(this).data("val");
 if(s == "Yes")
 {
   $(".paved_concrete_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
+   
 }
 else if (s == "No")
 {
@@ -2114,7 +2842,7 @@ var s =  $(this).data("val");
 if(s == "Yes")
 {
   $(".RN5_concrete_others_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
+   
 }
 else if (s == "No")
 {
@@ -2131,7 +2859,7 @@ var s =  $(this).data("val");
 if(s == "Yes")
 {
   $(".paved_asphalt_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
+   
 }
 else if (s == "No")
 {
@@ -2149,7 +2877,7 @@ var s =  $(this).data("val");
 if(s == "Yes")
 {
   $(".RN5_asphalt_others_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
+   
 }
 else if (s == "No")
 {
@@ -2166,7 +2894,7 @@ var s =  $(this).data("val");
 if(s == "Yes")
 {
   $(".unpaved_gravel_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
+   
 }
 else if (s == "No")
 {
@@ -2183,7 +2911,7 @@ var s =  $(this).data("val");
 if(s == "Yes")
 {
   $(".RN5_gravel_others_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
+   
 }
 else if (s == "No")
 {
@@ -2200,7 +2928,7 @@ var s =  $(this).data("val");
 if(s == "Yes")
 {
   $(".unpaved_earth_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
+   
 }
 else if (s == "No")
 {
@@ -2217,7 +2945,7 @@ var s =  $(this).data("val");
 if(s == "Yes")
 {
   $(".RN5_earth_others_repeat").attr("hidden",false);
-   jQuery('.submit_table_3').DataTable().ajax.reload();
+   
 }
 else if (s == "No")
 {
@@ -2225,6 +2953,10 @@ else if (s == "No")
 }
 
 });
+
+
+//END OF SECTION 3 SKIPPING
+
 
 
 
@@ -2351,7 +3083,7 @@ saveJPGButton.addEventListener("click", function (event) {
     alert("Please provide a signature first.");
   } else {
     var dataURL = signaturePad.toDataURL("image/jpeg");
-    download(dataURL, "signature.jpg");
+    download(dataURL, "<?= session('fullname');?>");
   }
 });
 
@@ -2538,7 +3270,28 @@ $("#add_notes").on("click",function(e)
         })
 
       if (text) {
-        Swal.fire(text)
+  
+  var message = text;
+        jQuery.ajax({
+                                                type: 'post',
+                                                url:"<?php echo base_url("/personnel/save_note"); ?>",
+                                                data: {'message': message}, 
+                                                success: function () {
+
+                                                  
+                                                 // jQuery('.'+get_table_form).DataTable().ajax.reload();
+                                                 Swal.fire('Success.', '', 'info')
+
+                                                 .then(()=>{
+                                                                                                                                                                              
+                                                    $('.close').click(); //hiding modal statement 
+                                                                      
+                                                });
+                                                 
+                                                }
+                                              });
+
+
                 }
  
     })()
@@ -2548,7 +3301,7 @@ $("#add_notes").on("click",function(e)
 
 
 // ------RUNNING SUM----------
-$('.land_classification').on('keyup', function()
+$('.land_classification').on('change', function()
 {
       (function( $ ){
    $.fn.sum=function () {
@@ -2566,9 +3319,1124 @@ $('.land_classification').on('keyup', function()
 });
 
 
+//GET TOTAL MALE 
+$('.total_crime_m').on('change', function()
+{
 
+  var getSection = $(this).data('val'); 
+  var str = getSection.substring(1);
 
+      (function( $ ){
+   $.fn.sum=function () {
+    var sum=0;
+        $(this).each(function(index, element){
+            if($(element).val()!="")
+            sum += parseFloat($(element).val());
+        });
+    return sum;
+    }; 
+})( jQuery );
   
+  $('#'+getSection).text(jQuery('.'+getSection).sum());
+  
+
+
+var val1 = 0;        
+var val2 = 0;  
+
+val1 = parseInt($('#f'+str).html());        
+val2 = parseInt($('#m'+str).html());
+
+$('#'+str+'_total').text( val1+val2);
+
+});
+
+
+$('.total_capt_m').on('change', function()
+{
+
+  var getSection = $(this).data('val'); 
+  var str = getSection.substring(1);
+
+      (function( $ ){
+   $.fn.sum=function () {
+    var sum=0;
+        $(this).each(function(index, element){
+            if($(element).val()!="")
+            sum += parseFloat($(element).val());
+        });
+    return sum;
+    }; 
+})( jQuery );
+  
+  $('#'+getSection).text(jQuery('.'+getSection).sum());
+  
+
+
+var val1 = 0;        
+var val2 = 0;  
+
+val1 = parseInt($('#f'+str).html());        
+val2 = parseInt($('#m'+str).html());
+
+$('#'+str+'_total').text( val1+val2);
+
+});
+
+
+$('.total_kgwd_m').on('change', function()
+{
+
+  var getSection = $(this).data('val'); 
+  var str = getSection.substring(1);
+
+      (function( $ ){
+   $.fn.sum=function () {
+    var sum=0;
+        $(this).each(function(index, element){
+            if($(element).val()!="")
+            sum += parseFloat($(element).val());
+        });
+    return sum;
+    }; 
+})( jQuery );
+  
+  $('#'+getSection).text(jQuery('.'+getSection).sum());
+  
+
+
+var val1 = 0;        
+var val2 = 0;  
+
+val1 = parseInt($('#f'+str).html());        
+val2 = parseInt($('#m'+str).html());
+
+$('#'+str+'_total').text( val1+val2);
+
+});
+
+
+$('.total_sect_m').on('change', function()
+{
+
+  var getSection = $(this).data('val'); 
+  var str = getSection.substring(1);
+
+      (function( $ ){
+   $.fn.sum=function () {
+    var sum=0;
+        $(this).each(function(index, element){
+            if($(element).val()!="")
+            sum += parseFloat($(element).val());
+        });
+    return sum;
+    }; 
+})( jQuery );
+  
+  $('#'+getSection).text(jQuery('.'+getSection).sum());
+  
+
+
+var val1 = 0;        
+var val2 = 0;  
+
+val1 = parseInt($('#f'+str).html());        
+val2 = parseInt($('#m'+str).html());
+
+$('#'+str+'_total').text( val1+val2);
+
+});
+
+
+
+
+$('.total_treasurer_m').on('change', function()
+{
+
+  var getSection = $(this).data('val'); 
+  var str = getSection.substring(1);
+
+      (function( $ ){
+   $.fn.sum=function () {
+    var sum=0;
+        $(this).each(function(index, element){
+            if($(element).val()!="")
+            sum += parseFloat($(element).val());
+        });
+    return sum;
+    }; 
+})( jQuery );
+  
+  $('#'+getSection).text(jQuery('.'+getSection).sum());
+  
+
+
+var val1 = 0;        
+var val2 = 0;  
+
+val1 = parseInt($('#f'+str).html());        
+val2 = parseInt($('#m'+str).html());
+
+$('#'+str+'_total').text( val1+val2);
+
+});
+
+
+
+
+$('.total_tanod_m').on('change', function()
+{
+
+  var getSection = $(this).data('val'); 
+  var str = getSection.substring(1);
+
+      (function( $ ){
+   $.fn.sum=function () {
+    var sum=0;
+        $(this).each(function(index, element){
+            if($(element).val()!="")
+            sum += parseFloat($(element).val());
+        });
+    return sum;
+    }; 
+})( jQuery );
+  
+  $('#'+getSection).text(jQuery('.'+getSection).sum());
+  
+
+
+var val1 = 0;        
+var val2 = 0;  
+
+val1 = parseInt($('#f'+str).html());        
+val2 = parseInt($('#m'+str).html());
+
+$('#'+str+'_total').text( val1+val2);
+
+});
+
+
+
+
+$('.total_hdoctor_m').on('change', function()
+{
+
+  var getSection = $(this).data('val'); 
+  var str = getSection.substring(1);
+
+      (function( $ ){
+   $.fn.sum=function () {
+    var sum=0;
+        $(this).each(function(index, element){
+            if($(element).val()!="")
+            sum += parseFloat($(element).val());
+        });
+    return sum;
+    }; 
+})( jQuery );
+  
+  $('#'+getSection).text(jQuery('.'+getSection).sum());
+  
+
+
+var val1 = 0;        
+var val2 = 0;  
+
+val1 = parseInt($('#f'+str).html());        
+val2 = parseInt($('#m'+str).html());
+
+$('#'+str+'_total').text( val1+val2);
+
+});
+
+
+$('.total_nscholar_m').on('change', function()
+{
+
+  var getSection = $(this).data('val'); 
+  var str = getSection.substring(1);
+
+      (function( $ ){
+   $.fn.sum=function () {
+    var sum=0;
+        $(this).each(function(index, element){
+            if($(element).val()!="")
+            sum += parseFloat($(element).val());
+        });
+    return sum;
+    }; 
+})( jQuery );
+  
+  $('#'+getSection).text(jQuery('.'+getSection).sum());
+  
+
+
+var val1 = 0;        
+var val2 = 0;  
+
+val1 = parseInt($('#f'+str).html());        
+val2 = parseInt($('#m'+str).html());
+
+$('#'+str+'_total').text( val1+val2);
+
+});
+
+
+$('.total_prkleader_m').on('change', function()
+{
+
+  var getSection = $(this).data('val'); 
+  var str = getSection.substring(1);
+
+      (function( $ ){
+   $.fn.sum=function () {
+    var sum=0;
+        $(this).each(function(index, element){
+            if($(element).val()!="")
+            sum += parseFloat($(element).val());
+        });
+    return sum;
+    }; 
+})( jQuery );
+  
+  $('#'+getSection).text(jQuery('.'+getSection).sum());
+  
+
+var val1 = 0;        
+var val2 = 0;  
+
+val1 = parseInt($('#f'+str).html());        
+val2 = parseInt($('#m'+str).html());
+
+$('#'+str+'_total').text( val1+val2);
+
+});
+
+
+$('.total_enrofficer_m').on('change', function()
+{
+
+  var getSection = $(this).data('val'); 
+  var str = getSection.substring(1);
+
+      (function( $ ){
+   $.fn.sum=function () {
+    var sum=0;
+        $(this).each(function(index, element){
+            if($(element).val()!="")
+            sum += parseFloat($(element).val());
+        });
+    return sum;
+    }; 
+})( jQuery );
+  
+  $('#'+getSection).text(jQuery('.'+getSection).sum());
+  
+
+var val1 = 0;        
+var val2 = 0;  
+
+val1 = parseInt($('#f'+str).html());        
+val2 = parseInt($('#m'+str).html());
+
+$('#'+str+'_total').text( val1+val2);
+
+});
+
+
+$('.total_librarian_m').on('change', function()
+{
+
+  var getSection = $(this).data('val'); 
+  var str = getSection.substring(1);
+
+      (function( $ ){
+   $.fn.sum=function () {
+    var sum=0;
+        $(this).each(function(index, element){
+            if($(element).val()!="")
+            sum += parseFloat($(element).val());
+        });
+    return sum;
+    }; 
+})( jQuery );
+  
+  $('#'+getSection).text(jQuery('.'+getSection).sum());
+  
+
+var val1 = 0;        
+var val2 = 0;  
+
+val1 = parseInt($('#f'+str).html());        
+val2 = parseInt($('#m'+str).html());
+
+$('#'+str+'_total').text( val1+val2);
+
+});
+
+
+$('.total_dcworker_m').on('change', function()
+{
+
+  var getSection = $(this).data('val'); 
+  var str = getSection.substring(1);
+
+      (function( $ ){
+   $.fn.sum=function () {
+    var sum=0;
+        $(this).each(function(index, element){
+            if($(element).val()!="")
+            sum += parseFloat($(element).val());
+        });
+    return sum;
+    }; 
+})( jQuery );
+  
+  $('#'+getSection).text(jQuery('.'+getSection).sum());
+  
+
+var val1 = 0;        
+var val2 = 0;  
+
+val1 = parseInt($('#f'+str).html());        
+val2 = parseInt($('#m'+str).html());
+
+$('#'+str+'_total').text( val1+val2);
+
+});
+
+
+$('.total_utworker_m').on('change', function()
+{
+
+  var getSection = $(this).data('val'); 
+  var str = getSection.substring(1);
+
+      (function( $ ){
+   $.fn.sum=function () {
+    var sum=0;
+        $(this).each(function(index, element){
+            if($(element).val()!="")
+            sum += parseFloat($(element).val());
+        });
+    return sum;
+    }; 
+})( jQuery );
+  
+  $('#'+getSection).text(jQuery('.'+getSection).sum());
+  
+
+var val1 = 0;        
+var val2 = 0;  
+
+val1 = parseInt($('#f'+str).html());        
+val2 = parseInt($('#m'+str).html());
+
+$('#'+str+'_total').text( val1+val2);
+
+});
+
+
+$('.total_others_m').on('change', function()
+{
+
+  var getSection = $(this).data('val'); 
+  var str = getSection.substring(1);
+
+      (function( $ ){
+   $.fn.sum=function () {
+    var sum=0;
+        $(this).each(function(index, element){
+            if($(element).val()!="")
+            sum += parseFloat($(element).val());
+        });
+    return sum;
+    }; 
+})( jQuery );
+  
+  $('#'+getSection).text(jQuery('.'+getSection).sum());
+  
+
+var val1 = 0;        
+var val2 = 0;  
+
+val1 = parseInt($('#f'+str).html());        
+val2 = parseInt($('#m'+str).html());
+
+$('#'+str+'_total').text( val1+val2);
+
+});
+
+
+
+//GET TOTAL FEMALE
+$('.total_crime_f').on('change', function()
+{
+
+  var getSection = $(this).data('val'); 
+  var str = getSection.substring(1);
+
+      (function( $ ){
+   $.fn.sum=function () {
+    var sum=0;
+        $(this).each(function(index, element){
+            if($(element).val()!="")
+            sum += parseFloat($(element).val());
+        });
+    return sum;
+    }; 
+})( jQuery );
+  
+  $('#'+getSection).text(jQuery('.'+getSection).sum());
+  
+
+var val1 = 0;        
+var val2 = 0;  
+
+val1 = parseInt($('#f'+str).html());        
+val2 = parseInt($('#m'+str).html());
+
+$('#'+str+'_total').text( val1+val2);
+
+});
+
+
+$('.total_capt_f').on('change', function()
+{
+
+  var getSection = $(this).data('val'); 
+  var str = getSection.substring(1);
+
+      (function( $ ){
+   $.fn.sum=function () {
+    var sum=0;
+        $(this).each(function(index, element){
+            if($(element).val()!="")
+            sum += parseFloat($(element).val());
+        });
+    return sum;
+    }; 
+})( jQuery );
+  
+  $('#'+getSection).text(jQuery('.'+getSection).sum());
+  
+
+var val1 = 0;        
+var val2 = 0;  
+
+val1 = parseInt($('#f'+str).html());        
+val2 = parseInt($('#m'+str).html());
+
+$('#'+str+'_total').text( val1+val2);
+
+});
+
+
+$('.total_kgwd_f').on('change', function()
+{
+
+  var getSection = $(this).data('val'); 
+  var str = getSection.substring(1);
+
+      (function( $ ){
+   $.fn.sum=function () {
+    var sum=0;
+        $(this).each(function(index, element){
+            if($(element).val()!="")
+            sum += parseFloat($(element).val());
+        });
+    return sum;
+    }; 
+})( jQuery );
+  
+  $('#'+getSection).text(jQuery('.'+getSection).sum());
+  
+
+var val1 = 0;        
+var val2 = 0;  
+
+val1 = parseInt($('#f'+str).html());        
+val2 = parseInt($('#m'+str).html());
+
+$('#'+str+'_total').text( val1+val2);
+
+});
+
+
+$('.total_sect_f').on('change', function()
+{
+
+  var getSection = $(this).data('val'); 
+  var str = getSection.substring(1);
+
+      (function( $ ){
+   $.fn.sum=function () {
+    var sum=0;
+        $(this).each(function(index, element){
+            if($(element).val()!="")
+            sum += parseFloat($(element).val());
+        });
+    return sum;
+    }; 
+})( jQuery );
+  
+  $('#'+getSection).text(jQuery('.'+getSection).sum());
+  
+
+var val1 = 0;        
+var val2 = 0;  
+
+val1 = parseInt($('#f'+str).html());        
+val2 = parseInt($('#m'+str).html());
+
+$('#'+str+'_total').text( val1+val2);
+
+});
+
+
+$('.total_treasurer_f').on('change', function()
+{
+
+  var getSection = $(this).data('val'); 
+  var str = getSection.substring(1);
+
+      (function( $ ){
+   $.fn.sum=function () {
+    var sum=0;
+        $(this).each(function(index, element){
+            if($(element).val()!="")
+            sum += parseFloat($(element).val());
+        });
+    return sum;
+    }; 
+})( jQuery );
+  
+  $('#'+getSection).text(jQuery('.'+getSection).sum());
+  
+
+var val1 = 0;        
+var val2 = 0;  
+
+val1 = parseInt($('#f'+str).html());        
+val2 = parseInt($('#m'+str).html());
+
+$('#'+str+'_total').text( val1+val2);
+
+});
+
+
+
+$('.total_tanod_f').on('change', function()
+{
+
+  var getSection = $(this).data('val'); 
+  var str = getSection.substring(1);
+
+      (function( $ ){
+   $.fn.sum=function () {
+    var sum=0;
+        $(this).each(function(index, element){
+            if($(element).val()!="")
+            sum += parseFloat($(element).val());
+        });
+    return sum;
+    }; 
+})( jQuery );
+  
+  $('#'+getSection).text(jQuery('.'+getSection).sum());
+  
+
+var val1 = 0;        
+var val2 = 0;  
+
+val1 = parseInt($('#f'+str).html());        
+val2 = parseInt($('#m'+str).html());
+
+$('#'+str+'_total').text( val1+val2);
+
+});
+
+
+
+$('.total_hdoctor_f').on('change', function()
+{
+
+  var getSection = $(this).data('val'); 
+  var str = getSection.substring(1);
+
+      (function( $ ){
+   $.fn.sum=function () {
+    var sum=0;
+        $(this).each(function(index, element){
+            if($(element).val()!="")
+            sum += parseFloat($(element).val());
+        });
+    return sum;
+    }; 
+})( jQuery );
+  
+  $('#'+getSection).text(jQuery('.'+getSection).sum());
+  
+
+var val1 = 0;        
+var val2 = 0;  
+
+val1 = parseInt($('#f'+str).html());        
+val2 = parseInt($('#m'+str).html());
+
+$('#'+str+'_total').text( val1+val2);
+
+});
+
+
+
+
+
+$('.total_nscholar_f').on('change', function()
+{
+
+  var getSection = $(this).data('val'); 
+  var str = getSection.substring(1);
+
+      (function( $ ){
+   $.fn.sum=function () {
+    var sum=0;
+        $(this).each(function(index, element){
+            if($(element).val()!="")
+            sum += parseFloat($(element).val());
+        });
+    return sum;
+    }; 
+})( jQuery );
+  
+  $('#'+getSection).text(jQuery('.'+getSection).sum());
+  
+
+var val1 = 0;        
+var val2 = 0;  
+
+val1 = parseInt($('#f'+str).html());        
+val2 = parseInt($('#m'+str).html());
+
+$('#'+str+'_total').text( val1+val2);
+
+});
+
+
+
+$('.total_prkleader_f').on('change', function()
+{
+
+  var getSection = $(this).data('val'); 
+  var str = getSection.substring(1);
+
+      (function( $ ){
+   $.fn.sum=function () {
+    var sum=0;
+        $(this).each(function(index, element){
+            if($(element).val()!="")
+            sum += parseFloat($(element).val());
+        });
+    return sum;
+    }; 
+})( jQuery );
+  
+  $('#'+getSection).text(jQuery('.'+getSection).sum());
+  
+
+var val1 = 0;        
+var val2 = 0;  
+
+val1 = parseInt($('#f'+str).html());        
+val2 = parseInt($('#m'+str).html());
+
+$('#'+str+'_total').text( val1+val2);
+
+});
+
+
+
+$('.total_enrofficer_f').on('change', function()
+{
+
+  var getSection = $(this).data('val'); 
+  var str = getSection.substring(1);
+
+      (function( $ ){
+   $.fn.sum=function () {
+    var sum=0;
+        $(this).each(function(index, element){
+            if($(element).val()!="")
+            sum += parseFloat($(element).val());
+        });
+    return sum;
+    }; 
+})( jQuery );
+  
+  $('#'+getSection).text(jQuery('.'+getSection).sum());
+  
+
+var val1 = 0;        
+var val2 = 0;  
+
+val1 = parseInt($('#f'+str).html());        
+val2 = parseInt($('#m'+str).html());
+
+$('#'+str+'_total').text( val1+val2);
+
+});
+
+
+$('.total_librarian_f').on('change', function()
+{
+
+  var getSection = $(this).data('val'); 
+  var str = getSection.substring(1);
+
+      (function( $ ){
+   $.fn.sum=function () {
+    var sum=0;
+        $(this).each(function(index, element){
+            if($(element).val()!="")
+            sum += parseFloat($(element).val());
+        });
+    return sum;
+    }; 
+})( jQuery );
+  
+  $('#'+getSection).text(jQuery('.'+getSection).sum());
+  
+
+var val1 = 0;        
+var val2 = 0;  
+
+val1 = parseInt($('#f'+str).html());        
+val2 = parseInt($('#m'+str).html());
+
+$('#'+str+'_total').text( val1+val2);
+
+});
+
+
+
+$('.total_utworker_f').on('change', function()
+{
+
+  var getSection = $(this).data('val'); 
+  var str = getSection.substring(1);
+
+      (function( $ ){
+   $.fn.sum=function () {
+    var sum=0;
+        $(this).each(function(index, element){
+            if($(element).val()!="")
+            sum += parseFloat($(element).val());
+        });
+    return sum;
+    }; 
+})( jQuery );
+  
+  $('#'+getSection).text(jQuery('.'+getSection).sum());
+  
+
+var val1 = 0;        
+var val2 = 0;  
+
+val1 = parseInt($('#f'+str).html());        
+val2 = parseInt($('#m'+str).html());
+
+$('#'+str+'_total').text( val1+val2);
+
+});
+
+
+$('.total_dcworker_f').on('change', function()
+{
+
+  var getSection = $(this).data('val'); 
+  var str = getSection.substring(1);
+
+      (function( $ ){
+   $.fn.sum=function () {
+    var sum=0;
+        $(this).each(function(index, element){
+            if($(element).val()!="")
+            sum += parseFloat($(element).val());
+        });
+    return sum;
+    }; 
+})( jQuery );
+  
+  $('#'+getSection).text(jQuery('.'+getSection).sum());
+  
+
+var val1 = 0;        
+var val2 = 0;  
+
+val1 = parseInt($('#f'+str).html());        
+val2 = parseInt($('#m'+str).html());
+
+$('#'+str+'_total').text( val1+val2);
+
+});
+
+
+$('.total_others_f').on('change', function()
+{
+
+  var getSection = $(this).data('val'); 
+  var str = getSection.substring(1);
+
+      (function( $ ){
+   $.fn.sum=function () {
+    var sum=0;
+        $(this).each(function(index, element){
+            if($(element).val()!="")
+            sum += parseFloat($(element).val());
+        });
+    return sum;
+    }; 
+})( jQuery );
+  
+  $('#'+getSection).text(jQuery('.'+getSection).sum());
+  
+
+var val1 = 0;        
+var val2 = 0;  
+
+val1 = parseInt($('#f'+str).html());        
+val2 = parseInt($('#m'+str).html());
+
+$('#'+str+'_total').text( val1+val2);
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+// ----START OF SECTION 3---
+
+$('.significant-events-climate').on('keyup', function()
+{
+      (function( $ ){
+   $.fn.sum=function () {
+    var sum=0;
+        $(this).each(function(index, element){
+            if($(element).val()!="")
+            sum += parseFloat($(element).val());
+        });
+    return sum;
+    }; 
+})( jQuery );
+  
+  $('#total_significant_events_climate').text(jQuery('.significant-events-climate').sum());
+  
+}); 
+
+
+$('.significant-events-economic').on('keyup', function()
+{
+      (function( $ ){
+   $.fn.sum=function () {
+    var sum=0;
+        $(this).each(function(index, element){
+            if($(element).val()!="")
+            sum += parseFloat($(element).val());
+        });
+    return sum;
+    }; 
+})( jQuery );
+  
+  $('#total_significant-events-economic').text(jQuery('.significant-events-economic').sum());
+  
+}); 
+
+
+
+$('.significant-events-climate2').on('keyup', function()
+{
+      (function( $ ){
+   $.fn.sum=function () {
+    var sum=0;
+        $(this).each(function(index, element){
+            if($(element).val()!="")
+            sum += parseFloat($(element).val());
+        });
+    return sum;
+    }; 
+})( jQuery );
+  
+  $('#total_significant-events-climate2').text(jQuery('.significant-events-climate2').sum());
+  
+}); 
+
+
+$('.significant-events-peaceandorder').on('keyup', function()
+{
+      (function( $ ){
+   $.fn.sum=function () {
+    var sum=0;
+        $(this).each(function(index, element){
+            if($(element).val()!="")
+            sum += parseFloat($(element).val());
+        });
+    return sum;
+    }; 
+})( jQuery );
+  
+  $('#total_significant-events-peaceandorder').text(jQuery('.significant-events-peaceandorder').sum());
+  
+}); 
+
+
+$('.significant-events-healthagri').on('keyup', function()
+{
+      (function( $ ){
+   $.fn.sum=function () {
+    var sum=0;
+        $(this).each(function(index, element){
+            if($(element).val()!="")
+            sum += parseFloat($(element).val());
+        });
+    return sum;
+    }; 
+})( jQuery );
+  
+  $('#total_significant-events-healthagri').text(jQuery('.significant-events-healthagri').sum());
+  
+}); 
+
+
+$('.significant-events-economic2').on('keyup', function()
+{
+      (function( $ ){
+   $.fn.sum=function () {
+    var sum=0;
+        $(this).each(function(index, element){
+            if($(element).val()!="")
+            sum += parseFloat($(element).val());
+        });
+    return sum;
+    }; 
+})( jQuery );
+  
+  $('#total_significant-events-economic2').text(jQuery('.significant-events-economic2').sum());
+  
+}); 
+
+
+$('.significant-events-peaceandorder2').on('keyup', function()
+{
+      (function( $ ){
+   $.fn.sum=function () {
+    var sum=0;
+        $(this).each(function(index, element){
+            if($(element).val()!="")
+            sum += parseFloat($(element).val());
+        });
+    return sum;
+    }; 
+})( jQuery );
+  
+  $('#total_significant-events-peaceandorder2').text(jQuery('.significant-events-peaceandorder2').sum());
+  
+}); 
+
+
+$('.significant-events-healthagri2').on('keyup', function()
+{
+      (function( $ ){
+   $.fn.sum=function () {
+    var sum=0;
+        $(this).each(function(index, element){
+            if($(element).val()!="")
+            sum += parseFloat($(element).val());
+        });
+    return sum;
+    }; 
+})( jQuery );
+  
+  $('#total_significant-events-healthagri2').text(jQuery('.significant-events-healthagri2').sum());
+  
+}); 
+
+
+
+$('.brgy-establishments').on('keyup', function()
+{
+      (function( $ ){
+   $.fn.sum=function () {
+    var sum=0;
+        $(this).each(function(index, element){
+            if($(element).val()!="")
+            sum += parseFloat($(element).val());
+        });
+    return sum;
+    }; 
+})( jQuery );
+  
+  $('#total_brgy_establishments').text(jQuery('.brgy-establishments').sum());
+  
+}); 
+
+
+$('.sector-thematic').on('keyup', function()
+{
+      (function( $ ){
+   $.fn.sum=function () {
+    var sum=0;
+        $(this).each(function(index, element){
+            if($(element).val()!="")
+            sum += parseFloat($(element).val());
+        });
+    return sum;
+    }; 
+})( jQuery );
+  
+  $('#total_sector-thematic').text(jQuery('.sector-thematic').sum());
+  
+}); 
+
+// ---END OF SECTION 3 ----
+
+
+
+
+
+
+$('#final_submission').on('click', function()
+{
+
+  Swal.fire({
+  title: 'Submitting this questionnaire will tag it as a final data.',
+  text: "You won't be able to change the data after submitting, click cancel if you want to review the entries.",
+  icon: 'warning',
+  showCancelButton: true,
+  confirmButtonColor: '#3085d6',
+  cancelButtonColor: '#d33',
+  confirmButtonText: 'Yes, Submit.'
+}).then((result) => {
+  if (result.isConfirmed) {
+    Swal.fire(
+      'Submitted Successfully!',
+      'Your questionnaire data has been sent.',
+      'success'
+    )
+  }
+
+})
+
+
+});
+	
 })();
 
 </script>
