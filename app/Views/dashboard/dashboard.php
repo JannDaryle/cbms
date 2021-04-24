@@ -11,7 +11,6 @@
   <title>Barangay Profile Questionnaire</title>
 
  
-<link href="css/simple-sidebar.css" rel="stylesheet">
 
 </head>
 
@@ -64,6 +63,10 @@
       border-left: 1px solid #dddddd;
     }
 
+.readBreakLines
+{
+  white-space: pre-line;
+}
 
 
 </style>
@@ -152,7 +155,9 @@
 
                   <br>
 
-                  <div align="center"> <button type="button" id="add_notes" class="btn btn-outline-warning"><i class="far fa-sticky-note" style="font-size: 25px;"></i> Add Notes</button></div>
+                  <div align="center"> <button type="button" id="add_notes" class="btn btn-outline-warning"><i class="far fa-sticky-note" style="font-size: 25px;"></i> Add Notes</button></div><br>
+
+                   <div align="center"> <button type="button" id="add_notes" class="btn btn-outline-warning note_refresh" data-toggle="modal" data-target="#show_notes"><i class="fas fa-book-reader" style="font-size: 25px;"></i> View Notes</button></div>
                  
 
                     <div align="center" style="visibility: hidden" >
@@ -164,10 +169,10 @@
                     </div>
 
                   <br>
-                  <label class="text-center" align="center" style="color: lightgreen ">Progress</label>
+                  <!-- <label class="text-center" align="center" style="color: lightgreen ">Progress</label>
                   <div class="progress" style="margin-left: 15px !important;">
                    <div class="progress-bar bg-success" role="progressbar" style="width: 21%;" aria-valuenow="21" aria-valuemin="0" aria-valuemax="100">21%</div>
-                  </div>
+                  </div> -->
       
 
                 </div>
@@ -208,7 +213,7 @@
 
               <div class="card text-center" style="margin-top: 20px; margin-bottom: 40px;">
                             <div class="card-header" >
-                             <h3>COMMUNITY BASED MONITORING SYSTEM</h3>
+                             <h3>COMMUNITY-BASED MONITORING SYSTEM</h3>
                             </div>
 
                             <div class="card-body" style="background-color: #fafcff">
@@ -727,7 +732,7 @@ Does this barangay have…
   
 <br> 
 <div class="text-left"><h5>
-5. What are the puroks in the barangay?<br><br>
+5. What are the sitios in the barangay?<br><br>
 &nbsp&nbsp&nbsp&nbsp
 </h5></div>
 
@@ -822,12 +827,12 @@ Does this barangay have…
               </tr>
 
               <tr>
-                <td>I. Others, please specify<br>
+                <td>I. Others, please <br>specify<br>
                    <textarea class="form-control" name="A6_othersa_classification" rows="2"></textarea>
                    <label for="" style="font-size: 11px; color: red"><i>Press Enter to add more data.</i></label>
                 </td>
 
-                <td> <br><br> 
+                <td>&nbsp<br><br>
                   <textarea type="number" class="form-control land_classification" name="A6_othersa" placeholder="" ></textarea>
                   <label for="" style="font-size: 11px; color:white"><i>-</i></label>
                 </td>
@@ -1054,7 +1059,7 @@ ENCODE EA/BSN/FSN?
                                   <div class="container-fluid">
                                  <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_facility" data-facility="Barangay Health Center" data-toggle="modal" data-target="#add_barangay_health_facilities">Add Facility</button></div><br>
                                   
-                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_fac_garbage_waste" style="width:100%" >  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_fac_health" style="width:100%" >  
                                             <thead class="">
                                               <tr> 
                                                 <th style="text-align: center;" class="text-center " width="">Facility Type</th>
@@ -2279,7 +2284,7 @@ ENCODE EA/BSN/FSN?
 
 <div class="container-fluid">
     
-     <table id="table5" class="norm_table cell-border compact table-hover" style="width:100%">
+     <table id="table4" class="norm_table cell-border compact table-hover" style="width:100%">
         <thead>
             <tr class="text-center">
                 <th wi>B. SERVICE INSTITUTIONS AND INFRASTRUCTURE - EDUCATION FACILITIES</th>
@@ -3217,7 +3222,7 @@ ENCODE EA/BSN/FSN?
 
 <div class="container-fluid">
     
-     <table id="table7" class="norm_table cell-border compact table-hover" style="width:100%">
+     <table id="table5" class="norm_table cell-border compact table-hover" style="width:100%">
         <thead>
             <tr class="text-center">
                 <th wi>B. SERVICE INSTITUTIONS AND INFRASTRUCTURE - SERVICE FACILITIES</th>
@@ -3411,7 +3416,7 @@ ENCODE EA/BSN/FSN?
                   
                      <!-- this -->
                     <div class="col-sm skip_no_police" hidden>
-                      <h6>EF5. What institution operates the facility?</h6><br><br>
+                      <h6>SF5. What institution operates the facility?</h6><br><br>
                        <!-- this name -->
                       <select  name="no_police_operator" class="form-control" >
                         <option value="">Select</option>
@@ -3517,7 +3522,7 @@ ENCODE EA/BSN/FSN?
                   
                      <!-- this -->
                     <div class="col-sm skip_no_wcc" hidden>
-                      <h6>EF5. What institution operates the facility?</h6><br><br>
+                      <h6>SF5. What institution operates the facility?</h6><br><br>
                        <!-- this name -->
                       <select  name="no_wcc_operator" class="form-control" >
                         <option value="">Select</option>
@@ -3623,7 +3628,7 @@ ENCODE EA/BSN/FSN?
                   
                      <!-- this -->
                     <div class="col-sm skip_no_bank" hidden>
-                      <h6>EF5. What institution operates the facility?</h6><br><br>
+                      <h6>SF5. What institution operates the facility?</h6><br><br>
                        <!-- this name -->
                       <select  name="no_bank_operator" class="form-control" >
                         <option value="">Select</option>
@@ -3729,7 +3734,7 @@ ENCODE EA/BSN/FSN?
                   
                      <!-- this -->
                     <div class="col-sm skip_no_fire_station" hidden>
-                      <h6>EF5. What institution operates the facility?</h6><br><br>
+                      <h6>SF5. What institution operates the facility?</h6><br><br>
                        <!-- this name -->
                       <select  name="no_fire_station_operator" class="form-control" >
                         <option value="">Select</option>
@@ -3835,7 +3840,7 @@ ENCODE EA/BSN/FSN?
                   
                      <!-- this -->
                     <div class="col-sm skip_no_plazas" hidden>
-                      <h6>EF5. What institution operates the facility?</h6><br><br>
+                      <h6>SF5. What institution operates the facility?</h6><br><br>
                        <!-- this name -->
                       <select  name="no_plazas_operator" class="form-control" >
                         <option value="">Select</option>
@@ -3941,7 +3946,7 @@ ENCODE EA/BSN/FSN?
                   
                      <!-- this -->
                     <div class="col-sm skip_no_negosyo" hidden>
-                      <h6>EF5. What institution operates the facility?</h6><br><br>
+                      <h6>SF5. What institution operates the facility?</h6><br><br>
                        <!-- this name -->
                       <select  name="no_negosyo_operator" class="form-control" >
                         <option value="">Select</option>
@@ -4047,7 +4052,7 @@ ENCODE EA/BSN/FSN?
                   
                      <!-- this -->
                     <div class="col-sm skip_no_pwd" hidden>
-                      <h6>EF5. What institution operates the facility?</h6><br><br>
+                      <h6>SF5. What institution operates the facility?</h6><br><br>
                        <!-- this name -->
                       <select  name="no_pwd_operator" class="form-control" >
                         <option value="">Select</option>
@@ -4153,7 +4158,7 @@ ENCODE EA/BSN/FSN?
                   
                      <!-- this -->
                     <div class="col-sm skip_no_osc_affairs" hidden>
-                      <h6>EF5. What institution operates the facility?</h6><br><br>
+                      <h6>SF5. What institution operates the facility?</h6><br><br>
                        <!-- this name -->
                       <select  name="no_osc_affairs_operator" class="form-control" >
                         <option value="">Select</option>
@@ -4259,7 +4264,7 @@ ENCODE EA/BSN/FSN?
                   
                      <!-- this -->
                     <div class="col-sm skip_no_lcpc_office" hidden>
-                      <h6>EF5. What institution operates the facility?</h6><br><br>
+                      <h6>SF5. What institution operates the facility?</h6><br><br>
                        <!-- this name -->
                       <select  name="no_lcpc_office_operator" class="form-control" >
                         <option value="">Select</option>
@@ -4365,7 +4370,7 @@ ENCODE EA/BSN/FSN?
                   
                      <!-- this -->
                     <div class="col-sm skip_no_cemetery" hidden>
-                      <h6>EF5. What institution operates the facility?</h6><br><br>
+                      <h6>SF5. What institution operates the facility?</h6><br><br>
                        <!-- this name -->
                       <select  name="no_cemetery_operator" class="form-control" >
                         <option value="">Select</option>
@@ -4471,7 +4476,7 @@ ENCODE EA/BSN/FSN?
                   
                      <!-- this -->
                     <div class="col-sm skip_no_library" hidden>
-                      <h6>EF5. What institution operates the facility?</h6><br><br>
+                      <h6>SF5. What institution operates the facility?</h6><br><br>
                        <!-- this name -->
                       <select  name="no_library_operator" class="form-control" >
                         <option value="">Select</option>
@@ -4577,7 +4582,7 @@ ENCODE EA/BSN/FSN?
                   
                      <!-- this -->
                     <div class="col-sm skip_no_postal" hidden>
-                      <h6>EF5. What institution operates the facility?</h6><br><br>
+                      <h6>SF5. What institution operates the facility?</h6><br><br>
                        <!-- this name -->
                       <select  name="no_postal_operator" class="form-control" >
                         <option value="">Select</option>
@@ -4669,15 +4674,4157 @@ ENCODE EA/BSN/FSN?
          
            </tr>
            <!-- -------14 Service Facility--- -->
-          
-          
+
+
       </table>
   </div> <!-- ---END OF Service Facilities Div Container Fluid-- -->
+
+<br><br><hr>
+<h4 style="color: blue;">---------- END OF SECTION 1 ----------</h4>
+<!-- <input type="text" name="section_number" value="1" hidden="">  -->
+
+</form> <!-- Section 1 End Form -->
+
+
+
+   
+                             
+                            </div> <!-- End of Card Body -->
+
+
+                            <div class="card-footer text-muted" >
+                             <button type="button" id="save_sec_1" class="btn btn-outline-success">Save</button>
+                             
+                            </div>
+              </div>
+
+
+
+
+               </div>
+
+          </div>
+          <!-- End of Section 1 -->
+
+
+
+
+
+
+
+       <!-- ------------------------------------------------------SECTION 2 ---------------------------------------------- -->
+          <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+            <div class="container-fluid" style="width: 90%; background-color: " >
+                    
+
+
+              <div class="card text-center" style="margin-top: 20px; margin-bottom: 40px;">
+                            <div class="card-header" >
+                             <h3>COMMUNITY BASED MONITORING SYSTEM</h3>
+                            </div>
+
+                            <div class="card-body" style="background-color: #fafcff">
+
+                               <form method="post" id="submit_de_part2">
+
+
+<br>
+<i style="color: green" class="">Now, I would like to talk about the agricultural facilities in the barangay. </i><br><br>  
+
+
+    <div class="container-fluid">
+            
+             <table id="sect2_table1" class="norm_table cell-border compact table-hover" style="width:100%">
+                <thead>
+                    <tr class="text-center">
+                        <th wi>B. SERVICE INSTITUTIONS AND INFRASTRUCTURE - AGRICULTURAL FACILITY</th>
+                     
+                    </tr>
+                </thead>
+
+                <!-- AGRICULTURAL FACILITY START --> 
+              <tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>AF1. Does this barangay have atleast one <u>Rice Mill?</u></h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="AF1_ricemill"  data-val="Yes" data-skip="ricemill" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="AF1_ricemill"  data-val="No"  data-skip="ricemill" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                     <!-- this -->
+                    <div class="col-sm skip_no_ricemill" hidden="">
+                       
+                       <h6 style="padding-bottom: 5px;">AF2. What is the distance of the Barangay Hall to the nearest facility?</h6> <br>
+                               <!-- this name -->
+                              <select  name="ricemill_distance" class="form-control hf2" data-skip="ricemill" style="margin-bottom: 15px;">
+                                <option value="">Select</option>
+                                <option value="WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="DON'T KNOW">DON'T KNOW</option>                                                  
+                              </select>
+                               <!-- this +name-->
+                              <h6 class="hf2_in_ricemill" hidden="">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6>
+                                 <input type="text" class="form-control hf2_in_ricemill"  name="ricemill_distance_in2km" placeholder="Please Specify" hidden="">
+
+                              <!-- this +name-->  
+                              <h6 class="hf2_out_ricemill" hidden="">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6> 
+                                 <input type="text" class="form-control hf2_out_ricemill"  name="ricemill_distance_more2km" placeholder="Please Specify" hidden="">    
+                    </div>
+
+                     <!-- this -->
+                    <div class="skip_yes_ricemill container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_facility_agrilcultural"data-facility="Rice Mill" data-toggle="modal" data-target="#add_barangay_agricultural_facilities">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_fac_agricultural" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                     <!-- this -->
+                    <div class="col-sm skip_no_ricemill" hidden>
+                      <h6>AF5. What institution operates the facility?</h6><br><br>
+                       <!-- this name -->
+                      <select  name="no_ricemill_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+                      <br>
+                    </div>          
+
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+           <!-- -------1 Agricultural Facility--- -->
+            <tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>AF1. Does this barangay have atleast one <u>Corn mill?</u></h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="AF1_cornmill"  data-val="Yes" data-skip="cornmill" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="AF1_cornmill"  data-val="No"  data-skip="cornmill" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                     <!-- this -->
+                    <div class="col-sm skip_no_cornmill" hidden="">
+                       
+                       <h6 style="padding-bottom: 5px;">AF2. What is the distance of the Barangay Hall to the nearest facility?</h6> <br>
+                               <!-- this name -->
+                              <select  name="cornmill_distance" class="form-control hf2" data-skip="cornmill" style="margin-bottom: 15px;">
+                                <option value="">Select</option>
+                                <option value="WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="DON'T KNOW">DON'T KNOW</option>                                                  
+                              </select>
+                               <!-- this +name-->
+                              <h6 class="hf2_in_cornmill" hidden="">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6>
+                                 <input type="text" class="form-control hf2_in_cornmill"  name="cornmill_distance_in2km" placeholder="Please Specify" hidden="">
+
+                              <!-- this +name-->  
+                              <h6 class="hf2_out_cornmill" hidden="">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6> 
+                                 <input type="text" class="form-control hf2_out_cornmill"  name="cornmill_distance_more2km" placeholder="Please Specify" hidden="">    
+                    </div>
+
+                     <!-- this -->
+                    <div class="skip_yes_cornmill container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_facility_agrilcultural"data-facility="Corn Mill" data-toggle="modal" data-target="#add_barangay_agricultural_facilities">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_fac_agricultural" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                     <!-- this -->
+                    <div class="col-sm skip_no_cornmill" hidden>
+                      <h6>AF5. What institution operates the facility?</h6><br><br>
+                       <!-- this name -->
+                      <select  name="no_cornmill_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+                      <br>
+                    </div>          
+
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+           <!-- -------2 Agricultural Facility--- -->
+           <tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>AF1. Does this barangay have atleast one <u>Feed mill?</u></h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="AF1_feedmill"  data-val="Yes" data-skip="feedmill" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="AF1_feedmill"  data-val="No"  data-skip="feedmill" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                     <!-- this -->
+                    <div class="col-sm skip_no_feedmill" hidden="">
+                       
+                       <h6 style="padding-bottom: 5px;">AF2. What is the distance of the Barangay Hall to the nearest facility?</h6> <br>
+                               <!-- this name -->
+                              <select  name="feedmill_distance" class="form-control hf2" data-skip="feedmill" style="margin-bottom: 15px;">
+                                <option value="">Select</option>
+                                <option value="WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="DON'T KNOW">DON'T KNOW</option>                                                  
+                              </select>
+                               <!-- this +name-->
+                              <h6 class="hf2_in_feedmill" hidden="">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6>
+                                 <input type="text" class="form-control hf2_in_feedmill"  name="feedmill_distance_in2km" placeholder="Please Specify" hidden="">
+
+                              <!-- this +name-->  
+                              <h6 class="hf2_out_feedmill" hidden="">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6> 
+                                 <input type="text" class="form-control hf2_out_feedmill"  name="feedmill_distance_more2km" placeholder="Please Specify" hidden="">    
+                    </div>
+
+                     <!-- this -->
+                    <div class="skip_yes_feedmill container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_facility_agrilcultural"data-facility="Feed Mill" data-toggle="modal" data-target="#add_barangay_agricultural_facilities">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_fac_agricultural" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                     <!-- this -->
+                    <div class="col-sm skip_no_feedmill" hidden>
+                      <h6>AF5. What institution operates the facility?</h6><br><br>
+                       <!-- this name -->
+                      <select  name="no_feedmill_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+                      <br>
+                    </div>          
+
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+           <!-- -------3 Agricultural Facility--- -->
+           <tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>AF1. Does this barangay have atleast one <u>Sugar mill?</u></h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="AF1_sugarmill"  data-val="Yes" data-skip="sugarmill" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="AF1_sugarmill"  data-val="No"  data-skip="sugarmill" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                     <!-- this -->
+                    <div class="col-sm skip_no_sugarmill" hidden="">
+                       
+                       <h6 style="padding-bottom: 5px;">AF2. What is the distance of the Barangay Hall to the nearest facility?</h6> <br>
+                               <!-- this name -->
+                              <select  name="sugarmill_distance" class="form-control hf2" data-skip="sugarmill" style="margin-bottom: 15px;">
+                                <option value="">Select</option>
+                                <option value="WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="DON'T KNOW">DON'T KNOW</option>                                                  
+                              </select>
+                               <!-- this +name-->
+                              <h6 class="hf2_in_sugarmill" hidden="">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6>
+                                 <input type="text" class="form-control hf2_in_sugarmill"  name="sugarmill_distance_in2km" placeholder="Please Specify" hidden="">
+
+                              <!-- this +name-->  
+                              <h6 class="hf2_out_sugarmill" hidden="">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6> 
+                                 <input type="text" class="form-control hf2_out_sugarmill"  name="sugarmill_distance_more2km" placeholder="Please Specify" hidden="">    
+                    </div>
+
+                     <!-- this -->
+                    <div class="skip_yes_sugarmill container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_facility_agrilcultural"data-facility="Sugar Mill" data-toggle="modal" data-target="#add_barangay_agricultural_facilities">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_fac_agricultural" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                     <!-- this -->
+                    <div class="col-sm skip_no_sugarmill" hidden>
+                      <h6>AF5. What institution operates the facility?</h6><br><br>
+                       <!-- this name -->
+                      <select  name="no_sugarmill_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+                      <br>
+                    </div>          
+
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+           <!-- -------4 Agricultural Facility--- -->
+            <tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>AF1. Does this barangay have atleast one <u>Fish landing center?</u></h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="AF1_flc"  data-val="Yes" data-skip="flc" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="AF1_flc"  data-val="No"  data-skip="flc" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                     <!-- this -->
+                    <div class="col-sm skip_no_flc" hidden="">
+                       
+                       <h6 style="padding-bottom: 5px;">AF2. What is the distance of the Barangay Hall to the nearest facility?</h6> <br>
+                               <!-- this name -->
+                              <select  name="flc_distance" class="form-control hf2" data-skip="flc" style="margin-bottom: 15px;">
+                                <option value="">Select</option>
+                                <option value="WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="DON'T KNOW">DON'T KNOW</option>                                                  
+                              </select>
+                               <!-- this +name-->
+                              <h6 class="hf2_in_flc" hidden="">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6>
+                                 <input type="text" class="form-control hf2_in_flc"  name="flc_distance_in2km" placeholder="Please Specify" hidden="">
+
+                              <!-- this +name-->  
+                              <h6 class="hf2_out_flc" hidden="">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6> 
+                                 <input type="text" class="form-control hf2_out_flc"  name="flc_distance_more2km" placeholder="Please Specify" hidden="">    
+                    </div>
+
+                     <!-- this -->
+                    <div class="skip_yes_flc container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_facility_agrilcultural"data-facility="Fish Landing Center" data-toggle="modal" data-target="#add_barangay_agricultural_facilities">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_fac_agricultural" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                     <!-- this -->
+                    <div class="col-sm skip_no_flc" hidden>
+                      <h6>AF5. What institution operates the facility?</h6><br><br>
+                       <!-- this name -->
+                      <select  name="no_flc_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+                      <br>
+                    </div>          
+
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+           <!-- -------5 Agricultural Facility--- --> 
+           <tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>AF1. Does this barangay have atleast one <u>Agriculture produce market?(permanent/bagsakan, and periodic/talipapa/weekend market)</u></h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="AF1_apmarket"  data-val="Yes" data-skip="apmarket" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="AF1_apmarket"  data-val="No"  data-skip="apmarket" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                     <!-- this -->
+                    <div class="col-sm skip_no_apmarket" hidden="">
+                       
+                       <h6 style="padding-bottom: 5px;">AF2. What is the distance of the Barangay Hall to the nearest facility?</h6> <br>
+                               <!-- this name -->
+                              <select  name="apmarket_distance" class="form-control hf2" data-skip="apmarket" style="margin-bottom: 15px;">
+                                <option value="">Select</option>
+                                <option value="WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="DON'T KNOW">DON'T KNOW</option>                                                  
+                              </select>
+                               <!-- this +name-->
+                              <h6 class="hf2_in_apmarket" hidden="">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6>
+                                 <input type="text" class="form-control hf2_in_apmarket"  name="apmarket_distance_in2km" placeholder="Please Specify" hidden="">
+
+                              <!-- this +name-->  
+                              <h6 class="hf2_out_apmarket" hidden="">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6> 
+                                 <input type="text" class="form-control hf2_out_apmarket"  name="apmarket_distance_more2km" placeholder="Please Specify" hidden="">    
+                    </div>
+
+                     <!-- this -->
+                    <div class="skip_yes_apmarket container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_facility_agrilcultural"data-facility="Agriculture produce market" data-toggle="modal" data-target="#add_barangay_agricultural_facilities">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_fac_agricultural" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                     <!-- this -->
+                    <div class="col-sm skip_no_apmarket" hidden>
+                      <h6>AF5. What institution operates the facility?</h6><br><br>
+                       <!-- this name -->
+                      <select  name="no_apmarket_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+                      <br>
+                    </div>          
+
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+           <!-- -------6 Agricultural Facility--- -->
+           <tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>AF1. Does this barangay have atleast one <u>Slaughter house/dressing plant?</u></h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="AF1_slaughter"  data-val="Yes" data-skip="slaughter" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="AF1_slaughter"  data-val="No"  data-skip="slaughter" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                     <!-- this -->
+                    <div class="col-sm skip_no_slaughter" hidden="">
+                       
+                       <h6 style="padding-bottom: 5px;">AF2. What is the distance of the Barangay Hall to the nearest facility?</h6> <br>
+                               <!-- this name -->
+                              <select  name="slaughter_distance" class="form-control hf2" data-skip="slaughter" style="margin-bottom: 15px;">
+                                <option value="">Select</option>
+                                <option value="WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="DON'T KNOW">DON'T KNOW</option>                                                  
+                              </select>
+                               <!-- this +name-->
+                              <h6 class="hf2_in_slaughter" hidden="">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6>
+                                 <input type="text" class="form-control hf2_in_slaughter"  name="slaughter_distance_in2km" placeholder="Please Specify" hidden="">
+
+                              <!-- this +name-->  
+                              <h6 class="hf2_out_slaughter" hidden="">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6> 
+                                 <input type="text" class="form-control hf2_out_slaughter"  name="slaughter_distance_more2km" placeholder="Please Specify" hidden="">    
+                    </div>
+
+                     <!-- this -->
+                    <div class="skip_yes_slaughter container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_facility_agrilcultural"data-facility="Slaughter house/dressing plant" data-toggle="modal" data-target="#add_barangay_agricultural_facilities">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_fac_agricultural" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                     <!-- this -->
+                    <div class="col-sm skip_no_slaughter" hidden>
+                      <h6>AF5. What institution operates the facility?</h6><br><br>
+                       <!-- this name -->
+                      <select  name="no_slaughter_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+                      <br>
+                    </div>          
+
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+           <!-- -------7 Agricultural Facility--- -->
+           <tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>AF1. Does this barangay have atleast one <u>NFA warehouse?</u></h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="AF1_nfa"  data-val="Yes" data-skip="nfa" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="AF1_nfa"  data-val="No"  data-skip="nfa" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                     <!-- this -->
+                    <div class="col-sm skip_no_nfa" hidden="">
+                       
+                       <h6 style="padding-bottom: 5px;">AF2. What is the distance of the Barangay Hall to the nearest facility?</h6> <br>
+                               <!-- this name -->
+                              <select  name="nfa_distance" class="form-control hf2" data-skip="nfa" style="margin-bottom: 15px;">
+                                <option value="">Select</option>
+                                <option value="WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="DON'T KNOW">DON'T KNOW</option>                                                  
+                              </select>
+                               <!-- this +name-->
+                              <h6 class="hf2_in_nfa" hidden="">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6>
+                                 <input type="text" class="form-control hf2_in_nfa"  name="nfa_distance_in2km" placeholder="Please Specify" hidden="">
+
+                              <!-- this +name-->  
+                              <h6 class="hf2_out_nfa" hidden="">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6> 
+                                 <input type="text" class="form-control hf2_out_nfa"  name="nfa_distance_more2km" placeholder="Please Specify" hidden="">    
+                    </div>
+
+                     <!-- this -->
+                    <div class="skip_yes_nfa container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_facility_agrilcultural"data-facility="NFA warehouse" data-toggle="modal" data-target="#add_barangay_agricultural_facilities">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_fac_agricultural" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                     <!-- this -->
+                    <div class="col-sm skip_no_nfa" hidden>
+                      <h6>AF5. What institution operates the facility?</h6><br><br>
+                       <!-- this name -->
+                      <select  name="no_nfa_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+                      <br>
+                    </div>          
+
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+           <!-- -------8 Agricultural Facility--- -->
+           <tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>AF1. Does this barangay have atleast one <u>Commercial Agriculture Warehouse?</u></h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="AF1_caw"  data-val="Yes" data-skip="caw" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="AF1_caw"  data-val="No"  data-skip="caw" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                     <!-- this -->
+                    <div class="col-sm skip_no_caw" hidden="">
+                       
+                       <h6 style="padding-bottom: 5px;">AF2. What is the distance of the Barangay Hall to the nearest facility?</h6> <br>
+                               <!-- this name -->
+                              <select  name="caw_distance" class="form-control hf2" data-skip="caw" style="margin-bottom: 15px;">
+                                <option value="">Select</option>
+                                <option value="WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="DON'T KNOW">DON'T KNOW</option>                                                  
+                              </select>
+                               <!-- this +name-->
+                              <h6 class="hf2_in_caw" hidden="">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6>
+                                 <input type="text" class="form-control hf2_in_caw"  name="caw_distance_in2km" placeholder="Please Specify" hidden="">
+
+                              <!-- this +name-->  
+                              <h6 class="hf2_out_caw" hidden="">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6> 
+                                 <input type="text" class="form-control hf2_out_caw"  name="caw_distance_more2km" placeholder="Please Specify" hidden="">    
+                    </div>
+
+                     <!-- this -->
+                    <div class="skip_yes_caw container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_facility_agrilcultural"data-facility="Commercial Agriculture Warehouse" data-toggle="modal" data-target="#add_barangay_agricultural_facilities">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_fac_agricultural" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                     <!-- this -->
+                    <div class="col-sm skip_no_caw" hidden>
+                      <h6>AF5. What institution operates the facility?</h6><br><br>
+                       <!-- this name -->
+                      <select  name="no_caw_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+                      <br>
+                    </div>          
+
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+           <!-- -------9 Agricultural Facility--- -->
+           <tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>AF1. Does this barangay have atleast one <u>Layer Farm?(poultry)</u></h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="AF1_poultry"  data-val="Yes" data-skip="poultry" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="AF1_poultry"  data-val="No"  data-skip="poultry" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                     <!-- this -->
+                    <div class="col-sm skip_no_poultry" hidden="">
+                       
+                       <h6 style="padding-bottom: 5px;">AF2. What is the distance of the Barangay Hall to the nearest facility?</h6> <br>
+                               <!-- this name -->
+                              <select  name="poultry_distance" class="form-control hf2" data-skip="poultry" style="margin-bottom: 15px;">
+                                <option value="">Select</option>
+                                <option value="WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="DON'T KNOW">DON'T KNOW</option>                                                  
+                              </select>
+                               <!-- this +name-->
+                              <h6 class="hf2_in_poultry" hidden="">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6>
+                                 <input type="text" class="form-control hf2_in_poultry"  name="poultry_distance_in2km" placeholder="Please Specify" hidden="">
+
+                              <!-- this +name-->  
+                              <h6 class="hf2_out_poultry" hidden="">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6> 
+                                 <input type="text" class="form-control hf2_out_poultry"  name="poultry_distance_more2km" placeholder="Please Specify" hidden="">    
+                    </div>
+
+                     <!-- this -->
+                    <div class="skip_yes_poultry container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_facility_agrilcultural"data-facility="Layer Farm(poultry)" data-toggle="modal" data-target="#add_barangay_agricultural_facilities">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_fac_agricultural" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                     <!-- this -->
+                    <div class="col-sm skip_no_poultry" hidden>
+                      <h6>AF5. What institution operates the facility?</h6><br><br>
+                       <!-- this name -->
+                      <select  name="no_poultry_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+                      <br>
+                    </div>          
+
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+           <!-- -------10 Agricultural Facility--- -->
+           <tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>AF1. Does this barangay have atleast one <u>Hatchery for aquafarm species?</u></h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="AF1_hatchery"  data-val="Yes" data-skip="hatchery" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="AF1_hatchery"  data-val="No"  data-skip="hatchery" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                     <!-- this -->
+                    <div class="col-sm skip_no_hatchery" hidden="">
+                       
+                       <h6 style="padding-bottom: 5px;">AF2. What is the distance of the Barangay Hall to the nearest facility?</h6> <br>
+                               <!-- this name -->
+                              <select  name="hatchery_distance" class="form-control hf2" data-skip="hatchery" style="margin-bottom: 15px;">
+                                <option value="">Select</option>
+                                <option value="WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="DON'T KNOW">DON'T KNOW</option>                                                  
+                              </select>
+                               <!-- this +name-->
+                              <h6 class="hf2_in_hatchery" hidden="">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6>
+                                 <input type="text" class="form-control hf2_in_hatchery"  name="hatchery_distance_in2km" placeholder="Please Specify" hidden="">
+
+                              <!-- this +name-->  
+                              <h6 class="hf2_out_hatchery" hidden="">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6> 
+                                 <input type="text" class="form-control hf2_out_hatchery"  name="hatchery_distance_more2km" placeholder="Please Specify" hidden="">    
+                    </div>
+
+                     <!-- this -->
+                    <div class="skip_yes_hatchery container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_facility_agrilcultural"data-facility="Hatchery for aquafarm species" data-toggle="modal" data-target="#add_barangay_agricultural_facilities">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_fac_agricultural" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                     <!-- this -->
+                    <div class="col-sm skip_no_hatchery" hidden>
+                      <h6>AF5. What institution operates the facility?</h6><br><br>
+                       <!-- this name -->
+                      <select  name="no_hatchery_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+                      <br>
+                    </div>          
+
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+           <!-- -------11 Agricultural Facility--- --> 
+           <tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>AF1. Does this barangay have atleast one <u>Breeding/multiplier farm for livestock?</u></h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="AF1_breeding_farm"  data-val="Yes" data-skip="breeding_farm" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="AF1_breeding_farm"  data-val="No"  data-skip="breeding_farm" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                     <!-- this -->
+                    <div class="col-sm skip_no_breeding_farm" hidden="">
+                       
+                       <h6 style="padding-bottom: 5px;">AF2. What is the distance of the Barangay Hall to the nearest facility?</h6> <br>
+                               <!-- this name -->
+                              <select  name="breeding_farm_distance" class="form-control hf2" data-skip="breeding_farm" style="margin-bottom: 15px;">
+                                <option value="">Select</option>
+                                <option value="WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="DON'T KNOW">DON'T KNOW</option>                                                  
+                              </select>
+                               <!-- this +name-->
+                              <h6 class="hf2_in_breeding_farm" hidden="">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6>
+                                 <input type="text" class="form-control hf2_in_breeding_farm"  name="breeding_farm_distance_in2km" placeholder="Please Specify" hidden="">
+
+                              <!-- this +name-->  
+                              <h6 class="hf2_out_breeding_farm" hidden="">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6> 
+                                 <input type="text" class="form-control hf2_out_breeding_farm"  name="breeding_farm_distance_more2km" placeholder="Please Specify" hidden="">    
+                    </div>
+
+                     <!-- this -->
+                    <div class="skip_yes_breeding_farm container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_facility_agrilcultural"data-facility="Breeding/multiplier farm livestock" data-toggle="modal" data-target="#add_barangay_agricultural_facilities">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_fac_agricultural" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                     <!-- this -->
+                    <div class="col-sm skip_no_breeding_farm" hidden>
+                      <h6>AF5. What institution operates the facility?</h6><br><br>
+                       <!-- this name -->
+                      <select  name="no_breeding_farm_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+                      <br>
+                    </div>          
+
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+           <!-- -------12 Agricultural Facility--- --> 
+           <tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>AF1. Does this barangay have atleast one <u>Breeding farm for poultry?</u></h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="AF1_breeding_poultry"  data-val="Yes" data-skip="breeding_poultry" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="AF1_breeding_poultry"  data-val="No"  data-skip="breeding_poultry" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                     <!-- this -->
+                    <div class="col-sm skip_no_breeding_poultry" hidden="">
+                       
+                       <h6 style="padding-bottom: 5px;">AF2. What is the distance of the Barangay Hall to the nearest facility?</h6> <br>
+                               <!-- this name -->
+                              <select  name="breeding_poultry_distance" class="form-control hf2" data-skip="breeding_poultry" style="margin-bottom: 15px;">
+                                <option value="">Select</option>
+                                <option value="WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="DON'T KNOW">DON'T KNOW</option>                                                  
+                              </select>
+                               <!-- this +name-->
+                              <h6 class="hf2_in_breeding_poultry" hidden="">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6>
+                                 <input type="text" class="form-control hf2_in_breeding_poultry"  name="breeding_poultry_distance_in2km" placeholder="Please Specify" hidden="">
+
+                              <!-- this +name-->  
+                              <h6 class="hf2_out_breeding_poultry" hidden="">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6> 
+                                 <input type="text" class="form-control hf2_out_breeding_poultry"  name="breeding_poultry_distance_more2km" placeholder="Please Specify" hidden="">    
+                    </div>
+
+                     <!-- this -->
+                    <div class="skip_yes_breeding_poultry container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_facility_agrilcultural"data-facility="Breeding farm for poultry" data-toggle="modal" data-target="#add_barangay_agricultural_facilities">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_fac_agricultural" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                     <!-- this -->
+                    <div class="col-sm skip_no_breeding_poultry" hidden>
+                      <h6>AF5. What institution operates the facility?</h6><br><br>
+                       <!-- this name -->
+                      <select  name="no_breeding_poultry_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+                      <br>
+                    </div>          
+
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+           <!-- ------13 Agricultural Facility--- -->
+           <tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>AF1. Does this barangay have atleast one <u>Nursery/greenhouse/screen house/net house?</u></h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="AF1_nethouse"  data-val="Yes" data-skip="nethouse" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="AF1_nethouse"  data-val="No"  data-skip="nethouse" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                     <!-- this -->
+                    <div class="col-sm skip_no_nethouse" hidden="">
+                       
+                       <h6 style="padding-bottom: 5px;">AF2. What is the distance of the Barangay Hall to the nearest facility?</h6> <br>
+                               <!-- this name -->
+                              <select  name="nethouse_distance" class="form-control hf2" data-skip="nethouse" style="margin-bottom: 15px;">
+                                <option value="">Select</option>
+                                <option value="WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="DON'T KNOW">DON'T KNOW</option>                                                  
+                              </select>
+                               <!-- this +name-->
+                              <h6 class="hf2_in_nethouse" hidden="">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6>
+                                 <input type="text" class="form-control hf2_in_nethouse"  name="nethouse_distance_in2km" placeholder="Please Specify" hidden="">
+
+                              <!-- this +name-->  
+                              <h6 class="hf2_out_nethouse" hidden="">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6> 
+                                 <input type="text" class="form-control hf2_out_nethouse"  name="nethouse_distance_more2km" placeholder="Please Specify" hidden="">    
+                    </div>
+
+                     <!-- this -->
+                    <div class="skip_yes_nethouse container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_facility_agrilcultural"data-facility="Nursery/greenhouse/screen house/net house" data-toggle="modal" data-target="#add_barangay_agricultural_facilities">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_fac_agricultural" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                     <!-- this -->
+                    <div class="col-sm skip_no_nethouse" hidden>
+                      <h6>AF5. What institution operates the facility?</h6><br><br>
+                       <!-- this name -->
+                      <select  name="no_nethouse_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+                      <br>
+                    </div>          
+
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+           <!-- -------14 Agricultural Facility--- --> 
+           <tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>AF1. Does this barangay have atleast one <u>Veterinary/para-veterinary clinic?</u></h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="AF1_veterinary"  data-val="Yes" data-skip="veterinary" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="AF1_veterinary"  data-val="No"  data-skip="veterinary" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                     <!-- this -->
+                    <div class="col-sm skip_no_veterinary" hidden="">
+                       
+                       <h6 style="padding-bottom: 5px;">AF2. What is the distance of the Barangay Hall to the nearest facility?</h6> <br>
+                               <!-- this name -->
+                              <select  name="veterinary_distance" class="form-control hf2" data-skip="veterinary" style="margin-bottom: 15px;">
+                                <option value="">Select</option>
+                                <option value="WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="DON'T KNOW">DON'T KNOW</option>                                                  
+                              </select>
+                               <!-- this +name-->
+                              <h6 class="hf2_in_veterinary" hidden="">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6>
+                                 <input type="text" class="form-control hf2_in_veterinary"  name="veterinary_distance_in2km" placeholder="Please Specify" hidden="">
+
+                              <!-- this +name-->  
+                              <h6 class="hf2_out_veterinary" hidden="">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6> 
+                                 <input type="text" class="form-control hf2_out_veterinary"  name="veterinary_distance_more2km" placeholder="Please Specify" hidden="">    
+                    </div>
+
+                     <!-- this -->
+                    <div class="skip_yes_veterinary container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_facility_agrilcultural"data-facility="Veterinary/para-veterinary clinic" data-toggle="modal" data-target="#add_barangay_agricultural_facilities">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_fac_agricultural" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                     <!-- this -->
+                    <div class="col-sm skip_no_veterinary" hidden>
+                      <h6>AF5. What institution operates the facility?</h6><br><br>
+                       <!-- this name -->
+                      <select  name="no_veterinary_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+                      <br>
+                    </div>          
+
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+           <!-- -------15 Agricultural Facility--- -->
+           <tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>AF1. Does this barangay have other <u>Agricultural facility?</u> Please Specify</h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="AF1_otherAF"  data-val="Yes" data-skip="otherAF" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="AF1_otherAF"  data-val="No"  data-skip="otherAF" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                   
+
+                     <!-- this -->
+                    <div class="skip_yes_otherAF container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_facility_agrilcultural"data-facility="Other agricultural facility" data-toggle="modal" data-target="#add_barangay_agricultural_facilities">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_fac_agricultural" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                    
+
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+           <!-- -------16 Agricultural Facility--- -->
+
+            </table>
+
+<hr>
+<i style="color: green" class="">Now, I would like to talk about the different input dealers in the barangay.</i><br><br> 
+
           
-       <hr>
+             <table id="sect2_table2" class="norm_table cell-border compact table-hover" style="width:100%">
+                <thead>
+                    <tr class="text-center">
+                        <th wi>B. SERVICE INSTITUTIONS AND INFRASTRUCTURE - INPUT DEALERS</th>
+                     
+                    </tr>
+                </thead>
+
+               <!-- ------START OF INPUT DEALER TR-------  -->
+
+               <tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>ID1. Does this barangay have atleast one <u>Fertilizer Dealer?</u></h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="ID1_fertilizer"  data-val="Yes" data-skip="fertilizer" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="ID1_fertilizer"  data-val="No"  data-skip="fertilizer" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
 
 
- <br>
+                     <!-- this -->
+                    <div class="col-sm skip_no_fertilizer" hidden="">
+                       
+                       <h6 style="padding-bottom: 5px;">ID2. What is the distance of the Barangay Hall to the nearest facility?</h6> <br>
+                               <!-- this name -->
+                              <select  name="fertilizer_distance" class="form-control hf2" data-skip="fertilizer" style="margin-bottom: 15px;">
+                                <option value="">Select</option>
+                                <option value="WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="DON'T KNOW">DON'T KNOW</option>                                                  
+                              </select>
+                               <!-- this +name-->
+                              <h6 class="hf2_in_fertilizer" hidden="">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6>
+                                 <input type="text" class="form-control hf2_in_fertilizer"  name="fertilizer_distance_in2km" placeholder="Please Specify" hidden="">
+
+                              <!-- this +name-->  
+                              <h6 class="hf2_out_fertilizer" hidden="">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6> 
+                                 <input type="text" class="form-control hf2_out_fertilizer"  name="fertilizer_distance_more2km" placeholder="Please Specify" hidden="">    
+                    </div>
+
+                     <!-- this -->
+                    <div class="skip_yes_fertilizer container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_facility_input_dealer"data-facility="Fertilizer Dealer" data-toggle="modal" data-target="#add_barangay_input_dealer">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_input_dealer" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                     <!-- this -->
+                    <div class="col-sm skip_no_fertilizer" hidden>
+                      <h6>ID5. What institution operates the facility?</h6><br><br>
+                       <!-- this name -->
+                      <select  name="no_fertilizer_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+                      <br>
+                    </div>          
+
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+           <!-- -------1 INPUT DEALER--- -->
+           <tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>ID1. Does this barangay have atleast one <u>Pesticide Dealer?</u></h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="ID1_pesticide"  data-val="Yes" data-skip="pesticide" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="ID1_pesticide"  data-val="No"  data-skip="pesticide" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                     <!-- this -->
+                    <div class="col-sm skip_no_pesticide" hidden="">
+                       
+                       <h6 style="padding-bottom: 5px;">ID2. What is the distance of the Barangay Hall to the nearest facility?</h6> <br>
+                               <!-- this name -->
+                              <select  name="pesticide_distance" class="form-control hf2" data-skip="pesticide" style="margin-bottom: 15px;">
+                                <option value="">Select</option>
+                                <option value="WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="DON'T KNOW">DON'T KNOW</option>                                                  
+                              </select>
+                               <!-- this +name-->
+                              <h6 class="hf2_in_pesticide" hidden="">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6>
+                                 <input type="text" class="form-control hf2_in_pesticide"  name="pesticide_distance_in2km" placeholder="Please Specify" hidden="">
+
+                              <!-- this +name-->  
+                              <h6 class="hf2_out_pesticide" hidden="">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6> 
+                                 <input type="text" class="form-control hf2_out_pesticide"  name="pesticide_distance_more2km" placeholder="Please Specify" hidden="">    
+                    </div>
+
+                     <!-- this -->
+                    <div class="skip_yes_pesticide container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_facility_input_dealer"data-facility="Pesticide Dealer" data-toggle="modal" data-target="#add_barangay_input_dealer">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_input_dealer" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                     <!-- this -->
+                    <div class="col-sm skip_no_pesticide" hidden>
+                      <h6>ID5. What institution operates the facility?</h6><br><br>
+                       <!-- this name -->
+                      <select  name="no_pesticide_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+                      <br>
+                    </div>          
+
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+           <!-- -------2 INPUT DEALER--- -->
+           <tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>ID1. Does this barangay have atleast one <u>Seeds/seedling Dealer?</u></h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="ID1_seedlings"  data-val="Yes" data-skip="seedlings" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="ID1_seedlings"  data-val="No"  data-skip="seedlings" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                     <!-- this -->
+                    <div class="col-sm skip_no_seedlings" hidden="">
+                       
+                       <h6 style="padding-bottom: 5px;">ID2. What is the distance of the Barangay Hall to the nearest facility?</h6> <br>
+                               <!-- this name -->
+                              <select  name="seedlings_distance" class="form-control hf2" data-skip="seedlings" style="margin-bottom: 15px;">
+                                <option value="">Select</option>
+                                <option value="WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="DON'T KNOW">DON'T KNOW</option>                                                  
+                              </select>
+                               <!-- this +name-->
+                              <h6 class="hf2_in_seedlings" hidden="">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6>
+                                 <input type="text" class="form-control hf2_in_seedlings"  name="seedlings_distance_in2km" placeholder="Please Specify" hidden="">
+
+                              <!-- this +name-->  
+                              <h6 class="hf2_out_seedlings" hidden="">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6> 
+                                 <input type="text" class="form-control hf2_out_seedlings"  name="seedlings_distance_more2km" placeholder="Please Specify" hidden="">    
+                    </div>
+
+                     <!-- this -->
+                    <div class="skip_yes_seedlings container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_facility_input_dealer"data-facility="Seeds/seedling Dealer" data-toggle="modal" data-target="#add_barangay_input_dealer">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_input_dealer" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                     <!-- this -->
+                    <div class="col-sm skip_no_seedlings" hidden>
+                      <h6>ID5. What institution operates the facility?</h6><br><br>
+                       <!-- this name -->
+                      <select  name="no_seedlings_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+                      <br>
+                    </div>          
+
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+           <!-- -------3 INPUT DEALER--- -->
+           <tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>ID1. Does this barangay have atleast one <u>Feeds Dealer?</u></h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="ID1_feeds"  data-val="Yes" data-skip="feeds" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="ID1_feeds"  data-val="No"  data-skip="feeds" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                     <!-- this -->
+                    <div class="col-sm skip_no_feeds" hidden="">
+                       
+                       <h6 style="padding-bottom: 5px;">ID2. What is the distance of the Barangay Hall to the nearest facility?</h6> <br>
+                               <!-- this name -->
+                              <select  name="feeds_distance" class="form-control hf2" data-skip="feeds" style="margin-bottom: 15px;">
+                                <option value="">Select</option>
+                                <option value="WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="DON'T KNOW">DON'T KNOW</option>                                                  
+                              </select>
+                               <!-- this +name-->
+                              <h6 class="hf2_in_feeds" hidden="">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6>
+                                 <input type="text" class="form-control hf2_in_feeds"  name="feeds_distance_in2km" placeholder="Please Specify" hidden="">
+
+                              <!-- this +name-->  
+                              <h6 class="hf2_out_feeds" hidden="">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6> 
+                                 <input type="text" class="form-control hf2_out_feeds"  name="feeds_distance_more2km" placeholder="Please Specify" hidden="">    
+                    </div>
+
+                     <!-- this -->
+                    <div class="skip_yes_feeds container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_facility_input_dealer"data-facility="Feeds Dealer" data-toggle="modal" data-target="#add_barangay_input_dealer">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_input_dealer" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                     <!-- this -->
+                    <div class="col-sm skip_no_feeds" hidden>
+                      <h6>ID5. What institution operates the facility?</h6><br><br>
+                       <!-- this name -->
+                      <select  name="no_feeds_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+                      <br>
+                    </div>          
+
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+           <!-- -------4 INPUT DEALER--- -->
+           <tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>ID1. Does this barangay have atleast one <u>Agriculture/fishery machine/equipment dealer?</u></h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="ID1_agri_dealer"  data-val="Yes" data-skip="agri_dealer" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="ID1_agri_dealer"  data-val="No"  data-skip="agri_dealer" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                     <!-- this -->
+                    <div class="col-sm skip_no_agri_dealer" hidden="">
+                       
+                       <h6 style="padding-bottom: 5px;">ID2. What is the distance of the Barangay Hall to the nearest facility?</h6> <br>
+                               <!-- this name -->
+                              <select  name="agri_dealer_distance" class="form-control hf2" data-skip="agri_dealer" style="margin-bottom: 15px;">
+                                <option value="">Select</option>
+                                <option value="WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="DON'T KNOW">DON'T KNOW</option>                                                  
+                              </select>
+                               <!-- this +name-->
+                              <h6 class="hf2_in_agri_dealer" hidden="">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6>
+                                 <input type="text" class="form-control hf2_in_agri_dealer"  name="agri_dealer_distance_in2km" placeholder="Please Specify" hidden="">
+
+                              <!-- this +name-->  
+                              <h6 class="hf2_out_agri_dealer" hidden="">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6> 
+                                 <input type="text" class="form-control hf2_out_agri_dealer"  name="agri_dealer_distance_more2km" placeholder="Please Specify" hidden="">    
+                    </div>
+
+                     <!-- this -->
+                    <div class="skip_yes_agri_dealer container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_facility_input_dealer"data-facility="Agriculture/fishery machine/equipment dealer" data-toggle="modal" data-target="#add_barangay_input_dealer">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_input_dealer" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                     <!-- this -->
+                    <div class="col-sm skip_no_agri_dealer" hidden>
+                      <h6>ID5. What institution operates the facility?</h6><br><br>
+                       <!-- this name -->
+                      <select  name="no_agri_dealer_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+                      <br>
+                    </div>          
+
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+           <!-- -------5 INPUT DEALER--- -->
+           <tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>ID1. Does this barangay have atleast one <u>Boat/fishing gear dealer?</u></h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="ID1_boat_dealer"  data-val="Yes" data-skip="boat_dealer" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="ID1_boat_dealer"  data-val="No"  data-skip="boat_dealer" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                     <!-- this -->
+                    <div class="col-sm skip_no_boat_dealer" hidden="">
+                       
+                       <h6 style="padding-bottom: 5px;">ID2. What is the distance of the Barangay Hall to the nearest facility?</h6> <br>
+                               <!-- this name -->
+                              <select  name="boat_dealer_distance" class="form-control hf2" data-skip="boat_dealer" style="margin-bottom: 15px;">
+                                <option value="">Select</option>
+                                <option value="WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="DON'T KNOW">DON'T KNOW</option>                                                  
+                              </select>
+                               <!-- this +name-->
+                              <h6 class="hf2_in_boat_dealer" hidden="">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6>
+                                 <input type="text" class="form-control hf2_in_boat_dealer"  name="boat_dealer_distance_in2km" placeholder="Please Specify" hidden="">
+
+                              <!-- this +name-->  
+                              <h6 class="hf2_out_boat_dealer" hidden="">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6> 
+                                 <input type="text" class="form-control hf2_out_boat_dealer"  name="boat_dealer_distance_more2km" placeholder="Please Specify" hidden="">    
+                    </div>
+
+                     <!-- this -->
+                    <div class="skip_yes_boat_dealer container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_facility_input_dealer"data-facility="Boat/fishing gear dealer" data-toggle="modal" data-target="#add_barangay_input_dealer">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_input_dealer" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                     <!-- this -->
+                    <div class="col-sm skip_no_boat_dealer" hidden>
+                      <h6>ID5. What institution operates the facility?</h6><br><br>
+                       <!-- this name -->
+                      <select  name="no_boat_dealer_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+                      <br>
+                    </div>          
+
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+           <!-- -------6 INPUT DEALER--- -->
+           <tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>ID1. Does this barangay have atleast one <u>Veterinary Medicine Dealer</u></h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="ID1_vmedicine"  data-val="Yes" data-skip="vmedicine" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="ID1_vmedicine"  data-val="No"  data-skip="vmedicine" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                     <!-- this -->
+                    <div class="col-sm skip_no_vmedicine" hidden="">
+                       
+                       <h6 style="padding-bottom: 5px;">ID2. What is the distance of the Barangay Hall to the nearest facility?</h6> <br>
+                               <!-- this name -->
+                              <select  name="vmedicine_distance" class="form-control hf2" data-skip="vmedicine" style="margin-bottom: 15px;">
+                                <option value="">Select</option>
+                                <option value="WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="DON'T KNOW">DON'T KNOW</option>                                                  
+                              </select>
+                               <!-- this +name-->
+                              <h6 class="hf2_in_vmedicine" hidden="">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6>
+                                 <input type="text" class="form-control hf2_in_vmedicine"  name="vmedicine_distance_in2km" placeholder="Please Specify" hidden="">
+
+                              <!-- this +name-->  
+                              <h6 class="hf2_out_vmedicine" hidden="">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6> 
+                                 <input type="text" class="form-control hf2_out_vmedicine"  name="vmedicine_distance_more2km" placeholder="Please Specify" hidden="">    
+                    </div>
+
+                     <!-- this -->
+                    <div class="skip_yes_vmedicine container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_facility_input_dealer"data-facility="Veterinary Medicine Dealer" data-toggle="modal" data-target="#add_barangay_input_dealer">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_input_dealer" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                     <!-- this -->
+                    <div class="col-sm skip_no_vmedicine" hidden>
+                      <h6>ID5. What institution operates the facility?</h6><br><br>
+                       <!-- this name -->
+                      <select  name="no_vmedicine_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+                      <br>
+                    </div>          
+
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+           <!-- -------7 INPUT DEALER--- -->
+           <tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>ID1. Does this barangay have <u>other input dealers?</u> Please specify</h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="ID1_otherID"  data-val="Yes" data-skip="otherID" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="ID1_otherID"  data-val="No"  data-skip="otherID" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                     
+
+                     <!-- this -->
+                    <div class="skip_yes_otherID container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_facility_input_dealer"data-facility="Other input dealers" data-toggle="modal" data-target="#add_barangay_input_dealer">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_input_dealer" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                                  
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+           <!-- -------8 INPUT DEALER--- -->
+
+
+              </table> <!-- sect2_table2 -->
+
+
+<br>
+<hr>
+<i style="color: green" class="">Now, I would like to talk about the different water facilities in the barangay.</i><br><br> 
+
+          
+             <table id="sect2_table3" class="norm_table cell-border compact table-hover" style="width:100%">
+                <thead>
+                    <tr class="text-center">
+                        <th wi>B. SERVICE INSTITUTIONS AND INFRASTRUCTURE - WATER FACILITY</th>
+                     
+                    </tr>
+                </thead>
+
+
+                <!-- ----------START OF WATER FACILITY---------- -->
+            <tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>WF1. Does this barangay have atleast one <u>Deep Well (Level I)?</u></h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="WF1_deepwell"  data-val="Yes" data-skip="deepwell" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="WF1_deepwell"  data-val="No"  data-skip="deepwell" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                     <!-- this -->
+                    <div class="col-sm skip_no_deepwell" hidden="">
+                       
+                       <h6 style="padding-bottom: 5px;">WF2. What is the distance of the Barangay Hall to the nearest facility?</h6> <br>
+                               <!-- this name -->
+                              <select  name="deepwell_distance" class="form-control hf2" data-skip="deepwell" style="margin-bottom: 15px;">
+                                <option value="">Select</option>
+                                <option value="WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="DON'T KNOW">DON'T KNOW</option>                                                  
+                              </select>
+                               <!-- this +name-->
+                              <h6 class="hf2_in_deepwell" hidden="">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6>
+                                 <input type="text" class="form-control hf2_in_deepwell"  name="deepwell_distance_in2km" placeholder="Please Specify" hidden="">
+
+                              <!-- this +name-->  
+                              <h6 class="hf2_out_deepwell" hidden="">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6> 
+                                 <input type="text" class="form-control hf2_out_deepwell"  name="deepwell_distance_more2km" placeholder="Please Specify" hidden="">    
+                    </div>
+
+                     <!-- this -->
+                    <div class="skip_yes_deepwell container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_facility_water_facility"data-facility="Deep Well" data-toggle="modal" data-target="#add_barangay_water_facility">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_water_facility" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                     <!-- this -->
+                    <div class="col-sm skip_no_deepwell" hidden>
+                      <h6>WF5. What institution operates the facility?</h6><br><br>
+                       <!-- this name -->
+                      <select  name="no_deepwell_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+                      <br>
+                    </div>          
+
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+           <!-- -------1 WATER FACILITY--- -->
+           <tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>WF1. Does this barangay have at least one <u>Artesian Well (Level I)?</u></h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="WF1_artesianwell"  data-val="Yes" data-skip="artesianwell" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="WF1_artesianwell"  data-val="No"  data-skip="artesianwell" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                     <!-- this -->
+                    <div class="col-sm skip_no_artesianwell" hidden="">
+                       
+                       <h6 style="padding-bottom: 5px;">WF2. What is the distance of the Barangay Hall to the nearest facility?</h6> <br>
+                               <!-- this name -->
+                              <select  name="artesianwell_distance" class="form-control hf2" data-skip="artesianwell" style="margin-bottom: 15px;">
+                                <option value="">Select</option>
+                                <option value="WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="DON'T KNOW">DON'T KNOW</option>                                                  
+                              </select>
+                               <!-- this +name-->
+                              <h6 class="hf2_in_artesianwell" hidden="">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6>
+                                 <input type="text" class="form-control hf2_in_artesianwell"  name="artesianwell_distance_in2km" placeholder="Please Specify" hidden="">
+
+                              <!-- this +name-->  
+                              <h6 class="hf2_out_artesianwell" hidden="">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6> 
+                                 <input type="text" class="form-control hf2_out_artesianwell"  name="artesianwell_distance_more2km" placeholder="Please Specify" hidden="">    
+                    </div>
+
+                     <!-- this -->
+                    <div class="skip_yes_artesianwell container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_facility_water_facility"data-facility="Artesian Well" data-toggle="modal" data-target="#add_barangay_water_facility">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_water_facility" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                     <!-- this -->
+                    <div class="col-sm skip_no_artesianwell" hidden>
+                      <h6>WF5. What institution operates the facility?</h6><br><br>
+                       <!-- this name -->
+                      <select  name="no_artesianwell_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+                      <br>
+                    </div>          
+
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+           <!-- -------2 WATER FACILITY--- -->
+           <tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>WF1. Does this barangay have atleast one <u>Shallow Well (Level I)?</u></h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="WF1_shallowwell"  data-val="Yes" data-skip="shallowwell" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="WF1_shallowwell"  data-val="No"  data-skip="shallowwell" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                     <!-- this -->
+                    <div class="col-sm skip_no_shallowwell" hidden="">
+                       
+                       <h6 style="padding-bottom: 5px;">WF2. What is the distance of the Barangay Hall to the nearest facility?</h6> <br>
+                               <!-- this name -->
+                              <select  name="shallowwell_distance" class="form-control hf2" data-skip="shallowwell" style="margin-bottom: 15px;">
+                                <option value="">Select</option>
+                                <option value="WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="DON'T KNOW">DON'T KNOW</option>                                                  
+                              </select>
+                               <!-- this +name-->
+                              <h6 class="hf2_in_shallowwell" hidden="">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6>
+                                 <input type="text" class="form-control hf2_in_shallowwell"  name="shallowwell_distance_in2km" placeholder="Please Specify" hidden="">
+
+                              <!-- this +name-->  
+                              <h6 class="hf2_out_shallowwell" hidden="">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6> 
+                                 <input type="text" class="form-control hf2_out_shallowwell"  name="shallowwell_distance_more2km" placeholder="Please Specify" hidden="">    
+                    </div>
+
+                     <!-- this -->
+                    <div class="skip_yes_shallowwell container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_facility_water_facility"data-facility="Shallow Well" data-toggle="modal" data-target="#add_barangay_water_facility">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_water_facility" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                     <!-- this -->
+                    <div class="col-sm skip_no_shallowwell" hidden>
+                      <h6>WF5. What institution operates the facility?</h6><br><br>
+                       <!-- this name -->
+                      <select  name="no_shallowwell_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+                      <br>
+                    </div>          
+
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+           <!-- -------3 WATER FACILITY--- -->
+           <tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>WF1. Does this barangay have atleast one <u>Commercial Water Refilling Station?</u></h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="WF1_refilling_station"  data-val="Yes" data-skip="refilling_station" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="WF1_refilling_station"  data-val="No"  data-skip="refilling_station" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                     <!-- this -->
+                    <div class="col-sm skip_no_refilling_station" hidden="">
+                       
+                       <h6 style="padding-bottom: 5px;">WF2. What is the distance of the Barangay Hall to the nearest facility?</h6> <br>
+                               <!-- this name -->
+                              <select  name="refilling_station_distance" class="form-control hf2" data-skip="refilling_station" style="margin-bottom: 15px;">
+                                <option value="">Select</option>
+                                <option value="WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="DON'T KNOW">DON'T KNOW</option>                                                  
+                              </select>
+                               <!-- this +name-->
+                              <h6 class="hf2_in_refilling_station" hidden="">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6>
+                                 <input type="text" class="form-control hf2_in_refilling_station"  name="refilling_station_distance_in2km" placeholder="Please Specify" hidden="">
+
+                              <!-- this +name-->  
+                              <h6 class="hf2_out_refilling_station" hidden="">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6> 
+                                 <input type="text" class="form-control hf2_out_refilling_station"  name="refilling_station_distance_more2km" placeholder="Please Specify" hidden="">    
+                    </div>
+
+                     <!-- this -->
+                    <div class="skip_yes_refilling_station container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_facility_water_facility"data-facility="Commercial Water Refilling Station" data-toggle="modal" data-target="#add_barangay_water_facility">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_water_facility" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                     <!-- this -->
+                    <div class="col-sm skip_no_refilling_station" hidden>
+                      <h6>WF5. What institution operates the facility?</h6><br><br>
+                       <!-- this name -->
+                      <select  name="no_refilling_station_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+                      <br>
+                    </div>          
+
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+           <!-- -------4 WATER FACILITY--- -->
+           <tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>WF1. Does this barangay have atleast one <u>Level II water system (communal faucet system or standposts)?</u></h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="WF1_level2"  data-val="Yes" data-skip="level2" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="WF1_level2"  data-val="No"  data-skip="level2" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                     <!-- this -->
+                    <div class="col-sm skip_no_level2" hidden="">
+                       
+                       <h6 style="padding-bottom: 5px;">WF2. What is the distance of the Barangay Hall to the nearest facility?</h6> <br>
+                               <!-- this name -->
+                              <select  name="level2_distance" class="form-control hf2" data-skip="level2" style="margin-bottom: 15px;">
+                                <option value="">Select</option>
+                                <option value="WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="DON'T KNOW">DON'T KNOW</option>                                                  
+                              </select>
+                               <!-- this +name-->
+                              <h6 class="hf2_in_level2" hidden="">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6>
+                                 <input type="text" class="form-control hf2_in_level2"  name="level2_distance_in2km" placeholder="Please Specify" hidden="">
+
+                              <!-- this +name-->  
+                              <h6 class="hf2_out_level2" hidden="">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6> 
+                                 <input type="text" class="form-control hf2_out_level2"  name="level2_distance_more2km" placeholder="Please Specify" hidden="">    
+                    </div>
+
+                     <!-- this -->
+                    <div class="skip_yes_level2 container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_facility_water_facility"data-facility="Level II Water System" data-toggle="modal" data-target="#add_barangay_water_facility">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_water_facility" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                     <!-- this -->
+                    <div class="col-sm skip_no_level2" hidden>
+                      <h6>WF5. What institution operates the facility?</h6><br><br>
+                       <!-- this name -->
+                      <select  name="no_level2_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+                      <br>
+                    </div>          
+
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+           <!-- -------5 WATER FACILITY--- -->
+           <tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>WF1. Does this barangay have atleast one <u>Level III Water System (Reservoir, Piped Distribution w/in Adequate Network)?</u></h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="WF1_level3"  data-val="Yes" data-skip="level3" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="WF1_level3"  data-val="No"  data-skip="level3" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                     <!-- this -->
+                    <div class="col-sm skip_no_level3" hidden="">
+                       
+                       <h6 style="padding-bottom: 5px;">WF2. What is the distance of the Barangay Hall to the nearest facility?</h6> <br>
+                               <!-- this name -->
+                              <select  name="level3_distance" class="form-control hf2" data-skip="level3" style="margin-bottom: 15px;">
+                                <option value="">Select</option>
+                                <option value="WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="DON'T KNOW">DON'T KNOW</option>                                                  
+                              </select>
+                               <!-- this +name-->
+                              <h6 class="hf2_in_level3" hidden="">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6>
+                                 <input type="text" class="form-control hf2_in_level3"  name="level3_distance_in2km" placeholder="Please Specify" hidden="">
+
+                              <!-- this +name-->  
+                              <h6 class="hf2_out_level3" hidden="">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6> 
+                                 <input type="text" class="form-control hf2_out_level3"  name="level3_distance_more2km" placeholder="Please Specify" hidden="">    
+                    </div>
+
+                     <!-- this -->
+                    <div class="skip_yes_level3 container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_facility_water_facility"data-facility="Level III Water System" data-toggle="modal" data-target="#add_barangay_water_facility">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_water_facility" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                     <!-- this -->
+                    <div class="col-sm skip_no_level3" hidden>
+                      <h6>WF5. What institution operates the facility?</h6><br><br>
+                       <!-- this name -->
+                      <select  name="no_level3_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+                      <br>
+                    </div>          
+
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+           <!-- -------6 WATER FACILITY--- -->
+           <tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>WF1. Does this barangay have <u>other water facility?</u></h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="WF1_otherWF1"  data-val="Yes" data-skip="otherWF1" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="WF1_otherWF1"  data-val="No"  data-skip="otherWF1" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                  
+
+                     <!-- this -->
+                    <div class="skip_yes_otherWF1 container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_facility_water_facility"data-facility="Other Water Facility" data-toggle="modal" data-target="#add_barangay_water_facility">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_water_facility" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+        
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+           <!-- -------7 WATER FACILITY--- -->
+
+
+              </table> <!-- sect2_table3 -->
+
+<br>
+<hr>
+<i style="color: green" class="">Now, I would like to talk about the different electricity sources of the barangay LGU.</i><br><br> 
+
+<div class="text-left"><h5>
+E. Is electricity being used in the barangay?
+</h5></div>
+
+          <div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                        <input class="form-check-input" type="radio" name="E_yes_no"  data-val="Yes" value="Yes">Yes<br>
+                        <input class="form-check-input" type="radio" name="E_yes_no"  data-val="No" value="No">No
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div>
+          <br>
+
+<table id="sect2_table4" class="norm_table cell-border compact table-hover" style="width:100%" hidden="">
+                <thead>
+                    <tr class="text-center">
+                        <th wi>B. SERVICE INSTITUTIONS AND INFRASTRUCTURE - ELECTRICITY SOURCES</th>
+                     
+                    </tr>
+                </thead>
+
+                <!-- ---------ELECTRIC SOURCE START------- -->
+              <tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>Electric Company?</h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="electric_comp"  data-val="Yes" data-skip="comp" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="electric_comp"  data-val="No"  data-skip="comp" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                     <!-- this -->
+                    <div class="col-sm skip_no_comp" hidden="">
+                       
+                       <h6 style="padding-bottom: 5px;">What is the distance of the Barangay Hall to the nearest facility?</h6> <br>
+                               <!-- this name -->
+                              <select  name="comp_distance" class="form-control hf2" data-skip="comp" style="margin-bottom: 15px;">
+                                <option value="">Select</option>
+                                <option value="WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="DON'T KNOW">DON'T KNOW</option>                                                  
+                              </select>
+                               <!-- this +name-->
+                              <h6 class="hf2_in_comp" hidden="">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6>
+                                 <input type="text" class="form-control hf2_in_comp"  name="comp_distance_in2km" placeholder="Please Specify" hidden="">
+
+                              <!-- this +name-->  
+                              <h6 class="hf2_out_comp" hidden="">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6> 
+                                 <input type="text" class="form-control hf2_out_comp"  name="comp_distance_more2km" placeholder="Please Specify" hidden="">    
+                    </div>
+
+                     <!-- this -->
+                    <div class="skip_yes_comp container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_electric_facility"data-facility="Electric Company" data-toggle="modal" data-target="#add_barangay_electric_facility">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_electric_facility" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                     <!-- this -->
+                    <div class="col-sm skip_no_comp" hidden>
+                      <h6>What institution operates the facility?</h6><br><br>
+                       <!-- this name -->
+                      <select  name="no_comp_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+                      <br>
+                    </div>          
+
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+           <!-- -------1 ELECTRIC FACILITY--- -->
+           <tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>Other Sources?</h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="electric_comp_others"  data-val="Yes" data-skip="comp_others" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="electric_comp_others"  data-val="No"  data-skip="comp_others" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                     <!-- this -->
+                    <div class="skip_yes_comp_others container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_electric_facility"data-facility="Other Electric Company" data-toggle="modal" data-target="#add_barangay_electric_facility">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_electric_facility" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                  
+
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+           <!-- -------2 ELECTRIC FACILITY--- -->
+           <tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>Generator?</h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="electric_generator"  data-val="Yes" data-skip="generator" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="electric_generator"  data-val="No"  data-skip="generator" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                     <!-- this -->
+                    <div class="skip_yes_generator container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_electric_facility"data-facility="Generator" data-toggle="modal" data-target="#add_barangay_electric_facility">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_electric_facility" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                  
+
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+           <!-- -------3 ELECTRIC FACILITY--- -->
+           <tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>Solar</h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="electric_solar"  data-val="Yes" data-skip="solar" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="electric_solar"  data-val="No"  data-skip="solar" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                     <!-- this -->
+                    <div class="skip_yes_solar container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_electric_facility"data-facility="Solar" data-toggle="modal" data-target="#add_barangay_electric_facility">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_electric_facility" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                  
+
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+           <!-- -------4 ELECTRIC FACILITY--- -->
+           <tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>Battery?</h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="electric_battery"  data-val="Yes" data-skip="battery" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="electric_battery"  data-val="No"  data-skip="battery" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                     <!-- this -->
+                    <div class="skip_yes_battery container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_electric_facility"data-facility="Battery" data-toggle="modal" data-target="#add_barangay_electric_facility">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_electric_facility" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                  
+
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+           <!-- -------5 ELECTRIC FACILITY--- -->
+</table>
+
+<br>
+<br>
+<i style="color: green" class="">Now, I would like to talk about the different credit institutions other than banks in the barangay.</i><br><br> 
+
+<div class="text-left"><h5>
+C1. Are there credit institutions other than banks?
+</h5></div>
+
+          <div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                        <input class="form-check-input" type="radio" name="C1_yes_no"  data-val="Yes" value="Yes">Yes<br>
+                        <input class="form-check-input" type="radio" name="C1_yes_no"  data-val="No" value="No">No
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div>
+          <br>
+
+    <table id="sect2_table5" class="norm_table cell-border compact table-hover" style="width:100%" hidden="">
+                <thead>
+                    <tr class="text-center">
+                        <th wi>B. SERVICE INSTITUTIONS AND INFRASTRUCTURE - CREDIT INSTITUTIONS</th>
+                     
+                    </tr>
+                </thead>
+
+
+                  <!-- START OF CREDIT INSTITUTION -->
+            <tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>C2. Does this barangay have at least one <u>Pawnshop?</u></h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="C1_pawnshop"  data-val="Yes" data-skip="pawnshop" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="C1_pawnshop"  data-val="No"  data-skip="pawnshop" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                     <!-- this -->
+                    <div class="col-sm skip_no_pawnshop" hidden="">
+                       
+                       <h6 style="padding-bottom: 5px;">C3. What is the distance of the barangay hall to the nearest facility(in kms)?</h6> <br>
+                               <!-- this name -->
+                              <select  name="pawnshop_distance" class="form-control hf2" data-skip="pawnshop" style="margin-bottom: 15px;">
+                                <option value="">Select</option>
+                                <option value="WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="DON'T KNOW">DON'T KNOW</option>                                                  
+                              </select>
+                               <!-- this +name-->
+                              <h6 class="hf2_in_pawnshop" hidden="">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6>
+                                 <input type="text" class="form-control hf2_in_pawnshop"  name="pawnshop_distance_in2km" placeholder="Please Specify" hidden="">
+
+                              <!-- this +name-->  
+                              <h6 class="hf2_out_pawnshop" hidden="">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6> 
+                                 <input type="text" class="form-control hf2_out_pawnshop"  name="pawnshop_distance_more2km" placeholder="Please Specify" hidden="">    
+                    </div>
+
+                     <!-- this -->
+                    <div class="skip_yes_pawnshop container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_credit_facility"data-facility="Pawnshop" data-toggle="modal" data-target="#add_barangay_credit_facility">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_credit_facility" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                     <!-- this -->
+                    <div class="col-sm skip_no_pawnshop" hidden>
+                      <h6>C6. What institution operates the facility?</h6><br><br>
+                       <!-- this name -->
+                      <select  name="no_pawnshop_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+                      <br>
+                    </div>          
+
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+           <!-- -------1 CREDIT INSTITUTION FACILITY--- -->
+           <tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>C2. Does this barangay have at least one <u>Cooperative?</u></h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="C1_cooperative"  data-val="Yes" data-skip="cooperative" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="C1_cooperative"  data-val="No"  data-skip="cooperative" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                     <!-- this -->
+                    <div class="col-sm skip_no_cooperative" hidden="">
+                       
+                       <h6 style="padding-bottom: 5px;">C3. What is the distance of the barangay hall to the nearest facility(in kms)?</h6> <br>
+                               <!-- this name -->
+                              <select  name="cooperative_distance" class="form-control hf2" data-skip="cooperative" style="margin-bottom: 15px;">
+                                <option value="">Select</option>
+                                <option value="WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="DON'T KNOW">DON'T KNOW</option>                                                  
+                              </select>
+                               <!-- this +name-->
+                              <h6 class="hf2_in_cooperative" hidden="">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6>
+                                 <input type="text" class="form-control hf2_in_cooperative"  name="cooperative_distance_in2km" placeholder="Please Specify" hidden="">
+
+                              <!-- this +name-->  
+                              <h6 class="hf2_out_cooperative" hidden="">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6> 
+                                 <input type="text" class="form-control hf2_out_cooperative"  name="cooperative_distance_more2km" placeholder="Please Specify" hidden="">    
+                    </div>
+
+                     <!-- this -->
+                    <div class="skip_yes_cooperative container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_credit_facility"data-facility="Cooperative" data-toggle="modal" data-target="#add_barangay_credit_facility">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_credit_facility" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                     <!-- this -->
+                    <div class="col-sm skip_no_cooperative" hidden>
+                      <h6>C6. What institution operates the facility?</h6><br><br>
+                       <!-- this name -->
+                      <select  name="no_cooperative_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+                      <br>
+                    </div>          
+
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+           <!-- -------2 CREDIT INSTITUTION FACILITY--- -->
+           <tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>C2. Does this barangay have at least one <u>Non-government organizations?</u></h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="C1_nongov"  data-val="Yes" data-skip="nongov" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="C1_nongov"  data-val="No"  data-skip="nongov" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                     <!-- this -->
+                    <div class="col-sm skip_no_nongov" hidden="">
+                       
+                       <h6 style="padding-bottom: 5px;">C3. What is the distance of the barangay hall to the nearest facility(in kms)?</h6> <br>
+                               <!-- this name -->
+                              <select  name="nongov_distance" class="form-control hf2" data-skip="nongov" style="margin-bottom: 15px;">
+                                <option value="">Select</option>
+                                <option value="WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">WITHIN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)">MORE THAN 2 KMS (INSIDE THE CITY/MUNICIPALITY)</option>
+                                <option value="WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY</option>
+                                <option value="DON'T KNOW">DON'T KNOW</option>                                                  
+                              </select>
+                               <!-- this +name-->
+                              <h6 class="hf2_in_nongov" hidden="">WITHIN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6>
+                                 <input type="text" class="form-control hf2_in_nongov"  name="nongov_distance_in2km" placeholder="Please Specify" hidden="">
+
+                              <!-- this +name-->  
+                              <h6 class="hf2_out_nongov" hidden="">MORE THAN 2 KMS (OUTSIDE THE CITY/MUNICIPALITY), SPECIFY PROV CITY/MUN</h6> 
+                                 <input type="text" class="form-control hf2_out_nongov"  name="nongov_distance_more2km" placeholder="Please Specify" hidden="">    
+                    </div>
+
+                     <!-- this -->
+                    <div class="skip_yes_nongov container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_credit_facility"data-facility="Non-government organizations" data-toggle="modal" data-target="#add_barangay_credit_facility">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_credit_facility" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                  
+                     <!-- this -->
+                    <div class="col-sm skip_no_nongov" hidden>
+                      <h6>C6. What institution operates the facility?</h6><br><br>
+                       <!-- this name -->
+                      <select  name="no_nongov_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+                      <br>
+                    </div>          
+
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+           <!-- -------3 CREDIT INSTITUTION FACILITY--- -->
+           <tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>C2. Does this barangay have <u>Other Credit Institutions?</u></h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="C1_otherC1"  data-val="Yes" data-skip="otherC1" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="C1_otherC1"  data-val="No"  data-skip="otherC1" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                     
+
+                     <!-- this -->
+                    <div class="skip_yes_otherC1 container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_credit_facility"data-facility="Other Credit Institutions" data-toggle="modal" data-target="#add_barangay_credit_facility">Add Facility</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_credit_facility" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Facility Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Address</th>
+                                                <th style="text-align: center;" class="text-center " width="">Facility Operator</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+
+                                
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+           <!-- -------4 CREDIT INSTITUTION FACILITY--- -->
+
+
+   </table>
+
+
+    </div> <!-- container fluid before form -->   
+
+<br><br><hr>
+<h4 style="color: blue;">---------- END OF SECTION 2 ----------</h4>
+
+                              </form> <!-- END OF FORM 2 -->
+
+                            </div> <!-- <<<<< End of Section 2 body -->
+
+
+                            <div class="card-footer text-muted" >
+                             <button type="button" id="save_sec_2" class="btn btn-outline-success">Save</button>
+                            
+                            </div>
+
+
+              </div> <!-- <<<<< End of Section 2 card -->
+
+          </div> <!-- <<<<< End of Section 2 tab container-fluid -->
+
+        </div> <!-- <<<<< End of Section 2 tab -->
+
+
+
+
+
+
+
+
+
+
+
+         <!-- ------------------------------------------------------SECTION 3 ---------------------------------------------- -->
+        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab"> 
+               <div class="container-fluid" style="width: 90%; background-color: " >
+                    
+
+
+              <div class="card text-center" style="margin-top: 20px; margin-bottom: 40px;">
+                            <div class="card-header" >
+                             <h3>COMMUNITY BASED MONITORING SYSTEM</h3>
+                            </div>
+
+                            <div class="card-body" style="background-color: #fafcff">
+
+                              <form method="post" id="submit_de_part3">
+
+                             <br>
 <i style="color: green" class="">Now, I would like to talk about if the barangay have airport and seaport.</i><br><br>
 
 <div class="container-fluid">
@@ -6030,7 +10177,7 @@ ENCODE EA/BSN/FSN?
                           <div class="row">
                             <label>
                                 
-                                    &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio" type="checkbox" name="collector_biodegradable"  data-val="No" value="MUNICIPAL COLLECTOR">
+                                    &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio_sect3" type="checkbox" name="collector_biodegradable"  data-val="No" value="MUNICIPAL COLLECTOR">
                                   &nbsp&nbsp A. MUNICIPAL COLLECTOR
                                
                             </label>
@@ -6039,7 +10186,7 @@ ENCODE EA/BSN/FSN?
                               <div class="row">
                             <label>
                                 
-                                    &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio" type="checkbox" name="collector_biodegradable"  data-val="No" value="BARANGAY CHAIRMAN">
+                                    &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio_sect3" type="checkbox" name="collector_biodegradable"  data-val="No" value="BARANGAY CHAIRMAN">
                                   &nbsp&nbsp  B.  BARANGAY CHAIRMAN
                                
                             </label>
@@ -6052,7 +10199,7 @@ ENCODE EA/BSN/FSN?
                         <div class="row">
                             <label >
                                 
-                                   &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio" type="checkbox" name="collector_biodegradable"  data-val="No" value="PRIVATE COLLECTOR (ESTABLISHMENT)">
+                                   &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio_sect3" type="checkbox" name="collector_biodegradable"  data-val="No" value="PRIVATE COLLECTOR (ESTABLISHMENT)">
                                    &nbsp&nbsp  C. PRIVATE COLLECTOR (ESTABLISHMENT)
                                  
                             </label>
@@ -6060,14 +10207,14 @@ ENCODE EA/BSN/FSN?
 
                             <div class="row">
                             <label>
-                                   &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio" type="checkbox" name="collector_biodegradable"  data-val="No" value="BOTE DYARYO, WASTE PICKERS OR GARBAGE SCAVENGERS">
+                                   &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio_sect3" type="checkbox" name="collector_biodegradable"  data-val="No" value="BOTE DYARYO, WASTE PICKERS OR GARBAGE SCAVENGERS">
                                   &nbsp&nbsp D. "BOTE DYARYO", WASTE PICKERS OR GARBAGE SCAVENGERS
                             </label>
 
                          </div> 
                           <div class="row">
                             <label>
-                                    &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio" type="checkbox" name="collector_biodegradable" data-skip ="collector_biodegradable_spec"  data-val="Yes" value="Yes">
+                                    &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio_sect3" type="checkbox" name="collector_biodegradable" data-skip ="collector_biodegradable_spec"  data-val="Yes" value="Yes">
                                   &nbsp&nbsp E. OTHERS (Specify)
                                  
                             </label>
@@ -6091,6 +10238,7 @@ ENCODE EA/BSN/FSN?
                                   
                           <br>
                     </div>
+
 
 <div class="collector_biodegradable_specify_repeat" hidden=""> 
 
@@ -6136,7 +10284,7 @@ ENCODE EA/BSN/FSN?
                           <div class="row">
                             <label>
                                 
-                                    &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio" type="checkbox" name="collector_recyclables"  data-val="No" value="MUNICIPAL COLLECTOR">
+                                    &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio_sect3" type="checkbox" name="collector_recyclables"  data-val="No" value="MUNICIPAL COLLECTOR">
                                   &nbsp&nbsp A. MUNICIPAL COLLECTOR
                                
                             </label>
@@ -6145,7 +10293,7 @@ ENCODE EA/BSN/FSN?
                               <div class="row">
                             <label>
                                 
-                                    &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio" type="checkbox" name="collector_recyclables"  data-val="No" value="BARANGAY CHAIRMAN">
+                                    &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio_sect3" type="checkbox" name="collector_recyclables"  data-val="No" value="BARANGAY CHAIRMAN">
                                   &nbsp&nbsp  B.  BARANGAY CHAIRMAN
                                
                             </label>
@@ -6158,7 +10306,7 @@ ENCODE EA/BSN/FSN?
                         <div class="row">
                             <label >
                                 
-                                   &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio" type="checkbox" name="collector_recyclables"  data-val="No" value="PRIVATE COLLECTOR (ESTABLISHMENT)">
+                                   &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio_sect3" type="checkbox" name="collector_recyclables"  data-val="No" value="PRIVATE COLLECTOR (ESTABLISHMENT)">
                                    &nbsp&nbsp  C. PRIVATE COLLECTOR (ESTABLISHMENT)
                                  
                             </label>
@@ -6166,14 +10314,14 @@ ENCODE EA/BSN/FSN?
 
                             <div class="row">
                             <label>
-                                   &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio" type="checkbox" name="collector_recyclables"  data-val="No" value="BOTE DYARYO, WASTE PICKERS OR GARBAGE SCAVENGERS">
+                                   &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio_sect3" type="checkbox" name="collector_recyclables"  data-val="No" value="BOTE DYARYO, WASTE PICKERS OR GARBAGE SCAVENGERS">
                                   &nbsp&nbsp D. "BOTE DYARYO", WASTE PICKERS OR GARBAGE SCAVENGERS
                             </label>
 
                          </div> 
                           <div class="row">
                             <label>
-                                    &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio" type="checkbox" name="collector_recyclables"  data-val="Yes" value="Yes">
+                                    &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio_sect3" type="checkbox" name="collector_recyclables"  data-val="Yes" value="Yes">
                                   &nbsp&nbsp E. OTHERS (Specify)
                                  
                             </label>
@@ -6238,7 +10386,7 @@ ENCODE EA/BSN/FSN?
                           <div class="row">
                             <label>
                                 
-                                    &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio" type="checkbox" name="collector_residuals"  data-val="No" value="MUNICIPAL COLLECTOR">
+                                    &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio_sect3" type="checkbox" name="collector_residuals"  data-val="No" value="MUNICIPAL COLLECTOR">
                                   &nbsp&nbsp A. MUNICIPAL COLLECTOR
                                
                             </label>
@@ -6247,7 +10395,7 @@ ENCODE EA/BSN/FSN?
                               <div class="row">
                             <label>
                                 
-                                    &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio" type="checkbox" name="collector_residuals"  data-val="No" value="BARANGAY CHAIRMAN">
+                                    &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio_sect3" type="checkbox" name="collector_residuals"  data-val="No" value="BARANGAY CHAIRMAN">
                                   &nbsp&nbsp  B.  BARANGAY CHAIRMAN
                                
                             </label>
@@ -6260,7 +10408,7 @@ ENCODE EA/BSN/FSN?
                         <div class="row">
                             <label >
                                 
-                                   &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio" type="checkbox" name="collector_residuals"  data-val="No" value="PRIVATE COLLECTOR (ESTABLISHMENT)">
+                                   &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio_sect3" type="checkbox" name="collector_residuals"  data-val="No" value="PRIVATE COLLECTOR (ESTABLISHMENT)">
                                    &nbsp&nbsp  C. PRIVATE COLLECTOR (ESTABLISHMENT)
                                  
                             </label>
@@ -6268,14 +10416,14 @@ ENCODE EA/BSN/FSN?
 
                             <div class="row">
                             <label>
-                                   &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio" type="checkbox" name="collector_residuals"  data-val="No" value="BOTE DYARYO, WASTE PICKERS OR GARBAGE SCAVENGERS">
+                                   &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio_sect3" type="checkbox" name="collector_residuals"  data-val="No" value="BOTE DYARYO, WASTE PICKERS OR GARBAGE SCAVENGERS">
                                   &nbsp&nbsp D. "BOTE DYARYO", WASTE PICKERS OR GARBAGE SCAVENGERS
                             </label>
 
                          </div> 
                           <div class="row">
                             <label>
-                                    &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio" type="checkbox" name="collector_residuals" data-skip="collector_residuals_spec"  data-val="Yes" value="Yes">
+                                    &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio_sect3" type="checkbox" name="collector_residuals" data-skip="collector_residuals_spec"  data-val="Yes" value="Yes">
                                   &nbsp&nbsp E. OTHERS (Specify)
                                  
                             </label>
@@ -6868,7 +11016,7 @@ Other transport facilities:
                           <div class="row">
                             <label>
                                 
-                                    &nbsp&nbsp&nbsp&nbsp <input class="form-check-input respo_radio" type="checkbox" name="network_available"  data-val="Yes" value="Yes">
+                                    &nbsp&nbsp&nbsp&nbsp <input class="form-check-input respo_radio_sect3" type="checkbox" name="network_available"  data-val="Yes" value="Yes">
                                   &nbsp&nbsp 2G (E or G)
                                
                             </label>
@@ -6877,7 +11025,7 @@ Other transport facilities:
                               <div class="row">
                             <label>
                                 
-                                    &nbsp&nbsp&nbsp&nbsp <input class="form-check-input respo_radio" type="checkbox" name="network_available"  data-val="Yes" value="Yes">
+                                    &nbsp&nbsp&nbsp&nbsp <input class="form-check-input respo_radio_sect3" type="checkbox" name="network_available"  data-val="Yes" value="Yes">
                                   &nbsp&nbsp 3G (H or 3G+ or H+)
                                
                             </label>
@@ -6890,7 +11038,7 @@ Other transport facilities:
                         <div class="row">
                             <label >
                                 
-                                   &nbsp&nbsp&nbsp&nbsp <input class="form-check-input respo_radio" type="checkbox" name="network_available"  data-val="Yes" value="Yes">
+                                   &nbsp&nbsp&nbsp&nbsp <input class="form-check-input respo_radio_sect3" type="checkbox" name="network_available"  data-val="Yes" value="Yes">
                                    &nbsp&nbsp  4G (LTE or 4G+ or LTE-A)
                                  
                             </label>
@@ -7053,7 +11201,7 @@ Other transport facilities:
                           <div class="row">
                             <label>
                                 
-                                    &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio" type="checkbox" name="ict_equipment_free"  data-val="No" value="TELEPHONES/CELLPHONES">
+                                    &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio_sect3" type="checkbox" name="ict_equipment_free"  data-val="No" value="TELEPHONES/CELLPHONES">
                                   &nbsp&nbsp TELEPHONES/CELLPHONES
                                
                             </label>
@@ -7062,7 +11210,7 @@ Other transport facilities:
                               <div class="row">
                             <label>
                                 
-                                    &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio" type="checkbox" name="ict_equipment_free"  data-val="No" value="COMPUTERS (DESKTOP,LAPTOP,TABLET)">
+                                    &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio_sect3" type="checkbox" name="ict_equipment_free"  data-val="No" value="COMPUTERS (DESKTOP,LAPTOP,TABLET)">
                                   &nbsp&nbsp  COMPUTERS (DESKTOP,LAPTOP,TABLET)
                                
                             </label>
@@ -7075,7 +11223,7 @@ Other transport facilities:
                         <div class="row">
                             <label >
                                 
-                                   &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio" type="checkbox" name="ict_equipment_free"  data-val="No" value="FAX MACHINES">
+                                   &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio_sect3" type="checkbox" name="ict_equipment_free"  data-val="No" value="FAX MACHINES">
                                    &nbsp&nbsp  FAX MACHINES
                                  
                             </label>
@@ -7083,14 +11231,14 @@ Other transport facilities:
 
                             <div class="row">
                             <label>
-                                   &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio" type="checkbox" name="ict_equipment_free"  data-val="No" value="PRINTERS">
+                                   &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio_sect3" type="checkbox" name="ict_equipment_free"  data-val="No" value="PRINTERS">
                                   &nbsp&nbsp PRINTERS
                             </label>
 
                          </div> 
                           <div class="row">
                             <label>
-                                    &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio" type="checkbox" name="ict_equipment_free"  data-val="No" value="AUDIO-VISUAL EQUIPMENT (PROJECTOR, MICROPHONE, SPEAKER)">
+                                    &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio_sect3" type="checkbox" name="ict_equipment_free"  data-val="No" value="AUDIO-VISUAL EQUIPMENT (PROJECTOR, MICROPHONE, SPEAKER)">
                                   &nbsp&nbsp AUDIO-VISUAL EQUIPMENT (PROJECTOR, MICROPHONE, SPEAKER)
                             </label>
 
@@ -7098,14 +11246,14 @@ Other transport facilities:
                          <div class="row">
                             <label>
                                 
-                                    &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio" type="checkbox" name="ict_equipment_free"  data-val="Yes" value="Yes">
+                                    &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio_sect3" type="checkbox" name="ict_equipment_free"  data-val="Yes" value="Yes">
                                    &nbsp&nbsp OTHERS, SPECIFY
                                  
                             </label>
                         </div> 
                           <div class="row">
                             <label>
-                                    &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio" type="checkbox" name="ict_equipment_free"   data-val="No" value="NONE">
+                                    &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio_sect3" type="checkbox" name="ict_equipment_free"   data-val="No" value="NONE">
                                   &nbsp&nbsp NONE
                             </label>
 
@@ -7266,7 +11414,7 @@ Other transport facilities:
                           <div class="row">
                             <label>
                                 
-                                     &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio" type="checkbox" name="fillout_forms_system"  data-val="Yes" value="Yes">
+                                     &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio_sect3" type="checkbox" name="fillout_forms_system"  data-val="Yes" value="Yes">
                                   &nbsp&nbsp MANUAL ACCOMPLISHMENT OF FORMS
                                
                             </label>
@@ -7275,7 +11423,7 @@ Other transport facilities:
                               <div class="row">
                             <label>
                                 
-                                     &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio" type="checkbox" name="fillout_forms_system"  data-val="Yes" value="Yes">
+                                     &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio_sect3" type="checkbox" name="fillout_forms_system"  data-val="Yes" value="Yes">
                                   &nbsp&nbsp  DIRECT ENCODING TO A COMPUTER BY BARANGAY PERSONNEL
                                
                             </label>
@@ -7289,7 +11437,7 @@ Other transport facilities:
                         <div class="row">
                             <label >
                                 
-                                    &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio" type="checkbox" name="fillout_forms_system"  data-val="Yes" value="Yes">
+                                    &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio_sect3" type="checkbox" name="fillout_forms_system"  data-val="Yes" value="Yes">
                                    &nbsp&nbsp DIRECT ENCODING TO A COMPUTER BY RESIDENT
                                  
                             </label>
@@ -7656,51 +11804,51 @@ IT18.1 Please provide the photo containing the e-government strategy.</b>
 
               <tr>
                 <td>typhoon</td>
-                <td> <input type="number" class="form-control" name="significant_events_typhoon" placeholder="" ></td>
+                <td> <input type="number" class="form-control significant-events-climate" name="significant_events_typhoon" placeholder="" ></td>
               </tr>
 
               <tr>
                 <td>flooding</td>
-                <td> <input type="number" class="form-control" name="significant_events_flooding" placeholder="" ></td>
+                <td> <input type="number" class="form-control significant-events-climate" name="significant_events_flooding" placeholder="" ></td>
               </tr>
 
               <tr>
                 <td>flash flood</td>
-                <td> <input type="number" class="form-control" name="significant_events_flash_flood" placeholder="" ></td>
+                <td> <input type="number" class="form-control significant-events-climate" name="significant_events_flash_flood" placeholder="" ></td>
               </tr>
 
               <tr>
                 <td>drought</td>
-                <td> <input type="number" class="form-control" name="significant_events_drought" placeholder="" ></td>
+                <td> <input type="number" class="form-control significant-events-climate" name="significant_events_drought" placeholder="" ></td>
               </tr>
 
               <tr>
                 <td>earthquake</td>
-                <td> <input type="number" class="form-control" name="significant_events_earthquake" placeholder="" ></td>
+                <td> <input type="number" class="form-control significant-events-climate" name="significant_events_earthquake" placeholder="" ></td>
               </tr>
 
               <tr>
                 <td>volcanic eruption</td>
-                <td> <input type="number" class="form-control" name="significant_events_volcanic_eruption" placeholder="" ></td>
+                <td> <input type="number" class="form-control significant-events-climate" name="significant_events_volcanic_eruption" placeholder="" ></td>
               </tr>
 
               <tr>
                 <td>landslide</td>
-                <td> <input type="number" class="form-control" name="significant_events_landslide" placeholder="" ></td>
+                <td> <input type="number" class="form-control significant-events-climate" name="significant_events_landslide" placeholder="" ></td>
               </tr>
 
               <tr>
                 <td>tsunami</td>
-                <td> <input type="number" class="form-control" name="significant_events_tsunami" placeholder="" ></td>
+                <td> <input type="number" class="form-control significant-events-climate" name="significant_events_tsunami" placeholder="" ></td>
               </tr>
 
                <tr>
                 <td>forest fire</td>
-                <td> <input type="number" class="form-control" name="significant_events_forest_fire" placeholder="" ></td>
+                <td> <input type="number" class="form-control significant-events-climate" name="significant_events_forest_fire" placeholder="" ></td>
               </tr>
 
      </table>
-               
+                <label for="" class="text-left"><b>TOTAL CLIMATE EVENTS:  <span id="total_significant_events_climate"></span></b></label> 
   </div>
     </div>
 </div>
@@ -7722,7 +11870,7 @@ IT18.1 Please provide the photo containing the e-government strategy.</b>
      <table id="table4" class="cell-border compact text-left table-hover" style="width:100%">
         <thead>
             <tr>
-                <th>B. Economic Events</th>
+                <th>ECONOMIC EVENTS</th>
                 <th style="width:40%"><br><i style="font-size: 12px !important; color: red">"Please input "0" if none"</i></th>
                
             </tr>
@@ -7730,133 +11878,136 @@ IT18.1 Please provide the photo containing the e-government strategy.</b>
 
               <tr>
                 <td>closure of many small firms</td>
-                <td> <input type="number" class="form-control" name="significant_events_closure" placeholder="" ></td>
+                <td> <input type="number" class="form-control significant-events-economic" name="significant_events_closure" placeholder="" ></td>
               </tr>
 
               <tr>
                 <td>mass lay-off</td>
-                <td> <input type="number" class="form-control" name="significant_events_mass" placeholder="" ></td>
+                <td> <input type="number" class="form-control significant-events-economic" name="significant_events_mass" placeholder="" ></td>
               </tr>
 
               <tr>
                 <td>opening of large firm/s</td>
-                <td> <input type="number" class="form-control" name="significant_events_largefirm" placeholder="" ></td>
+                <td> <input type="number" class="form-control significant-events-economic" name="significant_events_largefirm" placeholder="" ></td>
               </tr>
 
               <tr>
                 <td>opening of many small firm/s</td>
-                <td> <input type="number" class="form-control" name="significant_events_smallfirm" placeholder="" ></td>
+                <td> <input type="number" class="form-control significant-events-economic" name="significant_events_smallfirm" placeholder="" ></td>
               </tr>
 
               <tr>
                 <td>opening of shopping malls</td>
-                <td> <input type="number" class="form-control" name="significant_events_shoppingmalls" placeholder="" ></td>
+                <td> <input type="number" class="form-control significant-events-economic" name="significant_events_shoppingmalls" placeholder="" ></td>
               </tr>
 
               <tr>
                 <td>opening of fastfood restaurant/s</td>
-                <td> <input type="number" class="form-control" name="significant_events_fastfood" placeholder="" ></td>
+                <td> <input type="number" class="form-control significant-events-economic" name="significant_events_fastfood" placeholder="" ></td>
               </tr>
 
               <tr>
                 <td>closure of large firms</td>
-                <td> <input type="number" class="form-control" name="significant_events_closure_large_firms" placeholder="" ></td>
+                <td> <input type="number" class="form-control significant-events-economic" name="significant_events_closure_large_firms" placeholder="" ></td>
               </tr>
 
               </tr>
 
      </table>
-              
+              <label for="" class="text-left"><b>TOTAL ECONOMIC EVENTS:  <span id="total_significant-events-economic"></span></b></label> 
   </div>
     </div>
 </div>
+<br>
+<br>
+
+
 
 <hr>
 <br>
 <h5 class="text-left" style="color: "><b>SIGNIFICANT EVENTS IN THE BARANGAY FOR PAST 3 YEARS - PEACE AND ORDER EVENTS (01 April 2018 to 31 March 2020)</b></h5><br>   
 
-<div class="text-left"><h5>
-C. Peace and order events
-</h5></div>
 
-<br>                  
-<div class="text-left"><h6>
-<b>fire
-</b></h6></div>   
+<br>
+<div class="row">
+  <div class="float-sm-left">
+     <div class="container-fluid" align="left" style="width:100%">
+    
+     <table id="table4" class="cell-border compact text-left table-hover" style="width:100%">
+        <thead>
+            <tr>
+                <th>PEACE AND ORDER EVENTS</th>
+                <th style="width:40%"><br><i style="font-size: 12px !important; color: red">"Please input "0" if none"</i></th>
+               
+            </tr>
+        </thead>
 
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="significant_events_fire" name="significant_events_fire" placeholder="" >
+              <tr>
+                <td>fire</td>
+                <td> <input type="number" class="form-control significant-events-peaceandorder" name="significant_events_fire" placeholder="" ></td>
+              </tr>
+
+              <tr>
+                <td>armed conflict</td>
+                <td> <input type="number" class="form-control significant-events-peaceandorder" name="significant_events_armed_conflict" placeholder="" ></td>
+              </tr>
+
+
+    </table>
+              <label for="" class="text-left"><b>TOTAL PEACE AND ORDER EVENTS:  <span id="total_significant-events-peaceandorder"></span></b></label> 
+  </div>
+    </div>
 </div>
-</div>
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>armed conflict
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="significant_events_armed_conflict" name="significant_events_armed_conflict" placeholder="" >
-</div>
-</div> 
 <br>
 
+
+
+<br>
 <hr>
 <br>
 <h5 class="text-left" style="color: "><b>SIGNIFICANT EVENTS IN THE BARANGAY FOR PAST 3 YEARS - HEALTH AND AGRICULTURE-RELATED EVENTS (01 April 2018 to 31 March 2020)</b></h5><br> 
 
 
-<div class="text-left"><h5>
-D. Health and agriculture-related events
-</h5></div>
+<div class="row">
+  <div class="float-sm-left">
+     <div class="container-fluid" align="left" style="width:100%">
+    
+     <table id="table4" class="cell-border compact text-left table-hover" style="width:100%">
+        <thead>
+            <tr>
+                <th>HEALTH AND AGRICULTURE-RELATED EVENTS</th>
+                <th style="width:40%"><br><i style="font-size: 12px !important; color: red">"Please input "0" if none"</i></th>
+               
+            </tr>
+        </thead>
 
-<br>                  
-<div class="text-left"><h6>
-<b>epidemic
-</b></h6></div>   
+              <tr>
+                <td>epidemic</td>
+                <td> <input type="number" class="form-control significant-events-healthagri" name="significant_events_epidemic" placeholder="" ></td>
+              </tr>
 
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="significant_events_epidemic" name="significant_events_epidemic" placeholder="" >
+              <tr>
+                <td>pest infestation</td>
+                <td> <input type="number" class="form-control significant-events-healthagri" name="significant_events_pest" placeholder="" ></td>
+              </tr> 
+
+               <tr>
+                <td>livestock/poultry diseases</td>
+                <td> <input type="number" class="form-control significant-events-healthagri" name="significant_events_livestock" placeholder="" ></td>
+              </tr> 
+
+               <tr>
+                <td>fish kill</td>
+                <td> <input type="number" class="form-control significant-events-healthagri" name="significant_events_fish" placeholder="" ></td>
+              </tr>
+
+
+    </table>
+              <label for="" class="text-left"><b>TOTAL HEALTH AND AGRICULTURE EVENTS:  <span id="total_significant-events-healthagri"></span></b></label> 
+  </div>
+    </div>
 </div>
-</div>
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>pest infestation
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="significant_events_pest" name="significant_events_pest" placeholder="" >
-</div>
-</div> 
-
-<br>                  
-<div class="text-left"><h6>
-<b>livestock/poultry diseases
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="significant_events_livestock" name="significant_events_livestock" placeholder="" >
-</div>
-</div>
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>fish kill
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="significant_events_fish" name="significant_events_fish" placeholder="" >
-</div>
-</div> 
+<br>
 
 
 <br>                  
@@ -7874,6 +12025,8 @@ Other health and agriculture-related events
                     </div>                                                                                                           
               </div>
           </div>   
+
+
 
 
 
@@ -7904,9 +12057,9 @@ Other health and agriculture-related events
 <br>
 
 <br>                  
-<div class="text-left"><h5>
+<div class="text-left"><h6>
 S2. Based on report to barangay, what are the main reasons for the closure of firms during the period (01 April 2018 to 31 March 2020)?
-</h5></div>
+</h6></div>
 
 <div class="form-group row">
   <div class="col-sm-6">
@@ -7932,60 +12085,60 @@ S2. Based on report to barangay, what are the main reasons for the closure of fi
         <thead>
             <tr>
                 <th>Climate-related and <br>geologic events</th>
-                <th style="width:40%">Occurence <br><i style="font-size: 12px !important; color: red">"Please input "0" if none"</i></th>
+                <th style="width:40%"><br><i style="font-size: 12px !important; color: red">"Please input "0" if none"</i></th>
                
             </tr>
         </thead>
 
               <tr>
                 <td>typhoon</td>
-                <td> <input type="number" class="form-control" name="significant_events_typhoon2" placeholder="" ></td>
+                <td> <input type="number" class="form-control significant-events-climate2" name="significant_events_typhoon2" placeholder="" ></td>
               </tr>
 
               <tr>
                 <td>flooding</td>
-                <td> <input type="number" class="form-control" name="significant_events_flooding2" placeholder="" ></td>
+                <td> <input type="number" class="form-control significant-events-climate2" name="significant_events_flooding2" placeholder="" ></td>
               </tr>
 
               <tr>
                 <td>flash flood</td>
-                <td> <input type="number" class="form-control" name="significant_events_flash_flood2" placeholder="" ></td>
+                <td> <input type="number" class="form-control significant-events-climate2" name="significant_events_flash_flood2" placeholder="" ></td>
               </tr>
 
               <tr>
                 <td>drought</td>
-                <td> <input type="number" class="form-control" name="significant_events_drought2" placeholder="" ></td>
+                <td> <input type="number" class="form-control significant-events-climate2" name="significant_events_drought2" placeholder="" ></td>
               </tr>
 
               <tr>
                 <td>earthquake</td>
-                <td> <input type="number" class="form-control" name="significant_events_earthquake2" placeholder="" ></td>
+                <td> <input type="number" class="form-control significant-events-climate2" name="significant_events_earthquake2" placeholder="" ></td>
               </tr>
 
               <tr>
                 <td>volcanic eruption</td>
-                <td> <input type="number" class="form-control" name="significant_events_volcanic_eruption2" placeholder="" ></td>
+                <td> <input type="number" class="form-control significant-events-climate2" name="significant_events_volcanic_eruption2" placeholder="" ></td>
               </tr>
 
               <tr>
                 <td>landslide</td>
-                <td> <input type="number" class="form-control" name="significant_events_landslide2" placeholder="" ></td>
+                <td> <input type="number" class="form-control significant-events-climate2" name="significant_events_landslide2" placeholder="" ></td>
               </tr>
 
               <tr>
                 <td>tsunami</td>
-                <td> <input type="number" class="form-control" name="significant_events_tsunami2" placeholder="" ></td>
+                <td> <input type="number" class="form-control significant-events-climate2" name="significant_events_tsunami2" placeholder="" ></td>
               </tr>
 
                <tr>
                 <td>forest fire</td>
-                <td> <input type="number" class="form-control" name="significant_events_forest_fire2" placeholder="" ></td>
+                <td> <input type="number" class="form-control significant-events-climate2" name="significant_events_forest_fire2" placeholder="" ></td>
               </tr>
 
 
 
      </table>
-    
+        <label for="" class="text-left"><b>TOTAL CLIMATE EVENTS:  <span id="total_significant-events-climate2"></span></b></label> 
   </div>
     </div>
 </div>
@@ -7997,182 +12150,159 @@ S2. Based on report to barangay, what are the main reasons for the closure of fi
 <br>
 <h5 class="text-left" style="color: "><b>SIGNIFICANT EVENTS IN THE BARANGAY FOR PAST 3 YEARS - ECONOMIC EVENTS (01 April 2020 to 31 March 2021)</b></h5><br>   
 
-          
-<div class="text-left"><h5>
-Economic events
-</h5></div>
-
-<br>                  
-<div class="text-left"><h6>
-<b>closure of many small firms
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="significant_events_closure2" name="significant_events_closure2" placeholder="" >
-</div>
-</div>
-
-<br>                  
-<div class="text-left"><h6>
-<b>mass lay-off
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="significant_events_mass2" name="significant_events_mass2" placeholder="" >
-</div>
-</div>
-
-<br>                  
-<div class="text-left"><h6>
-<b>opening of large firm/s
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="significant_events_largefirm2" name="significant_events_largefirm2" placeholder="" >
-</div>
-</div>
 
 
-<br>                  
-<div class="text-left"><h6>
-<b>opening of many small firm/s
-</b></h6></div>   
+<div class="row">
+  <div class="float-sm-left">
+     <div class="container-fluid" align="left" style="width:100%">
+    
+     <table id="table4" class="cell-border compact text-left table-hover" style="width:100%">
+        <thead>
+            <tr>
+                <th>ECONOMIC EVENTS</th>
+                <th style="width:40%"><br><i style="font-size: 12px !important; color: red">"Please input "0" if none"</i></th>
+               
+            </tr>
+        </thead>
 
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="significant_events_smallfirm2" name="significant_events_smallfirm2" placeholder="" >
-</div>
-</div>
+              <tr>
+                <td>closure of many small firms</td>
+                <td> <input type="number" class="form-control significant-events-economic2" name="significant_events_closure2" placeholder="" ></td>
+              </tr>
 
+              <tr>
+                <td>mass lay-off</td>
+                <td> <input type="number" class="form-control significant-events-economic2" name="significant_events_mass2" placeholder="" ></td>
+              </tr>
 
-<br>                  
-<div class="text-left"><h6>
-<b>opening of shopping malls
-</b></h6></div>   
+              <tr>
+                <td>opening of large firm/s</td>
+                <td> <input type="number" class="form-control significant-events-economic2" name="significant_events_largefirm2" placeholder="" ></td>
+              </tr>
 
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="significant_events_shoppingmalls2" name="significant_events_shoppingmalls2" placeholder="" >
-</div>
-</div>
+              <tr>
+                <td>opening of many small firm/s</td>
+                <td> <input type="number" class="form-control significant-events-economic2" name="significant_events_smallfirm2" placeholder="" ></td>
+              </tr>
 
+              <tr>
+                <td>opening of shopping malls</td>
+                <td> <input type="number" class="form-control significant-events-economic2" name="significant_events_shoppingmalls2" placeholder="" ></td>
+              </tr>
 
-<br>                  
-<div class="text-left"><h6>
-<b>opening of fastfood restaurant/s
-</b></h6></div>   
+              <tr>
+                <td>opening of fastfood restaurant/s</td>
+                <td> <input type="number" class="form-control significant-events-economic2" name="significant_events_fastfood2" placeholder="" ></td>
+              </tr>
 
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="significant_events_fastfood2" name="significant_events_fastfood2" placeholder="" >
-</div>
-</div>
+              <tr>
+                <td>closure of large firms</td>
+                <td> <input type="number" class="form-control significant-events-economic2" name="significant_events_closure_large_firms2" placeholder="" ></td>
+              </tr>
 
+              </tr>
 
-<br>                  
-<div class="text-left"><h6>
-<b>closure of large firms
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="significant_events_closure_large_firms2" name="significant_events_closure_large_firms2" placeholder="" >
-</div>
+     </table>
+              <label for="" class="text-left"><b>TOTAL ECONOMIC EVENTS:  <span id="total_significant-events-economic2"></span></b></label> 
+  </div>
+    </div>
 </div>
 <br>
-
-
-
+<br>
 
 <hr>
 <br>
 <h5 class="text-left" style="color: "><b>SIGNIFICANT EVENTS IN THE BARANGAY FOR PAST 3 YEARS - PEACE AND ORDER EVENTS (01 April 2020 to 31 March 2021)</b></h5><br>   
 
-<div class="text-left"><h5>
-Peace and order events
-</h5></div>
 
-<br>                  
-<div class="text-left"><h6>
-<b>fire
-</b></h6></div>   
 
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="significant_events_fire2" name="significant_events_fire2" placeholder="" >
+<br>
+<div class="row">
+  <div class="float-sm-left">
+     <div class="container-fluid" align="left" style="width:100%">
+    
+     <table id="table4" class="cell-border compact text-left table-hover" style="width:100%">
+        <thead>
+            <tr>
+                <th>PEACE AND ORDER EVENTS</th>
+                <th style="width:40%"><br><i style="font-size: 12px !important; color: red">"Please input "0" if none"</i></th>
+               
+            </tr>
+        </thead>
+
+              <tr>
+                <td>fire</td>
+                <td> <input type="number" class="form-control significant-events-peaceandorder2" name="significant_events_fire2" placeholder="" ></td>
+              </tr>
+
+              <tr>
+                <td>armed conflict</td>
+                <td> <input type="number" class="form-control significant-events-peaceandorder2" name="significant_events_armed_conflict2" placeholder="" ></td>
+              </tr>
+
+
+    </table>
+              <label for="" class="text-left"><b>TOTAL PEACE AND ORDER EVENTS:  <span id="total_significant-events-peaceandorder2"></span></b></label> 
+  </div>
+    </div>
 </div>
-</div>
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>armed conflict
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="significant_events_armed_conflict2" name="significant_events_armed_conflict2" placeholder="" >
-</div>
-</div> 
 <br>
 
+
+
+<br>
+<hr>
+<br>
+<h5 class="text-left" style="color: "><b>SIGNIFICANT EVENTS IN THE BARANGAY FOR PAST 3 YEARS - HEALTH AND AGRICULTURE-RELATED EVENTS (01 April 2020 to 31 March 2021)</b></h5><br> 
+
+
+
+
+<div class="row">
+  <div class="float-sm-left">
+     <div class="container-fluid" align="left" style="width:100%">
+    
+     <table id="table4" class="cell-border compact text-left table-hover" style="width:100%">
+        <thead>
+            <tr>
+                <th>HEALTH AND AGRICULTURE-RELATED EVENTS</th>
+                <th style="width:40%"><br><i style="font-size: 12px !important; color: red">"Please input "0" if none"</i></th>
+               
+            </tr>
+        </thead>
+
+              <tr>
+                <td>epidemic</td>
+                <td> <input type="number" class="form-control significant-events-healthagri2" name="significant_events_epidemic2" placeholder="" ></td>
+              </tr>
+
+              <tr>
+                <td>pest infestation</td>
+                <td> <input type="number" class="form-control significant-events-healthagri2" name="significant_events_pest2" placeholder="" ></td>
+              </tr> 
+
+               <tr>
+                <td>livestock/poultry diseases</td>
+                <td> <input type="number" class="form-control significant-events-healthagri2" name="significant_events_livestock2" placeholder="" ></td>
+              </tr> 
+
+               <tr>
+                <td>fish kill</td>
+                <td> <input type="number" class="form-control significant-events-healthagri2" name="significant_events_fish2" placeholder="" ></td>
+              </tr>
+
+
+    </table>
+              <label for="" class="text-left"><b>TOTAL HEALTH AND AGRICULTURE EVENTS:  <span id="total_significant-events-healthagri2"></span></b></label> 
+  </div>
+    </div>
+</div>
+<br>
+
+
+<br>                  
 <div class="text-left"><h5>
-Health and agriculture-related events
-</h5></div>
-
-<br>                  
-<div class="text-left"><h6>
-<b>epidemic
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="significant_events_epidemic2" name="significant_events_epidemic2" placeholder="" >
-</div>
-</div>
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>pest infestation
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="significant_events_pest2" name="significant_events_pest2" placeholder="" >
-</div>
-</div> 
-
-<br>                  
-<div class="text-left"><h6>
-<b>livestock/poultry diseases
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="significant_events_livestock2" name="significant_events_livestock2" placeholder="" >
-</div>
-</div>
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>fish kill
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="significant_events_fish2" name="significant_events_fish2" placeholder="" >
-</div>
-</div> 
-
-
-<br>                  
-<div class="text-left"><h5>
-Is there other health and agriculture-related events?
+Other health and agriculture-related events
 </h5></div>
 
 <div class="container">
@@ -8187,11 +12317,14 @@ Is there other health and agriculture-related events?
           </div>   
 
 
+
+
+
 <div class="significant_events_others2_repeat" hidden=""> 
 
 <br>                  
 <div class="text-left"><h6>
-<b>Other health and agriculture-related events: # 1?
+<b>Please Specify other health and agriculture-related events # 1?
 </b></h6></div>   
 
 <div class="form-group row">
@@ -8211,13 +12344,13 @@ Is there other health and agriculture-related events?
 </div>
 </div>
 </div>
-
+<br>
 
 
 <br>                  
-<div class="text-left"><h5>
+<div class="text-left"><h6>
 S4. Based on report to barangay, what are the main reasons for the closure of small firms during the period (01 April 2020 to 31 March 2021)?
-</h5></div>
+</h6></div>
 
 <div class="form-group row">
   <div class="col-sm-6">
@@ -8226,15 +12359,16 @@ S4. Based on report to barangay, what are the main reasons for the closure of sm
 </div>
 
 <br>                  
-<div class="text-left"><h5>
+<div class="text-left"><h6>
 S5. Based on report to barangay, what are the main reasons for the closure of large firms during the period (01 April 2020 to 31 March 2021)?
-</h5></div>
+</h6></div>
 
 <div class="form-group row">
   <div class="col-sm-6">
   <input type="text" class="form-control" id="reason_of_closure2b" name="reason_of_closure2b" placeholder="" >
 </div>
 </div>
+<br>
 <br>
 
 
@@ -8914,7 +13048,7 @@ Other disaster that have a disaster contingency plan:
                           <div class="row">
                             <label>
                                 
-                                     &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio" type="checkbox" name="disaster_evacuation_map_use"  data-val="Yes" value="FLOOD">
+                                     &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio_sect3" type="checkbox" name="disaster_evacuation_map_use"  data-val="Yes" value="FLOOD">
                                   &nbsp&nbsp FLOOD
                                
                             </label>
@@ -8925,7 +13059,7 @@ Other disaster that have a disaster contingency plan:
                               <div class="row">
                             <label>
                                 
-                                     &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio" type="checkbox" name="disaster_evacuation_map_use"  data-val="Yes" value="LANDSLIDE">
+                                     &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio_sect3" type="checkbox" name="disaster_evacuation_map_use"  data-val="Yes" value="LANDSLIDE">
                                   &nbsp&nbsp  LANDSLIDE
                                
                             </label>
@@ -8936,7 +13070,7 @@ Other disaster that have a disaster contingency plan:
                          <div class="row">
                             <label>
                                 
-                                     &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio" type="checkbox" name="disaster_evacuation_map_use"  data-val="Yes" value="STORM SURGE">
+                                     &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio_sect3" type="checkbox" name="disaster_evacuation_map_use"  data-val="Yes" value="STORM SURGE">
                                   &nbsp&nbsp STORM SURGE
                                
                             </label>
@@ -8947,7 +13081,7 @@ Other disaster that have a disaster contingency plan:
                          <div class="row">
                             <label>
                                 
-                                     &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio" type="checkbox" name="disaster_evacuation_map_use"  data-val="Yes" value="EARTHQUAKE">
+                                     &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio_sect3" type="checkbox" name="disaster_evacuation_map_use"  data-val="Yes" value="EARTHQUAKE">
                                   &nbsp&nbsp EARTHQUAKE
                                
                             </label>
@@ -8958,7 +13092,7 @@ Other disaster that have a disaster contingency plan:
                          <div class="row">
                             <label>
                                 
-                                     &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio" type="checkbox" name="disaster_evacuation_map_use"  data-val="Yes" value="TSUNAMI">
+                                     &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio_sect3" type="checkbox" name="disaster_evacuation_map_use"  data-val="Yes" value="TSUNAMI">
                                   &nbsp&nbsp TSUNAMI
                                
                             </label>
@@ -8969,7 +13103,7 @@ Other disaster that have a disaster contingency plan:
                          <div class="row">
                             <label>
                                 
-                                     &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio" type="checkbox" name="disaster_evacuation_map_use"  data-val="Yes" value="VOLCANIC ERUPTION">
+                                     &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio_sect3" type="checkbox" name="disaster_evacuation_map_use"  data-val="Yes" value="VOLCANIC ERUPTION">
                                   &nbsp&nbsp VOLCANIC ERUPTION
                                
                             </label>
@@ -8980,7 +13114,7 @@ Other disaster that have a disaster contingency plan:
                          <div class="row">
                             <label>
                                 
-                                     &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio" type="checkbox" name="disaster_evacuation_map_use_specify"  data-val="Yes" value="Yes">
+                                     &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio_sect3" type="checkbox" name="disaster_evacuation_map_use_specify"  data-val="Yes" value="Yes">
                                   &nbsp&nbsp OTHERS, SPECIFY
                                
                             </label>
@@ -9039,7 +13173,7 @@ Other disaster that have a disaster contingency plan:
                           <div class="row">
                             <label>
                                 
-                                     &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio" type="checkbox" name="disaster_evacuation_map_use1"  data-val="Yes" value="FLOOD">
+                                     &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio_sect3" type="checkbox" name="disaster_evacuation_map_use1"  data-val="Yes" value="FLOOD">
                                   &nbsp&nbsp FLOOD
                                
                             </label>
@@ -9050,7 +13184,7 @@ Other disaster that have a disaster contingency plan:
                               <div class="row">
                             <label>
                                 
-                                     &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio" type="checkbox" name="disaster_evacuation_map_use1"  data-val="Yes" value="LANDSLIDE">
+                                     &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio_sect3" type="checkbox" name="disaster_evacuation_map_use1"  data-val="Yes" value="LANDSLIDE">
                                   &nbsp&nbsp  LANDSLIDE
                                
                             </label>
@@ -9061,7 +13195,7 @@ Other disaster that have a disaster contingency plan:
                          <div class="row">
                             <label>
                                 
-                                     &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio" type="checkbox" name="disaster_evacuation_map_use1"  data-val="Yes" value="STORM SURGE">
+                                     &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio_sect3" type="checkbox" name="disaster_evacuation_map_use1"  data-val="Yes" value="STORM SURGE">
                                   &nbsp&nbsp STORM SURGE
                                
                             </label>
@@ -9072,7 +13206,7 @@ Other disaster that have a disaster contingency plan:
                          <div class="row">
                             <label>
                                 
-                                     &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio" type="checkbox" name="disaster_evacuation_map_use1"  data-val="Yes" value="EARTHQUAKE">
+                                     &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio_sect3" type="checkbox" name="disaster_evacuation_map_use1"  data-val="Yes" value="EARTHQUAKE">
                                   &nbsp&nbsp EARTHQUAKE
                                
                             </label>
@@ -9083,7 +13217,7 @@ Other disaster that have a disaster contingency plan:
                          <div class="row">
                             <label>
                                 
-                                     &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio" type="checkbox" name="disaster_evacuation_map_use1"  data-val="Yes" value="TSUNAMI">
+                                     &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio_sect3" type="checkbox" name="disaster_evacuation_map_use1"  data-val="Yes" value="TSUNAMI">
                                   &nbsp&nbsp TSUNAMI
                                
                             </label>
@@ -9094,7 +13228,7 @@ Other disaster that have a disaster contingency plan:
                          <div class="row">
                             <label>
                                 
-                                     &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio" type="checkbox" name="disaster_evacuation_map_use1"  data-val="Yes" value="VOLCANIC ERUPTION
+                                     &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio_sect3" type="checkbox" name="disaster_evacuation_map_use1"  data-val="Yes" value="VOLCANIC ERUPTION
                                ">
                                   &nbsp&nbsp VOLCANIC ERUPTION
                                
@@ -9106,7 +13240,7 @@ Other disaster that have a disaster contingency plan:
                          <div class="row">
                             <label>
                                 
-                                     &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio" type="checkbox" name="disaster_evacuation_map_use1"  data-val="Yes" value="Yes">
+                                     &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio_sect3" type="checkbox" name="disaster_evacuation_map_use1"  data-val="Yes" value="Yes">
                                   &nbsp&nbsp OTHERS, SPECIFY
                                
                             </label>
@@ -9308,7 +13442,7 @@ Other disaster that have a disaster contingency plan:
                           <div class="row">
                             <label>
                                 
-                                     &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio" type="checkbox" name="disaster_used_evacuation_center"  data-val="No" value="No">
+                                     &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio_sect3" type="checkbox" name="disaster_used_evacuation_center"  data-val="No" value="No">
                                   &nbsp&nbsp A. TYPHOON
                                
                             </label>
@@ -9317,7 +13451,7 @@ Other disaster that have a disaster contingency plan:
                               <div class="row">
                             <label>
                                 
-                                      &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio" type="checkbox" name="disaster_used_evacuation_center"  data-val="No" value="No">
+                                      &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio_sect3" type="checkbox" name="disaster_used_evacuation_center"  data-val="No" value="No">
                                   &nbsp&nbsp  B. FLOODING
                                
                             </label>
@@ -9326,7 +13460,7 @@ Other disaster that have a disaster contingency plan:
                         <div class="row">
                             <label>
                                 
-                                      &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio" type="checkbox" name="disaster_used_evacuation_center"  data-val="No" value="No">
+                                      &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio_sect3" type="checkbox" name="disaster_used_evacuation_center"  data-val="No" value="No">
                                   &nbsp&nbsp  C. DROUGHT
                                
                             </label>
@@ -9336,7 +13470,7 @@ Other disaster that have a disaster contingency plan:
                          <div class="row">
                             <label>
                                 
-                                      &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio" type="checkbox" name="disaster_used_evacuation_center"  data-val="No" value="No">
+                                      &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio_sect3" type="checkbox" name="disaster_used_evacuation_center"  data-val="No" value="No">
                                   &nbsp&nbsp  D. EARTHQUAKE
                                
                             </label>
@@ -9346,7 +13480,7 @@ Other disaster that have a disaster contingency plan:
                          <div class="row">
                             <label>
                                 
-                                      &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio" type="checkbox" name="disaster_used_evacuation_center"  data-val="No" value="No">
+                                      &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio_sect3" type="checkbox" name="disaster_used_evacuation_center"  data-val="No" value="No">
                                   &nbsp&nbsp  E. VOLCANIC ERUPTION
                                
                             </label>
@@ -9355,7 +13489,7 @@ Other disaster that have a disaster contingency plan:
                      <div class="row">
                             <label>
                                 
-                                      &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio" type="checkbox" name="disaster_used_evacuation_center"  data-val="No" value="No">
+                                      &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio_sect3" type="checkbox" name="disaster_used_evacuation_center"  data-val="No" value="No">
                                   &nbsp&nbsp  F. LANDSLIDE
                                
                             </label>
@@ -9364,7 +13498,7 @@ Other disaster that have a disaster contingency plan:
                      <div class="row">
                             <label>
                                 
-                                      &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio" type="checkbox" name="disaster_used_evacuation_center"  data-val="No" value="No">
+                                      &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio_sect3" type="checkbox" name="disaster_used_evacuation_center"  data-val="No" value="No">
                                   &nbsp&nbsp  G. TSUNAMI
                                
                             </label>
@@ -9373,7 +13507,7 @@ Other disaster that have a disaster contingency plan:
                         <div class="row">
                             <label>
                                 
-                                      &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio" type="checkbox" name="disaster_used_evacuation_center"  data-val="No" value="No">
+                                      &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio_sect3" type="checkbox" name="disaster_used_evacuation_center"  data-val="No" value="No">
                                   &nbsp&nbsp  H. FOREST FIRE
                                
                             </label>
@@ -9383,7 +13517,7 @@ Other disaster that have a disaster contingency plan:
                          <div class="row">
                             <label>
                                 
-                                      &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio" type="checkbox" name="disaster_used_evacuation_center"  data-val="No" value="No">
+                                      &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio_sect3" type="checkbox" name="disaster_used_evacuation_center"  data-val="No" value="No">
                                   &nbsp&nbsp  I. FIRE
                                
                             </label>
@@ -9392,7 +13526,7 @@ Other disaster that have a disaster contingency plan:
                          <div class="row">
                             <label>
                                 
-                                      &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio" type="checkbox" name="disaster_used_evacuation_center"  data-val="No" value="No">
+                                      &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio_sect3" type="checkbox" name="disaster_used_evacuation_center"  data-val="No" value="No">
                                   &nbsp&nbsp  J. EPIDEMIC/PANDEMIC
                                
                             </label>
@@ -9402,7 +13536,7 @@ Other disaster that have a disaster contingency plan:
                         <div class="row">
                             <label>
                                 
-                                      &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio" type="checkbox" name="disaster_used_evacuation_center"  data-val="No" value="No">
+                                      &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio_sect3" type="checkbox" name="disaster_used_evacuation_center"  data-val="No" value="No">
                                   &nbsp&nbsp  K. ARMED CONFLICT
                                
                             </label>
@@ -9412,7 +13546,7 @@ Other disaster that have a disaster contingency plan:
                      <div class="row">
                             <label>
                                 
-                                      &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio" type="checkbox" name="disaster_used_evacuation_center"  data-val="Yes" value="Yes">
+                                      &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio_sect3" type="checkbox" name="disaster_used_evacuation_center"  data-val="Yes" value="Yes">
                                   &nbsp&nbsp  L. OTHERS, SPECIFY
                                
                             </label>
@@ -9422,7 +13556,7 @@ Other disaster that have a disaster contingency plan:
                      <div class="row">
                             <label>
                                 
-                                      &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio" type="checkbox" name="disaster_used_evacuation_center"  data-val="No" value="No">
+                                      &nbsp&nbsp&nbsp&nbsp<input class="form-check-input respo_radio_sect3" type="checkbox" name="disaster_used_evacuation_center"  data-val="No" value="No">
                                   &nbsp&nbsp  M. NOT YET USED
                                
                             </label>
@@ -9553,34 +13687,6 @@ Other disaster that have a disaster contingency plan:
 
 <!-- DISASTER MANAGEMENT RISK 5 -->
 
- <tr>
-     <td class="text-left">
-              
-              <br>             
-<div class="text-left"><h6>
-<b>Time and Date Ended:
-</b></h6></div>
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="Date" class="form-control" id="Interview_date_end" name="Interview_date_end" placeholder="" > 
-  <input type="Time" class="form-control" id="Interview_time_end" name="Interview_time_end" placeholder="" >
-</div>
-</div>
-<br>
-
-
-      <br>
-                    </div>
-                             
-
-                  </div>
-                </div>
-
-                <hr>
-
-             </td>
-         
-           </tr>
 
 
 
@@ -9599,1119 +13705,1371 @@ A. GENERAL INFORMATION ABOUT THE BARANGAY LOCAL GOVERNMENT UNIT</h4><br>
 <br>                  
 <div class="text-left"><h5>
 <b>Ages of Barangay Officials</b>
-</h5></div>
-
-
-<br>                  
-
-<h6 class="text-left" style="color: blue"><b>A. CAPTAIN</b></h6>
-<div class="text-left"><h5>
-A1. How many are males aged for Captain as of April 01, 2020? Please input a number.
-</h5></div>
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>15 to 30 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_1a" name="gi_male_1a" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>31 to 59 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_1b" name="gi_male_1b" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>60 and above
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_1c" name="gi_male_1c" placeholder="" >
-</div>
-</div>
-
-
-<br>
-<div class="text-left"><h5>
-A2. How many are females aged for Captain as of April 01, 2020? Please input a number.
-</h5></div>
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>15 to 30 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_1a" name="gi_female_1a" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>31 to 59 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_1b" name="gi_female_1b" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>60 and above
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_1c" name="gi_female_1c" placeholder="" >
-</div>
-</div>
-<br>
-<hr>
-
-
-
-<br>
-<h6 class="text-left" style="color: blue"><b>B. KAGAWAD</b></h6>
-<div class="text-left"><h5>
-A1. How many are males aged for Kagawad as of April 01, 2020? Please input a number.
-</h5></div>
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>15 to 30 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_2a" name="gi_male_2a" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>31 to 59 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_2b" name="gi_male_2b" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>60 and above
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_2c" name="gi_male_2c" placeholder="" >
-</div>
-</div>
-
-
-<br>
-<div class="text-left"><h5>
-A2. How many are females aged for Kagawad as of April 01, 2020? Please input a number.
 </h5></div> 
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>15 to 30 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_2a" name="gi_female_2a" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>31 to 59 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_2b" name="gi_female_2b" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>60 and above
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_2c" name="gi_female_2c" placeholder="" >
-</div>
-</div>
 <br>
 
-<hr>
 
-<br>
-<h6 class="text-left" style="color: blue"><b>C. SECRETARY</b></h6>
-<div class="text-left"><h5>
-A1. How many are males aged for Secretary as of April 01, 2020? Please input a number.
-</h5></div>
+         <div class="container-fluid">
+                                    
+                       <div class="container-fluid">
+             <h5 class="text-left" style="color: blue"><b>A. CAPTAIN</b></h5>
+            <table  class="cell-border compact" style="width:100%; outline: solid">
+                          <thead>
+                              <tr>
+                                  
+                                  <th style="outline: thin solid">A1. How many are <u>males</u> aged for Captain as of April 01, 2020? Please input a number.</th>
+                                  <th style="outline: thin solid">A1. How many are <u>females</u> aged for Captain as of April 01, 2020? Please input a number.</th>                               
+                              </tr>
 
+                             
+                          </thead>   
 
-<br>                  
-<div class="text-left"><h6>
-<b>15 to 30 years old
-</b></h6></div>   
+<tr style="outline: solid">
 
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_3a" name="gi_male_3a" placeholder="" >
-</div>
-</div>
 
 
-<div class="text-left"><h6>
-<b>31 to 59 years old
-</b></h6></div>   
 
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_3b" name="gi_male_3b" placeholder="" >
-</div>
-</div>
+<td style="outline: thin solid">
 
+  <div class="form-group container">
+    <label for="">15 - 30 Years old</label>
+    <!-- this -->
+    <input name="capt_a1_15to30_m_1" type="number" class="form-control total_capt_m mcapt1" data-val="mcapt1"  placeholder="">
+  </div>
 
-<div class="text-left"><h6>
-<b>60 and above
-</b></h6></div>   
+  <div class="form-group container">
+    <label for="">31 - 59 Years old</label>
+    <!-- this -->
+    <input name="capt_a1_31to59_m_1" type="number" class="form-control total_capt_m mcapt1" data-val="mcapt1"  placeholder="">
+  </div>
 
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_3c" name="gi_male_3c" placeholder="" >
-</div>
-</div>
+  <div class="form-group container">
+    <label for="">60 and above</label>
+    <!-- this -->
+    <input name="capt_a1_60_m_1" type="number" class="form-control total_capt_m mcapt1" data-val="mcapt1"  placeholder="">
+  </div>
+</td>
 
 
-<br>
-<div class="text-left"><h5>
-A2. How many are females aged for Secretary as of April 01, 2020? Please input a number.
-</h5></div> 
 
+<td style="outline: thin solid">
 
-<br>                  
-<div class="text-left"><h6>
-<b>15 to 30 years old
-</b></h6></div>   
 
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_3a" name="gi_female_3a" placeholder="" >
-</div>
-</div>
+  <div class="form-group container">
+    <label for="">15 - 30 Years old</label>
+    <!-- this -->
+    <input name="capt_a1_15to30_f_1" type="number" class="form-control total_capt_f fcapt1" data-val="fcapt1"  placeholder="">
+  </div>
 
+  <div class="form-group container">
+    <label for="">31 - 59 Years old</label>
+    <!-- this -->
+    <input name="capt_a1_31to59_f_1"  type="number" class="form-control total_capt_f fcapt1" data-val="fcapt1"  placeholder="">
+  </div>
 
-<div class="text-left"><h6>
-<b>31 to 59 years old
-</b></h6></div>   
+  <div class="form-group container">
+    <label for="">60 and above</label>
+    <!-- this -->
+    <input name="capt_a1_60_f_1" type="number" class="form-control total_capt_f fcapt1" data-val="fcapt1"  placeholder="">
+  </div>
+</td>
 
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_3b" name="gi_female_3b" placeholder="" >
-</div>
-</div>
 
-
-<div class="text-left"><h6>
-<b>60 and above
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_3c" name="gi_female_3c" placeholder="" >
-</div>
-</div>
-<br>
-
-<hr>
-
-<br>
-<h6 class="text-left" style="color: blue"><b>D. TREASURER</b></h6>
-<div class="text-left"><h5>
-A1. How many are males aged for Treasurer as of April 01, 2020? Please input a number.
-</h5></div>
-
-<br>                  
-<div class="text-left"><h6>
-<b>15 to 30 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_4a" name="gi_male_4a" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>31 to 59 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_4b" name="gi_male_4b" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>60 and above
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_4c" name="gi_male_4c" placeholder="" >
-</div>
-</div>
-
-
-<br>
-<div class="text-left"><h5>
-A2. How many are females aged for Treasurer as of April 01, 2020? Please input a number.
-</h5></div> 
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>15 to 30 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_4a" name="gi_female_4a" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>31 to 59 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_4b" name="gi_female_4b" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>60 and above
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_4c" name="gi_female_4c" placeholder="" >
-</div>
-</div>
-<br>
-
-<hr>
-
-<br>
-<h6 class="text-left" style="color: blue"><b>E. TANOD</b></h6>
-<div class="text-left"><h5>
-A1. How many are males aged for Tanod as of April 01, 2020? Please input a number.
-</h5></div>
-
-<br>                  
-<div class="text-left"><h6>
-<b>15 to 30 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_5a" name="gi_male_5a" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>31 to 59 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_5b" name="gi_male_5b" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>60 and above
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_5c" name="gi_male_5c" placeholder="" >
-</div>
-</div>
-
-
-<br>
-<div class="text-left"><h5>
-A2. How many are females aged for Tanod as of April 01, 2020? Please input a number.
-</h5></div> 
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>15 to 30 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_5a" name="gi_female_5a" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>31 to 59 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_5b" name="gi_female_5b" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>60 and above
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_5c" name="gi_female_5c" placeholder="" >
-</div>
-</div>
-<br>
-
-<hr>
-
-<br>
-<h6 class="text-left" style="color: blue"><b>F. HEALTH WORKER (DOCTOR / NURSE)</b></h6>
-<div class="text-left"><h5>
-A1. How many are males aged for Health Worker (Doctor / Nurse) as of April 01, 2020? Please input a number.
-</h5></div>
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>15 to 30 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_6a" name="gi_male_6a" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>31 to 59 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_6b" name="gi_male_6b" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>60 and above
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_6c" name="gi_male_6c" placeholder="" >
-</div>
-</div>
-
-
-<br>
-<div class="text-left"><h5>
-A2. How many are females aged for Health Worker (Doctor / Nurse) as of April 01, 2020? Please input a number.
-</h5></div> 
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>15 to 30 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_6a" name="gi_female_6a" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>31 to 59 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_6b" name="gi_female_6b" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>60 and above
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_6c" name="gi_female_6c" placeholder="" >
-</div>
-</div>
-<br>
-
-<hr>
-
-
-<br>
-<h6 class="text-left" style="color: blue"><b>G. NUTRITION SCHOLAR</b></h6>
-<div class="text-left"><h5>
-A1. How many are males aged for Nutrition Scholar as of April 01, 2020? Please input a number.
-</h5></div>
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>15 to 30 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_7a" name="gi_male_7a" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>31 to 59 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_7b" name="gi_male_7b" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>60 and above
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_7c" name="gi_male_7c" placeholder="" >
-</div>
-</div>
-
-
-<br>
-<div class="text-left"><h5>
-A2. How many are females aged for Nutrition Scholar as of April 01, 2020? Please input a number.
-</h5></div> 
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>15 to 30 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_7a" name="gi_female_7a" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>31 to 59 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_7b" name="gi_female_7b" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>60 and above
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_7c" name="gi_female_7c" placeholder="" >
-</div>
-</div>
-<br>
-
-<hr>
-
-<br>
-<h6 class="text-left" style="color: blue"><b>H. PUROK LEADER</b></h6>
-<div class="text-left"><h5>
-A1. How many are males aged for Purok Leader as of April 01, 2020? Please input a number.
-</h5></div>
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>15 to 30 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_8a" name="gi_male_8a" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>31 to 59 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_8b" name="gi_male_8b" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>60 and above
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_8c" name="gi_male_8c" placeholder="" >
-</div>
-</div>
-
-
-<br>
-<div class="text-left"><h5>
-A2. How many are females aged for Purok Leader as of April 01, 2020? Please input a number.
-</h5></div> 
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>15 to 30 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_8a" name="gi_female_8a" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>31 to 59 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_8b" name="gi_female_8b" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>60 and above
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_8c" name="gi_female_8c" placeholder="" >
-</div>
-</div>
-<br>
-
-<hr>
-
-<br>
-<h6 class="text-left" style="color: blue"><b>I. ENR OFFICER</b></h6>
-<div class="text-left"><h5>
-A1. How many are males aged for ENR Officer as of April 01, 2020? Please input a number.
-</h5></div>
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>15 to 30 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_9a" name="gi_male_9a" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>31 to 59 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_9b" name="gi_male_9b" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>60 and above
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_9c" name="gi_male_9c" placeholder="" >
-</div>
-</div>
-
-
-<br>
-<div class="text-left"><h5>
-A2. How many are females aged for ENR Officer as of April 01, 2020? Please input a number.
-</h5></div> 
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>15 to 30 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_9a" name="gi_female_9a" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>31 to 59 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_9b" name="gi_female_9b" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>60 and above
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_9c" name="gi_female_9c" placeholder="" >
-</div>
-</div>
-<br>
-
-<hr>
-
-<br>
-<h6 class="text-left" style="color: blue"><b>J. LIBRARIAN</b></h6>
-<div class="text-left"><h5>
-A1. How many are males aged for Librarian as of April 01, 2020? Please input a number.
-</h5></div>
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>15 to 30 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_10a" name="gi_male_10a" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>31 to 59 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_10b" name="gi_male_10b" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>60 and above
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_10c" name="gi_male_10c" placeholder="" >
-</div>
-</div>
-
-
-<br>
-<div class="text-left"><h5>
-A2. How many are females aged for Librarian as of April 01, 2020? Please input a number.
-</h5></div> 
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>15 to 30 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_10a" name="gi_female_10a" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>31 to 59 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_10b" name="gi_female_10b" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>60 and above
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_10c" name="gi_female_10c" placeholder="" >
-</div>
-</div>
-<br>
-
-<hr>
-
-<br>
-<h6 class="text-left" style="color: blue"><b>K. DAY CARE WORKER</b></h6>
-<div class="text-left"><h5>
-A1. How many are males aged for Day Care Worker as of April 01, 2020? Please input a number.
-</h5></div>
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>15 to 30 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_11a" name="gi_male_11a" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>31 to 59 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_11b" name="gi_male_11b" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>60 and above
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_11c" name="gi_male_11c" placeholder="" >
-</div>
-</div>
-
-
-<br>
-<div class="text-left"><h5>
-A2. How many are females aged for Day Care Worker as of April 01, 2020? Please input a number.
-</h5></div> 
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>15 to 30 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_12a" name="gi_female_12a" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>31 to 59 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_12b" name="gi_female_12b" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>60 and above
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_12c" name="gi_female_12c" placeholder="" >
-</div>
-</div>
-<br>
-
-<hr>
-
-<br>
-<h6 class="text-left" style="color: blue"><b>L. UTILITY WORKER</b></h6>
-<div class="text-left"><h5>
-A1. How many are males aged for Utility Worker as of April 01, 2020? Please input a number.
-</h5></div>
-
-<br>                  
-<div class="text-left"><h6>
-<b>15 to 30 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_13a" name="gi_male_13a" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>31 to 59 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_13b" name="gi_male_13b" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>60 and above
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_13c" name="gi_male_13c" placeholder="" >
-</div>
-</div>
-
-
-<br>
-<div class="text-left"><h5>
-A2. How many are females aged for Utility Worker as of April 01, 2020? Please input a number.
-</h5></div> 
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>15 to 30 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_13a" name="gi_female_13a" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>31 to 59 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_13b" name="gi_female_13b" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>60 and above
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_13c" name="gi_female_13c" placeholder="" >
-</div>
-</div>
-<br>
-
-<hr>
-
-<br>
-<h6 class="text-left" style="color: blue"><b>M. OTHERS (e.g. MIDWIFE) as of April 01, 2020? PLEASE SPECIFY:</b></h6>
-<div class="text-left"><h6>
-<b>Add Entry?
-</b></h6></div>
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="general_info_others"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="general_info_others"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
+</tr> 
+                         
+                  </table>
+         <div class="">
+            <div class="row">
+              <div class="col text-left">
+                <!-- this -->
+                <b>Total Male: <span class="capt1_total" id="mcapt1"></span></b>
               </div>
-          </div>                          
-   
-<div class="general_info_others_repeat" hidden=""> 
+              <div class="col text-left">
+                <!-- this -->
+                <b>Total Female: <span class="capt1_total" id="fcapt1"></span></b>
+              </div>
+              <div class="col text-left">
+                <!-- this -->
+                <b>TOTAL: <span id="capt1_total"></span></b>
+              </div>
+            </div>
+         </div>         
 
-<br>
-<div class="text-left"><h5>
-Other Barangay Worker:
-</h5></div>
+                            </div>        
+                                                                       
+                                  </div>
 
-              
-<div class="text-left"><h6>
-<b>Please specify other barangay worker:
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="general_info_name" name="general_info_name" placeholder="" >
-</div>
-</div>
-<br>
-
-
-<div class="text-left"><h5>
-A1. How many are males aged for as of April 01, 2020? Please input a number.
-</h5></div>
 
 <br>                  
-<div class="text-left"><h6>
-<b>15 to 30 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_14a" name="gi_male_14a" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>31 to 59 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_14b" name="gi_male_14b" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>60 and above
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_male_14c" name="gi_male_14c" placeholder="" >
-</div>
-</div>
-
 <br>
-<div class="text-left"><h5>
-A2. How many are females aged for as of April 01, 2020? Please input a number.
-</h5></div>
+<br>
+<hr>
+<br>
+<br>
+
+<!-- ages of brgy officials 1 -->
+
+
+
+
+         <div class="container-fluid">
+                                    
+                       <div class="container-fluid">
+             <h5 class="text-left" style="color: blue"><b>B. KAGAWAD</b></h5>
+            <table  class="cell-border compact" style="width:100%; outline: solid">
+                          <thead>
+                              <tr>
+                                  <!-- this -->
+                                  <th style="outline: thin solid">A1. How many are <u>males</u> aged for Kagawad as of April 01, 2020? Please input a number.
+                                  <th style="outline: thin solid">A1. How many are <u>females</u> aged for Kagawad as of April 01, 2020? Please input a number.</th>                               
+                              </tr>
+
+                             
+                          </thead>   
+
+<tr style="outline: solid">
+
+
+
+
+<td style="outline: thin solid">
+
+  <div class="form-group container">
+    <label for="">15 - 30 Years old</label>
+    <!-- this -->
+    <input name="kgwd_a1_15to30_m_1" type="number" class="form-control total_kgwd_m mkgwd1" data-val="mkgwd1"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">31 - 59 Years old</label>
+    <!-- this -->
+    <input name="kgwd_a1_31to59_m_1" type="number" class="form-control total_kgwd_m mkgwd1" data-val="mkgwd1"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">60 and above</label>
+    <!-- this -->
+    <input name="kgwd_a1_60_m_1" type="number" class="form-control total_kgwd_m mkgwd1" data-val="mkgwd1"  placeholder="">
+  </div>
+</td>
+
+
+
+<td style="outline: thin solid">
+
+
+  <div class="form-group container">
+    <label for="">15 - 30 Years old</label>
+    <!-- this -->
+    <input name="kgwd_a1_15to30_f_1" type="number" class="form-control total_kgwd_f fkgwd1" data-val="fkgwd1"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">31 - 59 Years old</label>
+    <!-- this -->
+    <input name="kgwd_a1_31to59_f_1"  type="number" class="form-control total_kgwd_f fkgwd1" data-val="fkgwd1"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">60 and above</label>
+    <!-- this -->
+    <input name="kgwd_a1_60_f_1" type="number" class="form-control total_kgwd_f fkgwd1" data-val="fkgwd1"  placeholder="">
+  </div>
+</td>
+
+
+</tr> 
+                         
+                  </table>
+         <div class="">
+            <div class="row">
+              <div class="col text-left">
+                <!-- this -->
+                <b>Total Male: <span class="kgwd1_total" id="mkgwd1"></span></b>
+              </div>
+              <div class="col text-left">
+                <!-- this -->
+                <b>Total Female: <span class="kgwd1_total" id="fkgwd1"></span></b>
+              </div>
+              <div class="col text-left">
+                <!-- this -->
+                <b>TOTAL: <span id="kgwd1_total"></span></b>
+              </div>
+            </div>
+         </div>         
+
+                            </div>        
+                                                                       
+                                  </div>
+
+<!-- ages of brgy officials 2-->
+
+
 
 <br>                  
-<div class="text-left"><h6>
-<b>15 to 30 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_14a" name="gi_female_14a" placeholder="" >
-</div>
-</div>
+<br>
+<br>
+<hr>
+<br>
+<br>
 
 
-<div class="text-left"><h6>
-<b>31 to 59 years old
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_14b" name="gi_female_14b" placeholder="" >
-</div>
-</div>
 
 
-<div class="text-left"><h6>
-<b>60 and above
-</b></h6></div>   
+         <div class="container-fluid">
+                                    
+                       <div class="container-fluid">
+             <h5 class="text-left" style="color: blue"><b>C. SECRETARY</b></h5>
+            <table  class="cell-border compact" style="width:100%; outline: solid">
+                          <thead>
+                              <tr>
+                                  <!-- this -->
+                                  <th style="outline: thin solid">A1. How many are <u>males</u> aged for Secretary as of April 01, 2020? Please input a number.
+                                  <th style="outline: thin solid">A1. How many are <u>females</u> aged for Secretary as of April 01, 2020? Please input a number.</th>                               
+                              </tr>
 
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="gi_female_14c" name="gi_female_14c" placeholder="" >
-</div>
-</div>
+                             
+                          </thead>   
 
-</div>
+<tr style="outline: solid">
 
+
+
+
+<td style="outline: thin solid">
+
+  <div class="form-group container">
+    <label for="">15 - 30 Years old</label>
+    <!-- this -->
+    <input name="sect_a1_15to30_m_1" type="number" class="form-control total_sect_m msect1" data-val="msect1"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">31 - 59 Years old</label>
+    <!-- this -->
+    <input name="sect_a1_31to59_m_1" type="number" class="form-control total_sect_m msect1" data-val="msect1"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">60 and above</label>
+    <!-- this -->
+    <input name="sect_a1_60_m_1" type="number" class="form-control total_sect_m msect1" data-val="msect1"  placeholder="">
+  </div>
+</td>
+
+
+
+<td style="outline: thin solid">
+
+
+  <div class="form-group container">
+    <label for="">15 - 30 Years old</label>
+    <!-- this -->
+    <input name="sect_a1_15to30_f_1" type="number" class="form-control total_sect_f fsect1" data-val="fsect1"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">31 - 59 Years old</label>
+    <!-- this -->
+    <input name="sect_a1_31to59_f_1"  type="number" class="form-control total_sect_f fsect1" data-val="fsect1"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">60 and above</label>
+    <!-- this -->
+    <input name="sect_a1_60_f_1" type="number" class="form-control total_sect_f fsect1" data-val="fsect1"  placeholder="">
+  </div>
+</td>
+
+
+</tr> 
+                         
+                  </table>
+         <div class="">
+            <div class="row">
+              <div class="col text-left">
+                <!-- this -->
+                <b>Total Male: <span class="sect1_total" id="msect1"></span></b>
+              </div>
+              <div class="col text-left">
+                <!-- this -->
+                <b>Total Female: <span class="sect1_total" id="fsect1"></span></b>
+              </div>
+              <div class="col text-left">
+                <!-- this -->
+                <b>TOTAL: <span id="sect1_total"></span></b>
+              </div>
+            </div>
+         </div>         
+
+                            </div>        
+                                                                       
+                                  </div>
+
+<!-- ages of brgy officials 3-->
+
+
+
+<br>                  
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+
+
+
+         <div class="container-fluid">
+                                    
+                       <div class="container-fluid">
+             <h5 class="text-left" style="color: blue"><b>D. TREASURER</b></h5>
+            <table  class="cell-border compact" style="width:100%; outline: solid">
+                          <thead>
+                              <tr>
+                                  <!-- this -->
+                                  <th style="outline: thin solid">A1. How many are <u>males</u> aged for Treasurer as of April 01, 2020? Please input a number.
+                                  <th style="outline: thin solid">A1. How many are <u>females</u> aged for Treasurer as of April 01, 2020? Please input a number.</th>                               
+                              </tr>
+
+                             
+                          </thead>   
+
+<tr style="outline: solid">
+
+
+
+
+<td style="outline: thin solid">
+
+  <div class="form-group container">
+    <label for="">15 - 30 Years old</label>
+    <!-- this -->
+    <input name="treasurer_a1_15to30_m_1" type="number" class="form-control total_sect_m mtrsr1" data-val="mtrsr1"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">31 - 59 Years old</label>
+    <!-- this -->
+    <input name="treasurer_a1_31to59_m_1" type="number" class="form-control total_sect_m mtrsr1" data-val="mtrsr1"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">60 and above</label>
+    <!-- this -->
+    <input name="treasurer_a1_60_m_1" type="number" class="form-control total_sect_m mtrsr1" data-val="mtrsr1"  placeholder="">
+  </div>
+</td>
+
+
+
+<td style="outline: thin solid">
+
+
+  <div class="form-group container">
+    <label for="">15 - 30 Years old</label>
+    <!-- this -->
+    <input name="treasurer_a1_15to30_f_1" type="number" class="form-control total_treasurer_f ftrsr1" data-val="ftrsr1"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">31 - 59 Years old</label>
+    <!-- this -->
+    <input name="treasurer_a1_31to59_f_1"  type="number" class="form-control total_treasurer_f ftrsr1" data-val="ftrsr1"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">60 and above</label>
+    <!-- this -->
+    <input name="treasurer_a1_60_f_1" type="number" class="form-control total_treasurer_f ftrsr1" data-val="ftrsr1"  placeholder="">
+  </div>
+</td>
+
+
+</tr> 
+                         
+                  </table>
+         <div class="">
+            <div class="row">
+              <div class="col text-left">
+                <!-- this -->
+                <b>Total Male: <span class="trsr1_total" id="mtrsr1"></span></b>
+              </div>
+              <div class="col text-left">
+                <!-- this -->
+                <b>Total Female: <span class="trsr1_total" id="ftrsr1"></span></b>
+              </div>
+              <div class="col text-left">
+                <!-- this -->
+                <b>TOTAL: <span id="trsr1_total"></span></b>
+              </div>
+            </div>
+         </div>         
+
+                            </div>        
+                                                                       
+                                  </div>
+
+<!-- ages of brgy officials 4-->
+
+
+<br>                  
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+
+
+
+       <div class="container-fluid">
+                                    
+                       <div class="container-fluid">
+             <h5 class="text-left" style="color: blue"><b>E. TANOD</b></h5>
+            <table  class="cell-border compact" style="width:100%; outline: solid">
+                          <thead>
+                              <tr>
+                                  <!-- this -->
+                                  <th style="outline: thin solid">A1. How many are <u>males</u> aged for Tanod as of April 01, 2020? Please input a number.
+                                  <th style="outline: thin solid">A1. How many are <u>females</u> aged for Tanod as of April 01, 2020? Please input a number.</th>                               
+                              </tr>
+
+                             
+                          </thead>   
+
+<tr style="outline: solid">
+
+
+
+
+<td style="outline: thin solid">
+
+  <div class="form-group container">
+    <label for="">15 - 30 Years old</label>
+    <!-- this -->
+    <input name="tanod_a1_15to30_m_1" type="number" class="form-control total_tanod_m mtanod1" data-val="mtanod1"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">31 - 59 Years old</label>
+    <!-- this -->
+    <input name="tanod_a1_31to59_m_1" type="number" class="form-control total_tanod_m mtanod1" data-val="mtanod1"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">60 and above</label>
+    <!-- this -->
+    <input name="tanod_a1_60_m_1" type="number" class="form-control total_tanod_m mtanod1" data-val="mtanod1"  placeholder="">
+  </div>
+</td>
+
+
+
+<td style="outline: thin solid">
+
+
+  <div class="form-group container">
+    <label for="">15 - 30 Years old</label>
+    <!-- this -->
+    <input name="tanod_a1_15to30_f_1" type="number" class="form-control total_tanod_f ftanod1" data-val="ftanod1"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">31 - 59 Years old</label>
+    <!-- this -->
+    <input name="tanod_a1_31to59_f_1"  type="number" class="form-control total_tanod_f ftanod1" data-val="ftanod1"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">60 and above</label>
+    <!-- this -->
+    <input name="tanod_a1_60_f_1" type="number" class="form-control total_tanod_f ftanod1" data-val="ftanod1"  placeholder="">
+  </div>
+</td>
+
+
+</tr> 
+                         
+                  </table>
+         <div class="">
+            <div class="row">
+              <div class="col text-left">
+                <!-- this -->
+                <b>Total Male: <span class="tanod1_total" id="mtanod1"></span></b>
+              </div>
+              <div class="col text-left">
+                <!-- this -->
+                <b>Total Female: <span class="tanod1_total" id="ftanod1"></span></b>
+              </div>
+              <div class="col text-left">
+                <!-- this -->
+                <b>TOTAL: <span id="tanod1_total"></span></b>
+              </div>
+            </div>
+         </div>         
+
+                            </div>        
+                                                                       
+                                  </div>
+
+<!-- ages of brgy officials 5-->
+
+
+<br>                  
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+
+
+
+
+
+       <div class="container-fluid">
+                                    
+                       <div class="container-fluid">
+             <h5 class="text-left" style="color: blue"><b>F. HEALTH WORKER (DOCTOR / NURSE)</b></h5>
+            <table  class="cell-border compact" style="width:100%; outline: solid">
+                          <thead>
+                              <tr>
+                                  <!-- this -->
+                                  <th style="outline: thin solid">A1. How many are <u>males</u> aged for Health Worker (Doctor / Nurse) as of April 01, 2020? Please input a number.
+                                  <th style="outline: thin solid">A1. How many are <u>females</u> aged for Health Worker (Doctor / Nurse) as of April 01, 2020? Please input a number.</th>                               
+                              </tr>
+
+                             
+                          </thead>   
+
+<tr style="outline: solid">
+
+
+
+
+<td style="outline: thin solid">
+
+  <div class="form-group container">
+    <label for="">15 - 30 Years old</label>
+    <!-- this -->
+    <input name="hdoctor_a1_15to30_m_1" type="number" class="form-control total_hdoctor_m mdoc1" data-val="mdoc1"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">31 - 59 Years old</label>
+    <!-- this -->
+    <input name="hdoctor_a1_31to59_m_1" type="number" class="form-control total_hdoctor_m mdoc1" data-val="mdoc1"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">60 and above</label>
+    <!-- this -->
+    <input name="hdoctor_a1_60_m_1" type="number" class="form-control total_hdoctor_m mdoc1" data-val="mdoc1"  placeholder="">
+  </div>
+</td>
+
+
+
+<td style="outline: thin solid">
+
+
+  <div class="form-group container">
+    <label for="">15 - 30 Years old</label>
+    <!-- this -->
+    <input name="hdoctor_a1_15to30_f_1" type="number" class="form-control total_hdoctor_f fdoc1" data-val="fdoc1"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">31 - 59 Years old</label>
+    <!-- this -->
+    <input name="hdoctor_a1_31to59_f_1"  type="number" class="form-control total_hdoctor_f fdoc1" data-val="fdoc1"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">60 and above</label>
+    <!-- this -->
+    <input name="hdoctor_a1_60_f_1" type="number" class="form-control total_hdoctor_f fdoc1" data-val="fdoc1"  placeholder="">
+  </div>
+</td>
+
+
+</tr> 
+                         
+                  </table>
+         <div class="">
+            <div class="row">
+              <div class="col text-left">
+                <!-- this -->
+                <b>Total Male: <span class="doc1_total" id="mdoc1"></span></b>
+              </div>
+              <div class="col text-left">
+                <!-- this -->
+                <b>Total Female: <span class="doc1_total" id="fdoc1"></span></b>
+              </div>
+              <div class="col text-left">
+                <!-- this -->
+                <b>TOTAL: <span id="doc1_total"></span></b>
+              </div>
+            </div>
+         </div>         
+
+                            </div>        
+                                                                       
+                                  </div>
+
+<!-- ages of brgy officials 6-->
+
+
+<br>                  
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+
+<div class="container-fluid">
+                                    
+                       <div class="container-fluid">
+             <h5 class="text-left" style="color: blue"><b>G. NUTRITION SCHOLAR</b></h5>
+            <table  class="cell-border compact" style="width:100%; outline: solid">
+                          <thead>
+                              <tr>
+                                  <!-- this -->
+                                  <th style="outline: thin solid">A1. How many are <u>males</u> aged for Nutrition Scholar as of April 01, 2020? Please input a number.
+                                  <th style="outline: thin solid">A1. How many are <u>females</u> aged for Nutrition Scholar as of April 01, 2020? Please input a number.</th>                               
+                              </tr>
+
+                             
+                          </thead>   
+
+<tr style="outline: solid">
+
+
+
+
+<td style="outline: thin solid">
+
+  <div class="form-group container">
+    <label for="">15 - 30 Years old</label>
+    <!-- this -->
+    <input name="nscholar_a1_15to30_m_1" type="number" class="form-control total_nscholar_m mnscholar1" data-val="mnscholar1"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">31 - 59 Years old</label>
+    <!-- this -->
+    <input name="nscholar_a1_31to59_m_1" type="number" class="form-control total_nscholar_m mnscholar1" data-val="mnscholar1"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">60 and above</label>
+    <!-- this -->
+    <input name="nscholar_a1_60_m_1" type="number" class="form-control total_nscholar_m mnscholar1" data-val="mnscholar1"  placeholder="">
+  </div>
+</td>
+
+
+
+<td style="outline: thin solid">
+
+
+  <div class="form-group container">
+    <label for="">15 - 30 Years old</label>
+    <!-- this -->
+    <input name="nscholar_a1_15to30_f_1" type="number" class="form-control total_nscholar_f fnscholar1" data-val="fnscholar1"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">31 - 59 Years old</label>
+    <!-- this -->
+    <input name="nscholar_a1_31to59_f_1"  type="number" class="form-control total_hdoctor_f fnscholar1" data-val="fnscholar1"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">60 and above</label>
+    <!-- this -->
+    <input name="nscholar_a1_60_f_1" type="number" class="form-control total_hdoctor_f fnscholar1" data-val="fnscholar1"  placeholder="">
+  </div>
+</td>
+
+
+</tr> 
+                         
+                  </table>
+         <div class="">
+            <div class="row">
+              <div class="col text-left">
+                <!-- this -->
+                <b>Total Male: <span class="nscholar1_total" id="mnscholar1"></span></b>
+              </div>
+              <div class="col text-left">
+                <!-- this -->
+                <b>Total Female: <span class="nscholar1_total" id="fnscholar1"></span></b>
+              </div>
+              <div class="col text-left">
+                <!-- this -->
+                <b>TOTAL: <span id="nscholar1_total"></span></b>
+              </div>
+            </div>
+         </div>         
+
+                            </div>        
+                                                                       
+                                  </div>
+
+<!-- ages of brgy officials 7-->
+
+
+<br>                  
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+
+
+<div class="container-fluid">
+                                    
+                       <div class="container-fluid">
+             <h5 class="text-left" style="color: blue"><b>H. PUROK LEADER</b></h5>
+            <table  class="cell-border compact" style="width:100%; outline: solid">
+                          <thead>
+                              <tr>
+                                  <!-- this -->
+                                  <th style="outline: thin solid">A1. How many are <u>males</u> aged for Purok Leader as of April 01, 2020? Please input a number.
+                                  <th style="outline: thin solid">A1. How many are <u>females</u> aged for Purok Leader as of April 01, 2020? Please input a number.</th>                               
+                              </tr>
+
+                             
+                          </thead>   
+
+<tr style="outline: solid">
+
+
+
+
+<td style="outline: thin solid">
+
+  <div class="form-group container">
+    <label for="">15 - 30 Years old</label>
+    <!-- this -->
+    <input name="prkleader_a1_15to30_m_1" type="number" class="form-control total_prkleader_m mprkleader1" data-val="mprkleader1"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">31 - 59 Years old</label>
+    <!-- this -->
+    <input name="prkleader_a1_31to59_m_1" type="number" class="form-control total_prkleader_m mprkleader1" data-val="mprkleader1"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">60 and above</label>
+    <!-- this -->
+    <input name="prkleader_a1_60_m_1" type="number" class="form-control total_prkleader_m mprkleader1" data-val="mprkleader1"  placeholder="">
+  </div>
+</td>
+
+
+
+<td style="outline: thin solid">
+
+
+  <div class="form-group container">
+    <label for="">15 - 30 Years old</label>
+    <!-- this -->
+    <input name="prkleader_a1_15to30_f_1" type="number" class="form-control total_prkleader_f fprkleader1" data-val="fprkleader1"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">31 - 59 Years old</label>
+    <!-- this -->
+    <input name="prkleader_a1_31to59_f_1"  type="number" class="form-control total_prkleader_f fprkleader1" data-val="fprkleader1"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">60 and above</label>
+    <!-- this -->
+    <input name="prkleader_a1_60_f_1" type="number" class="form-control total_prkleader_f fprkleader1" data-val="fprkleader1"  placeholder="">
+  </div>
+</td>
+
+
+</tr> 
+                         
+                  </table>
+         <div class="">
+            <div class="row">
+              <div class="col text-left">
+                <!-- this -->
+                <b>Total Male: <span class="prkleader1_total" id="mprkleader1"></span></b>
+              </div>
+              <div class="col text-left">
+                <!-- this -->
+                <b>Total Female: <span class="prkleader1_total" id="fprkleader1"></span></b>
+              </div>
+              <div class="col text-left">
+                <!-- this -->
+                <b>TOTAL: <span id="prkleader1_total"></span></b>
+              </div>
+            </div>
+         </div>         
+
+                            </div>        
+                                                                       
+                                  </div>
+
+<!-- ages of brgy officials 8-->
+
+
+<br>                  
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+
+
+<div class="container-fluid">
+                                    
+                       <div class="container-fluid">
+             <h5 class="text-left" style="color: blue"><b>I. ENR OFFICER</b></h5>
+            <table  class="cell-border compact" style="width:100%; outline: solid">
+                          <thead>
+                              <tr>
+                                  <!-- this -->
+                                  <th style="outline: thin solid">A1. How many are <u>males</u> aged for  ENR Officer as of April 01, 2020? Please input a number.
+                                  <th style="outline: thin solid">A1. How many are <u>females</u> aged for  ENR Officer as of April 01, 2020? Please input a number.</th>                               
+                              </tr>
+
+                             
+                          </thead>   
+
+<tr style="outline: solid">
+
+
+
+
+<td style="outline: thin solid">
+
+  <div class="form-group container">
+    <label for="">15 - 30 Years old</label>
+    <!-- this -->
+    <input name="enrofficer_a1_15to30_m_1" type="number" class="form-control total_enrofficer_m menrofficer1" data-val="menrofficer1"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">31 - 59 Years old</label>
+    <!-- this -->
+    <input name="enrofficer_a1_31to59_m_1" type="number" class="form-control total_enrofficer_m menrofficer1" data-val="menrofficer1"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">60 and above</label>
+    <!-- this -->
+    <input name="enrofficer_a1_60_m_1" type="number" class="form-control total_enrofficer_m menrofficer1" data-val="menrofficer1"  placeholder="">
+  </div>
+</td>
+
+
+
+<td style="outline: thin solid">
+
+
+  <div class="form-group container">
+    <label for="">15 - 30 Years old</label>
+    <!-- this -->
+    <input name="enrofficer_a1_15to30_f_1" type="number" class="form-control total_enrofficer_f fenrofficer1" data-val="fenrofficer1"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">31 - 59 Years old</label>
+    <!-- this -->
+    <input name="enrofficer_a1_31to59_f_1"  type="number" class="form-control total_enrofficer_f fenrofficer1" data-val="fenrofficer1"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">60 and above</label>
+    <!-- this -->
+    <input name="enrofficer_a1_60_f_1" type="number" class="form-control total_enrofficer_f fenrofficer1" data-val="fenrofficer1"  placeholder="">
+  </div>
+</td>
+
+
+</tr> 
+                         
+                  </table>
+         <div class="">
+            <div class="row">
+              <div class="col text-left">
+                <!-- this -->
+                <b>Total Male: <span class="enrofficer1_total" id="menrofficer1"></span></b>
+              </div>
+              <div class="col text-left">
+                <!-- this -->
+                <b>Total Female: <span class="enrofficer1_total" id="fenrofficer1"></span></b>
+              </div>
+              <div class="col text-left">
+                <!-- this -->
+                <b>TOTAL: <span id="enrofficer1_total"></span></b>
+              </div>
+            </div>
+         </div>         
+
+                            </div>        
+                                                                       
+                                  </div>
+
+<!-- ages of brgy officials 9-->
+
+
+<br>                  
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+
+<div class="container-fluid">
+                                    
+                       <div class="container-fluid">
+             <h5 class="text-left" style="color: blue"><b>J. LIBRARIAN</b></h5>
+            <table  class="cell-border compact" style="width:100%; outline: solid">
+                          <thead>
+                              <tr>
+                                  <!-- this -->
+                                  <th style="outline: thin solid">A1. How many are <u>males</u> aged for  Librarian as of April 01, 2020? Please input a number.
+                                  <th style="outline: thin solid">A1. How many are <u>females</u> aged for  Librarian as of April 01, 2020? Please input a number.</th>                               
+                              </tr>
+
+                             
+                          </thead>   
+
+<tr style="outline: solid">
+
+
+
+
+<td style="outline: thin solid">
+
+  <div class="form-group container">
+    <label for="">15 - 30 Years old</label>
+    <!-- this -->
+    <input name="librarian_a1_15to30_m_1" type="number" class="form-control total_librarian_m mlibrarian1" data-val="mlibrarian1"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">31 - 59 Years old</label>
+    <!-- this -->
+    <input name="librarian_a1_31to59_m_1" type="number" class="form-control total_librarian_m mlibrarian1" data-val="mlibrarian1"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">60 and above</label>
+    <!-- this -->
+    <input name="librarian_a1_60_m_1" type="number" class="form-control total_librarian_m mlibrarian1" data-val="mlibrarian1"  placeholder="">
+  </div>
+</td>
+
+
+
+<td style="outline: thin solid">
+
+
+  <div class="form-group container">
+    <label for="">15 - 30 Years old</label>
+    <!-- this -->
+    <input name="librarian_a1_15to30_f_1" type="number" class="form-control total_librarian_f flibrarian1" data-val="flibrarian1"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">31 - 59 Years old</label>
+    <!-- this -->
+    <input name="librarian_a1_31to59_f_1"  type="number" class="form-control total_librarian_f flibrarian1" data-val="flibrarian1"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">60 and above</label>
+    <!-- this -->
+    <input name="librarian_a1_60_f_1" type="number" class="form-control total_librarian_f flibrarian1" data-val="flibrarian1"  placeholder="">
+  </div>
+</td>
+
+
+</tr> 
+                         
+                  </table>
+         <div class="">
+            <div class="row">
+              <div class="col text-left">
+                <!-- this -->
+                <b>Total Male: <span class="librarian1_total" id="mlibrarian1"></span></b>
+              </div>
+              <div class="col text-left">
+                <!-- this -->
+                <b>Total Female: <span class="librarian1_total" id="flibrarian1"></span></b>
+              </div>
+              <div class="col text-left">
+                <!-- this -->
+                <b>TOTAL: <span id="librarian1_total"></span></b>
+              </div>
+            </div>
+         </div>         
+
+                            </div>        
+                                                                       
+                                  </div>
+
+<!-- ages of brgy officials 10-->
+
+
+<br>                  
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+
+<div class="container-fluid">
+                                    
+                       <div class="container-fluid">
+             <h5 class="text-left" style="color: blue"><b>K. DAY CARE WORKER</b></h5>
+            <table  class="cell-border compact" style="width:100%; outline: solid">
+                          <thead>
+                              <tr>
+                                  <!-- this -->
+                                  <th style="outline: thin solid">A1. How many are <u>males</u> aged for Day Care Worker as of April 01, 2020? Please input a number.
+                                  <th style="outline: thin solid">A1. How many are <u>females</u> aged for Day Care Worker as of April 01, 2020? Please input a number.</th>                               
+                              </tr>
+
+                             
+                          </thead>   
+
+<tr style="outline: solid">
+
+
+
+
+<td style="outline: thin solid">
+
+  <div class="form-group container">
+    <label for="">15 - 30 Years old</label>
+    <!-- this -->
+    <input name="dcworker_a1_15to30_m_1" type="number" class="form-control total_dcworker_m mdcworker1" data-val="mdcworker1"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">31 - 59 Years old</label>
+    <!-- this -->
+    <input name="dcworker_a1_31to59_m_1" type="number" class="form-control total_dcworker_m mdcworker1" data-val="mdcworker1"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">60 and above</label>
+    <!-- this -->
+    <input name="dcworker_a1_60_m_1" type="number" class="form-control total_dcworker_m mdcworker1" data-val="mdcworker1" placeholder="">
+  </div>
+</td>
+
+
+
+<td style="outline: thin solid">
+
+
+  <div class="form-group container">
+    <label for="">15 - 30 Years old</label>
+    <!-- this -->
+    <input name="dcworker_a1_15to30_f_1" type="number" class="form-control total_dcworker_f fdcworker1" data-val="fdcworker1"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">31 - 59 Years old</label>
+    <!-- this -->
+    <input name="dcworker_a1_31to59_f_1"  type="number" class="form-control total_dcworker_f fdcworker1" data-val="fdcworker1"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">60 and above</label>
+    <!-- this -->
+    <input name="dcworker_a1_60_f_1" type="number" class="form-control total_dcworker_f fdcworker1" data-val="fdcworker1"  placeholder="">
+  </div>
+</td>
+
+
+</tr> 
+                         
+                  </table>
+         <div class="">
+            <div class="row">
+              <div class="col text-left">
+                <!-- this -->
+                <b>Total Male: <span class="dcworker1_total" id="mdcworker1"></span></b>
+              </div>
+              <div class="col text-left">
+                <!-- this -->
+                <b>Total Female: <span class="dcworker1_total" id="fdcworker1"></span></b>
+              </div>
+              <div class="col text-left">
+                <!-- this -->
+                <b>TOTAL: <span id="dcworker1_total"></span></b>
+              </div>
+            </div>
+         </div>         
+
+                            </div>        
+                                                                       
+                                  </div>
+
+<!-- ages of brgy officials 11-->
+
+
+<br>                  
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+<div class="container-fluid">
+                                    
+            <div class="container-fluid">
+             <h5 class="text-left" style="color: blue"><b>L. UTILITY WORKER</b></h5>
+            <table  class="cell-border compact" style="width:100%; outline: solid">
+                          <thead>
+                              <tr>
+                                  <!-- this -->
+                                  <th style="outline: thin solid">A1. How many are <u>males</u> aged for Utility Worker as of April 01, 2020? Please input a number.
+                                  <th style="outline: thin solid">A1. How many are <u>females</u> aged for Utility Worker as of April 01, 2020? Please input a number.</th>                               
+                              </tr>
+
+                             
+                          </thead>   
+
+<tr style="outline: solid">
+
+
+
+
+<td style="outline: thin solid">
+
+  <div class="form-group container">
+    <label for="">15 - 30 Years old</label>
+    <!-- this -->
+    <input name="utworker_a1_15to30_m_1" type="number" class="form-control total_utworker_m mutworker1" data-val="mutworker1"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">31 - 59 Years old</label>
+    <!-- this -->
+    <input name="utworker_a1_31to59_m_1" type="number" class="form-control total_utworker_m mutworker1" data-val="mutworker1"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">60 and above</label>
+    <!-- this -->
+    <input name="utworker_a1_60_m_1" type="number" class="form-control total_utworker_m mutworker1" data-val="mutworker1" placeholder="">
+  </div>
+</td>
+
+
+
+<td style="outline: thin solid">
+
+
+  <div class="form-group container">
+    <label for="">15 - 30 Years old</label>
+    <!-- this -->
+    <input name="utworker_a1_15to30_f_1" type="number" class="form-control total_utworker_f futworker1" data-val="futworker1"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">31 - 59 Years old</label>
+    <!-- this -->
+    <input name="utworker_a1_31to59_f_1"  type="number" class="form-control total_utworker_f futworker1" data-val="futworker1"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">60 and above</label>
+    <!-- this -->
+    <input name="utworker_a1_60_f_1" type="number" class="form-control total_utworker_f futworker1" data-val="futworker1"  placeholder="">
+  </div>
+</td>
+
+
+</tr> 
+                         
+                  </table>
+         <div class="">
+            <div class="row">
+              <div class="col text-left">
+                <!-- this -->
+                <b>Total Male: <span class="utworker1_total" id="mutworker1"></span></b>
+              </div>
+              <div class="col text-left">
+                <!-- this -->
+                <b>Total Female: <span class="utworker1_total" id="futworker1"></span></b>
+              </div>
+              <div class="col text-left">
+                <!-- this -->
+                <b>TOTAL: <span id="utworker1_total"></span></b>
+              </div>
+            </div>
+         </div>         
+
+                            </div>        
+                                                                       
+                                  </div>
+
+<!-- ages of brgy officials 12-->
+
+
+<br>                  
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+
+
+ <div class="col-sm">
+                      <!-- this -->
+                       <h5 class="text-left" style="color: blue"><b>M. OTHERS (e.g. MIDWIFE) as of April 01, 2020? PLEASE SPECIFY:</b></h5>
+                       <h6 class="text-left">Add Entry?</h6> 
+                       <div class="container">
+                          <div class="row">
+                            <div class="col text-left">
+                              <div class="container">
+                                 <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="general_info_others"  data-val="Yes" data-skip="othersbrgy" value="Yes">Yes<br>
+                                  <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="general_info_others"  data-val="No"  data-skip="othersbrgy" value="No">No
+                                   </div> 
+                            </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+            </div>
+
+              <!-- this -->
+             <div class="skip_yes_othersbrgy container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     
+            <div class="container-fluid">
+           
+            <table  class="cell-border compact" style="width:100%; outline: solid">
+                          <thead>
+                              <tr>
+                                <th style="outline: thin solid">Please specify other barangay worker:</th>
+                                  <th style="outline: thin solid">A1. How many are males aged for as of April 01, 2020? Please input a number.</th>
+                                  <th style="outline: thin solid">A2. How many are females aged for as of April 01, 2020? Please input a number.</th>
+                                                                 
+                              </tr>
+
+                             
+                          </thead>   
+
+<tr style="outline: solid">
+
+
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 30px;">
+  <!-- this -->
+    <input name="general_info_name" type="text" class="form-control"  placeholder="">
+  </div>
+</td>
+
+
+
+<td style="outline: thin solid">
+
+  <div class="form-group container">
+    <label for="">15 - 30 Years old</label>
+    <!-- this -->
+    <input name="others_a1_15to30_m_1" type="number" class="form-control total_others_m mothers1" data-val="mothers1"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">31 - 59 Years old</label>
+    <!-- this -->
+    <input name="others_a1_31to59_m_1" type="number" class="form-control total_others_m mothers1" data-val="mothers1"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">60 and above</label>
+    <!-- this -->
+    <input name="others_a1_60_m_1" type="number" class="form-control total_others_m mothers1" data-val="mothers1"  placeholder="">
+  </div>
+</td>
+
+
+
+<td style="outline: thin solid">
+
+  <div class="form-group container">
+    <label for="">15 - 30 Years old</label>
+    <!-- this -->
+    <input name="others_a1_15to30_f_1" type="number" class="form-control total_others_f fothers1" data-val="fothers1"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">31 - 59 Years old</label>
+    <!-- this -->
+    <input name="others_a1_31to59_f_1"  type="number" class="form-control total_others_f fothers1" data-val="fothers1"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">60 and above</label>
+    <!-- this -->
+    <input name="others_a1_60_f_1" type="number" class="form-control total_others_f fothers1" data-val="fothers1"  placeholder="">
+  </div>
+</td>
+
+
+</tr> 
+                         
+                  </table>
+         <div class="">
+            <div class="row">
+              <div class="col text-left">
+                <!-- this -->
+                <b>Total Male: <span class="others1_total" id="mothers1"></span></b>
+              </div>
+              <div class="col text-left">
+                <!-- this -->
+                <b>Total Female: <span class="others1_total" id="fothers1"></span></b>
+              </div>
+              <div class="col text-left">
+                <!-- this -->
+                <b>TOTAL: <span id="others1_total"></span></b>
+              </div>
+            </div>
+         </div>         
+
+                            </div>        
+                                                                       
+                                  </div>
+                          
+             </div>  
+
+             <!-- ages of brgy officials 13-->
+
+<!-- END OF BRGY AGES OFFICIAL -->
+
+
+
+<br>                  
+<br>
+<br>
+<hr>
+<br>
 <br>
 
 
@@ -10754,513 +15112,153 @@ Reference Period:</h5>
 
 </div>
 
-<br>                  
-<div class="text-left"><h5><b>A3. ESTABLISHMENTS OF THE BARANGAY</b></h5></div> 
-
-<br>
-<br>                
-<div class="text-left"><h5>
-A3. How many Agriculture, forestry, and fishing establishments are in the barangay as of 01 April 2021?
-</h5></div>
-
-<br>
-<div class="text-left"><h6>
-<b>Agriculture, forestry, and fishing</b></h6></div>  
-
-<br>
-<div class="text-left"><h6>
-<b>Number of establishments</b></h6>
-<i style="font-size: 11px; color: gray"> "Please input "0" if none"</i> </div> 
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="agriculture_number_establishments" name="agriculture_number_establishments" placeholder="" >
-</div>
-</div>
-
-<br>
-<hr>
-
-<br>
-<br>                
-<div class="text-left"><h5>
-A3. How many Mining and quarrying establishments are in the barangay as of 01 April 2021?
-</h5></div>
-
-<br>
-<div class="text-left"><h6>
-<b>Mining and quarrying</b></h6></div>  
-
-<br>
-<div class="text-left"><h6>
-<b>Number of establishments</b></h6>
-<i style="font-size: 11px; color: gray"> "Please input "0" if none"</i></div>  
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="mining_number_establishments" name="mining_number_establishments" placeholder="" >
-</div>
-</div>
-
-<br>
-<hr>
-
-<br>
-<br>                
-<div class="text-left"><h5>
-A3. How many Manufacturing establishments are in the barangay as of 01 April 2021?
-</h5></div>
-
-<br>
-<div class="text-left"><h6>
-<b>Manufacturing</b></h6></div>  
-
-<br>
-<div class="text-left"><h6>
-<b>Number of establishments</b></h6>
-<i style="font-size: 11px; color: gray"> "Please input "0" if none"</i> </div> 
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="manufacturing_number_establishments" name="manufacturing_number_establishments" placeholder="" >
-</div>
-</div>
-
-<br>
-<hr>
 
 
 <br>
 <br>                
 <div class="text-left"><h5>
-A3. How many Electricity, gas, steam, and air conditioning supply establishments are in the barangay as of 01 April 2021?
+A3. How many establishments are in the barangay as of 01 April 2021?
 </h5></div>
-
 <br>
-<div class="text-left"><h6>
-<b>Electricity, gas, steam, and air conditioning supply</b></h6></div>  
-
 <br>
-<div class="text-left"><h6>
-<b>Number of establishments</b></h6>
-<i style="font-size: 11px; color: gray"> "Please input "0" if none"</i> </div> 
 
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="electricity_number_establishments" name="electricity_number_establishments" placeholder="" >
+
+<div class="row">
+  <div class="float-sm-left">
+     <div class="container-fluid" align="left" style="width:100%">
+    
+     <table id="table4" class="cell-border compact text-left table-hover" style="width:100%">
+        <thead>
+            <tr>
+                <th>ESTABLISHMENTS OF THE BARANGAY</th>
+                <th style="width:40%"><br><i style="font-size: 12px !important; color: red">"Please input "0" if none"</i></th>
+               
+            </tr>
+        </thead>
+
+              <tr>
+                <td>Agriculture, forestry, and fishing</td>
+                <td> <input type="number" class="form-control brgy-establishments" name="agriculture_number_establishments" placeholder="" ></td>
+              </tr>
+
+              <tr>
+                <td>Mining and quarrying</td>
+                <td> <input type="number" class="form-control brgy-establishments" name="mining_number_establishments" placeholder="" ></td>
+              </tr>
+
+              <tr>
+                <td>Manufacturing</td>
+                <td> <input type="number" class="form-control brgy-establishments" name="manufacturing_number_establishments" placeholder="" ></td>
+              </tr>
+
+              <tr>
+                <td>Electricity, gas, steam, and air conditioning supply</td>
+                <td> <input type="number" class="form-control brgy-establishments" name="electricity_number_establishments" placeholder="" ></td>
+              </tr>
+
+              <tr>
+                <td>Water supply, sewerage, waste management and <br>remediation activities</td>
+                <td> <input type="number" class="form-control brgy-establishments" name="water_number_establishments" placeholder="" ></td>
+              </tr>
+
+              <tr>
+                <td>Construction</td>
+                <td> <input type="number" class="form-control brgy-establishments" name="construction_number_establishments" placeholder="" ></td>
+              </tr>
+
+              <tr>
+                <td>Wholesale and retail trade; <br>repair of motor vehicles and motorcycles</td>
+                <td> <input type="number" class="form-control brgy-establishments" name="wholesale_number_establishments" placeholder="" ></td>
+              </tr>
+
+               <tr>
+                <td>Transportation and storage</td>
+                <td> <input type="number" class="form-control brgy-establishments" name="transportation_number_establishments" placeholder="" ></td>
+              </tr>
+
+               <tr>
+                <td>Accommodation and food service activities</td>
+                <td> <input type="number" class="form-control brgy-establishments" name="accommodation_number_establishments" placeholder="" ></td>
+              </tr>
+
+               <tr>
+                <td>Information and communication</td>
+                <td> <input type="number" class="form-control brgy-establishments" name="information_number_establishments" placeholder="" ></td>
+              </tr>
+
+               <tr>
+                <td>Financial and insurance activities</td>
+                <td> <input type="number" class="form-control brgy-establishments" name="financial_number_establishments" placeholder="" ></td>
+              </tr>
+
+               <tr>
+                <td>Real estate activities</td>
+                <td> <input type="number" class="form-control brgy-establishments" name="realestate_number_establishments" placeholder="" ></td>
+              </tr>
+
+               <tr>
+                <td>Professional, scientific, <br>and technical services</td>
+                <td> <input type="number" class="form-control brgy-establishments" name="professional_number_establishments" placeholder="" ></td>
+              </tr>
+
+               <tr>
+                <td>Administrative and <br>support service activities</td>
+                <td> <input type="number" class="form-control brgy-establishments" name="administrative_number_establishments" placeholder="" ></td>
+              </tr>
+
+               <tr>
+                <td>Public administration and <br>defense; compulsory social security</td>
+                <td> <input type="number" class="form-control brgy-establishments" name="public_number_establishments" placeholder="" ></td>
+              </tr>
+
+               <tr>
+                <td>Education</td>
+                <td> <input type="number" class="form-control brgy-establishments" name="education_number_establishments" placeholder="" ></td>
+              </tr>
+
+               <tr>
+                <td>Human health and social work activities</td>
+                <td> <input type="number" class="form-control brgy-establishments" name="human_number_establishments" placeholder="" ></td>
+              </tr>
+
+               <tr>
+                <td>Arts, entertainment, and recreation</td>
+                <td> <input type="number" class="form-control brgy-establishments" name="arts_number_establishments" placeholder="" ></td>
+              </tr>
+
+               <tr>
+                <td>Activities of private households as employers and undifferentiated goods <br> and services and producing activities of households for own use</td>
+                <td> <input type="number" class="form-control brgy-establishments" name="goods_number_establishments" placeholder="" ></td>
+              </tr>
+
+               <tr>
+                <td>Activities of extraterritorial organizations and bodies</td>
+                <td> <input type="number" class="form-control brgy-establishments" name="extraterritorial_number_establishments" placeholder="" ></td>
+              </tr>
+
+                  <tr>
+                <td>Other service activities</td>
+                <td> <input type="number" class="form-control brgy-establishments" name="other_number_establishments" placeholder="" ></td>
+              </tr>
+
+              </tr>
+
+     </table>
+              <label for="" class="text-left"><b>TOTAL ESTABLISHMENTS:  <span id="total_brgy_establishments"></span></b></label> 
+  </div>
+    </div>
 </div>
-</div>
-
-<br>
-<hr>
-
-<br>
-<br>                
-<div class="text-left"><h5>
-A3. How many Water supply, sewerage, waste management and remediation activities establishments are in the barangay as of 01 April 2021?
-</h5></div>
-
-<br>
-<div class="text-left"><h6>
-<b>Water supply, sewerage, waste management and remediation activities</b></h6></div>  
-
-<br>
-<div class="text-left"><h6>
-<b>Number of establishments</b></h6>
-<i style="font-size: 11px; color: gray"> "Please input "0" if none"</i></div>
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="water_number_establishments" name="water_number_establishments" placeholder="" >
-</div>
-</div>
-
-<br>
-<hr>
-
-<br>
-<br>                
-<div class="text-left"><h5>
-A3. How many Construction establishments are in the barangay as of 01 April 2021?
-</h5></div>
-
-<br>
-<div class="text-left"><h6>
-<b>Construction</b></h6></div>  
-
-<br>
-<div class="text-left"><h6>
-<b>Number of establishments</b></h6>
-<i style="font-size: 11px; color: gray"> "Please input "0" if none"</i></div>  
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="construction_number_establishments" name="construction_number_establishments" placeholder="" >
-</div>
-</div>
-
-<br>
-<hr>
-
-<br>
-<br>                
-<div class="text-left"><h5>
-A3. How many Wholesale and retail trade; repair of motor vehicles and motorcycles establishments are in the barangay as of 01 April 2021?
-</h5></div>
-
-<br>
-<div class="text-left"><h6>
-<b>Wholesale and retail trade; repair of motor vehicles and motorcycles</b></h6></div>  
-
-<br>
-<div class="text-left"><h6>
-<b>Number of establishments</b></h6>
-<i style="font-size: 11px; color: gray"> "Please input "0" if none"</i></div>  
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="wholesale_number_establishments" name="wholesale_number_establishments" placeholder="" >
-</div>
-</div>
-
-<br>
-<hr>
-
-<br>
-<br>                
-<div class="text-left"><h5>
-A3. How many Transportation and storage establishments are in the barangay as of 01 April 2021?
-</h5></div>
-
-<br>
-<div class="text-left"><h6>
-<b>Transportation and storage</b></h6></div>  
-
-<br>
-<div class="text-left"><h6>
-<b>Number of establishments</b></h6>
-<i style="font-size: 11px; color: gray"> "Please input "0" if none"</i> </div> 
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="transportation_number_establishments" name="transportation_number_establishments" placeholder="" >
-</div>
-</div>
-
-<br>
-<hr>
-
-<br>
-<br>                
-<div class="text-left"><h5>
-A3. How many Accommodation and food service activities establishments are in the barangay as of 01 April 2021?
-</h5></div>
-
-<br>
-<div class="text-left"><h6>
-<b>Accommodation and food service activities</b></h6></div>  
-
-<br>
-<div class="text-left"><h6>
-<b>Number of establishments</b></h6>
-<i style="font-size: 11px; color: gray"> "Please input "0" if none"</i></div> 
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="accommodation_number_establishments" name="accommodation_number_establishments" placeholder="" >
-</div>
-</div>
-
-<br>
-<hr>
-
-<br>
-<br>                
-<div class="text-left"><h5>
-A3. How many Information and communication establishments are in the barangay as of 01 April 2021?
-</h5></div>
-
-<br>
-<div class="text-left"><h6>
-<b>Information and communication</b></h6></div>  
-
-<br>
-<div class="text-left"><h6>
-<b>Number of establishments</b></h6>
-<i style="font-size: 11px; color: gray"> "Please input "0" if none"</i></div>
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="information_number_establishments" name="information_number_establishments" placeholder="" >
-</div>
-</div>
-
-<br>
-<hr>
-
-<br>
-<br>                
-<div class="text-left"><h5>
-A3. How many Financial and insurance activities establishments are in the barangay as of 01 April 2021?
-</h5></div>
-
-<br>
-<div class="text-left"><h6>
-<b>Financial and insurance activities</b></h6></div>  
-
-<br>
-<div class="text-left"><h6>
-<b>Number of establishments</b></h6>
-<i style="font-size: 11px; color: gray"> "Please input "0" if none"</i> </div> 
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="financial_number_establishments" name="financial_number_establishments" placeholder="" >
-</div>
-</div>
-
-<br>
-<hr>
-
-<br>
-<br>                
-<div class="text-left"><h5>
-A3. How many Real estate activities establishments are in the barangay as of 01 April 2021?
-</h5></div>
-
-<br>
-<div class="text-left"><h6>
-<b>Real estate activities</b></h6></div>  
-
-<br>
-<div class="text-left"><h6>
-<b>Number of establishments</b></h6>
-<i style="font-size: 11px; color: gray"> "Please input "0" if none"</i> </div> 
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="realestate_number_establishments" name="realestate_number_establishments" placeholder="" >
-</div>
-</div>
-
-<br>
-<hr>
-
-<br>
-<br>                
-<div class="text-left"><h5>
-A3. How many Professional, scientific, and technical services establishments are in the barangay as of 01 April 2021?
-</h5></div>
-
-<br>
-<div class="text-left"><h6>
-<b>Professional, scientific, and technical services</b></h6></div>  
-
-<br>
-<div class="text-left"><h6>
-<b>Number of establishments</b></h6>
-<i style="font-size: 11px; color: gray"> "Please input "0" if none"</i></div>  
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="professional_number_establishments" name="professional_number_establishments" placeholder="" >
-</div>
-</div>
-
-<br>
-<hr>
-
-<br>
-<br>                
-<div class="text-left"><h5>
-A3. How many Administrative and support service activities establishments are in the barangay as of 01 April 2021?
-</h5></div>
-
-<br>
-<div class="text-left"><h6>
-<b>Administrative and support service activities</b></h6></div>  
-
-<br>
-<div class="text-left"><h6>
-<b>Number of establishments</b></h6>
-<i style="font-size: 11px; color: gray"> "Please input "0" if none"</i></div>  
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="administrative_number_establishments" name="administrative_number_establishments" placeholder="" >
-</div>
-</div>
-
-
-<br>
-<hr>
-
-<br>
-<br>                
-<div class="text-left"><h5>
-A3. How many Public administration and defense; compulsory social security establishments are in the barangay as of 01 April 2021?
-</h5></div>
-
-<br>
-<div class="text-left"><h6>
-<b>Public administration and defense; compulsory social security</b></h6></div>  
-
-<br>
-<div class="text-left"><h6>
-<b>Number of establishments</b></h6>
-<i style="font-size: 11px; color: gray"> "Please input "0" if none"</i></div>  
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="public_number_establishments" name="public_number_establishments" placeholder="" >
-</div>
-</div>
-
-<br>
-<hr>
-
-<br>
-<br>                
-<div class="text-left"><h5>
-A3. How many Education establishments are in the barangay as of 01 April 2021?
-</h5></div>
-
-<br>
-<div class="text-left"><h6>
-<b>Education</b></h6></div>  
-
-<br>
-<div class="text-left"><h6>
-<b>Number of establishments</b></h6>
-<i style="font-size: 11px; color: gray"> "Please input "0" if none"</i></div>  
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="education_number_establishments" name="education_number_establishments" placeholder="" >
-</div>
-</div>
-
-<br>
-<hr>
-
-<br>
-<br>                
-<div class="text-left"><h5>
-A3. How many Human health and social work activities establishments are in the barangay as of 01 April 2021?
-</h5></div>
-
-<br>
-<div class="text-left"><h6>
-<b>Human health and social work activities</b></h6></div>  
-
-<br>
-<div class="text-left"><h6>
-<b>Number of establishments</b></h6>
-<i style="font-size: 11px; color: gray"> "Please input "0" if none"</i> </div> 
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="human_number_establishments" name="human_number_establishments" placeholder="" >
-</div>
-</div>
-
-<br>
-<hr>
-
-<br>
-<br>                
-<div class="text-left"><h5>
-A3. How many Arts, entertainment, and recreation establishments are in the barangay as of 01 April 2021?
-</h5></div>
-
-<br>
-<div class="text-left"><h6>
-<b>Arts, entertainment, and recreation</b></h6></div>  
-
-<br>
-<div class="text-left"><h6>
-<b>Number of establishments</b></h6>
-<i style="font-size: 11px; color: gray"> "Please input "0" if none"</i> </div> 
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="arts_number_establishments" name="arts_number_establishments" placeholder="" >
-</div>
-</div>
-
-<br>
-<hr>
-
-<br>
-<br>                
-<div class="text-left"><h5>
-A3. How many Other service activities establishments are in the barangay as of 01 April 2021?
-</h5></div>
-
-<br>
-<div class="text-left"><h6>
-<b>Other service activities</b></h6></div>  
-
-<br>
-<div class="text-left"><h6>
-<b>Number of establishments</b></h6>
-<i style="font-size: 11px; color: gray"> "Please input "0" if none"</i></div>  
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="other_number_establishments" name="other_number_establishments" placeholder="" >
-</div>
-</div>
-
 <br>
-<hr>
-
 <br>
-<br>                
-<div class="text-left"><h5>
-A3. How many Activities of private households as employers and undifferentiated goods and services and producing activities of households for own use establishments are in the barangay as of 01 April 2021?
-</h5></div>
 
-<br>
-<div class="text-left"><h6>
-<b>Activities of private households as employers and undifferentiated goods and services and producing activities of households for own use</b></h6></div>  
 
-<br>
-<div class="text-left"><h6>
-<b>Number of establishments</b></h6>
-<i style="font-size: 11px; color: gray"> "Please input "0" if none"</i></div>  
 
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="goods_number_establishments" name="goods_number_establishments" placeholder="" >
-</div>
-</div>
 
-<br>
-<hr>
 
-<br>
-<br>                
-<div class="text-left"><h5>
-A3. How many Activities of extraterritorial organizations and bodies establishments are in the barangay as of 01 April 2021?
-</h5></div>
 
-<br>
-<div class="text-left"><h6>
-<b>Activities of extraterritorial organizations and bodies</b></h6></div>  
 
-<br>
-<div class="text-left"><h6>
-<b>Number of establishments</b></h6>
-<i style="font-size: 11px; color: gray"> "Please input "0" if none"</i> </div> 
 
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="extraterritorial_number_establishments" name="extraterritorial_number_establishments" placeholder="" >
-</div>
-</div>
 
-<br>
 <hr>
 
 <br>
@@ -11304,6 +15302,7 @@ A3. ESTABLISHMENTS OF THE BARANGAY
   <input type="text" class="form-control" id="extraterritorial_data_establishments" name="extraterritorial_data_establishments" placeholder="" >
 </div>
 </div>
+<br>
 
 <hr>
 
@@ -11314,123 +15313,87 @@ A3. ESTABLISHMENTS OF THE BARANGAY
 <div class="text-left"><h5>
 B1. How many volunteers have extended services to the barangay in the past three months?
 </h5></div> 
+<br>
 
-<br>                  
-<div class="text-left"><h5>
-<b>Sector / Thematic Area</b>
-</h5></div>
+<hr>
 
-<br>                  
-<div class="text-left"><h6>
-<b>A - Agriculture
-</b></h6></div>   
 
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="cc1" name="cc1" placeholder="" >
+<br>
+<div class="row">
+  <div class="float-sm-left">
+     <div class="container-fluid" align="left" style="width:100%">
+    
+     <table id="table4" class="cell-border compact text-left table-hover" style="width:100%">
+        <thead>
+            <tr>
+                <th>SECTOR / THEMATIC AREA</th>
+                <th style="width:40%"><br><i style="font-size: 12px !important; color: red">"Please input "0" if none"</i></th>
+               
+            </tr>
+        </thead>
+
+              <tr>
+                <td>A - Agriculture</td>
+                <td> <input type="number" class="form-control sector-thematic" name="cc1" placeholder="" ></td>
+              </tr>
+
+              <tr>
+                <td>B - Environment</td>
+                <td> <input type="number" class="form-control sector-thematic" name="cc2" placeholder="" ></td>
+              </tr>
+
+              <tr>
+                <td>C - Health</td>
+                <td> <input type="number" class="form-control sector-thematic" name="cc3" placeholder="" ></td>
+              </tr>
+
+              <tr>
+                <td>D - Peace and Security</td>
+                <td> <input type="number" class="form-control sector-thematic" name="cc4" placeholder="" ></td>
+              </tr>
+
+              <tr>
+                <td>E - Industry</td>
+                <td> <input type="number" class="form-control sector-thematic" name="cc5" placeholder="" ></td>
+              </tr>
+
+              <tr>
+                <td>F - Services</td>
+                <td> <input type="number" class="form-control sector-thematic" name="cc6" placeholder="" ></td>
+              </tr>
+
+              <tr>
+                <td>G - Education</td>
+                <td> <input type="number" class="form-control sector-thematic" name="cc7" placeholder="" ></td>
+              </tr>
+
+               <tr>
+                <td>H - Governance</td>
+                <td> <input type="number" class="form-control sector-thematic" name="cc8" placeholder="" ></td>
+              </tr>
+
+               <tr>
+                <td>I - Job creation/income generation</td>
+                <td> <input type="number" class="form-control sector-thematic" name="cc11" placeholder="" ></td>
+              </tr>
+
+               <tr>
+                <td>J - Social Services</td>
+                <td> <input type="number" class="form-control sector-thematic" name="cc12" placeholder="" ></td>
+              </tr>
+             
+             </tr>
+
+
+
+     </table>
+              <label for="" class="text-left"><b>TOTAL ESTABLISHMENTS:  <span id="total_sector-thematic"></span></b></label> 
+  </div>
+    </div>
 </div>
-</div>
+<br>
+<br>
 
-
-<div class="text-left"><h6>
-<b>B - Environment
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="cc2" name="cc2" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>C - Health
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="cc3" name="cc3" placeholder="" >
-</div>
-</div>
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>D - Peace and Security
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="cc4" name="cc4" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>E - Industry
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="cc5" name="cc5" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>F - Services
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="cc6" name="cc6" placeholder="" >
-</div>
-</div>
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>G - Education
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="cc7" name="cc7" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>H - Governance
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="cc8" name="cc8" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>I - Job creation/income generation
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="cc11" name="cc11" placeholder="" >
-</div>
-</div>
-
-
-<div class="text-left"><h6>
-<b>J - Social Services
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="cc12" name="cc12" placeholder="" >
-</div>
-</div>
 
 
 <div class="text-left"><h6>
@@ -11513,7 +15476,7 @@ B3. Sector / Area:
                           <div class="row">
                             <label>
                                 
-                                     <input class="form-check-input respo_radio" type="checkbox" name="name_of_sector_volunteerism"  data-val="Yes" value="Yes">
+                                     <input class="form-check-input respo_radio_sect3" type="checkbox" name="name_of_sector_volunteerism"  data-val="Yes" value="Yes">
                                   &nbsp&nbsp A. Agriculture
                                
                             </label>
@@ -11522,7 +15485,7 @@ B3. Sector / Area:
                               <div class="row">
                             <label>
                                 
-                                     <input class="form-check-input respo_radio" type="checkbox" name="name_of_sector_volunteerism"  data-val="Yes" value="Yes">
+                                     <input class="form-check-input respo_radio_sect3" type="checkbox" name="name_of_sector_volunteerism"  data-val="Yes" value="Yes">
                                   &nbsp&nbsp  B. Environment
                                
                             </label>
@@ -11532,7 +15495,7 @@ B3. Sector / Area:
                               <div class="row">
                             <label>
                                 
-                                     <input class="form-check-input respo_radio" type="checkbox" name="name_of_sector_volunteerism"  data-val="Yes" value="Yes">
+                                     <input class="form-check-input respo_radio_sect3" type="checkbox" name="name_of_sector_volunteerism"  data-val="Yes" value="Yes">
                                   &nbsp&nbsp  C. Health
                                
                             </label>
@@ -11543,7 +15506,7 @@ B3. Sector / Area:
                               <div class="row">
                             <label>
                                 
-                                     <input class="form-check-input respo_radio" type="checkbox" name="name_of_sector_volunteerism"  data-val="Yes" value="Yes">
+                                     <input class="form-check-input respo_radio_sect3" type="checkbox" name="name_of_sector_volunteerism"  data-val="Yes" value="Yes">
                                   &nbsp&nbsp  D. Peace and Security
                                
                             </label>
@@ -11553,7 +15516,7 @@ B3. Sector / Area:
                               <div class="row">
                             <label>
                                 
-                                     <input class="form-check-input respo_radio" type="checkbox" name="name_of_sector_volunteerism"  data-val="Yes" value="Yes">
+                                     <input class="form-check-input respo_radio_sect3" type="checkbox" name="name_of_sector_volunteerism"  data-val="Yes" value="Yes">
                                   &nbsp&nbsp  E. Industry
                                
                             </label>
@@ -11563,7 +15526,7 @@ B3. Sector / Area:
                               <div class="row">
                             <label>
                                 
-                                     <input class="form-check-input respo_radio" type="checkbox" name="name_of_sector_volunteerism"  data-val="Yes" value="Yes">
+                                     <input class="form-check-input respo_radio_sect3" type="checkbox" name="name_of_sector_volunteerism"  data-val="Yes" value="Yes">
                                   &nbsp&nbsp  F. Services
                                
                             </label>
@@ -11573,7 +15536,7 @@ B3. Sector / Area:
                               <div class="row">
                             <label>
                                 
-                                     <input class="form-check-input respo_radio" type="checkbox" name="name_of_sector_volunteerism"  data-val="Yes" value="Yes">
+                                     <input class="form-check-input respo_radio_sect3" type="checkbox" name="name_of_sector_volunteerism"  data-val="Yes" value="Yes">
                                   &nbsp&nbsp  G. Education
                                
                             </label>
@@ -11583,7 +15546,7 @@ B3. Sector / Area:
                               <div class="row">
                             <label>
                                 
-                                     <input class="form-check-input respo_radio" type="checkbox" name="name_of_sector_volunteerism"  data-val="Yes" value="Yes">
+                                     <input class="form-check-input respo_radio_sect3" type="checkbox" name="name_of_sector_volunteerism"  data-val="Yes" value="Yes">
                                   &nbsp&nbsp  H. Governance
                                
                             </label>
@@ -11593,7 +15556,7 @@ B3. Sector / Area:
                               <div class="row">
                             <label>
                                 
-                                     <input class="form-check-input respo_radio" type="checkbox" name="name_of_sector_volunteerism"  data-val="Yes" value="Yes">
+                                     <input class="form-check-input respo_radio_sect3" type="checkbox" name="name_of_sector_volunteerism"  data-val="Yes" value="Yes">
                                   &nbsp&nbsp  I. Job creation / income generation
                                
                             </label>
@@ -11603,7 +15566,7 @@ B3. Sector / Area:
                               <div class="row">
                             <label>
                                 
-                                     <input class="form-check-input respo_radio" type="checkbox" name="name_of_sector_volunteerism"  data-val="Yes" value="Yes">
+                                     <input class="form-check-input respo_radio_sect3" type="checkbox" name="name_of_sector_volunteerism"  data-val="Yes" value="Yes">
                                   &nbsp&nbsp  J. Social Services
                                
                             </label>
@@ -11613,7 +15576,7 @@ B3. Sector / Area:
                               <div class="row">
                             <label>
                                 
-                                     <input class="form-check-input respo_radio" type="checkbox" name="name_of_sector_volunteerism"  data-val="Yes" value="Yes">
+                                     <input class="form-check-input respo_radio_sect3" type="checkbox" name="name_of_sector_volunteerism"  data-val="Yes" value="Yes">
                                   &nbsp&nbsp  K. Others, Specify
                                
                             </label>
@@ -12044,94 +16007,13 @@ C1. Are any of the following roads/streets present in the barangay?
 
 
 <br><br><hr>
-<h4 style="color: blue;">---------- END OF SECTION 1 ----------</h4>
-
-
-</form> <!-- Section 1 End Form -->
-
-
-
-   
-                             
-                            </div> <!-- End of Card Body -->
-
-
-                            <div class="card-footer text-muted" >
-                             <button type="button" id="save_sec_1" class="btn btn-outline-success">Save</button>
-                             <button type="button" class="btn btn-outline-primary">Submit</button>
-                            </div>
-              </div>
-
-
-
-
-               </div>
-
-          </div>
-          <!-- End of Section 1 -->
+<h4 style="color: blue;">---------- END OF SECTION 3 ----------</h4>
+             
 
 
 
 
 
-
-
-       <!-- ------------------------------------------------------SECTION 2 ---------------------------------------------- -->
-          <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                <div class="container-fluid" style="width: 90%; background-color: " >
-                    
-
-
-              <div class="card text-center" style="margin-top: 20px; margin-bottom: 40px;">
-                            <div class="card-header" >
-                             <h3>COMMUNITY BASED MONITORING SYSTEM</h3>
-                            </div>
-
-                            <div class="card-body" style="background-color: #ebebeb">
-
-                               <form method="post" id="submit_de_part2">
-
-                              </form>
-
-                            </div> <!-- <<<<< End of Section 2 body -->
-
-
-                            <div class="card-footer text-muted" >
-                             <button type="button" id="save_sec_2" class="btn btn-outline-success">Save</button>
-                             <button type="button" class="btn btn-outline-primary">Submit</button>
-                            </div>
-
-
-              </div> <!-- <<<<< End of Section 2 card -->
-
-          </div> <!-- <<<<< End of Section 2 tab container-fluid -->
-
-        </div> <!-- <<<<< End of Section 2 tab -->
-
-
-
-
-
-
-
-
-
-
-
-         <!-- ------------------------------------------------------SECTION 3 ---------------------------------------------- -->
-        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab"> 
-               <div class="container-fluid" style="width: 90%; background-color: " >
-                    
-
-
-              <div class="card text-center" style="margin-top: 20px; margin-bottom: 40px;">
-                            <div class="card-header" >
-                             <h3>COMMUNITY BASED MONITORING SYSTEM</h3>
-                            </div>
-
-                            <div class="card-body" style="background-color: #ebebeb">
-
-                              <form method="post" id="submit_de_part3">
 
                               </form>
 
@@ -12140,7 +16022,7 @@ C1. Are any of the following roads/streets present in the barangay?
 
                            <div class="card-footer text-muted" >
                              <button type="button" id="save_sec_3" class="btn btn-outline-success">Save</button>
-                             <button type="button" class="btn btn-outline-primary">Submit</button>
+                             
                             </div>
 
 
@@ -12170,14 +16052,4068 @@ C1. Are any of the following roads/streets present in the barangay?
                              <h3>COMMUNITY BASED MONITORING SYSTEM</h3>
                             </div>
 
-                            <div class="card-body" style="background-color: #ebebeb">
+                            <div class="card-body" style="background-color: #fafcff">
 
 
 
                               <form method="post" id="submit_de_part4">
 
-                              <hr>
-                              <h6 class="text-left" style="color: blue">CERTIFICATION</h6>
+            <br> <i style="color: green" class="">Now, I would like to talk about crimes in the Barangay.</i><br><br>                   
+
+               <h5 class="text-left" style="color: "><b>D. CRIME</b></h5> <br><br>
+
+               <h5 class="text-left">
+              D1. Does the barangay have reported cases on the following personal victimization experiences during the past 12 months (01 April 2020 to 31 March 2021)?
+              </h5> <br><br>
+
+
+<!-- ---Start--- -->
+  <div class="col-sm">
+                      <!-- this -->
+                       <h6 class="text-left">A. Theft of personal property (pickpocketing other thefts)</h6> 
+                       <div class="container">
+                          <div class="row">
+                            <div class="col text-left">
+                              <div class="container">
+                                 <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="D_crimeA"  data-val="Yes" data-skip="crimeA" value="Yes">Yes<br>
+                                  <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="D_crimeA"  data-val="No"  data-skip="crimeA" value="No">No
+                                   </div> 
+                            </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+            </div>
+
+              <!-- this -->
+             <div class="skip_yes_crimeA container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     
+                       <div class="container-fluid">
+    
+            <table  class="cell-border compact" style="width:100%; outline: solid">
+                          <thead>
+                              <tr>
+                                  <th style="outline: thin solid">D2. How many cases were reported to the police?</th>
+                                  <th style="outline: thin solid">D3. How many cases were resolved with the assistance of the barangay LGU?</th>
+                                  <th style="outline: thin solid">D4. How many were male victims of crimes</th>
+                                  <th style="outline: thin solid">D5. How many were female victims of crimes</th>                               
+                              </tr>
+
+                             
+                          </thead>   
+
+<tr style="outline: solid">
+
+
+<td style="vertical-align: top; outline: thin solid" >
+  <div class="container" style="padding-top: 30px;">
+    <!-- this -->
+    <input name="crime_d2_1" type="number"  class="form-control"  placeholder="">
+  </div>
+</td>
+
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 30px;">
+  <!-- this -->
+    <input name="crime_d3_1" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+
+
+<td style="outline: thin solid">
+  <div class="form-group container">
+    <label for="">0 - 14 Years old</label>
+    <!-- this -->
+    <input name="crime_d4_0to14_m_1" type="number" class="form-control total_crime_m mcrime1" data-val="mcrime1"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">15 - 30 Years old</label>
+    <!-- this -->
+    <input name="crime_d4_15to30_m_1" type="number" class="form-control total_crime_m mcrime1" data-val="mcrime1"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">31 - 59 Years old</label>
+    <!-- this -->
+    <input name="crime_d4_31to59_m_1" type="number" class="form-control total_crime_m mcrime1" data-val="mcrime1"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">60 and above</label>
+    <!-- this -->
+    <input name="crime_d4_60_m_1" type="number" class="form-control total_crime_m mcrime1" data-val="mcrime1"  placeholder="">
+  </div>
+</td>
+
+
+
+<td style="outline: thin solid">
+  <div class="form-group container">
+    <label for="">0 - 14 Years old</label>
+    <!-- this -->
+    <input name="crime_d5_0to14_f_1" type="number" class="form-control total_crime_f fcrime1" data-val="fcrime1"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">15 - 30 Years old</label>
+    <!-- this -->
+    <input name="crime_d5_15to30_f_1" type="number" class="form-control total_crime_f fcrime1" data-val="fcrime1"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">31 - 59 Years old</label>
+    <!-- this -->
+    <input name="crime_d5_31to59_f_1"  type="number" class="form-control total_crime_f fcrime1" data-val="fcrime1"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">60 and above</label>
+    <!-- this -->
+    <input name="crime_d5_60_f_1" type="number" class="form-control total_crime_f fcrime1" data-val="fcrime1"  placeholder="">
+  </div>
+</td>
+
+
+</tr> 
+                         
+                  </table>
+         <div class="">
+            <div class="row">
+              <div class="col text-left">
+                <!-- this -->
+                <b>Total Male: <span class="crime1_total" id="mcrime1"></span></b>
+              </div>
+              <div class="col text-left">
+                <!-- this -->
+                <b>Total Female: <span class="crime1_total" id="fcrime1"></span></b>
+              </div>
+              <div class="col text-left">
+                <!-- this -->
+                <b>TOTAL: <span id="crime1_total"></span></b>
+              </div>
+            </div>
+         </div>         
+
+                            </div>        
+                                                                       
+                                  </div>
+                          
+             </div>  
+             <!-- -----END OF CRIME 1----- --><hr>
+
+              <div class="col-sm">
+                      <!-- this -->
+                       <h6 class="text-left">B. Robbery (theft by using violence)</h6> 
+                       <div class="container">
+                          <div class="row">
+                            <div class="col text-left">
+                              <div class="container">
+                                 <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="D_crimeB"  data-val="Yes" data-skip="crimeB" value="Yes">Yes<br>
+                                  <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="D_crimeB"  data-val="No"  data-skip="crimeB" value="No">No
+                                   </div> 
+                            </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+            </div>
+
+              <!-- this -->
+             <div class="skip_yes_crimeB container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     
+                       <div class="container-fluid">
+    
+            <table  class="cell-border compact" style="width:100%; outline: solid">
+                          <thead>
+                              <tr>
+                                  <th style="outline: thin solid">D2. How many cases were reported to the police?</th>
+                                  <th style="outline: thin solid">D3. How many cases were resolved with the assistance of the barangay LGU?</th>
+                                  <th style="outline: thin solid">D4. How many were male victims of crimes</th>
+                                  <th style="outline: thin solid">D5. How many were female victims of crimes</th>                               
+                              </tr>
+
+                             
+                          </thead>   
+
+<tr style="outline: solid">
+
+
+<td style="vertical-align: top; outline: thin solid" >
+  <div class="container" style="padding-top: 30px;">
+    <!-- this -->
+    <input name="crime_d2_2" type="number"  class="form-control"  placeholder="">
+  </div>
+</td>
+
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 30px;">
+  <!-- this -->
+    <input name="crime_d3_2" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+
+
+<td style="outline: thin solid">
+  <div class="form-group container">
+    <label for="">0 - 14 Years old</label>
+    <!-- this -->
+    <input name="crime_d4_0to14_m_2" type="number" class="form-control total_crime_m mcrime2" data-val="mcrime2"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">15 - 30 Years old</label>
+    <!-- this -->
+    <input name="crime_d4_15to30_m_2" type="number" class="form-control total_crime_m mcrime2" data-val="mcrime2"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">31 - 59 Years old</label>
+    <!-- this -->
+    <input name="crime_d4_31to59_m_2" type="number" class="form-control total_crime_m mcrime2" data-val="mcrime2"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">60 and above</label>
+    <!-- this -->
+    <input name="crime_d4_60_m_2" type="number" class="form-control total_crime_m mcrime2" data-val="mcrime2"  placeholder="">
+  </div>
+</td>
+
+
+
+<td style="outline: thin solid">
+  <div class="form-group container">
+    <label for="">0 - 14 Years old</label>
+    <!-- this -->
+    <input name="crime_d5_0to14_f_2" type="number" class="form-control total_crime_f fcrime2" data-val="fcrime2"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">15 - 30 Years old</label>
+    <!-- this -->
+    <input name="crime_d5_15to30_f_2" type="number" class="form-control total_crime_f fcrime2" data-val="fcrime2"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">31 - 59 Years old</label>
+    <!-- this -->
+    <input name="crime_d5_31to59_f_2"  type="number" class="form-control total_crime_f fcrime2" data-val="fcrime2"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">60 and above</label>
+    <!-- this -->
+    <input name="crime_d5_60_f_2" type="number" class="form-control total_crime_f fcrime2" data-val="fcrime2"  placeholder="">
+  </div>
+</td>
+
+
+</tr> 
+                         
+                  </table>
+         <div class="">
+            <div class="row">
+              <div class="col text-left">
+                <!-- this -->
+                <b>Total Male: <span class="crime2_total" id="mcrime2"></span></b>
+              </div>
+              <div class="col text-left">
+                <!-- this -->
+                <b>Total Female: <span class="crime2_total" id="fcrime2"></span></b>
+              </div>
+              <div class="col text-left">
+                <!-- this -->
+                <b>TOTAL: <span id="crime2_total"></span></b>
+              </div>
+            </div>
+         </div>         
+
+                            </div>        
+                                                                       
+                                  </div>
+                          
+             </div>  
+             <!-- -----END OF CRIME 2----- --><hr>
+
+              <div class="col-sm">
+                      <!-- this -->
+                       <h6 class="text-left">C. Psychological (mobbing, stalking) violence</h6> 
+                       <div class="container">
+                          <div class="row">
+                            <div class="col text-left">
+                              <div class="container">
+                                 <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="D_crimeC"  data-val="Yes" data-skip="crimeC" value="Yes">Yes<br>
+                                  <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="D_crimeC"  data-val="No"  data-skip="crimeC" value="No">No
+                                   </div> 
+                            </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+            </div>
+
+              <!-- this -->
+             <div class="skip_yes_crimeC container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     
+                       <div class="container-fluid">
+    
+            <table  class="cell-border compact" style="width:100%; outline: solid">
+                          <thead>
+                              <tr>
+                                  <th style="outline: thin solid">D2. How many cases were reported to the police?</th>
+                                  <th style="outline: thin solid">D3. How many cases were resolved with the assistance of the barangay LGU?</th>
+                                  <th style="outline: thin solid">D4. How many were male victims of crimes</th>
+                                  <th style="outline: thin solid">D5. How many were female victims of crimes</th>                               
+                              </tr>
+
+                             
+                          </thead>   
+
+<tr style="outline: solid">
+
+
+<td style="vertical-align: top; outline: thin solid" >
+  <div class="container" style="padding-top: 30px;">
+    <!-- this -->
+    <input name="crime_d2_3" type="number"  class="form-control"  placeholder="">
+  </div>
+</td>
+
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 30px;">
+  <!-- this -->
+    <input name="crime_d3_3" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+
+
+<td style="outline: thin solid">
+  <div class="form-group container">
+    <label for="">0 - 14 Years old</label>
+    <!-- this -->
+    <input name="crime_d4_0to14_m_3" type="number" class="form-control total_crime_m mcrime3" data-val="mcrime3"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">15 - 30 Years old</label>
+    <!-- this -->
+    <input name="crime_d4_15to30_m_3" type="number" class="form-control total_crime_m mcrime3" data-val="mcrime3"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">31 - 59 Years old</label>
+    <!-- this -->
+    <input name="crime_d4_31to59_m_3" type="number" class="form-control total_crime_m mcrime3" data-val="mcrime3"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">60 and above</label>
+    <!-- this -->
+    <input name="crime_d4_60_m_3" type="number" class="form-control total_crime_m mcrime3" data-val="mcrime3"  placeholder="">
+  </div>
+</td>
+
+
+
+<td style="outline: thin solid">
+  <div class="form-group container">
+    <label for="">0 - 14 Years old</label>
+    <!-- this -->
+    <input name="crime_d5_0to14_f_3" type="number" class="form-control total_crime_f fcrime3" data-val="fcrime1"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">15 - 30 Years old</label>
+    <!-- this -->
+    <input name="crime_d5_15to30_f_3" type="number" class="form-control total_crime_f fcrime3" data-val="fcrime3"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">31 - 59 Years old</label>
+    <!-- this -->
+    <input name="crime_d5_31to59_f_3"  type="number" class="form-control total_crime_f fcrime3" data-val="fcrime3"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">60 and above</label>
+    <!-- this -->
+    <input name="crime_d5_60_f_3" type="number" class="form-control total_crime_f fcrime3" data-val="fcrime3"  placeholder="">
+  </div>
+</td>
+
+
+</tr> 
+                         
+                  </table>
+         <div class="">
+            <div class="row">
+              <div class="col text-left">
+                <!-- this -->
+                <b>Total Male: <span class="crime3_total" id="mcrime3"></span></b>
+              </div>
+              <div class="col text-left">
+                <!-- this -->
+                <b>Total Female: <span class="crime3_total" id="fcrime3"></span></b>
+              </div>
+              <div class="col text-left">
+                <!-- this -->
+                <b>TOTAL: <span id="crime3_total"></span></b>
+              </div>
+            </div>
+         </div>         
+
+                            </div>        
+                                                                       
+                                  </div>
+                          
+             </div>  
+             <!-- -----END OF CRIME 3----- --><hr>
+              <div class="col-sm">
+                      <!-- this -->
+                       <h6 class="text-left">D. Sexual offenses (sexual assault, rape)</h6> 
+                       <div class="container">
+                          <div class="row">
+                            <div class="col text-left">
+                              <div class="container">
+                                 <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="D_crimeD"  data-val="Yes" data-skip="crimeD" value="Yes">Yes<br>
+                                  <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="D_crimeD"  data-val="No"  data-skip="crimeD" value="No">No
+                                   </div> 
+                            </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+            </div>
+
+              <!-- this -->
+             <div class="skip_yes_crimeD container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     
+                       <div class="container-fluid">
+    
+            <table  class="cell-border compact" style="width:100%; outline: solid">
+                          <thead>
+                              <tr>
+                                  <th style="outline: thin solid">D2. How many cases were reported to the police?</th>
+                                  <th style="outline: thin solid">D3. How many cases were resolved with the assistance of the barangay LGU?</th>
+                                  <th style="outline: thin solid">D4. How many were male victims of crimes</th>
+                                  <th style="outline: thin solid">D5. How many were female victims of crimes</th>                               
+                              </tr>
+
+                             
+                          </thead>   
+
+<tr style="outline: solid">
+
+
+<td style="vertical-align: top; outline: thin solid" >
+  <div class="container" style="padding-top: 30px;">
+    <!-- this -->
+    <input name="crime_d2_4" type="number"  class="form-control"  placeholder="">
+  </div>
+</td>
+
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 30px;">
+  <!-- this -->
+    <input name="crime_d3_4" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+
+
+<td style="outline: thin solid">
+  <div class="form-group container">
+    <label for="">0 - 14 Years old</label>
+    <!-- this -->
+    <input name="crime_d4_0to14_m_4" type="number" class="form-control total_crime_m mcrime4" data-val="mcrime4"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">15 - 30 Years old</label>
+    <!-- this -->
+    <input name="crime_d4_15to30_m_4" type="number" class="form-control total_crime_m mcrime4" data-val="mcrime4"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">31 - 59 Years old</label>
+    <!-- this -->
+    <input name="crime_d4_31to59_m_4" type="number" class="form-control total_crime_m mcrime4" data-val="mcrime4"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">60 and above</label>
+    <!-- this -->
+    <input name="crime_d4_60_m_4" type="number" class="form-control total_crime_m mcrime4" data-val="mcrime4"  placeholder="">
+  </div>
+</td>
+
+
+
+<td style="outline: thin solid">
+  <div class="form-group container">
+    <label for="">0 - 14 Years old</label>
+    <!-- this -->
+    <input name="crime_d5_0to14_f_4" type="number" class="form-control total_crime_f fcrime4" data-val="fcrime4"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">15 - 30 Years old</label>
+    <!-- this -->
+    <input name="crime_d5_15to30_f_4" type="number" class="form-control total_crime_f fcrime4" data-val="fcrime4"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">31 - 59 Years old</label>
+    <!-- this -->
+    <input name="crime_d5_31to59_f_4"  type="number" class="form-control total_crime_f fcrime4" data-val="fcrime4"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">60 and above</label>
+    <!-- this -->
+    <input name="crime_d5_60_f_4" type="number" class="form-control total_crime_f fcrime4" data-val="fcrime4"  placeholder="">
+  </div>
+</td>
+
+
+</tr> 
+                         
+                  </table>
+         <div class="">
+            <div class="row">
+              <div class="col text-left">
+                <!-- this -->
+                <b>Total Male: <span class="crime4_total" id="mcrime4"></span></b>
+              </div>
+              <div class="col text-left">
+                <!-- this -->
+                <b>Total Female: <span class="crime4_total" id="fcrime4"></span></b>
+              </div>
+              <div class="col text-left">
+                <!-- this -->
+                <b>TOTAL: <span id="crime4_total"></span></b>
+              </div>
+            </div>
+         </div>         
+
+                            </div>        
+                                                                       
+                                  </div>
+                          
+             </div>  
+             <!-- -----END OF CRIME 4----- --><hr>
+
+              <div class="col-sm">
+                      <!-- this -->
+                       <h6 class="text-left">E. Fraud (cheating, credit card, internet fraud)</h6> 
+                       <div class="container">
+                          <div class="row">
+                            <div class="col text-left">
+                              <div class="container">
+                                 <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="D_crimeE"  data-val="Yes" data-skip="crimeE" value="Yes">Yes<br>
+                                  <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="D_crimeE"  data-val="No"  data-skip="crimeE" value="No">No
+                                   </div> 
+                            </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+            </div>
+
+              <!-- this -->
+             <div class="skip_yes_crimeE container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     
+                       <div class="container-fluid">
+    
+            <table  class="cell-border compact" style="width:100%; outline: solid">
+                          <thead>
+                              <tr>
+                                  <th style="outline: thin solid">D2. How many cases were reported to the police?</th>
+                                  <th style="outline: thin solid">D3. How many cases were resolved with the assistance of the barangay LGU?</th>
+                                  <th style="outline: thin solid">D4. How many were male victims of crimes</th>
+                                  <th style="outline: thin solid">D5. How many were female victims of crimes</th>                               
+                              </tr>
+
+                             
+                          </thead>   
+
+<tr style="outline: solid">
+
+
+<td style="vertical-align: top; outline: thin solid" >
+  <div class="container" style="padding-top: 30px;">
+    <!-- this -->
+    <input name="crime_d2_5" type="number"  class="form-control"  placeholder="">
+  </div>
+</td>
+
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 30px;">
+  <!-- this -->
+    <input name="crime_d3_5" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+
+
+<td style="outline: thin solid">
+  <div class="form-group container">
+    <label for="">0 - 14 Years old</label>
+    <!-- this -->
+    <input name="crime_d4_0to14_m_5" type="number" class="form-control total_crime_m mcrime5" data-val="mcrime5"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">15 - 30 Years old</label>
+    <!-- this -->
+    <input name="crime_d4_15to30_m_5" type="number" class="form-control total_crime_m mcrime5" data-val="mcrime5"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">31 - 59 Years old</label>
+    <!-- this -->
+    <input name="crime_d4_31to59_m_5" type="number" class="form-control total_crime_m mcrime5" data-val="mcrime5"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">60 and above</label>
+    <!-- this -->
+    <input name="crime_d4_60_m_5" type="number" class="form-control total_crime_m mcrime5" data-val="mcrime5"  placeholder="">
+  </div>
+</td>
+
+
+
+<td style="outline: thin solid">
+  <div class="form-group container">
+    <label for="">0 - 14 Years old</label>
+    <!-- this -->
+    <input name="crime_d5_0to14_f_5" type="number" class="form-control total_crime_f fcrime5" data-val="fcrime5"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">15 - 30 Years old</label>
+    <!-- this -->
+    <input name="crime_d5_15to30_f_5" type="number" class="form-control total_crime_f fcrime5" data-val="fcrime5"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">31 - 59 Years old</label>
+    <!-- this -->
+    <input name="crime_d5_31to59_f_5"  type="number" class="form-control total_crime_f fcrime5" data-val="fcrime5"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">60 and above</label>
+    <!-- this -->
+    <input name="crime_d5_60_f_5" type="number" class="form-control total_crime_f fcrime5" data-val="fcrime5"  placeholder="">
+  </div>
+</td>
+
+
+</tr> 
+                         
+                  </table>
+         <div class="">
+            <div class="row">
+              <div class="col text-left">
+                <!-- this -->
+                <b>Total Male: <span class="crime5_total" id="mcrime5"></span></b>
+              </div>
+              <div class="col text-left">
+                <!-- this -->
+                <b>Total Female: <span class="crime5_total" id="fcrime5"></span></b>
+              </div>
+              <div class="col text-left">
+                <!-- this -->
+                <b>TOTAL: <span id="crime5_total"></span></b>
+              </div>
+            </div>
+         </div>         
+
+                            </div>        
+                                                                       
+                                  </div>
+                          
+             </div>  
+             <!-- -----END OF CRIME 5----- --><hr>
+
+              <div class="col-sm">
+                      <!-- this -->
+                       <h6 class="text-left">F. Corruption/ bribery</h6> 
+                       <div class="container">
+                          <div class="row">
+                            <div class="col text-left">
+                              <div class="container">
+                                 <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="D_crimeF"  data-val="Yes" data-skip="crimeF" value="Yes">Yes<br>
+                                  <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="D_crimeF"  data-val="No"  data-skip="crimeF" value="No">No
+                                   </div> 
+                            </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+            </div>
+
+              <!-- this -->
+             <div class="skip_yes_crimeF container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     
+                       <div class="container-fluid">
+    
+            <table  class="cell-border compact" style="width:100%; outline: solid">
+                          <thead>
+                              <tr>
+                                  <th style="outline: thin solid">D2. How many cases were reported to the police?</th>
+                                  <th style="outline: thin solid">D3. How many cases were resolved with the assistance of the barangay LGU?</th>
+                                  <th style="outline: thin solid">D4. How many were male victims of crimes</th>
+                                  <th style="outline: thin solid">D5. How many were female victims of crimes</th>                               
+                              </tr>
+
+                             
+                          </thead>   
+
+<tr style="outline: solid">
+
+
+<td style="vertical-align: top; outline: thin solid" >
+  <div class="container" style="padding-top: 30px;">
+    <!-- this -->
+    <input name="crime_d2_6" type="number"  class="form-control"  placeholder="">
+  </div>
+</td>
+
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 30px;">
+  <!-- this -->
+    <input name="crime_d3_6" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+
+
+<td style="outline: thin solid">
+  <div class="form-group container">
+    <label for="">0 - 14 Years old</label>
+    <!-- this -->
+    <input name="crime_d4_0to14_m_6" type="number" class="form-control total_crime_m mcrime6" data-val="mcrime6"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">15 - 30 Years old</label>
+    <!-- this -->
+    <input name="crime_d4_15to30_m_6" type="number" class="form-control total_crime_m mcrime6" data-val="mcrime6"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">31 - 59 Years old</label>
+    <!-- this -->
+    <input name="crime_d4_31to59_m_6" type="number" class="form-control total_crime_m mcrime6" data-val="mcrime6"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">60 and above</label>
+    <!-- this -->
+    <input name="crime_d4_60_m_6" type="number" class="form-control total_crime_m mcrime6" data-val="mcrime6"  placeholder="">
+  </div>
+</td>
+
+
+
+<td style="outline: thin solid">
+  <div class="form-group container">
+    <label for="">0 - 14 Years old</label>
+    <!-- this -->
+    <input name="crime_d5_0to14_f_6" type="number" class="form-control total_crime_f fcrime6" data-val="fcrime6"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">15 - 30 Years old</label>
+    <!-- this -->
+    <input name="crime_d5_15to30_f_6" type="number" class="form-control total_crime_f fcrime6" data-val="fcrime6"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">31 - 59 Years old</label>
+    <!-- this -->
+    <input name="crime_d5_31to59_f_6"  type="number" class="form-control total_crime_f fcrime6" data-val="fcrime6"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">60 and above</label>
+    <!-- this -->
+    <input name="crime_d5_60_f_6" type="number" class="form-control total_crime_f fcrime6" data-val="fcrime6"  placeholder="">
+  </div>
+</td>
+
+
+</tr> 
+                         
+                  </table>
+         <div class="">
+            <div class="row">
+              <div class="col text-left">
+                <!-- this -->
+                <b>Total Male: <span class="crime6_total" id="mcrime6"></span></b>
+              </div>
+              <div class="col text-left">
+                <!-- this -->
+                <b>Total Female: <span class="crime6_total" id="fcrime6"></span></b>
+              </div>
+              <div class="col text-left">
+                <!-- this -->
+                <b>TOTAL: <span id="crime6_total"></span></b>
+              </div>
+            </div>
+         </div>         
+
+                            </div>        
+                                                                       
+                                  </div>
+                          
+             </div>  
+             <!-- -----END OF CRIME 6----- --><hr>
+
+              <div class="col-sm">
+                      <!-- this -->
+                       <h6 class="text-left">G. Exposure to illegal drugs</h6> 
+                       <div class="container">
+                          <div class="row">
+                            <div class="col text-left">
+                              <div class="container">
+                                 <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="D_crimeG"  data-val="Yes" data-skip="crimeG" value="Yes">Yes<br>
+                                  <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="D_crimeG"  data-val="No"  data-skip="crimeG" value="No">No
+                                   </div> 
+                            </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+            </div>
+
+              <!-- this -->
+             <div class="skip_yes_crimeG container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     
+                       <div class="container-fluid">
+    
+            <table  class="cell-border compact" style="width:100%; outline: solid">
+                          <thead>
+                              <tr>
+                                  <th style="outline: thin solid">D2. How many cases were reported to the police?</th>
+                                  <th style="outline: thin solid">D3. How many cases were resolved with the assistance of the barangay LGU?</th>
+                                  <th style="outline: thin solid">D4. How many were male victims of crimes</th>
+                                  <th style="outline: thin solid">D5. How many were female victims of crimes</th>                               
+                              </tr>
+
+                             
+                          </thead>   
+
+<tr style="outline: solid">
+
+
+<td style="vertical-align: top; outline: thin solid" >
+  <div class="container" style="padding-top: 30px;">
+    <!-- this -->
+    <input name="crime_d2_7" type="number"  class="form-control"  placeholder="">
+  </div>
+</td>
+
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 30px;">
+  <!-- this -->
+    <input name="crime_d3_7" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+
+
+<td style="outline: thin solid">
+  <div class="form-group container">
+    <label for="">0 - 14 Years old</label>
+    <!-- this -->
+    <input name="crime_d4_0to14_m_7" type="number" class="form-control total_crime_m mcrime7" data-val="mcrime7"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">15 - 30 Years old</label>
+    <!-- this -->
+    <input name="crime_d4_15to30_m_7" type="number" class="form-control total_crime_m mcrime7" data-val="mcrime7"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">31 - 59 Years old</label>
+    <!-- this -->
+    <input name="crime_d4_31to59_m_7" type="number" class="form-control total_crime_m mcrime7" data-val="mcrime7"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">60 and above</label>
+    <!-- this -->
+    <input name="crime_d4_60_m_7" type="number" class="form-control total_crime_m mcrime7" data-val="mcrime7"  placeholder="">
+  </div>
+</td>
+
+
+
+<td style="outline: thin solid">
+  <div class="form-group container">
+    <label for="">0 - 14 Years old</label>
+    <!-- this -->
+    <input name="crime_d5_0to14_f_7" type="number" class="form-control total_crime_f fcrime7" data-val="fcrime7"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">15 - 30 Years old</label>
+    <!-- this -->
+    <input name="crime_d5_15to30_f_7" type="number" class="form-control total_crime_f fcrime7" data-val="fcrime7"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">31 - 59 Years old</label>
+    <!-- this -->
+    <input name="crime_d5_31to59_f_7"  type="number" class="form-control total_crime_f fcrime7" data-val="fcrime7"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">60 and above</label>
+    <!-- this -->
+    <input name="crime_d5_60_f_7" type="number" class="form-control total_crime_f fcrime7" data-val="fcrime7"  placeholder="">
+  </div>
+</td>
+
+
+</tr> 
+                         
+                  </table>
+         <div class="">
+            <div class="row">
+              <div class="col text-left">
+                <!-- this -->
+                <b>Total Male: <span class="crime7_total" id="mcrime7"></span></b>
+              </div>
+              <div class="col text-left">
+                <!-- this -->
+                <b>Total Female: <span class="crime7_total" id="fcrime7"></span></b>
+              </div>
+              <div class="col text-left">
+                <!-- this -->
+                <b>TOTAL: <span id="crime7_total"></span></b>
+              </div>
+            </div>
+         </div>         
+
+                            </div>        
+                                                                       
+                                  </div>
+                          
+             </div>  
+             <!-- -----END OF CRIME 7----- --><hr>
+
+              <div class="col-sm">
+                      <!-- this -->
+                       <h6 class="text-left">H. Vehicle theft (motor vehicle, car, motorcycle, bicycle; theft from vehicles)</h6> 
+                       <div class="container">
+                          <div class="row">
+                            <div class="col text-left">
+                              <div class="container">
+                                 <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="D_crimeH"  data-val="Yes" data-skip="crimeH" value="Yes">Yes<br>
+                                  <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="D_crimeH"  data-val="No"  data-skip="crimeH" value="No">No
+                                   </div> 
+                            </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+            </div>
+
+              <!-- this -->
+             <div class="skip_yes_crimeH container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     
+                       <div class="container-fluid">
+    
+            <table  class="cell-border compact" style="width:100%; outline: solid">
+                          <thead>
+                              <tr>
+                                  <th style="outline: thin solid">D2. How many cases were reported to the police?</th>
+                                  <th style="outline: thin solid">D3. How many cases were resolved with the assistance of the barangay LGU?</th>
+                                  <th style="outline: thin solid">D4. How many were male victims of crimes</th>
+                                  <th style="outline: thin solid">D5. How many were female victims of crimes</th>                               
+                              </tr>
+
+                             
+                          </thead>   
+
+<tr style="outline: solid">
+
+
+<td style="vertical-align: top; outline: thin solid" >
+  <div class="container" style="padding-top: 30px;">
+    <!-- this -->
+    <input name="crime_d2_8" type="number"  class="form-control"  placeholder="">
+  </div>
+</td>
+
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 30px;">
+  <!-- this -->
+    <input name="crime_d3_8" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+
+
+<td style="outline: thin solid">
+  <div class="form-group container">
+    <label for="">0 - 14 Years old</label>
+    <!-- this -->
+    <input name="crime_d4_0to14_m_8" type="number" class="form-control total_crime_m mcrime8" data-val="mcrime8"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">15 - 30 Years old</label>
+    <!-- this -->
+    <input name="crime_d4_15to30_m_8" type="number" class="form-control total_crime_m mcrime8" data-val="mcrime8"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">31 - 59 Years old</label>
+    <!-- this -->
+    <input name="crime_d4_31to59_m_8" type="number" class="form-control total_crime_m mcrime8" data-val="mcrime8"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">60 and above</label>
+    <!-- this -->
+    <input name="crime_d4_60_m_8" type="number" class="form-control total_crime_m mcrime8" data-val="mcrime8"  placeholder="">
+  </div>
+</td>
+
+
+
+<td style="outline: thin solid">
+  <div class="form-group container">
+    <label for="">0 - 14 Years old</label>
+    <!-- this -->
+    <input name="crime_d5_0to14_f_8" type="number" class="form-control total_crime_f fcrime8" data-val="fcrime8"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">15 - 30 Years old</label>
+    <!-- this -->
+    <input name="crime_d5_15to30_f_8" type="number" class="form-control total_crime_f fcrime8" data-val="fcrime8"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">31 - 59 Years old</label>
+    <!-- this -->
+    <input name="crime_d5_31to59_f_8"  type="number" class="form-control total_crime_f fcrime8" data-val="fcrime8"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">60 and above</label>
+    <!-- this -->
+    <input name="crime_d5_60_f_8" type="number" class="form-control total_crime_f fcrime8" data-val="fcrime8"  placeholder="">
+  </div>
+</td>
+
+
+</tr> 
+                         
+                  </table>
+         <div class="">
+            <div class="row">
+              <div class="col text-left">
+                <!-- this -->
+                <b>Total Male: <span class="crime8_total" id="mcrime8"></span></b>
+              </div>
+              <div class="col text-left">
+                <!-- this -->
+                <b>Total Female: <span class="crime8_total" id="fcrime8"></span></b>
+              </div>
+              <div class="col text-left">
+                <!-- this -->
+                <b>TOTAL: <span id="crime8_total"></span></b>
+              </div>
+            </div>
+         </div>         
+
+                            </div>        
+                                                                       
+                                  </div>
+                          
+             </div>  
+             <!-- -----END OF CRIME 8----- --><hr>
+
+              <div class="col-sm">
+                      <!-- this -->
+                       <h6 class="text-left">I. Housebreaking (domestic burglary, attempted burglary)</h6>
+                       <div class="container">
+                          <div class="row">
+                            <div class="col text-left">
+                              <div class="container">
+                                 <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="D_crimeI"  data-val="Yes" data-skip="crimeI" value="Yes">Yes<br>
+                                  <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="D_crimeI"  data-val="No"  data-skip="crimeI" value="No">No
+                                   </div> 
+                            </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+            </div>
+
+              <!-- this -->
+             <div class="skip_yes_crimeI container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     
+                       <div class="container-fluid">
+    
+            <table  class="cell-border compact" style="width:100%; outline: solid">
+                          <thead>
+                              <tr>
+                                  <th style="outline: thin solid">D2. How many cases were reported to the police?</th>
+                                  <th style="outline: thin solid">D3. How many cases were resolved with the assistance of the barangay LGU?</th>
+                                  <th style="outline: thin solid">D4. How many were male victims of crimes</th>
+                                  <th style="outline: thin solid">D5. How many were female victims of crimes</th>                               
+                              </tr>
+
+                             
+                          </thead>   
+
+<tr style="outline: solid">
+
+
+<td style="vertical-align: top; outline: thin solid" >
+  <div class="container" style="padding-top: 30px;">
+    <!-- this -->
+    <input name="crime_d2_9" type="number"  class="form-control"  placeholder="">
+  </div>
+</td>
+
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 30px;">
+  <!-- this -->
+    <input name="crime_d3_9" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+
+
+<td style="outline: thin solid">
+  <div class="form-group container">
+    <label for="">0 - 14 Years old</label>
+    <!-- this -->
+    <input name="crime_d4_0to14_m_9" type="number" class="form-control total_crime_m mcrime9" data-val="mcrime9"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">15 - 30 Years old</label>
+    <!-- this -->
+    <input name="crime_d4_15to30_m_9" type="number" class="form-control total_crime_m mcrime9" data-val="mcrime9"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">31 - 59 Years old</label>
+    <!-- this -->
+    <input name="crime_d4_31to59_m_9" type="number" class="form-control total_crime_m mcrime9" data-val="mcrime9"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">60 and above</label>
+    <!-- this -->
+    <input name="crime_d4_60_m_9" type="number" class="form-control total_crime_m mcrime9" data-val="mcrime9"  placeholder="">
+  </div>
+</td>
+
+
+
+<td style="outline: thin solid">
+  <div class="form-group container">
+    <label for="">0 - 14 Years old</label>
+    <!-- this -->
+    <input name="crime_d5_0to14_f_9" type="number" class="form-control total_crime_f fcrime9" data-val="fcrime9"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">15 - 30 Years old</label>
+    <!-- this -->
+    <input name="crime_d5_15to30_f_9" type="number" class="form-control total_crime_f fcrime9" data-val="fcrime9"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">31 - 59 Years old</label>
+    <!-- this -->
+    <input name="crime_d5_31to59_f_9"  type="number" class="form-control total_crime_f fcrime9" data-val="fcrime9"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">60 and above</label>
+    <!-- this -->
+    <input name="crime_d5_60_f_9" type="number" class="form-control total_crime_f fcrime9" data-val="fcrime9"  placeholder="">
+  </div>
+</td>
+
+
+</tr> 
+                         
+                  </table>
+         <div class="">
+            <div class="row">
+              <div class="col text-left">
+                <!-- this -->
+                <b>Total Male: <span class="crime9_total" id="mcrime9"></span></b>
+              </div>
+              <div class="col text-left">
+                <!-- this -->
+                <b>Total Female: <span class="crime9_total" id="fcrime9"></span></b>
+              </div>
+              <div class="col text-left">
+                <!-- this -->
+                <b>TOTAL: <span id="crime9_total"></span></b>
+              </div>
+            </div>
+         </div>         
+
+                            </div>        
+                                                                       
+                                  </div>
+                          
+             </div>  
+             <!-- -----END OF CRIME 9----- --><hr>
+
+              <div class="col-sm">
+                      <!-- this -->
+                       <h6 class="text-left">J. Vandalism (damage to cars, graffiti)</h6> 
+                       <div class="container">
+                          <div class="row">
+                            <div class="col text-left">
+                              <div class="container">
+                                 <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="D_crimeJ"  data-val="Yes" data-skip="crimeJ" value="Yes">Yes<br>
+                                  <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="D_crimeJ"  data-val="No"  data-skip="crimeJ" value="No">No
+                                   </div> 
+                            </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+            </div>
+
+              <!-- this -->
+             <div class="skip_yes_crimeJ container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     
+                       <div class="container-fluid">
+    
+            <table  class="cell-border compact" style="width:100%; outline: solid">
+                          <thead>
+                              <tr>
+                                  <th style="outline: thin solid">D2. How many cases were reported to the police?</th>
+                                  <th style="outline: thin solid">D3. How many cases were resolved with the assistance of the barangay LGU?</th>
+                                  <th style="outline: thin solid">D4. How many were male victims of crimes</th>
+                                  <th style="outline: thin solid">D5. How many were female victims of crimes</th>                               
+                              </tr>
+
+                             
+                          </thead>   
+
+<tr style="outline: solid">
+
+
+<td style="vertical-align: top; outline: thin solid" >
+  <div class="container" style="padding-top: 30px;">
+    <!-- this -->
+    <input name="crime_d2_10" type="number"  class="form-control"  placeholder="">
+  </div>
+</td>
+
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 30px;">
+  <!-- this -->
+    <input name="crime_d3_10" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+
+
+<td style="outline: thin solid">
+  <div class="form-group container">
+    <label for="">0 - 14 Years old</label>
+    <!-- this -->
+    <input name="crime_d4_0to14_m_10" type="number" class="form-control total_crime_m mcrime10" data-val="mcrime10"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">15 - 30 Years old</label>
+    <!-- this -->
+    <input name="crime_d4_15to30_m_10" type="number" class="form-control total_crime_m mcrime10" data-val="mcrime10"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">31 - 59 Years old</label>
+    <!-- this -->
+    <input name="crime_d4_31to59_m_10" type="number" class="form-control total_crime_m mcrime10" data-val="mcrime10"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">60 and above</label>
+    <!-- this -->
+    <input name="crime_d4_60_m_10" type="number" class="form-control total_crime_m mcrime10" data-val="mcrime10"  placeholder="">
+  </div>
+</td>
+
+
+
+<td style="outline: thin solid">
+  <div class="form-group container">
+    <label for="">0 - 14 Years old</label>
+    <!-- this -->
+    <input name="crime_d5_0to14_f_10" type="number" class="form-control total_crime_f fcrime10" data-val="fcrime10"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">15 - 30 Years old</label>
+    <!-- this -->
+    <input name="crime_d5_15to30_f_10" type="number" class="form-control total_crime_f fcrime10" data-val="fcrime10"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">31 - 59 Years old</label>
+    <!-- this -->
+    <input name="crime_d5_31to59_f_10"  type="number" class="form-control total_crime_f fcrime10" data-val="fcrime10"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">60 and above</label>
+    <!-- this -->
+    <input name="crime_d5_60_f_10" type="number" class="form-control total_crime_f fcrime10" data-val="fcrime10"  placeholder="">
+  </div>
+</td>
+
+
+</tr> 
+                         
+                  </table>
+         <div class="">
+            <div class="row">
+              <div class="col text-left">
+                <!-- this -->
+                <b>Total Male: <span class="crime10_total" id="mcrime10"></span></b>
+              </div>
+              <div class="col text-left">
+                <!-- this -->
+                <b>Total Female: <span class="crime10_total" id="fcrime10"></span></b>
+              </div>
+              <div class="col text-left">
+                <!-- this -->
+                <b>TOTAL: <span id="crime10_total"></span></b>
+              </div>
+            </div>
+         </div>         
+
+                            </div>        
+                                                                       
+                                  </div>
+                          
+             </div>  
+             <!-- -----END OF CRIME 10----- --><hr>
+
+              <div class="col-sm">
+                      <!-- this -->
+                       <h6 class="text-left">K. Other Criminal Acts?</h6> 
+                       <div class="container">
+                          <div class="row">
+                            <div class="col text-left">
+                              <div class="container">
+                                 <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="D_crimeK"  data-val="Yes" data-skip="crimeK" value="Yes">Yes<br>
+                                  <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="D_crimeK"  data-val="No"  data-skip="crimeK" value="No">No
+                                   </div> 
+                            </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+            </div>
+
+              <!-- this -->
+             <div class="skip_yes_crimeK container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+
+  <div class="form-group container text-left">
+    <label for="" class="text-left"><b>Please Specify:</b></label>
+    <!-- this -->
+    <input name="crime_d1_Other" type="text" class="form-control"   placeholder="">
+  </div>
+                                     
+                       <div class="container-fluid">
+    
+            <table  class="cell-border compact" style="width:100%; outline: solid">
+                          <thead>
+                              <tr>
+                                  <th style="outline: thin solid">D2. How many cases were reported to the police?</th>
+                                  <th style="outline: thin solid">D3. How many cases were resolved with the assistance of the barangay LGU?</th>
+                                  <th style="outline: thin solid">D4. How many were male victims of crimes</th>
+                                  <th style="outline: thin solid">D5. How many were female victims of crimes</th>                               
+                              </tr>
+
+                             
+                          </thead>   
+
+<tr style="outline: solid">
+
+
+<td style="vertical-align: top; outline: thin solid" >
+  <div class="container" style="padding-top: 30px;">
+    <!-- this -->
+    <input name="crime_d2_11" type="number"  class="form-control"  placeholder="">
+  </div>
+</td>
+
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 30px;">
+  <!-- this -->
+    <input name="crime_d3_11" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+
+
+<td style="outline: thin solid">
+  <div class="form-group container">
+    <label for="">0 - 14 Years old</label>
+    <!-- this -->
+    <input name="crime_d4_0to14_m_11" type="number" class="form-control total_crime_m mcrime11" data-val="mcrime11"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">15 - 30 Years old</label>
+    <!-- this -->
+    <input name="crime_d4_15to30_m_11" type="number" class="form-control total_crime_m mcrime11" data-val="mcrime11"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">31 - 59 Years old</label>
+    <!-- this -->
+    <input name="crime_d4_31to59_m_11" type="number" class="form-control total_crime_m mcrime11" data-val="mcrime11"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">60 and above</label>
+    <!-- this -->
+    <input name="crime_d4_60_m_11" type="number" class="form-control total_crime_m mcrime11" data-val="mcrime11"  placeholder="">
+  </div>
+</td>
+
+
+
+<td style="outline: thin solid">
+  <div class="form-group container">
+    <label for="">0 - 14 Years old</label>
+    <!-- this -->
+    <input name="crime_d5_0to14_f_11" type="number" class="form-control total_crime_f fcrime11" data-val="fcrime11"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">15 - 30 Years old</label>
+    <!-- this -->
+    <input name="crime_d5_15to30_f_11" type="number" class="form-control total_crime_f fcrime11" data-val="fcrime11"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">31 - 59 Years old</label>
+    <!-- this -->
+    <input name="crime_d5_31to59_f_11"  type="number" class="form-control total_crime_f fcrime11" data-val="fcrime11"  placeholder="">
+  </div>
+
+  <div class="form-group container">
+    <label for="">60 and above</label>
+    <!-- this -->
+    <input name="crime_d5_60_f_11" type="number" class="form-control total_crime_f fcrime11" data-val="fcrime11"  placeholder="">
+  </div>
+</td>
+
+
+</tr> 
+                         
+                  </table>
+         <div class="">
+            <div class="row">
+              <div class="col text-left">
+                <!-- this -->
+                <b>Total Male: <span class="crime11_total" id="mcrime11"></span></b>
+              </div>
+              <div class="col text-left">
+                <!-- this -->
+                <b>Total Female: <span class="crime11_total" id="fcrime11"></span></b>
+              </div>
+              <div class="col text-left">
+                <!-- this -->
+                <b>TOTAL: <span id="crime11_total"></span></b>
+              </div>
+            </div>
+         </div>         
+
+                            </div>        
+                                                                       
+                                  </div>
+                          
+             </div>  
+             <!-- -----END OF CRIME 11----- --><hr>
+<br>
+<br>
+             <i style="color: green" class="">Now, I would like to talk about disaster equipments in the Barangay.</i><br><br><br>
+
+             <h5 class="text-left" style="color: "><b>E. DISASTER SUPPLIES & EQUIPMENTS</b></h5>
+             <br><br>
+              
+             <h5 class="text-left" style="color: "><b>SUPPLIES</b></h5>   
+
+              <!-- --------------START-------------- -->
+              <br>
+              <div class="col-sm">
+                      <!-- this -->
+                       <h6 class="text-left">A. First aid kits (piece)</h6> 
+                       <div class="container">
+                          <div class="row">
+                            <div class="col text-left">
+                              <div class="container">
+                                 <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="E_suppliesA"  data-val="Yes" data-skip="suppliesA" value="Yes">Yes<br>
+                                  <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="E_suppliesA"  data-val="No"  data-skip="suppliesA" value="No">No
+                                   </div> 
+                            </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+            </div>
+
+              <!-- this -->
+      <div class="skip_yes_suppliesA container-fluid" hidden="">
+                  
+              <div class="container-fluid">
+                                     
+                       <div class="container-fluid">
+    
+            <table  class="cell-border compact" style="width:100%; outline: solid">
+                          <thead>
+                              <tr>
+                                  <th style="outline: thin solid">E1. How many of the following disaster/ emergency response equipment does the barangay own?</th>
+                                  <th style="outline: thin solid">E2. How much is the average cost per unit (in PhP)?</th>
+                                  <th style="outline: thin solid">E3. How much is estimated total cost (in PhP)?</th>
+                                                                
+                              </tr>
+
+                             
+                          </thead>   
+
+<tr style="outline: solid">
+
+
+<td style="vertical-align: top; outline: thin solid" >
+  <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+    <!-- this -->
+    <input name="e_suppliesA_1" type="number"  class="form-control"  placeholder="">
+  </div>
+</td>
+
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="e_suppliesA_2" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="e_suppliesA_3" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+</tr>
+        </table>
+
+            </div>
+
+                  </div>
+
+                         </div><hr><!-- -------END OF DISASTER A------- -->
+
+                         <br>
+              <div class="col-sm">
+                      <!-- this -->
+                       <h6 class="text-left">B. Vaccines (piece)</h6> 
+                       <div class="container">
+                          <div class="row">
+                            <div class="col text-left">
+                              <div class="container">
+                                 <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="E_suppliesB"  data-val="Yes" data-skip="suppliesB" value="Yes">Yes<br>
+                                  <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="E_suppliesB"  data-val="No"  data-skip="suppliesB" value="No">No
+                                   </div> 
+                            </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+            </div>
+
+              <!-- this -->
+      <div class="skip_yes_suppliesB container-fluid" hidden="">
+                  
+              <div class="container-fluid">
+                                     
+                       <div class="container-fluid">
+    
+            <table  class="cell-border compact" style="width:100%; outline: solid">
+                          <thead>
+                              <tr>
+                                  <th style="outline: thin solid">E1. How many of the following disaster/ emergency response equipment does the barangay own?</th>
+                                  <th style="outline: thin solid">E2. How much is the average cost per unit (in PhP)?</th>
+                                  <th style="outline: thin solid">E3. How much is estimated total cost (in PhP)?</th>
+                                                                
+                              </tr>
+
+                             
+                          </thead>   
+
+<tr style="outline: solid">
+
+
+<td style="vertical-align: top; outline: thin solid" >
+  <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+    <!-- this -->
+    <input name="e_suppliesB_1" type="number"  class="form-control"  placeholder="">
+  </div>
+</td>
+
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="e_suppliesB_2" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="e_suppliesB_3" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+</tr>
+        </table>
+
+            </div>
+
+                  </div>
+
+                         </div><hr><!-- -------END OF DISASTER B------ -->
+                         <br>
+              <div class="col-sm">
+                      <!-- this -->
+                       <h6 class="text-left">C. Cadaver bags (piece)</h6> 
+                       <div class="container">
+                          <div class="row">
+                            <div class="col text-left">
+                              <div class="container">
+                                 <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="E_suppliesC"  data-val="Yes" data-skip="suppliesC" value="Yes">Yes<br>
+                                  <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="E_suppliesC"  data-val="No"  data-skip="suppliesC" value="No">No
+                                   </div> 
+                            </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+            </div>
+
+              <!-- this -->
+      <div class="skip_yes_suppliesC container-fluid" hidden="">
+                  
+              <div class="container-fluid">
+                                     
+                       <div class="container-fluid">
+    
+            <table  class="cell-border compact" style="width:100%; outline: solid">
+                          <thead>
+                              <tr>
+                                  <th style="outline: thin solid">E1. How many of the following disaster/ emergency response equipment does the barangay own?</th>
+                                  <th style="outline: thin solid">E2. How much is the average cost per unit (in PhP)?</th>
+                                  <th style="outline: thin solid">E3. How much is estimated total cost (in PhP)?</th>
+                                                                
+                              </tr>
+
+                             
+                          </thead>   
+
+<tr style="outline: solid">
+
+
+<td style="vertical-align: top; outline: thin solid" >
+  <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+    <!-- this -->
+    <input name="e_suppliesC_1" type="number"  class="form-control"  placeholder="">
+  </div>
+</td>
+
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="e_suppliesC_2" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="e_suppliesC_3" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+</tr>
+        </table>
+
+            </div>
+
+                  </div>
+
+                         </div><hr><!-- -------END OF DISASTER C------ -->
+
+<br><br>
+              
+             <h5 class="text-left" style="color: "><b>EQUIPMENT</b></h5> 
+             <br>
+
+             <br>
+              <div class="col-sm">
+                      <!-- this -->
+                       <h6 class="text-left">D. Boats/vans/buses (unit)</h6> 
+                       <div class="container">
+                          <div class="row">
+                            <div class="col text-left">
+                              <div class="container">
+                                 <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="E_suppliesD"  data-val="Yes" data-skip="suppliesD" value="Yes">Yes<br>
+                                  <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="E_suppliesD"  data-val="No"  data-skip="suppliesD" value="No">No
+                                   </div> 
+                            </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+            </div>
+
+              <!-- this -->
+      <div class="skip_yes_suppliesD container-fluid" hidden="">
+                  
+              <div class="container-fluid">
+                                     
+                       <div class="container-fluid">
+    
+            <table  class="cell-border compact" style="width:100%; outline: solid">
+                          <thead>
+                              <tr>
+                                  <th style="outline: thin solid">E1. How many of the following disaster/ emergency response equipment does the barangay own?</th>
+                                  <th style="outline: thin solid">E2. How much is the average cost per unit (in PhP)?</th>
+                                  <th style="outline: thin solid">E3. How much is estimated total cost (in PhP)?</th>
+                                                                
+                              </tr>
+
+                             
+                          </thead>   
+
+<tr style="outline: solid">
+
+
+<td style="vertical-align: top; outline: thin solid" >
+  <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+    <!-- this -->
+    <input name="e_supplies1_D" type="number"  class="form-control"  placeholder="">
+  </div>
+</td>
+
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="e_supplies2_D" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="e_supplies3_D" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+</tr>
+        </table>
+
+            </div>
+
+                  </div>
+
+                         </div><hr><!-- -------END OF DISASTER D------ -->
+
+                         <br>
+              <div class="col-sm">
+                      <!-- this -->
+                       <h6 class="text-left">E. Ambulance/ amphibian/ vehicle/ backhoe/ dumptruck/ crawler/ tractor/ scoop loader (unit)</h6> 
+                       <div class="container">
+                          <div class="row">
+                            <div class="col text-left">
+                              <div class="container">
+                                 <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="E_suppliesE"  data-val="Yes" data-skip="suppliesE" value="Yes">Yes<br>
+                                  <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="E_suppliesE"  data-val="No"  data-skip="suppliesE" value="No">No
+                                   </div> 
+                            </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+            </div>
+
+              <!-- this -->
+      <div class="skip_yes_suppliesE container-fluid" hidden="">
+                  
+              <div class="container-fluid">
+                                     
+                       <div class="container-fluid">
+    
+            <table  class="cell-border compact" style="width:100%; outline: solid">
+                          <thead>
+                              <tr>
+                                  <th style="outline: thin solid">E1. How many of the following disaster/ emergency response equipment does the barangay own?</th>
+                                  <th style="outline: thin solid">E2. How much is the average cost per unit (in PhP)?</th>
+                                  <th style="outline: thin solid">E3. How much is estimated total cost (in PhP)?</th>
+                                                                
+                              </tr>
+
+                             
+                          </thead>   
+
+<tr style="outline: solid">
+
+
+<td style="vertical-align: top; outline: thin solid" >
+  <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+    <!-- this -->
+    <input name="e_supplies1_E" type="number"  class="form-control"  placeholder="">
+  </div>
+</td>
+
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="e_supplies2_E" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="e_supplies3_E" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+</tr>
+        </table>
+
+            </div>
+
+                  </div>
+
+                         </div><hr><!-- -------END OF DISASTER E------ -->
+
+                         <br>
+              <div class="col-sm">
+                      <!-- this -->
+                       <h6 class="text-left">F. Siren (piece)</h6> 
+                       <div class="container">
+                          <div class="row">
+                            <div class="col text-left">
+                              <div class="container">
+                                 <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="E_suppliesF"  data-val="Yes" data-skip="suppliesF" value="Yes">Yes<br>
+                                  <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="E_suppliesF"  data-val="No"  data-skip="suppliesF" value="No">No
+                                   </div> 
+                            </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+            </div>
+
+              <!-- this -->
+      <div class="skip_yes_suppliesF container-fluid" hidden="">
+                  
+              <div class="container-fluid">
+                                     
+                       <div class="container-fluid">
+    
+            <table  class="cell-border compact" style="width:100%; outline: solid">
+                          <thead>
+                              <tr>
+                                  <th style="outline: thin solid">E1. How many of the following disaster/ emergency response equipment does the barangay own?</th>
+                                  <th style="outline: thin solid">E2. How much is the average cost per unit (in PhP)?</th>
+                                  <th style="outline: thin solid">E3. How much is estimated total cost (in PhP)?</th>
+                                                                
+                              </tr>
+
+                             
+                          </thead>   
+
+<tr style="outline: solid">
+
+
+<td style="vertical-align: top; outline: thin solid" >
+  <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+    <!-- this -->
+    <input name="e_supplies1_F" type="number"  class="form-control"  placeholder="">
+  </div>
+</td>
+
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="e_supplies2_F" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="e_supplies3_F" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+</tr>
+        </table>
+
+            </div>
+
+                  </div>
+
+                         </div><hr><!-- -------END OF DISASTER F------ -->
+
+                         <br>
+              <div class="col-sm">
+                      <!-- this -->
+                       <h6 class="text-left">G. Megaphone (piece)</h6> 
+                       <div class="container">
+                          <div class="row">
+                            <div class="col text-left">
+                              <div class="container">
+                                 <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="E_suppliesG"  data-val="Yes" data-skip="suppliesG" value="Yes">Yes<br>
+                                  <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="E_suppliesG"  data-val="No"  data-skip="suppliesG" value="No">No
+                                   </div> 
+                            </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+            </div>
+
+              <!-- this -->
+      <div class="skip_yes_suppliesG container-fluid" hidden="">
+                  
+              <div class="container-fluid">
+                                     
+                       <div class="container-fluid">
+    
+            <table  class="cell-border compact" style="width:100%; outline: solid">
+                          <thead>
+                              <tr>
+                                  <th style="outline: thin solid">E1. How many of the following disaster/ emergency response equipment does the barangay own?</th>
+                                  <th style="outline: thin solid">E2. How much is the average cost per unit (in PhP)?</th>
+                                  <th style="outline: thin solid">E3. How much is estimated total cost (in PhP)?</th>
+                                                                
+                              </tr>
+
+                             
+                          </thead>   
+
+<tr style="outline: solid">
+
+
+<td style="vertical-align: top; outline: thin solid" >
+  <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+    <!-- this -->
+    <input name="e_supplies1_G" type="number"  class="form-control"  placeholder="">
+  </div>
+</td>
+
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="e_supplies2_G" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="e_supplies3_G" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+</tr>
+        </table>
+
+            </div>
+
+                  </div>
+
+                         </div><hr><!-- -------END OF DISASTER G------ -->
+
+                         <br>
+              <div class="col-sm">
+                      <!-- this -->
+                       <h6 class="text-left">H. Whistle (piece)</h6> 
+                       <div class="container">
+                          <div class="row">
+                            <div class="col text-left">
+                              <div class="container">
+                                 <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="E_suppliesH"  data-val="Yes" data-skip="suppliesH" value="Yes">Yes<br>
+                                  <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="E_suppliesH"  data-val="No"  data-skip="suppliesH" value="No">No
+                                   </div> 
+                            </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+            </div>
+
+              <!-- this -->
+      <div class="skip_yes_suppliesH container-fluid" hidden="">
+                  
+              <div class="container-fluid">
+                                     
+                       <div class="container-fluid">
+    
+            <table  class="cell-border compact" style="width:100%; outline: solid">
+                          <thead>
+                              <tr>
+                                  <th style="outline: thin solid">E1. How many of the following disaster/ emergency response equipment does the barangay own?</th>
+                                  <th style="outline: thin solid">E2. How much is the average cost per unit (in PhP)?</th>
+                                  <th style="outline: thin solid">E3. How much is estimated total cost (in PhP)?</th>
+                                                                
+                              </tr>
+
+                             
+                          </thead>   
+
+<tr style="outline: solid">
+
+
+<td style="vertical-align: top; outline: thin solid" >
+  <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+    <!-- this -->
+    <input name="e_supplies1_H" type="number"  class="form-control"  placeholder="">
+  </div>
+</td>
+
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="e_supplies2_H" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="e_supplies3_H" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+</tr>
+        </table>
+
+            </div>
+
+                  </div>
+
+                         </div><hr><!-- -------END OF DISASTER H------ -->
+
+                         <br>
+              <div class="col-sm">
+                      <!-- this -->
+                       <h6 class="text-left">I. two-way radio and other communication equipment (including satellite phone) (piece)</h6> 
+                       <div class="container">
+                          <div class="row">
+                            <div class="col text-left">
+                              <div class="container">
+                                 <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="E_suppliesI"  data-val="Yes" data-skip="suppliesI" value="Yes">Yes<br>
+                                  <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="E_suppliesI"  data-val="No"  data-skip="suppliesI" value="No">No
+                                   </div> 
+                            </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+            </div>
+
+              <!-- this -->
+      <div class="skip_yes_suppliesI container-fluid" hidden="">
+                  
+              <div class="container-fluid">
+                                     
+                       <div class="container-fluid">
+    
+            <table  class="cell-border compact" style="width:100%; outline: solid">
+                          <thead>
+                              <tr>
+                                  <th style="outline: thin solid">E1. How many of the following disaster/ emergency response equipment does the barangay own?</th>
+                                  <th style="outline: thin solid">E2. How much is the average cost per unit (in PhP)?</th>
+                                  <th style="outline: thin solid">E3. How much is estimated total cost (in PhP)?</th>
+                                                                
+                              </tr>
+
+                             
+                          </thead>   
+
+<tr style="outline: solid">
+
+
+<td style="vertical-align: top; outline: thin solid" >
+  <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+    <!-- this -->
+    <input name="e_supplies1_I" type="number"  class="form-control"  placeholder="">
+  </div>
+</td>
+
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="e_supplies2_I" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="e_supplies3_I" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+</tr>
+        </table>
+
+            </div>
+
+                  </div>
+
+                         </div><hr><!-- -------END OF DISASTER I------ -->
+
+                         <br>
+              <div class="col-sm">
+                      <!-- this -->
+                       <h6 class="text-left">J. GPS/ GIS device, drone (piece)</h6> 
+                       <div class="container">
+                          <div class="row">
+                            <div class="col text-left">
+                              <div class="container">
+                                 <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="E_suppliesJ"  data-val="Yes" data-skip="suppliesJ" value="Yes">Yes<br>
+                                  <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="E_suppliesJ"  data-val="No"  data-skip="suppliesJ" value="No">No
+                                   </div> 
+                            </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+            </div>
+
+              <!-- this -->
+      <div class="skip_yes_suppliesJ container-fluid" hidden="">
+                  
+              <div class="container-fluid">
+                                     
+                       <div class="container-fluid">
+    
+            <table  class="cell-border compact" style="width:100%; outline: solid">
+                          <thead>
+                              <tr>
+                                  <th style="outline: thin solid">E1. How many of the following disaster/ emergency response equipment does the barangay own?</th>
+                                  <th style="outline: thin solid">E2. How much is the average cost per unit (in PhP)?</th>
+                                  <th style="outline: thin solid">E3. How much is estimated total cost (in PhP)?</th>
+                                                                
+                              </tr>
+
+                             
+                          </thead>   
+
+<tr style="outline: solid">
+
+
+<td style="vertical-align: top; outline: thin solid" >
+  <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+    <!-- this -->
+    <input name="e_supplies1_J" type="number"  class="form-control"  placeholder="">
+  </div>
+</td>
+
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="e_supplies2_J" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="e_supplies3_J" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+</tr>
+        </table>
+
+            </div>
+
+                  </div>
+
+                         </div><hr><!-- -------END OF DISASTER J------ -->
+
+                         <br>
+              <div class="col-sm">
+                      <!-- this -->
+                       <h6 class="text-left">K. Ropes and throw bags (piece)</h6> 
+                       <div class="container">
+                          <div class="row">
+                            <div class="col text-left">
+                              <div class="container">
+                                 <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="E_suppliesK"  data-val="Yes" data-skip="suppliesK" value="Yes">Yes<br>
+                                  <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="E_suppliesK"  data-val="No"  data-skip="suppliesK" value="No">No
+                                   </div> 
+                            </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+            </div>
+
+              <!-- this -->
+      <div class="skip_yes_suppliesK container-fluid" hidden="">
+                  
+              <div class="container-fluid">
+                                     
+                       <div class="container-fluid">
+    
+            <table  class="cell-border compact" style="width:100%; outline: solid">
+                          <thead>
+                              <tr>
+                                  <th style="outline: thin solid">E1. How many of the following disaster/ emergency response equipment does the barangay own?</th>
+                                  <th style="outline: thin solid">E2. How much is the average cost per unit (in PhP)?</th>
+                                  <th style="outline: thin solid">E3. How much is estimated total cost (in PhP)?</th>
+                                                                
+                              </tr>
+
+                             
+                          </thead>   
+
+<tr style="outline: solid">
+
+
+<td style="vertical-align: top; outline: thin solid" >
+  <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+    <!-- this -->
+    <input name="e_supplies1_K" type="number"  class="form-control"  placeholder="">
+  </div>
+</td>
+
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="e_supplies2_K" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="e_supplies3_K" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+</tr>
+        </table>
+
+            </div>
+
+                  </div>
+
+                         </div><hr><!-- -------END OF DISASTER K------ -->
+                         <br>
+              <div class="col-sm">
+                      <!-- this -->
+                       <h6 class="text-left">L. Searchlights (piece)</h6> 
+                       <div class="container">
+                          <div class="row">
+                            <div class="col text-left">
+                              <div class="container">
+                                 <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="E_suppliesL"  data-val="Yes" data-skip="suppliesL" value="Yes">Yes<br>
+                                  <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="E_suppliesL"  data-val="No"  data-skip="suppliesL" value="No">No
+                                   </div> 
+                            </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+            </div>
+
+              <!-- this -->
+      <div class="skip_yes_suppliesL container-fluid" hidden="">
+                  
+              <div class="container-fluid">
+                                     
+                       <div class="container-fluid">
+    
+            <table  class="cell-border compact" style="width:100%; outline: solid">
+                          <thead>
+                              <tr>
+                                  <th style="outline: thin solid">E1. How many of the following disaster/ emergency response equipment does the barangay own?</th>
+                                  <th style="outline: thin solid">E2. How much is the average cost per unit (in PhP)?</th>
+                                  <th style="outline: thin solid">E3. How much is estimated total cost (in PhP)?</th>
+                                                                
+                              </tr>
+
+                             
+                          </thead>   
+
+<tr style="outline: solid">
+
+
+<td style="vertical-align: top; outline: thin solid" >
+  <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+    <!-- this -->
+    <input name="e_supplies1_L" type="number"  class="form-control"  placeholder="">
+  </div>
+</td>
+
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="e_supplies2_L" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="e_supplies3_L" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+</tr>
+        </table>
+
+            </div>
+
+                  </div>
+
+                         </div><hr><!-- -------END OF DISASTER L------ -->
+                         <br>
+              <div class="col-sm">
+                      <!-- this -->
+                       <h6 class="text-left">M. Protective gear (helmet, life vest) (piece)</h6> 
+                       <div class="container">
+                          <div class="row">
+                            <div class="col text-left">
+                              <div class="container">
+                                 <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="E_suppliesM"  data-val="Yes" data-skip="suppliesM" value="Yes">Yes<br>
+                                  <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="E_suppliesM"  data-val="No"  data-skip="suppliesM" value="No">No
+                                   </div> 
+                            </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+            </div>
+
+              <!-- this -->
+      <div class="skip_yes_suppliesM container-fluid" hidden="">
+                  
+              <div class="container-fluid">
+                                     
+                       <div class="container-fluid">
+    
+            <table  class="cell-border compact" style="width:100%; outline: solid">
+                          <thead>
+                              <tr>
+                                  <th style="outline: thin solid">E1. How many of the following disaster/ emergency response equipment does the barangay own?</th>
+                                  <th style="outline: thin solid">E2. How much is the average cost per unit (in PhP)?</th>
+                                  <th style="outline: thin solid">E3. How much is estimated total cost (in PhP)?</th>
+                                                                
+                              </tr>
+
+                             
+                          </thead>   
+
+<tr style="outline: solid">
+
+
+<td style="vertical-align: top; outline: thin solid" >
+  <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+    <!-- this -->
+    <input name="e_supplies1_M" type="number"  class="form-control"  placeholder="">
+  </div>
+</td>
+
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="e_supplies2_M" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="e_supplies3_M" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+</tr>
+        </table>
+
+            </div>
+
+                  </div>
+
+                         </div><hr><!-- -------END OF DISASTER M------ -->
+
+                         <br>
+              <div class="col-sm">
+                      <!-- this -->
+                       <h6 class="text-left">N. Medical grade PPE sets (face mask, face shield, gloves, surgical/ isolation gown, etc.) (piece)</h6> 
+                       <div class="container">
+                          <div class="row">
+                            <div class="col text-left">
+                              <div class="container">
+                                 <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="E_suppliesN"  data-val="Yes" data-skip="suppliesN" value="Yes">Yes<br>
+                                  <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="E_suppliesN"  data-val="No"  data-skip="suppliesN" value="No">No
+                                   </div> 
+                            </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+            </div>
+
+              <!-- this -->
+      <div class="skip_yes_suppliesN container-fluid" hidden="">
+                  
+              <div class="container-fluid">
+                                     
+                       <div class="container-fluid">
+    
+            <table  class="cell-border compact" style="width:100%; outline: solid">
+                          <thead>
+                              <tr>
+                                  <th style="outline: thin solid">E1. How many of the following disaster/ emergency response equipment does the barangay own?</th>
+                                  <th style="outline: thin solid">E2. How much is the average cost per unit (in PhP)?</th>
+                                  <th style="outline: thin solid">E3. How much is estimated total cost (in PhP)?</th>
+                                                                
+                              </tr>
+
+                             
+                          </thead>   
+
+<tr style="outline: solid">
+
+
+<td style="vertical-align: top; outline: thin solid" >
+  <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+    <!-- this -->
+    <input name="e_supplies1_N" type="number"  class="form-control"  placeholder="">
+  </div>
+</td>
+
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="e_supplies2_N" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="e_supplies3_N" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+</tr>
+        </table>
+
+            </div>
+
+                  </div>
+
+                         </div><hr><!-- -------END OF DISASTER N------ -->
+
+                         <br>
+              <div class="col-sm">
+                      <!-- this -->
+                       <h6 class="text-left">O. Reflectorized vest (piece)</h6> 
+                       <div class="container">
+                          <div class="row">
+                            <div class="col text-left">
+                              <div class="container">
+                                 <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="E_suppliesO"  data-val="Yes" data-skip="suppliesO" value="Yes">Yes<br>
+                                  <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="E_suppliesO"  data-val="No"  data-skip="suppliesO" value="No">No
+                                   </div> 
+                            </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+            </div>
+
+              <!-- this -->
+      <div class="skip_yes_suppliesO container-fluid" hidden="">
+                  
+              <div class="container-fluid">
+                                     
+                       <div class="container-fluid">
+    
+            <table  class="cell-border compact" style="width:100%; outline: solid">
+                          <thead>
+                              <tr>
+                                  <th style="outline: thin solid">E1. How many of the following disaster/ emergency response equipment does the barangay own?</th>
+                                  <th style="outline: thin solid">E2. How much is the average cost per unit (in PhP)?</th>
+                                  <th style="outline: thin solid">E3. How much is estimated total cost (in PhP)?</th>
+                                                                
+                              </tr>
+
+                             
+                          </thead>   
+
+<tr style="outline: solid">
+
+
+<td style="vertical-align: top; outline: thin solid" >
+  <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+    <!-- this -->
+    <input name="e_supplies1_O" type="number"  class="form-control"  placeholder="">
+  </div>
+</td>
+
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="e_supplies2_O" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="e_supplies3_O" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+</tr>
+        </table>
+
+            </div>
+
+                  </div>
+
+                         </div><hr><!-- -------END OF DISASTER O------ -->
+
+                         <br>
+              <div class="col-sm">
+                      <!-- this -->
+                       <h6 class="text-left">P. Extrication kit (spine board, shovel, jack hammer, or alternative digging device) (piece)</h6> 
+                       <div class="container">
+                          <div class="row">
+                            <div class="col text-left">
+                              <div class="container">
+                                 <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="E_suppliesP"  data-val="Yes" data-skip="suppliesP" value="Yes">Yes<br>
+                                  <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="E_suppliesP"  data-val="No"  data-skip="suppliesP" value="No">No
+                                   </div> 
+                            </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+            </div>
+
+              <!-- this -->
+      <div class="skip_yes_suppliesP container-fluid" hidden="">
+                  
+              <div class="container-fluid">
+                                     
+                       <div class="container-fluid">
+    
+            <table  class="cell-border compact" style="width:100%; outline: solid">
+                          <thead>
+                              <tr>
+                                  <th style="outline: thin solid">E1. How many of the following disaster/ emergency response equipment does the barangay own?</th>
+                                  <th style="outline: thin solid">E2. How much is the average cost per unit (in PhP)?</th>
+                                  <th style="outline: thin solid">E3. How much is estimated total cost (in PhP)?</th>
+                                                                
+                              </tr>
+
+                             
+                          </thead>   
+
+<tr style="outline: solid">
+
+
+<td style="vertical-align: top; outline: thin solid" >
+  <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+    <!-- this -->
+    <input name="e_supplies1_P" type="number"  class="form-control"  placeholder="">
+  </div>
+</td>
+
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="e_supplies2_P" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="e_supplies3_P" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+</tr>
+        </table>
+
+            </div>
+
+                  </div>
+
+                         </div><hr><!-- -------END OF DISASTER P------ -->
+
+                         <br>
+              <div class="col-sm">
+                      <!-- this -->
+                       <h6 class="text-left">Q. Chainsaw, bolo, shovel, water pump (piece)</h6> 
+                       <div class="container">
+                          <div class="row">
+                            <div class="col text-left">
+                              <div class="container">
+                                 <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="E_suppliesQ"  data-val="Yes" data-skip="suppliesQ" value="Yes">Yes<br>
+                                  <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="E_suppliesQ"  data-val="No"  data-skip="suppliesQ" value="No">No
+                                   </div> 
+                            </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+            </div>
+
+              <!-- this -->
+      <div class="skip_yes_suppliesQ container-fluid" hidden="">
+                  
+              <div class="container-fluid">
+                                     
+                       <div class="container-fluid">
+    
+            <table  class="cell-border compact" style="width:100%; outline: solid">
+                          <thead>
+                              <tr>
+                                  <th style="outline: thin solid">E1. How many of the following disaster/ emergency response equipment does the barangay own?</th>
+                                  <th style="outline: thin solid">E2. How much is the average cost per unit (in PhP)?</th>
+                                  <th style="outline: thin solid">E3. How much is estimated total cost (in PhP)?</th>
+                                                                
+                              </tr>
+
+                             
+                          </thead>   
+
+<tr style="outline: solid">
+
+
+<td style="vertical-align: top; outline: thin solid" >
+  <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+    <!-- this -->
+    <input name="e_supplies1_Q" type="number"  class="form-control"  placeholder="">
+  </div>
+</td>
+
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="e_supplies2_Q" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="e_supplies3_Q" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+</tr>
+        </table>
+
+            </div>
+
+                  </div>
+
+                         </div><hr><!-- -------END OF DISASTER Q------ -->
+
+                         <br>
+              <div class="col-sm">
+                      <!-- this -->
+                       <h6 class="text-left">R. Ladder (piece)</h6> 
+                       <div class="container">
+                          <div class="row">
+                            <div class="col text-left">
+                              <div class="container">
+                                 <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="E_suppliesR"  data-val="Yes" data-skip="suppliesR" value="Yes">Yes<br>
+                                  <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="E_suppliesR"  data-val="No"  data-skip="suppliesR" value="No">No
+                                   </div> 
+                            </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+            </div>
+
+              <!-- this -->
+      <div class="skip_yes_suppliesR container-fluid" hidden="">
+                  
+              <div class="container-fluid">
+                                     
+                       <div class="container-fluid">
+    
+            <table  class="cell-border compact" style="width:100%; outline: solid">
+                          <thead>
+                              <tr>
+                                  <th style="outline: thin solid">E1. How many of the following disaster/ emergency response equipment does the barangay own?</th>
+                                  <th style="outline: thin solid">E2. How much is the average cost per unit (in PhP)?</th>
+                                  <th style="outline: thin solid">E3. How much is estimated total cost (in PhP)?</th>
+                                                                
+                              </tr>
+
+                             
+                          </thead>   
+
+<tr style="outline: solid">
+
+
+<td style="vertical-align: top; outline: thin solid" >
+  <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+    <!-- this -->
+    <input name="e_supplies1_R" type="number"  class="form-control"  placeholder="">
+  </div>
+</td>
+
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="e_supplies2_R" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="e_supplies3_R" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+</tr>
+        </table>
+
+            </div>
+
+                  </div>
+
+                         </div><hr><!-- -------END OF DISASTER R------ -->
+
+                         <br>
+              <div class="col-sm">
+                      <!-- this -->
+                       <h6 class="text-left">S. Caution tape (piece)</h6> 
+                       <div class="container">
+                          <div class="row">
+                            <div class="col text-left">
+                              <div class="container">
+                                 <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="E_suppliesS"  data-val="Yes" data-skip="suppliesS" value="Yes">Yes<br>
+                                  <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="E_suppliesS"  data-val="No"  data-skip="suppliesS" value="No">No
+                                   </div> 
+                            </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+            </div>
+
+              <!-- this -->
+      <div class="skip_yes_suppliesS container-fluid" hidden="">
+                  
+              <div class="container-fluid">
+                                     
+                       <div class="container-fluid">
+    
+            <table  class="cell-border compact" style="width:100%; outline: solid">
+                          <thead>
+                              <tr>
+                                  <th style="outline: thin solid">E1. How many of the following disaster/ emergency response equipment does the barangay own?</th>
+                                  <th style="outline: thin solid">E2. How much is the average cost per unit (in PhP)?</th>
+                                  <th style="outline: thin solid">E3. How much is estimated total cost (in PhP)?</th>
+                                                                
+                              </tr>
+
+                             
+                          </thead>   
+
+<tr style="outline: solid">
+
+
+<td style="vertical-align: top; outline: thin solid" >
+  <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+    <!-- this -->
+    <input name="e_supplies1_S" type="number"  class="form-control"  placeholder="">
+  </div>
+</td>
+
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="e_supplies2_S" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="e_supplies3_S" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+</tr>
+        </table>
+
+            </div>
+
+                  </div>
+
+                         </div><hr><!-- -------END OF DISASTER S------ -->
+
+                         <br>
+              <div class="col-sm">
+                      <!-- this -->
+                       <h6 class="text-left">T. K9 unit (piece)</h6> 
+                       <div class="container">
+                          <div class="row">
+                            <div class="col text-left">
+                              <div class="container">
+                                 <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="E_suppliesT"  data-val="Yes" data-skip="suppliesT" value="Yes">Yes<br>
+                                  <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="E_suppliesT"  data-val="No"  data-skip="suppliesT" value="No">No
+                                   </div> 
+                            </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+            </div>
+
+              <!-- this -->
+      <div class="skip_yes_suppliesT container-fluid" hidden="">
+                  
+              <div class="container-fluid">
+                                     
+                       <div class="container-fluid">
+    
+            <table  class="cell-border compact" style="width:100%; outline: solid">
+                          <thead>
+                              <tr>
+                                  <th style="outline: thin solid">E1. How many of the following disaster/ emergency response equipment does the barangay own?</th>
+                                  <th style="outline: thin solid">E2. How much is the average cost per unit (in PhP)?</th>
+                                  <th style="outline: thin solid">E3. How much is estimated total cost (in PhP)?</th>
+                                                                
+                              </tr>
+
+                             
+                          </thead>   
+
+<tr style="outline: solid">
+
+
+<td style="vertical-align: top; outline: thin solid" >
+  <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+    <!-- this -->
+    <input name="e_supplies1_T" type="number"  class="form-control"  placeholder="">
+  </div>
+</td>
+
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="e_supplies2_T" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="e_supplies3_T" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+</tr>
+        </table>
+
+            </div>
+
+                  </div>
+
+                         </div><hr><!-- -------END OF DISASTER T------ -->
+
+                         <br>
+              <div class="col-sm">
+                      <!-- this -->
+                       <h6 class="text-left">U. Barricade (piece)</h6> 
+                       <div class="container">
+                          <div class="row">
+                            <div class="col text-left">
+                              <div class="container">
+                                 <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="E_suppliesU"  data-val="Yes" data-skip="suppliesU" value="Yes">Yes<br>
+                                  <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="E_suppliesU"  data-val="No"  data-skip="suppliesU" value="No">No
+                                   </div> 
+                            </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+            </div>
+
+              <!-- this -->
+      <div class="skip_yes_suppliesU container-fluid" hidden="">
+                  
+              <div class="container-fluid">
+                                     
+                       <div class="container-fluid">
+    
+            <table  class="cell-border compact" style="width:100%; outline: solid">
+                          <thead>
+                              <tr>
+                                  <th style="outline: thin solid">E1. How many of the following disaster/ emergency response equipment does the barangay own?</th>
+                                  <th style="outline: thin solid">E2. How much is the average cost per unit (in PhP)?</th>
+                                  <th style="outline: thin solid">E3. How much is estimated total cost (in PhP)?</th>
+                                                                
+                              </tr>
+
+                             
+                          </thead>   
+
+<tr style="outline: solid">
+
+
+<td style="vertical-align: top; outline: thin solid" >
+  <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+    <!-- this -->
+    <input name="e_supplies1_U" type="number"  class="form-control"  placeholder="">
+  </div>
+</td>
+
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="e_supplies2_U" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="e_supplies3_U" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+</tr>
+        </table>
+
+            </div>
+
+                  </div>
+
+                         </div><hr><!-- -------END OF DISASTER U------ -->
+
+                         <br>
+              <div class="col-sm">
+                      <!-- this -->
+                       <h6 class="text-left">V. Tent, divider (piece)</h6> 
+                       <div class="container">
+                          <div class="row">
+                            <div class="col text-left">
+                              <div class="container">
+                                 <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="E_suppliesV"  data-val="Yes" data-skip="suppliesV" value="Yes">Yes<br>
+                                  <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="E_suppliesV"  data-val="No"  data-skip="suppliesV" value="No">No
+                                   </div> 
+                            </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+            </div>
+
+              <!-- this -->
+      <div class="skip_yes_suppliesV container-fluid" hidden="">
+                  
+              <div class="container-fluid">
+                                     
+                       <div class="container-fluid">
+    
+            <table  class="cell-border compact" style="width:100%; outline: solid">
+                          <thead>
+                              <tr>
+                                  <th style="outline: thin solid">E1. How many of the following disaster/ emergency response equipment does the barangay own?</th>
+                                  <th style="outline: thin solid">E2. How much is the average cost per unit (in PhP)?</th>
+                                  <th style="outline: thin solid">E3. How much is estimated total cost (in PhP)?</th>
+                                                                
+                              </tr>
+
+                             
+                          </thead>   
+
+<tr style="outline: solid">
+
+
+<td style="vertical-align: top; outline: thin solid" >
+  <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+    <!-- this -->
+    <input name="e_supplies1_V" type="number"  class="form-control"  placeholder="">
+  </div>
+</td>
+
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="e_supplies2_V" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="e_supplies3_V" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+</tr>
+        </table>
+
+            </div>
+
+                  </div>
+
+                         </div><hr><!-- -------END OF DISASTER V------ -->
+                         <br><br>
+                         <h5 class="text-left" style="color: "><b>STOCKPILE</b></h5>
+
+                         <br>
+
+                         <!-- ----START---- -->
+                         <br>
+              <div class="col-sm">
+                      <!-- this -->
+                       <h6 class="text-left">W. Basic medicines (piece)</h6> 
+                       <div class="container">
+                          <div class="row">
+                            <div class="col text-left">
+                              <div class="container">
+                                 <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="E_suppliesW"  data-val="Yes" data-skip="suppliesW" value="Yes">Yes<br>
+                                  <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="E_suppliesW"  data-val="No"  data-skip="suppliesW" value="No">No
+                                   </div> 
+                            </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+            </div>
+
+              <!-- this -->
+      <div class="skip_yes_suppliesW container-fluid" hidden="">
+                  
+              <div class="container-fluid">
+                                     
+                       <div class="container-fluid">
+    
+            <table  class="cell-border compact" style="width:100%; outline: solid">
+                          <thead>
+                              <tr>
+                                  <th style="outline: thin solid">E1. How many of the following disaster/ emergency response equipment does the barangay own?</th>
+                                  <th style="outline: thin solid">E2. How much is the average cost per unit (in PhP)?</th>
+                                  <th style="outline: thin solid">E3. How much is estimated total cost (in PhP)?</th>
+                                                                
+                              </tr>
+
+                             
+                          </thead>   
+
+<tr style="outline: solid">
+
+
+<td style="vertical-align: top; outline: thin solid" >
+  <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+    <!-- this -->
+    <input name="e_supplies1_W" type="number"  class="form-control"  placeholder="">
+  </div>
+</td>
+
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="e_supplies2_W" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="e_supplies3_W" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+</tr>
+        </table>
+
+            </div>
+
+                  </div>
+
+                         </div><hr><!-- -------END OF DISASTER W------ -->
+
+                         <br>
+              <div class="col-sm">
+                      <!-- this -->
+                       <h6 class="text-left">X. Gasoline (liter)</h6> 
+                       <div class="container">
+                          <div class="row">
+                            <div class="col text-left">
+                              <div class="container">
+                                 <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="E_suppliesX"  data-val="Yes" data-skip="suppliesX" value="Yes">Yes<br>
+                                  <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="E_suppliesX"  data-val="No"  data-skip="suppliesX" value="No">No
+                                   </div> 
+                            </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+            </div>
+
+              <!-- this -->
+      <div class="skip_yes_suppliesX container-fluid" hidden="">
+                  
+              <div class="container-fluid">
+                                     
+                       <div class="container-fluid">
+    
+            <table  class="cell-border compact" style="width:100%; outline: solid">
+                          <thead>
+                              <tr>
+                                  <th style="outline: thin solid">E1. How many of the following disaster/ emergency response equipment does the barangay own?</th>
+                                  <th style="outline: thin solid">E2. How much is the average cost per unit (in PhP)?</th>
+                                  <th style="outline: thin solid">E3. How much is estimated total cost (in PhP)?</th>
+                                                                
+                              </tr>
+
+                             
+                          </thead>   
+
+<tr style="outline: solid">
+
+
+<td style="vertical-align: top; outline: thin solid" >
+  <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+    <!-- this -->
+    <input name="e_supplies1_X" type="number"  class="form-control"  placeholder="">
+  </div>
+</td>
+
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="e_supplies2_X" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="e_supplies3_X" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+</tr>
+        </table>
+
+            </div>
+
+                  </div>
+
+                         </div><hr><!-- -------END OF DISASTER X------ -->
+
+                         <br>
+              <div class="col-sm">
+                      <!-- this -->
+                       <h6 class="text-left">Y. Portable generator, solar powered generator, flashlights, and extra batteries</h6> 
+                       <div class="container">
+                          <div class="row">
+                            <div class="col text-left">
+                              <div class="container">
+                                 <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="E_suppliesY"  data-val="Yes" data-skip="suppliesY" value="Yes">Yes<br>
+                                  <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="E_suppliesY"  data-val="No"  data-skip="suppliesY" value="No">No
+                                   </div> 
+                            </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+            </div>
+
+              <!-- this -->
+      <div class="skip_yes_suppliesY container-fluid" hidden="">
+                  
+              <div class="container-fluid">
+                                     
+                       <div class="container-fluid">
+    
+            <table  class="cell-border compact" style="width:100%; outline: solid">
+                          <thead>
+                              <tr>
+                                  <th style="outline: thin solid">E1. How many of the following disaster/ emergency response equipment does the barangay own?</th>
+                                  <th style="outline: thin solid">E2. How much is the average cost per unit (in PhP)?</th>
+                                  <th style="outline: thin solid">E3. How much is estimated total cost (in PhP)?</th>
+                                                                
+                              </tr>
+
+                             
+                          </thead>   
+
+<tr style="outline: solid">
+
+
+<td style="vertical-align: top; outline: thin solid" >
+  <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+    <!-- this -->
+    <input name="e_supplies1_Y" type="number"  class="form-control"  placeholder="">
+  </div>
+</td>
+
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="e_supplies2_Y" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="e_supplies3_Y" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+</tr>
+        </table>
+
+            </div>
+
+                  </div>
+
+                         </div><hr><!-- -------END OF DISASTER Y------ -->
+
+                         <br>
+              <div class="col-sm">
+                      <!-- this -->
+                       <h6 class="text-left">Z. Potable water (liter)</h6> 
+                       <div class="container">
+                          <div class="row">
+                            <div class="col text-left">
+                              <div class="container">
+                                 <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="E_suppliesZ"  data-val="Yes" data-skip="suppliesZ" value="Yes">Yes<br>
+                                  <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="E_suppliesZ"  data-val="No"  data-skip="suppliesZ" value="No">No
+                                   </div> 
+                            </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+            </div>
+
+              <!-- this -->
+      <div class="skip_yes_suppliesZ container-fluid" hidden="">
+                  
+              <div class="container-fluid">
+                                     
+                       <div class="container-fluid">
+    
+            <table  class="cell-border compact" style="width:100%; outline: solid">
+                          <thead>
+                              <tr>
+                                  <th style="outline: thin solid">E1. How many of the following disaster/ emergency response equipment does the barangay own?</th>
+                                  <th style="outline: thin solid">E2. How much is the average cost per unit (in PhP)?</th>
+                                  <th style="outline: thin solid">E3. How much is estimated total cost (in PhP)?</th>
+                                                                
+                              </tr>
+
+                             
+                          </thead>   
+
+<tr style="outline: solid">
+
+
+<td style="vertical-align: top; outline: thin solid" >
+  <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+    <!-- this -->
+    <input name="e_supplies1_Z" type="number"  class="form-control"  placeholder="">
+  </div>
+</td>
+
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="e_supplies2_Z" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="e_supplies3_Z" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+</tr>
+        </table>
+
+            </div>
+
+                  </div>
+
+                         </div><hr><!-- -------END OF DISASTER Z------ -->
+
+                         <br>
+              <div class="col-sm">
+                      <!-- this -->
+                       <h6 class="text-left">AA. Food packs (rice, canned goods, noodles, ready-to-eat meals) (piece)</h6> 
+                       <div class="container">
+                          <div class="row">
+                            <div class="col text-left">
+                              <div class="container">
+                                 <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="E_suppliesAA"  data-val="Yes" data-skip="suppliesAA" value="Yes">Yes<br>
+                                  <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="E_suppliesAA"  data-val="No"  data-skip="suppliesAA" value="No">No
+                                   </div> 
+                            </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+            </div>
+
+              <!-- this -->
+      <div class="skip_yes_suppliesAA container-fluid" hidden="">
+                  
+              <div class="container-fluid">
+                                     
+                       <div class="container-fluid">
+    
+            <table  class="cell-border compact" style="width:100%; outline: solid">
+                          <thead>
+                              <tr>
+                                  <th style="outline: thin solid">E1. How many of the following disaster/ emergency response equipment does the barangay own?</th>
+                                  <th style="outline: thin solid">E2. How much is the average cost per unit (in PhP)?</th>
+                                  <th style="outline: thin solid">E3. How much is estimated total cost (in PhP)?</th>
+                                                                
+                              </tr>
+
+                             
+                          </thead>   
+
+<tr style="outline: solid">
+
+
+<td style="vertical-align: top; outline: thin solid" >
+  <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+    <!-- this -->
+    <input name="e_supplies1_AA" type="number"  class="form-control"  placeholder="">
+  </div>
+</td>
+
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="e_supplies2_AA" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="e_supplies3_AA" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+</tr>
+        </table>
+
+            </div>
+
+                  </div>
+
+                         </div><hr><!-- -------END OF DISASTER AA------ -->
+
+                         <br>
+              <div class="col-sm">
+                      <!-- this -->
+                       <h6 class="text-left">BB. Sanitation supplies (alcohol, disinfectant, etc.) (piece)</h6> 
+                       <div class="container">
+                          <div class="row">
+                            <div class="col text-left">
+                              <div class="container">
+                                 <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="E_suppliesBB"  data-val="Yes" data-skip="suppliesBB" value="Yes">Yes<br>
+                                  <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="E_suppliesBB"  data-val="No"  data-skip="suppliesBB" value="No">No
+                                   </div> 
+                            </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+            </div>
+
+              <!-- this -->
+      <div class="skip_yes_suppliesBB container-fluid" hidden="">
+                  
+              <div class="container-fluid">
+                                     
+                       <div class="container-fluid">
+    
+            <table  class="cell-border compact" style="width:100%; outline: solid">
+                          <thead>
+                              <tr>
+                                  <th style="outline: thin solid">E1. How many of the following disaster/ emergency response equipment does the barangay own?</th>
+                                  <th style="outline: thin solid">E2. How much is the average cost per unit (in PhP)?</th>
+                                  <th style="outline: thin solid">E3. How much is estimated total cost (in PhP)?</th>
+                                                                
+                              </tr>
+
+                             
+                          </thead>   
+
+<tr style="outline: solid">
+
+
+<td style="vertical-align: top; outline: thin solid" >
+  <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+    <!-- this -->
+    <input name="e_supplies1_BB" type="number"  class="form-control"  placeholder="">
+  </div>
+</td>
+
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="e_supplies2_BB" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="e_supplies3_BB" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+</tr>
+        </table>
+
+            </div>
+
+                  </div>
+
+                         </div><hr><!-- -------END OF DISASTER BB------ -->
+
+                         <br>
+              <div class="col-sm">
+                      <!-- this -->
+                       <h6 class="text-left">CC. Hygiene kits (soap, toothbrush, toothpaste, etc.) (piece)</h6> 
+                       <div class="container">
+                          <div class="row">
+                            <div class="col text-left">
+                              <div class="container">
+                                 <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="E_suppliesCC"  data-val="Yes" data-skip="suppliesCC" value="Yes">Yes<br>
+                                  <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="E_suppliesCC"  data-val="No"  data-skip="suppliesCC" value="No">No
+                                   </div> 
+                            </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+            </div>
+
+              <!-- this -->
+      <div class="skip_yes_suppliesCC container-fluid" hidden="">
+                  
+              <div class="container-fluid">
+                                     
+                       <div class="container-fluid">
+    
+            <table  class="cell-border compact" style="width:100%; outline: solid">
+                          <thead>
+                              <tr>
+                                  <th style="outline: thin solid">E1. How many of the following disaster/ emergency response equipment does the barangay own?</th>
+                                  <th style="outline: thin solid">E2. How much is the average cost per unit (in PhP)?</th>
+                                  <th style="outline: thin solid">E3. How much is estimated total cost (in PhP)?</th>
+                                                                
+                              </tr>
+
+                             
+                          </thead>   
+
+<tr style="outline: solid">
+
+
+<td style="vertical-align: top; outline: thin solid" >
+  <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+    <!-- this -->
+    <input name="e_supplies1_CC" type="number"  class="form-control"  placeholder="">
+  </div>
+</td>
+
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="e_supplies2_CC" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="e_supplies3_CC" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+</tr>
+        </table>
+
+            </div>
+
+                  </div>
+
+                         </div><hr><!-- -------END OF DISASTER CC------ -->
+
+                         <br>
+              <div class="col-sm">
+                      <!-- this -->
+                       <h6 class="text-left">DD. Others, Specify</h6> 
+                       <div class="container">
+                          <div class="row">
+                            <div class="col text-left">
+                              <div class="container">
+                                 <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="E_suppliesDD"  data-val="Yes" data-skip="suppliesDD" value="Yes">Yes<br>
+                                  <!-- this name -->
+                                <input class="form-check-input HF" type="radio" name="E_suppliesDD"  data-val="No"  data-skip="suppliesDD" value="No">No
+                                   </div> 
+                            </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+            </div>
+
+              <!-- this -->
+      <div class="skip_yes_suppliesDD container-fluid" hidden="">
+                  
+              <div class="container-fluid">
+
+  <div class="form-group container text-left">
+    <label for="" class="text-left"><b>Please Specify:</b></label>
+    <!-- this -->
+    <input name="suppliesDD_Other" type="text" class="form-control"   placeholder="">
+  </div>
+                                     
+                       <div class="container-fluid">
+    
+
+
+            <table  class="cell-border compact" style="width:100%; outline: solid">
+                          <thead>
+                              <tr>
+                                  <th style="outline: thin solid">E1. How many of the following disaster/ emergency response equipment does the barangay own?</th>
+                                  <th style="outline: thin solid">E2. How much is the average cost per unit (in PhP)?</th>
+                                  <th style="outline: thin solid">E3. How much is estimated total cost (in PhP)?</th>
+                                                                
+                              </tr>
+
+                             
+                          </thead>   
+
+<tr style="outline: solid">
+
+
+<td style="vertical-align: top; outline: thin solid" >
+  <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+    <!-- this -->
+    <input name="e_supplies1_DD" type="number"  class="form-control"  placeholder="">
+  </div>
+</td>
+
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="e_supplies2_DD" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="e_supplies3_DD" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+</tr>
+        </table>
+
+            </div>
+
+                  </div>
+
+                         </div><hr><!-- -------END OF DISASTER DD------ -->
+
+<br><br>
+<i style="color: green" class="">Now, I would like to talk about the budget, revenue and expenditure in the Barangay.</i>
+<br><br><br>
+
+<h5 class="text-left" style="color: "><b>F. BUDGET, REVENUE & EXPENDITURE</b></h5><br><br>
+
+<!-- ----START OF F1--- -->
+<h5 class="text-left">I. Year 1 (2018)</h5>
+<br>
+
+<table  class="cell-border compact" style="width:100%; outline: solid">
+                          <thead>
+                              <tr>
+                                  <th style="outline: thin solid">F1. How much was the budget allocated for the barangay LGU operations in 2018?</th>
+                                  <th style="outline: thin solid">F2. How much was the revenue of the barangay LGU in 2018?</th>
+                                  <th style="outline: thin solid">F3. How much did the barangay LGU spend in 2018?</th>
+                                                                
+                              </tr>
+
+                             
+                          </thead> 
+<tr style="outline: solid">
+
+
+<td style="vertical-align: top; outline: thin solid" >
+  <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+    <!-- this -->
+    <input name="F_2018_1" type="number"  class="form-control"  placeholder="">
+  </div>
+</td>
+
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="F_2018_2" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="F_2018_3" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+</tr>
+
+
+  </table>
+  <br><hr><br>
+
+  <!-- ---END OF F1-- -->
+
+  <h5 class="text-left">II. Year 2 (2019)</h5>
+<br>
+
+<table  class="cell-border compact" style="width:100%; outline: solid">
+                          <thead>
+                              <tr>
+                                  <th style="outline: thin solid">F1. How much was the budget allocated for the barangay LGU operations in 2018?</th>
+                                  <th style="outline: thin solid">F2. How much was the revenue of the barangay LGU in 2018?</th>
+                                  <th style="outline: thin solid">F3. How much did the barangay LGU spend in 2018?</th>
+                                                                
+                              </tr>
+
+                             
+                          </thead> 
+<tr style="outline: solid">
+
+
+<td style="vertical-align: top; outline: thin solid" >
+  <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+    <!-- this -->
+    <input name="F_2019_1" type="number"  class="form-control"  placeholder="">
+  </div>
+</td>
+
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="F_2019_2" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="F_2019_3" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+</tr>
+
+
+  </table>
+  <br><hr><br>
+
+  <!-- ---END OF F2-- -->
+
+  <h5 class="text-left">III. Year 3 (2020)</h5>
+<br>
+
+<table  class="cell-border compact" style="width:100%; outline: solid">
+                          <thead>
+                              <tr>
+                                  <th style="outline: thin solid">F1. How much was the budget allocated for the barangay LGU operations in 2018?</th>
+                                  <th style="outline: thin solid">F2. How much was the revenue of the barangay LGU in 2018?</th>
+                                  <th style="outline: thin solid">F3. How much did the barangay LGU spend in 2018?</th>
+                                                                
+                              </tr>
+
+                             
+                          </thead> 
+<tr style="outline: solid">
+
+
+<td style="vertical-align: top; outline: thin solid" >
+  <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+    <!-- this -->
+    <input name="F_2020_1" type="number"  class="form-control"  placeholder="">
+  </div>
+</td>
+
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="F_2020_2" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="F_2020_3" type="number" class="form-control"  placeholder="">
+  </div>
+</td>
+
+</tr>
+
+
+  </table>
+
+  <br><hr><br>
+
+  <table  class="cell-border compact" style="width:100%; outline: solid">
+                          <thead>
+                              <tr>
+                                  <th style="outline: thin solid">F4. What is the title of source document containing information about the budget/ revenue/ expenditure of the barangay LGU?</th>
+                                  <th style="outline: thin solid">F5. Which unit in the barangay keeps/ maintains the information/ source document about barangay LGU budget/ revenue/ expenditure?</th>                         
+                                                               
+                              </tr>
+
+                             
+                          </thead> 
+<tr style="outline: solid">
+
+
+<td style="vertical-align: top; outline: thin solid" >
+  <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+    <!-- this -->
+    <input name="F_F4" type="text"  class="form-control"  placeholder="">
+  </div>
+</td>
+
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="F_F5" type="text" class="form-control"  placeholder="">
+  </div>
+</td>
+
+</tr>
+
+
+  </table>
+
+
+  <br><hr><br>
+
+  <!-- ---END OF F3-- -->
+
+  <!-- <h4 class="text-left" style="color: white; background-color: #2277bd">PART II. BARANGAY LGU AND RECORDS-BASED DATA</h4> -->
+
+<br><br>
+<i style="color: green" class="">Now, I would like to talk about the different programs, activities and projects in the barangay.</i>
+<br><br><br>
+
+<h5 class="text-left" style="color: "><b>G. PROGRAMS, PROJECTS, AND ACTIVITIES (BASED ON THE BARANGAY ANNUAL INVESTMENT PROGRAM)</b></h5><br><br>
+
+<h5 class="text-left" style="color: ">I. NON-INFRASTRUCTURE (SOCIAL, ECONOMIC, AND AGRICULTURAL) DEVELOPMENT DURING THE PAST YEAR (01 April 2020 to 31 March 2021)</h5><br>
+
+
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning"data-facility="" data-toggle="modal" data-target="#add_barangay_noninfra_facility">Add Entry</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_noninfra_facility" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;vertical-align: top;" class="text-center " width="">SE1. What is the title of PPA?</th>
+                                                <th style="text-align: center;vertical-align: top;" class="text-center " width="">SE2. Please provide a brief description of the PPA.</th>
+                                                <th style="text-align: center;vertical-align: top;" class="text-center " width="">SE3. How much was allotted for the PPA (in PhP)?</th>
+                                                <th style="text-align: center;vertical-align: top;" class="text-center " width="">SE4. Who/what sector/s benefitted from the PPA?</th>
+                                                <th style="text-align: center;vertical-align: top;" class="text-center " width="">SE5. Did the engage volunteers?</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    
+                    
+                  
+
+                    <div class="container">
+                       <table  class="cell-border compact" style="width:100%; outline: solid thin">
+                          <thead>
+                              <tr>
+                                  <th style="outline: thin solid">SE6. What is the title of source document that contains the information about the PPA?</th>
+                                  <th style="outline: thin solid">SE7. Which barangay unit keeps/maintains the information/source document about the PPA?</th>                         
+                                                               
+                              </tr>
+
+                             
+                          </thead> 
+<tr style="outline: solid thin">
+
+
+<td style="vertical-align: top; outline: thin solid" >
+  <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+    <!-- this -->
+    <input name="SE6" type="text"  class="form-control"  placeholder="">
+  </div>
+</td>
+
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="SE7" type="text" class="form-control"  placeholder="">
+  </div>
+</td>
+
+</tr>
+
+
+  </table>
+                    </div>
+
+
+      <hr>
+     <br><br> 
+     <h5 class="text-left" style="color: ">II. INFRASTRUCTURE DEVELOPMENT DURING THE PAST 3 YEARS (01 April 2018 to 31 March 2021)</h5><br>
+
+     <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning"data-facility="" data-toggle="modal" data-target="#add_barangay_infra_facility">Add Entry</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_infra_facility" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;vertical-align: top;" class="text-center " width="">I1. What is the title of the PPA?</th>
+                                                <th style="text-align: center;vertical-align: top;" class="text-center " width="">I2. Where is the PPA located?</th>
+                                                <th style="text-align: center;vertical-align: top;" class="text-center " width="">I3. How much was allotted for the PPA (in PhP)?</th>
+                                                <th style="text-align: center;vertical-align: top;" class="text-center " width="">I4. When did the start (mm/yyyy)?</th>
+                                                <th style="text-align: center;vertical-align: top;" class="text-center " width="">I5. What is the status of the PPA as of 01 April 2021?</th>
+                                                <th style="text-align: center;vertical-align: top;" class="text-center " width="">I6. When was the PPA completed (mm/yyyy)?</th>
+                                                <th style="text-align: center;vertical-align: top;" class="text-center " width="">I7. When is the expected completion of the PPA (mm/yyyy)?</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                          <div class="container">
+                       <table  class="cell-border compact" style="width:100%; outline: solid thin">
+                          <thead>
+                              <tr>
+                                  <th style="outline: thin solid">I8. What is the title of source document that contains the information about the PPA?</th>
+                                  <th style="outline: thin solid">I9. Which barangay unit keeps/maintains the information/source document about the PPA?</th>                         
+                                                               
+                              </tr>
+
+                             
+                          </thead> 
+<tr style="outline: solid thin">
+
+
+<td style="vertical-align: top; outline: thin solid" >
+  <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+    <!-- this -->
+    <input name="infra8" type="text"  class="form-control"  placeholder="">
+  </div>
+</td>
+
+
+<td style="vertical-align: top; outline: thin solid" >
+ <div class="container" style="padding-top: 10px; padding-bottom: 10px">
+  <!-- this -->
+    <input name="infra9" type="text" class="form-control"  placeholder="">
+  </div>
+</td>
+
+</tr>
+
+
+  </table>
+                    </div><br>
+
+                    <hr><br><br>
+                              <h5 class="text-left" style="color: blue">CERTIFICATION</h5>
 
                                
 
@@ -12187,7 +20123,7 @@ C1. Are any of the following roads/streets present in the barangay?
                               </div>
 
                                <div class="form-check">
-                                  <input type="checkbox" class="form-check-input" id="cert_checkbox" name="cert_checkbox" value = "HAHAHA">
+                                  <input type="checkbox" class="form-check-input" id="cert_checkbox" name="cert_checkbox" value = "">
                                   <label class="form-check-label" for="exampleCheck1" style="padding-top: 5px;">&nbsp I hereby certify that the data set forth herein were personally obtained/reviewed by me and in accordance with the instructions given by the PSA.</label>
                                 </div>
                                 <br>
@@ -12214,14 +20150,17 @@ C1. Are any of the following roads/streets present in the barangay?
                                   </div>
                               </div>
 
-                              </form>
 
 
+
+</form> <!-- // END OF FORM 4 -->
 
 
 
 <!-- -------SIGNATURE PAD------  --> 
- <div id="signature-pad" class="signature-pad container-fluid">
+<div class="container" style="background-color: #d1d1d1;" >         
+                     
+ <div id="signature-pad" class="signature-pad container-fluid" style="padding-top: 50px; padding-bottom: 50px;">
     <div class="signature-pad--body container-fluid">
       <canvas></canvas>
     </div>
@@ -12230,19 +20169,20 @@ C1. Are any of the following roads/streets present in the barangay?
 
       <div class="signature-pad--actions container-fluid">
         <div style="padding-top: 10px;" class="container-fluid">
-          <button type="button" class="button clear btn btn-outline-info" data-action="clear">Clear</button>
-          <button type="button" class="button btn btn-outline-info" data-action="change-color">Change color</button>
-          <button type="button" class="button btn btn-outline-info" data-action="undo">Undo</button>
+          <button type="button" class="button clear btn btn-outline-primary" data-action="clear"><b>Clear</b></button>
+          <button type="button" class="button btn btn-outline-primary" data-action="change-color"><b>Change color</b></button>
+          <button type="button" class="button btn btn-outline-primary" data-action="undo"><b>Undo</b></button>
 
         </div>
         <div style="padding-top: 10px;" class="container-fluid">
-          <button type="button" class="button save btn btn-outline-info" data-action="save-png" hidden="">Save as PNG</button>
-          <button type="button" class="button save btn btn-outline-info" data-action="save-jpg">Save as JPG</button>
-          <button type="button" class="button save btn btn-outline-info" data-action="save-svg" hidden="">Save as SVG</button>
+          <button type="button" class="button save btn btn-outline-primary" data-action="save-png" hidden="">Save as PNG</button>
+          <button type="button" class="button save btn btn-outline-primary" data-action="save-jpg"><b>Save as JPG</b></button>
+          <button type="button" class="button save btn btn-outline-primary" data-action="save-svg" hidden="">Save as SVG</button>
         </div>
       </div>
     </div>
   </div>
+</div>
 <!-- ---END OF SIGNATURE PAD--- -->            
 
 <!-- <img src="<?php echo base_url('assets/img/esignature/signature (11).jpg'); ?>" class="avatar">  -->
@@ -12263,12 +20203,23 @@ C1. Are any of the following roads/streets present in the barangay?
                         </div>
                     </form>
 
+
+                                  
+
+
+                              
+
+
+
+
+
+
                           </div> <!-- <<<<< End of Section 4 body -->
 
 
                             <div class="card-footer text-muted" >
                              <button type="button" id="save_sec_4" class="btn btn-outline-success">Save</button>
-                             <button type="button" class="btn btn-outline-primary">Submit</button>
+                             <button type="button" id="final_submission" class="btn btn-outline-primary">Submit</button>
                             </div>
 
 
@@ -12655,6 +20606,572 @@ C1. Are any of the following roads/streets present in the barangay?
 </div>
 <!-- --- END OF ADD SERVICE FACILITIES--- -->
 
+<!-- ADD AGRICULTURAL FACILITIES -->
+<div class="modal fade" id="add_barangay_agricultural_facilities" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Add Barangay Agricultural Facilities</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+<form method="post" id="submit_table_barangay_fac_agricultural">
+ 
+  <div class="form-group">
+    <label for="">AF3. What is the Name of the Facility?</label>
+    <input type="text" class="form-control" name="barangay_agricultural_facility_name" aria-describedby="" placeholder="">
+   
+  </div>
+
+   <div class="form-group">
+    <label for="">AF4. What is the Address of the Facility?</label>
+    <input type="text" class="form-control" name="barangay_agricultural_facility_address" aria-describedby="" placeholder="">
+   
+  </div>
+
+  <div class="form-group" >
+                      <label>AF5. What institution operates the facility?</label>
+                      <select  name="barangay_agricultural_facility_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+
+  </div>
+
+
+                     <div class="form-group encode_bsn" hidden=""><h6>AF6. EA</h6>
+                     <input type="text" class="form-control"   name="barangay_agricultural_facility_EA" placeholder="" >
+                    </div>
+                     <div class="form-group encode_bsn"  hidden=""><h6>AF7. BSN</h6>
+                      <input type="text" class="form-control"  name="barangay_agricultural_facility_BSN" placeholder="" >
+                    </div>
+                     <div class="form-group encode_bsn"  hidden=""><h6>AF8. FSN</h6>
+                      <input type="text" class="form-control"  name="barangay_agricultural_facility_FSN" placeholder="" >
+                    </div>
+
+  <div class="form-group" hidden="">  <input type="text" class="form-control"
+  id="agricultural_facilities" name="barangay_agricultural_facility_type" aria-describedby=""
+  placeholder="">    </div>
+
+
+
+</form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary save_tables" data-val="submit_table_barangay_fac_agricultural">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- END OF AGRICULTURAL FACILITIES -->
+
+
+
+
+<!-- ADD INPUT DEALERS -->
+<div class="modal fade" id="add_barangay_input_dealer" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Add Barangay Input Dealers</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+<form method="post" id="submit_table_barangay_input_dealer">
+ 
+  <div class="form-group">
+    <label for="">ID3. What is the Name of the Facility?</label>
+    <input type="text" class="form-control" name="barangay_input_dealer_name" aria-describedby="" placeholder="">
+   
+  </div>
+
+   <div class="form-group">
+    <label for="">ID4. What is the Address of the Facility?</label>
+    <input type="text" class="form-control" name="barangay_input_dealer_address" aria-describedby="" placeholder="">
+   
+  </div>
+
+  <div class="form-group" >
+                      <label>ID5. What institution operates the facility?</label>
+                      <select  name="barangay_input_dealer_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+
+  </div>
+
+
+                     <div class="form-group encode_bsn" hidden=""><h6>ID6. EA</h6>
+                     <input type="text" class="form-control"   name="barangay_input_dealer_EA" placeholder="" >
+                    </div>
+                     <div class="form-group encode_bsn"  hidden=""><h6>ID7. BSN</h6>
+                      <input type="text" class="form-control"  name="barangay_input_dealer_BSN" placeholder="" >
+                    </div>
+                     <div class="form-group encode_bsn"  hidden=""><h6>ID8. FSN</h6>
+                      <input type="text" class="form-control"  name="barangay_input_dealer_FSN" placeholder="" >
+                    </div>
+
+  <div class="form-group" hidden="">  <input type="text" class="form-control"
+  id="input_dealer" name="barangay_input_dealer_type" aria-describedby=""
+  placeholder="">    </div>
+
+
+
+</form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary save_tables" data-val="submit_table_barangay_input_dealer">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- END OF INPUT DEALERS -->
+
+<!-- ADD WATER FACILITY -->
+<div class="modal fade" id="add_barangay_water_facility" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Add Barangay Water Facilities</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+<form method="post" id="submit_table_barangay_water_facility">
+ 
+  <div class="form-group">
+    <label for="">WF3. What is the Name of the Facility?</label>
+    <input type="text" class="form-control" name="barangay_water_facility_name" aria-describedby="" placeholder="">
+   
+  </div>
+
+   <div class="form-group">
+    <label for="">WF4. What is the Address of the Facility?</label>
+    <input type="text" class="form-control" name="barangay_water_facility_address" aria-describedby="" placeholder="">
+   
+  </div>
+
+  <div class="form-group" >
+                      <label>WF5. What institution operates the facility?</label>
+                      <select  name="barangay_water_facility_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+
+  </div>
+
+
+                     <div class="form-group encode_bsn" hidden=""><h6>WF6. EA</h6>
+                     <input type="text" class="form-control"   name="barangay_water_facility_EA" placeholder="" >
+                    </div>
+                     <div class="form-group encode_bsn"  hidden=""><h6>WF7. BSN</h6>
+                      <input type="text" class="form-control"  name="barangay_water_facility_BSN" placeholder="" >
+                    </div>
+                     <div class="form-group encode_bsn"  hidden=""><h6>WF8. FSN</h6>
+                      <input type="text" class="form-control"  name="barangay_water_facility_FSN" placeholder="" >
+                    </div>
+
+  <div class="form-group" hidden="">  <input type="text" class="form-control"
+  id="water_facility" name="barangay_water_facility_type" aria-describedby=""
+  placeholder="">    </div>
+
+
+
+</form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary save_tables" data-val="submit_table_barangay_water_facility">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- END OF WATER FACILITY -->
+
+<!-- ADD ELECTRIC FACILITY -->
+<div class="modal fade" id="add_barangay_electric_facility" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Add Barangay Electric Facilities</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+<form method="post" id="submit_table_barangay_electric_facility">
+ 
+  <div class="form-group">
+    <label for="">E2. What is the Name of the Facility?</label>
+    <input type="text" class="form-control" name="barangay_electric_facility_name" aria-describedby="" placeholder="">
+   
+  </div>
+
+   <div class="form-group">
+    <label for="">E3. What is the Address of the Facility?</label>
+    <input type="text" class="form-control" name="barangay_electric_facility_address" aria-describedby="" placeholder="">
+   
+  </div>
+
+  <div class="text-left">
+E4. Is there an electric substation present in the barangay?
+</div>
+
+          <div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                        <input class="form-check-input" type="radio" name="e4_substation"  data-val="Yes" value="Yes">Yes<br>
+                        <input class="form-check-input" type="radio" name="e4_substation"  data-val="No" value="No">No
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div><br>
+
+  <div class="form-group" >
+                      <label>E5. What institution operates the facility?</label>
+                      <select  name="barangay_electric_facility_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+
+  </div>
+
+
+                     <div class="form-group encode_bsn" hidden=""><h6>E6. EA</h6>
+                     <input type="text" class="form-control"   name="barangay_electric_facility_EA" placeholder="" >
+                    </div>
+                     <div class="form-group encode_bsn"  hidden=""><h6>E7. BSN</h6>
+                      <input type="text" class="form-control"  name="barangay_electric_facility_BSN" placeholder="" >
+                    </div>
+                     <div class="form-group encode_bsn"  hidden=""><h6>E8. FSN</h6>
+                      <input type="text" class="form-control"  name="barangay_electric_facility_FSN" placeholder="" >
+                    </div>
+
+  <div class="form-group" hidden="">  <input type="text" class="form-control"
+  id="electric_facility" name="barangay_electric_facility_type" aria-describedby=""
+  placeholder="">    </div>
+
+
+
+</form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary save_tables" data-val="submit_table_barangay_electric_facility">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- END OF ELECTRIC FACILITY -->
+
+<!-- ADD CREDIT FACILITY -->
+<div class="modal fade" id="add_barangay_credit_facility" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Add Barangay Credit Institution</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+<form method="post" id="submit_table_barangay_credit_facility">
+ 
+  <div class="form-group">
+    <label for="">C4. What is the Name of the Facility?</label>
+    <input type="text" class="form-control" name="barangay_credit_facility_name" aria-describedby="" placeholder="">
+   
+  </div>
+
+   <div class="form-group">
+    <label for="">C5. What is the Address of the Facility?</label>
+    <input type="text" class="form-control" name="barangay_credit_facility_address" aria-describedby="" placeholder="">
+   
+  </div>
+
+ 
+
+  <div class="form-group" >
+                      <label>C6. What institution operates the facility?</label>
+                      <select  name="barangay_credit_facility_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+
+  </div>
+
+
+                     <div class="form-group encode_bsn" hidden=""><h6>C7. EA</h6>
+                     <input type="text" class="form-control"   name="barangay_credit_facility_EA" placeholder="" >
+                    </div>
+                     <div class="form-group encode_bsn"  hidden=""><h6>C8. BSN</h6>
+                      <input type="text" class="form-control"  name="barangay_credit_facility_BSN" placeholder="" >
+                    </div>
+                     <div class="form-group encode_bsn"  hidden=""><h6>C9. FSN</h6>
+                      <input type="text" class="form-control"  name="barangay_credit_facility_FSN" placeholder="" >
+                    </div>
+
+  <div class="form-group" hidden="">  <input type="text" class="form-control"
+  id="credit_facility" name="barangay_credit_facility_type" aria-describedby=""
+  placeholder="">    </div>
+
+
+
+</form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary save_tables" data-val="submit_table_barangay_credit_facility">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- END OF CREDIT FACILITY -->
+
+
+<!-- Show notes -->
+<div class="modal fade" id="show_notes" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">User's Notes</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+
+        <table  class="table table-hover cell-border compact user_notes" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">-----Note-----</th>
+                                                <th style="text-align: center;" class="text-center " width="">Date Stamp</th>
+                                                                                                                   
+                                              </tr>
+                                            </thead>
+                                          </table>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- END OF show notes-->
+
+
+
+
+<!-- ADD NON-INFRASTRUCTURE -->
+<div class="modal fade" id="add_barangay_noninfra_facility" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Data Entry For Non-Infrastructure Development</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+<form method="post" id="submit_table_barangay_noninfra_facility">
+ 
+  <div class="form-group">
+    <label for="">SE1. What is the title of the PPA?</label>
+    <input type="text" class="form-control" name="SE1" aria-describedby="" placeholder="">
+   
+  </div>
+
+   <div class="form-group">
+    <label for="">SE2. Please provide a brief description of the PPA.</label>
+    <textarea class="form-control" name="SE2" rows="2"></textarea>
+  </div>
+
+  <div class="form-group">
+    <label for="">SE3. How much was allotted for the PPA (in PhP)?</label>
+    <input type="number" class="form-control" name="SE3" aria-describedby="" placeholder="">
+   
+  </div>
+
+
+  <div class="form-group">
+    <label for="">SE4. Who/what sector/s benefited from the PPA?</label>
+    <input type="text" class="form-control" name="SE4" aria-describedby="" placeholder="">
+   
+  </div>
+<div class="text-left"><h7>
+   SE5. Did the PPA engage volunteers?
+</h7></div>
+
+          <div class="container">
+              <div class="row">
+                    <div class="col text-left">
+                      <div class="container">
+                        <input class="form-check-input" type="radio" name="SE5"  data-val="Yes" value="Yes">Yes<br>
+                        <input class="form-check-input" type="radio" name="SE5"  data-val="No" value="No">No
+                       </div> 
+                    </div>                                                                                                           
+              </div>
+          </div>
+                  
+</form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary save_tables" data-val="submit_table_barangay_noninfra_facility">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- END OF NON-INFRASTRUCTURE -->
+
+
+<!-- ADD INFRASTRUCTURE -->
+<div class="modal fade" id="add_barangay_infra_facility" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Data Entry For Infrastructure Development</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+<form method="post" id="submit_table_barangay_infra_facility">
+ 
+  <div class="form-group">
+    <label for="">I1. What is the title of the PPA?</label>
+    <input type="text" class="form-control" name="infra1" aria-describedby="" placeholder="">
+   
+  </div>
+
+  <div class="form-group">
+    <label for="">I2. Where is the PPA located?</label>
+    <input type="text" class="form-control" name="infra2" aria-describedby="" placeholder="">
+   
+  </div>
+
+ <div class="form-group">
+    <label for="">I3. How much was allotted for the PPA (in PhP)?</label>
+    <input type="number" class="form-control" name="infra3" aria-describedby="" placeholder="">
+   
+  </div>
+
+  <div class="form-group">
+    <label for="">I4. When did the PPA start (mm/yyyy)?</label>
+    <input type="month" class="form-control" name="infra4" aria-describedby="" placeholder="">
+  </div>
+
+
+<div class="form-group">
+                      <h7>I5. What is the status of the PPA as of 01 April 2021?</h7><br><br>
+                       <!-- this name -->
+                      <select  name="infra5" class="form-control i5select" >
+                        <option value=" ">Select</option>
+                        <option value="Proposed">Proposed</option>
+                        <option value="Ongoing">Ongoing</option>
+                        <option value="Completed">Completed</option>
+                        <option value="Discontinued">Discontinued</option>
+                  
+                      </select>
+                      <br>
+</div>  
+
+<div class="form-group i5select_num6" hidden>
+    <label for="">I6. When was the PPA completed (mm/yyyy)?</label>
+    <input type="month" class="form-control" name="infra6" aria-describedby="" placeholder="">
+  </div>
+
+  <div class="form-group i5select_num7" hidden>
+    <label for="">I7. When is the expected completion of the PPA (mm/yyyy)?</label>
+    <input type="month" class="form-control" name="infra7" aria-describedby="" placeholder="">
+  </div>
+
+
+                  
+</form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary save_tables" data-val="submit_table_barangay_infra_facility">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- END OF INFRASTRUCTURE -->
+
+<!-- -----START OF SECTION 3 MODALS--- -->
 
 <!-- ADD GARBAGE AND DISPOSAL FACILITY -->
 
@@ -12884,13 +21401,33 @@ C1. Are any of the following roads/streets present in the barangay?
 <!-- -----END OF TRANSPORT FACILITY---- -->
 
 
-
-
-
-
-
+<!-- ------END OF SECTION 3 MODALS -------- -->
 
 
 
 </body>
 </html>
+<!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v10.0'
+          });
+        };
+
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+      </script>
+
+      <!-- Your Chat Plugin code -->
+      <div class="fb-customerchat"
+        attribution="page_inbox"
+        page_id="101106065461118">
+      </div>
