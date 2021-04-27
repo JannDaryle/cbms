@@ -11782,12 +11782,19 @@ IT18.1 Please provide the photo containing the e-government strategy.</b>
 
 <hr>
 <br>
-<h5 class="text-left" style="color: "><b>SIGNIFICANT EVENTS IN THE BARANGAY FOR PAST 3 YEARS - CLIMATE-RELATED AND GEOLOGIC EVENTS (01 April 2018 to 31 March 2020)</b></h5><br>   
+   <h5 class="text-left"><b>SIGNIFICANT EVENTS IN THE BARANGAY FOR PAST 3 YEARS</b></h5>
+   <br>
+   <br>
 
-<div class="text-left"><h6>
-<b>S1. From 01 April 2018 to 31 March 2020, how many times did the event occur and negatively affected the barangay? Put number/s in the line provided.
-</b></h6></div>  
+
+<div class="text-left"><h5>
+S1. From <u>01 April 2018 to 31 March 2020</u>, how many times did the event occur and negatively affected the barangay? Put number/s in the line provided.
+</h5></div> 
 <br>
+<br>
+
+<h6 class="text-left" style="color: "><b>CLIMATE-RELATED AND GEOLOGIC EVENTS &nbsp&nbsp <span style="color: blue">(01 April 2018 to 31 March 2020)</span></b></h6><br>   
+
 
 <div class="row">
   <div class="float-sm-left">
@@ -11860,8 +11867,7 @@ IT18.1 Please provide the photo containing the e-government strategy.</b>
 <hr>
 <br>
 <br>
-<h5 class="text-left" style="color: "><b>SIGNIFICANT EVENTS IN THE BARANGAY FOR PAST 3 YEARS - ECONOMIC EVENTS (01 April 2018 to 31 March 2020)</b></h5><br>   
-
+<h6 class="text-left" style="color: "><b>ECONOMIC EVENTS &nbsp&nbsp<span style="color: blue">(01 April 2018 to 31 March 2020)</span></b></h6><br>  
 
 <div class="row">
   <div class="float-sm-left">
@@ -11924,9 +11930,8 @@ IT18.1 Please provide the photo containing the e-government strategy.</b>
 
 
 <hr>
-<br>
-<h5 class="text-left" style="color: "><b>SIGNIFICANT EVENTS IN THE BARANGAY FOR PAST 3 YEARS - PEACE AND ORDER EVENTS (01 April 2018 to 31 March 2020)</b></h5><br>   
-
+<br>  
+<h6 class="text-left" style="color: "><b>PEACE AND ORDER EVENTS &nbsp&nbsp<span style="color: blue">(01 April 2018 to 31 March 2020)</span></b></h6><br>  
 
 <br>
 <div class="row">
@@ -11964,8 +11969,8 @@ IT18.1 Please provide the photo containing the e-government strategy.</b>
 
 <br>
 <hr>
-<br>
-<h5 class="text-left" style="color: "><b>SIGNIFICANT EVENTS IN THE BARANGAY FOR PAST 3 YEARS - HEALTH AND AGRICULTURE-RELATED EVENTS (01 April 2018 to 31 March 2020)</b></h5><br> 
+<br> 
+<h6 class="text-left" style="color: "><b>HEALTH AND AGRICULTURE-RELATED EVENTS &nbsp&nbsp<span style="color: blue">(01 April 2018 to 31 March 2020)</span></b></h6><br> 
 
 
 <div class="row">
@@ -12073,9 +12078,17 @@ S2. Based on report to barangay, what are the main reasons for the closure of fi
 
 <hr>
 <br>
-<h5 class="text-left" style="color: "><b>SIGNIFICANT EVENTS IN THE BARANGAY FOR PAST 3 YEARS - CLIMATE-RELATED AND GEOLOGIC EVENTS (01 April 2020 to 31 March 2021)</b></h5><br>   
+<br>  
+
+<div class="text-left"><h5>
+S1. From <u>01 April 2020 to 31 March 2021</u>, how many times did the event occur and negatively affected the barangay? Put number/s in the line provided.
+</h5></div> 
+<br>
+<br> 
 
 
+<br> 
+<h6 class="text-left" style="color: "><b>CLIMATE-RELATED AND GEOLOGIC EVENTS &nbsp&nbsp<span style="color: blue">(01 April 2020 to 31 March 2021)</span></b></h6><br> 
 
 <div class="row">
   <div class="float-sm-left">
@@ -12148,9 +12161,8 @@ S2. Based on report to barangay, what are the main reasons for the closure of fi
 <br>
 <hr>
 <br>
-<h5 class="text-left" style="color: "><b>SIGNIFICANT EVENTS IN THE BARANGAY FOR PAST 3 YEARS - ECONOMIC EVENTS (01 April 2020 to 31 March 2021)</b></h5><br>   
-
-
+<br> 
+<h6 class="text-left" style="color: "><b>ECONOMIC EVENTS &nbsp&nbsp<span style="color: blue">(01 April 2020 to 31 March 2021)</span></b></h6><br> 
 
 <div class="row">
   <div class="float-sm-left">
@@ -12212,8 +12224,8 @@ S2. Based on report to barangay, what are the main reasons for the closure of fi
 
 <hr>
 <br>
-<h5 class="text-left" style="color: "><b>SIGNIFICANT EVENTS IN THE BARANGAY FOR PAST 3 YEARS - PEACE AND ORDER EVENTS (01 April 2020 to 31 March 2021)</b></h5><br>   
-
+<br> 
+<h6 class="text-left" style="color: "><b>PEACE AND ORDER EVENTS &nbsp&nbsp<span style="color: blue">(01 April 2020 to 31 March 2021)</span></b></h6>
 
 
 <br>
@@ -12253,9 +12265,9 @@ S2. Based on report to barangay, what are the main reasons for the closure of fi
 <br>
 <hr>
 <br>
-<h5 class="text-left" style="color: "><b>SIGNIFICANT EVENTS IN THE BARANGAY FOR PAST 3 YEARS - HEALTH AND AGRICULTURE-RELATED EVENTS (01 April 2020 to 31 March 2021)</b></h5><br> 
 
-
+<br> 
+<h6 class="text-left" style="color: "><b>HEALTH AND AGRICULTURE-RELATED EVENTS&nbsp&nbsp<span style="color: blue">(01 April 2020 to 31 March 2021)</span></b></h6><br> 
 
 
 <div class="row">
@@ -12995,9 +13007,9 @@ Other disaster that have a disaster contingency plan:
 </div>
 </div>
 </div>
-
+<br>
 <hr>
-
+<br>
 
 
 <div class="container-fluid">
@@ -13697,7 +13709,9 @@ Other disaster that have a disaster contingency plan:
 
 
 
-
+<br>
+<br>
+<br>
 <h4 class="text-left" style="color: white; background-color: #2277bd">PART II. BARANGAY LGU AND RECORDS-BASED DATA
 A. GENERAL INFORMATION ABOUT THE BARANGAY LOCAL GOVERNMENT UNIT</h4><br>
 
@@ -15439,19 +15453,15 @@ Other volunteers that have extended to the barangay
 </div>
 </div>
 </div>
+<br>
+<br>
 
-
+<hr>
 <br>
 <br>                  
 <div class="text-left"><h5>
 B2. What are the volunteer service organizations which extended help to the barangay in the past 12 months?
 </h5></div>
-
-<br>                  
-<div class="text-left"><h5>
-<b>Volunteer Service</b>
-</h5></div>
-
 
 <br>                  
 <div class="text-left"><h5>
@@ -15590,418 +15600,313 @@ B3. Sector / Area:
 
 <hr>
 
-<br>
-<h5 class="text-left" style="color: "><b>C. ROAD NETWORK</b></h5><br>   
-
-<br>
-<div class="text-left"><h5>
-<b>TYPE OF ROAD</b>
-</h5></div>
-
-<br>                  
-<div class="text-left"><h5>
-C1. Are any of the following roads/streets present in the barangay?
-</h5></div>
-<br>
-
-<div class="text-left"><h6>
-<b>C1. Is this present in the barangay? <span style="color: blue"> - A. Paved Concrete</span>
-</b></h6></div>  
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="paved_concrete"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="paved_concrete"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>
-
-
-<div class="paved_concrete_repeat" hidden=""> 
-
-<br>                  
-<div class="text-left"><h6>
-<b>C2. What is the name of the Paved Concrete # 1?
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="paved_concrete_name" name="paved_concrete_name" placeholder="" >
-</div>
-</div>
-
-<br>                  
-<div class="text-left"><h6>
-<b>C3. What is the length of the ? (in kms.)
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="paved_concrete_length" name="paved_concrete_length" placeholder="" >
-</div>
-</div>
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>C4. Who is maintaining the ?
-</b></h6></div>
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                       <input class="form-check-input" type="radio" name="paved_concrete_maintaining" data-val="No" value="No">1 - Private<br> 
-                       <input class="form-check-input" type="radio" name="paved_concrete_maintaining" data-val="No" value="No">2 - National Government<br> 
-                       <input class="form-check-input" type="radio" name="paved_concrete_maintaining" data-val="No" value="No">3 - Provincial Government<br> 
-                       <input class="form-check-input" type="radio" name="paved_concrete_maintaining" data-val="No" value="No">4 - Municipal/City Government<br> 
-                       <input class="form-check-input" type="radio" name="paved_concrete_maintaining" data-val="No" value="No">5 - Barangay<br> 
-                       <input class="form-check-input" type="radio" name="paved_concrete_maintaining" data-val="Yes" value="Yes">6 - Others, specify<br> 
-                       <input class="form-check-input" type="radio" name="paved_concrete_maintaining" data-val="No" value="No">7 - None<br> 
-                       <input class="form-check-input" type="radio" name="paved_concrete_maintaining" data-val="No" value="No">8 - Don't Know<br>
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div> 
-
-<div class="RN5_concrete_others_repeat" hidden=""> 
-
-<br>                  
-<div class="text-left"><h6>
-<b>C4. Others, please specify:
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="RN5_concrete_others" name="RN5_concrete_others" placeholder="" >
-</div>
-</div>
-</div>
-
-<br>                  
-<div class="text-left"><h6>
-<b>C5. What is the present condition of the road? (See Codes Below)
-</b></h6></div>
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                       <input class="form-check-input" type="radio" name="paved_concrete_condition" data-val="No" value="No">1 - Good<br> 
-                       <input class="form-check-input" type="radio" name="paved_concrete_condition" data-val="No" value="No">2 - Fair<br> 
-                       <input class="form-check-input" type="radio" name="paved_concrete_condition" data-val="No" value="No">3 - Poor<br> 
-                       <input class="form-check-input" type="radio" name="paved_concrete_condition" data-val="No" value="No">4 - Bad<br> 
-                       <input class="form-check-input" type="radio" name="paved_concrete_condition" data-val="No" value="No">5 - No assessment<br> 
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div> 
-</div>
-
-<br>
-<br>
-
-<div class="text-left"><h6>
-<b>C1. Is this present in the barangay? <span style="color: blue"> - B. Paved Asphalt</span>
-</b></h6></div>  
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="paved_asphalt"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="paved_asphalt"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>
-
-
-<div class="paved_asphalt_repeat" hidden=""> 
-
-<br>                  
-<div class="text-left"><h6>
-<b>C2. What is the name of the Paved Asphalt # 1?
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="paved_asphalt_name" name="paved_asphalt_name" placeholder="" >
-</div>
-</div>
-
-<br>                  
-<div class="text-left"><h6>
-<b>C3. What is the length of the ? (in kms.)
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="paved_asphalt_length" name="paved_asphalt_length" placeholder="" >
-</div>
-</div>
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>C4. Who is maintaining the ?
-</b></h6></div>
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                       <input class="form-check-input" type="radio" name="paved_asphalt_maintaining" data-val="No" value="No">1 - Private<br> 
-                       <input class="form-check-input" type="radio" name="paved_asphalt_maintaining" data-val="No" value="No">2 - National Government<br> 
-                       <input class="form-check-input" type="radio" name="paved_asphalt_maintaining" data-val="No" value="No">3 - Provincial Government<br> 
-                       <input class="form-check-input" type="radio" name="paved_asphalt_maintaining" data-val="No" value="No">4 - Municipal/City Government<br> 
-                       <input class="form-check-input" type="radio" name="paved_asphalt_maintaining" data-val="No" value="No">5 - Barangay<br> 
-                       <input class="form-check-input" type="radio" name="paved_asphalt_maintaining" data-val="Yes" value="Yes">6 - Others, specify<br> 
-                       <input class="form-check-input" type="radio" name="paved_asphalt_maintaining" data-val="No" value="No">7 - None<br> 
-                       <input class="form-check-input" type="radio" name="paved_asphalt_maintaining" data-val="No" value="No">8 - Don't Know<br>
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div> 
-
-<div class="RN5_asphalt_others_repeat" hidden=""> 
-
-<br>                  
-<div class="text-left"><h6>
-<b>C4. Others, please specify:
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="RN5_asphalt_others" name="RN5_asphalt_others" placeholder="" >
-</div>
-</div>
-</div>
-
-<br>                  
-<div class="text-left"><h6>
-<b>C5. What is the present condition of the road? (See Codes Below)
-</b></h6></div>
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                       <input class="form-check-input" type="radio" name="paved_asphalt_condition" data-val="No" value="No">1 - Good<br> 
-                       <input class="form-check-input" type="radio" name="paved_asphalt_condition" data-val="No" value="No">2 - Fair<br> 
-                       <input class="form-check-input" type="radio" name="paved_asphalt_condition" data-val="No" value="No">3 - Poor<br> 
-                       <input class="form-check-input" type="radio" name="paved_asphalt_condition" data-val="No" value="No">4 - Bad<br> 
-                       <input class="form-check-input" type="radio" name="paved_asphalt_condition" data-val="No" value="No">5 - No assessment<br> 
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div> 
-</div>
-
-
-<br>
-<br>
-
-<div class="text-left"><h6>
-<b>C1. Is this present in the barangay? <span style="color: blue"> - C. Unpaved Gravel</span>
-</b></h6></div>  
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="unpaved_gravel"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="unpaved_gravel"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>
-
-
-<div class="unpaved_gravel_repeat" hidden=""> 
-
-<br>                  
-<div class="text-left"><h6>
-<b>C2. What is the name of the Unpaved Gravel # 1?
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="unpaved_gravel_name" name="unpaved_gravel_name" placeholder="" >
-</div>
-</div>
-
-<br>                  
-<div class="text-left"><h6>
-<b>C3. What is the length of the ? (in kms.)
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="unpaved_gravel_length" name="unpaved_gravel_length" placeholder="" >
-</div>
-</div>
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>C4. Who is maintaining the ?
-</b></h6></div>
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                       <input class="form-check-input" type="radio" name="unpaved_gravel_maintaining" data-val="No" value="No">1 - Private<br> 
-                       <input class="form-check-input" type="radio" name="unpaved_gravel_maintaining" data-val="No" value="No">2 - National Government<br> 
-                       <input class="form-check-input" type="radio" name="unpaved_gravel_maintaining" data-val="No" value="No">3 - Provincial Government<br> 
-                       <input class="form-check-input" type="radio" name="unpaved_gravel_maintaining" data-val="No" value="No">4 - Municipal/City Government<br> 
-                       <input class="form-check-input" type="radio" name="unpaved_gravel_maintaining" data-val="No" value="No">5 - Barangay<br> 
-                       <input class="form-check-input" type="radio" name="unpaved_gravel_maintaining" data-val="Yes" value="Yes">6 - Others, specify<br> 
-                       <input class="form-check-input" type="radio" name="unpaved_gravel_maintaining" data-val="No" value="No">7 - None<br> 
-                       <input class="form-check-input" type="radio" name="unpaved_gravel_maintaining" data-val="No" value="No">8 - Don't Know<br>
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div> 
-
-<div class="RN5_gravel_others_repeat" hidden=""> 
-
-<br>                  
-<div class="text-left"><h6>
-<b>C4. Others, please specify:
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="RN5_gravel_others" name="RN5_gravel_others" placeholder="" >
-</div>
-</div>
-</div>
-
-<br>                  
-<div class="text-left"><h6>
-<b>C5. What is the present condition of the road? (See Codes Below)
-</b></h6></div>
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                       <input class="form-check-input" type="radio" name="unpaved_gravel_condition" data-val="No" value="No">1 - Good<br> 
-                       <input class="form-check-input" type="radio" name="unpaved_gravel_condition" data-val="No" value="No">2 - Fair<br> 
-                       <input class="form-check-input" type="radio" name="unpaved_gravel_condition" data-val="No" value="No">3 - Poor<br> 
-                       <input class="form-check-input" type="radio" name="unpaved_gravel_condition" data-val="No" value="No">4 - Bad<br> 
-                       <input class="form-check-input" type="radio" name="unpaved_gravel_condition" data-val="No" value="No">5 - No assessment<br> 
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div> 
-</div>
-
-<br>
-<br>
-
-
-<div class="text-left"><h6>
-<b>C1. Is this present in the barangay? <span style="color: blue"> - D. Unpaved Earth</span>
-</b></h6></div>  
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                        <input class="form-check-input" type="radio" name="unpaved_earth"  data-val="Yes" value="Yes">Yes<br>
-                        <input class="form-check-input" type="radio" name="unpaved_earth"  data-val="No" value="No">No
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div>
-
-
-<div class="unpaved_earth_repeat" hidden=""> 
-
-<br>                  
-<div class="text-left"><h6>
-<b>C2. What is the name of the Unpaved Earth # 1?
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="unpaved_earth_name" name="unpaved_earth_name" placeholder="" >
-</div>
-</div>
-
-<br>                  
-<div class="text-left"><h6>
-<b>C3. What is the length of the ? (in kms.)
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-3">
-  <input type="number" class="form-control" id="unpaved_earth_length" name="unpaved_earth_length" placeholder="" >
-</div>
-</div>
-
-
-<br>                  
-<div class="text-left"><h6>
-<b>C4. Who is maintaining the ?
-</b></h6></div>
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                       <input class="form-check-input" type="radio" name="unpaved_earth_maintaining" data-val="No" value="No">1 - Private<br> 
-                       <input class="form-check-input" type="radio" name="unpaved_earth_maintaining" data-val="No" value="No">2 - National Government<br> 
-                       <input class="form-check-input" type="radio" name="unpaved_earth_maintaining" data-val="No" value="No">3 - Provincial Government<br> 
-                       <input class="form-check-input" type="radio" name="unpaved_earth_maintaining" data-val="No" value="No">4 - Municipal/City Government<br> 
-                       <input class="form-check-input" type="radio" name="unpaved_earth_maintaining" data-val="No" value="No">5 - Barangay<br> 
-                       <input class="form-check-input" type="radio" name="unpaved_earth_maintaining" data-val="Yes" value="Yes">6 - Others, specify<br> 
-                       <input class="form-check-input" type="radio" name="unpaved_earth_maintaining" data-val="No" value="No">7 - None<br> 
-                       <input class="form-check-input" type="radio" name="unpaved_earth_maintaining" data-val="No" value="No">8 - Don't Know<br>
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div> 
-
-<div class="RN5_earth_others_repeat" hidden=""> 
-
-<br>                  
-<div class="text-left"><h6>
-<b>C4. Others, please specify:
-</b></h6></div>   
-
-<div class="form-group row">
-  <div class="col-sm-6">
-  <input type="text" class="form-control" id="RN5_earth_others" name="RN5_earth_others" placeholder="" >
-</div>
-</div>
-</div>
-
-<br>                  
-<div class="text-left"><h6>
-<b>C5. What is the present condition of the road? (See Codes Below)
-</b></h6></div>
-
-<div class="container">
-              <div class="row">
-                    <div class="col text-left">
-                      <div class="container">
-                       <input class="form-check-input" type="radio" name="unpaved_earth_condition" data-val="No" value="No">1 - Good<br> 
-                       <input class="form-check-input" type="radio" name="unpaved_earth_condition" data-val="No" value="No">2 - Fair<br> 
-                       <input class="form-check-input" type="radio" name="unpaved_earth_condition" data-val="No" value="No">3 - Poor<br> 
-                       <input class="form-check-input" type="radio" name="unpaved_earth_condition" data-val="No" value="No">4 - Bad<br> 
-                       <input class="form-check-input" type="radio" name="unpaved_earth_condition" data-val="No" value="No">5 - No assessment<br> 
-                       </div> 
-                    </div>                                                                                                           
-              </div>
-          </div> 
-</div>
+
+
+<div class="container-fluid">
+    
+     <table id="table9" class="norm_table cell-border compact table-hover" style="width:100%">
+        <thead>
+            <tr class="text-center">
+                <th wi>C. ROAD NETWORK</th>
+             
+            </tr>
+        </thead>
+        <!-- ----------------BREAK-------- -->
+
+
+
+    <tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>C1. Are there any of the <u>Paved Concrete</u> present in the barangay?</h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="C1_paved_concrete"  data-val="Yes" data-skip="c1_paved" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="C1_paved_concrete"  data-val="No"  data-skip="c1_paved" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                
+                     <!-- this -->
+                    <div class="skip_yes_c1_paved container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_road_network_facility" data-facility="Paved Concrete" data-toggle="modal" data-target="#add_barangay_road_network">Add Road</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_road_network" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Road Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Road Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Road Length</th>
+                                                <th style="text-align: center;" class="text-center " width="">Road Operator</th>
+                                                <th style="text-align: center;" class="text-center " width="">Road Condition</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+                             
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+
+           <!-- ROAD 1 -->
+
+
+
+
+<tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>C1. Are there any of the <u>Paved Asphalt</u> present in the barangay?</h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="C1_paved_asphalt"  data-val="Yes" data-skip="c1_asphalt" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="C1_paved_asphalt"  data-val="No"  data-skip="c1_asphalt" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                
+                     <!-- this -->
+                    <div class="skip_yes_c1_asphalt container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_road_network_facility" data-facility="Paved Asphalt" data-toggle="modal" data-target="#add_barangay_road_network">Add Road</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_road_network" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Road Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Road Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Road Length</th>
+                                                <th style="text-align: center;" class="text-center " width="">Road Operator</th>
+                                                <th style="text-align: center;" class="text-center " width="">Road Condition</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+                             
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+
+           <!-- ROAD 2 -->
+
+
+  
+
+<tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>C1. Are there any of the <u>Unpaved Gravel</u> present in the barangay?</h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="C1_unpaved_gravel"  data-val="Yes" data-skip="c1_unpavedg" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="C1_unpaved_gravel"  data-val="No"  data-skip="c1_unpavedg" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                
+                     <!-- this -->
+                    <div class="skip_yes_c1_unpavedg container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_road_network_facility" data-facility="Unpaved Gravel" data-toggle="modal" data-target="#add_barangay_road_network">Add Road</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_road_network" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Road Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Road Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Road Length</th>
+                                                <th style="text-align: center;" class="text-center " width="">Road Operator</th>
+                                                <th style="text-align: center;" class="text-center " width="">Road Condition</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+                             
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+
+           <!-- ROAD 3 -->
+
+
+
+
+<tr>
+              <td class="text-left">
+              
+                
+                <div class="">
+                  <div class="row">
+
+                    <div class="col-sm">
+                      <!-- this -->
+                       <h6>C1. Are there any of the <u>Unpaved Earth</u> present in the barangay?</h6> 
+                       <div class="container">
+                          <div class="row">
+                                <div class="col text-left">
+                                  <div class="container">
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="C1_unpaved_earth"  data-val="Yes" data-skip="c1_unpavede" value="Yes">Yes<br>
+                                     <!-- this name -->
+                                    <input class="form-check-input HF" type="radio" name="C1_unpaved_earth"  data-val="No"  data-skip="c1_unpavede" value="No">No
+                                   </div> 
+                                </div>                                                                                                           
+                          </div>
+                      </div>
+                      <br>
+                    </div>
+
+
+                
+                     <!-- this -->
+                    <div class="skip_yes_c1_unpavede container-fluid" hidden="">
+                    
+                                  <div class="container-fluid">
+                                     <!-- this -->
+                                 <div class="text-center"><button type="button" class="btn btn-outline-warning pass_data_road_network_facility" data-facility="Unpaved Earth" data-toggle="modal" data-target="#add_barangay_road_network">Add Road</button></div><br>
+                                  
+                                       <table  class="dyna_table table table-hover cell-border compact submit_table_barangay_road_network" style="width:100%" >  
+                                            <thead class="">
+                                              <tr> 
+                                                <th style="text-align: center;" class="text-center " width="">Road Type</th>
+                                                <th style="text-align: center;" class="text-center " width="">Road Name</th>
+                                                <th style="text-align: center;" class="text-center " width="">Road Length</th>
+                                                <th style="text-align: center;" class="text-center " width="">Road Operator</th>
+                                                <th style="text-align: center;" class="text-center " width="">Road Condition</th>
+                                               <!--  <th style="text-align: center;" class="text-center " width="">EA</th>
+                                                <th style="text-align: center;" class="text-center " width="">BSN</th>
+                                                <th style="text-align: center;" class="text-center " width="">FSN</th> -->
+                                                <th style="text-align: center;" class="text-center " width="">-</th>
+                                                
+                                           
+                                              </tr>
+                                            </thead>
+                                          </table>
+                                      
+                                  </div>
+                          <br>
+                    </div>
+                             
+
+                  </div>
+                </div>
+
+                <hr>
+
+             </td>
+         
+           </tr>
+
+           <!-- ROAD 4 -->
+
+
+
+
+
+
+
+
+
+</table>
+</div> <!---- END OF ROAD NETWORK--->
+<hr>
 
 
 
@@ -21399,6 +21304,106 @@ E4. Is there an electric substation present in the barangay?
 </div>
 
 <!-- -----END OF TRANSPORT FACILITY---- -->
+
+
+
+
+
+
+
+
+<!-- ADD ROAD NETWORK -->
+
+<div class="modal fade" id="add_barangay_road_network" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Add Type of Road</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+<form method="post" id="submit_table_barangay_road_network">
+ 
+  <div class="form-group">
+    <label for="">C2. What is the name of the Road ?</label>
+    <input type="text" class="form-control" name="road_name" aria-describedby="" placeholder="">
+   
+  </div>
+
+   <div class="form-group">
+    <label for="">C3. What is the length of the Road ? (in kms)</label>
+    <input type="number" class="form-control" name="road_length" aria-describedby="" placeholder="">
+   
+  </div>
+
+  <div class="form-group" >
+                      <label>C4. What institution maintaining the road?</label>
+                      <select  name="road_network_operator" class="form-control" >
+                        <option value="">Select</option>
+                        <option value="PRIVATE">PRIVATE</option>
+                        <option value="NATIONAL GOVERNMENT">NATIONAL GOVERNMENT</option>
+                        <option value="PROVINCIAL GOVERNMENT">PROVINCIAL GOVERNMENT</option>
+                        <option value="CITY/MUNICIPAL GOVERNMENT">CITY/MUNICIPAL GOVERNMENT</option>
+                        <option value="BARANGAY">BARANGAY</option>
+                        <option value="GOCC">GOCC</option>
+                        <option value="NONE">NONE</option>
+                        <option value="DON’T KNOW">DON’T KNOW</option>
+                  
+                      </select>
+
+  </div>
+
+
+  <div class="form-group" >
+                      <label>C5. What is the present condition of the road? (See Codes Below)</label>
+                      <select  name="road_network_condition" class="form-control" >
+                        <option value="GOOD">1 - Good</option>
+                        <option value="FAIR">2 - Fair</option>
+                        <option value="POOR">3 - Poor</option>
+                        <option value="BAD">4 - Bad</option>
+                        <option value="NO ASSESSMENT">5 - No assessment</option>         
+                  
+                      </select>
+
+  </div>
+
+
+
+                     <div class="form-group encode_bsn" hidden=""><h6>G6. EA</h6>
+                     <input type="text" class="form-control"  name="road_network_EA" placeholder="" >
+                    </div>
+                     <div class="form-group encode_bsn"  hidden=""><h6>G7. BSN</h6>
+                      <input type="text" class="form-control"  name="road_network_BSN" placeholder="" >
+                    </div>
+                     <div class="form-group encode_bsn"  hidden=""><h6>G8. FSN</h6>
+                      <input type="text" class="form-control"  name="road_network_FSN" placeholder="" >
+                    </div>
+
+  <div class="form-group" hidden=""> 
+    <input type="text" class="form-control" id="road_network" name="road_type" aria-describedby="" placeholder="">   
+  </div>
+
+
+
+</form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary save_tables" data-val="submit_table_barangay_road_network">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- -----END OF ROAD NETWORK---- -->
+
+
+
+
 
 
 <!-- ------END OF SECTION 3 MODALS -------- -->
