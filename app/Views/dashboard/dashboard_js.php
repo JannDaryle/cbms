@@ -419,6 +419,27 @@ jQuery('.submit_table_barangay_fac_garbage_waste').DataTable({
   });
 
 
+
+    jQuery('.submit_table_barangay_road_network').DataTable({
+
+    "order":[],
+    "serverSide":true,
+    "searching": false, 
+    //"scrollX": false,
+    "bPaginate": false,
+    "ajax":
+    {
+      url:"<?php echo base_url("/dashboard/get_barangay_road_network"); ?>",
+      type:"POST",
+    },
+    "columnDefs": [
+               
+                   { "orderable": false, "targets": [0,1,2,3,4], "visible": true, "searchable": false}
+            
+
+                  ]
+  });
+
  
 
 
@@ -2183,6 +2204,15 @@ $('.pass_data_facility_transport').click(function(e){
        var selected =  $(this).data("facility");
 
        $('#transport_sites_facilities').val(selected);
+
+       
+    } );
+
+$('.pass_data_road_network_facility').click(function(e){
+       
+       var selected =  $(this).data("facility");
+
+       $('#road_network').val(selected);
 
        
     } );
